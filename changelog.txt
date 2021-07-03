@@ -1,3 +1,6 @@
+3.2.144 (03-07-2021)
+- Fixes for OSD and seekbar
+- Add movie decades playlists and widget option
 3.2.143 (29-06-2021)
 - Rework OSD
 - Option for alternate OSD button highlighting
