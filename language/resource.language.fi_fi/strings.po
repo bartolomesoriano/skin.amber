@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-06-17 22:19+0000\n"
+"PO-Revision-Date: 2021-07-02 16:32+0000\n"
 "Last-Translator: bsoriano <bsoriano@gmail.com>\n"
 "Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/fi_fi/>\n"
 "Language: fi_fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.7.1\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -1579,55 +1579,55 @@ msgstr "Älä käytä yksinkertaista listanäkymää"
 
 msgctxt "#31634"
 msgid "High"
-msgstr ""
+msgstr "Korkea"
 
 msgctxt "#31635"
 msgid "Customize Bottom Shortcuts"
-msgstr ""
+msgstr "Mukauta Pohjan Pikakuvakkeita"
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "Pikakuvakkeet"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
-msgstr ""
+msgstr "Ota Käyttöön Pohjan Pikakuvakkeet"
 
 msgctxt "#31638"
 msgid "Show Bottom Shortcuts for this Menu Item"
-msgstr ""
+msgstr "Näytä Tämän Valikkokohdan Alimmat Pikakuvakkeet"
 
 msgctxt "#31639"
 msgid "Short Daily Weather"
-msgstr ""
+msgstr "Lyhyt Päivittäinen Sää"
 
 msgctxt "#31640"
 msgid "Short Hourly Weather"
-msgstr ""
+msgstr "Lyhyt Tunneittainen Sää"
 
 msgctxt "#31641"
 msgid "Surprise Me"
-msgstr ""
+msgstr "Yllätä Minut"
 
 msgctxt "#31642"
 msgid "Surprise Me (Movie)"
-msgstr ""
+msgstr "Yllätä Minut (Elokuva)"
 
 msgctxt "#31643"
 msgid "Surprise Me (Episode)"
-msgstr ""
+msgstr "Yllätä Minut (Jakso)"
 
 msgctxt "#31644"
 msgid "Surprise Me (Music Video)"
-msgstr ""
+msgstr "Yllätä Minut (Musiikkivideo)"
 
 msgctxt "#31645"
 msgid "Make Default Menu Item"
-msgstr ""
+msgstr "Tee Oletusvalikkokohta"
 
 msgctxt "#31646"
 msgid "Current Default Menu Item"
-msgstr ""
+msgstr "Nykyinen Oletusvalikkokohta"
 
 msgctxt "#31647"
 msgid "Enable Choosing Default Menu Item"
@@ -1635,6 +1635,10 @@ msgstr "Ota käyttöön oletusvalikkokohdan valinta"
 
 msgctxt "#31648"
 msgid "Right List"
+msgstr "Oikea Lista"
+
+msgctxt "#31649"
+msgid "Decades"
 msgstr ""
 
 msgctxt "#31901"
@@ -2788,7 +2792,7 @@ msgstr "Käyttäjäarvosana"
 
 msgctxt "#32232"
 msgid "Ratings"
-msgstr ""
+msgstr "Arvosanat"
 
 msgctxt "#32235"
 msgid "Certification"
@@ -2868,7 +2872,7 @@ msgstr "Elokuvia kirjastossa"
 
 msgctxt "#32254"
 msgid "IMDb Top 250"
-msgstr ""
+msgstr "IMDb Top 250"
 
 msgctxt "#32255"
 msgid "Missing Add-on"
@@ -3228,19 +3232,19 @@ msgstr "Käytä fanart.jpg mikäli saatavilla kansiossa tai yläkansiossa"
 
 msgctxt "#32345"
 msgid "Use Clear Art instead of Logo"
-msgstr ""
+msgstr "Käytä Selkeää Taidetta Logon sijaan"
 
 msgctxt "#32346"
 msgid "Single Logo"
-msgstr ""
+msgstr "Yksittäinen Logo"
 
 msgctxt "#32347"
 msgid "Fade out Unfocused"
-msgstr ""
+msgstr "Häivytä Keskittämätön"
 
 msgctxt "#32348"
 msgid "Show Overlay"
-msgstr ""
+msgstr "Näytä Päällys"
 
 msgctxt "#32349"
 msgid "Show Smaller Favourite Icons"
@@ -3284,7 +3288,7 @@ msgstr "Toista kokonaisia albumeja hyllyiltä"
 
 msgctxt "#32359"
 msgid "Show Item Name in Top Bar"
-msgstr ""
+msgstr "Näytä Kohteen Nimi Yläpalkissa"
 
 msgctxt "#32360"
 msgid "Animate backgrounds using Ken Burns effect"
@@ -3292,7 +3296,7 @@ msgstr "Animoi taustat käyttämällä Ken Burns -efektiä"
 
 msgctxt "#32361"
 msgid "Single Column"
-msgstr ""
+msgstr "Yksittäinen Sarake"
 
 msgctxt "#32362"
 msgid "Disable Now Playing Fanart"
@@ -3336,7 +3340,7 @@ msgstr "Info painike avaa videon tiedot -valintaikkunan"
 
 msgctxt "#32372"
 msgid "Pause Media While Info Dialog is Open"
-msgstr ""
+msgstr "Keskeytä Media, Kun Info-valintaikkuna on Avoin"
 
 msgctxt "#32373"
 msgid "End Time"
@@ -3344,7 +3348,7 @@ msgstr "Lopetusaika"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
-msgstr ""
+msgstr "Näytä Tumma Tausta Pikakuvakkeiden Takana"
 
 msgctxt "#32375"
 msgid "Use Artist Slideshow for Audio Fanart"
@@ -3356,7 +3360,7 @@ msgstr "Poista sanoitukset käytöstä"
 
 msgctxt "#32377"
 msgid "Activate Lyrics"
-msgstr ""
+msgstr "Aktivoi Sanoitukset"
 
 msgctxt "#32378"
 msgid "Use Color Flags"
@@ -3368,23 +3372,23 @@ msgstr "Näytä alivalikko vain tarkennettuna"
 
 msgctxt "#32380"
 msgid "Movies with Plot containing"
-msgstr ""
+msgstr "Elokuvat, joiden juoni sisältää"
 
 msgctxt "#32381"
 msgid "TV Shows with Plot containing"
-msgstr ""
+msgstr "TV-Ohjelmat, joiden juoni sisältää"
 
 msgctxt "#32382"
 msgid "Episodes with Plot containing"
-msgstr ""
+msgstr "Jaksot, joiden juoni sisältää"
 
 msgctxt "#32383"
 msgid "With Plot Containing"
-msgstr ""
+msgstr "Juoni sisältäen"
 
 msgctxt "#32384"
 msgid "Show Title in Footer"
-msgstr ""
+msgstr "Näytä Otsikko Alatunnisteessa"
 
 msgctxt "#32385"
 msgid "Hide Seek Bar when Forwarding or Rewinding"
@@ -3408,11 +3412,11 @@ msgstr "Valitse kohteet, jotka näytetään näkymissä"
 
 msgctxt "#32391"
 msgid "Items to Show in Views"
-msgstr ""
+msgstr "Näkymissä Näytettävät Kohteet"
 
 msgctxt "#32392"
 msgid "Play Random"
-msgstr ""
+msgstr "Toista Satunnainen"
 
 msgctxt "#32393"
 msgid "List Views Options"
@@ -3424,7 +3428,7 @@ msgstr "Merkit ja peitteet"
 
 msgctxt "#32395"
 msgid "Select View Types to Enable"
-msgstr ""
+msgstr "Valitse Käytettävät Näkymät"
 
 msgctxt "#32396"
 msgid "View Types to Enable"
@@ -3432,63 +3436,63 @@ msgstr "Käytettävät näkymät"
 
 msgctxt "#32398"
 msgid "Show Poster"
-msgstr ""
+msgstr "Näytä Juliste"
 
 msgctxt "#32399"
 msgid "Text"
-msgstr ""
+msgstr "Teksti"
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "Banneri"
 
 msgctxt "#32401"
 msgid "List Item Type"
-msgstr ""
+msgstr "Listakohteen Tyyppi"
 
 msgctxt "#32402"
 msgid "Poster/Thumb"
-msgstr ""
+msgstr "Juliste/Pikkukuva"
 
 msgctxt "#32403"
 msgid "OSD/Full Screen Art"
-msgstr ""
+msgstr "OSD/Koko Näytön Taide"
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "Ei Saatavilla"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
-msgstr ""
+msgstr "Näytä Info-ponnahdusikkuna"
 
 msgctxt "#32406"
 msgid "Popup Delay"
-msgstr ""
+msgstr "Ponnahdusikkunan Viive"
 
 msgctxt "#32407"
 msgid "Show Floor"
-msgstr ""
+msgstr "Näytä Kerros"
 
 msgctxt "#32408"
 msgid "Fixed List"
-msgstr ""
+msgstr "Kiinteä Lista"
 
 msgctxt "#32409"
 msgid "Centered Static Menu (less than 8 items)"
-msgstr ""
+msgstr "Keskitetty Liikkumaton Valikko (alle 8 kohdetta)"
 
 msgctxt "#32410"
 msgid "Compact OSD"
-msgstr ""
+msgstr "Kompakti OSD"
 
 msgctxt "#32411"
 msgid "Ultra Compact OSD"
-msgstr ""
+msgstr "Erittäin Kompakti OSD"
 
 msgctxt "#32412"
 msgid "Alternate OSD Button Highlighting"
-msgstr ""
+msgstr "Vaihtoehtoinen OSD Painikkeen Korostus"
 
 #~ msgctxt "#32232"
 #~ msgid "Main Rating"

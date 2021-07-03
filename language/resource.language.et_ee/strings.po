@@ -1653,6 +1653,10 @@ msgctxt "#31648"
 msgid "Right List"
 msgstr "Parempoolne loend"
 
+msgctxt "#31649"
+msgid "Decades"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "36 tunni ilm"
