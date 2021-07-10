@@ -1417,6 +1417,7 @@
 		<param name="isWideIcon">false</param>
 		<param name="isSquare">false</param>
 		<param name="isThumb">false</param>
+		<param name="doInfoPopup">false</param>
 		<definition>  
 		    <!-- Triple shelves together, all three have values -->
 			<itemlayout height="$PARAM[artworkheightsmall]" width="$PARAM[artworkwidthsmall]" condition="$PARAM[isTripleShelvesTogether] + !$PARAM[isTripleRowLarge]">
@@ -1513,14 +1514,10 @@
                 </control>				
 			</itemlayout>
 			<focusedlayout height="$PARAM[artworkheightsmall]" width="$PARAM[artworkwidthsmall]" condition="$PARAM[isTripleShelvesTogether] + !$PARAM[isTripleRowLarge]">
-			    <control type="button">
-					<include>HiddenButton</include>
-					<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-				</control>
+			    <include>SetShelfItemDuration</include>
+				<include content="SetShelfPopupProps">
+				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+				</include>
 				<control type="group">
 				    <visible>!$PARAM[showLabelFallback] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)</visible>
 					<include content="GenericThumbIconTemplate">
@@ -1715,14 +1712,10 @@
                 </control>								
 			</itemlayout>
 			<focusedlayout height="$PARAM[artworkheightmed]" width="$PARAM[artworkwidthmed]" condition="[!$PARAM[isTripleShelvesTogether] + $PARAM[isTripleRow] + !$PARAM[isTripleRowLarge]]">
-			    <control type="button">
-					<include>HiddenButton</include>
-					<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-				</control>
+			    <include>SetShelfItemDuration</include>
+				<include content="SetShelfPopupProps">
+				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+				</include>
 				<control type="group">
 				    <visible>!$PARAM[showLabelFallback] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)</visible>
 				    <include content="GenericThumbIconTemplate">
@@ -1915,24 +1908,12 @@
                 </control>								
 			</itemlayout>
 			<focusedlayout height="$PARAM[artworkheightbig]" width="$PARAM[artworkwidthbig]" condition="[!$PARAM[isTripleRow] | [$PARAM[isTripleRow] + $PARAM[isTripleRowLarge]]]">
-			    <control type="button">
-					<include>HiddenButton</include>
-					<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-				</control>
+			    <include>SetShelfItemDuration</include>
+				<include content="SetShelfPopupProps">
+				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+				</include>
 				<control type="group">
 				    <visible>!$PARAM[showLabelFallback] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)</visible>
-					<control type="button">
-					    <include>HiddenButton</include>
-						<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                    <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                    <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                    <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                    <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-					</control>
 					<include content="GenericThumbIconTemplate">
 				        <param name="isFocused">Control.HasFocus($PARAM[id1])</param>
                         <param name="iconimage">$PARAM[iconimage]</param>
@@ -2067,6 +2048,7 @@
 		<param name="iconheightsmall" />
 		<param name="align" />
 		<param name="aligny">center</param>
+		<param name="doInfoPopup">false</param>
 		<definition>  
 		    <!-- Triple shelves together, all three have values -->
 			<itemlayout height="$PARAM[artworkheightsmall]" width="$PARAM[artworkwidthsmall]" condition="$PARAM[isTripleShelvesTogether] + !$PARAM[isTripleRowLarge]">
@@ -2133,14 +2115,10 @@
                 </control>				
 			</itemlayout>
 			<focusedlayout height="$PARAM[artworkheightsmall]" width="$PARAM[artworkwidthsmall]" condition="$PARAM[isTripleShelvesTogether] + !$PARAM[isTripleRowLarge]">
-			    <control type="button">
-					<include>HiddenButton</include>
-					<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-				</control>
+			    <include>SetShelfItemDuration</include>
+				<include content="SetShelfPopupProps">
+				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+				</include>
 				<control type="group">
 				    <visible>!$PARAM[showLabelFallback]</visible>
 				    <include content="GenericThumbIconTemplate">
@@ -2269,14 +2247,10 @@
                 </control>								
 			</itemlayout>
 			<focusedlayout height="$PARAM[artworkheightmed]" width="$PARAM[artworkwidthmed]" condition="[!$PARAM[isTripleShelvesTogether] + $PARAM[isTripleRow] + !$PARAM[isTripleRowLarge]]">
-			    <control type="button">
-					<include>HiddenButton</include>
-					<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-				</control>
+			    <include>SetShelfItemDuration</include>
+				<include content="SetShelfPopupProps">
+				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+				</include>
 				<control type="group">
 				    <visible>!$PARAM[showLabelFallback]</visible>
 				    <include content="GenericThumbIconTemplate">
@@ -2404,14 +2378,10 @@
                 </control>								
 			</itemlayout>
 			<focusedlayout height="$PARAM[artworkheightbig]" width="$PARAM[artworkwidthbig]" condition="[!$PARAM[isTripleRow] | [$PARAM[isTripleRow] + $PARAM[isTripleRowLarge]]]">
-			    <control type="button">
-					<include>HiddenButton</include>
-					<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-				</control>
+			    <include>SetShelfItemDuration</include>
+				<include content="SetShelfPopupProps">
+				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+				</include>
 				<control type="group">
 				    <visible>!$PARAM[showLabelFallback]</visible>
 				    <include content="GenericThumbIconTemplate">
@@ -2497,6 +2467,7 @@
 		<param name="isLowWidget">false</param>
 		<param name="aspect">keep</param>
 		<param name="isWideIcon">false</param>
+		<param name="doInfoPopup">false</param>
 		<definition> 
 		    <!-- Triple Shelves together, all have items -->
 			<itemlayout height="109" width="425" condition="$PARAM[isTripleShelvesTogether] + !$PARAM[isTripleRowLarge]">
@@ -2575,14 +2546,10 @@
                 </control>					
 			</itemlayout>
 			<focusedlayout height="109" width="425" condition="$PARAM[isTripleShelvesTogether] + !$PARAM[isTripleRowLarge]">
-			    <control type="button">
-					<include>HiddenButton</include>
-					<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-				</control>
+			    <include>SetShelfItemDuration</include>
+				<include content="SetShelfPopupProps">
+				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+				</include>
 				<control type="group">
 				    <visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
 				    <include content="GenericThumbIconTemplate">
@@ -2729,14 +2696,10 @@
                 </control>					
 			</itemlayout>
 			<focusedlayout height="157" width="668" condition="!$PARAM[isTripleRow]">
-			    <control type="button">
-					<include>HiddenButton</include>
-					<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-				</control>
+			    <include>SetShelfItemDuration</include>
+				<include content="SetShelfPopupProps">
+				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+				</include>
 				<control type="group">
 				    <visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
 				    <include content="GenericThumbIconTemplate">
@@ -2880,14 +2843,10 @@
                 </control>					
 			</itemlayout>
 			<focusedlayout height="157" width="684" condition="$PARAM[isTripleRow] + $PARAM[isTripleRowLarge]">
-			    <control type="button">
-					<include>HiddenButton</include>
-					<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-				</control>
+			    <include>SetShelfItemDuration</include>
+				<include content="SetShelfPopupProps">
+				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+				</include>
 				<control type="group">
 				    <visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
 				    <include content="GenericThumbIconTemplate">
@@ -3033,14 +2992,10 @@
                 </control>					
 			</itemlayout>
 			<focusedlayout height="151" width="634" condition="$PARAM[isTripleRow] + !$PARAM[isTripleRowLarge] + !$PARAM[isTripleShelvesTogether]">
-			    <control type="button">
-					<include>HiddenButton</include>
-					<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-				</control>
+			    <include>SetShelfItemDuration</include>
+				<include content="SetShelfPopupProps">
+				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+				</include>
 				<control type="group">
 				    <visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
 				    <include content="GenericThumbIconTemplate">
@@ -3137,6 +3092,7 @@
 		<param name="isTripleRowMedium">false</param>
 		<param name="isTripleRowLarge">false</param>
 		<param name="isTripleShelvesTogether">false</param>
+		<param name="doInfoPopup">false</param>
 		<definition>
 			<include>VisibleFadeEffectDelayShelf</include>
 			<!-- Triple shelves together, all shelves have items -->
@@ -3165,14 +3121,10 @@
 			    </include>
 			</itemlayout>
 			<focusedlayout height="220" width="159" condition="$PARAM[isTripleShelvesTogether] + !$PARAM[isTripleRowLarge]">
-			    <control type="button">
-					<include>HiddenButton</include>
-					<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-				</control>
+			    <include>SetShelfItemDuration</include>
+				<include content="SetShelfPopupProps">
+				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+				</include>
 				<include content="GenericThumbIconTemplate">
 				    <param name="isFocused">Control.HasFocus($PARAM[id1])</param>
 				    <param name="iconwidth">159</param>
@@ -3222,14 +3174,10 @@
 			    </include>
 			</itemlayout>
 			<focusedlayout height="252" width="182" condition="$PARAM[isTripleRow] + !$PARAM[isTripleRowLarge]">
-			    <control type="button">
-					<include>HiddenButton</include>
-					<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-				</control>
+			    <include>SetShelfItemDuration</include>
+				<include content="SetShelfPopupProps">
+				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+				</include>
 				<include content="GenericThumbIconTemplate">
 				    <param name="isFocused">Control.HasFocus($PARAM[id1])</param>
 				    <param name="iconwidth">182</param>
@@ -3279,14 +3227,10 @@
 			    </include>
 			</itemlayout>
 			<focusedlayout height="315" width="228" condition="[!$PARAM[isTripleRow] | [$PARAM[isTripleRow] + $PARAM[isTripleRowLarge]]]">
-			    <control type="button">
-					<include>HiddenButton</include>
-					<onfocus>SetProperty(WidgetItemDuration,$INFO[ListItem.Duration],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationHr,$INFO[ListItem.Duration(h)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMin,$INFO[ListItem.Duration(m)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationMins,$INFO[ListItem.Duration(mins)],Home)</onfocus>
-	                <onfocus>SetProperty(WidgetItemDurationSec,$INFO[ListItem.Duration(ss)],Home)</onfocus>
-				</control>
+			    <include>SetShelfItemDuration</include>
+				<include content="SetShelfPopupProps">
+				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+				</include>
 				<include content="GenericThumbIconTemplate">
 				    <param name="isFocused">Control.HasFocus($PARAM[id1])</param>
 				    <param name="iconwidth">228</param>

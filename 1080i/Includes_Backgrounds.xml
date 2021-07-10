@@ -416,7 +416,7 @@
             <include>Dimensions_Fullscreen</include>
         </control>
         <control type="videowindow">
-            <visible>Player.HasVideo + Skin.HasSetting(Show_VideoBackground)</visible>
+            <visible>[Player.HasVideo + Skin.HasSetting(Show_VideoBackground)] | Skin.HasSetting(AutoPlayTrailer)</visible>
             <include>Dimensions_Fullscreen</include>
         </control>
     </include>

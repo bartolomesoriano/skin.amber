@@ -112,6 +112,7 @@
 		        <onleft>58</onleft>
 		        <onright>58</onright>
 		        <onup condition="!Skin.HasSetting(KioskMode.Enabled)">9000</onup>
+				<onup condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onup>
                 <onup condition="Skin.HasSetting(KioskMode.Enabled)">noop</onup>
                 <oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
                 <ondown condition="!Control.IsVisible(616) | [Control.IsVisible(616) + Control.IsVisible(6058)]">6058</ondown>

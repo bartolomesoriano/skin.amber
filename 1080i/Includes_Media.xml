@@ -63,7 +63,7 @@
 	</variable>
 	
 	<variable name="AudioCodecFlagVar">
-		<value condition="String.Contains(Container.ListItem.FileNameAndPath,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
+		<value condition="String.Contains(Container.ListItem.FileNameAndPath,atmos) | String.Contains(Container.ListItem.AudioCodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(Container.ListItem.FileNameAndPath,dtsx) | String.Contains(Container.ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
 		<value condition="String.Contains(Container.ListItem.AudioCodec,aac)">$VAR[MediaFlagsPathVar]/audiocodec/aac.png</value>
 		<value condition="[String.Contains(Container.ListItem.AudioCodec,ac3) | String.Contains(Container.ListItem.AudioCodec,ac-3) | String.Contains(Container.ListItem.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
@@ -71,7 +71,7 @@
 	</variable>
 	
 	<variable name="MediaInfoAudioCodecFlagVar">
-		<value condition="String.Contains(ListItem.FileNameAndPath,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
+		<value condition="String.Contains(ListItem.FileNameAndPath,atmos) | String.Contains(ListItem.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(ListItem.FileNameAndPath,dtsx) | String.Contains(ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
 		<value condition="String.Contains(ListItem.AudioCodec,aac)">$VAR[MediaFlagsPathVar]/audiocodec/aac.png</value>
 		<value condition="[String.Contains(ListItem.AudioCodec,ac3) | String.ContainsListItem.AudioCodec,ac-3) | String.Contains(ListItem.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
@@ -79,7 +79,7 @@
 	</variable>
 	
 	<variable name="PlayerAudioCodecFlagVar">
-		<value condition="String.Contains(Player.FileNameAndPath,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
+		<value condition="String.Contains(Player.FileNameAndPath,atmos) | String.Contains(VideoPlayer.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(Player.FileNameAndPath,dtsx) | String.Contains(Player.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
 		<value condition="String.Contains(VideoPlayer.AudioCodec,aac)">$VAR[MediaFlagsPathVar]/audiocodec/aac.png</value>
 		<value condition="[String.Contains(VideoPlayer.AudioCodec,ac3) | String.Contains(VideoPlayer.AudioCodec,ac-3) | String.Contains(VideoPlayer.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
@@ -87,7 +87,7 @@
 	</variable>
 	
 	<variable name="SearchAudioCodecFlagVar">
-		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
+		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,atmos) | String.Contains(Container(6).ListItem.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(Container(6).ListItem.FileNameAndPath,dtsx) | String.Contains(Container(6).ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
 		<value condition="String.Contains(Container(6).ListItem.AudioCodec,aac)">$VAR[MediaFlagsPathVar]/audiocodec/aac.png</value>
 		<value condition="[String.Contains(Container(6).ListItem.AudioCodec,ac3) | String.Contains(Container(6).ListItem.AudioCodec,ac-3) | String.Contains(Container(6).ListItem.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
@@ -878,10 +878,10 @@
 		<param name="showvideobadge">true</param>
 		<param name="showaudiobadge">true</param>
 		<param name="showratingbadge">true</param>
-		<param name="type">Container.ListItem</param>
+											   
 		<definition>
 			<control type="image" id="89001">
-				<visible>!String.IsEmpty($PARAM[type].VideoResolution)</visible>
+				<visible>!String.IsEmpty(Container.ListItem.VideoResolution)</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + !Skin.HasSetting(coloredflags)</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
@@ -892,7 +892,7 @@
 				<texture align="left">$VAR[VideoResolutionFlagVar]</texture>
 			</control>
 			<control type="image" id="89001">
-				<visible>!String.IsEmpty($PARAM[type].VideoResolution)</visible>
+				<visible>!String.IsEmpty(Container.ListItem.VideoResolution)</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(coloredflags)</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
@@ -904,7 +904,7 @@
 				<texture align="left">$VAR[VideoResolutionFlagVar]</texture>
 			</control>
 			<control type="image" id="89002">
-				<visible>!String.IsEmpty($PARAM[type].VideoCodec)</visible>
+				<visible>!String.IsEmpty(Container.ListItem.VideoCodec)</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo)</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
@@ -915,7 +915,7 @@
 				<texture>$VAR[VideoCodecFlagVar]</texture>
 			</control>
 			<control type="image" id="89003">
-				<visible>!String.IsEmpty($PARAM[type].VideoAspect)</visible>
+				<visible>!String.IsEmpty(Container.ListItem.VideoAspect)</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo)</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
@@ -923,10 +923,10 @@
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
-				<texture>$VAR[MediaFlagsPathVar]/aspectratio/$INFO[$PARAM[type].VideoAspect,,.png]</texture>
+				<texture>$VAR[MediaFlagsPathVar]/aspectratio/$INFO[Container.ListItem.VideoAspect,,.png]</texture>
 			</control>
-			<control type="image">
-				<visible>$PARAM[type].IsStereoscopic</visible>
+			<control type="image" id="89004">
+				<visible>Container.ListItem.IsStereoscopic</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo)</visible>
 				<height>$PARAM[itemheight]</height>
@@ -936,9 +936,9 @@
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>badges/3D.png</texture>
 			</control> 
-            <control type="image" id="89007">
-				<visible>!String.IsEmpty($PARAM[type].VideoResolution)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [$EXP[ContainerIsHDR] | $EXP[ListItemIsHDR]]</visible>
+            <control type="image" id="89005">
+																	
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + $EXP[ContainerIsHDR]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -947,9 +947,9 @@
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>$VAR[HDRFlagVar]</texture>
 			</control>
-			<control type="image" id="89008">
-				<visible>!String.IsEmpty($PARAM[type].VideoResolution)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [$EXP[ContainerIsHDR] | $EXP[ListItemIsHDR]]</visible>
+			<control type="image" id="89006">
+																	
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + $EXP[ContainerIsBitDepth]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -958,8 +958,8 @@
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>$VAR[BitDepthFlagVar]</texture>
 			</control>			
-			<control type="image" id="89004">
-				<visible>!String.IsEmpty($PARAM[type].AudioCodec)</visible>
+			<control type="image" id="89007">
+				<visible>!String.IsEmpty(Container.ListItem.AudioCodec)</visible>
 				<visible>$PARAM[showaudiobadge]</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo)</visible>
 				<height>$PARAM[itemheight]</height>
@@ -969,8 +969,8 @@
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>$VAR[AudioCodecFlagVar]</texture>
 			</control>
-			<control type="image" id="89005">
-				<visible>!String.IsEmpty($PARAM[type].FileExtension)</visible>
+			<control type="image" id="89008">
+				<visible>!String.IsEmpty(Container.ListItem.FileExtension)</visible>
 				<visible>Container.Content(songs)</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo)</visible>
 				<visible>$PARAM[showaudiobadge]</visible>
@@ -979,10 +979,10 @@
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
-				<texture>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[$PARAM[type].FileExtension,,.png]</texture>
+				<texture>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[Container.ListItem.FileExtension,,.png]</texture>
 			</control>
-			<control type="image" id="89006">
-				<visible>!String.IsEmpty($PARAM[type].AudioChannels)</visible>
+			<control type="image" id="89009">
+				<visible>!String.IsEmpty(Container.ListItem.AudioChannels)</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo)</visible>
 				<visible>$PARAM[showaudiobadge]</visible>
 				<height>$PARAM[itemheight]</height>
@@ -990,15 +990,15 @@
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
-				<texture>$VAR[MediaFlagsPathVar]/audiochannels/channels$INFO[$PARAM[type].AudioChannels,,.png]</texture>
+				<texture>$VAR[MediaFlagsPathVar]/audiochannels/channels$INFO[Container.ListItem.AudioChannels,,.png]</texture>
 			</control>
-			<control type="image" description="Stars">
+			<control type="image" id="89010" description="Stars">
 				<visible>$PARAM[showratingbadge] + String.IsEmpty(Container.PluginName) + Skin.HasSetting(ShowRatingUser)</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
-				<texture>$VAR[$PARAM[type].ratingbadge]</texture>
+				<texture>$VAR[Container.ListItem.ratingbadge]</texture>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 			</control>
 			
@@ -1046,7 +1046,7 @@
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>$VAR[MediaFlagsPathVar]/aspectratio/$INFO[ListItem.VideoAspect,,.png]</texture>
 			</control>
-			<control type="image">
+			<control type="image" id="89004">
 				<visible>ListItem.IsStereoscopic</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo)</visible>
@@ -1056,8 +1056,8 @@
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>badges/3D.png</texture>
-			</control>
-            <control type="image" id="89007">
+			</control> 
+            <control type="image" id="89005">
 				<visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + $EXP[ListItemIsHDR]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
@@ -1068,9 +1068,9 @@
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>$VAR[MediaInfoHDRFlagVar]</texture>
 			</control>
-			<control type="image" id="89008">
+			<control type="image" id="89006">
 				<visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + $EXP[ListItemIsHDR]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + $EXP[ListItemIsBitDepth]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -1078,8 +1078,8 @@
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>$VAR[MediaInfoBitDepthFlagVar]</texture>
-			</control>            
-			<control type="image" id="89004">
+			</control>			
+			<control type="image" id="89007">
 				<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
 				<visible>$PARAM[showaudiobadge]</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo)</visible>
@@ -1090,7 +1090,7 @@
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>$VAR[MediaInfoAudioCodecFlagVar]</texture>
 			</control>
-			<control type="image" id="89005">
+			<control type="image" id="89008">
 				<visible>!String.IsEmpty(ListItem.FileExtension)</visible>
 				<visible>Container.Content(songs)</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo)</visible>
@@ -1102,7 +1102,7 @@
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[ListItem.FileExtension,,.png]</texture>
 			</control>
-			<control type="image" id="89006">
+			<control type="image" id="89009">
 				<visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo)</visible>
 				<visible>$PARAM[showaudiobadge]</visible>
@@ -1113,7 +1113,7 @@
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>$VAR[MediaFlagsPathVar]/audiochannels/channels$INFO[ListItem.AudioChannels,,.png]</texture>
 			</control>
-			<control type="image" description="Stars">
+			<control type="image" id="89010" description="Stars">
 				<visible>$PARAM[showratingbadge] + String.IsEmpty(Container.PluginName) + Skin.HasSetting(ShowRatingUser)</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -1191,7 +1191,7 @@
 			</control>
 			<control type="image" id="89008">
 				<visible>!String.IsEmpty(VideoPlayer.VideoResolution)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + $EXP[PlayerIsHDR]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + $EXP[PlayerIsBitDepth]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>

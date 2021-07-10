@@ -32,7 +32,8 @@
 	<include file="Includes_ColorPicker.xml" />
 	<include file="Includes_VideoLyrics.xml" />
 	<include file="Includes_Favourites.xml" />
-	<include file="Includes_TouchSupport.xml" />										 
+	<include file="Includes_TouchSupport.xml" />
+	<include file="Includes_ShelfPopup.xml" />
 
     <include file="Includes_Media.xml" />
     <include file="Includes_List.xml" />
@@ -49,7 +50,7 @@
 	<include file="View_57_SimpleList.xml" />
 	<include file="View_58_Logo.xml" />
 	<include file="View_600_Triple.xml" />
-	<include file="View_502_RightList.xml" />									  
+	<include file="View_502_RightList.xml" />
     <include file="View_PVR.xml" />
 	
 	
@@ -1082,7 +1083,8 @@
                 <width>248</width>
                 <height>760</height>
                 <onleft>9000</onleft>
-                <onright condition="control.isvisible(52)">52</onright>
+                <onright>ClearProperty(MediaMenu,Home)</onright>
+				<onright condition="control.isvisible(52)">52</onright>
 		        <onright condition="control.isvisible(50)">50</onright>
 		        <onright condition="control.isvisible(54)">54</onright>
 		        <onright condition="control.isvisible(51)">51</onright>
@@ -1095,7 +1097,7 @@
 				<onright condition="control.isvisible(57)">57</onright>
 				<onright condition="control.isvisible(600)">600</onright>
 				<onright condition="control.isvisible(58)">58</onright>
-				<onright condition="control.isvisible(502)">502</onright>											 
+				<onright condition="control.isvisible(502)">502</onright>
                 <onup condition="Skin.HasSetting(Enable.TouchSupport)">909091</onup>
 				<onup condition="!Skin.HasSetting(Enable.TouchSupport)">9600</onup>
                 <ondown>9600</ondown>
@@ -1865,7 +1867,8 @@
         <width>500</width>
         <height>1120</height>
         <onleft>9001</onleft>
-        <onright condition="Control.IsVisible(52)">52</onright>
+        <onright>ClearProperty(MediaMenu,Home)</onright>
+		<onright condition="Control.IsVisible(52)">52</onright>
 		<onright condition="Control.IsVisible(50)">50</onright>
 		<onright condition="Control.IsVisible(54)">54</onright>
 		<onright condition="Control.IsVisible(51)">51</onright>
@@ -1878,11 +1881,12 @@
 		<onright condition="Control.IsVisible(57)">57</onright>
 		<onright condition="Control.IsVisible(58)">58</onright>
 		<onright condition="Control.IsVisible(600)">600</onright>
-		<onright condition="Control.IsVisible(502)">502</onright>												   
-		<onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
+		<onright condition="Control.IsVisible(502)">502</onright>
+        <onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
 		<onup condition="!Skin.HasSetting(Enable.TouchSupport)">9000</onup>
         <ondown>9000</ondown>
-	    <onback condition="Control.IsVisible(52)">52</onback>
+	    <onback>ClearProperty(MediaMenu,Home)</onback>
+		<onback condition="Control.IsVisible(52)">52</onback>
 		<onback condition="Control.IsVisible(50)">50</onback>
 		<onback condition="Control.IsVisible(54)">54</onback>
 		<onback condition="Control.IsVisible(51)">51</onback>
@@ -1895,7 +1899,7 @@
 		<onback condition="Control.IsVisible(57)">57</onback>
 		<onback condition="Control.IsVisible(58)">58</onback>
 		<onback condition="Control.IsVisible(600)">600</onback>
-		<onback condition="Control.IsVisible(502)">502</onback>												 
+		<onback condition="Control.IsVisible(502)">502</onback>
         <scrolltime>200</scrolltime>
         <orientation>vertical</orientation>
         <animation effect="fade" time="200" start="100" end="20" reversible="true" condition="[!ControlGroup(9000).HasFocus() + !Control.HasFocus(909090)]">Conditional</animation>
@@ -1959,7 +1963,7 @@
 		
 		<include>SimpleListViewSwitch</include>
 		
-		<include>RightListViewSwitches</include>  
+		<include>RightListViewSwitches</include>
 
         <control type="button" id="6053">
             <include>9000SysButtons</include>

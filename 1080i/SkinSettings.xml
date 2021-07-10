@@ -620,8 +620,21 @@
 							<param name="itemlabel" value="$LOCALIZE[31514]"/>
 							<param name="skinsetting" value="EpisodesUsePoster"/>
 						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="21"/>
+							<param name="itemlabel" value="$LOCALIZE[32415]"/>
+							<param name="skinsetting" value="AutoPlayTrailer"/>
+						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">21</param>
+                            <param name="itemid">22</param>
+                            <param name="itemlabel">      [B]$LOCALIZE[32416][/B]</param>
+							<param name="itemlabel2">$VAR[MediaViewsTrailerDelayLabelVar]</param>
+                            <param name="CustomProperty">CustomSelectTrailerDelay</param>
+		                    <param name="CustomDialog">1121</param>
+							<param name="itemvisibility" value="Skin.HasSetting(AutoPlayTrailer)"/>
+						</include>
+						<include content="CustomDialogSettingItem">
+                            <param name="itemid">23</param>
                             <param name="itemlabel">[B]$LOCALIZE[32394][/B]</param>
                             <param name="CustomProperty">CustomSelectMarksOverlays</param>
 		                    <param name="CustomDialog">1139</param>

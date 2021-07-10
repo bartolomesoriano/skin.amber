@@ -104,6 +104,7 @@
 			    <height>80</height>
 			    <font></font>
 			    <onclick>$PARAM[Action]</onclick>
+				<onclick>ClearProperty(MediaMenu,Home)</onclick>
 				<ondown>$PARAM[ondown]</ondown>
 			    <texturefocus colordiffuse="$VAR[FocusedTextColor]">touch/icon_dialog_close.png</texturefocus>
 			    <texturenofocus>touch/icon_dialog_close.png</texturenofocus>

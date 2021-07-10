@@ -1314,4 +1314,17 @@
 		</item>
 	</include>
 	
+	<include name="SelectTrailerDelay">
+		<item>
+			<label>5 $LOCALIZE[32047]</label>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>Skin.SetString(StartTrailerDelay,five)</onclick>
+		</item>
+		<item>
+			<label>10 $LOCALIZE[32047]</label>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>Skin.SetString(StartTrailerDelay,ten)</onclick>
+		</item>
+	</include>
+	
 </includes>

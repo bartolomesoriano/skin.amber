@@ -1657,6 +1657,10 @@ msgctxt "#31649"
 msgid "Decades"
 msgstr ""
 
+msgctxt "#31650"
+msgid "Show Information Popup (after 3 seconds)"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "Прогноз на 36 часов"
@@ -3513,4 +3517,20 @@ msgstr ""
 
 msgctxt "#32412"
 msgid "Alternate OSD Button Highlighting"
+msgstr ""
+
+msgctxt "#32413"
+msgid "Enabled"
+msgstr ""
+
+msgctxt "#32414"
+msgid "Disabled"
+msgstr ""
+
+msgctxt "#32415"
+msgid "Auto Play Trailer (Local Trailer Only)"
+msgstr ""
+
+msgctxt "#32416"
+msgid "Auto Play Trailer Delay"
 msgstr ""

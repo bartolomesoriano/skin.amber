@@ -2,7 +2,7 @@
 <window>
 	
 	<include>ViewIDs</include>
-	
+	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<menucontrol>9000</menucontrol>
 	<controls>
 		<include>DefaultBackground</include>
@@ -49,6 +49,15 @@
 		<control type="group" id="8999" description="Side menu 9000 group">
 			<include>9000Commons</include>
 			<include>9000NavCommons</include>
+			<control type="group">
+			    <posx>-60</posx>
+			    <posy>-13</posy>
+			    <include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
+			        <param name="Action">SetFocus(50)</param>
+				    <param name="ondown">9000</param>
+			    </include>
+			    <animation effect="fade" time="200" start="100" end="20" reversible="true" condition="!ControlGroup(9000).HasFocus() + !Control.HasFocus(909090)">Conditional</animation>
+		    </control>
 			<control type="grouplist" id="9000">
 				<include>9000GrouplistParameters</include>
 				<control type="label" id="203">
@@ -78,7 +87,6 @@
 				</control>
 			</control>
 		</control>
-        <include>TouchButtons</include>
 		<include condition="Skin.HasSetting(Show.EHJumpToLetter)">ScriptJumpToLetter</include>
 	</controls>
 </window>

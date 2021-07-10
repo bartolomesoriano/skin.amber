@@ -1607,6 +1607,7 @@
 				    	<onleft>56</onleft>
 					    <onright>56</onright>
 					    <onup condition="String.IsEmpty(Window.Property(gallery)) + !Skin.HasSetting(KioskMode.Enabled)">9000</onup>
+						<onup condition="String.IsEmpty(Window.Property(gallery)) + !Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onup>
                         <onup condition="String.IsEmpty(Window.Property(gallery)) + Skin.HasSetting(KioskMode.Enabled)">noop</onup>
                         <oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
 					    <onup condition="!String.IsEmpty(Window.Property(gallery))">ClearProperty(gallery)</onup>

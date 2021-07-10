@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-07-02 16:32+0000\n"
+"PO-Revision-Date: 2021-07-04 17:46+0000\n"
 "Last-Translator: bsoriano <bsoriano@gmail.com>\n"
 "Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/fi_fi/>\n"
 "Language: fi_fi\n"
@@ -1639,6 +1639,10 @@ msgstr "Oikea Lista"
 
 msgctxt "#31649"
 msgid "Decades"
+msgstr "Vuosikymmenet"
+
+msgctxt "#31650"
+msgid "Show Information Popup (after 3 seconds)"
 msgstr ""
 
 msgctxt "#31901"
@@ -3493,6 +3497,22 @@ msgstr "Erittäin Kompakti OSD"
 msgctxt "#32412"
 msgid "Alternate OSD Button Highlighting"
 msgstr "Vaihtoehtoinen OSD Painikkeen Korostus"
+
+msgctxt "#32413"
+msgid "Enabled"
+msgstr ""
+
+msgctxt "#32414"
+msgid "Disabled"
+msgstr ""
+
+msgctxt "#32415"
+msgid "Auto Play Trailer (Local Trailer Only)"
+msgstr ""
+
+msgctxt "#32416"
+msgid "Auto Play Trailer Delay"
+msgstr ""
 
 #~ msgctxt "#32232"
 #~ msgid "Main Rating"

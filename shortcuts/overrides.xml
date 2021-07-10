@@ -350,6 +350,7 @@
 	<!-- Widget 3 Limit -->
 	<property property="widgetLimit.3" label="5 ">$NUMBER[5]</property>
 	<property property="widgetLimit.3" label="10 ">$NUMBER[10]</property>
+	<property property="widgetLimit.3" label="15 ">$NUMBER[15]</property>
 	<property property="widgetLimit.3" label="25 ">$NUMBER[25]</property>
 	<property property="widgetLimit.3" label="50 ">$NUMBER[50]</property>
 	<property property="widgetLimit.3" label="100 ">$NUMBER[100]</property>
@@ -666,6 +667,13 @@
     <propertyfallback property="widgetContent.4">default</propertyfallback>
     <propertyfallback property="widgetContent.5">default</propertyfallback>
     <propertyfallback property="widgetContent.6">default</propertyfallback>
+	<!-- Show Info Popup is false by default -->
+	<propertyfallback property="doInfoPopup">false</propertyfallback>
+	<propertyfallback property="doInfoPopup.2">false</propertyfallback>
+	<propertyfallback property="doInfoPopup.3">false</propertyfallback>
+	<propertyfallback property="doInfoPopup.4">false</propertyfallback>
+	<propertyfallback property="doInfoPopup.5">false</propertyfallback>
+	<propertyfallback property="doInfoPopup.6">false</propertyfallback>
 
     <!-- GROUPINGS -->
     <!-- Main Grouping -->
@@ -1268,6 +1276,7 @@
 	<onback to="800">3008</onback>
 	<onback to="800">3009</onback>
 	<onback to="800">3010</onback>
+	<onback to="800">3011</onback>
 
 	<onback to="801">4312</onback>
 	<onback to="801">4001</onback>
@@ -1280,6 +1289,7 @@
 	<onback to="801">4008</onback>
 	<onback to="801">4009</onback>
 	<onback to="801">4010</onback>
+	<onback to="801">4011</onback>
 
 	<onback to="802">5312</onback>
 	<onback to="802">5001</onback>
@@ -1292,6 +1302,7 @@
 	<onback to="802">5008</onback>
 	<onback to="802">5009</onback>
 	<onback to="802">5010</onback>
+	<onback to="802">5011</onback>
 
 	<onback to="803">6312</onback>
 	<onback to="803">6001</onback>
@@ -1304,6 +1315,7 @@
 	<onback to="803">6008</onback>
 	<onback to="803">6009</onback>
 	<onback to="803">6010</onback>
+	<onback to="803">6011</onback>
 
 	<onback to="804">7312</onback>
 	<onback to="804">7001</onback>
@@ -1316,6 +1328,7 @@
 	<onback to="804">7008</onback>
 	<onback to="804">7009</onback>
 	<onback to="804">7010</onback>
+	<onback to="804">7011</onback>
 
 	<onback to="805">8312</onback>
 	<onback to="805">8001</onback>
@@ -1328,5 +1341,6 @@
 	<onback to="805">8008</onback>
 	<onback to="805">8009</onback>
 	<onback to="805">8010</onback>
+	<onback to="805">8011</onback>
 
 </overrides>

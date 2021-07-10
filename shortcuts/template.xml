@@ -25,6 +25,7 @@
 			<onup condition="$PYTHON[$SKINSHORTCUTS[onup4]]">SetFocus(1600$SKINSHORTCUTS[id]4)</onup>
 			<onup condition="$PYTHON[$SKINSHORTCUTS[onup5]]">SetFocus(1600$SKINSHORTCUTS[id]5)</onup>
 			<onup condition="$PYTHON[$SKINSHORTCUTS[onup6]]">SetFocus(1600$SKINSHORTCUTS[id]6)</onup>
+			<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
 		</controls>
 	</other>
     
@@ -587,6 +588,7 @@
 		<property name="widgetlow1" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="artwork1" tag="property" attribute="name|widgetArtwork" />
 		<property name="labelscroll1" tag="property" attribute="name|widgetLabelScroll" />
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		
         <!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.2" value="none">false</property>
@@ -765,6 +767,7 @@
 					<onclick condition="String.IsEqual(ListItem.DBType,season)">ActivateWindow(Videos,videodb://tvshows/titles/$INFO[ListItem.Property(TVShowID)]/$INFO[ListItem.Property(Season)]/?tvshowid=$INFO[ListItem.Property(TVShowID)])</onclick>
                     <onup condition="$SKINSHORTCUTS[onup]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],2,home)</onup>
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]2)</onup>
+					<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -801,6 +804,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon1]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare1]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb1]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content1]" condition="!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)">
@@ -833,6 +837,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon1]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare1]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb1]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
 					
                     <content>
@@ -874,6 +879,8 @@
 		<property name="artwork2" tag="property" attribute="name|widgetArtwork.2" />
 		<property name="widgetlow2" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="labelscroll2" tag="property" attribute="name|widgetLabelScroll.2" />
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
+		
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.3" value="none">false</property>
 		<property name="onup">true</property>
@@ -1050,6 +1057,7 @@
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]3)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
+					<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -1086,6 +1094,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon2]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare2]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb2]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content2]" condition="!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)">
@@ -1118,6 +1127,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon2]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare2]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb2]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
 					
                     <content>
@@ -1160,6 +1170,8 @@
 		<property name="artwork3" tag="property" attribute="name|widgetArtwork.3" />
 		<property name="widgetlow3" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="labelscroll3" tag="property" attribute="name|widgetLabelScroll.3" />
+		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
+		
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.4" value="none">false</property>
 		<property name="onup">true</property>
@@ -1335,6 +1347,7 @@
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]4)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
+					<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -1371,6 +1384,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon3]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare3]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb3]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content3]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)]">
@@ -1403,6 +1417,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon3]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare3]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb3]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 					</include>
                     
 					<content>
@@ -1444,6 +1459,8 @@
 		<property name="artwork4" tag="property" attribute="name|widgetArtwork.4" />
 		<property name="widgetlow4" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="labelscroll4" tag="property" attribute="name|widgetLabelScroll.4" />
+		<property name="doInfoPopup4" tag="property" attribute="name|doInfoPopup.4" />
+		
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.5" value="none">false</property>
 		<property name="onup">true</property>
@@ -1753,6 +1770,7 @@
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]5)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
+					<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -1788,6 +1806,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon4]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare4]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb4]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup4]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content4]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)]">
 						<param name="id1">1600$SKINSHORTCUTS[id]4</param>
@@ -1819,6 +1838,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon4]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare4]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb4]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup4]</param>
 					</include>
                     <content>
 						<item>
@@ -1859,6 +1879,8 @@
 		<property name="artwork5" tag="property" attribute="name|widgetArtwork.5" />
 		<property name="widgetlow5" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="labelscroll5" tag="property" attribute="name|widgetLabelScroll.5" />
+		<property name="doInfoPopup5" tag="property" attribute="name|doInfoPopup.5" />
+		
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.6" value="none">false</property>
 		<property name="onup">true</property>
@@ -2170,6 +2192,7 @@
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]6)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
+					<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -2205,6 +2228,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon5]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare5]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb5]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup5]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content5]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)]">
 						<param name="id1">1600$SKINSHORTCUTS[id]5</param>
@@ -2236,6 +2260,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon5]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare5]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb5]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup5]</param>
 					</include>
                     <content>
 						<item>
@@ -2277,6 +2302,7 @@
 		<property name="artwork6" tag="property" attribute="name|widgetArtwork.6" />
 		<property name="widgetlow6" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="labelscroll6" tag="property" attribute="name|widgetLabelScroll.6" />
+		<property name="doInfoPopup6" tag="property" attribute="name|doInfoPopup.6" />
 		
 		<!-- Always navigate to widget 1 from here, so set onup to false -->
 		<property name="onup">false</property>
@@ -2587,6 +2613,7 @@
 					<onclick condition="String.IsEqual(ListItem.DBType,season)">ActivateWindow(Videos,videodb://tvshows/titles/$INFO[ListItem.Property(TVShowID)]/$INFO[ListItem.Property(Season)]/?tvshowid=$INFO[ListItem.Property(TVShowID)])</onclick>
 					<onup>ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup>SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
+					<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -2622,6 +2649,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon6]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare6]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb6]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup6]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content6]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)]">
 						<param name="id1">1600$SKINSHORTCUTS[id]6</param>
@@ -2653,6 +2681,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon6]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare6]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb6]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup6]</param>
 					</include>
                     <content>
 						<item>
@@ -2692,6 +2721,7 @@
 		<property name="widgetlow" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="double1" tag="property" attribute="name|widgetDouble" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget" />
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
         <!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.2" value="none">false</property>
 		<property name="onup">true</property>
@@ -2846,6 +2876,7 @@
 						<param name="textbackheight">$PYTHON[$SKINSHORTCUTS[textbackheight1]]</param>
 						<param name="isTripleRowLarge">$SKINSHORTCUTS[triplelarge]</param>
 						<param name="isTripleRow">$SKINSHORTCUTS[triple1]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content1]" condition="[Skin.HasSetting(Enable.BottomShortcuts) + !Skin.HasSetting(VerticalHome)] + $PYTHON[type1 in 'nextaired' or type1 in 'swrecommendedeps']">
@@ -2861,6 +2892,7 @@
 						<param name="textbackheight">74</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content1]" condition="[Skin.HasSetting(Enable.BottomShortcuts) + !Skin.HasSetting(VerticalHome)] + $PYTHON[type1 in 'system' or type1 in 'favouriteaddons' or type1 in 'favourite' or type1 in 'weatherdaily' or type1 in 'weatherhourly' or type1 in 'shortweatherdaily' or type1 in 'shortweatherhourly']">
@@ -2876,6 +2908,7 @@
 						<param name="textbackheight">74</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
 					
                     <content>
@@ -2914,6 +2947,7 @@
 		<property name="double2" tag="property" attribute="name|widgetDouble.2" />
         <property name="widgetlow" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.2" />
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.3" value="none">false</property>
 		<property name="onup">true</property>
@@ -3069,6 +3103,7 @@
 						<param name="textbackheight">$PYTHON[$SKINSHORTCUTS[textbackheight2]]</param>
 						<param name="isTripleRowLarge">$SKINSHORTCUTS[triplelarge]</param>
 						<param name="isTripleRow">$SKINSHORTCUTS[triple2]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content2]" condition="[Skin.HasSetting(Enable.BottomShortcuts) + !Skin.HasSetting(VerticalHome)] + $PYTHON[type2 in 'nextaired' or type2 in 'swrecommendedeps']">
@@ -3084,6 +3119,7 @@
 						<param name="textbackheight">74</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content2]" condition="[Skin.HasSetting(Enable.BottomShortcuts) + !Skin.HasSetting(VerticalHome)] + $PYTHON[type2 in 'system' or type2 in 'favouriteaddons' or type2 in 'favourite' or type2 in 'weatherdaily' or type2 in 'weatherhourly' or type2 in 'shortweatherdaily' or type2 in 'shortweatherhourly']">
@@ -3099,6 +3135,7 @@
 						<param name="textbackheight">74</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
 					
                     <content>
@@ -3137,8 +3174,9 @@
 		<property name="triple3" tag="property" attribute="name|widgetTriple.3" />
 		<property name="double3" tag="property" attribute="name|widgetDouble.3" />
         <property name="widgetlow" tag="property" attribute="name|horizontalWidgetPos" />  
-        <property name="shortstatic" tag="property" attribute="name|shortStaticWidget.3" />		
-	   <!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
+        <property name="shortstatic" tag="property" attribute="name|shortStaticWidget.3" />	
+        <property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />		
+	    <!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.4" value="none">false</property>
 		<property name="onup">true</property>
 		<!-- Top -->
@@ -3293,6 +3331,7 @@
 						<param name="textbackheight">$PYTHON[$SKINSHORTCUTS[textbackheight3]]</param>
 						<param name="isTripleRowLarge">$SKINSHORTCUTS[triplelarge]</param>
 						<param name="isTripleRow">$SKINSHORTCUTS[triple3]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content3]" condition="[Skin.HasSetting(Enable.BottomShortcuts) + !Skin.HasSetting(VerticalHome)] + $PYTHON[type3 in 'nextaired' or type3 in 'swrecommendedeps']">
@@ -3308,6 +3347,7 @@
 						<param name="textbackheight">74</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content3]" condition="[Skin.HasSetting(Enable.BottomShortcuts) + !Skin.HasSetting(VerticalHome)] + $PYTHON[type3 in 'system' or type3 in 'favouriteaddons' or type3 in 'favourite' or type3 in 'weatherdaily' or type3 in 'weatherhourly' or type3 in 'shortweatherdaily' or type3 in 'shortweatherhourly']">
@@ -3323,6 +3363,7 @@
 						<param name="textbackheight">74</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 					</include>
 				
                     <content>
@@ -3362,6 +3403,7 @@
 		<property name="triple4" tag="property" attribute="name|widgetTriple.4" />
 		<property name="double4" tag="property" attribute="name|widgetDouble.4" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.4" />
+		<property name="doInfoPopup4" tag="property" attribute="name|doInfoPopup.4" />
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.5" value="none">false</property>
 		<property name="onup">true</property>
@@ -3537,6 +3579,7 @@
 						<param name="textbackheight">$PYTHON[$SKINSHORTCUTS[textbackheight4]]</param>
 						<param name="isTripleRowLarge">$SKINSHORTCUTS[triplelarge]</param>
 						<param name="isTripleRow">$SKINSHORTCUTS[triple4]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup4]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content4]" condition="[Skin.HasSetting(Enable.BottomShortcuts) + !Skin.HasSetting(VerticalHome)] + $PYTHON[type4 in 'nextaired' or type4 in 'swrecommendedeps']">
@@ -3552,6 +3595,7 @@
 						<param name="textbackheight">74</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup4]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content4]" condition="[Skin.HasSetting(Enable.BottomShortcuts) + !Skin.HasSetting(VerticalHome)] + $PYTHON[type4 in 'system' or type4 in 'favouriteaddons' or type4 in 'favourite' or type4 in 'weatherdaily' or type4 in 'weatherhourly' or type4 in 'shortweatherdaily' or type4 in 'shortweatherhourly']">
@@ -3567,6 +3611,7 @@
 						<param name="textbackheight">74</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup4]</param>
 					</include>
                     
 					<content>
@@ -3607,6 +3652,7 @@
 		<property name="triple5" tag="property" attribute="name|widgetTriple.5" />
 		<property name="double5" tag="property" attribute="name|widgetDouble.5" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.5" />
+		<property name="doInfoPopup5" tag="property" attribute="name|doInfoPopup.5" />
         <!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.6" value="none">false</property>
 		<property name="onup">true</property>
@@ -3782,6 +3828,7 @@
 						<param name="textbackheight">$PYTHON[$SKINSHORTCUTS[textbackheight5]]</param>
 						<param name="isTripleRowLarge">$SKINSHORTCUTS[triplelarge]</param>
 						<param name="isTripleRow">$SKINSHORTCUTS[triple5]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup5]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content5]" condition="[Skin.HasSetting(Enable.BottomShortcuts) + !Skin.HasSetting(VerticalHome)] + $PYTHON[type5 in 'nextaired' or type5 in 'swrecommendedeps']">
@@ -3797,6 +3844,7 @@
 						<param name="textbackheight">74</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup5]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content5]" condition="[Skin.HasSetting(Enable.BottomShortcuts) + !Skin.HasSetting(VerticalHome)] + $PYTHON[type5 in 'system' or type5 in 'favouriteaddons' or type5 in 'favourite' or type5 in 'weatherdaily' or type5 in 'weatherhourly' or type5 in 'shortweatherdaily' or type5 in 'shortweatherhourly']">
@@ -3812,6 +3860,7 @@
 						<param name="textbackheight">74</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup5]</param>
 					</include>
 					
                     <content>
@@ -3853,6 +3902,7 @@
 		<property name="triple6" tag="property" attribute="name|widgetTriple.6" />
 		<property name="double6" tag="property" attribute="name|widgetDouble.6" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.6" />
+		<property name="doInfoPopup6" tag="property" attribute="name|doInfoPopup.6" />
 		<!-- Top -->
 		<property name="top" propertyValue="10">
 	        <rule tag="property" attribute="name|horizontalWidgetPos" value="High" />
@@ -4023,6 +4073,7 @@
 						<param name="textbackheight">$PYTHON[$SKINSHORTCUTS[textbackheight6]]</param>
 						<param name="isTripleRowLarge">$SKINSHORTCUTS[triplelarge]</param>
 						<param name="isTripleRow">$SKINSHORTCUTS[triple6]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup6]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content6]" condition="[Skin.HasSetting(Enable.BottomShortcuts) + !Skin.HasSetting(VerticalHome)] + $PYTHON[type6 in 'nextaired' or type6 in 'swrecommendedeps']">
@@ -4038,6 +4089,7 @@
 						<param name="textbackheight">74</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup6]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content6]" condition="[Skin.HasSetting(Enable.BottomShortcuts) + !Skin.HasSetting(VerticalHome)] + $PYTHON[type6 in 'system' or type6 in 'favouriteaddons' or type6 in 'favourite' or type6 in 'weatherdaily' or type6 in 'weatherhourly' or type6 in 'shortweatherdaily' or type6 in 'shortweatherhourly']">
@@ -4053,6 +4105,7 @@
 						<param name="textbackheight">74</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleRow">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup6]</param>
 					</include>
 					
                     <content>
@@ -4347,6 +4400,7 @@
 		<property name="widgetlow1" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="artwork1" tag="property" attribute="name|widgetArtwork" />
 		<property name="labelscroll1" tag="property" attribute="name|widgetLabelScroll" />
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		
 		<property name="top" propertyValue="703">
 	        <rule tag="property" attribute="name|horizontalWidgetPos" value="Low" />
@@ -4690,6 +4744,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon1]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare1]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb1]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
                     <content>
 						<item>
@@ -4726,6 +4781,7 @@
 		<property name="widgetlow2" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="artwork2" tag="property" attribute="name|widgetArtwork.2" />
         <property name="labelscroll2" tag="property" attribute="name|widgetLabelScroll.2" />
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		
 		<!-- Top when both widgets have items -->
 		<!-- Both widgets are small -->
@@ -4893,6 +4949,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon2]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare2]</param>
                         <param name="isThumb">$SKINSHORTCUTS[isthumb2]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
                     <content>
 						<item>
@@ -4929,6 +4986,7 @@
 		<property name="sortorder1" tag="property" attribute="name|widgetSortOrder" />
 		<property name="limit1" tag="property" attribute="name|widgetLimit" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget" />
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		
 		<!-- Top when only widget 1 has items -->
 		<!-- Widgets in standard position -->
@@ -5035,6 +5093,7 @@
                         <param name="aspect">$SKINSHORTCUTS[aspect1]</param>
                         <param name="labelvisibility">$SKINSHORTCUTS[labelvisibility1]</param>
                         <param name="textboxvisibility">$SKINSHORTCUTS[textboxvisibility1]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
                     <content>
 						<item>
@@ -5067,6 +5126,7 @@
 		<property name="sortorder2" tag="property" attribute="name|widgetSortOrder.2" />
 		<property name="limit2" tag="property" attribute="name|widgetLimit.2" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.2" />
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		
 		<!-- Top when both widgets have items -->
 		<!-- Widget 1 is small -->
@@ -5146,6 +5206,7 @@
                         <param name="aspect">$SKINSHORTCUTS[aspect2]</param>
                         <param name="labelvisibility">$SKINSHORTCUTS[labelvisibility2]</param>
                         <param name="textboxvisibility">$SKINSHORTCUTS[textboxvisibility2]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
                     <content>
 						<item>
@@ -7184,6 +7245,7 @@
 		<property name="artwork1" tag="property" attribute="name|widgetArtwork" />
 		<property name="widgetlow" tag="property" attribute="name|horizontalWidgetPos" />
         <property name="labelscroll1" tag="property" attribute="name|widgetLabelScroll" />
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 	   <!-- Panel height -->
 		<property name="panelheight" tag="property" attribute="name|widgetType.2" value="none">315</property>
 		<property name="panelheight" tag="property" attribute="name|widgetType.3" value="none">315</property>
@@ -8491,6 +8553,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon1]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare1]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb1]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content1]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)]">
 						<param name="id1">1600$SKINSHORTCUTS[id]1</param>
@@ -8524,6 +8587,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon1]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare1]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb1]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
                     <content>
 						<item>
@@ -8559,7 +8623,8 @@
 		<property name="sortorder2" tag="property" attribute="name|widgetSortOrder.2" />
 		<property name="limit2" tag="property" attribute="name|widgetLimit.2" />
 		<property name="artwork2" tag="property" attribute="name|widgetArtwork.2" />
-        <property name="labelscroll2" tag="property" attribute="name|widgetLabelScroll.2" />       
+        <property name="labelscroll2" tag="property" attribute="name|widgetLabelScroll.2" />
+        <property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />		
 	   <!-- Panel height -->
 		<property name="panelheight" tag="property" attribute="name|widgetType.3" value="none">315</property>
 		<property name="panelheight">220</property>
@@ -9423,6 +9488,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon2]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare2]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb2]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content2]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)]">
 						<param name="id1">1600$SKINSHORTCUTS[id]2</param>
@@ -9456,6 +9522,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon2]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare2]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb2]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
                     <content>
 						<item>
@@ -9492,6 +9559,7 @@
 		<property name="limit3" tag="property" attribute="name|widgetLimit.3" />
 		<property name="artwork3" tag="property" attribute="name|widgetArtwork.3" />
         <property name="labelscroll3" tag="property" attribute="name|widgetLabelScroll.3" />
+		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		<!-- Panel height -->
 		<property name="panelheight" tag="property" attribute="name|widgetType.2" value="none">315</property>
 		<property name="panelheight">220</property>
@@ -9973,6 +10041,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon3]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare3]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb3]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content3]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)]">
 						<param name="id1">1600$SKINSHORTCUTS[id]3</param>
@@ -10006,6 +10075,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon3]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare3]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb3]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 					</include>
                     <content>
 						<item>
@@ -10046,6 +10116,7 @@
 		<property name="limit1" tag="property" attribute="name|widgetLimit" />
 		<property name="widgetlow" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget" />
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		<!-- Panel height -->
 		<property name="panelheight" tag="property" attribute="name|widgetType.2" value="none">315</property>
 		<property name="panelheight" tag="property" attribute="name|widgetType.3" value="none">315</property>
@@ -10276,6 +10347,7 @@
 						<param name="isTripleRow">true</param>
 						<param name="isTripleRowLarge">$SKINSHORTCUTS[isTripleRowLarge1]</param>
 						<param name="isTripleShelvesTogether">true</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content1]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)] + $PYTHON[type1 in 'nextaired' or type1 in 'swrecommendedeps']">
 						<param name="id1">1600$SKINSHORTCUTS[id]1</param>
@@ -10292,6 +10364,7 @@
 						<param name="isTripleRow">false</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleShelvesTogether">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content1]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)] + !$PYTHON[type1 in 'nextaired' or type1 in 'swrecommendedeps']">
 						<param name="id1">1600$SKINSHORTCUTS[id]1</param>
@@ -10308,6 +10381,7 @@
 						<param name="isTripleRow">false</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleShelvesTogether">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
                     <content>
 						<item>
@@ -10343,6 +10417,7 @@
 		<property name="limit2" tag="property" attribute="name|widgetLimit.2" />
 		<property name="widgetlow" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.2" />
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		<!-- Panel height -->
 		<property name="panelheight" tag="property" attribute="name|widgetType.3" value="none">315</property>
 		<property name="panelheight">220</property>
@@ -10453,6 +10528,7 @@
 						<param name="isTripleRow">true</param>
 						<param name="isTripleRowLarge">$SKINSHORTCUTS[isTripleRowLarge2]</param>
 						<param name="isTripleShelvesTogether">true</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content2]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)] + $PYTHON[type2 in 'nextaired' or type2 in 'swrecommendedeps']">
 						<param name="id1">1600$SKINSHORTCUTS[id]2</param>
@@ -10469,6 +10545,7 @@
 						<param name="isTripleRow">false</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleShelvesTogether">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content2]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)] + !$PYTHON[type2 in 'nextaired' or type2 in 'swrecommendedeps']">
 						<param name="id1">1600$SKINSHORTCUTS[id]2</param>
@@ -10485,6 +10562,7 @@
 						<param name="isTripleRow">false</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleShelvesTogether">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
                     <content>
 						<item>
@@ -10519,6 +10597,7 @@
 		<property name="sortorder3" tag="property" attribute="name|widgetSortOrder.3" />
 		<property name="limit3" tag="property" attribute="name|widgetLimit.3" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.3" />
+		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		<!-- Panel height -->
 		<property name="panelheight" tag="property" attribute="name|widgetType.2" value="none">315</property>
 		<property name="panelheight">220</property>
@@ -10614,6 +10693,7 @@
 						<param name="isTripleRow">true</param>
 						<param name="isTripleRowLarge">$SKINSHORTCUTS[isTripleRowLarge3]</param>
 						<param name="isTripleShelvesTogether">true</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content3]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)] + $PYTHON[type3 in 'nextaired' or type3 in 'swrecommendedeps']">
 						<param name="id1">1600$SKINSHORTCUTS[id]3</param>
@@ -10630,6 +10710,7 @@
 						<param name="isTripleRow">false</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleShelvesTogether">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content3]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)] + !$PYTHON[type3 in 'nextaired' or type3 in 'swrecommendedeps']">
 						<param name="id1">1600$SKINSHORTCUTS[id]3</param>
@@ -10646,6 +10727,7 @@
 						<param name="isTripleRow">false</param>
 						<param name="isTripleRowLarge">false</param>
 						<param name="isTripleShelvesTogether">false</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 					</include>
                     <content>
 						<item>
@@ -11997,6 +12079,7 @@
 		<property name="limit1" tag="property" attribute="name|widgetLimit" />
 		<property name="artwork1" tag="property" attribute="name|widgetArtwork" />
 		<property name="labelscroll1" tag="property" attribute="name|widgetLabelScroll" />
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		
 		<!-- Panel top -->
 		<!-- Only widget 1 has items -->
@@ -12418,6 +12501,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon1]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare1]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb1]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
                     <content>
 						<item>
@@ -12454,6 +12538,7 @@
 		<property name="limit2" tag="property" attribute="name|widgetLimit.2" />
         <property name="artwork2" tag="property" attribute="name|widgetArtwork.2" />
 		<property name="labelscroll2" tag="property" attribute="name|widgetLabelScroll.2" />
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		
 		<!-- Panel top -->
 		
@@ -12812,6 +12897,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon2]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare2]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb2]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
                     <content>
 						<item>
@@ -12848,6 +12934,7 @@
 		<property name="limit3" tag="property" attribute="name|widgetLimit.3" />
         <property name="artwork3" tag="property" attribute="name|widgetArtwork.3" />
 		<property name="labelscroll3" tag="property" attribute="name|widgetLabelScroll.3" />
+		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		
 		<!-- Panel top -->
 		<!-- Widgets 1 and 3 have items, widget 2 does not -->
@@ -13137,6 +13224,7 @@
 						<param name="isWideIcon">$SKINSHORTCUTS[iswideicon3]</param>
 						<param name="isSquare">$SKINSHORTCUTS[issquare3]</param>
 						<param name="isThumb">$SKINSHORTCUTS[isthumb3]</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 					</include>
                     <content>
 						<item>
@@ -13176,6 +13264,7 @@
 		<property name="sortorder1" tag="property" attribute="name|widgetSortOrder" />
 		<property name="limit1" tag="property" attribute="name|widgetLimit" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget" />
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
         <!-- Itemlayout/Focusedlayout Height/Width -->
 		<property name="layoutheight">315</property>
 		<property name="layoutwidth">228</property>
@@ -13371,6 +13460,7 @@
 						<param name="layoutwidth">$SKINSHORTCUTS[layoutwidth]</param>
 						<param name="isTripleRow">true</param>
 						<param name="isTripleRowLarge">true</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 					</include>
                     <content>
 						<item>
@@ -13405,6 +13495,7 @@
 		<property name="sortorder2" tag="property" attribute="name|widgetSortOrder.2" />
 		<property name="limit2" tag="property" attribute="name|widgetLimit.2" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.2" />
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		<!-- Itemlayout/Focusedlayout Height/Width -->
 		<property name="layoutheight">315</property>
 		<property name="layoutwidth">228</property>
@@ -13499,6 +13590,7 @@
 						<param name="layoutwidth">$SKINSHORTCUTS[layoutwidth]</param>
 						<param name="isTripleRow">true</param>
 						<param name="isTripleRowLarge">true</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 					</include>
                     <content>
 						<item>
@@ -13533,6 +13625,7 @@
 		<property name="sortorder3" tag="property" attribute="name|widgetSortOrder.3" />
 		<property name="limit3" tag="property" attribute="name|widgetLimit.3" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.3" />
+		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		<!-- Itemlayout/Focusedlayout Height/Width -->
 		<property name="layoutheight">315</property>
 		<property name="layoutwidth">228</property>
@@ -13606,6 +13699,7 @@
 						<param name="layoutwidth">$SKINSHORTCUTS[layoutwidth]</param>
 						<param name="isTripleRow">true</param>
 						<param name="isTripleRowLarge">true</param>
+						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 					</include>
                     <content>
 						<item>
@@ -15346,7 +15440,8 @@
         </property>
 		<property name="showOverlay">true</property>
 		
-		<property name="artworkheightbig" tag="property" attribute="name|widgetArtwork.3" value="Poster|Square|FanArt|Landscape|ClearArt|Thumb">315</property>
+		<property name="artworkheightbig" tag="property" attribute="name|widgetArtwork.3" value="Poster|Square">315</property>
+		<property name="artworkheightbig" tag="property" attribute="name|widgetArtwork.3" value="FanArt|Landscape|ClearArt|Thumb">211.5</property>
 		<property name="artworkheightbig" tag="property" attribute="name|widgetArtwork.3" value="ClearLogo">157</property>
 		<property name="artworkheightbig" tag="property" attribute="name|widgetArtwork.3" value="DiscArt|CharacterArt">295</property>
 		<property name="artworkheightmed" tag="property" attribute="name|widgetArtwork.3" value="Poster|Square|FanArt|Landscape|ClearArt|Thumb">252</property>
@@ -15356,7 +15451,7 @@
 		<property name="artworkheightsmall" tag="property" attribute="name|widgetArtwork.3" value="ClearLogo">109</property>
 		<property name="artworkheightsmall" tag="property" attribute="name|widgetArtwork.3" value="DiscArt|CharacterArt">215</property>
 		
-		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.3" value="FanArt|Landscape|ClearArt|Thumb">500</property>
+		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.3" value="FanArt|Landscape|ClearArt|Thumb">376</property>
 		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.3" value="Poster">228</property>
 		<property name="artworkwidthbig" propertyValue="228">
 	        <rule tag="property" attribute="name|widgetArtwork.3" value="Square" />

@@ -97,6 +97,7 @@
 		<onleft>9001</onleft>
         <include condition="!Skin.HasSetting(Hide.AllShelves)">skinshortcuts-template-ShelfOnRightMainMenu</include>
 		<onback>9001</onback>
+		<onfocus>ClearProperty(ShowWidgetPopup,Home)</onfocus>
 		<pagecontrol></pagecontrol>
 		<include condition="!Skin.HasSetting(StaticVerticalHome) + !Skin.HasSetting(VerticalFirst)">NonStaticSettings</include>
 		<include condition="!Skin.HasSetting(StaticVerticalHome) + Skin.HasSetting(VerticalFirst)">NonStaticSettingsFirst</include>
@@ -142,6 +143,7 @@
 		<onleft>9001</onleft>
         <include condition="!Skin.HasSetting(Hide.AllShelves)">skinshortcuts-template-ShelfOnRightMainMenu</include>
 		<onback>9001</onback>
+		<onfocus>ClearProperty(ShowWidgetPopup,Home)</onfocus>
 		<pagecontrol></pagecontrol>
 		<include condition="!Skin.HasSetting(StaticVerticalHome) + !Skin.HasSetting(VerticalFirst)">NonStaticSettings</include>
 		<include condition="!Skin.HasSetting(StaticVerticalHome) + Skin.HasSetting(VerticalFirst)">NonStaticSettingsFirst</include>
@@ -225,6 +227,7 @@
 			<onup>9001</onup>
 			<ondown>9001</ondown>
 			<onback>300</onback>
+			<onfocus>ClearProperty(ShowWidgetPopup,Home)</onfocus>
 			<itemlayout width="400" height="60">
 				<control type="image">
 					<width>400</width>
@@ -278,6 +281,7 @@
 			<onup>9001</onup>
 			<ondown>9001</ondown>
 			<onback>300</onback>
+			<onfocus>ClearProperty(ShowWidgetPopup,Home)</onfocus>
 			<itemlayout height="120" width="120">
 			    <control type="image">
 			        <posx>0</posx>

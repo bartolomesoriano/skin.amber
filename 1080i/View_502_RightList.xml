@@ -957,7 +957,8 @@
 		<ondown>502</ondown>
 		<pagecontrol>6502</pagecontrol>
         <onleft condition="!Skin.HasSetting(KioskMode.Enabled)">9000</onleft>
-        <onleft condition="Skin.HasSetting(KioskMode.Enabled)">noop</onleft>
+        <onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
+		<onleft condition="Skin.HasSetting(KioskMode.Enabled)">noop</onleft>
         <oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
         <onright condition="!Control.IsVisible(615) | [Control.IsVisible(615) + Control.IsVisible(6502)]">6502</onright>
 		<onright condition="Control.IsVisible(615)">615</onright>
@@ -980,7 +981,7 @@
 				<include>Dimensions_Fullscreen</include>
 				<texture>colors/black.png</texture>
 				<animation effect="fade" start="0" end="40" time="320">Visible</animation>
-				<visible>[String.IsEqual(Skin.String(RightListInfoPopup.Delay),2) + System.IdleTime(2) | String.IsEqual(Skin.String(RightListInfoPopup.Delay),3) + System.IdleTime(3) | String.IsEqual(Skin.String(RightListInfoPopup.Delay),4) + System.IdleTime(4) | String.IsEqual(Skin.String(RightListInfoPopup.Delay),5) + System.IdleTime(5)] + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(sets)]</visible>
+				<visible>[[String.IsEqual(Skin.String(RightListInfoPopup.Delay),2) + System.IdleTime(2)] | [String.IsEqual(Skin.String(RightListInfoPopup.Delay),3) + System.IdleTime(3)] | [String.IsEqual(Skin.String(RightListInfoPopup.Delay),4) + System.IdleTime(4)] | [String.IsEqual(Skin.String(RightListInfoPopup.Delay),5) + System.IdleTime(5)]] + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(sets)]</visible>
 			</control>
 			<control type="group" id="14000">
 				<top>254</top>
@@ -1411,6 +1412,7 @@
 		                    <itemgap>20</itemgap>
 		                    <orientation>horizontal</orientation>
 		                    <align>left</align>
+							<usecontrolcoords>true</usecontrolcoords>
 		                    <include content="MediaFlagItems">
 			                    <param name="itemwidth">100</param>
 		                        <param name="itemheight">90</param>
@@ -1431,6 +1433,7 @@
 		                    <itemgap>20</itemgap>
 		                    <orientation>horizontal</orientation>
 		                    <align>left</align>
+							<usecontrolcoords>true</usecontrolcoords>
 		                    <include content="MediaFlagItems">
 			                    <param name="itemwidth">100</param>
 		                        <param name="itemheight">90</param>
@@ -1469,7 +1472,7 @@
 					    <left>35</left>
 		                <width>850</width>
 		                <height>95</height>
-		                <itemgap>10</itemgap>
+		                <itemgap>20</itemgap>
 		                <orientation>horizontal</orientation>
 		                <align>left</align>
 		                <include content="MediaFlagItems">

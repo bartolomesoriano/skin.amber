@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">10</defaultcontrol>
-    <views>10</views>
+    <onload>ClearProperty(MediaMenu,Home)</onload>
+	<views>10</views>
     <controls>
         <include>DefaultBackground</include>
         <include content="BackgroundOverlay">
@@ -46,7 +47,6 @@
         </control>
         <include>PVRChannelNumberInput</include>
 		<include>PVRSideBlade</include>
-        <include>TouchButtons</include>
         <control type="scrollbar" id="60">
             <visible>Control.IsVisible(10)</visible>
             <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
@@ -64,6 +64,7 @@
             <orientation>vertical</orientation>
             <onleft>10</onleft>
             <onright condition="!Skin.HasSetting(KioskMode.Enabled)">9000</onright>
+			<onright condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onright>
             <onright condition="Skin.HasSetting(KioskMode.Enabled)">10</onright>
         </control>
         <control type="label" id="29">

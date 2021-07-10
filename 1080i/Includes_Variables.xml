@@ -611,8 +611,8 @@
     </variable>
 
     <variable name="MusicPlayingFanartLabel2" description="Label2 for music playing FA">
-        <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[449]</value>
-        <value>$LOCALIZE[13113]</value>
+        <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[32413]</value>
+        <value>$LOCALIZE[32414]</value>
     </variable>
 
     <variable name="MusicRepeat" description="Image to display in MusicOSD">
@@ -1885,6 +1885,12 @@
 		<value>2 $LOCALIZE[32047]</value>
 	</variable>
 	
+	<variable name="MediaViewsTrailerDelayLabelVar">
+		<value condition="Skin.String(StartTrailerDelay,five)">5 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartTrailerDelay,ten)">10 $LOCALIZE[32047]</value>
+		<value>5 $LOCALIZE[32047]</value>
+	</variable>
+	
 	<variable name="PVRGuideIcon">
 	    <value condition="!String.IsEmpty(ListItem.EPGEventIcon)">$INFO[ListItem.EPGEventIcon]</value>
 	    <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Fanart))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Fanart)]</value>
@@ -2000,20 +2006,23 @@
 	<expression name="isSpecialContent">[Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(tags) | Container.Content(actors) | 
 	                                     Container.Content(directors) | Container.Content(years) | Container.Content(countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]</expression>
 										 
-	<expression name="ContainerIsHDR">[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)] | 
-	                                  [[String.Contains(Container.ListItem.Filename,8bit) | String.Contains(Container.ListItem.Filename,8-bit)] | 
-									   [String.Contains(Container.ListItem.Filename,10bit) | String.Contains(Container.ListItem.Filename,10-bit)] | 
-									   [String.Contains(Container.ListItem.Filename,12bit) | String.Contains(Container.ListItem.Filename,12-bit)]]</expression>
+	<expression name="ContainerIsHDR">[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</expression>
 									   
-	<expression name="ListItemIsHDR">[String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)] | 
-	                                  [[String.Contains(ListItem.Filename,8bit) | String.Contains(ListItem.Filename,8-bit)] | 
-									   [String.Contains(ListItem.Filename,10bit) | String.Contains(ListItem.Filename,10-bit)] | 
-									   [String.Contains(ListItem.Filename,12bit) | String.Contains(ListItem.Filename,12-bit)]]</expression>
-									   
-	<expression name="PlayerIsHDR">[String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)] | 
-	                                  [[String.Contains(Player.Filename,8bit) | String.Contains(Player.Filename,8-bit)] | 
-									   [String.Contains(Player.Filename,10bit) | String.Contains(Player.Filename,10-bit)] | 
-									   [String.Contains(Player.Filename,12bit) | String.Contains(Player.Filename,12-bit)]]</expression>
+	<expression name="ListItemIsHDR">[String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)]</expression>
+	
+	<expression name="PlayerIsHDR">[String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</expression>
+	
+	<expression mame="ContainerIsBitDepth">[String.Contains(Container.ListItem.FileNameAndPath,8bit) | String.Contains(Container.ListItem.FileNameAndPath,8-bit)] | 
+									       [String.Contains(Container.ListItem.FileNameAndPath,10bit) | String.Contains(Container.ListItem.FileNameAndPath,10-bit)] | 
+									       [String.Contains(Container.ListItem.FileNameAndPath,12bit) | String.Contains(Container.ListItem.FileNameAndPath,12-bit)]</expression>
+										   
+	<expression mame="ListItemIsBitDepth">[String.Contains(ListItem.FileNameAndPath,8bit) | String.Contains(ListItem.FileNameAndPath,8-bit)] | 
+									       [String.Contains(ListItem.FileNameAndPath,10bit) | String.Contains(ListItem.FileNameAndPath,10-bit)] | 
+									       [String.Contains(ListItem.FileNameAndPath,12bit) | String.Contains(ListItem.FileNameAndPath,12-bit)]</expression>
+										   
+	<expression mame="PlayerIsBitDepth">[String.Contains(Player.FileNameAndPath,8bit) | String.Contains(Player.FileNameAndPath,8-bit)] | 
+									       [String.Contains(Player.FileNameAndPath,10bit) | String.Contains(Player.FileNameAndPath,10-bit)] | 
+									       [String.Contains(Player.FileNameAndPath,12bit) | String.Contains(Player.FileNameAndPath,12-bit)]</expression>
 									   
  
  	<expression name="TopBarIconLabelShouldShow">Skin.HasSetting(VerticalHome) + Window.Is(home) + Skin.HasSetting(Vertical.IconOnly) + [Skin.HasSetting(IconShowLabel.InTopBar) | 

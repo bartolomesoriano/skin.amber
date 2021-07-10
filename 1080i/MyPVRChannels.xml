@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">50</defaultcontrol>
+	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<views>50</views>
 	<controls>
 		<include>DefaultBackground</include>
@@ -17,7 +18,8 @@
 				<width>930</width>
 				<height>990</height>
 				<onleft condition="!Skin.HasSetting(KioskMode.Enabled)">100</onleft>
-                <onleft condition="Skin.HasSetting(KioskMode.Enabled)">50</onleft>
+                <onleft condition="!Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onleft>
+				<onleft condition="Skin.HasSetting(KioskMode.Enabled)">50</onleft>
 				<onright>60</onright>
 				<onup>50</onup>
 				<ondown>50</ondown>
@@ -29,7 +31,14 @@
 						<width>930</width>
 						<texture flipy="true" border="3">list/ListNF.png</texture>
 					</control>
-					<include>RecOverlay</include>
+					<control type="image">
+			            <posx>880</posx>
+			            <width>24</width>
+			            <height>99</height>
+			            <texture>$VAR[PVRStatusImageVar]</texture>
+			            <aspectratio>keep</aspectratio>
+			            <visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
+		            </control>
 					<control type="label" description="Number">
 						<height>99</height>
 						<width>80</width>
@@ -148,7 +157,15 @@
 						<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 						<animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus(50)">Conditional</animation>
 					</control>
-					<include>RecOverlay</include>
+					<control type="image">
+			            <posx>880</posx>
+			            <width>24</width>
+			            <height>99</height>
+			            <texture>$VAR[PVRStatusImageVar]</texture>
+			            <aspectratio>keep</aspectratio>
+						<colordiffuse>$VAR[FocusedTextColor]</colordiffuse>
+			            <visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
+		            </control>
 					<control type="label" description="Number">
 						<height>99</height>
 						<width>80</width>
@@ -303,7 +320,9 @@
 		</control>
 		<include>PVRChannelNumberInput</include>
 		<include>PVRSideBlade</include>
-        <include>TouchButtons</include>
+		<include condition="Skin.HasSetting(Enable.TouchSupport)" content="TouchButtons">
+		    <param name="left">20</param>
+		</include>
 		<control type="label" id="29">
 			<include>HiddenButton</include>
 		</control>

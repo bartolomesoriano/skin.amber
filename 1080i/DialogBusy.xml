@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<onload condition="Skin.HasSetting(AutoPlayTrailer)">Dialog.Close(all,true)</onload>
 	<controls>
 		<include>DimBG</include>
 		<control type="group">

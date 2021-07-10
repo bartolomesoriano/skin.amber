@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-06-29 16:10+0000\n"
+"PO-Revision-Date: 2021-07-04 17:46+0000\n"
 "Last-Translator: rimasx <riks_12@hot.ee>\n"
 "Language-Team: Estonian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/et_ee/>\n"
 "Language: et_ee\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7\n"
+"X-Generator: Weblate 4.7.1\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -1655,6 +1655,10 @@ msgstr "Parempoolne loend"
 
 msgctxt "#31649"
 msgid "Decades"
+msgstr ""
+
+msgctxt "#31650"
+msgid "Show Information Popup (after 3 seconds)"
 msgstr ""
 
 msgctxt "#31901"
@@ -3511,10 +3515,26 @@ msgstr "Kompaktne ekraanigraafika"
 
 msgctxt "#32411"
 msgid "Ultra Compact OSD"
-msgstr ""
+msgstr "Ülikompaktne ekraanigraafika"
 
 msgctxt "#32412"
 msgid "Alternate OSD Button Highlighting"
+msgstr ""
+
+msgctxt "#32413"
+msgid "Enabled"
+msgstr ""
+
+msgctxt "#32414"
+msgid "Disabled"
+msgstr ""
+
+msgctxt "#32415"
+msgid "Auto Play Trailer (Local Trailer Only)"
+msgstr ""
+
+msgctxt "#32416"
+msgid "Auto Play Trailer Delay"
 msgstr ""
 
 #~ msgctxt "#32232"
