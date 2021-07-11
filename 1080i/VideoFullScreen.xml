@@ -216,7 +216,7 @@
 				<width>480</width>
 <!--			    <visible>!Skin.HasSetting(OSDInfo)</visible> -->
 			    <control type="grouplist" id="3">
-				    <visible>!Skin.HasSetting(Show.ColorRangeFlags) | ![$EXP[PlayerIsHDR]]</visible>
+				    <visible>!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</visible>
 				    <top>20</top>
 				    <orientation>horizontal</orientation>
 				    <height>65</height>
@@ -229,7 +229,7 @@
 				    </include>
 			    </control>
 			    <control type="grouplist" id="3">
-				    <visible>Skin.HasSetting(Show.ColorRangeFlags) + $EXP[PlayerIsHDR] + !Skin.HasSetting(coloredflags)</visible>
+				    <visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)] + !Skin.HasSetting(coloredflags)</visible>
 				    <top>30</top>
 				    <orientation>horizontal</orientation>
 				    <height>65</height>
@@ -242,7 +242,7 @@
 				    </include>
 			    </control>
 			    <control type="grouplist" id="3">
-				    <visible>Skin.HasSetting(Show.ColorRangeFlags) + $EXP[PlayerIsHDR] + Skin.HasSetting(coloredflags)</visible>
+				    <visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)] + Skin.HasSetting(coloredflags)</visible>
 				    <top>30</top>
 				    <orientation>horizontal</orientation>
 				    <height>65</height>
@@ -300,7 +300,7 @@
 			<control type="group" id="1">
 			    <visible>!Skin.HasSetting(OSDInfo)</visible>
 				<control type="grouplist" id="3">
-				    <visible>!Skin.HasSetting(Show.ColorRangeFlags) | ![$EXP[PlayerIsHDR]]</visible>
+				    <visible>!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</visible>
 				    <top>20</top>
 				    <posx>1387</posx>
 				    <height>65</height>
@@ -315,7 +315,7 @@
 				    </include>
 			    </control>
 			    <control type="grouplist" id="3">
-				    <visible>Skin.HasSetting(Show.ColorRangeFlags) + $EXP[PlayerIsHDR] + !Skin.HasSetting(coloredflags)</visible>
+				    <visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)] + !Skin.HasSetting(coloredflags)</visible>
 				    <top>30</top>
 				    <posx>1387</posx>
 				    <height>65</height>
@@ -330,7 +330,7 @@
 				    </include>
 			    </control>
 			    <control type="grouplist" id="3">
-				    <visible>Skin.HasSetting(Show.ColorRangeFlags) + $EXP[PlayerIsHDR] + Skin.HasSetting(coloredflags)</visible>
+				    <visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)] + Skin.HasSetting(coloredflags)</visible>
 				    <top>30</top>
 				    <posx>1387</posx>
 				    <height>65</height>
@@ -398,11 +398,11 @@
         <control type="group" id="1">
             <visible>!$EXP[showCompactSeekBar]</visible>		
 			<control type="group" id="1">
-				<visible>!Skin.HasSetting(UseUltraCompactOSD) + ![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))] + Window.IsVisible(VideoOSD) + !Skin.HasSetting(OSDInfo) + ![$EXP[PlayerIsHDR]] + !Skin.HasSetting(enable.bottomseekbar)</visible>
+				<visible>!Skin.HasSetting(UseUltraCompactOSD) + ![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))] + Window.IsVisible(VideoOSD) + !Skin.HasSetting(OSDInfo) + ![String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)] + !Skin.HasSetting(enable.bottomseekbar)</visible>
 				<include>FullScreenExtraArt</include>
             </control>
 			<control type="group" id="1">
-				<visible>!Skin.HasSetting(UseUltraCompactOSD) + ![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))] + Window.IsVisible(VideoOSD) + !Skin.HasSetting(OSDInfo) + $EXP[PlayerIsHDR] + !Skin.HasSetting(enable.bottomseekbar)</visible>
+				<visible>!Skin.HasSetting(UseUltraCompactOSD) + ![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))] + Window.IsVisible(VideoOSD) + !Skin.HasSetting(OSDInfo) + [String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)] + !Skin.HasSetting(enable.bottomseekbar)</visible>
 				<include content="FullScreenExtraArt">
 				    <param name="logoleft">1460</param>
 					<param name="logowidth">440</param>

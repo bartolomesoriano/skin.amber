@@ -477,7 +477,7 @@
 		            <visible>Skin.HasSetting(coloredflags)</visible>
 		            <include>ContentFade</include>
 		            <control type="grouplist">
-		                <visible>![$EXP[ContainerIsHDR]]</visible>
+		                <visible>![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
 		                <width>930</width>
 		                <height>90</height>
 		                <itemgap>20</itemgap>
@@ -490,7 +490,7 @@
 		                </include>
 		            </control>
 				    <control type="grouplist">
-		                <visible>$EXP[ContainerIsHDR]</visible>
+		                <visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
 		                <width>930</width>
 		                <height>90</height>
 		                <itemgap>10</itemgap>

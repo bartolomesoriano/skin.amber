@@ -173,7 +173,7 @@
         <!-- Media flags -->		
         <!-- Item does not have HDR/SDR or bit depth in file name -->
 		<control type="grouplist" description="Flags">
-            <visible>!Skin.HasSetting(Show.ColorRangeFlags) | ![$EXP[ListItemIsHDR]]</visible>
+            <visible>!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)]</visible>
 			<top>990</top>
             <left>24</left>
             <width>619</width>
@@ -189,7 +189,7 @@
         </control>
 		<!-- Item has HDR/SDR or bit depth in file name -->
 		<control type="grouplist" description="Flags">
-            <visible>Skin.HasSetting(Show.ColorRangeFlags) + $EXP[ListItemIsHDR] + !Skin.HasSetting(coloredflags)</visible>
+            <visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)] + !Skin.HasSetting(coloredflags)</visible>
 			<top>990</top>
             <left>10</left>
             <width>690</width>
@@ -204,7 +204,7 @@
             </include>
         </control>
 		<control type="grouplist" description="Flags">
-            <visible>Skin.HasSetting(Show.ColorRangeFlags) + $EXP[ListItemIsHDR] + Skin.HasSetting(coloredflags)</visible>
+            <visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)] + Skin.HasSetting(coloredflags)</visible>
 			<top>990</top>
             <left>0</left>
             <width>690</width>

@@ -1233,7 +1233,7 @@
 		                <visible>Skin.HasSetting(coloredflags)</visible>
 			            <include>ContentFade</include>
 			            <control type="grouplist">
-			                <visible>![$EXP[ContainerIsHDR]]</visible>
+			                <visible>![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
 			                <width>550</width>
 			                <height>90</height>
 			                <itemgap>20</itemgap>
@@ -1249,7 +1249,7 @@
 			                </include>
 		                </control>
 					    <control type="grouplist">
-			                <visible>$EXP[ContainerIsHDR]</visible>
+			                <visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
 			                <width>850</width>
 			                <height>90</height>
 			                <itemgap>10</itemgap>
@@ -1403,7 +1403,7 @@
 		            <visible>!Skin.HasSetting(coloredflags)</visible>
 		            <include>ContentFade</include>
 		            <control type="group">
-					    <visible>![$EXP[ContainerIsHDR]]</visible>
+					    <visible>![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
 						<control type="grouplist">
 		                    <top>990</top>
 					        <left>64</left>
@@ -1424,7 +1424,7 @@
 		                </control>
 					</control>
                     <control type="group">
-					    <visible>$EXP[ContainerIsHDR]</visible>
+					    <visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
 						<control type="grouplist">
 		                    <top>990</top>
 					        <left>11</left>
@@ -1449,7 +1449,7 @@
 		            <visible>Skin.HasSetting(coloredflags)</visible>
 		            <include>ContentFade</include>
 		            <control type="grouplist">
-		                <visible>![$EXP[ContainerIsHDR]]</visible>
+		                <visible>![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
 					    <top>990</top>
 					    <left>35</left>
 		                <width>550</width>
@@ -1467,7 +1467,7 @@
 		                </include>
 		            </control>
 				    <control type="grouplist">
-		                <visible>$EXP[ContainerIsHDR]</visible>
+		                <visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
 					    <top>990</top>
 					    <left>35</left>
 		                <width>850</width>

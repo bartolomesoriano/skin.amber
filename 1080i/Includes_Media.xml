@@ -74,7 +74,7 @@
 		<value condition="String.Contains(ListItem.FileNameAndPath,atmos) | String.Contains(ListItem.Audiocodec,atmos)">$VAR[MediaFlagsPathVar]/audiocodec/atmos.png</value>
 		<value condition="String.Contains(ListItem.FileNameAndPath,dtsx) | String.Contains(ListItem.FileNameAndPath,dts-x)">$VAR[MediaFlagsPathVar]/audiocodec/dtsx.png</value>
 		<value condition="String.Contains(ListItem.AudioCodec,aac)">$VAR[MediaFlagsPathVar]/audiocodec/aac.png</value>
-		<value condition="[String.Contains(ListItem.AudioCodec,ac3) | String.ContainsListItem.AudioCodec,ac-3) | String.Contains(ListItem.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
+		<value condition="[String.Contains(ListItem.AudioCodec,ac3) | String.Contains(ListItem.AudioCodec,ac-3) | String.Contains(ListItem.AudioCodec,a-c-3)]">$VAR[MediaFlagsPathVar]/audiocodec/ac3.png</value>
 		<value>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[ListItem.AudioCodec,,.png]</value>
 	</variable>
 	
@@ -878,7 +878,7 @@
 		<param name="showvideobadge">true</param>
 		<param name="showaudiobadge">true</param>
 		<param name="showratingbadge">true</param>
-											   
+			  
 		<definition>
 			<control type="image" id="89001">
 				<visible>!String.IsEmpty(Container.ListItem.VideoResolution)</visible>
@@ -937,8 +937,8 @@
 				<texture>badges/3D.png</texture>
 			</control> 
             <control type="image" id="89005">
-																	
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + $EXP[ContainerIsHDR]</visible>
+				 
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -948,8 +948,11 @@
 				<texture>$VAR[HDRFlagVar]</texture>
 			</control>
 			<control type="image" id="89006">
-																	
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + $EXP[ContainerIsBitDepth]</visible>
+				 
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + 
+				         [[String.Contains(Container.ListItem.FileNameAndPath,8bit) | String.Contains(Container.ListItem.FileNameAndPath,8-bit)] | 
+						  [String.Contains(Container.ListItem.FileNameAndPath,10bit) | String.Contains(Container.ListItem.FileNameAndPath,10-bit)] | 
+						  [String.Contains(Container.ListItem.FileNameAndPath,12bit) | String.Contains(Container.ListItem.FileNameAndPath,12-bit)]]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -1059,7 +1062,7 @@
 			</control> 
             <control type="image" id="89005">
 				<visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + $EXP[ListItemIsHDR]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(ListItem.Filename,hdr) | String.Contains(ListItem.Filename,sdr)]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -1070,7 +1073,10 @@
 			</control>
 			<control type="image" id="89006">
 				<visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + $EXP[ListItemIsBitDepth]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + 
+				         [[String.Contains(ListItem.FileNameAndPath,8bit) | String.Contains(ListItem.FileNameAndPath,8-bit)] | 
+						  [String.Contains(ListItem.FileNameAndPath,10bit) | String.Contains(ListItem.FileNameAndPath,10-bit)] | 
+						  [String.Contains(ListItem.FileNameAndPath,12bit) | String.Contains(ListItem.FileNameAndPath,12-bit)]]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -1180,7 +1186,7 @@
 			</control>
             <control type="image" id="89007">
 				<visible>!String.IsEmpty(VideoPlayer.VideoResolution)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + $EXP[PlayerIsHDR]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -1191,7 +1197,10 @@
 			</control>
 			<control type="image" id="89008">
 				<visible>!String.IsEmpty(VideoPlayer.VideoResolution)</visible>
-				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + $EXP[PlayerIsBitDepth]</visible>
+				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + Skin.HasSetting(Show.ColorRangeFlags) + 
+				         [[String.Contains(Player.FileNameAndPath,8bit) | String.Contains(Player.FileNameAndPath,8-bit)] | 
+						  [String.Contains(Player.FileNameAndPath,10bit) | String.Contains(Player.FileNameAndPath,10-bit)] | 
+						  [String.Contains(Player.FileNameAndPath,12bit) | String.Contains(Player.FileNameAndPath,12-bit)]]</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
@@ -1244,7 +1253,7 @@
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 			</control>
 		</definition>
-	</include>	
+	</include>
 
     <include name="TopRightOverlayTemplate">
 	    <param name="isFocused">false</param>

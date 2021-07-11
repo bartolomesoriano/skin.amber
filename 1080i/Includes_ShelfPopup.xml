@@ -146,12 +146,6 @@
 		<value></value>
 	</variable>
 	
-	<expression name="PopupItemIsHDR">[String.Contains(Window(1144).Property(FileNameAndPath),hdr) | String.Contains(Window(1144).Property(FileNameAndPath),sdr)]</expression>
-
-    <expression mame="PopupItemIsBitDepth">[String.Contains(Window(1144).Property(FileNameAndPath),8bit) | String.Contains(Window(1144).Property(FileNameAndPath),8-bit)] | 
-									       [String.Contains(Window(1144).Property(FileNameAndPath),10bit) | String.Contains(Window(1144).Property(FileNameAndPath),10-bit)] | 
-									       [String.Contains(Window(1144).Property(FileNameAndPath),12bit) | String.Contains(Window(1144).Property(FileNameAndPath),12-bit)]</expression>
-	
 	<include name="PopupLeftHorizontal">
 	    <left>277</left>
 	</include>
@@ -216,7 +210,7 @@
 			</control> 
             <control type="image">
 				<visible>!String.IsEmpty(Window(1144).Property(VideoResolution))</visible>
-				<visible>Skin.HasSetting(Show.ColorRangeFlags) + $EXP[PopupItemIsHDR]</visible>
+				<visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Window(1144).Property(FileNameAndPath),hdr) | String.Contains(Window(1144).Property(FileNameAndPath),sdr)]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
 				<bordersize>3</bordersize>
@@ -226,7 +220,10 @@
 			</control>
 			<control type="image">
 				<visible>!String.IsEmpty(Window(1144).Property(VideoResolution))</visible>
-				<visible>Skin.HasSetting(Show.ColorRangeFlags) + $EXP[PopupItemIsBitDepth]</visible>
+				<visible>Skin.HasSetting(Show.ColorRangeFlags) + 
+				         [[String.Contains(Window(1144).Property(FileNameAndPath),8bit) | String.Contains(Window(1144).Property(FileNameAndPath),8-bit)] | 
+						  [String.Contains(Window(1144).Property(FileNameAndPath),10bit) | String.Contains(Window(1144).Property(FileNameAndPath),10-bit)] | 
+						  [String.Contains(Window(1144).Property(FileNameAndPath),12bit) | String.Contains(Window(1144).Property(FileNameAndPath),12-bit)]]</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
 				<bordersize>3</bordersize>
