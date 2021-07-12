@@ -14,7 +14,7 @@
 	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback) + Skin.String(SeekBarInit,fifteen)">AlarmClock(ShowOSD,ClearProperty(ShowOSD,home),00:15,silent)</onload>
 	<onload condition="Skin.HasSetting(ShowSeekBarOnPlayback) + Skin.String(SeekBarInit,twenty)">AlarmClock(ShowOSD,ClearProperty(ShowOSD,home),00:20,silent)</onload>
 	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,home)</onload>
-	
+	<onunload>ClearProperty(BringDownSeekBar,Home)</onunload>
 	<controls>
 		<control type="group" id="1">
 			<visible>!String.IsEmpty(Player.SeekNumeric)</visible>
@@ -61,10 +61,18 @@
 			<control type="image" id="22">
 				<bottom>0</bottom>
 				<width>1920</width>
-				<height>420</height>
+				<height>530</height>
 				<texture border="0,30,0,30">OSD/FS_OSDBackground.png</texture>
 				<colordiffuse>FFE2E2E2</colordiffuse>
-				<visible>!Skin.HasSetting(OSDInfo)</visible>
+				<visible>!Skin.HasSetting(OSDInfo) + Skin.HasSetting(enable.bottomseekbar)</visible>
+			</control>
+			<control type="image" id="22">
+				<bottom>0</bottom>
+				<width>1920</width>
+				<height>410</height>
+				<texture border="0,30,0,30">OSD/FS_OSDBackground.png</texture>
+				<colordiffuse>FFE2E2E2</colordiffuse>
+				<visible>!Skin.HasSetting(OSDInfo) + !Skin.HasSetting(enable.bottomseekbar)</visible>
 			</control>
 			
 			<!-- Plot -->
@@ -82,7 +90,7 @@
 			        <control type="textbox" description="Plot" id="1">
 				        <posx>30</posx>
 				        <posy>-110</posy>
-				        <width>1305</width>
+				        <width>1294</width>
 				        <height>120</height>
 				        <align>justify</align>
 				        <font>InfoPlot</font>
@@ -212,7 +220,7 @@
 			
 			<!-- Media Flags -->
 			<control type="group" id="1">
-			    <posx>855</posx>
+			    <posx>850</posx>
 				<width>480</width>
 <!--			    <visible>!Skin.HasSetting(OSDInfo)</visible> -->
 			    <control type="grouplist" id="3">
@@ -234,7 +242,7 @@
 				    <orientation>horizontal</orientation>
 				    <height>65</height>
 					<itemgap>5</itemgap>
-				    <align>left</align>
+				    <align>right</align>
 				    <include content="PlayerMediaFlagItems">
 					    <param name="itemheight" value="65"/>
      				    <param name="itemwidth" value="70"/>
@@ -247,7 +255,7 @@
 				    <orientation>horizontal</orientation>
 				    <height>65</height>
 					<itemgap>5</itemgap>
-				    <align>left</align>
+				    <align>right</align>
 				    <include content="PlayerMediaFlagItems">
 					    <param name="itemheight" value="65"/>
      				    <param name="itemwidth" value="70"/>

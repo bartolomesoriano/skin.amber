@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-
+    <onunload>ClearProperty(BringDownSeekBar,Home)</onunload>
     <visible>[!Player.Paused + !String.IsEmpty(Window(home).Property(ShowOSD))] | 
 	         [[!Skin.HasSetting(UseUltraCompactOSD) | [Skin.HasSetting(UseUltraCompactOSD) + ![Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]]] + 
 			  [[Player.Paused + Skin.HasSetting(Hide.SeekBarWhenPaused) + !System.IdleTime(5)] | [Player.Paused + !Skin.HasSetting(Hide.SeekBarWhenPaused)]]] | 
@@ -24,6 +24,11 @@
 			<include condition="Skin.HasSetting(UseUltraCompactOSD) | !Skin.HasSetting(enable.bottomseekbar) | Window.IsActive(DialogFullScreenInfo.xml)">TopSeekBar</include>
 			<include condition="Skin.HasSetting(enable.bottomseekbar) + !Window.IsActive(DialogFullScreenInfo.xml)">BottomSeekBar</include>
 			
+			<!-- If full screen info active and bottom seek bar should show when paused, move it to the top seek bar position -->
+			<animation effect="slide" start="0,0" end="0,-954" time="150" condition="Player.Paused + !Skin.HasSetting(Hide.SeekBarWhenPaused) + Skin.HasSetting(enable.bottomseekbar) + Window.IsActive(DialogFullScreenInfo.xml)">Conditional</animation>
+			<!-- If bottom seek bar enabled and was at top due to full screen info having been active, bring it down to the bottom position -->
+		    <animation effect="slide" start="0,0" end="0,954" time="150" condition="Window.IsVisible(VideoOSD) + !String.IsEmpty(Window(Home).Property(BringDownSeekBar))">Conditional</animation>
+			
 			<control type="image" description="Background">
 				<top>0</top>
 				<width>1920</width>
@@ -46,7 +51,15 @@
 				<width>1920</width>
 				<texture border="0,30,0,30">OSD/FS_OSDBackground.png</texture>
 				<colordiffuse>FFE2E2E2</colordiffuse>
-				<visible>Player.HasVideo + [Skin.HasSetting(ShowInfoWithSeekBar) + [!Skin.HasSetting(UseUltraCompactOSD) + Skin.HasSetting(enable.bottomseekbar)] + !Window.isVisible(Custom_1123_PausedOverlay.xml) + !Window.isVisible(VideoOSD)]</visible>
+				<visible>Player.HasVideo + Skin.HasSetting(ShowInfoWithSeekBar) + !Skin.HasSetting(UseUltraCompactOSD) + Skin.HasSetting(enable.bottomseekbar) + !Window.isVisible(Custom_1123_PausedOverlay.xml) + !Window.isVisible(VideoOSD) + !Window.IsVisible(DialogFullScreenInfo.xml)</visible>
+			</control>
+			<control type="image" description="Background">
+				<top>-25</top>
+				<height>225</height>
+				<width>1920</width>
+				<texture border="0,30,0,30">OSD/FS_OSDBackground.png</texture>
+				<colordiffuse>FFE2E2E2</colordiffuse>
+				<visible>Player.HasVideo + Skin.HasSetting(ShowInfoWithSeekBar) + !Skin.HasSetting(UseUltraCompactOSD) + Skin.HasSetting(enable.bottomseekbar) + Window.IsVisible(DialogFullScreenInfo.xml)</visible>
 			</control>
 			
 			<control type="label" description="Clock">
@@ -62,7 +75,10 @@
 			</control>
 			
 			<control type="group">
-			    <visible>Skin.HasSetting(ShowInfoWithSeekBar) +  [Skin.HasSetting(UseUltraCompactOSD) | [!Skin.HasSetting(enable.bottomseekbar) + !Window.isVisible(Custom_1123_PausedOverlay.xml) + ![Window.isVisible(VideoOSD) | Window.IsVisible(MusicOSD)]]]</visible>
+			    <visible>Skin.HasSetting(ShowInfoWithSeekBar) +  [Skin.HasSetting(UseUltraCompactOSD) | 
+				                                                  [!Skin.HasSetting(enable.bottomseekbar) + !Window.isVisible(Custom_1123_PausedOverlay.xml) + 
+																   ![Window.isVisible(VideoOSD) | Window.IsVisible(MusicOSD)]] | 
+																  [Skin.HasSetting(enable.bottomseekbar) + Window.IsVisible(DialogFullScreenInfo.xml)]]</visible>
 				<top>130</top>
 			    <control type="image">
 				    <top>0</top>
@@ -374,7 +390,7 @@
 				</control>
 				
 				<control type="label" description="Player Status label">
-					<visible>![Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)] | Skin.HasSetting(UseUltraCompactOSD)</visible>
+					<visible>!Skin.HasSetting(UseUltraCompactOSD)</visible>
 					<left>30</left>
 					<top>50</top>
 					<height>30</height>
@@ -446,7 +462,7 @@
 		        </control>
 			    <control type="label">
 			        <top>-35</top>
-			        <width>500</width>
+			        <width>1200</width>
 			        <height>30</height>
 			        <font>font13</font>
 			        <label>$VAR[VideoPlayerSecondLine]</label>

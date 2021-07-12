@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-<!--	<defaultcontrol always="true">601</defaultcontrol> -->
+	<!-- Clear window prop for bringing bottom seek bar back to its correct position -->
+	<onload>ClearProperty(BringDownSeekBar,Home)</onload>
+	<!-- If seek bar is visible and supposed to be at bottom, set a window prop to bring it down when this window unloads -->
+	<onunload condition="Window.IsVisible(DialogSeekBar.xml) + Skin.HasSetting(enable.bottomseekbar)">SetProperty(BringDownSeekBar,true,Home)</onunload>
 	<include>OSDFade</include>
 	<controls>
 		<control type="group">

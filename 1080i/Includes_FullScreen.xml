@@ -74,6 +74,7 @@
 		<value condition="VideoPlayer.Content(episodes)">episode</value>
 		<value></value>
 	</variable>
+	
 	<include name="VideoOSDInfoButtonList">
 		<control type="list" id="43260">
 			<left>0</left>
