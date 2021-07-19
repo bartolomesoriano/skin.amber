@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-07-04 17:46+0000\n"
+"PO-Revision-Date: 2021-07-13 22:38+0000\n"
 "Last-Translator: rimasx <riks_12@hot.ee>\n"
 "Language-Team: Estonian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/et_ee/>\n"
 "Language: et_ee\n"
@@ -119,7 +119,7 @@ msgstr "Kodi"
 
 msgctxt "#31023"
 msgid "Viewtype"
-msgstr "Vaate tüüp"
+msgstr "Esitusviis"
 
 msgctxt "#31024"
 msgid "Sort by"
@@ -131,7 +131,7 @@ msgstr "Üksust"
 
 msgctxt "#31026"
 msgid "Misc options"
-msgstr "Muud valikud"
+msgstr "Muud suvandid"
 
 msgctxt "#31027"
 msgid "Order"
@@ -448,7 +448,7 @@ msgstr "Ilm"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
-msgstr "Laulusõnade lisamoodul Lyrics"
+msgstr "Laulusõnade lisamoodul"
 
 msgctxt "#31133"
 msgid "Toggle audio stream"
@@ -572,7 +572,7 @@ msgstr "CoreELEC seaded"
 # empty strings from id 31301 to 31308
 msgctxt "#31309"
 msgid "Memory Used"
-msgstr "Mälu kasutus"
+msgstr "Mälukasutus"
 
 # empty strings from id 31310 to 31321
 msgctxt "#31322"
@@ -1073,7 +1073,7 @@ msgstr "TV"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
-msgstr "Planeeritud aeg"
+msgstr "Plaanitud aeg"
 
 msgctxt "#31502"
 msgid "All Movies"
@@ -1106,7 +1106,7 @@ msgstr "Raadio"
 
 msgctxt "#31510"
 msgid "Timer Set"
-msgstr "Taimer seatud"
+msgstr "Taimer määratud"
 
 msgctxt "#31511"
 msgid "Reminder Set"
@@ -1595,11 +1595,11 @@ msgstr "Keela vaade 'Lihtne loend'"
 
 msgctxt "#31634"
 msgid "High"
-msgstr ""
+msgstr "Kõrge"
 
 msgctxt "#31635"
 msgid "Customize Bottom Shortcuts"
-msgstr ""
+msgstr "Alumiste otseteede kohandamine"
 
 msgctxt "#31636"
 msgid "Shortcuts"
@@ -1607,19 +1607,19 @@ msgstr "Otseteed"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
-msgstr ""
+msgstr "Luba alumised otseteed"
 
 msgctxt "#31638"
 msgid "Show Bottom Shortcuts for this Menu Item"
-msgstr ""
+msgstr "Kuva sellel menüüelemendil alumised otseteed"
 
 msgctxt "#31639"
 msgid "Short Daily Weather"
-msgstr "Lühike päevane ilm"
+msgstr "Lühike päevitine ilm"
 
 msgctxt "#31640"
 msgid "Short Hourly Weather"
-msgstr "Lühike tunnine ilm"
+msgstr "Lühike igatunnine ilm"
 
 msgctxt "#31641"
 msgid "Surprise Me"
@@ -1639,15 +1639,15 @@ msgstr "Üllata mind (muusikavideo)"
 
 msgctxt "#31645"
 msgid "Make Default Menu Item"
-msgstr ""
+msgstr "Loo vaikeelement"
 
 msgctxt "#31646"
 msgid "Current Default Menu Item"
-msgstr ""
+msgstr "Praegune vaikeelement"
 
 msgctxt "#31647"
 msgid "Enable Choosing Default Menu Item"
-msgstr ""
+msgstr "Luba vaikeelemendi valik"
 
 msgctxt "#31648"
 msgid "Right List"
@@ -1659,23 +1659,27 @@ msgstr ""
 
 msgctxt "#31650"
 msgid "Show Information Popup (after 3 seconds)"
+msgstr "Kuva teabe hüpikaken (3 sekundi pärast)"
+
+msgctxt "#31651"
+msgid "Center shelf items on screen"
 msgstr ""
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
-msgstr "36 tunni ilm"
+msgstr "36 tunni prognoos"
 
 msgctxt "#31902"
 msgid "Hourly Forecast"
-msgstr "Igatunnine ilm"
+msgstr "Igatunnine prognoos"
 
 msgctxt "#31903"
 msgid "Weekend Forecast"
-msgstr "Nädalavahetuse ilm"
+msgstr "Nädalalõpu prognoos"
 
 msgctxt "#31904"
 msgid "10 Day Forecast"
-msgstr "10 päeva ilm"
+msgstr "10 päeva prognoos"
 
 # empty strings from id 31905 to 31919
 msgctxt "#31920"
@@ -3391,7 +3395,7 @@ msgstr "Käivita laulusõnad"
 
 msgctxt "#32378"
 msgid "Use Color Flags"
-msgstr ""
+msgstr "Kasuta värvilippe"
 
 msgctxt "#32379"
 msgid "Show Submenu Only when Focused"
@@ -3427,11 +3431,11 @@ msgstr "Luba puuteekraaniga seadmete tugi"
 
 msgctxt "#32387"
 msgid "Show Rating Overlay"
-msgstr ""
+msgstr "Kuva hinnete ülekate"
 
 msgctxt "#32388"
 msgid "Use User Rating for Overlay"
-msgstr ""
+msgstr "Kasuta ülekatteks kasutajahindeid"
 
 msgctxt "#32390"
 msgid "Select Items to Show in Views"
@@ -3447,11 +3451,11 @@ msgstr "Esita juhuslikult"
 
 msgctxt "#32393"
 msgid "List Views Options"
-msgstr ""
+msgstr "Loendivaadete valikud"
 
 msgctxt "#32394"
 msgid "Marks and Overlays"
-msgstr ""
+msgstr "Märgid ja ülekatted"
 
 msgctxt "#32395"
 msgid "Select View Types to Enable"
@@ -3475,7 +3479,7 @@ msgstr "Bänner"
 
 msgctxt "#32401"
 msgid "List Item Type"
-msgstr ""
+msgstr "Menüüelemendi tüüp"
 
 msgctxt "#32402"
 msgid "Poster/Thumb"
@@ -3483,7 +3487,7 @@ msgstr "Poster/pisipilt"
 
 msgctxt "#32403"
 msgid "OSD/Full Screen Art"
-msgstr ""
+msgstr "OSD/täisekraanis taustapilt"
 
 msgctxt "#32404"
 msgid "N/A"
@@ -3499,11 +3503,11 @@ msgstr "Hüpikakna viiteaeg"
 
 msgctxt "#32407"
 msgid "Show Floor"
-msgstr ""
+msgstr "Kuva alariba"
 
 msgctxt "#32408"
 msgid "Fixed List"
-msgstr ""
+msgstr "Fikseeritud loend"
 
 msgctxt "#32409"
 msgid "Centered Static Menu (less than 8 items)"
@@ -3519,23 +3523,23 @@ msgstr "Ülikompaktne ekraanigraafika"
 
 msgctxt "#32412"
 msgid "Alternate OSD Button Highlighting"
-msgstr ""
+msgstr "Alternatiivne ekraanigraafika nuppude esiletõst"
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "Lubatud"
 
 msgctxt "#32414"
 msgid "Disabled"
-msgstr ""
+msgstr "Keelatud"
 
 msgctxt "#32415"
 msgid "Auto Play Trailer (Local Trailer Only)"
-msgstr ""
+msgstr "Filmitreileri automaatne esitamine (ainult kohalik)"
 
 msgctxt "#32416"
 msgid "Auto Play Trailer Delay"
-msgstr ""
+msgstr "Automaatse esituse viiteaeg"
 
 #~ msgctxt "#32232"
 #~ msgid "Main Rating"

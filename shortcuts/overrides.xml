@@ -206,9 +206,20 @@
 	<propertySettings property="widgetSortOrder" buttonID="3004" title="$LOCALIZE[31617]" templateonly="true"/>
 
 	<!-- Widget 1 Limit -->
+	<property property="widgetLimit" label="1 ">$NUMBER[1]</property>
+	<property property="widgetLimit" label="2 ">$NUMBER[2]</property>
+	<property property="widgetLimit" label="3 ">$NUMBER[3]</property>
+	<property property="widgetLimit" label="4 ">$NUMBER[4]</property>
 	<property property="widgetLimit" label="5 ">$NUMBER[5]</property>
+	<property property="widgetLimit" label="6 ">$NUMBER[6]</property>
+	<property property="widgetLimit" label="7 ">$NUMBER[7]</property>
+	<property property="widgetLimit" label="8 ">$NUMBER[8]</property>
+	<property property="widgetLimit" label="9 ">$NUMBER[9]</property>
 	<property property="widgetLimit" label="10 ">$NUMBER[10]</property>
+	<property property="widgetLimit" label="15 ">$NUMBER[15]</property>
+	<property property="widgetLimit" label="20 ">$NUMBER[20]</property>
 	<property property="widgetLimit" label="25 ">$NUMBER[25]</property>
+	<property property="widgetLimit" label="30 ">$NUMBER[30]</property>
 	<property property="widgetLimit" label="50 ">$NUMBER[50]</property>
 	<property property="widgetLimit" label="100 ">$NUMBER[100]</property>
 	<propertySettings property="widgetLimit" buttonID="3005" title="$LOCALIZE[31618]" templateonly="true"/>
@@ -277,8 +288,18 @@
 	<propertySettings property="widgetSortOrder.2" buttonID="4004" title="$LOCALIZE[31617]" templateonly="true"/>
 
 	<!-- Widget 2 Limit -->
+	<property property="widgetLimit.2" label="1 ">$NUMBER[1]</property>
+	<property property="widgetLimit.2" label="2 ">$NUMBER[2]</property>
+	<property property="widgetLimit.2" label="3 ">$NUMBER[3]</property>
+	<property property="widgetLimit.2" label="4 ">$NUMBER[4]</property>
 	<property property="widgetLimit.2" label="5 ">$NUMBER[5]</property>
+	<property property="widgetLimit.2" label="6 ">$NUMBER[6]</property>
+	<property property="widgetLimit.2" label="7 ">$NUMBER[7]</property>
+	<property property="widgetLimit.2" label="8 ">$NUMBER[8]</property>
+	<property property="widgetLimit.2" label="9 ">$NUMBER[9]</property>
 	<property property="widgetLimit.2" label="10 ">$NUMBER[10]</property>
+	<property property="widgetLimit.2" label="15 ">$NUMBER[15]</property>
+	<property property="widgetLimit.2" label="20 ">$NUMBER[20]</property>
 	<property property="widgetLimit.2" label="25 ">$NUMBER[25]</property>
 	<property property="widgetLimit.2" label="50 ">$NUMBER[50]</property>
 	<property property="widgetLimit.2" label="100 ">$NUMBER[100]</property>
@@ -348,9 +369,18 @@
 	<propertySettings property="widgetSortOrder.3" buttonID="5004" title="$LOCALIZE[31617]" templateonly="true"/>
 
 	<!-- Widget 3 Limit -->
+	<property property="widgetLimit.3" label="1 ">$NUMBER[1]</property>
+	<property property="widgetLimit.3" label="2 ">$NUMBER[2]</property>
+	<property property="widgetLimit.3" label="3 ">$NUMBER[3]</property>
+	<property property="widgetLimit.3" label="4 ">$NUMBER[4]</property>
 	<property property="widgetLimit.3" label="5 ">$NUMBER[5]</property>
+	<property property="widgetLimit.3" label="6 ">$NUMBER[6]</property>
+	<property property="widgetLimit.3" label="7 ">$NUMBER[7]</property>
+	<property property="widgetLimit.3" label="8 ">$NUMBER[8]</property>
+	<property property="widgetLimit.3" label="9 ">$NUMBER[9]</property>
 	<property property="widgetLimit.3" label="10 ">$NUMBER[10]</property>
 	<property property="widgetLimit.3" label="15 ">$NUMBER[15]</property>
+	<property property="widgetLimit.3" label="20 ">$NUMBER[20]</property>
 	<property property="widgetLimit.3" label="25 ">$NUMBER[25]</property>
 	<property property="widgetLimit.3" label="50 ">$NUMBER[50]</property>
 	<property property="widgetLimit.3" label="100 ">$NUMBER[100]</property>
@@ -420,8 +450,18 @@
 	<propertySettings property="widgetSortOrder.4" buttonID="6004" title="$LOCALIZE[31617]" templateonly="true"/>
 
 	<!-- Widget 4 Limit -->
+	<property property="widgetLimit.4" label="1 ">$NUMBER[1]</property>
+	<property property="widgetLimit.4" label="2 ">$NUMBER[2]</property>
+	<property property="widgetLimit.4" label="3 ">$NUMBER[3]</property>
+	<property property="widgetLimit.4" label="4 ">$NUMBER[4]</property>
 	<property property="widgetLimit.4" label="5 ">$NUMBER[5]</property>
+	<property property="widgetLimit.4" label="6 ">$NUMBER[6]</property>
+	<property property="widgetLimit.4" label="7 ">$NUMBER[7]</property>
+	<property property="widgetLimit.4" label="8 ">$NUMBER[8]</property>
+	<property property="widgetLimit.4" label="9 ">$NUMBER[9]</property>
 	<property property="widgetLimit.4" label="10 ">$NUMBER[10]</property>
+	<property property="widgetLimit.4" label="15 ">$NUMBER[15]</property>
+	<property property="widgetLimit.4" label="20 ">$NUMBER[20]</property>
 	<property property="widgetLimit.4" label="25 ">$NUMBER[25]</property>
 	<property property="widgetLimit.4" label="50 ">$NUMBER[50]</property>
 	<property property="widgetLimit.4" label="100 ">$NUMBER[100]</property>
@@ -491,8 +531,18 @@
 	<propertySettings property="widgetSortOrder.5" buttonID="7004" title="$LOCALIZE[31617]" templateonly="true"/>
 
 	<!-- Widget 5 Limit -->
+	<property property="widgetLimit.5" label="1 ">$NUMBER[1]</property>
+	<property property="widgetLimit.5" label="2 ">$NUMBER[2]</property>
+	<property property="widgetLimit.5" label="3 ">$NUMBER[3]</property>
+	<property property="widgetLimit.5" label="4 ">$NUMBER[4]</property>
 	<property property="widgetLimit.5" label="5 ">$NUMBER[5]</property>
+	<property property="widgetLimit.5" label="6 ">$NUMBER[6]</property>
+	<property property="widgetLimit.5" label="7 ">$NUMBER[7]</property>
+	<property property="widgetLimit.5" label="8 ">$NUMBER[8]</property>
+	<property property="widgetLimit.5" label="9 ">$NUMBER[9]</property>
 	<property property="widgetLimit.5" label="10 ">$NUMBER[10]</property>
+	<property property="widgetLimit.5" label="15 ">$NUMBER[15]</property>
+	<property property="widgetLimit.5" label="20 ">$NUMBER[20]</property>
 	<property property="widgetLimit.5" label="25 ">$NUMBER[25]</property>
 	<property property="widgetLimit.5" label="50 ">$NUMBER[50]</property>
 	<property property="widgetLimit.5" label="100 ">$NUMBER[100]</property>
@@ -562,8 +612,18 @@
 	<propertySettings property="widgetSortOrder.6" buttonID="8004" title="$LOCALIZE[31617]" templateonly="true"/>
 
 	<!-- Widget 6 Limit -->
+	<property property="widgetLimit.6" label="1 ">$NUMBER[1]</property>
+	<property property="widgetLimit.6" label="2 ">$NUMBER[2]</property>
+	<property property="widgetLimit.6" label="3 ">$NUMBER[3]</property>
+	<property property="widgetLimit.6" label="4 ">$NUMBER[4]</property>
 	<property property="widgetLimit.6" label="5 ">$NUMBER[5]</property>
+	<property property="widgetLimit.6" label="6 ">$NUMBER[6]</property>
+	<property property="widgetLimit.6" label="7 ">$NUMBER[7]</property>
+	<property property="widgetLimit.6" label="8 ">$NUMBER[8]</property>
+	<property property="widgetLimit.6" label="9 ">$NUMBER[9]</property>
 	<property property="widgetLimit.6" label="10 ">$NUMBER[10]</property>
+	<property property="widgetLimit.6" label="15 ">$NUMBER[15]</property>
+	<property property="widgetLimit.6" label="20 ">$NUMBER[20]</property>
 	<property property="widgetLimit.6" label="25 ">$NUMBER[25]</property>
 	<property property="widgetLimit.6" label="50 ">$NUMBER[50]</property>
 	<property property="widgetLimit.6" label="100 ">$NUMBER[100]</property>
@@ -590,6 +650,8 @@
 	<propertyfallback property="EHPlaylistFanart">false</propertyfallback>
 	<!-- Use Bottom Shortcuts is false by default -->
 	<propertyfallback property="UseBottomShortcuts">false</propertyfallback>
+	<!-- Center shelves is false by default -->
+	<propertyfallback property="centerShelves">false</propertyfallback>
 
 	<!-- Widget fallbacks if empty -->
     <!-- Show Two Shelves together is false by default -->

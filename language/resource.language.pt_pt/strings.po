@@ -1652,6 +1652,10 @@ msgctxt "#31650"
 msgid "Show Information Popup (after 3 seconds)"
 msgstr ""
 
+msgctxt "#31651"
+msgid "Center shelf items on screen"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "Previsão de 36 Horas"

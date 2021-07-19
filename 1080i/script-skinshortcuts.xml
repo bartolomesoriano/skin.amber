@@ -233,6 +233,7 @@
 					<width>1340</width>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="button" id="401">
 					<description>Choose shortcut</description>
@@ -242,6 +243,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="button" id="305">
 					<description>Change label</description>
@@ -252,6 +254,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="button" id="306">
 					<description>Change icon</description>
@@ -263,6 +266,7 @@
 					<font>ListDetails</font>
 					<visible>!String.IsEqual(Window.Property(groupname),mainmenu) | Skin.HasSetting(Vertical.IconOnly)</visible>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="button" id="307">
 					<description>Change action</description>
@@ -273,6 +277,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="button" id="405">
 					<description>Edit submenu</description>
@@ -283,6 +288,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="button" id="8405">
 					<description>Edit submenu</description>
@@ -303,6 +309,7 @@
 					<onclick>Skin.SetString(InitPos,$INFO[Window(Home).Property(DefaultMenuPosition)])</onclick>
 					<onclick>Skin.SetString(InitPosName,$INFO[Container(211).ListItem.Label])</onclick>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + System.HasAddon(script.embuary.helper) + Skin.HasSetting(Enable.DefaultMenu)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="radiobutton" id="8406">
 					<label>$LOCALIZE[31638]</label>
@@ -319,6 +326,13 @@
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 					<visible>!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)</visible>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
+					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(widgetDouble),true)">SetProperty(customProperty,widgetDouble)</onunfocus>
+					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(widgetDouble),true)">SetProperty(customValue,false)</onunfocus>
+					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(widgetDouble),true)">SendClick(404)</onunfocus>
+					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(widgetTriple),true)">SetProperty(customProperty,widgetTriple)</onunfocus>
+					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(widgetTriple),true)">SetProperty(customValue,false)</onunfocus>
+					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(widgetTriple),true)">SendClick(404)</onunfocus>
 				</control>
 				<control type="button" id="406">
 					<description>Customize Bottom Shortcuts</description>
@@ -332,6 +346,7 @@
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
 					<visible>!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)</visible>
 					<visible>String.IsEqual(Container(211).ListItem.Property(UseBottomShortcuts),true)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="button" id="310">
 					<description>Background</description>
@@ -342,6 +357,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="button" id="500">
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -355,6 +371,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True) + Skin.HasSetting(ShowInfoLine)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="radiobutton" id="807">
 					<label>$LOCALIZE[32258]</label>
@@ -372,6 +389,7 @@
 					         [String.Contains(Container(211).ListItem.Property(path),xml)]</visible>
 					<visible>Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(UseEHBackgrounds)</visible>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="button" id="808">
 					<description>Quantity of Playlist/Node Fanarts to use</description>
@@ -384,6 +402,7 @@
 					<width>1340</width>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="radiobutton" id="806">
 					<description>Show Two Shelves Together</description>
@@ -399,6 +418,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="radiobutton" id="809">
 					<description>Show Three Shelves Together</description>
@@ -414,11 +434,12 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="radiobutton" id="810">
 					<description>Show Three Shelves with Larger Art</description>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu) + !Skin.HasSetting(Hide.AllShelves) + 
-							 [[[Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)] | !Skin.HasSetting(ShowInfoLine)] | !String.IsEmpty(Container(211).ListItem.Property(widgetThreeShelvesLarge))]</visible>
+							 [[Skin.HasSetting(VerticalHome) + [[Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(ShowInfoLineShelf)] | !Skin.HasSetting(ShowInfoLine)]] | String.IsEqual(Container(211).ListItem.Property(widgetThreeShelvesLarge),true)]</visible>
 					<label>$LOCALIZE[32277]</label>
 					<onclick condition="!String.IsEmpty(Container(211).ListItem.Property(widgetThreeShelvesLarge))">SetProperty(customProperty,widgetThreeShelvesLarge)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(widgetThreeShelvesLarge),true)">SetProperty(customProperty,widgetThreeShelvesLarge)</onclick>
@@ -430,6 +451,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="button" id="811">
 					<description>Shelves position: Standard/Low/High</description>
@@ -441,6 +463,23 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
+				</control>
+				<control type="radiobutton" id="812">
+					<description>Center shelf items on screen</description>
+					<visible>String.IsEqual(Window.Property(groupname),mainmenu) + !Skin.HasSetting(Hide.AllShelves)</visible>
+					<label>$LOCALIZE[31651]</label>
+					<onclick condition="!String.IsEmpty(Container(211).ListItem.Property(centerShelves))">SetProperty(customProperty,centerShelves)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(centerShelves),true)">SetProperty(customProperty,centerShelves)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(centerShelves),false)">SetProperty(customValue,true)</onclick>
+					<onclick>SendClick(404)</onclick>
+					<selected>String.IsEqual(Container(211).ListItem.Property(centerShelves),true)</selected>
+					<height>60</height>
+					<width>1340</width>
+					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+					<font>ListDetails</font>
+					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="button" id="800">
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu) + !Skin.HasSetting(Hide.AllShelves)</visible>
@@ -615,6 +654,7 @@
 					<width>1340</width>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="radiobutton" id="900">
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -630,6 +670,7 @@
 					<width>1340</width>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="radiobutton" id="901">
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -645,6 +686,7 @@
 					<width>1340</width>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="button" id="308">
 					<description>Restore shortcuts</description>
@@ -654,6 +696,7 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 					<visible>!String.IsEqual(Container(211).ListItem.Property(skinshortcuts-disabled),True)</visible>
+					<include>Disable3ShelvesLarge</include>
 				</control>
 			</control>
 		</control>

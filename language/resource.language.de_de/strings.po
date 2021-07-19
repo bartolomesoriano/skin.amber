@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-05-03 09:05+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2021-07-15 22:19+0000\n"
+"Last-Translator: beatmasterRS <danysahne333@yahoo.de>\n"
 "Language-Team: German <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/de_de/>\n"
 "Language: de_de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.1\n"
+"X-Generator: Weblate 4.7.1\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -119,7 +119,7 @@ msgstr "Kodi"
 
 msgctxt "#31023"
 msgid "Viewtype"
-msgstr "Ansichts-Typ"
+msgstr "Ansicht"
 
 msgctxt "#31024"
 msgid "Sort by"
@@ -416,7 +416,7 @@ msgstr "Standard-Schriftgröße"
 
 msgctxt "#31118"
 msgid "Small"
-msgstr ""
+msgstr "Klein"
 
 msgctxt "#31119"
 msgid "Regular"
@@ -424,11 +424,11 @@ msgstr ""
 
 msgctxt "#31120"
 msgid "Large"
-msgstr ""
+msgstr "Groß"
 
 msgctxt "#31121"
 msgid "Apply Changes"
-msgstr ""
+msgstr "Änderungen übernehmen"
 
 msgctxt "#31129"
 msgid "Same director"
@@ -472,11 +472,11 @@ msgstr "Abspielinfo"
 
 msgctxt "#31139"
 msgid "Video decoder"
-msgstr "Videodekoder"
+msgstr "Video-Decoder"
 
 msgctxt "#31140"
 msgid "Pixel format"
-msgstr "Pixel Format"
+msgstr "Pixelformat"
 
 msgctxt "#31141"
 msgid "Play speed"
@@ -512,7 +512,7 @@ msgstr "Fanart-Ansicht deaktivieren"
 
 msgctxt "#31157"
 msgid "Triple"
-msgstr ""
+msgstr "Dreifach"
 
 msgctxt "#31158"
 msgid "Disable Triple view"
@@ -524,7 +524,7 @@ msgstr ""
 
 msgctxt "#31160"
 msgid "Disable Logo view"
-msgstr ""
+msgstr "Logo-Ansicht deaktivieren"
 
 msgctxt "#31291"
 msgid "Add-on manager"
@@ -568,7 +568,7 @@ msgstr "Speicherauslastung"
 
 msgctxt "#31322"
 msgid "Aired"
-msgstr "Erschienen"
+msgstr "Ausgestrahlt"
 
 msgctxt "#31351"
 msgid "Pause"
@@ -1502,7 +1502,7 @@ msgstr ""
 
 msgctxt "#31614"
 msgid "Low"
-msgstr ""
+msgstr "Tief"
 
 msgctxt "#31615"
 msgid "Label on Shelf Item"
@@ -1585,7 +1585,7 @@ msgstr "Einfache Listenansicht deaktivieren"
 
 msgctxt "#31634"
 msgid "High"
-msgstr ""
+msgstr "Hoch"
 
 msgctxt "#31635"
 msgid "Customize Bottom Shortcuts"
@@ -1649,6 +1649,10 @@ msgstr ""
 
 msgctxt "#31650"
 msgid "Show Information Popup (after 3 seconds)"
+msgstr "Informations-Popup anzeigen (nach 3 Sekunden)"
+
+msgctxt "#31651"
+msgid "Center shelf items on screen"
 msgstr ""
 
 msgctxt "#31901"
@@ -2832,7 +2836,7 @@ msgstr "Alternatives Listen-Layout"
 
 msgctxt "#32242"
 msgid "Larger Image"
-msgstr ""
+msgstr "Größeres Bild"
 
 msgctxt "#32243"
 msgid "Alternate List Views Layout"
@@ -3088,7 +3092,7 @@ msgstr ""
 
 msgctxt "#32307"
 msgid "White"
-msgstr ""
+msgstr "Weiß"
 
 msgctxt "#32308"
 msgid "Blue"
@@ -3108,7 +3112,7 @@ msgstr "Grau"
 
 msgctxt "#32312"
 msgid "Orange"
-msgstr ""
+msgstr "Orange"
 
 msgctxt "#32313"
 msgid "Purple"
@@ -3324,7 +3328,7 @@ msgstr ""
 
 msgctxt "#32366"
 msgid "Hide Title Bar in Main Window"
-msgstr ""
+msgstr "Titelleiste im Hauptfenster ausblenden"
 
 msgctxt "#32367"
 msgid "Hide fallback image if no thumb in OSD"
@@ -3364,11 +3368,11 @@ msgstr ""
 
 msgctxt "#32376"
 msgid "Disable Lyrics"
-msgstr ""
+msgstr "Liedtexte deaktivieren"
 
 msgctxt "#32377"
 msgid "Activate Lyrics"
-msgstr ""
+msgstr "Liedtexte aktivieren"
 
 msgctxt "#32378"
 msgid "Use Color Flags"
@@ -3400,11 +3404,11 @@ msgstr ""
 
 msgctxt "#32385"
 msgid "Hide Seek Bar when Forwarding or Rewinding"
-msgstr ""
+msgstr "Suchleiste beim Vor- und Zurückspulen ausblenden"
 
 msgctxt "#32386"
 msgid "Enable Touchscreen Devices Support"
-msgstr ""
+msgstr "Unterstützung von Touchscreen-Geräten aktivieren"
 
 msgctxt "#32387"
 msgid "Show Rating Overlay"
@@ -3444,7 +3448,7 @@ msgstr ""
 
 msgctxt "#32398"
 msgid "Show Poster"
-msgstr ""
+msgstr "Poster anzeigen"
 
 msgctxt "#32399"
 msgid "Text"
@@ -3484,7 +3488,7 @@ msgstr ""
 
 msgctxt "#32408"
 msgid "Fixed List"
-msgstr ""
+msgstr "Fixierte Liste"
 
 msgctxt "#32409"
 msgid "Centered Static Menu (less than 8 items)"
@@ -3504,15 +3508,15 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "Aktiviert"
 
 msgctxt "#32414"
 msgid "Disabled"
-msgstr ""
+msgstr "Deaktiviert"
 
 msgctxt "#32415"
 msgid "Auto Play Trailer (Local Trailer Only)"
-msgstr ""
+msgstr "Trailer automatisch wiedergeben (nur lokale Trailer)"
 
 msgctxt "#32416"
 msgid "Auto Play Trailer Delay"
