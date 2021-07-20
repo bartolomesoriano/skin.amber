@@ -1,3 +1,7 @@
+3.2.145 (20-07-2021)
+- Option to automatically play trailers in media views (only local trailers)
+- Add option to show information popup for shelves
+- Add option to center shelf items
 3.2.144 (03-07-2021)
 - Fixes for OSD and seekbar
 - Add movie decades playlists and widget option
