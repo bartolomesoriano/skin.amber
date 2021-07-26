@@ -3515,6 +3515,10 @@ msgctxt "#32416"
 msgid "Auto Play Trailer Delay"
 msgstr ""
 
+msgctxt "#32417"
+msgid "Fanart Title Button Opens Info Dialog"
+msgstr ""
+
 #~ msgctxt "#32232"
 #~ msgid "Main Rating"
 #~ msgstr "Valoración Principal"

@@ -482,6 +482,12 @@
 							<param name="skinsetting" value="FanartTitle.InTopBar"/>
 							<param name="itemvisibility" value="Skin.HasSetting(Enable.FanartTitle)"/>
 						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="18"/>
+							<param name="itemlabel" value="      $LOCALIZE[32417]"/>
+							<param name="skinsetting" value="FanartTitle.OpensInfo"/>
+							<param name="itemvisibility" value="Skin.HasSetting(Enable.FanartTitle) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper)"/>
+						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">8</param>
                             <param name="itemlabel">$LOCALIZE[32049]</param>

@@ -377,6 +377,21 @@
 		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) + String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)">$INFO[Container(9992).ListItem.Label]</value>
 		<value></value>
     </variable>
+	
+	<variable name="FanartDBTypeVar">
+		<!-- Main menu fanart title -->
+		<value condition="String.IsEqual(Container(300).ListItem.Property(background),Kodi.Movie.Fanart)">$INFO[Container(12341).ListItem.DBType]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(background),Kodi.TV.Fanart)">$INFO[Container(12342).ListItem.DBType]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(background),Kodi.Video.Fanart)">$INFO[Container(12346).ListItem.DBType]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(background),Kodi.Global.Fanart)">$INFO[Container(12347).ListItem.DBType]</value>
+		
+        <value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + [!String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(9988).ListItem.DBType]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) + String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)">$INFO[Container(9989).ListItem.DBType]</value>
+        
+		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) + [!String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)]">$INFO[Container(9990).ListItem.DBType]</value>
+		<value condition="String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) + String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)">$INFO[Container(9992).ListItem.DBType]</value>
+		<value></value>
+    </variable>
 
     <expression name="ExtraFanartPresent">!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(Container.ListItem.Art(fanart1)) | 
 	                                      !String.IsEmpty(ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(Container.ListItem.Art(tvshow.fanart1)) | 
@@ -1203,13 +1218,13 @@
 	<include name="ShowFanartTitle">
         <control type="group">
 		    <animation effect="fade" start="100" end="0" time="100" condition="[Player.Playing | Player.Paused | Player.Forwarding | Player.Rewinding] + Skin.HasSetting(FanartTitle.InTopBar) + !Skin.HasSetting(Hide.TitleBarNowPlaying)">Conditional</animation>
-<!--            <visible>[[String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) | String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) | String.EndsWith(Container(300).ListItem.Property(background),.Fanart)] + !String.IsEqual(Container(300).ListItem.Property(background),Weather.Fanart)] | 
-			         [ControlGroup(700).HasFocus + String.IsEmpty(Container(300).ListItem.Property(widgetDisableFanart)) + String.IsEqual(Container(300).ListItem.Property(widgetType),custom) + 
-					  [[String.IsEqual(Container.ListItem.Property(background),nodeBackground) | String.IsEqual(Container.ListItem.Property(background),playlistBackground) | String.EndsWith(Container.ListItem.Property(background),.Fanart)] + !String.IsEqual(Container(300).ListItem.Property(background),Weather.Fanart)]]</visible> -->
             <visible>[[String.IsEqual(Container(300).ListItem.Property(background),nodeBackground) | String.IsEqual(Container(300).ListItem.Property(background),playlistBackground) | String.EndsWith(Container(300).ListItem.Property(background),.Fanart)] + !String.IsEqual(Container(300).ListItem.Property(background),Weather.Fanart)] | 
 			         [ControlGroup(700).HasFocus + String.IsEmpty(Container(300).ListItem.Property(widgetDisableFanart))]</visible>					  
-		    <visible>[Skin.HasSetting(Enable.Bottomshortcuts) + !Skin.HasSetting(VerticalHome)] | [Skin.HasSetting(VerticalHome) + [!Container(300).ListItem.Property(widgetThreeShelvesLarge) | [Container(300).ListItem.Property(widgetThreeShelvesLarge) + [Control.HasFocus(300) | Control.HasFocus(9001)] + Container(300).ListItem.Property(widgetsHide)]]] | 
-			         [!Skin.HasSetting(VerticalHome) + [![$EXP[tripleWidgetIsShowing]]] + [!Container(300).ListItem.Property(widgetThreeShelves) | [Container(300).ListItem.Property(widgetThreeShelves) + [[[Control.HasFocus(300) | Control.HasFocus(9001)] + Container(300).ListItem.Property(widgetsHide)] | 
+		    <visible>[Skin.HasSetting(Enable.Bottomshortcuts) + !Skin.HasSetting(VerticalHome)] | 
+			         Skin.HasSetting(FanartTitle.InTopBar) | 
+			         [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(FanartTitle.InTopBar) + [!Container(300).ListItem.Property(widgetThreeShelvesLarge) | 
+					                                   [Container(300).ListItem.Property(widgetThreeShelvesLarge) + [Control.HasFocus(300) | Control.HasFocus(9001)] + Container(300).ListItem.Property(widgetsHide)]]] | 
+                     [!Skin.HasSetting(VerticalHome) + !Skin.HasSetting(FanartTitle.InTopBar) + [![$EXP[tripleWidgetIsShowing]]] + [!Container(300).ListItem.Property(widgetThreeShelves) | [Container(300).ListItem.Property(widgetThreeShelves) + [[[Control.HasFocus(300) | Control.HasFocus(9001)] + Container(300).ListItem.Property(widgetsHide)] | 
 					                                                                                                                                                                                       [String.IsEqual(Container(300).ListItem.Property(widgetType.2),none) | String.IsEqual(Container(300).ListItem.Property(widgetType.3),none)]]]]]</visible>
 			<control type="image">
                 <left>0</left>
@@ -1246,6 +1261,14 @@
                 <texture flipy="true">common/TimePanel.png</texture>
                 <colordiffuse>dfcebe9e</colordiffuse>
                 <visible>!Skin.HasSetting(FanartTitle.InTopBar) + Skin.HasSetting(VerticalHome) + Skin.HasSetting(Hide.TopBar.Main)</visible>
+            </control>
+            <control type="label" id="1200101">
+			    <visible>false</visible>
+				<label>$VAR[FanartTitleVar]</label>
+            </control>
+            <control type="label" id="1200102">
+			    <visible>false</visible>
+				<label>$VAR[FanartDBTypeVar]</label>
             </control>            
             <control type="button" id="12001">
                 <include condition="Skin.HasSetting(FanartTitle.InTopBar) + !Skin.HasSetting(VerticalHome)">TitleButtonTopBar</include>
@@ -1262,10 +1285,12 @@
                 <onleft>9001</onleft>
                 <onright>9001</onright>
                 <onback>9001</onback>            
-                <onclick condition="!System.HasAddon(plugin.video.youtube)">SetProperty(CustomSearch,2,home)</onclick>
-                <onclick>Skin.Reset(CustomSearchTerm)</onclick>
-                <onclick>Skin.SetString(CustomSearchTerm,$ESCVAR[FanartTitleVar])</onclick>
-		        <onclick>ActivateWindow(1122)</onclick>
+                <onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo) + !System.HasAddon(plugin.video.youtube)">SetProperty(CustomSearch,2,home)</onclick>
+                <onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo)">Skin.Reset(CustomSearchTerm)</onclick>
+                <onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo)">Skin.SetString(CustomSearchTerm,$ESCVAR[FanartTitleVar])</onclick>
+		        <onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo)">ActivateWindow(1122)</onclick>
+				<onclick condition="Skin.HasSetting(FanartTitle.OpensInfo) + !String.IsEmpty(Control.GetLabel(1200102)) + String.IsEqual(Control.GetLabel(1200102),movie)">RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Control.GetLabel(1200101),videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D],call_auto=1134)</onclick>
+                <onclick condition="Skin.HasSetting(FanartTitle.OpensInfo) + !String.IsEmpty(Control.GetLabel(1200102)) + String.IsEqual(Control.GetLabel(1200102),tvshow)">RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Control.GetLabel(1200101),videodb://tvshows/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22tvshows%22%7D],call_auto=1134)</onclick>
 		    </control>
         </control>
 	</include>

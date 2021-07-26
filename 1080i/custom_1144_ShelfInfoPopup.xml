@@ -6,6 +6,7 @@
 	<visible>!System.IdleTime(30) + System.IdleTime(3) + !String.IsEmpty(Window(Home).Property(ShowWidgetPopup)) + 
 	         !Window.IsVisible(movieinformation) + !Window.IsVisible(DialogMusicInfo.xml) + 
 			 !Window.IsVisible(DialogContextMenu.xml) + !Window.IsVisible(DialogButtonMenu.xml) + 
+			 !Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + 
 			 ![Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)] + 
 	         [String.IsEqual(Window.Property(DBType),movie) | String.IsEqual(Window.Property(DBType),tvshow) | 
 			  String.IsEqual(Window.Property(DBType),episode) | String.IsEqual(Window.Property(DBType),musicvideo) | 
@@ -16,7 +17,6 @@
 	
 	<controls>
         
-<!--		<include>DialogBackgroundFade</include>    -->
 		<control type="button" id="64">
 			<oninfo>ClearProperty(ShowWidgetPopup,Home)</oninfo>
 			<oninfo>Dialog.Close(1144)</oninfo>

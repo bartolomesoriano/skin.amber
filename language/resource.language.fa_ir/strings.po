@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2021-07-15 22:19+0000\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
@@ -3537,4 +3537,8 @@ msgstr ""
 
 msgctxt "#32416"
 msgid "Auto Play Trailer Delay"
+msgstr ""
+
+msgctxt "#32417"
+msgid "Fanart Title Button Opens Info Dialog"
 msgstr ""

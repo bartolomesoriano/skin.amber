@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-07-15 22:19+0000\n"
-"Last-Translator: beatmasterRS <danysahne333@yahoo.de>\n"
+"PO-Revision-Date: 2021-07-22 22:31+0000\n"
+"Last-Translator: Kai Sommerfeld <kai.sommerfeld@gmx.com>\n"
 "Language-Team: German <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/de_de/>\n"
 "Language: de_de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.7.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -409,10 +409,9 @@ msgctxt "#31116"
 msgid "Set background image"
 msgstr "Hintergrundbild auswählen"
 
-#, fuzzy
 msgctxt "#31117"
 msgid "Select Default Font Size"
-msgstr "Standard-Schriftgröße"
+msgstr "Standard-Schriftgröße auswählen"
 
 msgctxt "#31118"
 msgid "Small"
@@ -520,7 +519,7 @@ msgstr "Triple-Ansicht deaktivieren"
 
 msgctxt "#31159"
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 msgctxt "#31160"
 msgid "Disable Logo view"
@@ -1470,12 +1469,10 @@ msgctxt "#31606"
 msgid "Tall List"
 msgstr "Hohe Liste"
 
-#, fuzzy
 msgctxt "#31607"
 msgid "Panel 2"
 msgstr "Panel 2"
 
-#, fuzzy
 msgctxt "#31608"
 msgid "Big Panel 2"
 msgstr "Großes Panel 2"
@@ -1498,7 +1495,7 @@ msgstr ""
 
 msgctxt "#31613"
 msgid "Standard"
-msgstr ""
+msgstr "Standard"
 
 msgctxt "#31614"
 msgid "Low"
@@ -1522,7 +1519,7 @@ msgstr ""
 
 msgctxt "#31619"
 msgid "Thumb"
-msgstr ""
+msgstr "Vorschaubild"
 
 msgctxt "#31620"
 msgid "Landscape"
@@ -1532,15 +1529,13 @@ msgctxt "#31621"
 msgid "Clear Logo"
 msgstr ""
 
-#, fuzzy
 msgctxt "#31622"
 msgid "Clear Art"
-msgstr "ClearArt anzeigen"
+msgstr "ClearArt"
 
-#, fuzzy
 msgctxt "#31623"
 msgid "Disc Art"
-msgstr "Disc-Art anzeigen"
+msgstr "Disc-Art"
 
 msgctxt "#31624"
 msgid "Character Art"
@@ -1565,7 +1560,7 @@ msgstr "Scrollen der Bezeichnungen in Listen-Ansichten aktivieren"
 
 msgctxt "#31629"
 msgid "Show Text under artwork"
-msgstr ""
+msgstr "Text unter der Grafiken anzeigen"
 
 msgctxt "#31630"
 msgid "Automatic Scroll Time (seconds)"
@@ -1593,15 +1588,15 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "Verknüpfungen"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
-msgstr ""
+msgstr "Untere Verknüpfungen aktivieren"
 
 msgctxt "#31638"
 msgid "Show Bottom Shortcuts for this Menu Item"
-msgstr ""
+msgstr "Untere Verknüpfungen für diesen Menüpunkt anzeigen"
 
 msgctxt "#31639"
 msgid "Short Daily Weather"
@@ -1641,7 +1636,7 @@ msgstr ""
 
 msgctxt "#31648"
 msgid "Right List"
-msgstr ""
+msgstr "Rechte Liste"
 
 msgctxt "#31649"
 msgid "Decades"
@@ -3420,11 +3415,11 @@ msgstr ""
 
 msgctxt "#32390"
 msgid "Select Items to Show in Views"
-msgstr ""
+msgstr "Elemente für die Anzeige in Ansichten auswählen"
 
 msgctxt "#32391"
 msgid "Items to Show in Views"
-msgstr ""
+msgstr "Elemente für die Anzeige in Ansichten"
 
 msgctxt "#32392"
 msgid "Play Random"
@@ -3432,11 +3427,11 @@ msgstr ""
 
 msgctxt "#32393"
 msgid "List Views Options"
-msgstr ""
+msgstr "Optionen für Listenansichten"
 
 msgctxt "#32394"
 msgid "Marks and Overlays"
-msgstr ""
+msgstr "Markierungen und Overlays"
 
 msgctxt "#32395"
 msgid "Select View Types to Enable"
@@ -3444,7 +3439,7 @@ msgstr ""
 
 msgctxt "#32396"
 msgid "View Types to Enable"
-msgstr ""
+msgstr "Ansichtstypen zum Aktivieren"
 
 msgctxt "#32398"
 msgid "Show Poster"
@@ -3452,11 +3447,11 @@ msgstr "Poster anzeigen"
 
 msgctxt "#32399"
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "#32401"
 msgid "List Item Type"
@@ -3464,7 +3459,7 @@ msgstr ""
 
 msgctxt "#32402"
 msgid "Poster/Thumb"
-msgstr ""
+msgstr "Poster/Vorschaubild"
 
 msgctxt "#32403"
 msgid "OSD/Full Screen Art"
@@ -3476,11 +3471,11 @@ msgstr ""
 
 msgctxt "#32405"
 msgid "Show Info Popup"
-msgstr ""
+msgstr "Info-Popup anzeigen"
 
 msgctxt "#32406"
 msgid "Popup Delay"
-msgstr ""
+msgstr "Popup-Verzögerung"
 
 msgctxt "#32407"
 msgid "Show Floor"
@@ -3492,15 +3487,15 @@ msgstr "Fixierte Liste"
 
 msgctxt "#32409"
 msgid "Centered Static Menu (less than 8 items)"
-msgstr ""
+msgstr "Zentriertes statisches Menü (weniger als 8 Einträge)"
 
 msgctxt "#32410"
 msgid "Compact OSD"
-msgstr ""
+msgstr "Kompaktes OSD"
 
 msgctxt "#32411"
 msgid "Ultra Compact OSD"
-msgstr ""
+msgstr "Ultrakompaktes OSD"
 
 msgctxt "#32412"
 msgid "Alternate OSD Button Highlighting"
@@ -3520,6 +3515,10 @@ msgstr "Trailer automatisch wiedergeben (nur lokale Trailer)"
 
 msgctxt "#32416"
 msgid "Auto Play Trailer Delay"
+msgstr "Verzögerung für Trailer automatisch wiedergeben"
+
+msgctxt "#32417"
+msgid "Fanart Title Button Opens Info Dialog"
 msgstr ""
 
 #~ msgctxt "#32232"
