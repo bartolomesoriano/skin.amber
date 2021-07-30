@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-06-02 19:35+0000\n"
+"PO-Revision-Date: 2021-07-29 22:06+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Greek <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/el_gr/>\n"
 "Language: el_gr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.7.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -1079,7 +1079,6 @@ msgctxt "#31502"
 msgid "All Movies"
 msgstr ""
 
-#, fuzzy
 msgctxt "#31503"
 msgid "Add Group"
 msgstr "Προσθήκη Ομάδας"
@@ -3542,4 +3541,24 @@ msgstr ""
 
 msgctxt "#32417"
 msgid "Fanart Title Button Opens Info Dialog"
+msgstr ""
+
+msgctxt "#32418"
+msgid "Single Image"
+msgstr ""
+
+msgctxt "#32419"
+msgid "Multiple Images"
+msgstr ""
+
+msgctxt "#32420"
+msgid "Video/Playlist"
+msgstr ""
+
+msgctxt "#32421"
+msgid "Startup Background"
+msgstr ""
+
+msgctxt "#32422"
+msgid "Hide Menu when Shelves are Focused"
 msgstr ""

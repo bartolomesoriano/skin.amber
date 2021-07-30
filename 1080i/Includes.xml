@@ -2328,11 +2328,11 @@
                     <animation effect="slide" start="0,0" end="-60,0" time="0" reversible="true" condition="!String.IsEmpty(ListItem.Icon) + $PARAM[showicon]">Conditional</animation>
                     <right>18</right>
                     <height>60</height>
-                    <width>400</width>
+                    <width>600</width>
                     <font>ListDetails</font>
                     <haspath>true</haspath>
                     <align>right</align>
-                    <scroll>false</scroll>
+                    <scroll>true</scroll>
                     <textcolor>$VAR[HighlightColor]</textcolor>
                     <label>$INFO[ListItem.Label2]</label>
                 </control>
@@ -2364,11 +2364,11 @@
                     <animation effect="slide" start="0,0" end="-60,0" time="0" reversible="true" condition="!String.IsEmpty(ListItem.Icon) + $PARAM[showicon]">Conditional</animation>
                     <right>18</right>
                     <height>60</height>
-                    <width>400</width>
+                    <width>600</width>
                     <font>ListDetails</font>
                     <haspath>true</haspath>
                     <align>right</align>
-                    <scroll>false</scroll>
+                    <scroll>true</scroll>
                     <textcolor>$VAR[FocusedTextColor]</textcolor>
                     <shadowcolor></shadowcolor>
                     <label>$INFO[ListItem.Label2]</label>

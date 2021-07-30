@@ -1327,4 +1327,37 @@
 		</item>
 	</include>
 	
+	<!-- Select startup background for skin: image, multiimage or video/playlist -->
+	<include name="SelectStartupBackground">
+		<item>
+			<label>$LOCALIZE[32418]</label>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>Skin.SetImage(StartupImage,special://skin/backgrounds/intro)</onclick>
+			<onclick>Skin.Reset(StartupImagePath)</onclick>
+			<onclick>Skin.Reset(StartupPlaylist)</onclick>
+		</item>
+		<item>
+			<label>$LOCALIZE[32419]</label>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>Skin.SetPath(StartupImagePath,special://skin/backgrounds/intro)</onclick>
+			<onclick>Skin.Reset(StartupImage)</onclick>
+			<onclick>Skin.Reset(StartupPlaylist)</onclick>
+		</item>
+        <item>
+			<label>$LOCALIZE[32420]</label>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick condition="String.IsEmpty(Skin.String(StartupPlaylist))">Skin.SetFile(StartupPlaylist,.mp4|.avi|.mkv|.xvid|.wmv|.mov|.xsp|.mp3|.wma|.flac|.m3u,special://skin/extras/intro)</onclick>
+            <onclick condition="!String.IsEmpty(Skin.String(StartupPlaylist))">Skin.Reset(StartupPlaylist)</onclick>
+			<onclick>Skin.Reset(StartupImage)</onclick>
+			<onclick>Skin.Reset(StartupImagePath)</onclick>
+		</item>		
+        <item>
+			<label>$LOCALIZE[15109]</label>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>Skin.Reset(StartupImage)</onclick>
+			<onclick>Skin.Reset(StartupImagePath)</onclick>
+			<onclick>Skin.Reset(StartupPlaylist)</onclick>
+		</item>
+	</include>
+	
 </includes>

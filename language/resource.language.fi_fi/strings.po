@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-07-22 22:31+0000\n"
+"PO-Revision-Date: 2021-07-27 13:32+0000\n"
 "Last-Translator: bsoriano <bsoriano@gmail.com>\n"
 "Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/fi_fi/>\n"
 "Language: fi_fi\n"
@@ -3520,6 +3520,26 @@ msgstr "Automaattisesti Toistettavan Trailerin Viive"
 
 msgctxt "#32417"
 msgid "Fanart Title Button Opens Info Dialog"
+msgstr "Fanitaiteen otsikkonappi avaa info dialogin"
+
+msgctxt "#32418"
+msgid "Single Image"
+msgstr ""
+
+msgctxt "#32419"
+msgid "Multiple Images"
+msgstr ""
+
+msgctxt "#32420"
+msgid "Video/Playlist"
+msgstr ""
+
+msgctxt "#32421"
+msgid "Startup Background"
+msgstr ""
+
+msgctxt "#32422"
+msgid "Hide Menu when Shelves are Focused"
 msgstr ""
 
 #~ msgctxt "#32232"

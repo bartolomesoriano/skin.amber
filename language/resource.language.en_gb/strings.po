@@ -3619,3 +3619,23 @@ msgstr ""
 msgctxt "#32417"
 msgid "Fanart Title Button Opens Info Dialog"
 msgstr ""
+
+msgctxt "#32418"
+msgid "Single Image"
+msgstr ""
+
+msgctxt "#32419"
+msgid "Multiple Images"
+msgstr ""
+
+msgctxt "#32420"
+msgid "Video/Playlist"
+msgstr ""
+
+msgctxt "#32421"
+msgid "Startup Background"
+msgstr ""
+
+msgctxt "#32422"
+msgid "Hide Menu when Shelves are Focused"
+msgstr ""

@@ -1905,6 +1905,12 @@
 		<value>5 $LOCALIZE[32047]</value>
 	</variable>
 	
+	<variable name="StartupBackgroundLabelVar">
+		<value condition="!String.IsEmpty(Skin.String(StartupImage))">$INFO[Skin.String(StartupImage)]</value>
+		<value condition="!String.IsEmpty(Skin.String(StartupImagePath))">$INFO[Skin.String(StartupImagePath)]</value>
+		<value condition="!String.IsEmpty(Skin.String(StartupPlaylist))">$INFO[Skin.String(StartupPlaylist)]</value>
+		<value>$LOCALIZE[16018]</value>
+	</variable>
 	<variable name="PVRGuideIcon">
 	    <value condition="!String.IsEmpty(ListItem.EPGEventIcon)">$INFO[ListItem.EPGEventIcon]</value>
 	    <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Fanart))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Fanart)]</value>

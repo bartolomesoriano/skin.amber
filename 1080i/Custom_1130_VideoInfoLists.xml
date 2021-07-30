@@ -21,7 +21,7 @@
 			    <control type="image" description="Menu BG">
     				<posx>681</posx>
 				    <posy>240</posy>
-				    <height>800</height>
+				    <height>820</height>
 				    <width>747</width>
 				    <texture border="0,40,0,40">dialogs/ContextMenu.png</texture>
 					<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
@@ -41,7 +41,7 @@
                 <posx>707</posx>
 				<posy>366</posy>
 				<width>695</width>
-				<height>700</height>
+				<height>660</height>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <usecontrolcoords>true</usecontrolcoords>

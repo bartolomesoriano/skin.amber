@@ -24,39 +24,43 @@
 					<colordiffuse>$VAR[WidgetBGColor]</colordiffuse>
 				</control>
                 <!-- label for embuary helper suggestions by random genre -->
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow)</visible>
-				</control>                
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id]).ListItem.Property(searchstring))</visible>
-				</control>
+				<control type="group">
+				    <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id]).ListItem.DBType,tvshow)</visible>
+				    </control>                
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id]).ListItem.Property(searchstring))</visible>
+				    </control>
+				</control>	
 				<control type="label">
 					<visible>Control.HasFocus($PARAM[id])</visible>
 					<top>-54</top>
@@ -118,72 +122,76 @@
 					<colordiffuse>$VAR[WidgetBGColor]</colordiffuse>
 					<texture border="0,40,0,40">home/OverlayRA2T.png</texture>
 				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label2]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
-				</control>                
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label1]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
-				</control>                
+				<control type="group">
+				    <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label2]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
+				    </control>                
+				    <control type="label">
+    					<top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label1]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
+				    </control>
+                </control>					
 				<control type="label">
 					<visible>Control.HasFocus($PARAM[id2])</visible>
 					<top>-54</top>
@@ -229,39 +237,43 @@
 					<colordiffuse>$VAR[WidgetBGColor]</colordiffuse>
 					<texture border="0,40,0,0">home/ShelfBackground.png</texture>
 				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label1]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
-				</control>                
+				<control type="group">
+				    <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label1]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
+				    </control>
+				</control>	
 				<control type="label">
 					<visible>Control.HasFocus($PARAM[id1])</visible>
 					<top>-54</top>
@@ -343,104 +355,108 @@
 					<colordiffuse>$VAR[WidgetBGColor]</colordiffuse>
 					<texture border="0,40,0,40">home/OverlayRA2T.png</texture>
 				</control>
-			    <control type="label">
-					<top>$PARAM[toplabel3triple]</top>
-					<right>32</right>
-					<width>900</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label3]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[toplabel3triple]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[toplabel3triple]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,tvshow)</visible>
-				</control>                
-				<control type="label">
-					<top>$PARAM[toplabel2triple]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label2]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[toplabel2triple]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[toplabel2triple]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
-				</control>
-                <control type="label">
-					<top>$PARAM[toplabel1triple]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label1]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[toplabel1triple]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[toplabel1triple]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
+				<control type="group">
+				    <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+			        <control type="label">
+					    <top>$PARAM[toplabel3triple]</top>
+					    <right>32</right>
+					    <width>900</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label3]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[toplabel3triple]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[toplabel3triple]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,tvshow)</visible>
+				    </control>                
+				    <control type="label">
+					    <top>$PARAM[toplabel2triple]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label2]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[toplabel2triple]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+    					<top>$PARAM[toplabel2triple]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
+				    </control>
+                    <control type="label">
+    					<top>$PARAM[toplabel1triple]</top>
+	    				<right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label1]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[toplabel1triple]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+    					<top>$PARAM[toplabel1triple]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
+				    </control>
 				</control>
 				<control type="label">
 					<visible>Control.HasFocus($PARAM[id3])</visible>
@@ -499,72 +515,76 @@
 					<colordiffuse>$VAR[WidgetBGColor]</colordiffuse>
 					<texture border="0,40,0,40">home/OverlayRA2T.png</texture>
 				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label3]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,tvshow)</visible>
-				</control>                
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label1]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
-				</control>                
+				<control type="group">
+				    <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label3]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,tvshow)</visible>
+				    </control>                
+				    <control type="label">
+					    <top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label1]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+    					<top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
+				    </control>
+                </control>                
 				<control type="label">
 					<visible>Control.HasFocus($PARAM[id3])</visible>
 					<top>-54</top>
@@ -611,72 +631,76 @@
 					<colordiffuse>$VAR[WidgetBGColor]</colordiffuse>
 					<texture border="0,40,0,40">home/OverlayRA2T.png</texture>
 				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label2]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
-				</control>                
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label1]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
-				</control>                
+				<control type="group">
+				    <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label2]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
+				    </control>                
+				    <control type="label">
+					    <top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label1]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
+				    </control> 
+                </control>				
 				<control type="label">
 					<visible>Control.HasFocus($PARAM[id2])</visible>
 					<top>-54</top>
@@ -723,49 +747,53 @@
 					<colordiffuse>$VAR[WidgetBGColor]</colordiffuse>
 					<texture border="0,40,0,0">home/ShelfBackground.png</texture>
 				</control>
+				<control type="group">
+				    <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label1]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>-54</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
+				    </control> 
+                </control>					
 				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label1]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>-54</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
-				</control>                
-				<control type="label">
-					<visible>Control.HasFocus($PARAM[id1])</visible>
-					<top>-54</top>
-					<left>12</left>
-					<width>1170</width>
-					<height>45</height>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<scroll>$PARAM[labelscroll1]</scroll>
-					<label>$VAR[HomeWidgetLabel]</label>
+				    <visible>Control.HasFocus($PARAM[id1])</visible>
+				    <top>-54</top>
+				    <left>12</left>
+				    <width>1170</width>
+				    <height>45</height>
+				    <font>Shelf_Title</font>
+				    <textcolor>$VAR[HighlightColor]</textcolor>
+				    <scroll>$PARAM[labelscroll1]</scroll>
+				    <label>$VAR[HomeWidgetLabel]</label>
 				</control>
                 <!-- Info Line -->
 				<control type="label">
@@ -896,45 +924,51 @@
 					    <textcolor>$VAR[HighlightColor]</textcolor>
 					    <label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
                         <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
-				    </control> 
-					<control type="label">
-					    <top>-54</top>
-					    <right>10</right>
-					    <width>480</width>
-					    <height>45</height>
-					    <align>right</align>
-					    <font>Shelf_Title</font>
-					    <textcolor>$VAR[HighlightColor]</textcolor>
-					    <label>$PARAM[label1]</label>
-                        <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
 				    </control>
-				    <control type="label">
-					    <top>-54</top>
-					    <right>10</right>
-					    <width>480</width>
-					    <height>45</height>
-					    <align>right</align>
-					    <font>Shelf_Title</font>
-					    <textcolor>$VAR[HighlightColor]</textcolor>
-					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
-				    </control>
-				    <control type="label">
-					    <top>-54</top>
-					    <right>10</right>
-					    <width>480</width>
-					    <height>45</height>
-					    <align>right</align>
-					    <font>Shelf_Title</font>
-					    <textcolor>$VAR[HighlightColor]</textcolor>
-					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
-				    </control>
+					<control type="group">
+				        <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					    <animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					    <control type="label">
+					        <top>-54</top>
+					        <right>10</right>
+					        <width>480</width>
+					        <height>45</height>
+					        <align>right</align>
+					        <font>Shelf_Title</font>
+					        <textcolor>$VAR[HighlightColor]</textcolor>
+					        <label>$PARAM[label1]</label>
+                            <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
+				        </control>
+				        <control type="label">
+					        <top>-54</top>
+					        <right>10</right>
+					        <width>480</width>
+					        <height>45</height>
+					        <align>right</align>
+					        <font>Shelf_Title</font>
+					        <textcolor>$VAR[HighlightColor]</textcolor>
+					        <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                            <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
+				        </control>
+				        <control type="label">
+					        <top>-54</top>
+					        <right>10</right>
+					        <width>480</width>
+					        <height>45</height>
+					        <align>right</align>
+					        <font>Shelf_Title</font>
+					        <textcolor>$VAR[HighlightColor]</textcolor>
+					        <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                            <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
+				        </control>
+					</control>	
 				</control>
 				<!-- Shelf 1 has focus -->
 				<control type="group">
 				    <visible>Control.HasFocus($PARAM[id1])</visible>
-				    <control type="label">
+				    <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<control type="label">
 					    <top>-54</top>
 					    <right>12</right>
 					    <width>700</width>
@@ -981,7 +1015,9 @@
                 <!-- Shelf 2 has focus -->
 				<control type="group">
 				    <visible>Control.HasFocus($PARAM[id2])</visible>
-				    <control type="label">
+				    <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<control type="label">
 					    <top>-54</top>
 					    <right>12</right>
 					    <width>700</width>
@@ -1025,10 +1061,12 @@
 					    <label>$VAR[HomeWidgetLabel]</label>
 				    </control>
 				</control>
-                <!-- Shelf 2 has focus -->
+                <!-- Shelf 3 has focus -->
 				<control type="group">
 				    <visible>Control.HasFocus($PARAM[id3])</visible>
-				    <control type="label">
+				    <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<control type="label">
 					    <top>-54</top>
 					    <right>12</right>
 					    <width>700</width>
@@ -1085,72 +1123,76 @@
 					<colordiffuse>$VAR[WidgetBGColor]</colordiffuse>
 					<texture border="0,40,0,40">home/OverlayRA2T.png</texture>
 				</control>
-				<control type="label">
-					<top>$PARAM[label3topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label3]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label3topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label3topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,tvshow)</visible>
-				</control>                
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label1]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
-				</control>                
+				<control type="group">
+				    <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+				    <animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+				    <control type="label">
+					    <top>$PARAM[label3topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label3]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label3topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label3topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id3]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id3]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id3]).ListItem.DBType,tvshow)</visible>
+				    </control>                
+				    <control type="label">
+					    <top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label1]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
+				    </control>                
+				</control>	
 				<control type="label">
 					<visible>Control.HasFocus($PARAM[id3])</visible>
 					<top>$PARAM[label3topdouble]</top>
@@ -1197,72 +1239,76 @@
 					<colordiffuse>$VAR[WidgetBGColor]</colordiffuse>
 					<texture border="0,40,0,40">home/OverlayRA2T.png</texture>
 				</control>
-				<control type="label">
-					<top>$PARAM[label2topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label2]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label2topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label2topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
-				</control>                
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label1]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label1topdouble]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
-				</control>                
+				<control type="group">
+				    <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+				    <animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+				    <control type="label">
+					    <top>$PARAM[label2topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label2]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label2topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label2topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id2]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id2]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id2]).ListItem.DBType,tvshow)</visible>
+				    </control>                
+				    <control type="label">
+					    <top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label1]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label1topdouble]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
+				    </control>                
+				</control>	
 				<control type="label">
 					<visible>Control.HasFocus($PARAM[id2])</visible>
 					<top>$PARAM[label2topdouble]</top>
@@ -1309,39 +1355,43 @@
 					<colordiffuse>$VAR[WidgetBGColor]</colordiffuse>
 					<texture border="0,40,0,0">home/ShelfBackground.png</texture>
 				</control>
-				<control type="label">
-					<top>$PARAM[label1topsingle]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$PARAM[label1]</label>
-                    <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label1topsingle]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
-				</control>
-				<control type="label">
-					<top>$PARAM[label1topsingle]</top>
-					<right>12</right>
-					<width>700</width>
-					<height>45</height>
-					<align>right</align>
-					<font>Shelf_Title</font>
-					<textcolor>$VAR[HighlightColor]</textcolor>
-					<label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
-                    <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
-				</control>                
+				<control type="group">
+				    <animation effect="slide" start="0,0" end="420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+				    <control type="label">
+					    <top>$PARAM[label1topsingle]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$PARAM[label1]</label>
+                        <visible>String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring))</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label1topsingle]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31497] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,movie)</visible>
+				    </control>
+				    <control type="label">
+					    <top>$PARAM[label1topsingle]</top>
+					    <right>12</right>
+					    <width>700</width>
+					    <height>45</height>
+					    <align>right</align>
+					    <font>Shelf_Title</font>
+					    <textcolor>$VAR[HighlightColor]</textcolor>
+					    <label>$INFO[Container($PARAM[id1]).ListItem.Property(searchstring),$LOCALIZE[31517] ,]</label>
+                        <visible>!String.IsEmpty(Container($PARAM[id1]).ListItem.Property(searchstring)) + String.IsEqual(Container($PARAM[id1]).ListItem.DBType,tvshow)</visible>
+				    </control>                
+				</control>	
 				<control type="label">
 					<visible>Control.HasFocus($PARAM[id1])</visible>
 					<top>$PARAM[label1topsingle]</top>
@@ -4864,6 +4914,374 @@
 			<animation effect="slide" start="0,0" end="30,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,8) + $PARAM[center668triplesmall]">Conditional</animation>
 			
 		</definition>
+	</include>
+	
+	<!-- Animations to center shelf items in vertical menu when menu auto-hides if widgets are focused -->
+	<include name="ShelfCenterAnimationsVertHiddenMenu">
+	    <param name="id"></param>
+		<param name="center228">false</param>
+		<param name="center228double">false</param>
+		<param name="center228triplemed">false</param>
+		<param name="center228triplesmall">false</param>
+		<param name="center295">false</param>
+		<param name="center295double">false</param>
+		<param name="center295triplemed">false</param>
+		<param name="center295triplesmall">false</param>
+		<param name="center315">false</param>
+		<param name="center315double">false</param>
+		<param name="center315triplemed">false</param>
+		<param name="center315triplesmall">false</param>
+		<param name="center376">false</param>
+		<param name="center376double">false</param>
+		<param name="center376triplemed">false</param>
+		<param name="center376triplesmall">false</param>
+		<param name="center385">false</param>
+		<param name="center385double">false</param>
+		<param name="center500">false</param>
+		<param name="center500double">false</param>
+		<param name="center500triplemed">false</param>
+		<param name="center500triplesmall">false</param>
+		<param name="center668">false</param>
+		<param name="center668double">false</param>
+		<param name="center668triplemed">false</param>
+		<param name="center668triplesmall">false</param>
+		<param name="isTripleRowLarge">false</param>
+		<param name="isTripleRow">false</param>
+		<definition>
+		    <!-- Center Poster and Square (with text under art) shelves, single row -->
+			<animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center228] + !$PARAM[center228double] + !$PARAM[center228triplemed] + !$PARAM[center228triplesmall] + !$PARAM[isTripleRow] + 
+																				  !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center228] + !$PARAM[center228double] + !$PARAM[center228triplemed] + !$PARAM[center228triplesmall] + !$PARAM[isTripleRow] + 
+																				  Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>																	  
+			<animation effect="slide" start="0,0" end="142,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,7) + $PARAM[center228] + !$PARAM[center228double] + 
+			                                                                      !$PARAM[center228triplemed] + !$PARAM[center228triplesmall] + !$PARAM[isTripleRow] + 
+																				  !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="60,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,7) + $PARAM[center228] + !$PARAM[center228double] + 
+			                                                                      !$PARAM[center228triplemed] + !$PARAM[center228triplesmall] + !$PARAM[isTripleRow] + 
+																				  Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>																	  
+			<animation effect="slide" start="0,0" end="28,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,8) + $PARAM[center228] + !$PARAM[center228double] + 
+			                                                                      !$PARAM[center228triplemed] + !$PARAM[center228triplesmall] + !$PARAM[isTripleRow] + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Poster and Square (with text under art) shelves, double row -->
+			<animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center228double] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center228double] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="142,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,13) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,14) + 
+			                                                                      $PARAM[center228double] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>																	  
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,13) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,14) + 
+			                                                                     $PARAM[center228double] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="28,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,15) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,16) + 
+			                                                                     $PARAM[center228double] + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Poster and Square (with text under art) shelves, triple row large -->
+			<animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,18) + 
+			                                                                      $PARAM[center228] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,18) + 
+			                                                                      $PARAM[center228] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,19) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,21) + 
+			                                                                      $PARAM[center228] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="142,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,19) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,21) + 
+			                                                                      $PARAM[center228] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="28,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,22) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,24) + 
+			                                                                     $PARAM[center228] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Poster and Square (with text under art) shelves, triple row medium -->
+			<animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,21) + 
+			                                                                      $PARAM[center228triplemed] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,21) + 
+			                                                                      $PARAM[center228triplemed] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,22) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,27) + 
+			                                                                      $PARAM[center228triplemed] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="212,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,22) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,24) + 
+			                                                                      $PARAM[center228triplemed] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="121,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,25) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,27) + 
+			                                                                      $PARAM[center228triplemed] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="30,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,28) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,30) + 
+			                                                                      $PARAM[center228triplemed] + ControlGroup(700).HasFocus">Conditional</animation>																				  
+			<!-- Center Poster and Square (with text under art) shelves, triple row small-->
+			<animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center228triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center228triplesmall] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,9) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,10) + 
+			                                                                     $PARAM[center228triplesmall] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="224.5,0" time="0" condition="Integer.IsEqual(Container($PARAM[id]).NumItems,9) + 
+			                                                                     $PARAM[center228triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="145,0" time="0" condition="Integer.IsEqual(Container($PARAM[id]).NumItems,10) + 
+			                                                                     $PARAM[center228triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="65.5,0" time="0" condition="Integer.IsEqual(Container($PARAM[id]).NumItems,11) + $PARAM[center228triplesmall] + ControlGroup(700).HasFocus">Conditional</animation>																	  
+			
+			<!-- Center DiscArt and CharacterArt shelves, single row -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,4) + 
+			                                                                      $PARAM[center295] + !$PARAM[center295double] + !$PARAM[center295triplemed] + !$PARAM[center295triplesmall] + 
+																				  !$PARAM[isTripleRow] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,4) + 
+			                                                                      $PARAM[center295] + !$PARAM[center295double] + !$PARAM[center295triplemed] + !$PARAM[center295triplesmall] + 
+																				  !$PARAM[isTripleRow] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="60,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,5) + $PARAM[center295] + !$PARAM[center295double] + 
+			                                                                     !$PARAM[center295triplemed] + !$PARAM[center295triplesmall] + !$PARAM[isTripleRow] + 
+																				 Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="202.5,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,5) + $PARAM[center295] + !$PARAM[center295double] + 
+			                                                                     !$PARAM[center295triplemed] + !$PARAM[center295triplesmall] + !$PARAM[isTripleRow] + 
+																				 !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="55,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,6) + $PARAM[center295] + !$PARAM[center295double] + 
+			                                                                     !$PARAM[center295triplemed] + !$PARAM[center295triplesmall] + !$PARAM[isTripleRow] + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center DiscArt and CharacterArt shelves, double row -->		
+			<animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center295double] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center295double] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,9) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,10) + 
+			                                                                      $PARAM[center295double] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="202.5,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,9) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,10) + 
+			                                                                      $PARAM[center295double] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="55,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,11) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center295double] + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center DiscArt and CharacterArt shelves, triple row large -->		
+			<animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center295] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center295] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,13) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,15) + 
+			                                                                      $PARAM[center295] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="202.5,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,13) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,15) + 
+			                                                                      $PARAM[center295] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="55,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,16) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,18) + 
+			                                                                      $PARAM[center295] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center DiscArt and CharacterArt shelves, triple row medium -->		
+			<animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,15) + 
+			                                                                      $PARAM[center295triplemed] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,15) + 
+			                                                                      $PARAM[center295triplemed] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,16) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,21) + 
+			                                                                      $PARAM[center295triplemed] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="205,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,16) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,18) + 
+			                                                                      $PARAM[center295triplemed] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="82.5,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,19) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,21) + 
+			                                                                      $PARAM[center295triplemed] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center DiscArt and CharacterArt shelves, triple row small -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center295triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center295triplesmall] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,7) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center295triplesmall] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="187.5,0" time="0" condition="Integer.IsEqual(Container($PARAM[id]).NumItems,7) + 
+			                                                                      $PARAM[center295triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="80,0" time="0" condition="Integer.IsEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center295triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			
+			<!-- Center Square (with no text under art) shelves, single row -->	
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,4) + 
+			                                                                      $PARAM[center315] + !$PARAM[center315double] + !$PARAM[center315triplemed] + !$PARAM[center315triplesmall] + 
+																				  !$PARAM[isTripleRow] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,4) + 
+			                                                                      $PARAM[center315] + !$PARAM[center315double] + !$PARAM[center315triplemed] + !$PARAM[center315triplesmall] + 
+																				  !$PARAM[isTripleRow] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="60,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,5) + $PARAM[center315] + !$PARAM[center315double] + !$PARAM[center315triplemed] + 
+			                                                                     !$PARAM[center315triplesmall] + !$PARAM[isTripleRow] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="152.5,0" time="0" condition="Integer.IsEqual(Container($PARAM[id]).NumItems,5) + 
+			                                                                      $PARAM[center315] + !$PARAM[center315double] + !$PARAM[center315triplemed] + !$PARAM[center315triplesmall] + 
+																				  !$PARAM[isTripleRow] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Square (with no text under art) shelves, double row -->	
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center315double] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center315double] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,9) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,10) + 
+			                                                                     $PARAM[center315double] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="152.5,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,9) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,10) + 
+			                                                                        $PARAM[center315double] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Square (with no text under art) shelves, triple row large -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center315] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center315] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,13) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,15) + 
+			                                                                     $PARAM[center315] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="152.5,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,13) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,15) + 
+			                                                                        $PARAM[center315] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Square (with no text under art) shelves, triple row medium -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,15) + 
+			                                                                      $PARAM[center315triplemed] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,15) + 
+			                                                                      $PARAM[center315triplemed] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,16) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,18) + 
+			                                                                      $PARAM[center315triplemed] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="184,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,16) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,18) + 
+			                                                                      $PARAM[center315triplemed] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="58,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,19) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,21) + 
+			                                                                     $PARAM[center315triplemed] + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Square (with no text under art) shelves, triple row small -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center315triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center315triplesmall] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsEqual(Container($PARAM[id]).NumItems,7) + 
+			                                                                      $PARAM[center315triplesmall] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="170,0" time="0" condition="Integer.IsEqual(Container($PARAM[id]).NumItems,7) + 
+			                                                                      $PARAM[center315triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                     $PARAM[center315triplesmall] + ControlGroup(700).HasFocus">Conditional</animation>
+			
+			<!-- Center Clear Logo shelves, single row -->	
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center376] + !$PARAM[center376double] + !$PARAM[center376triplemed] + !$PARAM[center376triplesmall] + 
+																				  !$PARAM[isTripleRow] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center376] + !$PARAM[center376double] + !$PARAM[center376triplemed] + !$PARAM[center376triplesmall] + 
+																				  !$PARAM[isTripleRow] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,7) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                     $PARAM[center376] + !$PARAM[center376double] + !$PARAM[center376triplemed] + !$PARAM[center376triplesmall] + 
+																				 !$PARAM[isTripleRow] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="187,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,7) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center376] + !$PARAM[center376double] + !$PARAM[center376triplemed] + !$PARAM[center376triplesmall] + 
+																				  !$PARAM[isTripleRow] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Clear Logo shelves, double row -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center376double] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center376double] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,13) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,16) + 
+			                                                                      $PARAM[center376double] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="187,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,13) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,16) + 
+			                                                                      $PARAM[center376double] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Clear Logo shelves, triple row large -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,18) + 
+			                                                                      $PARAM[center376] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,18) + 
+			                                                                      $PARAM[center376] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,19) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,24) + 
+			                                                                      $PARAM[center376] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="187,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,19) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,24) + 
+			                                                                      $PARAM[center376] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Clear Logo shelves, triple row medium -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,20) + 
+			                                                                      $PARAM[center376triplemed] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,20) + 
+			                                                                      $PARAM[center376triplemed] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="40,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,21) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,25) + 
+			                                                                      $PARAM[center376triplemed] + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Clear Logo shelves, triple row small -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,10) + 
+			                                                                      $PARAM[center376triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,10) + 
+			                                                                      $PARAM[center376triplesmall] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,11) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center376triplesmall] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="187,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,11) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center376triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="61.5,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,13) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,14) + 
+			                                                                      $PARAM[center376triplesmall] + ControlGroup(700).HasFocus">Conditional</animation>
+			
+			<!-- Center Clear Art shelves, single row -->		
+			<animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,3) + 
+			                                                                      $PARAM[center385] + !$PARAM[center385double] + !$PARAM[isTripleRow] + 
+																				  !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,3) + 
+			                                                                      $PARAM[center385] + !$PARAM[center385double] + !$PARAM[isTripleRow] + 
+																				  Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>																		
+			<animation effect="slide" start="0,0" end="60,0" time="0" condition="String.IsEqual(Container($PARAM[id]).NumItems,4) + $PARAM[center385] + !$PARAM[center385double] + 
+			                                                                     !$PARAM[isTripleRow] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="187,0" time="0" condition="Integer.IsEqual(Container($PARAM[id]).NumItems,4) + 
+			                                                                      $PARAM[center385] + !$PARAM[center385double] + !$PARAM[isTripleRow] + 
+																				  !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Clear Art shelves, double row -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center385double] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center385double] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,7) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center385double] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="187,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,7) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center385double] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Clear Art shelves, triple row large -->	
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,9) + 
+			                                                                      $PARAM[center385] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,9) + 
+			                                                                      $PARAM[center385] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,10) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center385] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="187,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,10) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center385] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			
+			<!-- Center Landscape, FanArt and Thumb shelves, single row -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,3) + 
+			                                                                      $PARAM[center500] + !$PARAM[center500double] + !$PARAM[center500triplemed] + !$PARAM[center500triplesmall] + 
+																				  !$PARAM[isTripleRow] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,3) + 
+			                                                                      $PARAM[center500] + !$PARAM[center500double] + !$PARAM[center500triplemed] + !$PARAM[center500triplesmall] + 
+																				  !$PARAM[isTripleRow] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>			
+			<!-- Center Landscape, FanArt and Thumb shelves, double row -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center500double] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center500double] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>									
+			<!-- Center Landscape, FanArt and Thumb shelves, triple row large -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,9) + 
+			                                                                      $PARAM[center500] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,9) + 
+			                                                                      $PARAM[center500] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>									
+			<!-- Center Landscape, FanArt, ClearArt and Thumb shelves, triple row medium -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center500triplemed] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center500triplemed] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="45,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,13) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,15) + 
+			                                                                      $PARAM[center500triplemed] + ControlGroup(700).HasFocus">Conditional</animation>
+			<!-- Center Landscape, FanArt, ClearArt and Thumb shelves, triple row small -->	
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,4) + 
+			                                                                      $PARAM[center500triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,4) + 
+			                                                                      $PARAM[center500triplesmall] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsEqual(Container($PARAM[id]).NumItems,5) + 
+			                                                                      $PARAM[center500triplesmall] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="112.5,0" time="0" condition="Integer.IsEqual(Container($PARAM[id]).NumItems,5) + 
+			                                                                      $PARAM[center500triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			
+			<!-- Center Banner shelves, single row -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,4) + 
+			                                                                      $PARAM[center668] + !$PARAM[center668double] + !$PARAM[center668triplemed] + !$PARAM[center668triplesmall] + 
+																				  !$PARAM[isTripleRow] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,4) + 
+			                                                                      $PARAM[center668] + !$PARAM[center668double] + !$PARAM[center668triplemed] + !$PARAM[center668triplesmall] + 
+																				  !$PARAM[isTripleRow] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>						
+			<!-- Center Banner shelves, double row -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center668double] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center668double] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>												
+			<!-- Center Banner shelves, triple row large -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center668] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,12) + 
+			                                                                      $PARAM[center668] + $PARAM[isTripleRow] + $PARAM[isTripleRowLarge] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>												
+			<!-- Center Banner shelves, triple row medium -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,10) + 
+			                                                                      $PARAM[center668triplemed] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,10) + 
+			                                                                      $PARAM[center668triplemed] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>									
+			<!-- Center Banner shelves, triple row small -->
+            <animation effect="slide" start="0,0" end="210,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center668triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="110,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,1) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,6) + 
+			                                                                      $PARAM[center668triplesmall] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="60,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,7) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center668triplesmall] + Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+            <animation effect="slide" start="0,0" end="90,0" time="0" condition="Integer.IsGreaterOrEqual(Container($PARAM[id]).NumItems,7) + Integer.IsLessOrEqual(Container($PARAM[id]).NumItems,8) + 
+			                                                                      $PARAM[center668triplesmall] + !Skin.HasSetting(Vertical.IconOnly) + ControlGroup(700).HasFocus">Conditional</animation>
+			
+		</definition>
+	</include>
+	
+	<include name="ShelfWidthVertHiddenMenu">
+	    <width>1880</width>
+	</include>
+	<include name="ShelfWidthVertIcon">
+	    <width>1760</width>
+	</include>
+	<include name="ShelfWidthVertText">
+	    <width>1460</width>
 	</include>
 
     <!-- PVR Recording widgets -->

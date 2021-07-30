@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-05-25 10:09+0000\n"
+"PO-Revision-Date: 2021-07-29 22:06+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Catalan (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/ca_es/>\n"
 "Language: ca_es\n"
@@ -15,71 +15,71 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.7.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
-msgstr ""
+msgstr "Sense bloatware, només els fitxers multimèdia amb una interfície fàcil de navegar"
 
 msgctxt "Addon Description"
 msgid "No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins."
-msgstr ""
+msgstr "Sense bloatware, només els fitxers multimèdia amb una interfície fàcil de navegar.[CR]Utilitza algunes textures d'skins Mediastream i Aeon."
 
 msgctxt "#31000"
 msgid "Picture Channels"
-msgstr ""
+msgstr "Canals d’Imatges"
 
 msgctxt "#31001"
 msgid "Video Channels"
-msgstr ""
+msgstr "Canals de Vídeo"
 
 msgctxt "#31002"
 msgid "Music Channels"
-msgstr ""
+msgstr "Canals de Música"
 
 msgctxt "#31003"
 msgid "Channels Directory"
-msgstr ""
+msgstr "Directori de Canals"
 
 msgctxt "#31004"
 msgid "Shift"
-msgstr ""
+msgstr "Shift"
 
 msgctxt "#31005"
 msgid "Cinema"
-msgstr ""
+msgstr "Cinema"
 
 msgctxt "#31006"
 msgid "Shared"
-msgstr ""
+msgstr "Compartit"
 
 msgctxt "#31007"
 msgid "PleXBMC settings"
-msgstr ""
+msgstr "Configuració de PleXBMC"
 
 msgctxt "#31008"
 msgid "Go Plex"
-msgstr ""
+msgstr "Anar a Plex"
 
 msgctxt "#31009"
 msgid "Go Kodi"
-msgstr ""
+msgstr "Anar a Kodi"
 
 msgctxt "#31010"
 msgid "Queue"
-msgstr ""
+msgstr "Cua"
 
 msgctxt "#31011"
 msgid "Recently Viewed"
-msgstr ""
+msgstr "Vist Recentment"
 
 msgctxt "#31012"
 msgid "Recently Released"
-msgstr ""
+msgstr "Publicat Recentment"
 
 msgctxt "#31013"
 msgid "Recently Aired"
-msgstr ""
+msgstr "Emès Recentment"
 
 msgctxt "#31014"
 msgid "On Deck"
@@ -87,43 +87,43 @@ msgstr ""
 
 msgctxt "#31015"
 msgid "Sign In"
-msgstr ""
+msgstr "Iniciar sessió"
 
 msgctxt "#31016"
 msgid "Sign Out"
-msgstr ""
+msgstr "Tancar sessió"
 
 msgctxt "#31017"
 msgid "Switch User"
-msgstr ""
+msgstr "Canviar d'usuari"
 
 msgctxt "#31018"
 msgid "4-day view"
-msgstr ""
+msgstr "Vista de 4 dies"
 
 msgctxt "#31019"
 msgid "8-day view"
-msgstr ""
+msgstr "Vista de 8 dies"
 
 msgctxt "#31020"
 msgid "Recently Added"
-msgstr ""
+msgstr "Afegit Recentment"
 
 msgctxt "#31021"
 msgid "Recently Played"
-msgstr ""
+msgstr "Reproduït recentment"
 
 msgctxt "#31022"
 msgid "Kodi"
-msgstr ""
+msgstr "Kodi"
 
 msgctxt "#31023"
 msgid "Viewtype"
-msgstr ""
+msgstr "Tipus de vista"
 
 msgctxt "#31024"
 msgid "Sort by"
-msgstr ""
+msgstr "Ordenar per"
 
 msgctxt "#31025"
 msgid "Items"
@@ -131,39 +131,39 @@ msgstr "Elements"
 
 msgctxt "#31026"
 msgid "Misc options"
-msgstr ""
+msgstr "Opcions diverses"
 
 msgctxt "#31027"
 msgid "Order"
-msgstr ""
+msgstr "Ordre"
 
 msgctxt "#31028"
 msgid "Amber Settings"
-msgstr ""
+msgstr "Configuració d'Amber"
 
 msgctxt "#31029"
 msgid "Remaining"
-msgstr ""
+msgstr "Restant"
 
 msgctxt "#31030"
 msgid "Settings entry point"
-msgstr ""
+msgstr "Punt d'entrada de configuració"
 
 msgctxt "#31031"
 msgid "Home menu and Quit menu"
-msgstr ""
+msgstr "Menú Principal i Menú Sortir"
 
 msgctxt "#31032"
 msgid "Home menu Only"
-msgstr ""
+msgstr "Només menú principal"
 
 msgctxt "#31033"
 msgid "Quit menu Only"
-msgstr ""
+msgstr "Només menú sortir"
 
 msgctxt "#31034"
 msgid "Hide weather info in title bar"
-msgstr ""
+msgstr "Amaga la informació meteorològica a la barra de títol"
 
 msgctxt "#31035"
 msgid "Media Flags"
@@ -3541,4 +3541,24 @@ msgstr ""
 
 msgctxt "#32417"
 msgid "Fanart Title Button Opens Info Dialog"
+msgstr ""
+
+msgctxt "#32418"
+msgid "Single Image"
+msgstr ""
+
+msgctxt "#32419"
+msgid "Multiple Images"
+msgstr ""
+
+msgctxt "#32420"
+msgid "Video/Playlist"
+msgstr ""
+
+msgctxt "#32421"
+msgid "Startup Background"
+msgstr ""
+
+msgctxt "#32422"
+msgid "Hide Menu when Shelves are Focused"
 msgstr ""
