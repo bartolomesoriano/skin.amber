@@ -1471,7 +1471,7 @@
             <onclick condition="Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
             <onclick condition="Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)">SetProperty(Dialog.1.BuiltIn,Dialog.Close(All)||RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(90050).ListItem.Label],type=person,call_auto=1134))</onclick>
             <onclick condition="Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-	        <onclick condition="Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)">SetProperty(Dialog.2.BuiltIn,RunScript(plugin.video.themoviedb.helper,close_dialog=1134)||Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])||Dialog.Close(All)||ActivateWindow(1122))</onclick>
+	        <onclick condition="Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)">SetProperty(Dialog.2.BuiltIn,Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])||Dialog.Close(All,true)||ActivateWindow(1122))</onclick>
 		    <onclick condition="Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
 			<onclick condition="!Skin.HasSetting(Enable.EmbuaryHelper) | !Skin.HasSetting(Enable.TMDbHelper)">Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])</onclick>
 			<onclick condition="!Skin.HasSetting(Enable.EmbuaryHelper) | !Skin.HasSetting(Enable.TMDbHelper)">Dialog.Close(all)</onclick>
@@ -1599,7 +1599,7 @@
             <onclick condition="Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)">SetProperty(Dialog.1.Label,$LOCALIZE[32018])</onclick>
             <onclick condition="Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)">SetProperty(Dialog.1.BuiltIn,Dialog.Close(All)||RunScript(plugin.video.themoviedb.helper,add_query=$INFO[Container(90050).ListItem.Label],type=person,call_auto=1134))</onclick>
             <onclick condition="Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)">SetProperty(Dialog.2.Label,$LOCALIZE[32017])</onclick>
-	        <onclick condition="Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)">SetProperty(Dialog.2.BuiltIn,RunScript(plugin.video.themoviedb.helper,close_dialog=1134)||Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])||Dialog.Close(All)||ActivateWindow(1122))</onclick>
+	        <onclick condition="Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)">SetProperty(Dialog.2.BuiltIn,Dialog.Close(1122,force)||RunScript(plugin.video.themoviedb.helper,close_dialog=1134)||Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])||Dialog.Close(All)||ActivateWindow(1122))</onclick>
 		    <onclick condition="Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(Enable.TMDbHelper)">RunScript(script.embuary.helper,action=createselect,header=$LOCALIZE[137])</onclick>
             <onclick condition="!Skin.HasSetting(Enable.EmbuaryHelper) | !Skin.HasSetting(Enable.TMDbHelper)">Skin.SetString(CustomSearchTerm,$ESCINFO[Container(90050).ListItem.Label])</onclick>
 			<onclick condition="!Skin.HasSetting(Enable.EmbuaryHelper) | !Skin.HasSetting(Enable.TMDbHelper)">Dialog.Close(all)</onclick>

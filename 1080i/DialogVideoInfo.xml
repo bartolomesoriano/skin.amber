@@ -9,6 +9,10 @@
     
 	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">Dialog.Close(VideoOSD,true)</onload>
 	
+	<!-- Close custom search dialogs if they are open so that we can perform searches from here without issue -->
+	<onload condition="Window.IsVisible(Custom_1122_Search.xml)">Dialog.Close(1122,force)</onload>
+	<onload condition="Window.IsVisible(Custom_1131_SingleSearch.xml)">Dialog.Close(1131,force)</onload>
+	
 	<onunload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,home)</onunload>
 	<onunload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + Skin.HasSetting(PauseOnVideoInfo) + Player.Paused">Play</onunload>
 	
