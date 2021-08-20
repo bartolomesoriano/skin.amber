@@ -1468,6 +1468,7 @@
 		<param name="isSquare">false</param>
 		<param name="isThumb">false</param>
 		<param name="doInfoPopup">false</param>
+		<param name="widgetPopupDelay">3</param>
 		<definition>  
 		    <!-- Triple shelves together, all three have values -->
 			<itemlayout height="$PARAM[artworkheightsmall]" width="$PARAM[artworkwidthsmall]" condition="$PARAM[isTripleShelvesTogether] + !$PARAM[isTripleRowLarge]">
@@ -1567,6 +1568,7 @@
 			    <include>SetShelfItemDuration</include>
 				<include content="SetShelfPopupProps">
 				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
 				    <visible>!$PARAM[showLabelFallback] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)</visible>
@@ -1765,6 +1767,7 @@
 			    <include>SetShelfItemDuration</include>
 				<include content="SetShelfPopupProps">
 				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
 				    <visible>!$PARAM[showLabelFallback] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)</visible>
@@ -1961,6 +1964,7 @@
 			    <include>SetShelfItemDuration</include>
 				<include content="SetShelfPopupProps">
 				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
 				    <visible>!$PARAM[showLabelFallback] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)</visible>
@@ -2100,6 +2104,7 @@
 		<param name="align" />
 		<param name="aligny">center</param>
 		<param name="doInfoPopup">false</param>
+		<param name="widgetPopupDelay">3</param>
 		<definition>  
 		    <!-- Triple shelves together, all three have values -->
 			<itemlayout height="$PARAM[artworkheightsmall]" width="$PARAM[artworkwidthsmall]" condition="$PARAM[isTripleShelvesTogether] + !$PARAM[isTripleRowLarge]">
@@ -2169,6 +2174,7 @@
 			    <include>SetShelfItemDuration</include>
 				<include content="SetShelfPopupProps">
 				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
 				    <visible>!$PARAM[showLabelFallback]</visible>
@@ -2301,6 +2307,7 @@
 			    <include>SetShelfItemDuration</include>
 				<include content="SetShelfPopupProps">
 				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
 				    <visible>!$PARAM[showLabelFallback]</visible>
@@ -2432,6 +2439,7 @@
 			    <include>SetShelfItemDuration</include>
 				<include content="SetShelfPopupProps">
 				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
 				    <visible>!$PARAM[showLabelFallback]</visible>
@@ -2519,6 +2527,7 @@
 		<param name="aspect">keep</param>
 		<param name="isWideIcon">false</param>
 		<param name="doInfoPopup">false</param>
+		<param name="widgetPopupDelay">3</param>
 		<definition> 
 		    <!-- Triple Shelves together, all have items -->
 			<itemlayout height="109" width="425" condition="$PARAM[isTripleShelvesTogether] + !$PARAM[isTripleRowLarge]">
@@ -2600,6 +2609,7 @@
 			    <include>SetShelfItemDuration</include>
 				<include content="SetShelfPopupProps">
 				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
 				    <visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
@@ -2750,6 +2760,7 @@
 			    <include>SetShelfItemDuration</include>
 				<include content="SetShelfPopupProps">
 				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
 				    <visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
@@ -2897,6 +2908,7 @@
 			    <include>SetShelfItemDuration</include>
 				<include content="SetShelfPopupProps">
 				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
 				    <visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
@@ -3046,6 +3058,7 @@
 			    <include>SetShelfItemDuration</include>
 				<include content="SetShelfPopupProps">
 				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<control type="group">
 				    <visible>![String.IsEmpty(ListItem.Art(banner)) + String.isEmpty(ListItem.Art(tvshow.banner))]</visible>
@@ -3144,6 +3157,7 @@
 		<param name="isTripleRowLarge">false</param>
 		<param name="isTripleShelvesTogether">false</param>
 		<param name="doInfoPopup">false</param>
+		<param name="widgetPopupDelay">3</param>
 		<definition>
 			<include>VisibleFadeEffectDelayShelf</include>
 			<!-- Triple shelves together, all shelves have items -->
@@ -3175,6 +3189,7 @@
 			    <include>SetShelfItemDuration</include>
 				<include content="SetShelfPopupProps">
 				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<include content="GenericThumbIconTemplate">
 				    <param name="isFocused">Control.HasFocus($PARAM[id1])</param>
@@ -3228,6 +3243,7 @@
 			    <include>SetShelfItemDuration</include>
 				<include content="SetShelfPopupProps">
 				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<include content="GenericThumbIconTemplate">
 				    <param name="isFocused">Control.HasFocus($PARAM[id1])</param>
@@ -3281,6 +3297,7 @@
 			    <include>SetShelfItemDuration</include>
 				<include content="SetShelfPopupProps">
 				    <param name="EnableProp">$PARAM[doInfoPopup]</param>
+					<param name="ShelfDelay">$PARAM[widgetPopupDelay]</param>
 				</include>
 				<include content="GenericThumbIconTemplate">
 				    <param name="isFocused">Control.HasFocus($PARAM[id1])</param>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.amber" version="3.2.146" name="Amber" provider-name="Jester, Joethepartylion, Pecinko, bsoriano">
+<addon id="skin.amber" version="3.2.147" name="Amber" provider-name="bsoriano, Jester, Joethepartylion, Pecinko">
     <requires>
         <import addon="xbmc.gui" version="5.14.0"/>
         <import addon="script.favourites" version="7.1.1"/>
@@ -54,10 +54,10 @@
             <screenshot>resources/screenshot09.jpg</screenshot>
             <screenshot>resources/screenshot10.jpg</screenshot>
         </assets>
-        <news>3.2.146 (04-08-2021)
-		- Option to open info dialog from fanart title button
-		- Option to use custom image(s), video or playlist at startup
-		- Option to hide vertical menu when shelves are focused
+        <news>3.2.147 (20-08-2021)
+		- Make shelf info popup delay configurable
+		- Add back Artwork Beef options
+		- Fixes for music visualization
 		- Misc. fixes
 		3.2.145 (20-07-2021)
 		- Option to automatically play trailers in media views (only local trailers)

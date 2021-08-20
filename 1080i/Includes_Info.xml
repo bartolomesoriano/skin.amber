@@ -3016,13 +3016,13 @@
                             <label>$LOCALIZE[2050]:</label>
                             <label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
                             <onclick>noop</onclick>
-                            <visible>!Skin.HasSetting(Enable.HourMinutes) + !String.IsEqual(ListItem.DBType,set)</visible>
+                            <visible>!Skin.HasSetting(Enable.HourMinutes) + !String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.Duration)</visible>
                         </item>
 						<item>
                             <label>$LOCALIZE[2050]:</label>
                             <label2>$VAR[ItemDurationVar]</label2>
                             <onclick>noop</onclick>
-                            <visible>Skin.HasSetting(Enable.HourMinutes) + !String.IsEqual(ListItem.DBType,set)</visible>
+                            <visible>Skin.HasSetting(Enable.HourMinutes) + !String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.Duration)</visible>
                         </item>
                         <item>
                             <label>$LOCALIZE[2050]:</label>

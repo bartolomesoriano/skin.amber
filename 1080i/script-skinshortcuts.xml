@@ -844,6 +844,16 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 				</control>
+				<control type="button" id="3012">
+					<visible>!String.IsEmpty(Container(211).ListItem.Property(widgetPath)) + !String.IsEqual(Container(211).ListItem.Property(widget),static) + 
+					         !String.IsEqual(Container(211).ListItem.Property(doInfoPopup),false)</visible>
+					<label>   - $LOCALIZE[31653]</label>
+					<label2>$VAR[Widget1PopupDelayLabelVar]</label2>
+					<height>60</height>
+					<width>1340</width>
+					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+					<font>ListDetails</font>
+				</control>
 				<control type="button" id="3003">
 					<visible>!String.IsEmpty(Container(211).ListItem.Property(widgetPath)) + !String.IsEqual(Container(211).ListItem.Property(widget),static) + 
 					         !String.IsEqual(Container(211).ListItem.Property(widgetType),custom)</visible>
@@ -1029,6 +1039,16 @@
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(doInfoPopup.2),false)">SetProperty(customValue,true)</onclick>
 					<onclick>SendClick(404)</onclick>
 					<selected>!String.IsEqual(Container(211).ListItem.Property(doInfoPopup.2),false)</selected>
+					<height>60</height>
+					<width>1340</width>
+					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+					<font>ListDetails</font>
+				</control>
+				<control type="button" id="4012">
+					<visible>!String.IsEmpty(Container(211).ListItem.Property(widgetPath.2)) + !String.IsEqual(Container(211).ListItem.Property(widget.2),static) + 
+					         !String.IsEqual(Container(211).ListItem.Property(doInfoPopup.2),false)</visible>
+					<label>   - $LOCALIZE[31653]</label>
+					<label2>$VAR[Widget2PopupDelayLabelVar]</label2>
 					<height>60</height>
 					<width>1340</width>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
@@ -1225,6 +1245,16 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 				</control>
+				<control type="button" id="5012">
+					<visible>!String.IsEmpty(Container(211).ListItem.Property(widgetPath.3)) + !String.IsEqual(Container(211).ListItem.Property(widget.3),static) + 
+					         !String.IsEqual(Container(211).ListItem.Property(doInfoPopup.3),false)</visible>
+					<label>   - $LOCALIZE[31653]</label>
+					<label2>$VAR[Widget3PopupDelayLabelVar]</label2>
+					<height>60</height>
+					<width>1340</width>
+					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+					<font>ListDetails</font>
+				</control>
 				<control type="button" id="5003">
 					<visible>!String.IsEmpty(Container(211).ListItem.Property(widgetPath.3)) + !String.IsEqual(Container(211).ListItem.Property(widget.3),static) + 
 					         !String.IsEqual(Container(211).ListItem.Property(widgetType.3),custom)</visible>
@@ -1407,6 +1437,16 @@
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(doInfoPopup.4),false)">SetProperty(customValue,true)</onclick>
 					<onclick>SendClick(404)</onclick>
 					<selected>!String.IsEqual(Container(211).ListItem.Property(doInfoPopup.4),false)</selected>
+					<height>60</height>
+					<width>1340</width>
+					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+					<font>ListDetails</font>
+				</control>
+				<control type="button" id="6012">
+					<visible>!String.IsEmpty(Container(211).ListItem.Property(widgetPath.4)) + !String.IsEqual(Container(211).ListItem.Property(widget.4),static) + 
+					         !String.IsEqual(Container(211).ListItem.Property(doInfoPopup.4),false)</visible>
+					<label>   - $LOCALIZE[31653]</label>
+					<label2>$VAR[Widget4PopupDelayLabelVar]</label2>
 					<height>60</height>
 					<width>1340</width>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
@@ -1599,6 +1639,16 @@
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
 				</control>
+				<control type="button" id="7012">
+					<visible>!String.IsEmpty(Container(211).ListItem.Property(widgetPath.5)) + !String.IsEqual(Container(211).ListItem.Property(widget.5),static) + 
+					         !String.IsEqual(Container(211).ListItem.Property(doInfoPopup.5),false)</visible>
+					<label>   - $LOCALIZE[31653]</label>
+					<label2>$VAR[Widget5PopupDelayLabelVar]</label2>
+					<height>60</height>
+					<width>1340</width>
+					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+					<font>ListDetails</font>
+				</control>
 				<control type="button" id="7003">
 					<visible>!String.IsEmpty(Container(211).ListItem.Property(widgetPath.5)) + !String.IsEqual(Container(211).ListItem.Property(widget.5),static) + 
 					         !String.IsEqual(Container(211).ListItem.Property(widgetType.5),custom)</visible>
@@ -1781,6 +1831,16 @@
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(doInfoPopup.6),false)">SetProperty(customValue,true)</onclick>
 					<onclick>SendClick(404)</onclick>
 					<selected>!String.IsEqual(Container(211).ListItem.Property(doInfoPopup.6),false)</selected>
+					<height>60</height>
+					<width>1340</width>
+					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+					<font>ListDetails</font>
+				</control>
+				<control type="button" id="8012">
+					<visible>!String.IsEmpty(Container(211).ListItem.Property(widgetPath.6)) + !String.IsEqual(Container(211).ListItem.Property(widget.6),static) + 
+					         !String.IsEqual(Container(211).ListItem.Property(doInfoPopup.6),false)</visible>
+					<label>   - $LOCALIZE[31653]</label>
+					<label2>$VAR[Widget6PopupDelayLabelVar]</label2>
 					<height>60</height>
 					<width>1340</width>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>

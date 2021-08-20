@@ -10,7 +10,7 @@
             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
             <visible>String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]]</visible>
 		</item>
-<!--        <item>
+        <item>
 			<label>$LOCALIZE[32005]</label>
             <onclick>Dialog.Close(1121)</onclick>
             <onclick condition="[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),episode)]">RunScript(script.artwork.beef, mode=gui, mediatype=episode, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
@@ -35,7 +35,7 @@
             <visible>System.HasAddon(script.artwork.beef) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
                      [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
             </visible>
-		</item> -->
+		</item>
         <item>
 			<label>$LOCALIZE[32068]</label>
             <onclick>Dialog.Close(1121)</onclick>

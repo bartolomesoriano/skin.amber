@@ -237,6 +237,15 @@
 	<property property="widgetAutoScroll" label="60 ">$NUMBER[60000]</property>
 	<propertySettings property="widgetAutoScroll" buttonID="3010" title="$LOCALIZE[31630]" templateonly="true"/>
 	
+	<!-- Widget 1 Popup Delay -->
+	<property property="widgetPopupDelay" label="1 ">$NUMBER[1]</property>
+	<property property="widgetPopupDelay" label="2 ">$NUMBER[2]</property>
+	<property property="widgetPopupDelay" label="3 ">$NUMBER[3]</property>
+	<property property="widgetPopupDelay" label="4 ">$NUMBER[4]</property>
+	<property property="widgetPopupDelay" label="5 ">$NUMBER[5]</property>
+	<property property="widgetPopupDelay" label="6 ">$NUMBER[6]</property>
+	<propertySettings property="widgetPopupDelay" buttonID="3012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
+	
 	<!-- Widget 2 Artwork -->
 	<property property="widgetArtwork.2" label="$LOCALIZE[31611]">Poster</property>
 	<property property="widgetArtwork.2" label="$LOCALIZE[31612]" condition="!String.IsEqual(Container(211).ListItem.Property(widgetType.2),people)">Square</property>
@@ -318,6 +327,15 @@
 	<property property="widgetAutoScroll.2" label="60 ">$NUMBER[60000]</property>
 	<propertySettings property="widgetAutoScroll.2" buttonID="4010" title="$LOCALIZE[31630]" templateonly="true"/>
 	
+	<!-- Widget 2 Popup Delay -->
+	<property property="widgetPopupDelay.2" label="1 ">$NUMBER[1]</property>
+	<property property="widgetPopupDelay.2" label="2 ">$NUMBER[2]</property>
+	<property property="widgetPopupDelay.2" label="3 ">$NUMBER[3]</property>
+	<property property="widgetPopupDelay.2" label="4 ">$NUMBER[4]</property>
+	<property property="widgetPopupDelay.2" label="5 ">$NUMBER[5]</property>
+	<property property="widgetPopupDelay.2" label="6 ">$NUMBER[6]</property>
+	<propertySettings property="widgetPopupDelay.2" buttonID="4012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
+	
 	<!-- Widget 3 Artwork -->
 	<property property="widgetArtwork.3" label="$LOCALIZE[31611]">Poster</property>
 	<property property="widgetArtwork.3" label="$LOCALIZE[31612]" condition="!String.IsEqual(Container(211).ListItem.Property(widgetType.3),people)">Square</property>
@@ -398,6 +416,15 @@
 	<property property="widgetAutoScroll.3" label="30 ">$NUMBER[30000]</property>
 	<property property="widgetAutoScroll.3" label="60 ">$NUMBER[60000]</property>
 	<propertySettings property="widgetAutoScroll.3" buttonID="5010" title="$LOCALIZE[31630]" templateonly="true"/>
+	
+	<!-- Widget 3 Popup Delay -->
+	<property property="widgetPopupDelay.3" label="1 ">$NUMBER[1]</property>
+	<property property="widgetPopupDelay.3" label="2 ">$NUMBER[2]</property>
+	<property property="widgetPopupDelay.3" label="3 ">$NUMBER[3]</property>
+	<property property="widgetPopupDelay.3" label="4 ">$NUMBER[4]</property>
+	<property property="widgetPopupDelay.3" label="5 ">$NUMBER[5]</property>
+	<property property="widgetPopupDelay.3" label="6 ">$NUMBER[6]</property>
+	<propertySettings property="widgetPopupDelay.3" buttonID="5012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
 
 	<!-- Widget 4 Artwork -->
 	<property property="widgetArtwork.4" label="$LOCALIZE[31611]">Poster</property>
@@ -479,6 +506,15 @@
 	<property property="widgetAutoScroll.4" label="30 ">$NUMBER[30000]</property>
 	<property property="widgetAutoScroll.4" label="60 ">$NUMBER[60000]</property>
 	<propertySettings property="widgetAutoScroll.4" buttonID="6010" title="$LOCALIZE[31630]" templateonly="true"/>
+	
+	<!-- Widget 4 Popup Delay -->
+	<property property="widgetPopupDelay.4" label="1 ">$NUMBER[1]</property>
+	<property property="widgetPopupDelay.4" label="2 ">$NUMBER[2]</property>
+	<property property="widgetPopupDelay.4" label="3 ">$NUMBER[3]</property>
+	<property property="widgetPopupDelay.4" label="4 ">$NUMBER[4]</property>
+	<property property="widgetPopupDelay.4" label="5 ">$NUMBER[5]</property>
+	<property property="widgetPopupDelay.4" label="6 ">$NUMBER[6]</property>
+	<propertySettings property="widgetPopupDelay.4" buttonID="6012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
 
 	<!-- Widget 5 Artwork -->
 	<property property="widgetArtwork.5" label="$LOCALIZE[31611]">Poster</property>
@@ -560,6 +596,15 @@
 	<property property="widgetAutoScroll.5" label="30 ">$NUMBER[30000]</property>
 	<property property="widgetAutoScroll.5" label="60 ">$NUMBER[60000]</property>
 	<propertySettings property="widgetAutoScroll.5" buttonID="7010" title="$LOCALIZE[31630]" templateonly="true"/>
+	
+	<!-- Widget 5 Popup Delay -->
+	<property property="widgetPopupDelay.5" label="1 ">$NUMBER[1]</property>
+	<property property="widgetPopupDelay.5" label="2 ">$NUMBER[2]</property>
+	<property property="widgetPopupDelay.5" label="3 ">$NUMBER[3]</property>
+	<property property="widgetPopupDelay.5" label="4 ">$NUMBER[4]</property>
+	<property property="widgetPopupDelay.5" label="5 ">$NUMBER[5]</property>
+	<property property="widgetPopupDelay.5" label="6 ">$NUMBER[6]</property>
+	<propertySettings property="widgetPopupDelay.5" buttonID="7012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
 
 	<!-- Widget 6 Artwork -->
 	<property property="widgetArtwork.6" label="$LOCALIZE[31611]">Poster</property>
@@ -641,6 +686,15 @@
 	<property property="widgetAutoScroll.6" label="30 ">$NUMBER[30000]</property>
 	<property property="widgetAutoScroll.6" label="60 ">$NUMBER[60000]</property>
 	<propertySettings property="widgetAutoScroll.6" buttonID="8010" title="$LOCALIZE[31630]" templateonly="true"/>
+	
+	<!-- Widget 6 Popup Delay -->
+	<property property="widgetPopupDelay.6" label="1 ">$NUMBER[1]</property>
+	<property property="widgetPopupDelay.6" label="2 ">$NUMBER[2]</property>
+	<property property="widgetPopupDelay.6" label="3 ">$NUMBER[3]</property>
+	<property property="widgetPopupDelay.6" label="4 ">$NUMBER[4]</property>
+	<property property="widgetPopupDelay.6" label="5 ">$NUMBER[5]</property>
+	<property property="widgetPopupDelay.6" label="6 ">$NUMBER[6]</property>
+	<propertySettings property="widgetPopupDelay.6" buttonID="8012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
 
 
     <!-- Menu fallbacks if empty -->
@@ -736,6 +790,13 @@
 	<propertyfallback property="doInfoPopup.4">false</propertyfallback>
 	<propertyfallback property="doInfoPopup.5">false</propertyfallback>
 	<propertyfallback property="doInfoPopup.6">false</propertyfallback>
+	<!-- Info Popup delay is 3 by default -->
+	<propertyfallback property="widgetPopupDelay">$NUMBER[3]</propertyfallback>
+	<propertyfallback property="widgetPopupDelay.2">$NUMBER[3]</propertyfallback>
+	<propertyfallback property="widgetPopupDelay.3">$NUMBER[3]</propertyfallback>
+	<propertyfallback property="widgetPopupDelay.4">$NUMBER[3]</propertyfallback>
+	<propertyfallback property="widgetPopupDelay.5">$NUMBER[3]</propertyfallback>
+	<propertyfallback property="widgetPopupDelay.6">$NUMBER[3]</propertyfallback>
 
     <!-- GROUPINGS -->
     <!-- Main Grouping -->
@@ -1330,6 +1391,7 @@
 	<onback to="800">3009</onback>
 	<onback to="800">3010</onback>
 	<onback to="800">3011</onback>
+	<onback to="800">3012</onback>
 
 	<onback to="801">4312</onback>
 	<onback to="801">4001</onback>
@@ -1343,6 +1405,7 @@
 	<onback to="801">4009</onback>
 	<onback to="801">4010</onback>
 	<onback to="801">4011</onback>
+	<onback to="801">4012</onback>
 
 	<onback to="802">5312</onback>
 	<onback to="802">5001</onback>
@@ -1356,6 +1419,7 @@
 	<onback to="802">5009</onback>
 	<onback to="802">5010</onback>
 	<onback to="802">5011</onback>
+	<onback to="802">5012</onback>
 
 	<onback to="803">6312</onback>
 	<onback to="803">6001</onback>
@@ -1369,6 +1433,7 @@
 	<onback to="803">6009</onback>
 	<onback to="803">6010</onback>
 	<onback to="803">6011</onback>
+	<onback to="803">6012</onback>
 
 	<onback to="804">7312</onback>
 	<onback to="804">7001</onback>
@@ -1382,6 +1447,7 @@
 	<onback to="804">7009</onback>
 	<onback to="804">7010</onback>
 	<onback to="804">7011</onback>
+	<onback to="804">7012</onback>
 
 	<onback to="805">8312</onback>
 	<onback to="805">8001</onback>
@@ -1395,5 +1461,6 @@
 	<onback to="805">8009</onback>
 	<onback to="805">8010</onback>
 	<onback to="805">8011</onback>
+	<onback to="805">7012</onback>
 
 </overrides>

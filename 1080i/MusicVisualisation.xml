@@ -14,6 +14,7 @@
 			<randomize>true</randomize>
 			<visible>Skin.HasSetting(SkinHelper.EnableExtraFanart)</visible>
 			<include>FadeLabelTime</include>
+			<label>$INFO[Player.Art(artist.fanart)]</label>
 			<label>$INFO[Player.Art(artist.fanart1)]</label>
 			<label>$INFO[Player.Art(artist.fanart2)]</label>
 			<label>$INFO[Player.Art(artist.fanart3)]</label>
@@ -287,7 +288,7 @@
 		
 		<!-- Album Cover for Ultra Compact OSD -->
 		<control type="group">
-            <visible>String.IsEqual(Skin.String(OSDExtraArt),poster) + Window.IsVisible(MusicOSD)</visible>
+            <visible>String.IsEqual(Skin.String(OSDExtraArt),poster) + Window.IsVisible(MusicOSD) + Skin.HasSetting(UseUltraCompactOSD)</visible>
 			<include content="ShadowedImage">
                 <param name="top">682r</param>
                 <param name="left">555r</param>
@@ -296,33 +297,11 @@
                 <param name="shadowoffset">16</param>
                 <param name="texture">$INFO[MusicPlayer.Cover]</param>
                 <param name="aligny">bottom</param>
-		        <param name="visibility">!Skin.HasSetting(enable.bottomseekbar)</param>
-            </include>
-			<include content="ShadowedImage">
-                <param name="top">-422</param>
-                <param name="left">555r</param>
-                <param name="width">509</param>
-                <param name="height">636</param>
-                <param name="shadowoffset">16</param>
-                <param name="texture">$INFO[MusicPlayer.Cover]</param>
-                <param name="aligny">bottom</param>
-			    <param name="visibility">Skin.HasSetting(enable.bottomseekbar)</param>
             </include>
             <control type="image" description="Dim icon for lyrics visibility if active">
-                <visible>Window.IsVisible(script-cu-lrclyrics-main.xml) + !Skin.HasSetting(enable.bottomseekbar) + Skin.HasSetting(Music.DimWithLyrics)</visible>
+                <visible>Window.IsVisible(script-cu-lrclyrics-main.xml) + Skin.HasSetting(Music.DimWithLyrics)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <top>682r</top>
-                <left>555r</left>
-                <width>509</width>
-                <height>636</height>
-                <texture>$INFO[MusicPlayer.Cover]</texture>
-                <colordiffuse>HeavyShadow</colordiffuse>
-                <aspectratio align="center" aligny="bottom">keep</aspectratio>
-            </control>
-			<control type="image" description="Dim icon for lyrics visibility if active">
-                <visible>Window.IsVisible(script-cu-lrclyrics-main.xml) + Skin.HasSetting(enable.bottomseekbar) + Skin.HasSetting(Music.DimWithLyrics)</visible>
-                <include>VisibleFadeEffectDelay</include>
-                <top>-422</top>
                 <left>555r</left>
                 <width>509</width>
                 <height>636</height>

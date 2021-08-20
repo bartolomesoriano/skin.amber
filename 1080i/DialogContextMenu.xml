@@ -16,22 +16,31 @@
 				<texture border="0,40,0,40">dialogs/ContextMenu.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
+			<control type="group">
+			    <posx>430</posx>
+			    <posy>-23.5</posy>
+			    <include>DialogCloseButtonCommons</include>
+				<visible>Skin.HasSetting(Enable.TouchSupport)</visible>
+		    </control>
 			<control type="grouplist" id="996" description="Context menu container">
 				<posx>16</posx>
-                <posy>39</posy>
+                <include condition="Skin.HasSetting(Enable.TouchSupport)">ContextTopTouch</include>
+				<include condition="!Skin.HasSetting(Enable.TouchSupport)">ContextTopStandard</include>
 				<width>530</width>
 				<height max="900">auto</height>
-                <control type="button" id="1000" description="Buttons">
-				    <width>493</width>
-				    <height>60</height>
-				    <textoffsetx>10</textoffsetx>
-				    <align>center</align>
-				    <texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
-				    <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
-				    <focusedcolor>$VAR[FocusedTextColor]</focusedcolor>
-				    <shadowcolor></shadowcolor>
+				<onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
+				<onup condition="!Skin.HasSetting(Enable.TouchSupport)">996</onup>
+				<control type="button" id="1000" description="Buttons">
+			        <width>493</width>
+			        <height>60</height>
+			        <textoffsetx>10</textoffsetx>
+			        <align>center</align>
+			        <texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
+			        <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+			        <focusedcolor>$VAR[FocusedTextColor]</focusedcolor>
+			        <shadowcolor></shadowcolor>
 			    </control>
-                <!-- ArtWork Downloader Solo Mode-->
+			    <!-- ArtWork Beef Solo Mode-->
                 <control type="button" id="9325">    
                     <width>493</width>
 				    <height>60</height>
@@ -51,7 +60,7 @@
                     <visible>Skin.HasSetting(ShowABinContextMenu)</visible>
                     <visible>System.HasAddon(script.artwork.beef) + [Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
                 </control>
-                <!-- ArtWork Downloader Gui Mode-->
+                <!-- ArtWork Beef Gui Mode-->
                 <control type="button" id="9326">    
                     <width>493</width>
 				    <height>60</height>
@@ -71,9 +80,7 @@
                     <visible>Skin.HasSetting(ShowABinContextMenu)</visible>
                     <visible>System.HasAddon(script.artwork.beef) + [Container.Content(episodes) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
                 </control>
-			</control>
-			
-            
+			</control>	
 		</control>
 	</controls>
 </window>

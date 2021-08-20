@@ -154,6 +154,29 @@
 	    <left>397</left>
 	</include>
 	
+	<include name="ShelfPopup1">
+	    <visible>System.IdleTime(1)</visible>
+	</include>
+	
+	<include name="ShelfPopup2">
+	    <visible>System.IdleTime(2)</visible>
+	</include>
+	
+	<include name="ShelfPopup3">
+	    <visible>System.IdleTime(3)</visible>
+	</include>
+	
+	<include name="ShelfPopup4">
+	    <visible>System.IdleTime(4)</visible>
+	</include>
+	
+	<include name="ShelfPopup5">
+	    <visible>System.IdleTime(5)</visible>
+	</include>
+	
+	<include name="ShelfPopup6">
+	    <visible>System.IdleTime(6)</visible>
+	</include>
 	
 	<include name="PopupMediaFlagItems">
 		<param name="itemwidth" default="90"/>
@@ -333,10 +356,12 @@
 		<onfocus>ClearProperty(Album_Label,1144)</onfocus>
 		<onfocus>ClearProperty(Album_Style,1144)</onfocus>
 		<onfocus>ClearProperty(Album_Mood,1144)</onfocus>
+		<onfocus>ClearProperty(ShelfDelay,1144)</onfocus>
 	</include>
 	
 	<include name="SetShelfPopupProps">
 	    <param name="EnableProp">false</param>
+		<param name="ShelfDelay">3</param>
 		<definition>
 	        <control type="button">
 			    <include>HiddenButton</include>
@@ -392,6 +417,7 @@
 				<onfocus>SetProperty(Album_Style,"$INFO[ListItem.Property(Album_Style)]",1144)</onfocus>
 				<onfocus>SetProperty(Album_Mood,"$INFO[ListItem.Property(Album_Mood)]",1144)</onfocus>
 			    <onfocus condition="$PARAM[EnableProp]">SetProperty(ShowWidgetPopup,True,Home)</onfocus>
+				<onfocus>SetProperty(ShelfPopupDelay,"$PARAM[ShelfDelay]",1144)</onfocus>
 		    </control>
 		</definition>	
 	</include>
