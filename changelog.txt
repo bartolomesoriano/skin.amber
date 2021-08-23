@@ -1,3 +1,7 @@
+3.2.148 (23-08-2021)
+- Show disc art in list views
+- Use disc instead of thumb for music in fanart view
+- Misc. fixes
 3.2.147 (20-08-2021)
 - Make shelf info popup delay configurable
 - Add back Artwork Beef options
