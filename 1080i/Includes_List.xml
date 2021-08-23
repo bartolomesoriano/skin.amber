@@ -1353,7 +1353,7 @@
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>0</posx>
-				    <width>640</width>
+				    <width>660</width>
 				    <height>$PARAM[itemheight]</height>
 				    <texture flipy="true" border="3">list/ListNF.png</texture>
 			    </control>
@@ -1370,7 +1370,7 @@
 			    <control type="label" description="Main Label">
     				<posx>9</posx>
 				    <height>$PARAM[itemheight]</height>
-				    <width>465</width>
+				    <width>475</width>
 				    <scroll>$VAR[LongLabelScroll]</scroll>
 				    <textoffsetx>16</textoffsetx>
                     <font>$PARAM[ListLabelFont]</font>
@@ -1378,7 +1378,7 @@
                     <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
 				</control>
 			    <control type="label">
-    				<posx>469</posx>
+    				<posx>442</posx>
 				    <posy>0</posy>
 				    <width>180</width>
 				    <height>$PARAM[itemheight]</height>
@@ -1400,7 +1400,7 @@
     				<posx>10</posx>
 					<posy>0</posy>
 					<height>$PARAM[itemheight]</height>
-                    <width>640</width>
+                    <width>660</width>
 					<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 				    <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus($PARAM[id])">Conditional</animation>
 			    </control>
@@ -1431,7 +1431,7 @@
                     <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
 				</control>
     			<control type="label">
-	    			<posx>469</posx>
+	    			<posx>442</posx>
 		    		<posy>0</posy>
 			    	<width>180</width>
 				    <height>$PARAM[itemheight]</height>

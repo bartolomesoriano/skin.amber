@@ -4,6 +4,16 @@
 		<param name="ListType">list</param>
 		<definition>
 			<control type="group">
+				
+				<include condition="Skin.HasSetting(ShowSetCount)">LowListMovieSetDiscs</include>
+				
+				<include content="ListMusicDisc">
+				    <param name="viewid">54</param>
+	                <param name="discsize">275</param>
+		            <param name="left">40</param>
+		            <param name="top">420</param>
+				</include>	
+				
 				<include content="BackgroundOverlay">
 					<param name="overlayheight" value="517"/>
 					<param name="overlaytop" value="563"/>
@@ -234,13 +244,13 @@
 					<param name="lowpanel">true</param>
 					<param name="top">610</param>
 					<param name="left">355</param>
-					<param name="height">270</param>
+					<param name="height">280</param>
 					<param name="width">850</param>
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="footertop">990</param>
+					<param name="footertop">1035</param>
 					<param name="showfooter">false</param>
 					<param name="visibility">![$EXP[LowListPanelIsDisabled]] + ![$EXP[LowListPanelIsSwapped]] + [Container.content(addons) | Container.content(images) | Container.content(games) | Container.Content(sets)]</param>
 				</include>
@@ -327,13 +337,14 @@
 				<include content="PanelTemplate">
 					<param name="lowpanel">true</param>
 					<param name="top">610</param>
-					<param name="left">1020</param>
-					<param name="height">270</param>
+					<param name="left">1030</param>
+					<param name="height">280</param>
 					<param name="width">850</param>
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
+					<param name="footertop">1035</param>
 					<param name="showfooter">false</param>
 					<param name="visibility">![$EXP[LowListPanelIsDisabled]] + $EXP[LowListPanelIsSwapped] + [Container.content(addons) | Container.content(images) | Container.content(games) | Container.Content(sets)]</param>
 				</include>
@@ -503,6 +514,13 @@
 					</control>
 					
 				</control>
+				
+				<include condition="!String.IsEqual(Skin.String(MediaViewsExtraArt),discart)" content="ListViewsDiscArt">
+				    <param name="viewid">54</param>
+					<param name="posx">40</param>
+		            <param name="posy">775</param>
+		            <param name="discsize">275</param>
+				</include>
 				
 				<include condition="!Skin.String(MediaViewsExtraArt,none)" content="ShowMediaViewsExtraArt">
 				    <param name="logoleft">1380</param>

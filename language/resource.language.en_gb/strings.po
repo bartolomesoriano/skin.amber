@@ -3647,3 +3647,7 @@ msgstr ""
 msgctxt "#32422"
 msgid "Hide Menu when Shelves are Focused"
 msgstr ""
+
+msgctxt "#32423"
+msgid "Use Disc Art instead of Cover"
+msgstr ""

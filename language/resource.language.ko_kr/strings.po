@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-05-25 10:09+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2021-08-23 14:24+0000\n"
+"Last-Translator: Minho Park <parkmino@gmail.com>\n"
 "Language-Team: Korean <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/ko_kr/>\n"
 "Language: ko_kr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.8\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -119,7 +119,7 @@ msgstr ""
 
 msgctxt "#31023"
 msgid "Viewtype"
-msgstr ""
+msgstr "보기 형식"
 
 msgctxt "#31024"
 msgid "Sort by"
@@ -216,11 +216,11 @@ msgstr ""
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
-msgstr ""
+msgstr "정렬: 오름차순"
 
 msgctxt "#31051"
 msgid "Sort: Descending"
-msgstr ""
+msgstr "정렬: 내림차순"
 
 msgctxt "#31052"
 msgid "Sections"
@@ -476,11 +476,11 @@ msgstr ""
 
 msgctxt "#31139"
 msgid "Video decoder"
-msgstr ""
+msgstr "비디오 디코더"
 
 msgctxt "#31140"
 msgid "Pixel format"
-msgstr "픽셀 포맷"
+msgstr "픽셀 형식"
 
 msgctxt "#31141"
 msgid "Play speed"
@@ -577,7 +577,7 @@ msgstr ""
 # empty strings from id 31310 to 31321
 msgctxt "#31322"
 msgid "Aired"
-msgstr ""
+msgstr "방송됨"
 
 # empty strings from id 31323 to 31350
 msgctxt "#31351"
@@ -602,7 +602,7 @@ msgstr ""
 
 msgctxt "#31356"
 msgid "Download Subtitles"
-msgstr ""
+msgstr "자막 다운로드"
 
 msgctxt "#31357"
 msgid "Local subtitle available"
@@ -1658,11 +1658,19 @@ msgid "Decades"
 msgstr ""
 
 msgctxt "#31650"
-msgid "Show Information Popup (after 3 seconds)"
+msgid "Show Information Popup"
 msgstr ""
 
 msgctxt "#31651"
 msgid "Center shelf items on screen"
+msgstr ""
+
+msgctxt "#31652"
+msgid "Select Information Popup Delay (in seconds)"
+msgstr ""
+
+msgctxt "#31653"
+msgid "Information Popup Delay"
 msgstr ""
 
 msgctxt "#31901"
@@ -3561,4 +3569,8 @@ msgstr ""
 
 msgctxt "#32422"
 msgid "Hide Menu when Shelves are Focused"
+msgstr ""
+
+msgctxt "#32423"
+msgid "Use Disc Art instead of Cover"
 msgstr ""

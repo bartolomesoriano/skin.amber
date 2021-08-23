@@ -4,6 +4,7 @@
 		<param name="ListType">list</param>
 		<definition>
 			<control type="group">
+				
 				<include content="BackgroundOverlay">
 					<param name="parentid" value="501"/>
 					<param name="overlaytop" value="60"/>
@@ -537,6 +538,20 @@
 						</control>						
 					</control>
 				</control>
+				
+				<include content="ListViewsDiscArt">
+				    <param name="viewid">501</param>
+					<param name="posx">50</param>
+		            <param name="posy">460</param>
+		            <param name="discsize">500</param>
+				</include>
+				
+				<include content="ListMusicDisc">
+				    <param name="viewid">501</param>
+	                <param name="discsize">500</param>
+		            <param name="left">50</param>
+		            <param name="top">540</param>
+				</include>
 				
 				<include content="MediaFlags">
 					<param name="top">995</param>

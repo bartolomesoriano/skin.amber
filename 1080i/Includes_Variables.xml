@@ -217,6 +217,7 @@
 		<value condition="Integer.IsGreaterOrEqual(ListItem.PercentPlayed,80) + Integer.IsLess(ListItem.PercentPlayed,90)">overlays/toprightinprogress80.png</value>
 		<value condition="Integer.IsGreaterOrEqual(ListItem.PercentPlayed,90) + Integer.IsLess(ListItem.PercentPlayed,100)">overlays/toprightinprogress90.png</value>
     </variable>
+	
 	<variable name="VideoInfoTopRightInProgress" description="Overlay image">
         <value condition="Integer.IsLess(Container.ListItem.PercentPlayed,20)">overlays/toprightinprogress10.png</value>
 		<value condition="Integer.IsGreaterOrEqual(Container.ListItem.PercentPlayed,20) + Integer.IsLess(Container.ListItem.PercentPlayed,30)">overlays/toprightinprogress20.png</value>
@@ -227,7 +228,7 @@
 		<value condition="Integer.IsGreaterOrEqual(Container.ListItem.PercentPlayed,70) + Integer.IsLess(Container.ListItem.PercentPlayed,80)">overlays/toprightinprogress70.png</value>
 		<value condition="Integer.IsGreaterOrEqual(Container.ListItem.PercentPlayed,80) + Integer.IsLess(Container.ListItem.PercentPlayed,90)">overlays/toprightinprogress80.png</value>
 		<value condition="Integer.IsGreaterOrEqual(Container.ListItem.PercentPlayed,90) + Integer.IsLess(Container.ListItem.PercentPlayed,100)">overlays/toprightinprogress90.png</value>
-    </variable>																	  
+    </variable>
 
     <variable name="AddonOverlay" description="Overlay image">
         <value condition="!String.IsEmpty(ListItem.AddonBroken)">QuitNF.png</value>
@@ -2009,6 +2010,16 @@
 		<value condition="Skin.HasSetting(502_UseBanner)">$LOCALIZE[32400]</value>
 		<value condition="Skin.HasSetting(502_UseLogo)">$LOCALIZE[31621]</value>
 		<value>$LOCALIZE[32399]</value>
+	</variable>
+	
+	<variable name="MusicVizBackground">
+		<value condition="!String.IsEmpty(Control.GetLabel(4445)) + String.IsEmpty(Player.Art(artist.fanart1))">$INFO[Control.GetLabel(4445)]</value>
+		<value condition="!String.IsEmpty(Control.GetLabel(4444))">$INFO[Control.GetLabel(4444)]</value>
+	</variable>
+	
+	<variable name="MusicDiscArt">
+		<value condition="!String.IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(album.discart))">$INFO[ListItem.Art(album.discart)]</value>
 	</variable>
     <expression name="WidgetFanartVisible">String.IsEmpty(Container(300).ListItem.Property(widgetDisableFanart)) + ControlGroup(700).HasFocus</expression>
     

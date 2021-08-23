@@ -358,7 +358,7 @@
 			    <control type="image">
 				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
 				              [[Container.Content(tvshows) | container.content(seasons)] + !Integer.IsGreater(Listitem.Property(UnwatchedEpisodes),0)]] + ![$EXP[LowListPanelIsDisabled]] + $EXP[LowListPanelIsSwapped]</visible>
-				    <posx>596r</posx>
+				    <posx>586r</posx>
 				    <width>30</width>
 				    <height>$PARAM[itemheight]</height>
 				    <texture>$VAR[Overlay]</texture>
@@ -4925,6 +4925,7 @@
 			<width>$PARAM[width]</width>
 			<control type="label" description="Title shadow">
 				<animation effect="slide" start="0,0" end="0,27" time="0" condition="Control.IsVisible(56) + [$EXP[56_FanartViewInfo] | $EXP[56_NetflixShowTitleInFooter]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,22" time="0" condition="Control.IsVisible(56) + [[Container.Content(albums) | Container.Content(songs)] + Skin.HasSetting(56_Use_Disc)]">Conditional</animation>
 				<left>4</left>
 				<top>4</top>
 				<width>$PARAM[width]</width>
@@ -4939,6 +4940,7 @@
 			</control>
 			<control type="label" description="Title Label">
 				<animation effect="slide" start="0,0" end="0,27" time="0" condition="Control.IsVisible(56) + [$EXP[56_FanartViewInfo] | $EXP[56_NetflixShowTitleInFooter]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,22" time="0" condition="Control.IsVisible(56) + [[Container.Content(albums) | Container.Content(songs)] + Skin.HasSetting(56_Use_Disc)]">Conditional</animation>
 				<width>$PARAM[width]</width>
 				<height>50</height>
 				<align>center</align>
@@ -4950,6 +4952,8 @@
 				<visible>!Control.IsVisible(56) | [Control.IsVisible(56) + [![$EXP[56_FanartViewNetflix]] | $EXP[56_NetflixShowTitleInFooter]]]</visible>
 			</control>
 			<control type="label" description="Details">
+				<animation effect="slide" start="0,0" end="0,12" time="0" condition="Control.IsVisible(56) + [[[Container.Content(albums) | Container.Content(songs)] + Skin.HasSetting(56_Use_Disc)] + [[Control.HasFocus(66) + Control.IsVisible(66561)] | Control.HasFocus(616)]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,22" time="0" condition="Control.IsVisible(56) + [[[Container.Content(albums) | Container.Content(songs)] + Skin.HasSetting(56_Use_Disc)] + ![[Control.HasFocus(66) + Control.IsVisible(66561)] | Control.HasFocus(616)]]">Conditional</animation>
 				<visible>Control.IsVisible(58) | Control.IsVisible(53) | [Control.IsVisible(56) + [![$EXP[56_FanartViewInfo]] + ![$EXP[56_FanartViewNetflix]]]]</visible>
 				<posy>54</posy>
 				<width>$PARAM[width]</width>

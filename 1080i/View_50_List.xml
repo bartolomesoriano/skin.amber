@@ -4,6 +4,10 @@
 		<param name="ListType">list</param>
 		<definition>
 			<control type="group">
+				
+				<include condition="Skin.HasSetting(ShowSetCount)">ListMovieSetDiscs</include>
+				<include>ListMusicDisc</include>
+				
 				<include content="BackgroundOverlay">
 					<param name="parentid" value="50"/>
 					<param name="overlaytop" value="300"/>
@@ -430,6 +434,10 @@
 						</control>						
 					</control>
 				</control>
+				
+				<include condition="!String.IsEqual(Skin.String(MediaViewsExtraArt),discart)" content="ListViewsDiscArt">
+				    <param name="viewid">50</param>
+				</include>
 				
 				<include condition="!Skin.String(MediaViewsExtraArt,none)" content="ShowMediaViewsExtraArt">
 				    <param name="logoleft">1380</param>

@@ -416,13 +416,13 @@
             <visible>![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]</visible>
 			<visible>Control.IsVisible(56) + $EXP[56_FanartViewNetflix]</visible>
             <left>250</left>
-			<width>1836</width>
+			<width>1896</width>
 			<height>864</height>
             <timeperimage>8000</timeperimage>
             <fadetime>400</fadetime>
             <imagepath background="true" diffuse="img/fanart_diffuse.png">$VAR[SubBackground]</imagepath>
             <randomize>true</randomize>
-            <aspectratio>scale</aspectratio>
+            <aspectratio>keep</aspectratio>
 			<animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Use.KenBurnsEffect)">Conditional</animation>
             <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Use.KenBurnsEffect)">Conditional</animation>
         </control>
@@ -1549,5 +1549,222 @@
 		</definition>
 	</include>
     
+	<include name="ListViewsDiscArt">
+	    <param name="viewid">50</param>
+		<param name="posx">50</param>
+		<param name="posy">590</param>
+		<param name="discsize">450</param>
+		<definition>
+		    <control type="group">
+			    <visible>Skin.HasSetting($PARAM[viewid]_Show_Disc) + Control.IsVisible($PARAM[viewid]) + [Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos)]</visible>
+			    <posx>$PARAM[posx]</posx>
+			    <posy>$PARAM[posy]</posy>
+			    <width>$PARAM[discsize]</width>
+			    <height>$PARAM[discsize]</height>
+			    <visible>!String.IsEmpty(ListItem.Art(discart))</visible>
+			    <control type="image">
+		            <left>0</left>
+		            <top>0</top>
+		            <width>$PARAM[discsize]</width>
+		            <height>$PARAM[discsize]</height>
+				    <fadetime>480</fadetime>
+			        <texture diffuse="img/disc.png" background="true">$INFO[ListItem.Art(discart)]</texture>
+				    <include>SlideLeftSpinningDisc</include>
+		        </control>
+			</control>	
+		</definition>	
+	</include>
 	
+	<include name="LowListMovieSetDiscs">
+	    <param name="discsize">275</param>
+		<definition>
+		    <control type="group">
+			    <visible>ListItem.IsCollection + Skin.HasSetting(54_Show_Disc) + Control.IsVisible(54)</visible>
+			    <control type="image">
+				    <left>115</left>
+				    <top>278</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(6).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(6).Art(discart))</visible>
+				    <animation effect="slide" start="-850,0" end="0,0" delay="2000" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			    <control type="image">
+				    <left>265</left>
+				    <top>278</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(7).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(7).Art(discart))</visible>
+				    <animation effect="slide" start="-1050,0" end="0,0" delay="2100" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			    <control type="image">
+				    <left>415</left>
+				    <top>278</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(8).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(8).Art(discart))</visible>
+				    <animation effect="slide" start="-1250,0" end="0,0" delay="2200" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			    <control type="image">
+				    <left>565</left>
+				    <top>278</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(9).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(9).Art(discart))</visible>
+				    <animation effect="slide" start="-1350,0" end="0,0" delay="2300" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			    <control type="image">
+				    <left>715</left>
+				    <top>278</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(10).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(10).Art(discart))</visible>
+				    <animation effect="slide" start="-1450,0" end="0,0" delay="2400" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+				<control type="image">
+				    <left>865</left>
+				    <top>278</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(11).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(11).Art(discart))</visible>
+				    <animation effect="slide" start="-1450,0" end="0,0" delay="2400" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			    <control type="image">
+				    <left>40</left>
+				    <top>425</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(0).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(0).Art(discart))</visible>
+				    <animation effect="slide" start="-800,0" end="0,0" delay="1400" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			    <control type="image">
+				    <left>190</left>
+				    <top>425</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(1).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(1).Art(discart))</visible>
+				    <animation effect="slide" start="-950,0" end="0,0" delay="1500" time="1200" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			    <control type="image">
+				    <left>340</left>
+				    <top>425</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(2).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(2).Art(discart))</visible>
+				    <animation effect="slide" start="-1100,0" end="0,0" delay="1600" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			    <control type="image">
+				    <left>490</left>
+				    <top>425</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(3).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(3).Art(discart))</visible>
+				    <animation effect="slide" start="-1250,0" end="0,0" delay="1700" time="1200" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			    <control type="image">
+				    <left>640</left>
+				    <top>425</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(4).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(4).Art(discart))</visible>
+				    <animation effect="slide" start="-1370,0" end="0,0" delay="1800" time="1200" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			    <control type="image">
+				    <left>790</left>
+				    <top>425</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(5).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(5).Art(discart))</visible>
+				    <animation effect="slide" start="-1520,0" end="0,0" delay="1900" time="1200" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+		    </control>
+		</definition>	
+	</include>
+	
+	<include name="ListMovieSetDiscs">
+	    <param name="discsize">450</param>
+		<definition>
+		    <control type="group">
+			    <visible>ListItem.IsCollection + Skin.HasSetting(50_Show_Disc) + Control.IsVisible(50)</visible>
+			    <control type="image">
+				    <left>50</left>
+				    <top>80</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(0).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(0).Art(discart))</visible>
+				    <animation effect="slide" start="-800,0" end="0,0" delay="1400" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			    <control type="image">
+				    <left>275</left>
+				    <top>80</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(1).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(1).Art(discart))</visible>
+				    <animation effect="slide" start="-950,0" end="0,0" delay="1500" time="1200" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			    <control type="image">
+				    <left>500</left>
+				    <top>80</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(2).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(2).Art(discart))</visible>
+				    <animation effect="slide" start="-1100,0" end="0,0" delay="1600" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			    <control type="image">
+				    <left>725</left>
+				    <top>80</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(3).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(3).Art(discart))</visible>
+				    <animation effect="slide" start="-1250,0" end="0,0" delay="1700" time="1200" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+				<control type="image">
+				    <left>950</left>
+				    <top>80</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$INFO[Container(4450).ListItemAbsolute(4).Art(discart)]</texture>
+				    <visible>!String.IsEmpty(Container(4450).ListItemAbsolute(4).Art(discart))</visible>
+				    <animation effect="slide" start="-1100,0" end="0,0" delay="1600" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
+			    </control>
+			</control>	
+		</definition>	
+	</include>
+	
+	<include name="ListMusicDisc">
+	    <param name="viewid">50</param>
+		<param name="discsize">450</param>
+		<param name="left">50</param>
+		<param name="top">80</param>
+		<definition>
+		    <control type="group">
+			    <visible>Skin.HasSetting($PARAM[viewid]_Show_Disc) + Control.IsVisible($PARAM[viewid]) + [Container.Content(albums) | Container.Content(songs)]</visible>
+			    <control type="image">
+				    <left>$PARAM[left]</left>
+				    <top>$PARAM[top]</top>
+				    <width>$PARAM[discsize]</width>
+				    <height>$PARAM[discsize]</height>
+				    <texture background="true">$VAR[MusicDiscArt]</texture>
+				    <visible>!String.IsEmpty(ListItem.Art(discart)) | !String.IsEmpty(ListItem.Art(album.discart))</visible>
+				    <include>SlideLeftSpinningDisc</include>
+<!--					<animation effect="slide" start="-800,0" end="0,0" delay="1400" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation> -->
+			    </control>
+			</control>	
+		</definition>	
+	</include>
 </includes>
