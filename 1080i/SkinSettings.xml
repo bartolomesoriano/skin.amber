@@ -518,6 +518,7 @@
 							<param name="itemid" value="15"/>
 							<param name="itemlabel" value="$LOCALIZE[32262]"/>
 							<param name="skinsetting" value="UseEHBackgrounds"/>
+							<param name="itemvisibility">System.HasAddon(script.embuary.helper)</param>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">11</param>
