@@ -174,32 +174,53 @@
 		
 		<include>DefaultBackground</include>
 		
-		<include content="View_50_List" condition="!Skin.HasSetting(ListCenterFocus)">
-		    <param name="ListType">list</param>
-		</include>
-		<include content="View_50_List" condition="Skin.HasSetting(ListCenterFocus)">
-		    <param name="ListType">fixedlist</param>
-		</include>
+		<control type="group">
+    		
+			<!-- Slide down the media items when trailer is playing -->
+			<animation effect="slide" start="0,0" end="0,1080" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Trailer.MediaSlideOut) + Player.HasVideo + Skin.HasSetting(AutoPlayTrailer) + !String.IsEmpty(Window(Home).Property(MovieTrailerPlaying))">Conditional</animation>
+			
+			<include content="View_50_List" condition="!Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">list</param>
+		    </include>
+		    <include content="View_50_List" condition="Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">fixedlist</param>
+		    </include>
 		
-		<include>View_51_Panel</include>
-		<include>View_511_Panel2</include>
-		<include content="View_52_BigList" condition="!Skin.HasSetting(ListCenterFocus)">
-		    <param name="ListType">list</param>
-		</include>
-		<include content="View_52_BigList" condition="Skin.HasSetting(ListCenterFocus)">
-		    <param name="ListType">fixedlist</param>
-		</include>
+		    <include>View_51_Panel</include>
+		    <include>View_511_Panel2</include>
+		    <include content="View_52_BigList" condition="!Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">list</param>
+		    </include>
+		    <include content="View_52_BigList" condition="Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">fixedlist</param>
+		    </include>
 		
-		<include>View_53_Icons</include>
-		<include content="View_54_LowList" condition="!Skin.HasSetting(ListCenterFocus)">
-		    <param name="ListType">list</param>
-		</include>
-		<include content="View_54_LowList" condition="Skin.HasSetting(ListCenterFocus)">
-		    <param name="ListType">fixedlist</param>
-		</include>
+		    <include>View_53_Icons</include>
+		    <include content="View_54_LowList" condition="!Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">list</param>
+		    </include>
+		    <include content="View_54_LowList" condition="Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">fixedlist</param>
+		    </include>
 		
-		<include>View_55_BigPanel</include>
-		<include>View_551_BigPanel2</include>
+		    <include>View_55_BigPanel</include>
+		    <include>View_551_BigPanel2</include>
+			
+			<include content="View_501_TallList" condition="!Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">list</param>
+		    </include>
+		    <include content="View_501_TallList" condition="Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">fixedlist</param>
+		    </include>
+	   
+	        <include>View_57_SimpleList</include>
+ 		
+		    <include>View_600_Triple</include>
+		
+		    <include>View_58_Logo</include>
+		
+		    <include >View_502_RightList</include>
+		</control>	
 		
 		<include content="View_56_Fanart" condition="!Skin.HasSetting(FanartCenterFocus)">
 		    <param name="focusposition">2</param>
@@ -207,21 +228,42 @@
 		<include content="View_56_Fanart" condition="Skin.HasSetting(FanartCenterFocus)">
 		    <param name="focusposition">4</param>
 		</include>
+		
+		<control type="group">
+			<left>0</left>
+			<top>900</top>
+			<visible>Skin.HasSetting(Trailer.MediaSlideOut) + Player.HasVideo + Skin.HasSetting(AutoPlayTrailer) + !String.IsEmpty(Window(Home).Property(MovieTrailerPlaying))</visible>
+			<control type="image">
+			    <left>0</left>
+			    <top>0</top>
+				<right>0</right>
+				<bottom>0</bottom>
+				<fadetime>200</fadetime>
+                <aspectratio scalediffuse="true">scale</aspectratio>
+                <texture background="true" colordiffuse="ffffffff">img/BackgroundMaskBlack.png</texture>
+     		</control>
+			<control type="label" description="Main label">
+				<left>30</left>
+				<width>1305</width>
+				<height>60</height>
+				<scroll>false</scroll>
+				<align>left</align>
+				<font>font38_title</font>
+				<textcolor>$VAR[HighlightColor]</textcolor>
+				<label>$VAR[panelheading]</label>
+			</control>
+			<control type="label" description="Main label">
+				<left>30</left>
+				<top>70</top>
+				<width>1305</width>
+				<height>30</height>
+				<scroll>false</scroll>
+				<align>left</align>
+				<label>[B]$VAR[panelsubheading][/B]</label>
+			</control>
+		</control>
         
-		<include content="View_501_TallList" condition="!Skin.HasSetting(ListCenterFocus)">
-		    <param name="ListType">list</param>
-		</include>
-		<include content="View_501_TallList" condition="Skin.HasSetting(ListCenterFocus)">
-		    <param name="ListType">fixedlist</param>
-		</include>
-	   
-	    <include>View_57_SimpleList</include>
 		
-		<include>View_600_Triple</include>
-		
-		<include>View_58_Logo</include>
-		
-		<include >View_502_RightList</include>
 		
 		<control type="group" description="Showcase trigger">
 			<animation effect="slide" easing="out" start="0,0" end="0,-90" time="350" delay="0" center="120,350" reversible="true" condition="!String.IsEmpty(Window.Property(gallery))">Conditional</animation>

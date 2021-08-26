@@ -330,7 +330,9 @@
             <visible>!Skin.HasSetting(Hide.AllShelves)</visible>
             <animation effect="fade" start="100" end="0" time="480" condition="[!Skin.HasSetting(Hide.NowPlaying) + Player.HasAudio + !ControlGroup(700).HasFocus] | 
 			                                                                   [!Skin.HasSetting(Hide.NowPlaying) + Player.HasVideo + !ControlGroup(700).HasFocus] | 
-																			   [!String.IsEmpty(Container(300).ListItem.Property(widgetsHide)) + !ControlGroup(700).HasFocus]">Conditional</animation>
+																			   [!String.IsEmpty(Container(300).ListItem.Property(widgetsHide)) + !ControlGroup(700).HasFocus] | 
+																			   [Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + 
+																			    ControlGroup(700).HasFocus]">Conditional</animation>
 			
 			<animation effect="slide" start="0,0" end="-420,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
 			<animation effect="slide" start="0,0" end="-120,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
@@ -354,6 +356,13 @@
                 <include>PVRRecordingWidgets</include>
 			</control>
 		</control>
+		
+		<include condition="!Skin.HasSetting(Vertical.HideFocusShelves)">ShelfTrailerInfo</include>
+		<include condition="Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfTrailerInfo">
+		    <param name="left">0</param>
+			<param name="top">900</param>
+		</include>
+		
 		<control type="group">
 			<control type="group" description="Furniture">
 				<control type="image" description="Main Left Blade">

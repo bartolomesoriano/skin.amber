@@ -1032,6 +1032,8 @@
                     <onup condition="$SKINSHORTCUTS[onup]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],2,home)</onup>
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]2)</onup>
 					<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -1587,6 +1589,8 @@
 					<onup condition="!$SKINSHORTCUTS[onup]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
 					<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -2142,6 +2146,8 @@
 					<onup condition="!$SKINSHORTCUTS[onup]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
 					<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -2825,6 +2831,8 @@
 					<onup condition="!$SKINSHORTCUTS[onup]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
 					<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -3507,6 +3515,8 @@
 					<onup condition="!$SKINSHORTCUTS[onup]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
 					<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -4188,6 +4198,8 @@
 					<onup>ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup>SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
 					<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -4488,6 +4500,8 @@
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]1,Home)</onfocus>
                     <onup condition="$SKINSHORTCUTS[onup]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],2,home)</onup>
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]2)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -4773,6 +4787,8 @@
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]3)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -5059,6 +5075,8 @@
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]4)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -5365,6 +5383,8 @@
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]5)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -5672,6 +5692,8 @@
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]6)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup condition="!$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -5975,6 +5997,8 @@
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]6,Home)</onfocus>
                     <onup>ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup>SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -6721,6 +6745,8 @@
                     <onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0)">SetProperty(WidgetFocus$SKINSHORTCUTS[id],2,home)</onup>
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]2)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -7012,6 +7038,10 @@
                     <ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</ondown>
 					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]1)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">300</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
 					<preloaditems>2</preloaditems>
@@ -7203,6 +7233,8 @@
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]1,Home)</onfocus>
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0)">SetProperty(WidgetFocus$SKINSHORTCUTS[id],2,home)</onup>
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]2)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -7346,6 +7378,10 @@
 					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</ondown>
 					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]1)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">300</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
 					<preloaditems>2</preloaditems>
@@ -10870,6 +10906,8 @@
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]2)</onup>
 					<onup condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0)">SetProperty(WidgetFocus$SKINSHORTCUTS[id],3,home)</onup>
 					<onup condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]3)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -11970,9 +12008,13 @@
 					<onclick condition="String.IsEqual(ListItem.DBType,season)">ActivateWindow(Videos,videodb://tvshows/titles/$INFO[ListItem.Property(TVShowID)]/$INFO[ListItem.Property(Season)]/?tvshowid=$INFO[ListItem.Property(TVShowID)])</onclick>
                     <onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0)">SetProperty(WidgetFocus$SKINSHORTCUTS[id],3,home)</onup>
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]3)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</ondown>
 					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]1)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">300</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
 					<preloaditems>2</preloaditems>
@@ -12693,6 +12735,8 @@
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]1)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + !Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">300</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
 					<preloaditems>2</preloaditems>
@@ -13054,6 +13098,8 @@
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]2)</onup>
 					<onup condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0)">SetProperty(WidgetFocus$SKINSHORTCUTS[id],3,home)</onup>
 					<onup condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]3)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -13273,9 +13319,13 @@
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]2,Home)</onfocus>
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0)">SetProperty(WidgetFocus$SKINSHORTCUTS[id],3,home)</onup>
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]3)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</ondown>
 					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]1)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">300</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
 					<preloaditems>2</preloaditems>
@@ -13481,6 +13531,8 @@
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]1)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + !Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">300</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
 					<preloaditems>2</preloaditems>
@@ -15349,6 +15401,8 @@
                     <onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]2)</onup>
 					<onup condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]3)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -15817,8 +15871,12 @@
 					<onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
 					<onclick condition="String.IsEqual(ListItem.DBType,season)">ActivateWindow(Videos,videodb://tvshows/titles/$INFO[ListItem.Property(TVShowID)]/$INFO[ListItem.Property(Season)]/?tvshowid=$INFO[ListItem.Property(TVShowID)])</onclick>
                     <onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]3)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]1)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">300</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
 					<preloaditems>2</preloaditems>
@@ -16219,6 +16277,8 @@
                     <ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]2)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]1)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + !Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">300</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
 					<preloaditems>2</preloaditems>
@@ -16494,6 +16554,8 @@
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]1,Home)</onfocus>
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]2)</onup>
 					<onup condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]3)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -16649,8 +16711,12 @@
 					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2)</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]2,Home)</onfocus>
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]3)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]1)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">300</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
 					<preloaditems>2</preloaditems>
@@ -16786,6 +16852,8 @@
 					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]2)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]1)</ondown>
 					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + !Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">300</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
+					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
 					<preloaditems>2</preloaditems>
@@ -16840,11 +16908,6 @@
 					<visible>Skin.HasSetting(UseBackgroundBottomShortcuts)</visible>
      			</control>
 				<control type="panel" id="1700$SKINSHORTCUTS[id]1">
-<!--					<animation effect="slide" start="0,0" end="-90,0" time="0" condition="Integer.IsEqual(Container(1700$SKINSHORTCUTS[id]1).NumItems,2) | 
-					                                                                      Integer.IsEqual(Container(1700$SKINSHORTCUTS[id]1).NumItems,4) | 
-																						  Integer.IsEqual(Container(1700$SKINSHORTCUTS[id]1).NumItems,6)">conditional</animation> -->
-					
-					
 					<!-- Center Shortcuts -->
 			        <animation effect="slide" start="0,0" end="739,0" time="0" condition="String.IsEqual(Container(1700$SKINSHORTCUTS[id]1).NumItems,1)">Conditional</animation>
 			        <animation effect="slide" start="0,0" end="618,0" time="0" condition="String.IsEqual(Container(1700$SKINSHORTCUTS[id]1).NumItems,2)">Conditional</animation>

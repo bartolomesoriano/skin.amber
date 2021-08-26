@@ -1360,4 +1360,37 @@
 		</item>
 	</include>
 	
+	<include name="SelectShelfTrailerDelay">
+		<item>
+			<label>2 $LOCALIZE[32047]</label>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>Skin.SetString(ShelfTrailerDelay,00:02)</onclick>
+		</item>
+		<item>
+			<label>5 $LOCALIZE[32047]</label>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>Skin.SetString(ShelfTrailerDelay,00:05)</onclick>
+		</item>
+		<item>
+			<label>7 $LOCALIZE[32047]</label>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>Skin.SetString(ShelfTrailerDelay,00:07)</onclick>
+		</item>
+		<item>
+			<label>10 $LOCALIZE[32047]</label>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>Skin.SetString(ShelfTrailerDelay,00:10)</onclick>
+		</item>
+		<item>
+			<label>15 $LOCALIZE[32047]</label>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>Skin.SetString(ShelfTrailerDelay,00:15)</onclick>
+		</item>
+		<item>
+			<label>20 $LOCALIZE[32047]</label>
+			<onclick>Dialog.Close(1121)</onclick>
+			<onclick>Skin.SetString(ShelfTrailerDelay,00:20)</onclick>
+		</item>
+	</include>
+	
 </includes>

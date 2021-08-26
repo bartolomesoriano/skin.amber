@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-08-05 17:28+0000\n"
-"Last-Translator: beatmasterRS <danysahne333@yahoo.de>\n"
+"PO-Revision-Date: 2021-08-25 21:20+0000\n"
+"Last-Translator: Kai Sommerfeld <kai.sommerfeld@gmx.com>\n"
 "Language-Team: German <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/de_de/>\n"
 "Language: de_de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.8\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -131,7 +131,7 @@ msgstr "Einträge"
 
 msgctxt "#31026"
 msgid "Misc options"
-msgstr "Verschiedene Optionen"
+msgstr "Sonstige Einstellungen"
 
 msgctxt "#31027"
 msgid "Order"
@@ -575,7 +575,7 @@ msgstr "Pause"
 
 msgctxt "#31352"
 msgid "Stop"
-msgstr "Stop"
+msgstr "Stopp"
 
 msgctxt "#31353"
 msgid "Fast Forward"
@@ -583,7 +583,7 @@ msgstr "Vorspulen"
 
 msgctxt "#31354"
 msgid "Rewind"
-msgstr "Zurückspulen"
+msgstr "Rücklauf"
 
 msgctxt "#31355"
 msgid "Movie menu"
@@ -599,7 +599,7 @@ msgstr "Lokale Untertitel verfügbar"
 
 msgctxt "#31360"
 msgid "Watch as 2D"
-msgstr "In 2D anschauen"
+msgstr "In 2D ansehen"
 
 msgctxt "#31361"
 msgid "Change mode"
@@ -3551,6 +3551,18 @@ msgstr ""
 
 msgctxt "#32423"
 msgid "Use Disc Art instead of Cover"
+msgstr ""
+
+msgctxt "#32424"
+msgid "Auto Play Trailer from Shelf Items"
+msgstr ""
+
+msgctxt "#32425"
+msgid "Shelf Trailer Delay"
+msgstr ""
+
+msgctxt "#32426"
+msgid "Slide Out Media Items While Trailer Playing"
 msgstr ""
 
 #~ msgctxt "#31650"

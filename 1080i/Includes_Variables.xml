@@ -985,7 +985,7 @@
 
         <value condition="String.IsEqual(ListItem.DBType,season) + !String.IsEqual(ListItem.Label,$LOCALIZE[20366]) + !String.IsEmpty(ListItem.Episode)">[CAPITALIZE][COLOR=$VAR[HighlightColor]]$LOCALIZE[36907]:[/COLOR] $INFO[Listitem.Episode][/CAPITALIZE][CR][COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Listitem.Genre]</value>
         <value condition="[String.IsEqual(ListItem.DBType,episode) | Container.Content(episodes)]  + !String.IsEmpty(ListItem.Episode)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20373]:[/COLOR] $INFO[Listitem.Season] • [COLOR=$VAR[HighlightColor]][CAPITALIZE]$LOCALIZE[20452][/CAPITALIZE]:[/COLOR] $INFO[Listitem.Episode][CR][COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Listitem.Genre]</value>
-        <value condition="String.IsEqual(ListItem.DBType,album)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Listitem.Genre][CR][COLOR=$VAR[HighlightColor]]$LOCALIZE[562]:[/COLOR] $INFO[Listitem.Year] • [COLOR=$VAR[HighlightColor]]$LOCALIZE[21899]:[/COLOR] $INFO[Listitem.Property(Album_Label)]</value>
+        <value condition="String.IsEqual(ListItem.DBType,album)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[ListItem.Genre][CR][COLOR=$VAR[HighlightColor]]$LOCALIZE[562]:[/COLOR] $INFO[ListItem.Year] • [COLOR=$VAR[HighlightColor]]$LOCALIZE[21899]:[/COLOR] $INFO[ListItem.Property(Album_Label)]</value>
         <value condition="String.IsEqual(ListItem.DBType,artist)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Listitem.Property(Artist_Genre)][CR][COLOR=$VAR[HighlightColor]]$LOCALIZE[21898]:[/COLOR] $INFO[Listitem.Property(Artist_YearsActive)]</value>
         <value condition="Window.IsActive(MyPVRChannels.xml)">[COLOR=Grey3]$LOCALIZE[19031]: [/COLOR]$INFO[ListItem.NextTitle]</value>
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[PVR.NextTimer]</value>
@@ -1959,6 +1959,14 @@
 		<value>5 $LOCALIZE[32047]</value>
 	</variable>
 	
+	<variable name="ShelfTrailerDelayLabelVar">
+		<value condition="Skin.String(ShelfTrailerDelay,00:02)">2 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(ShelfTrailerDelay,00:05)">5 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(ShelfTrailerDelay,00:07)">7 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(ShelfTrailerDelay,00:10)">10 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(ShelfTrailerDelay,00:15)">15 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(ShelfTrailerDelay,00:20)">20 $LOCALIZE[32047]</value>
+	</variable>
 	<variable name="StartupBackgroundLabelVar">
 		<value condition="!String.IsEmpty(Skin.String(StartupImage))">$INFO[Skin.String(StartupImage)]</value>
 		<value condition="!String.IsEmpty(Skin.String(StartupImagePath))">$INFO[Skin.String(StartupImagePath)]</value>
@@ -2013,7 +2021,7 @@
 	</variable>
 	
 	<variable name="MusicVizBackground">
-		<value condition="!String.IsEmpty(Control.GetLabel(4445)) + String.IsEmpty(Player.Art(artist.fanart1))">$INFO[Control.GetLabel(4445)]</value>
+		<value condition="!String.IsEmpty(Control.GetLabel(4445)) + [String.IsEmpty(Player.Art(artist.fanart1)) | String.IsEmpty(Player.Art(artist.fanart))]">$INFO[Control.GetLabel(4445)]</value>
 		<value condition="!String.IsEmpty(Control.GetLabel(4444))">$INFO[Control.GetLabel(4444)]</value>
 	</variable>
 	

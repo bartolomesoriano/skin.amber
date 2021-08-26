@@ -1597,7 +1597,13 @@
 		<definition>
 		    <control type="group">
 			    <visible>Control.IsVisible(56)</visible>
-			    <control type="group" description="background">
+			    
+				<!-- Slide down the media items when trailer is playing -->
+			    <animation effect="slide" start="0,0" end="0,1080" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Trailer.MediaSlideOut) + Player.HasVideo + 
+			                                                                                                      Skin.HasSetting(AutoPlayTrailer) + !String.IsEmpty(Window(Home).Property(MovieTrailerPlaying)) + 
+																											      ![$EXP[56_FanartViewNetflix]]">Conditional</animation>
+				
+				<control type="group" description="background">
 				    <include>VignetteFade</include>
 				    <control type="image">
     					<animation effect="slide" easing="out" start="0,0" end="0,-500" time="300" delay="0" center="120,350" reversible="true" condition="!String.IsEmpty(Window.Property(gallery))">Conditional</animation>
@@ -1638,11 +1644,15 @@
 					    <onup condition="String.IsEmpty(Window.Property(gallery)) + !Skin.HasSetting(KioskMode.Enabled)">9000</onup>
 						<onup condition="String.IsEmpty(Window.Property(gallery)) + !Skin.HasSetting(KioskMode.Enabled)">SetProperty(MediaMenu,true,Home)</onup>
                         <onup condition="String.IsEmpty(Window.Property(gallery)) + Skin.HasSetting(KioskMode.Enabled)">noop</onup>
-                        <oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
+                        <onup condition="!String.IsEmpty(Window(Home).Property(MovieTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
+					    <onup condition="!String.IsEmpty(Window(Home).Property(MovieTrailerPlaying))">ClearProperty(MovieTrailerPlaying,Home)</onup>
+						<oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
 					    <onup condition="!String.IsEmpty(Window.Property(gallery))">ClearProperty(gallery)</onup>
 					    <ondown condition="$EXP[56_FanartViewGallery]">SetProperty(gallery,true)</ondown>
                         <ondown condition="![$EXP[56_FanartViewGallery]] + [!Control.IsVisible(616) | [Control.IsVisible(616) + Control.IsVisible(66)]]">66</ondown>
 						<ondown condition="![$EXP[56_FanartViewGallery]] + Control.IsVisible(616)">616</ondown>
+						<ondown condition="!String.IsEmpty(Window(Home).Property(MovieTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
+					    <ondown condition="!String.IsEmpty(Window(Home).Property(MovieTrailerPlaying))">ClearProperty(MovieTrailerPlaying,Home)</ondown>
 					    <viewtype label="$LOCALIZE[20445]">list</viewtype>
 					    <pagecontrol>66</pagecontrol>
 					    <orientation>horizontal</orientation>

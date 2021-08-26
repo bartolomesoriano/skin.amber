@@ -454,19 +454,36 @@
 							<param name="itemlabel" value="$LOCALIZE[32358]"/>
 							<param name="skinsetting" value="Shelf.PlayAlbum"/>
 							<param name="itemvisibility" value="System.HasAddon(script.playalbum)"/>
-						</include> 
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="21"/>
+							<param name="itemlabel" value="[B]$LOCALIZE[32424][/B]"/>
+							<param name="skinsetting" value="Shelf.PlayTrailers"/>
+							<param name="customonclickYes">True</param>
+							<param name="onclick2Yes">Skin.Reset(ShelfTrailerDelay)</param>
+							<param name="customonclickNo">True</param>
+							<param name="onclick2No">Skin.SetString(ShelfTrailerDelay,00:05)</param>
+						</include>
                         <include content="CustomDialogSettingItem">
-                            <param name="itemid">21</param>
+                            <param name="itemid">22</param>
+                            <param name="itemlabel">      $LOCALIZE[32425]</param>
+		                    <param name="itemlabel2">$VAR[ShelfTrailerDelayLabelVar]</param>
+                            <param name="CustomProperty">CustomSelectShelfTrailerDelay</param>
+		                    <param name="CustomDialog">1121</param>
+							<param name="itemvisibility" value="Skin.HasSetting(Shelf.PlayTrailers)"/>
+						</include>
+                        <include content="CustomDialogSettingItem">
+                            <param name="itemid">23</param>
                             <param name="itemlabel">$LOCALIZE[32062]</param>
 		                    <param name="itemlabel2"></param>
                             <param name="CustomProperty">CustomSelectFavouriteAddons</param>
 		                    <param name="CustomDialog">1125</param>
 						</include>						
-						<item id="22" description="Customize Home Menu">
+						<item id="24" description="Customize Home Menu">
 							<label>$LOCALIZE[32043]</label>
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
 						</item>
-                        <item id="23" description="Customize Power Menu">
+                        <item id="25" description="Customize Power Menu">
 							<label>$LOCALIZE[32166]</label>
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=powermenu)</onclick>
 						</item>
@@ -518,7 +535,7 @@
 							<param name="itemid" value="15"/>
 							<param name="itemlabel" value="$LOCALIZE[32262]"/>
 							<param name="skinsetting" value="UseEHBackgrounds"/>
-							<param name="itemvisibility">System.HasAddon(script.embuary.helper)</param>
+							<param name="itemvisibility" value="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">11</param>
@@ -616,52 +633,58 @@
 		                    <param name="CustomDialog">1139</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="10"/>
+							<param name="itemid" value="5"/>
 							<param name="itemlabel" value="$LOCALIZE[32264]"/>
 							<param name="skinsetting" value="ShowSpecialFanart"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="13"/>
+							<param name="itemid" value="6"/>
 							<param name="itemlabel" value="$LOCALIZE[32270]"/>
 							<param name="skinsetting" value="FanartCenterFocus"/>
 						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">14</param>
+                            <param name="itemid">7</param>
                             <param name="itemlabel">[B]$LOCALIZE[32393][/B]</param>
                             <param name="CustomProperty">CustomSelectListOptions</param>
 		                    <param name="CustomDialog">1139</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="19"/>
+							<param name="itemid" value="8"/>
 							<param name="itemlabel" value="$LOCALIZE[20189]"/>
 							<param name="skinsetting" value="AutoScroll"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="20"/>
+							<param name="itemid" value="9"/>
 							<param name="itemlabel" value="$LOCALIZE[31514]"/>
 							<param name="skinsetting" value="EpisodesUsePoster"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="21"/>
+							<param name="itemid" value="10"/>
 							<param name="itemlabel" value="$LOCALIZE[32415]"/>
 							<param name="skinsetting" value="AutoPlayTrailer"/>
 						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">22</param>
+                            <param name="itemid">11</param>
                             <param name="itemlabel">      [B]$LOCALIZE[32416][/B]</param>
 							<param name="itemlabel2">$VAR[MediaViewsTrailerDelayLabelVar]</param>
                             <param name="CustomProperty">CustomSelectTrailerDelay</param>
 		                    <param name="CustomDialog">1121</param>
 							<param name="itemvisibility" value="Skin.HasSetting(AutoPlayTrailer)"/>
 						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="12"/>
+							<param name="itemlabel" value="      $LOCALIZE[32426]"/>
+							<param name="skinsetting" value="Trailer.MediaSlideOut"/>
+							<param name="itemvisibility" value="Skin.HasSetting(AutoPlayTrailer)"/>
+						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">23</param>
+                            <param name="itemid">13</param>
                             <param name="itemlabel">[B]$LOCALIZE[32394][/B]</param>
                             <param name="CustomProperty">CustomSelectMarksOverlays</param>
 		                    <param name="CustomDialog">1139</param>
 						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">30</param>
+                            <param name="itemid">14</param>
                             <param name="itemlabel">[B]$LOCALIZE[32396][/B]</param>
                             <param name="CustomProperty">CustomSelectEnabledViews</param>
 		                    <param name="CustomDialog">1139</param>

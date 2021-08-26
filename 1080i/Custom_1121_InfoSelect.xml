@@ -18,6 +18,7 @@
 	<onunload>ClearProperty(CustomSelectSeekBarInit,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectOSDArt,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectTrailerDelay,skinsettings)</onunload>
+	<onunload>ClearProperty(CustomSelectShelfTrailerDelay,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectStartupBackground,skinsettings)</onunload>
 	<onunload>ClearProperty(CustomSelectAmberFlixDimLevel,Home)</onunload>
     <onunload>ClearProperty(DoInfoExtras,Home)</onunload>
@@ -110,6 +111,7 @@
 					<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectSeekBarInit))">SelectSeekBarInitTime</include>
 					<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectOSDArt))">SelectOSDArt</include>
 					<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectTrailerDelay))">SelectTrailerDelay</include>
+					<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectShelfTrailerDelay))">SelectShelfTrailerDelay</include>
 					<include condition="!String.IsEmpty(Window(skinsettings).Property(CustomSelectStartupBackground))">SelectStartupBackground</include>
 				</content>
 			</control>

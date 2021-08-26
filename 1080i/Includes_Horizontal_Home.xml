@@ -9,6 +9,8 @@
 	    <param name="listtype">fixedlist</param>
 		<definition>
 		    <control type="$PARAM[listtype]" id="300" description="Main Bar">
+				<animation effect="slide" start="0,0" end="0,40" time="250" tween="sine" easing="in" condition="!Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,320" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
 				<animation effect="fade" time="200" start="100" end="25" reversible="true" condition="!Control.HasFocus(300)">Conditional</animation>
 				<posx>-338</posx>
 				<posy>689</posy>
@@ -77,7 +79,10 @@
 			<visible>!Skin.HasSetting(Hide.AllShelves)</visible>
             <animation effect="fade" start="100" end="0" time="480" condition="[!Skin.HasSetting(Hide.NowPlaying) + Player.HasAudio + !ControlGroup(700).HasFocus] | 
 			                                                                   [!Skin.HasSetting(Hide.NowPlaying) + Player.HasVideo + !ControlGroup(700).HasFocus] | 
-																			   [!String.IsEmpty(Container(300).ListItem.Property(widgetsHide)) + !ControlGroup(700).HasFocus]">Conditional</animation>
+																			   [!String.IsEmpty(Container(300).ListItem.Property(widgetsHide)) + !ControlGroup(700).HasFocus] | 
+																			   [Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + 
+																			    ControlGroup(700).HasFocus]">Conditional</animation>
+			
 			<include>skinshortcuts-template-shelfgroup2shelvesbackground</include>
 			<include>skinshortcuts-template-shelfgroup3shelvesbackground</include>
 			<include>skinshortcuts-template-shelfgroup1</include>
@@ -92,6 +97,11 @@
 			</control>
         </control>
 		
+		<include content="ShelfTrailerInfo">
+		    <param name="left">0</param>
+			<param name="top">800</param>
+		</include>
+		
         <!-- Main Menu/Submenu -->		
 		<control type="group">
 			<include condition="Skin.HasSetting(Enable.BottomShortcuts)">TopWithBottomShortcuts</include>
@@ -99,6 +109,8 @@
 			
 			<!-- Main menu bar textures -->
 			<control type="group" description="Furniture">
+				<animation effect="slide" start="0,0" end="0,40" time="250" tween="sine" easing="in" condition="!Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,320" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
 				<control type="image" description="Top glass border">
 					<animation effect="zoom" start="100,100" end="100,50" time="100" condition="true">Conditional</animation>
 					<posy>651</posy>
@@ -107,7 +119,7 @@
 					<texture border="0,0,0,12" colordiffuse="$VAR[GlowBarsColor]">home/NavbarGlass.png</texture>
 				</control>
 				<control type="image" description="Bottom glass border">
-					<animation effect="zoom" start="100,100" end="100,50" time="150" condition="[!Integer.IsGreater(Container(9001).NumItems,0) | [!Control.HasFocus(9001) + Skin.HasSetting(FadeSubmenu)]]">Conditional</animation>
+					<animation effect="zoom" start="100,100" end="100,50" time="150" condition="[!Integer.IsGreater(Container(9001).NumItems,0) | [!Control.HasFocus(9001) + Skin.HasSetting(FadeSubmenu)] | [Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus]]">Conditional</animation>
 					<posy>787</posy>
 					<width>1920</width>
 					<height>87</height>
@@ -138,6 +150,8 @@
 			<control type="fixedlist" id="9001" description="Submenu Bar">
 				<animation effect="fade" start="100" end="0" time="100" condition="!Control.HasFocus(9001) + Skin.HasSetting(FadeSubmenu)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-128,0" time="0" condition="String.IsEqual(Container(9001).NumItems,2) | String.IsEqual(Container(9001).NumItems,4) | String.IsEqual(Container(9001).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="0,100" time="250" tween="sine" easing="in" condition="!Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,350" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
 <!--				<include>VisibleFadeEffect</include> -->
 				<posx>64</posx>
 				<posy>782</posy>
@@ -222,7 +236,8 @@
 		
 		<!-- Bottom Shortcuts -->
 		<control type="group" id="800">
-		    <include condition="Skin.HasSetting(Enable.BottomShortcuts)">skinshortcuts-template-BottomShortcuts</include>
+		    <animation effect="slide" start="0,0" end="0,300" time="250" tween="sine" easing="in" condition="Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
+			<include condition="Skin.HasSetting(Enable.BottomShortcuts)">skinshortcuts-template-BottomShortcuts</include>
 		</control>
 		
 	</include>

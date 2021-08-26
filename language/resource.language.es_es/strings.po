@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-08-23 14:24+0000\n"
+"PO-Revision-Date: 2021-08-25 21:20+0000\n"
 "Last-Translator: bsoriano <bsoriano@gmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/es_es/>\n"
 "Language: es_es\n"
@@ -3549,6 +3549,18 @@ msgstr "Esconder Menú al Enfocar Widgets"
 
 msgctxt "#32423"
 msgid "Use Disc Art instead of Cover"
+msgstr "Usar arte de disco en vez de cubierta"
+
+msgctxt "#32424"
+msgid "Auto Play Trailer from Shelf Items"
+msgstr ""
+
+msgctxt "#32425"
+msgid "Shelf Trailer Delay"
+msgstr ""
+
+msgctxt "#32426"
+msgid "Slide Out Media Items While Trailer Playing"
 msgstr ""
 
 #~ msgctxt "#31650"

@@ -400,9 +400,9 @@
 										  
     <include name="DefaultBackground">
         <control type="multiimage">
-            <visible>![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]</visible>
+            <visible>![Player.HasVideo + [Skin.HasSetting(Show_VideoBackground) | Skin.HasSetting(AutoPlayTrailer)]]</visible>
 			<visible>[!Control.IsVisible(56) | [Control.IsVisible(56) + ![$EXP[56_FanartViewNetflix]]]]</visible>
-            <width>100%</width>
+			<width>100%</width>
             <height>100%</height>
             <timeperimage>8000</timeperimage>
             <fadetime>400</fadetime>
@@ -413,7 +413,7 @@
             <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Use.KenBurnsEffect)">Conditional</animation>
         </control>
 		<control type="multiimage">
-            <visible>![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]</visible>
+            <visible>![Player.HasVideo + [Skin.HasSetting(Show_VideoBackground) | Skin.HasSetting(AutoPlayTrailer)]]</visible>
 			<visible>Control.IsVisible(56) + $EXP[56_FanartViewNetflix]</visible>
             <left>250</left>
 			<width>1896</width>
@@ -431,7 +431,7 @@
             <include>Dimensions_Fullscreen</include>
         </control>
         <control type="videowindow">
-            <visible>[Player.HasVideo + Skin.HasSetting(Show_VideoBackground)] | Skin.HasSetting(AutoPlayTrailer)</visible>
+            <visible>Player.HasVideo + [Skin.HasSetting(Show_VideoBackground) | Skin.HasSetting(AutoPlayTrailer)]</visible>
             <include>Dimensions_Fullscreen</include>
         </control>
     </include>
@@ -479,10 +479,11 @@
 		<param name="ShowNoLogo">false</param>
 	    <definition>
 		    <control type="group">
-	            <visible>Skin.HasSetting(ShowHomeLogo) + !$PARAM[ShowNoLogo]</visible>
-				<animation effect="slide" start="0,0" end="440,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
-				<animation effect="slide" start="0,0" end="140,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
-		        <!-- Logo for vert. menu, single-row widget, text menu -->
+	            <visible>Skin.HasSetting(ShowHomeLogo) + !$PARAM[ShowNoLogo] + ![$EXP[widgetsAreShowing] + String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High)]</visible>
+				<animation effect="slide" start="0,0" end="440,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+				<animation effect="slide" start="0,0" end="140,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
+		        <animation effect="fade" start="100" end="0" time="250" tween="sine" easing="out" condition="Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">conditional</animation>
+				<!-- Logo for vert. menu, single-row widget, text menu -->
 		        <control type="image">
                     <posy>-30</posy>
 		            <posx>940</posx>
@@ -1406,7 +1407,7 @@
                 <visible>String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,album)</visible>
 				<visible>!String.IsEmpty(ListItem.Art(artist.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + [Skin.String(MediaViewsExtraArt,logo) | 
 				         [Skin.String(MediaViewsExtraArt,discart) + String.IsEmpty(ListItem.Art(discart))] | 
-						 [Skin.String(MediaViewsExtraArt,clearart) + String.IsEmpty(ListItem.Art(clearart))]]</visible>
+						 [Skin.String(MediaViewsExtraArt,clearart) + String.IsEmpty(ListItem.Art(clearart)) + String.IsEmpty(ListItem.Art(artist.clearart))]]</visible>
             </control>
 			<control type="image">
                 <posy>$PARAM[logotop]</posy>
@@ -1767,4 +1768,5 @@
 			</control>	
 		</definition>	
 	</include>
+	
 </includes>

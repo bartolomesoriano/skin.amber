@@ -37,6 +37,7 @@
 		<!-- Background --> 
 		<control type="multiimage">
 			<visible>![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]</visible>
+			<visible>![Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus]</visible>
 			<include>Dimensions_Fullscreen</include>
 			<fadetime>400</fadetime>
             <randomize>true</randomize>
@@ -53,7 +54,7 @@
 		</control>
 		<!-- Now Playing peview video -->
 		<control type="videowindow" id="350">
-			<visible>Player.HasVideo + Skin.HasSetting(Show_VideoBackground)</visible>
+			<visible>[Player.HasVideo + Skin.HasSetting(Show_VideoBackground)] | [Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus]</visible>
 			<include>Dimensions_Fullscreen</include>
 		</control>
 		<!-- Menu/Submenu/Widgets -->
