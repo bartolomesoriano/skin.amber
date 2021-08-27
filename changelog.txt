@@ -1,3 +1,7 @@
+3.2.149 (27-08-2021)
+- Play trailer from shelf items
+- Slide out media items when trailer playing
+- Misc. fixes
 3.2.148 (23-08-2021)
 - Show disc art in list views
 - Use disc instead of thumb for music in fanart view
