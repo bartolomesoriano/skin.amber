@@ -88,12 +88,26 @@
                 <font>ListDetails</font>
                 <label>[B]$LOCALIZE[31528][/B]</label>
             </control>
-            <control type="image" description="Power icon">
+            <control type="button" id="90099">
+			    <description>Close Button</description>
+			    <posy>20</posy>
+                <right>30</right>
+                <width>40</width>
+                <height>40</height>
+			    <font></font>
+			    <onclick>Action(Back)</onclick>
+				<ondown>9009</ondown>
+			    <texturefocus colordiffuse="$VAR[HighlightColor]">ShutdownNF.png</texturefocus>
+			    <texturenofocus>ShutdownNF.png</texturenofocus>
+				<visible>Skin.HasSetting(Enable.TouchSupport)</visible>
+		    </control>
+			<control type="image" description="Power icon">
 				<posy>20</posy>
                 <right>30</right>
                 <width>40</width>
                 <height>40</height>
 				<texture>ShutdownNF.png</texture>
+				<visible>!Skin.HasSetting(Enable.TouchSupport)</visible>
 			</control>
 			<control type="panel" id="9009" description="PW Options">
 				<posx>0</posx>
@@ -101,7 +115,8 @@
 				<width>382</width>
 				<onleft>close</onleft>
 				<onright>close</onright>
-				<onup>9009</onup>
+				<onup condition="Skin.HasSetting(Enable.TouchSupport)">90099</onup>
+		        <onup condition="!Skin.HasSetting(Enable.TouchSupport)">9009</onup>
 				<ondown>9009</ondown>
 				<scrolltime tween="sine" easing="inout">280</scrolltime>
 				<itemlayout height="60" width="382">

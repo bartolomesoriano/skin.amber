@@ -645,18 +645,20 @@
 						<!-- End Matrix change -->
 						
 					    <control type="image">
-						    <left>720</left>
-						    <width>50</width>
-						    <height>50</height>
+						    <left>20</left>
+						    <top>5</top>
+							<width>40</width>
+						    <height>40</height>
 						    <texture>osd/OSDRecordNF.png</texture>
+							<aspectratio aligny="bottom">keep</aspectratio>
 					    </control>
 					    <control type="label">
-						    <left>780</left>
-						    <width>400</width>
+						    <left>60</left>
+						    <width>200</width>
 						    <height>50</height>
 						    <aligny>center</aligny>
-						    <font>font13_title</font>
-						    <label>$LOCALIZE[19158]</label>
+						    <font>font10_title</font>
+						    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[19158][/COLOR]</label>
 					    </control>
 				    </control>
 					

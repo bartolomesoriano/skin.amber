@@ -21,6 +21,7 @@
     <include file="Includes_Horizontal_Home.xml" />
     <include file="Includes_Vertical_Home.xml" />
     <include file="Includes_Shelf_Contents.xml" />
+	<include file="Includes_ShelfInfo.xml" />
     <include file="Includes_Search.xml" />
     <include file="Includes_CustomSelect.xml" />
 	<include file="Includes_DialogSelect.xml" />
@@ -915,18 +916,19 @@
                 <left>$PARAM[left]</left>
                 <top>$PARAM[top]</top>
                 <control type="group" description="Video Window Grouo">
-                    <visible>Player.HasVideo + !Skin.HasSetting(Show_VideoBackground)</visible>
+                    <visible>Player.HasVideo + !Skin.HasSetting(Show_VideoBackground) + !Skin.HasSetting(HidePVRPreview)</visible>
                     <control type="videowindow" description="Current Video">
                         <width>$PARAM[width]</width>
                         <height>$PARAM[height]</height>
                     </control>
                 </control>
                 <control type="group" description="Icon Group">
-                    <visible>!Player.HasVideo | ![Player.HasVideo + !Skin.HasSetting(Show_VideoBackground)]</visible>
+                    <visible>!Player.HasVideo | ![Player.HasVideo + !Skin.HasSetting(Show_VideoBackground)] | Skin.HasSetting(HidePVRPreview)</visible>
                     <include content="ShadowedImage">
                         <param name="width">$PARAM[width]</param>
                         <param name="height">$PARAM[height]</param>
                         <param name="texture">$PARAM[itemicon]</param>
+						<param name="aspect">keep</param>
                     </include>
                 </control>
             </control>
@@ -1178,10 +1180,13 @@
         <param name="showflags">true</param>
 		<param name="footertop">920</param>
 		<param name="footerheight">155</param>
-		<param name="flagitemheight">80</param>
-		<param name="flagitemwidth">85</param>
+		<param name="flagitemheight">72</param>
+		<param name="flagitemwidth">74</param>
+		<param name="nonhdrflagitemheight">80</param>
+		<param name="nonhdrflagitemwidth">90</param>
 		<param name="lowflagitemheight">50</param>
-		<param name="lowflagitemwidth">90</param>
+		<param name="lowflagitemwidth">75</param>
+		<param name="nonhdrlowflagitemwidth">80</param>
         <definition>
             <control type="grouplist" id="4000" description="Media Info Panel">
                 <include>OpenClose</include>
@@ -1278,6 +1283,7 @@
 						<align>justify</align>
                         <label fallback="19055">$PARAM[plot]</label>
                         <font>InfoPlot</font>
+						<height>$PARAM[plotheight]</height>
                         <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
                     </control>
 					<!-- Plot for other content types -->
@@ -1442,19 +1448,19 @@
                     <include>ContentFade</include>
                     <width>$PARAM[width]</width>
                     <height>$PARAM[flagitemheight]</height>
-                    <itemgap>10</itemgap>
+                    <itemgap>0</itemgap>
                     <orientation>horizontal</orientation>
                     <align>left</align>
                     <include condition="Skin.HasSetting(Show.ColorRangeFlags)" content="MediaFlagItems">
                         <param name="diffuse">$VAR[LabelTextColor]</param>
 						<param name="itemwidth">$PARAM[flagitemwidth]</param>
 						<param name="itemheight">$PARAM[flagitemheight]</param>
-						<param name="showratingbadge">false</param>
+												 
                     </include>
 					<include condition="!Skin.HasSetting(Show.ColorRangeFlags)" content="MediaFlagItems">
                         <param name="diffuse">$VAR[LabelTextColor]</param>
-						<param name="itemwidth">$PARAM[flagitemwidth]</param>
-						<param name="itemheight">$PARAM[flagitemheight]</param>
+						<param name="itemwidth">$PARAM[nonhdrflagitemwidth]</param>
+						<param name="itemheight">$PARAM[nonhdrflagitemheight]</param>
                     </include>
                 </control>
 				<control type="grouplist" description="Flags">
@@ -1466,16 +1472,16 @@
                     <orientation>horizontal</orientation>
                     <align>left</align>
 					<usecontrolcoords>true</usecontrolcoords>
-                    <include condition="Skin.HasSetting(Show.ColorRangeFlags)" content="MediaFlagItems">
+					<include condition="Skin.HasSetting(Show.ColorRangeFlags)" content="MediaFlagItems">
                         <param name="diffuse">$VAR[LabelTextColor]</param>
 						<param name="itemwidth">$PARAM[flagitemwidth]</param>
 						<param name="itemheight">$PARAM[flagitemheight]</param>
-						<param name="showratingbadge">false</param>
+												 
                     </include>
 					<include condition="!Skin.HasSetting(Show.ColorRangeFlags)" content="MediaFlagItems">
                         <param name="diffuse">$VAR[LabelTextColor]</param>
-						<param name="itemwidth">$PARAM[flagitemwidth]</param>
-						<param name="itemheight">$PARAM[flagitemheight]</param>
+						<param name="itemwidth">$PARAM[nonhdrflagitemwidth]</param>
+						<param name="itemheight">$PARAM[nonhdrflagitemheight]</param>
                     </include>
                 </control>
 				<control type="grouplist" description="Flags">
@@ -1486,42 +1492,37 @@
                     <itemgap>10</itemgap>
                     <orientation>horizontal</orientation>
                     <align>left</align>
-					<top>4</top>
-					<usecontrolcoords>true</usecontrolcoords>
                     <include condition="Skin.HasSetting(Show.ColorRangeFlags)" content="MediaFlagItems">
                         <param name="diffuse">$VAR[LabelTextColor]</param>
-						<param name="itemheight">40</param>
+						<param name="itemheight">50</param>
 						<param name="itemwidth">$PARAM[lowflagitemwidth]</param>
-						<param name="showratingbadge">false</param>
-						
                     </include>
 					<include condition="!Skin.HasSetting(Show.ColorRangeFlags)" content="MediaFlagItems">
                         <param name="diffuse">$VAR[LabelTextColor]</param>
 						<param name="itemwidth">$PARAM[lowflagitemwidth]</param>
-						<param name="itemheight">40</param>
-						<param name="showratingbadge">false</param>
+						<param name="itemheight">50</param>
                     </include>
                 </control>
 				<control type="grouplist" description="Flags">
                     <visible>$PARAM[showflags] + $PARAM[lowpanel] + Skin.HasSetting(coloredflags)</visible>
-                    <width>$PARAM[width]</width>
-                    <height>55</height>
+                    <include>ContentFade</include>
+					<width>$PARAM[width]</width>
+                    <height>50</height>
                     <itemgap>10</itemgap>
                     <orientation>horizontal</orientation>
                     <align>left</align>
-					<top>-3</top>
 					<usecontrolcoords>true</usecontrolcoords>
 					<include condition="Skin.HasSetting(Show.ColorRangeFlags)" content="MediaFlagItems">
                         <param name="diffuse">$VAR[LabelTextColor]</param>
-						<param name="itemheight">45</param>
+						<param name="itemheight">50</param>
 						<param name="itemwidth">$PARAM[lowflagitemwidth]</param>
-						<param name="showratingbadge">false</param>
+						<param name="lowpanel">true</param>
                     </include>
 					<include condition="!Skin.HasSetting(Show.ColorRangeFlags)" content="MediaFlagItems">
                         <param name="diffuse">$VAR[LabelTextColor]</param>
-						<param name="itemwidth">$PARAM[lowflagitemwidth]</param>
-						<param name="itemheight">45</param>
-						<param name="showratingbadge">false</param>
+						<param name="itemwidth">$PARAM[nonhdrlowflagitemwidth]</param>
+						<param name="itemheight">50</param>
+						<param name="lowpanel">true</param>
                     </include>
                 </control>
 			</control>	
@@ -1927,16 +1928,15 @@
                 </control>
 		        <control type="grouplist" description="Flags">
 			        <top>975</top>
-			        <left>40</left>
-			        <width>$PARAM[labelwidth]</width>
+			        <left>30</left>
+			        <width>$PARAM[plotwidth]</width>
 			        <height>80</height>
-			        <itemgap>20</itemgap>
+			        <itemgap>15</itemgap>
 			        <orientation>horizontal</orientation>
 			        <align>center</align>
 			        <include content="MediaFlagItems">
 					    <param name="diffuse">$VAR[LabelTextColor]</param>
-				        <param name="showratingbadge">false</param>
-						<param name="itemwidth">95</param>
+						<param name="itemwidth">90</param>
 			        </include>
 		        </control>                
             </control>
@@ -1951,7 +1951,7 @@
         <param name="visibility">true</param>
         <param name="showratingbadge">true</param>
 		<param name="itemwidth">90</param>
-		<param name="itemgap">20</param>
+		<param name="itemgap">10</param>
 		<param name="usecontrolcoords">false</param>
         <definition>
             <control type="grouplist" description="Flags">
@@ -3001,18 +3001,6 @@
 	<include name="LargeFonts">
 	    <font>font18</font>
 	</include>
-	
-	<include name="OSDButtonOnFocus">
-        <onfocus condition="String.IsEmpty(Skin.String(OSDTimeout))">AlarmClock(osd_timeout,SetFocus(99220),00:05,silent)</onfocus>
-		<onfocus condition="Skin.String(OSDTimeout,three)">AlarmClock(osd_timeout,SetFocus(99220),00:03,silent)</onfocus>
-        <onfocus condition="Skin.String(OSDTimeout,five)">AlarmClock(osd_timeout,SetFocus(99220),00:05,silent)</onfocus>
-        <onfocus condition="Skin.String(OSDTimeout,ten)">AlarmClock(osd_timeout,SetFocus(99220),00:10,silent)</onfocus>
-        <onfocus condition="Skin.String(OSDTimeout,fifteen)">AlarmClock(osd_timeout,SetFocus(99220),00:15,silent)</onfocus>
-        <onfocus condition="Skin.String(OSDTimeout,twenty)">AlarmClock(osd_timeout,SetFocus(99220),00:20,silent)</onfocus>
-        <onfocus condition="Skin.String(OSDTimeout,thirty)">AlarmClock(osd_timeout,SetFocus(99220),00:30,silent)</onfocus>
-        <onfocus condition="Skin.String(OSDTimeout,oneminute)">AlarmClock(osd_timeout,SetFocus(99220),01:00,silent)</onfocus>
-        <onunfocus>CancelAlarm(osd_timeout,true)</onunfocus>
-    </include>
 	
 	<include name="AutoCompleteSuggestions">
 	    <!-- Autocompletion suggestions -->

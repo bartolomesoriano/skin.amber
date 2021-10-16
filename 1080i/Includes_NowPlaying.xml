@@ -551,7 +551,7 @@
 					<param name="height">347</param>
 					<param name="shadowoffset">8</param>
 					<param name="texture">$VAR[NowPlayingThumbVar]</param>
-					<param name="aspect">scale</param>
+					<param name="aspect">keep</param>
 				</include>
 			</control>
 		</definition>

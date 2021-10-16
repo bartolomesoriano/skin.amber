@@ -24,13 +24,22 @@
 				<textcolor>$VAR[HighlightColor]</textcolor>
 				<label>$LOCALIZE[10034]</label>
 			</control>
+			<control type="group">
+			    <posx>734</posx>
+			    <posy>1</posy>
+			    <include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
+			        <param name="Action">Action(Back)</param>
+				    <param name="ondown">4</param>
+			    </include>
+		    </control>
 			<control type="radiobutton" id="4" description="Enable Login Screen">
 				<posy>90</posy>
 				<width>800</width>
 				<label>$LOCALIZE[20096]</label>
 				<onright>noop</onright>
 				<onleft>noop</onleft>
-				<onup>noop</onup>
+				<onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
+		        <onup condition="!Skin.HasSetting(Enable.TouchSupport)">noop</onup>
 				<ondown>5</ondown>
 				<textoffsetx>30</textoffsetx>
 			</control>
@@ -84,7 +93,7 @@
 							<texture border="3" flipy="true">list/ListNF.png</texture>
 						</control>
 						<control type="image">
-							<visible>![Control.HasFocus(4) | Control.HasFocus(5)]</visible>
+							<visible>![Control.HasFocus(4) | Control.HasFocus(5) | Control.HasFocus(909090)]</visible>
 							<width>800</width>
 							<height>60</height>
 							<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
@@ -96,7 +105,7 @@
 							<font>ListDetails</font>
 							<align>right</align>
 							<label>$INFO[ListItem.Label2]</label>
-							<visible>![Control.HasFocus(4) | Control.HasFocus(5)]</visible>
+							<visible>![Control.HasFocus(4) | Control.HasFocus(5) | Control.HasFocus(909090)]</visible>
 						</control>
 						<control type="label" description="Label2">
 							<posx>30r</posx>
@@ -107,14 +116,14 @@
 							<shadowcolor></shadowcolor>
 							<align>right</align>
 							<label>$INFO[ListItem.Label2]</label>
-							<visible>[Control.HasFocus(4) | Control.HasFocus(5)]</visible>
+							<visible>[Control.HasFocus(4) | Control.HasFocus(5) | Control.HasFocus(909090)]</visible>
 						</control>
 						<control type="label" description="Main Label">
 							<height>60</height>
 							<width>800</width>
 							<textoffsetx>30</textoffsetx>
 							<label>$INFO[ListItem.Label]</label>
-							<visible>[Control.HasFocus(4) | Control.HasFocus(5)]</visible>
+							<visible>[Control.HasFocus(4) | Control.HasFocus(5) | Control.HasFocus(909090)]</visible>
 						</control>
 						<control type="label" description="Main Label">
 							<height>60</height>
@@ -123,7 +132,7 @@
 							<textcolor>$VAR[FocusedTextColor]</textcolor>
 							<shadowcolor></shadowcolor>
 							<label>$INFO[ListItem.Label]</label>
-							<visible>![Control.HasFocus(4) | Control.HasFocus(5)]</visible>
+							<visible>![Control.HasFocus(4) | Control.HasFocus(5) | Control.HasFocus(909090)]</visible>
 						</control>
 					</focusedlayout>
 				</control>

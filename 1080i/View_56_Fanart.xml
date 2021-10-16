@@ -1646,6 +1646,12 @@
                         <onup condition="String.IsEmpty(Window.Property(gallery)) + Skin.HasSetting(KioskMode.Enabled)">noop</onup>
                         <onup condition="!String.IsEmpty(Window(Home).Property(MovieTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
 					    <onup condition="!String.IsEmpty(Window(Home).Property(MovieTrailerPlaying))">ClearProperty(MovieTrailerPlaying,Home)</onup>
+						
+						<oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</oninfo>
+				        <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
+				        <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</oninfo>
+				        <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</oninfo>
+						
 						<oninfo condition="ListItem.IsCollection + !String.Contains(System.BuildVersion,19)">ActivateWindow(1127)</oninfo>
 					    <onup condition="!String.IsEmpty(Window.Property(gallery))">ClearProperty(gallery)</onup>
 					    <ondown condition="$EXP[56_FanartViewGallery]">SetProperty(gallery,true)</ondown>

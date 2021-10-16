@@ -34,13 +34,22 @@
                 <font>InfoTitle</font>
                 <textcolor>$VAR[HighlightColor]</textcolor>
             </control>
+			<control type="group">
+			    <posx>1816</posx>
+			    <posy>61</posy>
+			    <include condition="Skin.HasSetting(Enable.TouchSupport)" content="DialogCloseButtonCommons">
+			        <param name="Action">Action(Back)</param>
+			        <param name="ondown">500</param>
+			    </include>
+		    </control>
             <control type="grouplist" id="500">
                 <visible>!Container(9000).HasFocus(4)</visible>
                 <posx>1479</posx>
                 <posy>210</posy>
                 <width>401</width>
                 <height>600</height>
-                <onup>500</onup>
+                <onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
+		        <onup condition="!Skin.HasSetting(Enable.TouchSupport)">500</onup>
                 <ondown>500</ondown>
                 <onleft>9001</onleft>
                 <control type="button" id="510" description="Addons">
@@ -142,7 +151,8 @@
             <control type="panel" id="9001">
                 <onright>500</onright>
                 <onleft>500</onleft>
-                <onup>9001</onup>
+                <onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
+		        <onup condition="!Skin.HasSetting(Enable.TouchSupport)">9001</onup>
                 <ondown>9001</ondown>
                 <pagecontrol></pagecontrol>
                 <posx>60</posx>
@@ -217,8 +227,7 @@
                 </content>
             </control>
         </control>
-        <control type="scrollbar" id="63">
-            <visible>Control.IsVisible(9003)</visible>
+<!--        <control type="scrollbar" id="63">
             <posx>1518</posx>
             <posy>210</posy>
             <width>36</width>
@@ -232,7 +241,7 @@
             <orientation>vertical</orientation>
             <onleft>9003</onleft>
             <onright>500</onright>
-        </control>
+        </control> -->
         <control type="group" description="Holiday theme">
             <visible>Skin.HasSetting(holiday)</visible>
             <include>Holiday</include>

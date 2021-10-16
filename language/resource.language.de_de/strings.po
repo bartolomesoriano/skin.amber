@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-08-25 21:20+0000\n"
-"Last-Translator: Kai Sommerfeld <kai.sommerfeld@gmx.com>\n"
+"PO-Revision-Date: 2021-09-26 16:48+0000\n"
+"Last-Translator: Chillbo <admin.weblate@contribute-osmc.com>\n"
 "Language-Team: German <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/de_de/>\n"
 "Language: de_de\n"
 "MIME-Version: 1.0\n"
@@ -1658,6 +1658,10 @@ msgctxt "#31653"
 msgid "Information Popup Delay"
 msgstr ""
 
+msgctxt "#31654"
+msgid "Show Information for Shelves"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "36-Stunden-Prognose"
@@ -2179,7 +2183,7 @@ msgstr "Wiederherstellen"
 
 msgctxt "#32067"
 msgid "Configure Backup addon"
-msgstr "Backup Addon konfigurieren"
+msgstr "Sicherungs-Addon konfigurieren"
 
 msgctxt "#32068"
 msgid "Show Fanart"
@@ -2891,7 +2895,7 @@ msgstr ""
 
 msgctxt "#32255"
 msgid "Missing Add-on"
-msgstr "Fehlendes Add-on"
+msgstr "Fehlendes Addon"
 
 msgctxt "#32256"
 msgid "TMDb Helper"
@@ -3563,6 +3567,42 @@ msgstr ""
 
 msgctxt "#32426"
 msgid "Slide Out Media Items While Trailer Playing"
+msgstr ""
+
+msgctxt "#32427"
+msgid "Hide PVR Channel Preview"
+msgstr ""
+
+msgctxt "#32428"
+msgid "Art Downloader: Select Artwork"
+msgstr ""
+
+msgctxt "#32429"
+msgid "Art Downloader: All Artwork"
+msgstr ""
+
+msgctxt "#32450"
+msgid "Show Artwork Downloader items in Context Menu"
+msgstr ""
+
+msgctxt "#32451"
+msgid "Movies with Tag"
+msgstr ""
+
+msgctxt "#32452"
+msgid "Select a Tag"
+msgstr ""
+
+msgctxt "#32453"
+msgid "With Tag"
+msgstr ""
+
+msgctxt "#32454"
+msgid "Always Use TV Show Poster for Episodes"
+msgstr ""
+
+msgctxt "#32455"
+msgid "Open ExtendedInfo for Info Dialogs"
 msgstr ""
 
 #~ msgctxt "#31650"

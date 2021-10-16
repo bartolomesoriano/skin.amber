@@ -115,6 +115,13 @@
 					<selected>!Skin.HasSetting(DisableSearchMoviesPlot)</selected>
 					<visible>!Skin.HasSetting(DisableSearchMovies)</visible>
 				</control>
+				<control type="radiobutton" id="90101110">
+					<label>      $LOCALIZE[32453]</label>
+					<radioposx>605</radioposx>
+					<onclick>Skin.ToggleSetting(DisableSearchMoviesTags)</onclick>
+					<selected>!Skin.HasSetting(DisableSearchMoviesTags)</selected>
+					<visible>!Skin.HasSetting(DisableSearchMovies)</visible>
+				</control>
                 <control type="radiobutton" id="901012">
 					<label>[B]$LOCALIZE[20343][/B]</label>
 					<radioposx>605</radioposx>

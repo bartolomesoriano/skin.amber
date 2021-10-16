@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-08-25 21:20+0000\n"
+"PO-Revision-Date: 2021-09-18 02:04+0000\n"
 "Last-Translator: bsoriano <bsoriano@gmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/es_es/>\n"
 "Language: es_es\n"
@@ -1656,6 +1656,10 @@ msgstr "Seleccione Intervalo para Popup de Info (en segundos)"
 msgctxt "#31653"
 msgid "Information Popup Delay"
 msgstr "Intervalo para Popup de Info"
+
+msgctxt "#31654"
+msgid "Show Information for Shelves"
+msgstr ""
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
@@ -3553,14 +3557,50 @@ msgstr "Usar arte de disco en vez de cubierta"
 
 msgctxt "#32424"
 msgid "Auto Play Trailer from Shelf Items"
-msgstr ""
+msgstr "Reproducir Tráiler de Widget"
 
 msgctxt "#32425"
 msgid "Shelf Trailer Delay"
-msgstr ""
+msgstr "Intervalo Tráiler de Widget"
 
 msgctxt "#32426"
 msgid "Slide Out Media Items While Trailer Playing"
+msgstr "Esconder Ítems de Medios mientras se reproduce tráiler"
+
+msgctxt "#32427"
+msgid "Hide PVR Channel Preview"
+msgstr "Esconder vista previa de canal PVR"
+
+msgctxt "#32428"
+msgid "Art Downloader: Select Artwork"
+msgstr "Art Downloader: Seleccionar Arte"
+
+msgctxt "#32429"
+msgid "Art Downloader: All Artwork"
+msgstr "Art Downloader: Todo el Arte"
+
+msgctxt "#32450"
+msgid "Show Artwork Downloader items in Context Menu"
+msgstr "Mostrar ítems de Artwork Downloader en el menú contextual"
+
+msgctxt "#32451"
+msgid "Movies with Tag"
+msgstr "Películas con Tag"
+
+msgctxt "#32452"
+msgid "Select a Tag"
+msgstr "Seleccione un Tag"
+
+msgctxt "#32453"
+msgid "With Tag"
+msgstr "Con Tag"
+
+msgctxt "#32454"
+msgid "Always Use TV Show Poster for Episodes"
+msgstr ""
+
+msgctxt "#32455"
+msgid "Open ExtendedInfo for Info Dialogs"
 msgstr ""
 
 #~ msgctxt "#31650"

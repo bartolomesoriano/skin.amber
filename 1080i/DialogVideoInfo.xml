@@ -3,11 +3,21 @@
     <defaultcontrol always="true">9000</defaultcontrol>
     <animation effect="fade" time="200">WindowOpen</animation>
     <animation effect="fade" time="150">WindowClose</animation>
-    <onload condition="[String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,tvshow)] + System.HasAddon(script.embuary.helper)">RunScript(script.embuary.helper,action=encode,string='"$INFO[ListItem.TVShowTitle]"',prop=EncodeddTitle)</onload>
+   
+	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo)">Dialog.Close(all)</onload>
+	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</onload>
+	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</onload>
+	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</onload>
+	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</onload>
+	
+	<onload condition="[String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,tvshow)] + System.HasAddon(script.embuary.helper)">RunScript(script.embuary.helper,action=encode,string='"$INFO[ListItem.TVShowTitle]"',prop=EncodeddTitle)</onload>
     <onload condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(script.embuary.helper)">RunScript(script.embuary.helper,action=encode,string='"$INFO[ListItem.Title]"',prop=EncodedTitle)</onload>
     <onload condition="System.HasAddon(script.embuary.helper)">RunScript(script.embuary.helper,action=resetposition,container=9000||90050||9009||91001||910001||91002||91003||91004||91005||91006||91007||91008||91009||910010)</onload>
     
 	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">Dialog.Close(VideoOSD,true)</onload>
+	
+	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo)">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(poster)]"',prop=EHBlur,radius=3)</onload>
+	
 	
 	<!-- Close custom search dialogs if they are open so that we can perform searches from here without issue -->
 	<onload condition="Window.IsVisible(Custom_1122_Search.xml)">Dialog.Close(1122,force)</onload>
@@ -186,7 +196,6 @@
             <orientation>horizontal</orientation>
             <align>center</align>
             <include content="MediaInfoMediaFlagItems">
-                <param name="showratingbadge">false</param>
 				<param name="diffuse">$VAR[LabelTextColor]</param>
 				<param name="itemwidth">100</param>
             </include>
@@ -202,7 +211,6 @@
             <orientation>horizontal</orientation>
             <align>center</align>
             <include content="MediaInfoMediaFlagItems">
-                <param name="showratingbadge">false</param>
 				<param name="diffuse">$VAR[LabelTextColor]</param>
 				<param name="itemwidth">90</param>
             </include>
@@ -217,7 +225,6 @@
             <orientation>horizontal</orientation>
             <align>center</align>
             <include content="MediaInfoMediaFlagItems">
-                <param name="showratingbadge">false</param>
 				<param name="diffuse">$VAR[LabelTextColor]</param>
 				<param name="itemwidth">95</param>
             </include>

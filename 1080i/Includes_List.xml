@@ -44,7 +44,7 @@
 				    <textoffsetx>16</textoffsetx>
                     <font>$PARAM[ListLabelFont]</font>
 				    <label>$VAR[MediaListLabel]</label>
-                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists) | [Container.Content(addons) + String.IsEqual(Container.SortMethod,$LOCALIZE[551])]</visible>
 				</control>
 			    <control type="label" description="Main Label">
     				<posx>679</posx>
@@ -54,7 +54,7 @@
 				    <textoffsetx>16</textoffsetx>
                     <font>$PARAM[ListLabelFont]</font>
 				    <label>$VAR[MediaListLabel]</label>
-                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists) + ![Container.Content(addons) + String.IsEqual(Container.SortMethod,$LOCALIZE[551])]</visible>
 				</control>
 			    <control type="label">
     				<posx>1115</posx>
@@ -107,7 +107,7 @@
 					<shadowcolor></shadowcolor>
                     <font>$PARAM[ListLabelFont]</font>
 					<label>$VAR[MediaListLabel]</label>
-                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists) | [Container.Content(addons) + String.IsEqual(Container.SortMethod,$LOCALIZE[551])]</visible>
 				</control>
 			    <control type="label" description="Main Label">
     				<posx>679</posx>
@@ -120,7 +120,7 @@
 					<shadowcolor></shadowcolor>
                     <font>$PARAM[ListLabelFont]</font>
 					<label>$VAR[MediaListLabel]</label>
-                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists) + ![Container.Content(addons) + String.IsEqual(Container.SortMethod,$LOCALIZE[551])]</visible>
 				</control>
     			<control type="label">
 	    			<posx>1115</posx>
@@ -354,7 +354,7 @@
 				    <textoffsetx>16</textoffsetx>
                     <font>$PARAM[ListLabelFont]</font>
 				    <label>$VAR[MediaListLabel]</label>
-                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists) | [Container.Content(addons) + String.IsEqual(Container.SortMethod,$LOCALIZE[551])]</visible>
 				</control>
 			    <control type="label" description="Main Label">
     				<posx>10</posx>
@@ -364,12 +364,12 @@
 				    <textoffsetx>16</textoffsetx>
                     <font>$PARAM[ListLabelFont]</font>
 				    <label>$VAR[MediaListLabel]</label>
-                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists) + ![Container.Content(addons) + String.IsEqual(Container.SortMethod,$LOCALIZE[551])]</visible>
 				</control>
 			    <control type="label">
-    				<posx>464</posx>
+    				<posx>454</posx>
 				    <posy>0</posy>
-				    <width>180</width>
+				    <width>150</width>
 				    <height>$PARAM[itemheight]</height>
 				    <scroll>$VAR[LongLabelScroll]</scroll>
 				    <textoffsetx>16</textoffsetx>
@@ -404,7 +404,7 @@
 					<shadowcolor></shadowcolor>
                     <font>$PARAM[ListLabelFont]</font>
 					<label>$VAR[MediaListLabel]</label>
-                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists) | [Container.Content(addons) + String.IsEqual(Container.SortMethod,$LOCALIZE[551])]</visible>
 				</control>
 			    <control type="label" description="Main Label">
     				<posx>10</posx>
@@ -417,12 +417,12 @@
 					<shadowcolor></shadowcolor>
                     <font>$PARAM[ListLabelFont]</font>
 					<label>$VAR[MediaListLabel]</label>
-                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists) + ![Container.Content(addons) + String.IsEqual(Container.SortMethod,$LOCALIZE[551])]</visible>
 				</control>
     			<control type="label">
-	    			<posx>464</posx>
+	    			<posx>454</posx>
 		    		<posy>0</posy>
-			    	<width>180</width>
+			    	<width>150</width>
 				    <height>$PARAM[itemheight]</height>
 				    <scroll>$VAR[LongLabelScroll]</scroll>
 					<textoffsetx>16</textoffsetx>
@@ -1055,7 +1055,7 @@
 				    <textoffsetx>16</textoffsetx>
                     <font>$PARAM[ListLabelFont]</font>
 				    <label>$VAR[MediaListLabel]</label>
-                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists) | [Container.Content(addons) + String.IsEqual(Container.SortMethod,$LOCALIZE[551])]</visible>
 				</control>
 			    <control type="label" description="Main Label">
     				<posx>879</posx>
@@ -1065,7 +1065,7 @@
 				    <textoffsetx>16</textoffsetx>
                     <font>$PARAM[ListLabelFont]</font>
 				    <label>$VAR[MediaListLabel]</label>
-                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists) + ![Container.Content(addons) + String.IsEqual(Container.SortMethod,$LOCALIZE[551])]</visible>
 				</control>
 			    <control type="label">
     				<posx>1315</posx>
@@ -1118,7 +1118,7 @@
 					<shadowcolor></shadowcolor>
                     <font>$PARAM[ListLabelFont]</font>
 					<label>$VAR[MediaListLabel]</label>
-                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists) | [Container.Content(addons) + String.IsEqual(Container.SortMethod,$LOCALIZE[551])]</visible>
 				</control>
 			    <control type="label" description="Main Label">
     				<posx>879</posx>
@@ -1131,7 +1131,7 @@
 					<shadowcolor></shadowcolor>
                     <font>$PARAM[ListLabelFont]</font>
 					<label>$VAR[MediaListLabel]</label>
-                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists) + ![Container.Content(addons) + String.IsEqual(Container.SortMethod,$LOCALIZE[551])]</visible>
 				</control>
     			<control type="label">
 	    			<posx>1315</posx>

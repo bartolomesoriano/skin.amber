@@ -37,6 +37,39 @@
 			<label>$INFO[Player.Art(artist.fanart20)]</label>
 		</control>
 		
+		<!-- Fadelabel for extra fanart -->
+		<control type="fadelabel" id="4445">
+			<top>-100</top>
+			<width>2560</width>
+			<height>0</height>
+			<scrollspeed>20</scrollspeed>
+			<scrollout>false</scrollout>
+			<randomize>true</randomize>
+			<visible>Skin.HasSetting(SkinHelper.EnableExtraFanart)</visible>
+			<include>FadeLabelTime</include>
+			<label>$INFO[Player.Art(albumartist.fanart)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart1)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart2)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart3)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart4)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart5)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart6)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart7)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart8)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart9)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart10)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart11)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart12)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart13)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart14)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart15)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart16)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart17)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart18)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart19)]</label>
+			<label>$INFO[Player.Art(albumartist.fanart20)]</label>
+		</control>
+		
 		<!-- Visualization -->
 		<control type="visualisation" id="2" description="Visualisation">
             <width>1920</width>
@@ -84,7 +117,7 @@
             <fadetime>800</fadetime>
             <randomize>true</randomize>
             <loop>yes</loop>
-            <imagepath background="true">$INFO[Control.GetLabel(4444)]</imagepath>
+            <imagepath background="true">$VAR[MusicVizBackground]</imagepath>
             <animation effect="fade" start="0" end="80" time="300">Visible</animation>
             <animation effect="fade" start="80" end="0" time="200">Hidden</animation>
             <animation type="Conditional" condition="Visualisation.Enabled">

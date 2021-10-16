@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-06-29 16:10+0000\n"
-"Last-Translator: Lao Vansai <eduardpriutesa@gmail.com>\n"
+"PO-Revision-Date: 2021-09-26 16:48+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Russian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/ru_ru/>\n"
 "Language: ru_ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.7\n"
+"X-Generator: Weblate 4.8\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -131,7 +131,7 @@ msgstr "Объекты"
 
 msgctxt "#31026"
 msgid "Misc options"
-msgstr ""
+msgstr "Другие параметры"
 
 msgctxt "#31027"
 msgid "Order"
@@ -448,7 +448,7 @@ msgstr ""
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
-msgstr ""
+msgstr "Тексты песен дополнения"
 
 msgctxt "#31133"
 msgid "Toggle audio stream"
@@ -577,32 +577,32 @@ msgstr "Используемая память"
 # empty strings from id 31310 to 31321
 msgctxt "#31322"
 msgid "Aired"
-msgstr ""
+msgstr "Премьера"
 
 # empty strings from id 31323 to 31350
 msgctxt "#31351"
 msgid "Pause"
-msgstr ""
+msgstr "Пауза"
 
 msgctxt "#31352"
 msgid "Stop"
-msgstr ""
+msgstr "Стоп"
 
 msgctxt "#31353"
 msgid "Fast Forward"
-msgstr ""
+msgstr "Перемотка вперед"
 
 msgctxt "#31354"
 msgid "Rewind"
-msgstr ""
+msgstr "Перемотка назад"
 
 msgctxt "#31355"
 msgid "Movie menu"
-msgstr ""
+msgstr "Меню фильма"
 
 msgctxt "#31356"
 msgid "Download Subtitles"
-msgstr ""
+msgstr "Загрузить субтитры"
 
 msgctxt "#31357"
 msgid "Local subtitle available"
@@ -612,15 +612,15 @@ msgstr ""
 # Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "Смотреть в 2D"
 
 msgctxt "#31361"
 msgid "Change mode"
-msgstr ""
+msgstr "Изменить режим"
 
 msgctxt "#31362"
 msgid "Enabled"
-msgstr ""
+msgstr "Включить"
 
 msgctxt "#31363"
 msgid "Static"
@@ -1073,7 +1073,7 @@ msgstr ""
 
 msgctxt "#31501"
 msgid "Scheduled Time"
-msgstr ""
+msgstr "Запланированное время"
 
 msgctxt "#31502"
 msgid "All Movies"
@@ -1106,7 +1106,7 @@ msgstr ""
 
 msgctxt "#31510"
 msgid "Timer Set"
-msgstr ""
+msgstr "Таймер настроен"
 
 msgctxt "#31511"
 msgid "Reminder Set"
@@ -1671,6 +1671,10 @@ msgstr ""
 
 msgctxt "#31653"
 msgid "Information Popup Delay"
+msgstr ""
+
+msgctxt "#31654"
+msgid "Show Information for Shelves"
 msgstr ""
 
 msgctxt "#31901"
@@ -3585,4 +3589,40 @@ msgstr ""
 
 msgctxt "#32426"
 msgid "Slide Out Media Items While Trailer Playing"
+msgstr ""
+
+msgctxt "#32427"
+msgid "Hide PVR Channel Preview"
+msgstr ""
+
+msgctxt "#32428"
+msgid "Art Downloader: Select Artwork"
+msgstr ""
+
+msgctxt "#32429"
+msgid "Art Downloader: All Artwork"
+msgstr ""
+
+msgctxt "#32450"
+msgid "Show Artwork Downloader items in Context Menu"
+msgstr ""
+
+msgctxt "#32451"
+msgid "Movies with Tag"
+msgstr ""
+
+msgctxt "#32452"
+msgid "Select a Tag"
+msgstr ""
+
+msgctxt "#32453"
+msgid "With Tag"
+msgstr ""
+
+msgctxt "#32454"
+msgid "Always Use TV Show Poster for Episodes"
+msgstr ""
+
+msgctxt "#32455"
+msgid "Open ExtendedInfo for Info Dialogs"
 msgstr ""

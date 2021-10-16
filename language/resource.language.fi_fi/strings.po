@@ -5,10 +5,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-08-25 21:20+0000\n"
-"Last-Translator: bsoriano <bsoriano@gmail.com>\n"
+"PO-Revision-Date: 2021-10-11 09:13+0000\n"
+"Last-Translator: G0mez82 <jalehto_99@hotmail.com>\n"
 "Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/fi_fi/>\n"
 "Language: fi_fi\n"
 "MIME-Version: 1.0\n"
@@ -1657,6 +1657,10 @@ msgctxt "#31653"
 msgid "Information Popup Delay"
 msgstr "Informaatio ponnahdusikkunan viive"
 
+msgctxt "#31654"
+msgid "Show Information for Shelves"
+msgstr "Näytä tiedot hyllyille"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "36 tunnin ennuste"
@@ -1740,7 +1744,7 @@ msgstr "Näytä fanitaide alavalikoissa"
 #. "S" Season
 msgctxt "#31954"
 msgid "S"
-msgstr "Etelästä"
+msgstr "S"
 
 msgctxt "#31955"
 msgid "Hide"
@@ -1821,7 +1825,7 @@ msgstr "Älä merkitse osittain katsottuja"
 #. "E" Episode
 msgctxt "#31973"
 msgid "E"
-msgstr "Idästä"
+msgstr "E"
 
 msgctxt "#31974"
 msgid "Home menu"
@@ -2399,7 +2403,7 @@ msgstr "AB: Valitse kuvamateriaali"
 
 msgctxt "#32122"
 msgid "Show Artwork Beef items in Context Menu"
-msgstr "Näytä Artwork Beef kohteet pikavalikossa"
+msgstr "Näytä Artwork Beef kohteet sisältövalikossa"
 
 msgctxt "#32123"
 msgid "Title Bar Options"
@@ -3528,7 +3532,7 @@ msgstr "Automaattisesti Toistettavan Trailerin Viive"
 
 msgctxt "#32417"
 msgid "Fanart Title Button Opens Info Dialog"
-msgstr "Fanitaiteen otsikkonappi avaa info dialogin"
+msgstr "Fanitaiteen otsikkonappi avaa Tiedot -valintaikkunan"
 
 msgctxt "#32418"
 msgid "Single Image"
@@ -3556,15 +3560,51 @@ msgstr "Käytä levytaidetta kansikuvan sijaan"
 
 msgctxt "#32424"
 msgid "Auto Play Trailer from Shelf Items"
-msgstr ""
+msgstr "Toista automaattisesti traileri hyllykohteissa"
 
 msgctxt "#32425"
 msgid "Shelf Trailer Delay"
-msgstr ""
+msgstr "hyllykohteen trailerin viive"
 
 msgctxt "#32426"
 msgid "Slide Out Media Items While Trailer Playing"
-msgstr ""
+msgstr "Liu'uta mediakohteet näkyvistä trailerin toiston aikana"
+
+msgctxt "#32427"
+msgid "Hide PVR Channel Preview"
+msgstr "Piilota PVR kanavan esikatselu"
+
+msgctxt "#32428"
+msgid "Art Downloader: Select Artwork"
+msgstr "Art Downloader: Valitse kuvamateriaali"
+
+msgctxt "#32429"
+msgid "Art Downloader: All Artwork"
+msgstr "Art Downloader: Kaikki kuvamateriaali"
+
+msgctxt "#32450"
+msgid "Show Artwork Downloader items in Context Menu"
+msgstr "Näytä Artwork Downloader kohteet sisältövalikossa"
+
+msgctxt "#32451"
+msgid "Movies with Tag"
+msgstr "Elokuvat jotka sisältävät tagin"
+
+msgctxt "#32452"
+msgid "Select a Tag"
+msgstr "Valitse tagi"
+
+msgctxt "#32453"
+msgid "With Tag"
+msgstr "Tagilla"
+
+msgctxt "#32454"
+msgid "Always Use TV Show Poster for Episodes"
+msgstr "Käytä aina TV-sarjan julistetta jaksoille"
+
+msgctxt "#32455"
+msgid "Open ExtendedInfo for Info Dialogs"
+msgstr "Avaa ExtendedInfo Tiedot -valintaikkunaan"
 
 #~ msgctxt "#31650"
 #~ msgid "Show Information Popup (after 3 seconds)"

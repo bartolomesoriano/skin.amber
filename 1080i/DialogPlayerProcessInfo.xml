@@ -160,13 +160,26 @@
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[460]:[/COLOR] $INFO[Player.Process(audiochannels),,$COMMA ]$INFO[Player.Process(audiodecoder)]$INFO[Player.Process(audiobitspersample),$COMMA , bits]$INFO[Player.Process(audiosamplerate),$COMMA , Hz]</label>
 					<shadowcolor>black</shadowcolor>
 				</control>
+				
+				<!-- Begin Matrix change -->
 				<control type="label">
 					<width>1600</width>
 					<height>50</height>
 					<aligny>bottom</aligny>
 					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31309]:[/COLOR] $INFO[System.Memory(used.percent),,       ][COLOR $VAR[HighlightColor]]$LOCALIZE[13271][/COLOR] $INFO[System.CPUUsage]</label>
 					<shadowcolor>black</shadowcolor>
+					<visible>System.SupportsCPUUsage</visible>
 				</control>
+				<control type="label">
+					<width>1600</width>
+					<height>50</height>
+					<aligny>bottom</aligny>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[31309]:[/COLOR] $INFO[System.Memory(used.percent),,]</label>
+					<shadowcolor>black</shadowcolor>
+					<visible>!System.SupportsCPUUsage</visible>
+				</control>
+				<!-- End Matrix change -->
+				
 			</control>
 			<control type="group">
 			    <left>1200</left>

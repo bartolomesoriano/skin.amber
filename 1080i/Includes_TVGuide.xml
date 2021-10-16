@@ -301,17 +301,17 @@
 	</include>
 	<!-- Episode Panel layout for Embuary Info Next Aired -->
 	<include name="EmbuaryInfoTVGuidePanelLayout">
-		<left>500</left>
+		<left>505</left>
 		<top>120</top>
 		<width>1341</width>
-		<height>910</height>
+		<height>930</height>
 		<onup>60</onup>
 		<ondown>60</ondown>
 		<onleft>4000</onleft>
 		<orientation>horizontal</orientation>
 		<scrolltime tween="quadratic">300</scrolltime>
 		<pagecontrol>60</pagecontrol>		
-		<itemlayout height="840" width="447">
+		<itemlayout height="860" width="447">
 			<control type="image">
 				<top>20</top>
 				<width>445</width>
@@ -366,7 +366,7 @@
 				<textcolor>$VAR[LabelTextColor]</textcolor>
 			</control>
 			<control type="label">
-				<top>650</top>
+				<top>660</top>
 				<width>445</width>
 				<height>45</height>
 				<label>$LOCALIZE[126]:</label>
@@ -375,7 +375,7 @@
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="label">
-				<top>695</top>
+				<top>705</top>
 				<width>445</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Status]</label>
@@ -384,7 +384,7 @@
 				<font>InfoPlot</font>
 			</control>
 			<control type="label">
-				<top>745</top>
+				<top>755</top>
 				<width>445</width>
 				<height>45</height>
 				<label>$LOCALIZE[32011]:</label>
@@ -393,7 +393,7 @@
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="label">
-				<top>790</top>
+				<top>800</top>
 				<width>445</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Property(AirTime)]$INFO[ListItem.Studio, @ ]</label>
@@ -402,10 +402,10 @@
 				<font>InfoPlot</font>
 			</control>
 		</itemlayout>
-		<focusedlayout height="840" width="447">
+		<focusedlayout height="860" width="447">
 			<control type="image" description="fa overlay">
 				<width>447</width>
-				<height>840</height>
+				<height>860</height>
 				<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 				<visible>ControlGroup(5000).HasFocus()</visible>
 			</control>
@@ -465,7 +465,7 @@
 				<textcolor>$VAR[FocusedTextColor]</textcolor>
 			</control>
 			<control type="label">
-				<top>650</top>
+				<top>660</top>
 				<width>445</width>
 				<height>45</height>
 				<label>[B]$LOCALIZE[126]:[/B]</label>
@@ -474,7 +474,7 @@
 				<textcolor>$VAR[FocusedTextColor]</textcolor>
 			</control>
 			<control type="label">
-				<top>695</top>
+				<top>705</top>
 				<width>445</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Status]</label>
@@ -483,7 +483,7 @@
 				<font>InfoPlot</font>
 			</control>
 			<control type="label">
-				<top>745</top>
+				<top>755</top>
 				<width>445</width>
 				<height>45</height>
 				<label>[B]$LOCALIZE[32011]:[/B]</label>
@@ -492,7 +492,7 @@
 				<textcolor>$VAR[FocusedTextColor]</textcolor>				
 			</control>
 			<control type="label">
-				<top>790</top>
+				<top>800</top>
 				<width>445</width>
 				<height>45</height>
 				<label>$INFO[ListItem.Property(AirTime)]$INFO[ListItem.Studio, @ ]</label>

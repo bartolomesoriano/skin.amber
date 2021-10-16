@@ -854,7 +854,7 @@
 							<posy>260</posy>
 							<width>444</width>
 							<height>80</height>
-							<label>$INFO[ListItem.Label][CR][COLOR grey]$INFO[ListItem.Label2][/COLOR]</label>
+							<label>$INFO[ListItem.Label][CR][COLOR=Grey]$INFO[ListItem.Label2][/COLOR]</label>
 							<font>Details</font>
 							<align>center</align>
 						</control>

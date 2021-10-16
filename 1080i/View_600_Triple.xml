@@ -200,7 +200,10 @@
 					<onleft condition="Control.IsVisible(617)">617</onleft>
 					<onright condition="Container.Content(tvshows) + Control.IsVisible(6001)">6001</onright>
 					<onright condition="Container.Content(artists) + Control.IsVisible(6003)">6003</onright>
-                    <onup>600</onup>
+                    
+				    <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</oninfo>
+					
+					<onup>600</onup>
                     <ondown>600</ondown>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
 				    <autoscroll>false</autoscroll>
@@ -439,6 +442,9 @@
 					<onright>6002</onright>
 					<onup>6001</onup>
 					<ondown>6001</ondown>
+					
+				    <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Container(6001).ListItem.TVShowTitle],season=$INFO[Container(6001).ListItem.Season])</oninfo>
+					
 					<viewtype label="Triple">list</viewtype>
 					<visible>Container.Content(tvshows)</visible>
 					<itemlayout height="255">
@@ -537,7 +543,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="video" sortby="year" sortorder="ascending">$INFO[Container(600).ListItem.FolderPath]</content>
+					<content target="video" sortby="seasonnumber" sortorder="ascending">$INFO[Container(600).ListItem.FolderPath]</content>
 				</control>
 			</control>
 			
@@ -693,6 +699,9 @@
 					<onleft>6001</onleft>
 					<onup>6002</onup>
 					<ondown>6002</ondown>
+					
+				    <oninfo condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Container(6002).Listitem.TVShowTitle],season=$INFO[Container(6002).ListItem.Season],episode=$INFO[Container(6002).ListItem.Episode])</oninfo>
+					
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<orientation>vertical</orientation>
 					<movement>10</movement>

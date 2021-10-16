@@ -614,6 +614,13 @@
             <aspect>0.96</aspect>
             <linespacing>1.28</linespacing>
         </font>
+		<font>
+            <name>InfoPlotSmall</name>
+            <filename>arial.ttf</filename>
+            <size>24</size>
+            <aspect>0.96</aspect>
+            <linespacing>1.28</linespacing>
+        </font>
         <font>
             <name>ListDetails</name>
             <filename>arial.ttf</filename>

@@ -55,7 +55,7 @@
 					<control type="button" id="704" description="Game Volume">
 						<width>525</width>
 						<label>$LOCALIZE[13376]</label>
-						<label2>[COLOR grey]Select + Right Stick[/COLOR]</label2>
+						<label2>[COLOR=Grey]Select + Right Stick[/COLOR]</label2>
 						<onclick>ActivateWindow(GameVolume)</onclick>
 					</control>
 					<control type="button" id="705" description="Controller Configuration">

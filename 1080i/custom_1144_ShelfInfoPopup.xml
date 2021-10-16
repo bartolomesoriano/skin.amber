@@ -12,7 +12,7 @@
 	<include condition="String.IsEmpty(Window(1144).Property(ShelfPopupDelay))">ShelfPopup3</include>
 	
 	
-	<visible>!System.IdleTime(30) + !String.IsEmpty(Window(Home).Property(ShowWidgetPopup)) + 
+	<visible>!System.IdleTime(30) + !Player.HasVideo + !String.IsEmpty(Window(Home).Property(ShowWidgetPopup)) + 
 	         !Window.IsVisible(movieinformation) + !Window.IsVisible(DialogMusicInfo.xml) + 
 			 !Window.IsVisible(DialogContextMenu.xml) + !Window.IsVisible(DialogButtonMenu.xml) + 
 			 !Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + 

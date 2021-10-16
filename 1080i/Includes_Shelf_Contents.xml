@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    
+	
+	<include name="ShelfWidthVertHiddenMenu">
+		<width>1880</width>
+	</include>
+	<include name="ShelfWidthVertIcon">
+		<width>1760</width>
+	</include>
+	<include name="ShelfWidthVertText">
+		<width>1460</width>
+	</include>
+	
+	<!-- Positioning for widget container when bottom shortcuts are enabled -->
+	<include name="StaticWidgetPositioning">
+		<top>170</top>
+		<left>32</left>
+		<right>0</right>
+		<height>315</height>
+	</include>
+	
 	<!-- Hidden button to play widget item trailer -->
 	<include name="ShelfAutoTrailer">
 	    <control type="button">
@@ -55,7 +73,6 @@
 		</definition>	
 	</include>
 	
-	
 	<!-- Widgets background and labels, single height shelf -->
 	<include name="WidgetBackground">
 		<param name="id"></param>
@@ -65,8 +82,10 @@
 		<param name="height"></param>
 		<param name="visible"></param>
 		<param name="ShowLargeLogo">false</param>
-		<param name="ShowMediumLogo">false</param>
+		<param name="ShowLarge2Logo">false</param>
+		<param name="ShowMediumLogo"></param>
 		<param name="ShowMedium2Logo">false</param>
+		<param name="ShowLargeLogoUnfocused">false</param>
 		<definition>
 			<visible>$PARAM[visible]</visible>
 			<control type="group">
@@ -144,6 +163,8 @@
 				<param name="ShowMediumLogo">$PARAM[ShowMediumLogo]</param>
 				<param name="ShowMedium2Logo">$PARAM[ShowMedium2Logo]</param>
 				<param name="ShowLargeLogo">$PARAM[ShowLargeLogo]</param>
+				<param name="ShowLarge2Logo">$PARAM[ShowLarge2Logo]</param>
+				<param name="ShowLargeLogoUnfocused">$PARAM[ShowLargeLogoUnfocused]</param>
 			</include>
 		</definition>
 	</include>
@@ -3602,14 +3623,6 @@
 		</definition>
 	</include>
 
-	<!-- Positioning for widget container when bottom shortcuts are enabled -->
-	<include name="StaticWidgetPositioning">
-		<top>170</top>
-		<left>32</left>
-		<right>0</right>
-		<height>315</height>
-	</include>
-
 	<!-- Indicator of which widget is the focused one -->
 	<include name="widgetsIndicator">
 		<param name="top"></param>
@@ -5358,15 +5371,7 @@
 		</definition>
 	</include>
 
-	<include name="ShelfWidthVertHiddenMenu">
-		<width>1880</width>
-	</include>
-	<include name="ShelfWidthVertIcon">
-		<width>1760</width>
-	</include>
-	<include name="ShelfWidthVertText">
-		<width>1460</width>
-	</include>
+	
 
 	<!-- PVR Recording widgets -->
 	<include name="PVRRecordingWidgets">

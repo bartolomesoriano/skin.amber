@@ -402,6 +402,19 @@
                         <alttexturenofocus border="4">img/WhiteRoundedT.png</alttexturenofocus>
 					    <usealttexture>!String.IsEmpty(Window.Property(IsRadio))</usealttexture>
 				    </control>
+					
+					<!-- Begin Matrix change -->
+					
+					<control type="button" id="35">
+					    <description>Regenerate thumbnails for channel groups</description>
+					    <width>325</width>
+					    <font>ListDetails</font>
+                        <align>center</align>
+					    <label>$LOCALIZE[13315]</label>
+				    </control>
+					
+					<!-- End Matrix change -->
+					
 					<control type="button" id="29">
 						<description>OK</description>
 						<width>185</width>

@@ -16,7 +16,7 @@
 				    <param name="Action">SetFocus(50)</param>
 					<param name="ondown">9000</param>
 				</include>
-				<animation effect="fade" time="200" start="100" end="20" reversible="true" condition="[!ControlGroup(9000).HasFocus() + !Control.HasFocus(909090)">Conditional</animation>
+				<animation effect="fade" time="200" start="100" end="20" reversible="true" condition="[!ControlGroup(9000).HasFocus() + !Control.HasFocus(909090)]">Conditional</animation>
 		    </control>
 			<control type="grouplist" id="9000">
 				<posx>-491</posx>

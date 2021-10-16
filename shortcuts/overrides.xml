@@ -706,6 +706,8 @@
 	<propertyfallback property="UseBottomShortcuts">false</propertyfallback>
 	<!-- Center shelves is false by default -->
 	<propertyfallback property="centerShelves">false</propertyfallback>
+	<!-- Show Shelves Info is false by default -->
+	<propertyfallback property="showShelvesInfo">false</propertyfallback>
 
 	<!-- Widget fallbacks if empty -->
     <!-- Show Two Shelves together is false by default -->
@@ -1392,6 +1394,7 @@
 	<onback to="800">3010</onback>
 	<onback to="800">3011</onback>
 	<onback to="800">3012</onback>
+	<onback to="800">3013</onback>
 
 	<onback to="801">4312</onback>
 	<onback to="801">4001</onback>

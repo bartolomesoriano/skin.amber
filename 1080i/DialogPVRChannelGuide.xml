@@ -61,15 +61,30 @@
 					</control>
 					<control type="image">
 						<posx>144</posx>
-						<height>75</height>
-						<include>RecOverlay</include>
+						<posy>17.5</posy>
+						<width>40</width>						
+						<height>40</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texture>$VAR[PVRStatusImageVar]</texture>
+			            <aspectratio>keep</aspectratio>
+			            <visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
 					</control>
 					<control type="label">
-						<posx>150</posx>
-						<width>495</width>
+						<posx>195</posx>
+						<width>515</width>
 						<height>75</height>
 						<scroll>false</scroll>
 						<label>$INFO[ListItem.Label]</label>
+						<visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
+					</control>
+					<control type="label">
+						<posx>144</posx>
+						<width>570</width>
+						<height>75</height>
+						<scroll>false</scroll>
+						<label>$INFO[ListItem.Label]</label>
+						<visible>![ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive]</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="75" width="720">
@@ -78,11 +93,6 @@
 						<height>75</height>
 						<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 					</control>
-					<control type="image">
-						<posx>144</posx>
-						<height>75</height>
-						<include>RecOverlay</include>
-					</control>
 					<control type="label">
 						<width>120</width>
 						<height>75</height>
@@ -90,15 +100,39 @@
 						<aligny>center</aligny>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor></shadowcolor>
-						<label>$INFO[ListItem.StartTime]</label>
+						<label>$INFO[ListItem.StartTime,[B],[/B]]</label>
+					</control>
+					<control type="image">
+						<posx>144</posx>
+						<posy>17.5</posy>
+						<width>40</width>						
+						<height>40</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<texture>$VAR[PVRStatusImageVar]</texture>
+			            <aspectratio>keep</aspectratio>
+						<colordiffuse>$VAR[FocusedTextColor]</colordiffuse>
+			            <visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
 					</control>
 					<control type="label">
-						<posx>150</posx>
-						<width>495</width>
+						<posx>195</posx>
+						<width>515</width>
 						<height>75</height>
+						<scroll>false</scroll>
+						<label>$INFO[ListItem.Label]</label>
 						<textcolor>$VAR[FocusedTextColor]</textcolor>
 						<shadowcolor></shadowcolor>
+						<visible>ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive</visible>
+					</control>
+					<control type="label">
+						<posx>144</posx>
+						<width>570</width>
+						<height>75</height>
+						<scroll>false</scroll>
 						<label>$INFO[ListItem.Label]</label>
+						<textcolor>$VAR[FocusedTextColor]</textcolor>
+						<shadowcolor></shadowcolor>
+						<visible>![ListItem.IsRecording | ListItem.HasTimer | ListItem.HasTimerSchedule | ListItem.HasArchive]</visible>
 					</control>
 				</focusedlayout>
 			</control>

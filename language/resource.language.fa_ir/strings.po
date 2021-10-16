@@ -1673,6 +1673,10 @@ msgctxt "#31653"
 msgid "Information Popup Delay"
 msgstr ""
 
+msgctxt "#31654"
+msgid "Show Information for Shelves"
+msgstr ""
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr ""
@@ -3585,4 +3589,40 @@ msgstr ""
 
 msgctxt "#32426"
 msgid "Slide Out Media Items While Trailer Playing"
+msgstr ""
+
+msgctxt "#32427"
+msgid "Hide PVR Channel Preview"
+msgstr ""
+
+msgctxt "#32428"
+msgid "Art Downloader: Select Artwork"
+msgstr ""
+
+msgctxt "#32429"
+msgid "Art Downloader: All Artwork"
+msgstr ""
+
+msgctxt "#32450"
+msgid "Show Artwork Downloader items in Context Menu"
+msgstr ""
+
+msgctxt "#32451"
+msgid "Movies with Tag"
+msgstr ""
+
+msgctxt "#32452"
+msgid "Select a Tag"
+msgstr ""
+
+msgctxt "#32453"
+msgid "With Tag"
+msgstr ""
+
+msgctxt "#32454"
+msgid "Always Use TV Show Poster for Episodes"
+msgstr ""
+
+msgctxt "#32455"
+msgid "Open ExtendedInfo for Info Dialogs"
 msgstr ""

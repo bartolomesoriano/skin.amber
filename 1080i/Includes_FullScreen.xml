@@ -289,6 +289,18 @@
 		</definition>
 	</include>
 	
+	<include name="OSDButtonOnFocus">
+        <onfocus condition="String.IsEmpty(Skin.String(OSDTimeout))">AlarmClock(osd_timeout,SetFocus(99220),00:05,silent)</onfocus>
+		<onfocus condition="Skin.String(OSDTimeout,three)">AlarmClock(osd_timeout,SetFocus(99220),00:03,silent)</onfocus>
+        <onfocus condition="Skin.String(OSDTimeout,five)">AlarmClock(osd_timeout,SetFocus(99220),00:05,silent)</onfocus>
+        <onfocus condition="Skin.String(OSDTimeout,ten)">AlarmClock(osd_timeout,SetFocus(99220),00:10,silent)</onfocus>
+        <onfocus condition="Skin.String(OSDTimeout,fifteen)">AlarmClock(osd_timeout,SetFocus(99220),00:15,silent)</onfocus>
+        <onfocus condition="Skin.String(OSDTimeout,twenty)">AlarmClock(osd_timeout,SetFocus(99220),00:20,silent)</onfocus>
+        <onfocus condition="Skin.String(OSDTimeout,thirty)">AlarmClock(osd_timeout,SetFocus(99220),00:30,silent)</onfocus>
+        <onfocus condition="Skin.String(OSDTimeout,oneminute)">AlarmClock(osd_timeout,SetFocus(99220),01:00,silent)</onfocus>
+        <onunfocus>CancelAlarm(osd_timeout,true)</onunfocus>
+    </include>
+	
 	<include name="ButtonGroup1Standard">
 	    <!-- Music Repeat One, All, None -->
 		<control type="group" id="590">

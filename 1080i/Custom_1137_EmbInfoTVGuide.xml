@@ -45,16 +45,16 @@
 			<!-- Menu backgrounds -->
 			<control type="image" description="Left Side background">
 				<colordiffuse>dfcebe9e</colordiffuse>
-				<left>20</left>
+				<left>10</left>
 				<top>60</top>
-				<width>452</width>
+				<width>462</width>
 				<height>980</height>
 				<texture border="45">dialogs/TinyDialog.png</texture>
 				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
 			</control>
 			<control type="image" description="Right Side Background">
 				<colordiffuse>dfcebe9e</colordiffuse>
-				<left>462</left>
+				<left>472</left>
 				<top>60</top>
 				<width>1419</width>
 				<height>980</height>
@@ -76,9 +76,9 @@
 
 			<!-- Static List with days/dates/number of episodes -->
 			<control type="list" id="4000">
-				<posx>51.5</posx>
-				<posy>120</posy>
-				<width>387</width>
+				<posx>41.5</posx>
+				<posy>130</posy>
+				<width>397</width>
 				<height>780</height>
 				<onright condition="[Container(4000).HasFocus(1) + Integer.IsGreater(Container(5001).NumItems,0)]">5001</onright>
 				<onright condition="[Container(4000).HasFocus(2) + Integer.IsGreater(Container(5002).NumItems,0)]">5002</onright>
@@ -91,9 +91,9 @@
 				<ondown>4000</ondown>
 				<scrolltime tween="quadratic">300</scrolltime>
 
-				<itemlayout width="387" height="60">
+				<itemlayout width="397" height="60">
 					<control type="image">
-						<width>387</width>
+						<width>397</width>
 						<height>60</height>
 						<texture border="3">buttons/ButtonNF.png</texture>
 					</control>
@@ -107,7 +107,7 @@
 						</control>
 						<control type="label">
 							<posx>230</posx>
-							<width>147</width>
+							<width>157</width>
 							<height>60</height>
 							<align>right</align>
 							<label>$INFO[ListItem.Label2]</label>
@@ -115,10 +115,10 @@
 						</control>
 					</control>					
 				</itemlayout>
-				<focusedlayout width="387" height="60">
+				<focusedlayout width="397" height="60">
 					<control type="image" description="fa overlay">
 						<animation effect="fade" start="100" end="40" time="100" condition="!Control.HasFocus(4000)">Conditional</animation>
-						<width>387</width>
+						<width>397</width>
 						<height>60</height>
 						<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 					</control>
@@ -134,7 +134,7 @@
 						</control>
 						<control type="label">
 							<posx>230</posx>
-							<width>147</width>
+							<width>157</width>
 							<height>60</height>
 							<align>right</align>
 							<textcolor>$VAR[FocusedTextColor]</textcolor>						
