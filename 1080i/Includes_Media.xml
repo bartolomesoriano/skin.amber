@@ -1474,263 +1474,7 @@
 				                                                  String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,season) | 
 																  String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(ListItem.DBType,album) | 
 																  String.IsEqual(ListItem.DBType,video)] + $EXP[IsIconView]</visible>
-				<!-- Normal Overlay for search results -->
-			    <control type="group">
-				    <visible>$PARAM[isSearch]</visible>
-				    <control type="image">
-				        <visible>!$PARAM[isFocused]</visible>
-				        <visible>![String.IsEqual(ListItem.DBType,tvshow) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] + !ListItem.IsResumable</visible>
-				        <texture background="true">$VAR[TopRightOverlay]</texture>
-				        <posx>98r</posx>
-				        <posy>12</posy>
-				        <height>82</height>
-				        <width>82</width>
-				        <aspectratio>keep</aspectratio>
-			        </control>
-			        <control type="image">
-				        <visible>$PARAM[isFocused]</visible>
-				        <visible>![String.IsEqual(ListItem.DBType,tvshow) + Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)] + !ListItem.IsResumable</visible>
-				        <texture background="true">$VAR[TopRightOverlay]</texture>
-				        <posx>98r</posx>
-				        <posy>12</posy>
-				        <height>82</height>
-				        <width>82</width>
-				        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
-				        <aspectratio>keep</aspectratio>
-			        </control>
-				</control>
-                <!-- Normal overlay, regular icons -->
-				<control type="group">
-				    <visible>![$PARAM[isSmallIcon]] + ![$PARAM[isSearch]]</visible>
-					<visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !ListItem.IsResumable</visible>
-					<control type="image">
-				        <visible>!$PARAM[isFocused] + ![$PARAM[isWideIcon]]</visible>
-				        <texture background="true">$VAR[TopRightOverlay]</texture>
-				        <posx>96r</posx>
-				        <posy>16</posy>
-				        <height>72</height>
-				        <width>72</width>
-			        </control>
-					<control type="image">
-				        <visible>$PARAM[isFocused] + ![$PARAM[isWideIcon]]</visible>
-				        <texture background="true">$VAR[TopRightOverlay]</texture>
-				        <posx>96r</posx>
-				        <posy>16</posy>
-				        <height>72</height>
-				        <width>72</width>
-				        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
-			        </control>
-					<!-- wide icons -->
-			        <control type="image">
-				        <visible>!$PARAM[isFocused] + $PARAM[isWideIcon]</visible>
-				        <texture background="true">$VAR[TopRightOverlay]</texture>
-				        <posx>96r</posx>
-				        <posy>16</posy>
-				        <height>72</height>
-				        <width>72</width>
-			        </control>
-			        <control type="image">
-				        <visible>$PARAM[isFocused] + $PARAM[isWideIcon]</visible>
-				        <texture background="true">$VAR[TopRightOverlay]</texture>
-				        <posx>96r</posx>
-				        <posy>16</posy>
-				        <height>72</height>
-				        <width>72</width>
-				        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
-			        </control>
-                </control>
-                <!-- Normal overlay for small icons -->
-				<control type="group">
-				    <visible>$PARAM[isSmallIcon] + ![$PARAM[isSearch]]</visible>
-					<visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !ListItem.IsResumable</visible>
-					<!-- regular icons, media views -->
-					<control type="group">
-					    <visible>![$PARAM[isWideIcon]] + !String.IsEmpty(Container.Viewmode)</visible>
-						<control type="image">
-				            <visible>!$PARAM[isFocused]</visible>
-				            <texture background="true">$VAR[TopRightOverlay]</texture>
-				            <posx>92r</posx>
-				            <posy>12</posy>
-				            <height>72</height>
-				            <width>72</width>
-			            </control>
-			            <control type="image">
-				            <visible>$PARAM[isFocused]</visible>
-				            <texture background="true">$VAR[TopRightOverlay]</texture>
-				            <posx>92r</posx>
-				            <posy>12</posy>
-				            <height>72</height>
-				            <width>72</width>
-				            <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
-			            </control>
-					</control>
-					<!-- wide icons, media views -->
-					<control type="group">
-					    <visible>$PARAM[isWideIcon] + !String.IsEmpty(Container.Viewmode)</visible>
-						<control type="image">
-				            <visible>!$PARAM[isFocused]</visible>
-				            <texture background="true">$VAR[TopRightOverlay]</texture>
-				            <posx>92r</posx>
-				            <posy>12</posy>
-				            <height>72</height>
-				            <width>72</width>
-			            </control>
-			            <control type="image">
-				            <visible>$PARAM[isFocused]</visible>
-				            <texture background="true">$VAR[TopRightOverlay]</texture>
-				            <posx>92r</posx>
-				            <posy>12</posy>
-				            <height>72</height>
-				            <width>72</width>
-				            <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
-			            </control>
-					</control>
-					<!-- Widgets -->
-					<control type="group">
-					    <visible>String.IsEmpty(Container.Viewmode)</visible>
-						<!-- Landscape artwork -->
-						<control type="group">
-						    <visible>$PARAM[isWideIcon]</visible>
-							<!-- Single or double row -->
-							<control type="group">
-							    <visible>!$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium]</visible>
-							    <control type="image">
-				                    <visible>!$PARAM[isFocused]</visible>
-				                    <texture background="true">$VAR[TopRightOverlay]</texture>
-				                    <posx>102r</posx>
-				                    <posy>30</posy>
-				                    <height>82</height>
-				                    <width>82</width>
-				                    <aspectratio>keep</aspectratio>
-			                    </control>
-			                    <control type="image">
-				                    <visible>$PARAM[isFocused]</visible>
-				                    <texture background="true">$VAR[TopRightOverlay]</texture>
-				                    <posx>102r</posx>
-				                    <posy>30</posy>
-				                    <height>82</height>
-				                    <width>82</width>
-				                    <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
-				                    <aspectratio>keep</aspectratio>
-			                    </control>
-							</control>
-							<!-- Triple row, small -->
-							<control type="group">
-							    <visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
-							    <control type="image">
-				                    <visible>!$PARAM[isFocused]</visible>
-				                    <texture background="true">$VAR[TopRightOverlay]</texture>
-				                    <posx>102r</posx>
-				                    <posy>22</posy>
-				                    <height>82</height>
-				                    <width>82</width>
-				                    <aspectratio>keep</aspectratio>
-			                    </control>
-			                    <control type="image">
-				                    <visible>$PARAM[isFocused]</visible>
-				                    <texture background="true">$VAR[TopRightOverlay]</texture>
-				                    <posx>102r</posx>
-				                    <posy>22</posy>
-				                    <height>82</height>
-				                    <width>82</width>
-				                    <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
-				                    <aspectratio>keep</aspectratio>
-			                    </control>
-							</control>
-							<!-- Triple row, medium -->
-							<control type="group">
-							    <visible>$PARAM[isTripleRow] + $PARAM[isTripleRowMedium]</visible>
-							    <control type="image">
-				                    <visible>!$PARAM[isFocused]</visible>
-				                    <texture background="true">$VAR[TopRightOverlay]</texture>
-				                    <posx>102r</posx>
-				                    <posy>30</posy>
-				                    <height>82</height>
-				                    <width>82</width>
-				                    <aspectratio>keep</aspectratio>
-			                    </control>
-			                    <control type="image">
-				                    <visible>$PARAM[isFocused]</visible>
-				                    <texture background="true">$VAR[TopRightOverlay]</texture>
-				                    <posx>102r</posx>
-				                    <posy>30</posy>
-				                    <height>82</height>
-				                    <width>82</width>
-				                    <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
-				                    <aspectratio>keep</aspectratio>
-			                    </control>
-							</control>
-							<!-- Triple row, large -->
-							<control type="group">
-							    <visible>$PARAM[isTripleRow] + $PARAM[isTripleRowLarge]</visible>
-							    <control type="image">
-				                    <visible>!$PARAM[isFocused]</visible>
-				                    <texture background="true">$VAR[TopRightOverlay]</texture>
-				                    <posx>102r</posx>
-				                    <posy>30</posy>
-				                    <height>82</height>
-				                    <width>82</width>
-				                    <aspectratio>keep</aspectratio>
-			                    </control>
-			                    <control type="image">
-				                    <visible>$PARAM[isFocused]</visible>
-				                    <texture background="true">$VAR[TopRightOverlay]</texture>
-				                    <posx>102r</posx>
-				                    <posy>30</posy>
-				                    <height>82</height>
-				                    <width>82</width>
-				                    <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
-				                    <aspectratio>keep</aspectratio>
-			                    </control>
-							</control>
-						</control>
-						<!-- All other artwork -->
-						<control type="group">
-						    <visible>![$PARAM[isWideIcon]] + ![$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]]</visible>
-							<control type="image">
-				                <visible>!$PARAM[isFocused]</visible>
-				                <texture background="true">$VAR[TopRightOverlay]</texture>
-				                <posx>98r</posx>
-				                <posy>12</posy>
-				                <height>82</height>
-				                <width>82</width>
-				                <aspectratio>keep</aspectratio>
-			                </control>
-			                <control type="image">
-				                <visible>$PARAM[isFocused]</visible>
-				                <texture background="true">$VAR[TopRightOverlay]</texture>
-				                <posx>98r</posx>
-				                <posy>12</posy>
-				                <height>82</height>
-				                <width>82</width>
-				                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
-				                <aspectratio>keep</aspectratio>
-			                </control>
-						</control>
-						<control type="group">
-						    <visible>![$PARAM[isWideIcon]] + [$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]]</visible>
-							<control type="image">
-				                <visible>!$PARAM[isFocused]</visible>
-				                <texture background="true">$VAR[TopRightOverlay]</texture>
-				                <posx>86r</posx>
-				                <posy>12</posy>
-				                <height>68</height>
-				                <width>68</width>
-				                <aspectratio>keep</aspectratio>
-			                </control>
-			                <control type="image">
-				                <visible>$PARAM[isFocused]</visible>
-				                <texture background="true">$VAR[TopRightOverlay]</texture>
-				                <posx>86r</posx>
-				                <posy>12</posy>
-				                <height>68</height>
-				                <width>68</width>
-				                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
-				                <aspectratio>keep</aspectratio>
-			                </control>
-						</control>
-					</control>
-                </control>
+				
 				
 			    <!-- Unwatched episode count for regular icons -->
 				<control type="group">
@@ -1866,7 +1610,8 @@
 				    <visible>!ListItem.IsParentFolder + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)]</visible>
 				    <visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
 					<control type="group">
-					    <control type="image">
+					    <visible>!String.IsEmpty(Container.Viewmode)</visible>
+						<control type="image">
 				            <visible>!$PARAM[isFocused]</visible>
 				            <texture background="true">overlays/toprightempty2.png</texture>
 				            <posx>101r</posx>
@@ -1883,7 +1628,7 @@
 				            <width>82</width>
 			            </control>
 					</control>
-					<!-- Poster in media view -->
+					<!-- All artwork except banner, in media views -->
 					<control type="group">
 					    <visible>!$PARAM[isBanner] + !String.IsEmpty(Container.Viewmode)</visible>
 					    <control type="label" description="l2">
@@ -1911,9 +1656,99 @@
 					        <textcolor>White2</textcolor>
 				        </control>
 					</control>
+					<!-- Banner in media views -->
+					<control type="group">
+					    <visible>$PARAM[isBanner] + !String.IsEmpty(Container.Viewmode)</visible>
+						<control type="label" description="l2">
+					        <visible>$PARAM[isFocused]</visible>
+					        <posx>94r</posx>
+				            <posy>-42</posy>
+					        <height>$PARAM[itemheight]</height>
+					        <width>100</width>
+					        <font>ListDetailsSmall</font>
+					        <align>center</align>
+					        <shadowcolor></shadowcolor>
+					        <label>$VAR[UnwatchedEpisodes]</label>
+					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
+					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
+				        </control>
+				        <control type="label" description="l2">
+					        <visible>!$PARAM[isFocused]</visible>
+					        <posx>94r</posx>
+				            <posy>-42</posy>
+					        <height>$PARAM[itemheight]</height>
+					        <width>100</width>
+					        <font>ListDetailsSmall</font>
+					        <align>center</align>
+					        <label>$VAR[UnwatchedEpisodes]</label>
+					        <textcolor>White2</textcolor>
+				        </control>
+					</control>
+					<!-- Background image, non landscape artwork for widgets -->
+					<control type="group">
+					    <visible>String.IsEmpty(Container.Viewmode) + !$PARAM[isWideIcon]</visible>
+						<control type="image">
+				            <visible>!$PARAM[isFocused]</visible>
+				            <texture background="true">overlays/toprightempty2.png</texture>
+				            <posx>101r</posx>
+				            <posy>12</posy>
+				            <height>82</height>
+				            <width>82</width>
+			            </control>
+				        <control type="image">
+				            <visible>$PARAM[isFocused]</visible>
+				            <texture background="true" colordiffuse="$VAR[MediaWidgetsHighlightColor]">overlays/toprightempty2.png</texture>
+				            <posx>101r</posx>
+				            <posy>12</posy>
+				            <height>82</height>
+				            <width>82</width>
+			            </control>
+					</control>
+					<!-- Background image, landscape artwork for widgets -->
+					<control type="group">
+					    <visible>String.IsEmpty(Container.Viewmode) + $PARAM[isWideIcon]</visible>
+						<control type="group">
+						    <visible>!$PARAM[isTripleRow] | $PARAM[isTripleRowMedium] | $PARAM[isTripleRowLarge]</visible>
+							<control type="image">
+				                <visible>!$PARAM[isFocused]</visible>
+				                <texture background="true">overlays/toprightempty2.png</texture>
+				                <posx>102r</posx>
+				                <posy>30</posy>
+				                <height>82</height>
+				                <width>82</width>
+			                </control>
+				            <control type="image">
+				                <visible>$PARAM[isFocused]</visible>
+				                <texture background="true" colordiffuse="$VAR[MediaWidgetsHighlightColor]">overlays/toprightempty2.png</texture>
+				                <posx>102r</posx>
+				                <posy>30</posy>
+				                <height>82</height>
+				                <width>82</width>
+			                </control>
+						</control>
+						<control type="group">
+						    <visible>$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
+						    <control type="image">
+				                <visible>!$PARAM[isFocused]</visible>
+				                <texture background="true">overlays/toprightempty2.png</texture>
+				                <posx>102r</posx>
+				                <posy>22</posy>
+				                <height>82</height>
+				                <width>82</width>
+			                </control>
+				            <control type="image">
+				                <visible>$PARAM[isFocused]</visible>
+				                <texture background="true" colordiffuse="$VAR[MediaWidgetsHighlightColor]">overlays/toprightempty2.png</texture>
+				                <posx>102r</posx>
+				                <posy>22</posy>
+				                <height>82</height>
+				                <width>82</width>
+			                </control>
+						</control>	
+					</control>
 					<!-- Poster in widgets -->
 					<control type="group">
-					    <visible>!$PARAM[isBanner] + !$PARAM[isSquare] + String.IsEmpty(Container.Viewmode)</visible>
+					    <visible>!$PARAM[isBanner] + !$PARAM[isSquare] + !$PARAM[isWideIcon] + String.IsEmpty(Container.Viewmode)</visible>
 						<!-- Single or double row, standard widget pos -->
 						<control type="label" description="l2">
 					        <visible>$PARAM[isFocused] + !$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isLowWidget]</visible>
@@ -2057,6 +1892,110 @@
 					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isTripleRowLarge]</visible>
 					        <posx>94r</posx>
 				            <posy>-244</posy>
+					        <height>$PARAM[itemheight]</height>
+					        <width>100</width>
+					        <font>ListDetailsSmall</font>
+					        <align>center</align>
+					        <label>$VAR[UnwatchedEpisodes]</label>
+					        <textcolor>White2</textcolor>
+				        </control>
+					</control>
+					<!-- Landscape in widgets -->
+					<control type="group">
+					    <visible>$PARAM[isWideIcon] + String.IsEmpty(Container.Viewmode)</visible>
+						<!-- Single or double row -->
+						<control type="label" description="l2">
+					        <visible>$PARAM[isFocused] + !$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium]</visible>
+					        <posx>94r</posx>
+				            <posy>-210</posy>
+					        <height>$PARAM[itemheight]</height>
+					        <width>100</width>
+					        <font>ListDetailsSmall</font>
+					        <align>center</align>
+					        <shadowcolor></shadowcolor>
+					        <label>$VAR[UnwatchedEpisodes]</label>
+					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
+					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
+				        </control>
+				        <control type="label" description="l2">
+					        <visible>!$PARAM[isFocused] + !$PARAM[isTripleRow] + !$PARAM[isTripleRowMedium]</visible>
+					        <posx>94r</posx>
+				            <posy>-210</posy>
+					        <height>$PARAM[itemheight]</height>
+					        <width>100</width>
+					        <font>ListDetailsSmall</font>
+					        <align>center</align>
+					        <label>$VAR[UnwatchedEpisodes]</label>
+					        <textcolor>White2</textcolor>
+				        </control>
+						<!-- Triple row small -->
+				        <control type="label" description="l2">
+					        <visible>$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
+					        <posx>94r</posx>
+				            <posy>-130</posy>
+					        <height>$PARAM[itemheight]</height>
+					        <width>100</width>
+					        <font>ListDetailsSmall</font>
+					        <align>center</align>
+					        <shadowcolor></shadowcolor>
+					        <label>$VAR[UnwatchedEpisodes]</label>
+					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
+					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
+				        </control>
+				        <control type="label" description="l2">
+					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
+					        <posx>94r</posx>
+				            <posy>-130</posy>
+					        <height>$PARAM[itemheight]</height>
+					        <width>100</width>
+					        <font>ListDetailsSmall</font>
+					        <align>center</align>
+					        <label>$VAR[UnwatchedEpisodes]</label>
+					        <textcolor>White2</textcolor>
+				        </control>
+						<!-- Triple row medium -->
+				        <control type="label" description="l2">
+					        <visible>$PARAM[isFocused] + $PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
+					        <posx>94r</posx>
+				            <posy>-145</posy>
+					        <height>$PARAM[itemheight]</height>
+					        <width>100</width>
+					        <font>ListDetailsSmall</font>
+					        <align>center</align>
+					        <shadowcolor></shadowcolor>
+					        <label>$VAR[UnwatchedEpisodes]</label>
+					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
+					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
+				        </control>
+				        <control type="label" description="l2">
+					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + $PARAM[isTripleRowMedium] + !$PARAM[isTripleRowLarge]</visible>
+					        <posx>94r</posx>
+				            <posy>-145</posy>
+					        <height>$PARAM[itemheight]</height>
+					        <width>100</width>
+					        <font>ListDetailsSmall</font>
+					        <align>center</align>
+					        <label>$VAR[UnwatchedEpisodes]</label>
+					        <textcolor>White2</textcolor>
+				        </control>
+						<!-- Triple row large -->
+				        <control type="label" description="l2">
+					        <visible>$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isTripleRowLarge]</visible>
+					        <posx>94r</posx>
+				            <posy>-210</posy>
+					        <height>$PARAM[itemheight]</height>
+					        <width>100</width>
+					        <font>ListDetailsSmall</font>
+					        <align>center</align>
+					        <shadowcolor></shadowcolor>
+					        <label>$VAR[UnwatchedEpisodes]</label>
+					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
+					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
+				        </control>
+				        <control type="label" description="l2">
+					        <visible>!$PARAM[isFocused] + $PARAM[isTripleRow] + !$PARAM[isTripleRowMedium] + $PARAM[isTripleRowLarge]</visible>
+					        <posx>94r</posx>
+				            <posy>-210</posy>
 					        <height>$PARAM[itemheight]</height>
 					        <width>100</width>
 					        <font>ListDetailsSmall</font>
@@ -2398,34 +2337,6 @@
 					        <textcolor>White2</textcolor>
 				        </control>
 					</control>
-					<!-- Banner in media views -->
-					<control type="group">
-					    <visible>$PARAM[isBanner] + !String.IsEmpty(Container.Viewmode)</visible>
-						<control type="label" description="l2">
-					        <visible>$PARAM[isFocused]</visible>
-					        <posx>94r</posx>
-				            <posy>-42</posy>
-					        <height>$PARAM[itemheight]</height>
-					        <width>100</width>
-					        <font>ListDetailsSmall</font>
-					        <align>center</align>
-					        <shadowcolor></shadowcolor>
-					        <label>$VAR[UnwatchedEpisodes]</label>
-					        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
-					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
-				        </control>
-				        <control type="label" description="l2">
-					        <visible>!$PARAM[isFocused]</visible>
-					        <posx>94r</posx>
-				            <posy>-42</posy>
-					        <height>$PARAM[itemheight]</height>
-					        <width>100</width>
-					        <font>ListDetailsSmall</font>
-					        <align>center</align>
-					        <label>$VAR[UnwatchedEpisodes]</label>
-					        <textcolor>White2</textcolor>
-				        </control>
-					</control>
 				</control>	
 			    <!-- Unwatched episode count for search -->
 			    <control type="group">
@@ -2476,6 +2387,7 @@
 					    <textcolor>White2</textcolor>
 				    </control>
 				</control>
+				
 				<!-- In Progress -->
 				<control type="group">
 				    <visible>Integer.IsGreater(ListItem.PercentPlayed,0) + !Skin.HasSetting(Hide_InProgress_Marks)</visible>
@@ -2564,12 +2476,13 @@
 			            </control>
 			        </control>
 				</control>
+				
 				<!-- Collections -->
 				<control type="group">
 				    <visible>ListItem.IsCollection + !Skin.HasSetting(Hide_Collection_Marks)</visible>
 					<!-- Regular Icons -->
 					<control type="group">
-					    <visible>![$PARAM[isSmallIcon]]</visible>
+					    <visible>!$PARAM[isSmallIcon]</visible>
 				        <control type="image">
 				            <visible>!$PARAM[isFocused]</visible>
 				            <texture background="true">$VAR[TopRightOverlay]</texture>
@@ -2590,22 +2503,44 @@
 					<!-- Small icons -->
 					<control type="group">
 					    <visible>$PARAM[isSmallIcon]</visible>
-						<control type="image">
-				            <visible>!$PARAM[isFocused]</visible>
-				            <texture background="true">$VAR[TopRightOverlay]</texture>
-				            <posx>92r</posx>
-				            <posy>12</posy>
-				            <height>72</height>
-				            <width>72</width>
-			            </control>
-				        <control type="image">
-				            <visible>$PARAM[isFocused]</visible>
-				            <texture background="true" colordiffuse="$VAR[MediaWidgetsHighlightColor]">$VAR[TopRightOverlay]</texture>
-				            <posx>92r</posx>
-				            <posy>12</posy>
-				            <height>72</height>
-				            <width>72</width>
-			            </control>
+						<control type="group">
+						    <visible>$PARAM[isWideIcon]</visible>
+							<control type="image">
+				                <visible>!$PARAM[isFocused]</visible>
+				                <texture background="true">$VAR[TopRightOverlay]</texture>
+				                <posx>92r</posx>
+				                <posy>30</posy>
+				                <height>72</height>
+				                <width>72</width>
+			                </control>
+				            <control type="image">
+				                <visible>$PARAM[isFocused]</visible>
+				                <texture background="true" colordiffuse="$VAR[MediaWidgetsHighlightColor]">$VAR[TopRightOverlay]</texture>
+				                <posx>92r</posx>
+				                <posy>30</posy>
+				                <height>72</height>
+				                <width>72</width>
+			                </control>
+						</control>
+						<control type="group">
+						    <visible>!$PARAM[isWideIcon]</visible>
+						    <control type="image">
+				                <visible>!$PARAM[isFocused]</visible>
+				                <texture background="true">$VAR[TopRightOverlay]</texture>
+				                <posx>92r</posx>
+				                <posy>12</posy>
+				                <height>72</height>
+				                <width>72</width>
+			                </control>
+				            <control type="image">
+				                <visible>$PARAM[isFocused]</visible>
+				                <texture background="true" colordiffuse="$VAR[MediaWidgetsHighlightColor]">$VAR[TopRightOverlay]</texture>
+				                <posx>92r</posx>
+				                <posy>12</posy>
+				                <height>72</height>
+				                <width>72</width>
+			                </control>
+						</control>
 					</control>	
 				</control>
 			</control>
@@ -3548,7 +3483,7 @@
 				                    <visible>!$PARAM[isFocused]</visible>
 				                    <texture background="true" flipx="true">overlays/toprightempty2.png</texture>
 				                    <posx>346r</posx>
-				                    <posy>12</posy>
+				                    <posy>30</posy>
 				                    <height>82</height>
 				                    <width>82</width>
 			                    </control>
@@ -3556,14 +3491,14 @@
 				                    <visible>$PARAM[isFocused]</visible>
 				                    <texture background="true" flipx="true" colordiffuse="$VAR[MediaWidgetsHighlightColor]">overlays/toprightempty2.png</texture>
 				                    <posx>346r</posx>
-				                    <posy>12</posy>
+				                    <posy>30</posy>
 				                    <height>82</height>
 				                    <width>82</width>
 			                    </control>
 						        <control type="label" description="l2">
     					            <visible>$PARAM[isFocused]</visible>
 					                <posx>371r</posx>
-				                    <posy>-180</posy>
+				                    <posy>-145</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
 					                <font>ListDetailsSmall</font>
@@ -3576,7 +3511,7 @@
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused]</visible>
 					                <posx>371r</posx>
-				                    <posy>-180</posy>
+				                    <posy>-145</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
 					                <font>ListDetailsSmall</font>

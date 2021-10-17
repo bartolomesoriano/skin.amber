@@ -2691,7 +2691,9 @@
 		<property name="artworkheightsmall" tag="property" attribute="name|widgetArtwork.4" value="ClearLogo">109</property>
 		<property name="artworkheightsmall" tag="property" attribute="name|widgetArtwork.4" value="DiscArt|CharacterArt">215</property>
 		
-		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.4" value="FanArt|Landscape|ClearArt|Thumb">500</property>
+		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.4" value="FanArt|Landscape||Thumb">472</property>
+		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.4" value="ClearLogo|ClearArt">376.5</property>
+		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.4" value="DiscArt|CharacterArt">295</property>
 		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.4" value="Poster">228</property>
 		<property name="artworkwidthbig" propertyValue="228">
 	        <rule tag="property" attribute="name|widgetArtwork.4" value="Square" />
@@ -2703,8 +2705,6 @@
 	        <rule tag="property" attribute="name|widgetShowTextbox.4" value="false" />
 			<match>all</match>
         </property>
-		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.4" value="ClearLogo">385</property>
-		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.4" value="DiscArt|CharacterArt">295</property>
 		
 		<property name="artworkwidthmed" tag="property" attribute="name|widgetArtwork.4" value="FanArt|Landscape|ClearArt|Thumb">358</property>
 		<property name="artworkwidthmed" tag="property" attribute="name|widgetArtwork.4" value="Poster">182</property>
@@ -3445,7 +3445,9 @@
 		<property name="artworkheightsmall" tag="property" attribute="name|widgetArtwork.5" value="ClearLogo">109</property>
 		<property name="artworkheightsmall" tag="property" attribute="name|widgetArtwork.5" value="DiscArt|CharacterArt">215</property>
 		
-		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.5" value="FanArt|Landscape|ClearArt|Thumb">500</property>
+		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.5" value="FanArt|Landscape||Thumb">472</property>
+		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.5" value="ClearLogo|ClearArt">376.5</property>
+		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.5" value="DiscArt|CharacterArt">295</property>
 		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.5" value="Poster">228</property>
 		<property name="artworkwidthbig" propertyValue="228">
 	        <rule tag="property" attribute="name|widgetArtwork.5" value="Square" />
@@ -3457,8 +3459,6 @@
 	        <rule tag="property" attribute="name|widgetShowTextbox.5" value="false" />
 			<match>all</match>
         </property>
-		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.5" value="ClearLogo">385</property>
-		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.5" value="DiscArt|CharacterArt">295</property>
 		
 		<property name="artworkwidthmed" tag="property" attribute="name|widgetArtwork.5" value="FanArt|Landscape|ClearArt|Thumb">358</property>
 		<property name="artworkwidthmed" tag="property" attribute="name|widgetArtwork.5" value="Poster">182</property>
@@ -4200,7 +4200,9 @@
 		<property name="artworkheightsmall" tag="property" attribute="name|widgetArtwork.6" value="ClearLogo">109</property>
 		<property name="artworkheightsmall" tag="property" attribute="name|widgetArtwork.6" value="DiscArt|CharacterArt">215</property>
 		
-		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.6" value="FanArt|Landscape|ClearArt|Thumb">500</property>
+		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.6" value="FanArt|Landscape||Thumb">472</property>
+		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.6" value="ClearLogo|ClearArt">376.5</property>
+		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.6" value="DiscArt|CharacterArt">295</property>
 		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.6" value="Poster">228</property>
 		<property name="artworkwidthbig" propertyValue="228">
 	        <rule tag="property" attribute="name|widgetArtwork.6" value="Square" />
@@ -4212,8 +4214,6 @@
 	        <rule tag="property" attribute="name|widgetShowTextbox.6" value="false" />
 			<match>all</match>
         </property>
-		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.6" value="ClearLogo">385</property>
-		<property name="artworkwidthbig" tag="property" attribute="name|widgetArtwork.6" value="DiscArt|CharacterArt">295</property>
 		
 		<property name="artworkwidthmed" tag="property" attribute="name|widgetArtwork.6" value="FanArt|Landscape|ClearArt|Thumb">358</property>
 		<property name="artworkwidthmed" tag="property" attribute="name|widgetArtwork.6" value="Poster">182</property>
