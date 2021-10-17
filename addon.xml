@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.amber" version="3.2.149" name="Amber" provider-name="bsoriano, Jester, Joethepartylion, Pecinko">
+<addon id="skin.amber" version="3.2.150" name="Amber" provider-name="bsoriano, Jester, Joethepartylion, Pecinko">
     <requires>
         <import addon="xbmc.gui" version="5.14.0"/>
         <import addon="script.favourites" version="7.1.1"/>
@@ -54,39 +54,10 @@
             <screenshot>resources/screenshot09.jpg</screenshot>
             <screenshot>resources/screenshot10.jpg</screenshot>
         </assets>
-        <news>3.2.149 (27-08-2021)
-		- Play trailer from shelf items
-		- Slide out media items when trailer playing
-		- Misc. fixes
-		3.2.148 (23-08-2021)
-		- Show disc art in list views
-		- Use disc instead of thumb for music in fanart view
-		- Misc. fixes
-		3.2.147 (20-08-2021)
-		- Make shelf info popup delay configurable
-		- Add back Artwork Beef options
-		- Fixes for music visualization
-		- Misc. fixes
-		3.2.145 (20-07-2021)
-		- Option to automatically play trailers in media views (only local trailers)
-		- Add option to show information popup for shelves
-		- Add option to center shelf items
-		3.2.144 (03-07-2021)
-		- Fixes for OSD and seekbar
-		- Add movie decades playlists and widget option
-		3.2.143 (29-06-2021)
-		- Rework OSD
-		- Option for alternate OSD button highlighting
-		3.2.142 (25-06-2021)
-		- Include missing files for compact OSD
-		- Fixes for Compact and Ultra Compact OSD
-		3.2.141 (24-06-2021)
-		- Rework Compact OSD highlighting
-		- Ultra Compact OSD
-		- Misc. fixes
-		3.2.140 (21-06-2021)
-		- Compact OSD
-		- Misc. fixes
+        <news>3.2.150 (17-10-2021)
+		- Show Info for shelf items
+		- Search movies by tag
+		- Many misc. fixes
         </news>
     </extension>
 </addon>

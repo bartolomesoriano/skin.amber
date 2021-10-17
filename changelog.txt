@@ -1,3 +1,7 @@
+3.2.150 (17-10-2021)
+- Show Info for shelf items
+- Search movies by tag
+- Many misc. fixes
 3.2.149 (27-08-2021)
 - Play trailer from shelf items
 - Slide out media items when trailer playing
