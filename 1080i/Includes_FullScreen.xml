@@ -87,6 +87,18 @@
 		</control>
 	</include>
 	
+	<include name="EHTVShowDetailsList">
+		<control type="list" id="43261">
+			<left>-100</left>
+			<top>-100</top>
+			<width>1</width>
+			<height>1</height>
+			<itemlayout height="1" width="1" />
+			<focusedlayout height="1" width="1" />
+			<content limit="1">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[VideoPlayer.DBID]&amp;type=tvshow&amp;idtype=episode</content>
+		</control>
+	</include>
+	
 	<include name="OSDButtons">
         <textureradioonfocus colordiffuse="$VAR[FocusedTextColor]">$PARAM[icon]</textureradioonfocus>
         <textureradioonnofocus>$PARAM[icon]</textureradioonnofocus>
@@ -675,6 +687,18 @@
 		    <visible>VideoPlayer.Content(livetv)</visible>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
+		<!-- Episode List -->
+		<control type="radiobutton" id="6071">
+		    <include content="OSDButtons">
+			    <param name="icon">OSD/OSDEpgNF.png</param>
+		    </include>
+			<onclick>SetProperty(PlayerTVShowID,$INFO[Container(43261).ListItem.DBID],home)</onclick>
+			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
+			<onclick>ActivateWindow(1145)</onclick>
+		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</visible>
+		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
+		</control>
 		<!-- PVR Teletext -->
 		<control type="radiobutton" id="650">
 		    <include content="OSDButtons">
@@ -795,6 +819,21 @@
 		    <onclick>ActivateWindow(PVRChannelGuide)</onclick>
 		    <onclick>Dialog.Close(VideoOSD)</onclick>
 		    <visible>VideoPlayer.Content(livetv)</visible>
+		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
+		</control>
+		<!-- Episode List -->
+    	<control type="button" id="6071">
+	        <width>64</width>
+            <height>64</height>
+            <label/>
+            <font/>
+            <texturefocus colordiffuse="$VAR[HighlightColor]">OSD/compact/playlist.png</texturefocus>
+            <texturenofocus>OSD/compact/playlist.png</texturenofocus>
+		    <onclick>SetProperty(PlayerTVShowID,$INFO[Container(43261).ListItem.DBID],home)</onclick>
+			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
+			<onclick>ActivateWindow(1145)</onclick>
+		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</visible>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		</control>

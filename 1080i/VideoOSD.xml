@@ -12,6 +12,10 @@
 	    <!-- Hidden List to Show Video Info Dialog on info button, uses service.library.data.provider -->
 		<include condition="Skin.HasSetting(InfoOpensVideoInfo) + [VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.IsEmpty(VideoPlayer.DBID)">VideoOSDInfoButtonList</include>
 		
+		<!-- Hidden List to Show Video Info Dialog on info button, uses script.embuary.helper -->
+		<include condition="VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID)">EHTVShowDetailsList</include>
+		
+		
 		<control type="button" id="99220">
             <top>-1000</top>
             <left>-1000</left>

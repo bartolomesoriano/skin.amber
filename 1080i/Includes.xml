@@ -1455,7 +1455,6 @@
                         <param name="diffuse">$VAR[LabelTextColor]</param>
 						<param name="itemwidth">$PARAM[flagitemwidth]</param>
 						<param name="itemheight">$PARAM[flagitemheight]</param>
-												 
                     </include>
 					<include condition="!Skin.HasSetting(Show.ColorRangeFlags)" content="MediaFlagItems">
                         <param name="diffuse">$VAR[LabelTextColor]</param>
@@ -1476,7 +1475,6 @@
                         <param name="diffuse">$VAR[LabelTextColor]</param>
 						<param name="itemwidth">$PARAM[flagitemwidth]</param>
 						<param name="itemheight">$PARAM[flagitemheight]</param>
-												 
                     </include>
 					<include condition="!Skin.HasSetting(Show.ColorRangeFlags)" content="MediaFlagItems">
                         <param name="diffuse">$VAR[LabelTextColor]</param>

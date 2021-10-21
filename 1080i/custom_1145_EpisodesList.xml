@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1145" type="dialog">
+
+	<defaultcontrol always="true">6002</defaultcontrol>
+    <include>DialogOpenClose</include>
+	<onunload condition="Player.Paused">PlayerControl(Play)</onunload>
+	<onunload>ClearProperty(PlayerTVShowID,home)</onunload>
+	<controls>
+		<control type="button">
+		    <description>Hidden button to close the popup when you click outside it</description>
+		    <posx>0</posx>
+		    <posy>0</posy>
+		    <width>1920</width>
+		    <height>960</height>
+		    <texturenofocus></texturenofocus>
+		    <texturefocus></texturefocus>
+		    <onclick>Dialog.Close(1145)</onclick>
+		</control>
+		<control type="group">
+			<left>290</left>
+			<top>88</top>
+			<control type="image" description="Menu BG">
+				<width>1040</width>
+				<height>760</height>
+				<texture border="0,40,0,40">dialogs/DialogBG.png</texture>
+				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+			</control>            
+			<control type="label">
+				<left>0</left>
+				<top>32</top>
+				<width>1040</width>
+				<height>40</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>$VAR[HighlightColor]</textcolor>
+				<label>[B]$INFO[VideoPlayer.TVShowTitle][/B] - $LOCALIZE[20373] $INFO[VideoPlayer.Season]</label>
+			</control>
+			<control type="image" description="Line Split">
+				<left>30</left>
+                <posy>80</posy>
+				<width>1000</width>
+				<height>1</height>
+				<texture>img/LineL.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+            <control type="list" id="6002">
+				<width>980</width>
+				<height>600</height>
+				<top>100</top>
+				<left>40</left>
+				<preloaditems>2</preloaditems>
+				<onup>6002</onup>
+				<ondown>6002</ondown>
+				<onright>61</onright>
+				<pagecontrol>61</pagecontrol>
+				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<orientation>vertical</orientation>
+				<movement>10</movement>
+				<focusposition>0</focusposition>
+				<viewtype label="EpisodeList">list</viewtype>
+				<itemlayout height="67.5">
+					<control type="image">
+						<left>-80</left>
+						<top>-2</top>
+						<width>980</width>
+						<height>67.5</height>
+			            <texture flipy="true" border="3">list/ListNF.png</texture>
+					</control>
+					<control type="label">
+						<top>1</top>
+						<left>20</left>
+						<height>58</height>
+						<width>860</width>
+						<align>left</align>
+						<font>font14</font>
+						<shadowcolor></shadowcolor>
+						<label>$INFO[ListItem.Label]  ($INFO[ListItem.Premiered])</label>
+					</control>
+					<control type="image">
+			            <left>900</left>
+			            <width>30</width>
+			            <height>67.5</height>
+			            <texture>$VAR[TripleEpisodeOverlay]</texture>
+			            <aspectratio aligny="center">keep</aspectratio>
+		            </control>
+				</itemlayout>
+				<focusedlayout height="270">
+					<control type="group">
+						<control type="image">
+							<top>-0.5</top>
+							<visible>Control.HasFocus(6002)</visible>
+							<width>950</width>
+							<height>269.5</height>
+							<texture background="true">thumbs/labelback.png</texture>
+				            <bordertexture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
+				            <bordersize>12,12,20,20</bordersize>
+				            <aspectratio align="center" aligny="center">stretch</aspectratio>
+						</control>
+					</control>
+					<control type="group">
+						<visible>Control.IsVisible(6002)</visible>
+						<top>19</top>
+						<left>30</left>
+						<include content="ShadowedImage">
+				            <param name="top">43</param>
+				            <param name="left">-8</param>
+				            <param name="width">306</param>
+				            <param name="height">174</param>
+				            <param name="texture">$VAR[Thumb]</param>
+				            <param name="aspect">scale</param>
+			            </include>
+						<control type="label">
+							<top>-18</top>
+							<left>-12</left>
+							<height>58</height>
+							<width>770</width>
+							<align>left</align>
+							<scroll>true</scroll>
+							<label>[B]$INFO[ListItem.Label][/B]  ($INFO[ListItem.Premiered])</label>
+							<textcolor>$VAR[HighlightColor]</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<shadowcolor>black</shadowcolor>
+						</control>
+						<control type="label">
+							<top>24</top>
+							<left>317</left>
+							<height>58</height>
+							<width>785</width>
+							<align>left</align>
+							<font>ListDetails</font>
+							<scroll>true</scroll>
+							<label>[B][CAPITALIZE][COLOR=$VAR[HighlightColor]][LOWERCASE]$LOCALIZE[19081]:[/LOWERCASE][/CAPITALIZE][/COLOR][/B] $INFO[ListItem.EndTime]</label>
+							<textcolor>white</textcolor>
+							<selectedcolor>white</selectedcolor>
+							<shadowcolor>black</shadowcolor>
+						</control>
+						<control type="textbox">
+							<left>317</left>
+							<top>71</top>
+							<width>578</width>
+							<height>160</height>
+							<align>justify</align>
+							<aligny>top</aligny>
+							<textcolor>white</textcolor>
+							<selectedcolor>black</selectedcolor>
+							<label>$VAR[Plots]</label>
+						</control>
+					</control>
+				</focusedlayout>
+				<content target="video" sortby="episode" sortorder="ascending">videodb://tvshows/titles/$INFO[Window(Home).Property(PlayerTVShowID)]/$INFO[VideoPlayer.Season]/?tvshowid=$INFO[Window(Home).Property(PlayerTVShowID)]</content>
+			</control>			
+			<control type="scrollbar" id="61">
+				<left>1012</left>
+				<top>32</top>
+				<width>30</width>
+				<height>760</height>
+				<ondown>61</ondown>
+				<onup>61</onup>
+				<onleft>6002</onleft>
+				<onright>6002</onright>
+				<texturesliderbackground></texturesliderbackground>
+				<texturesliderbar></texturesliderbar>
+				<texturesliderbarfocus></texturesliderbarfocus>
+				<textureslidernib border="18">OSD/ScrollbarNibNF.png</textureslidernib>
+				<textureslidernibfocus border="18" colordiffuse="$VAR[HighlightColor]">OSD/ScrollbarNibFO.png</textureslidernibfocus>
+				<showonepage>false</showonepage>
+				<orientation>vertical</orientation>
+			</control>
+		</control>
+	</controls>
+</window>
