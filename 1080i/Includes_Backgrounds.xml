@@ -473,15 +473,19 @@
 
 	<!-- Movie/TV Show Widget Logo for Home Window -->
 	<include name="HomeWidgetLogo">
+		<param name="id1"></param>
+		<param name="id2"></param>
 		<param name="ShowMediumLogo">false</param>
 		<param name="ShowMedium2Logo">false</param>
 		<param name="ShowLargeLogo">false</param>
 		<param name="ShowLarge2Logo">false</param>
 		<param name="ShowNoLogo">false</param>
 		<param name="ShowLargeLogoUnfocused">false</param>
+		<param name="showShelvesInfo">false</param>
 		<definition>
 			<control type="group">
 				<visible>Skin.HasSetting(ShowHomeLogo) + !$PARAM[ShowNoLogo] + ![$EXP[widgetsAreShowing] + String.IsEqual(Container(300).ListItem.Property(horizontalWidgetPos),High) + !Container(300).ListItem.Property(showShelvesInfo)]</visible>
+				<visible>![$PARAM[showShelvesInfo] + [Control.HasFocus($PARAM[id1]) | Control.HasFocus($PARAM[id2])]]</visible>
 				<animation effect="slide" start="0,0" end="440,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + !Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
 				<animation effect="slide" start="0,0" end="140,0" time="250" tween="sine" easing="in" condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves) + ControlGroup(700).HasFocus + Skin.HasSetting(Vertical.IconOnly)">conditional</animation>
 				<animation effect="fade" start="100" end="0" time="250" tween="sine" easing="out" condition="Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">conditional</animation>
