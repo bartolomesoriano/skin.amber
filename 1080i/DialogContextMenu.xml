@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<!-- If Shelf trailer or media view trailer is auto playing, stop it -->
+	<onload condition="Skin.HasSetting(Shelf.PlayTrailers) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">PlayerControl(Stop)</onload>
+	<onload condition="Skin.HasSetting(Shelf.PlayTrailers) + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onload>
+	<onload condition="Skin.HasSetting(AutoPlayTrailer) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(MovieTrailerPlaying))">PlayerControl(Stop)</onload>
+	<onload condition="Skin.HasSetting(AutoPlayTrailer) + !String.IsEmpty(Window(Home).Property(MovieTrailerPlaying))">ClearProperty(MovieTrailerPlaying,Home)</onload>
+	
 	<defaultcontrol>1000</defaultcontrol>
 	<controls>
 		<control type="group" description="MENU">

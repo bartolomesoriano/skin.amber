@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2021-10-03 13:41+0000\n"
 "Last-Translator: Marek Adamski <fevbew@wp.pl>\n"
@@ -3625,4 +3625,16 @@ msgstr ""
 
 msgctxt "#32455"
 msgid "Open ExtendedInfo for Info Dialogs"
+msgstr ""
+
+msgctxt "#32456"
+msgid "Cert"
+msgstr ""
+
+msgctxt "#32457"
+msgid "Show Episodes List button"
+msgstr ""
+
+msgctxt "#32458"
+msgid "Include Seasons in Episodes List popup"
 msgstr ""

@@ -226,7 +226,7 @@
 	<include name="ShelfInfoBackCoordsHorz">
 	    <top>-30</top>
 		<height>520</height>
-		<width>1460</width>
+		<width>1940</width>
 	</include>
 	
 	<include name="ShelfInfoTitleTopVert">
@@ -595,7 +595,7 @@
 			    <include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoPlotHeightHorz</include>
 				<font>InfoPlot</font>
 				<align>justify</align>
-				<label>[B]$VAR[ShelfInfoPlot][/B]</label>
+				<label>$VAR[ShelfInfoPlot]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>![String.IsEqual(Container.ListItem.DBType,artist) | [String.IsEqual(Container.ListItem.DBType,album) + String.IsEmpty(Container.ListItem.Property(Album_Style))]]</visible>
 			</control>
@@ -605,7 +605,7 @@
 			    <include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoMusicPlotHorz</include>
 				<font>InfoPlot</font>
 				<align>justify</align>
-				<label>[B]$VAR[ShelfInfoPlot][/B]</label>
+				<label>$VAR[ShelfInfoPlot]</label>
 				<autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>[String.IsEqual(Container.ListItem.DBType,artist) | [String.IsEqual(Container.ListItem.DBType,album) + String.IsEmpty(Container.ListItem.Property(Album_Style))]]</visible>
 			</control>
@@ -792,15 +792,15 @@
 			    <itemgap>8</itemgap>
 			    <usecontrolcoords>true</usecontrolcoords>
 			
-			    <!-- Episode title and number -->
+			    <!-- Spacer -->
 			    <control type="label">
 				    <height>10</height>
 				    <font>font12_title</font>
 				    <label></label>
-				    <visible>!String.IsEmpty(Container.ListItem.Title) + String.IsEqual(Container.ListItem.DBType,episode)</visible>
-				    <visible>!Skin.HasSetting(VerticalHome)</visible>
+				    <visible>!String.IsEmpty(Container.ListItem.Title) + [String.IsEqual(Container.ListItem.DBType,episode) | String.IsEqual(Container.ListItem.DBType,song) | String.IsEqual(Container.ListItem.DBType,musicvideo)]</visible>
 			    </control>
-			    <control type="label">
+			    <!-- Episode title and number -->
+				<control type="label">
 				    <width>$PARAM[width]</width>
 				    <height>30</height>
 				    <font>font24_title</font>
@@ -808,10 +808,71 @@
 				    <visible>!String.IsEmpty(Container.ListItem.Title) + String.IsEqual(Container.ListItem.DBType,episode)</visible>
 				    <scroll>true</scroll>
 			    </control>
+				<!-- Song or music video title -->
+				<control type="label">
+				    <height>30</height>
+				    <font>font24_title</font>
+				    <label>$INFO[Container.ListItem.Title]</label>
+					<textcolor>$VAR[HighlightColor]</textcolor>
+				    <visible>!String.IsEmpty(Container.ListItem.Title) + [String.IsEqual(Container.ListItem.DBType,song) | String.IsEqual(Container.ListItem.DBType,musicvideo)]</visible>
+			    </control>
+				<!-- Spacer -->
 			    <control type="label">
 				    <height>5</height>
 				    <font>font12_title</font>
 				    <label></label>
+			    </control>
+				
+				<!-- Person items -->
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[32083]: [/COLOR]$VAR[TMDbPersonBorn]</label>
+				    <visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Born))</visible>
+				    <scroll>true</scroll>
+			    </control>
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[32082]: [/COLOR]$VAR[TMDbPersonBirthday]</label>
+				    <visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Birthday))</visible>
+				    <scroll>true</scroll>
+			    </control>
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$VAR[AgeLabel]: [/COLOR]$VAR[TMDbPersonAge]</label>
+				    <visible>String.Contains(Container.ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age))</visible>
+				    <scroll>true</scroll>
+			    </control>
+				
+				<!-- Addon items -->
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>45</height>
+				    <font>font20_title</font>
+				    <label>[I]$INFO[Container.ListItem.AddonSummary][/I]</label>
+				    <visible>!String.IsEmpty(Container.ListItem.AddonName) + !String.IsEmpty(Container.ListItem.AddonSummary)</visible>
+				    <scroll>true</scroll>
+			    </control>
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[24051] [/COLOR]$INFO[Container.ListItem.AddonVersion]</label>
+				    <visible>!String.IsEmpty(Container.ListItem.AddonName) + !String.IsEmpty(Container.ListItem.AddonVersion)</visible>
+				    <scroll>true</scroll>
+			    </control>
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[21863]: [/COLOR]$INFO[Container.ListItem.AddonCreator]</label>
+				    <visible>!String.IsEmpty(Container.ListItem.AddonName) + !String.IsEmpty(Container.ListItem.AddonCreator)</visible>
+				    <scroll>true</scroll>
 			    </control>
 			
 			    <!-- Director -->
@@ -824,14 +885,106 @@
 				    <visible>![String.IsEqual(Container.ListItem.DBType,episode) + !Skin.HasSetting(VerticalHome)]</visible>
 				    <scroll>true</scroll>
 			    </control>
+				
+				<!-- Artist -->
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[557]: [/COLOR]$INFO[Container.ListItem.Artist]</label>
+				    <visible>!String.IsEmpty(Container.ListItem.Artist)</visible>
+				    <visible>[String.IsEqual(Container.ListItem.DBType,musicvideo) | String.IsEqual(Container.ListItem.DBType,album) | String.IsEqual(Container.ListItem.DBType,song)]</visible>
+				    <scroll>true</scroll>
+			    </control>
+			    
+				<!-- Song items -->
+				<control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[558]: [/COLOR]$INFO[Container.ListItem.Album] ($INFO[ListItem.Year])</label>
+				    <visible>!String.IsEmpty(Container.ListItem.Album) + String.IsEqual(Container.ListItem.DBType,song)</visible>
+				    <scroll>true</scroll>
+			    </control>
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[180]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDurationMins)] $LOCALIZE[12391]</label>
+				    <visible>!String.IsEmpty(Window(Home).Property(WidgetItemDurationMins)) + String.IsEqual(Container.ListItem.DBType,song)</visible>
+				    <scroll>true</scroll>
+			    </control>
 			
-			    <!-- Genre -->
+			    <!-- Video Genre -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
 				    <height>30</height>
 				    <font>font13_title</font>
 				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Container.ListItem.Genre]</label>
 				    <visible>!String.IsEmpty(Container.ListItem.Genre) + ![String.IsEqual(Container.ListItem.DBType,artist) | String.IsEqual(Container.ListItem.DBType,album) | String.IsEqual(Container.ListItem.DBType,song)]</visible>
+				    <scroll>true</scroll>
+			    </control>
+				
+				<!-- Year -->
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[562]: [/COLOR]$INFO[Container.ListItem.Year]</label>
+				    <visible>!String.IsEmpty(Container.ListItem.Year)</visible>
+				    <visible>[String.IsEqual(Container.ListItem.DBType,musicvideo) | String.IsEqual(Container.ListItem.DBType,album)]</visible>
+			    </control>
+				
+				<!-- Album items -->
+				<control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[176]: [/COLOR]$INFO[Container.ListItem.Property(Album_Style)]</label>
+				    <visible>!String.IsEmpty(Container.ListItem.Property(Album_Style)) + String.IsEqual(Container.ListItem.DBType,album)</visible>
+				    <scroll>true</scroll>
+			    </control>
+				<!-- Music Genre -->
+				<control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Container.ListItem.Genre]</label>
+				    <visible>!String.IsEmpty(Container.ListItem.Genre) + [String.IsEqual(Container.ListItem.DBType,album) | String.IsEqual(Container.ListItem.DBType,song)]</visible>
+				    <scroll>true</scroll>
+			    </control>
+			
+			    <!-- Artist items -->
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[21894]: [/COLOR]$INFO[Container.ListItem.Property(Artist_Formed)]</label>
+				    <visible>!String.IsEmpty(Container.ListItem.Property(Artist_Formed)) + String.IsEqual(Container.ListItem.DBType,artist)</visible>
+				    <scroll>true</scroll>
+			    </control>
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[21898]: [/COLOR]$INFO[Container.ListItem.Property(Artist_YearsActive)]</label>
+				    <visible>!String.IsEmpty(Container.ListItem.Property(Artist_YearsActive)) + String.IsEqual(Container.ListItem.DBType,artist)</visible>
+				    <scroll>true</scroll>
+			    </control>
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[176]: [/COLOR]$INFO[Container.ListItem.Property(Artist_Style)]</label>
+				    <visible>!String.IsEmpty(Container.ListItem.Property(Artist_Style)) + String.IsEqual(Container.ListItem.DBType,artist)</visible>
+				    <scroll>true</scroll>
+			    </control>
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>38</height>
+				    <font>font13_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Container.ListItem.Property(Artist_Genre)]</label>
+				    <visible>!String.IsEmpty(Container.ListItem.Property(Artist_Genre)) + String.IsEqual(Container.ListItem.DBType,artist)</visible>
 				    <scroll>true</scroll>
 			    </control>
 			
@@ -851,7 +1004,7 @@
 				    <height>40</height>
 				    <font>font13_title</font>
 				    <label>$VAR[ShelfInfoDetails]</label>
-				    <visible>![String.IsEqual(Container.ListItem.DBType,artist) | String.IsEqual(Container.ListItem.DBType,album)]</visible>
+				    <visible>![String.IsEqual(Container.ListItem.DBType,artist) | String.IsEqual(Container.ListItem.DBType,album) | String.Contains(Container.ListItem.FolderPath,type=person)]</visible>
 			    </control>
 			    <!-- Additional line for tv shows -->
 			    <control type="label">
@@ -885,7 +1038,16 @@
 			    	<align>justify</align>
 				    <label>$VAR[ShelfInfoPlot]</label>
 				    <autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-				    <visible>!String.IsEqual(Container.ListItem.DBType,tvshow)</visible>
+				    <visible>!String.IsEqual(Container.ListItem.DBType,tvshow) + !String.IsEqual(Container.ListItem.DBType,musicvideo)</visible>
+			    </control>
+				<control type="textbox">
+				    <width>auto</width>
+        			<height>126</height>
+		    		<font>InfoPlot</font>
+			    	<align>justify</align>
+				    <label>$VAR[ShelfInfoPlot]</label>
+				    <autoscroll delay="5000" time="4000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+				    <visible>String.IsEqual(Container.ListItem.DBType,musicvideo)</visible>
 			    </control>
 		    </control>
 		</definition>

@@ -2815,36 +2815,36 @@
 				            <texture background="true" flipx="true">overlays/toprightempty2.png</texture>
 				            <posx>294r</posx>
 				            <posy>16</posy>
-				            <height>82</height>
-				            <width>82</width>
+				            <height>90</height>
+				            <width>90</width>
 			            </control>
 				        <control type="image">
 				            <visible>$PARAM[isFocused]</visible>
 				            <texture background="true" flipx="true">overlays/toprightempty2.png</texture>
 				            <posx>294r</posx>
 				            <posy>16</posy>
-				            <height>82</height>
-				            <width>82</width>
+				            <height>90</height>
+				            <width>90</width>
 					        <colordiffuse>$VAR[HighlightColor]</colordiffuse>
 			            </control>
 						<control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
-					        <posx>287r</posx>
-				            <posy>22</posy>
+					        <posx>285r</posx>
+				            <posy>24</posy>
 					        <height>35</height>
 					        <width>35</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>White2</textcolor>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>$PARAM[isFocused]</visible>
-					        <posx>287r</posx>
-				            <posy>22</posy>
+					        <posx>285r</posx>
+				            <posy>24</posy>
 					        <height>35</height>
 					        <width>35</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
@@ -2860,25 +2860,25 @@
 				            <texture background="true" flipx="true">overlays/toprightempty2.png</texture>
 				            <posx>914r</posx>
 				            <posy>16</posy>
-				            <height>82</height>
-				            <width>82</width>
+				            <height>90</height>
+				            <width>90</width>
 			            </control>
 				        <control type="image">
 				            <visible>$PARAM[isFocused]</visible>
 				            <texture background="true" flipx="true">overlays/toprightempty2.png</texture>
 				            <posx>914r</posx>
 				            <posy>16</posy>
-				            <height>82</height>
-				            <width>82</width>
+				            <height>90</height>
+				            <width>90</width>
 					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 			            </control>
 						<control type="label" description="l2">
 					        <visible>$PARAM[isFocused]</visible>
-					        <posx>939r</posx>
-				            <posy>-126</posy>
+					        <posx>937r</posx>
+				            <posy>-121</posy>
 					        <height>$PARAM[itemheight]</height>
 					        <width>100</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
@@ -2887,11 +2887,11 @@
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
-					        <posx>939r</posx>
-				            <posy>-126</posy>
+					        <posx>937r</posx>
+				            <posy>-121</posy>
 					        <height>$PARAM[itemheight]</height>
 					        <width>100</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>White2</textcolor>
@@ -2905,36 +2905,36 @@
 				            <texture background="true" flipx="true">overlays/toprightempty2.png</texture>
 				            <posx>294r</posx>
 				            <posy>16</posy>
-				            <height>82</height>
-				            <width>82</width>
+				            <height>90</height>
+				            <width>90</width>
 			            </control>
 				        <control type="image">
 				            <visible>$PARAM[isFocused]</visible>
 				            <texture background="true" flipx="true">overlays/toprightempty2.png</texture>
 				            <posx>294r</posx>
 				            <posy>16</posy>
-				            <height>82</height>
-				            <width>82</width>
+				            <height>90</height>
+				            <width>90</width>
 					        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
 			            </control>
 						<control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
-					        <posx>319.5r</posx>
-				            <posy>-146</posy>
+					        <posx>317r</posx>
+				            <posy>-142</posy>
 					        <height>$PARAM[itemheight]</height>
 					        <width>100</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>White2</textcolor>
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>$PARAM[isFocused]</visible>
-					        <posx>319.5r</posx>
-				            <posy>-146</posy>
+					        <posx>317r</posx>
+				            <posy>-142</posy>
 					        <height>$PARAM[itemheight]</height>
 					        <width>100</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
@@ -2956,24 +2956,24 @@
 				            <texture background="true" flipx="true">overlays/toprightempty2.png</texture>
 				            <posx>221r</posx>
 				            <posy>12</posy>
-				            <height>82</height>
-				            <width>82</width>
+				            <height>90</height>
+				            <width>90</width>
 			            </control>
 				        <control type="image">
 				            <visible>$PARAM[isFocused]</visible>
 				            <texture background="true" flipx="true" colordiffuse="$VAR[MediaWidgetsHighlightColor]">overlays/toprightempty2.png</texture>
 				            <posx>221r</posx>
 				            <posy>12</posy>
-				            <height>82</height>
-				            <width>82</width>
+				            <height>90</height>
+				            <width>90</width>
 			            </control>
 						<control type="label" description="l2">
 					        <visible>$PARAM[isFocused]</visible>
-					        <posx>245.5r</posx>
-				            <posy>-255</posy>
+					        <posx>244r</posx>
+				            <posy>-251</posy>
 					        <height>$PARAM[itemheight]</height>
 					        <width>100</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
@@ -2982,11 +2982,11 @@
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
-					        <posx>245.5r</posx>
-				            <posy>-255</posy>
+					        <posx>244r</posx>
+				            <posy>-251</posy>
 					        <height>$PARAM[itemheight]</height>
 					        <width>100</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>White2</textcolor>
@@ -3000,24 +3000,24 @@
 				            <texture background="true" flipx="true">overlays/toprightempty2.png</texture>
 				            <posx>453r</posx>
 				            <posy>12</posy>
-				            <height>82</height>
-				            <width>82</width>
+				            <height>85</height>
+				            <width>86</width>
 			            </control>
 				        <control type="image">
 				            <visible>$PARAM[isFocused]</visible>
 				            <texture background="true" flipx="true" colordiffuse="$VAR[MediaWidgetsHighlightColor]">overlays/toprightempty2.png</texture>
 				            <posx>453r</posx>
 				            <posy>12</posy>
-				            <height>82</height>
-				            <width>82</width>
+				            <height>85</height>
+				            <width>86</width>
 			            </control>
 						<control type="label" description="l2">
 					        <visible>$PARAM[isFocused]</visible>
-					        <posx>478r</posx>
-				            <posy>-42</posy>
+					        <posx>477r</posx>
+				            <posy>-39</posy>
 					        <height>$PARAM[itemheight]</height>
 					        <width>100</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
@@ -3026,11 +3026,11 @@
 				        </control>
 				        <control type="label" description="l2">
 					        <visible>!$PARAM[isFocused]</visible>
-					        <posx>478r</posx>
-				            <posy>-42</posy>
+					        <posx>477r</posx>
+				            <posy>-39</posy>
 					        <height>$PARAM[itemheight]</height>
 					        <width>100</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>White2</textcolor>
@@ -3062,7 +3062,7 @@
 				            <posy>-98</posy>
 					        <height>$PARAM[itemheight]</height>
 					        <width>100</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <label>$VAR[RatingOverlayVar]</label>
 					        <textcolor>White2</textcolor>
@@ -3073,7 +3073,7 @@
 				            <posy>-98</posy>
 					        <height>$PARAM[itemheight]</height>
 					        <width>100</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[RatingOverlayVar]</label>
@@ -3155,7 +3155,7 @@
 				                    <posy>-244</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
@@ -3168,7 +3168,7 @@
 				                    <posy>-244</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
@@ -3249,7 +3249,7 @@
 				                    <posy>-185</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
@@ -3262,7 +3262,7 @@
 				                    <posy>-185</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
@@ -3298,10 +3298,10 @@
 						        <control type="label" description="l2">
     					            <visible>$PARAM[isFocused]</visible>
 					                <posx>241r</posx>
-				                    <posy>-155</posy>
+				                    <posy>-156</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
@@ -3311,10 +3311,10 @@
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused]</visible>
 					                <posx>241r</posx>
-				                    <posy>-155</posy>
+				                    <posy>-156</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
@@ -3395,7 +3395,7 @@
 				                    <posy>-111</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
@@ -3408,7 +3408,7 @@
 				                    <posy>-111</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
@@ -3427,7 +3427,7 @@
 							    <control type="image">
 				                    <visible>!$PARAM[isFocused]</visible>
 				                    <texture background="true" flipx="true">overlays/toprightempty2.png</texture>
-				                    <posx>488r</posx>
+				                    <posx>460r</posx>
 				                    <posy>12</posy>
 				                    <height>82</height>
 				                    <width>82</width>
@@ -3435,18 +3435,18 @@
 				                <control type="image">
 				                    <visible>$PARAM[isFocused]</visible>
 				                    <texture background="true" flipx="true" colordiffuse="$VAR[MediaWidgetsHighlightColor]">overlays/toprightempty2.png</texture>
-				                    <posx>488r</posx>
+				                    <posx>460r</posx>
 				                    <posy>12</posy>
 				                    <height>82</height>
 				                    <width>82</width>
 			                    </control>
 						        <control type="label" description="l2">
     					            <visible>$PARAM[isFocused]</visible>
-					                <posx>513r</posx>
-				                    <posy>-242</posy>
+					                <posx>485r</posx>
+				                    <posy>-243</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
@@ -3455,11 +3455,11 @@
 				                </control>
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused]</visible>
-					                <posx>513r</posx>
-				                    <posy>-242</posy>
+					                <posx>485r</posx>
+				                    <posy>-243</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
@@ -3540,7 +3540,7 @@
 				                    <posy>-180</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
@@ -3553,7 +3553,7 @@
 				                    <posy>-180</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
@@ -3591,7 +3591,7 @@
 				                    <posy>-210</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
@@ -3604,7 +3604,7 @@
 				                    <posy>-210</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
@@ -3685,7 +3685,7 @@
 				                    <posy>-145</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
@@ -3698,7 +3698,7 @@
 				                    <posy>-145</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
@@ -3717,7 +3717,7 @@
 							    <control type="image">
 				                    <visible>!$PARAM[isFocused]</visible>
 				                    <texture background="true" flipx="true">overlays/toprightempty2.png</texture>
-				                    <posx>655r</posx>
+				                    <posx>656r</posx>
 				                    <posy>12</posy>
 				                    <height>82</height>
 				                    <width>82</width>
@@ -3725,18 +3725,18 @@
 				                <control type="image">
 				                    <visible>$PARAM[isFocused]</visible>
 				                    <texture background="true" flipx="true" colordiffuse="$VAR[MediaWidgetsHighlightColor]">overlays/toprightempty2.png</texture>
-				                    <posx>655r</posx>
+				                    <posx>656r</posx>
 				                    <posy>12</posy>
 				                    <height>82</height>
 				                    <width>82</width>
 			                    </control>
 						        <control type="label" description="l2">
     					            <visible>$PARAM[isFocused]</visible>
-					                <posx>680r</posx>
+					                <posx>681r</posx>
 				                    <posy>-85</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
@@ -3745,11 +3745,11 @@
 				                </control>
 				                <control type="label" description="l2">
 					                <visible>!$PARAM[isFocused]</visible>
-					                <posx>680r</posx>
+					                <posx>681r</posx>
 				                    <posy>-85</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
@@ -3830,7 +3830,7 @@
 				                    <posy>-79</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
@@ -3843,7 +3843,7 @@
 				                    <posy>-79</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
@@ -3877,7 +3877,7 @@
 				                    <posy>-85</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <shadowcolor></shadowcolor>
 					                <label>$VAR[RatingOverlayVar]</label>
@@ -3890,7 +3890,7 @@
 				                    <posy>-85</posy>
 					                <height>$PARAM[itemheight]</height>
 					                <width>100</width>
-					                <font>ListDetailsSmall</font>
+					                <font>ListDetailsExtraSmall</font>
 					                <align>center</align>
 					                <label>$VAR[RatingOverlayVar]</label>
 					                <textcolor>White2</textcolor>
@@ -3925,7 +3925,7 @@
 				            <posy>18</posy>
 					        <height>35</height>
 					        <width>35</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <label>$VAR[ContainerRatingOverlayVar]</label>
 					        <textcolor>White2</textcolor>
@@ -3936,7 +3936,7 @@
 				            <posy>18</posy>
 					        <height>35</height>
 					        <width>35</width>
-					        <font>ListDetailsSmall</font>
+					        <font>ListDetailsExtraSmall</font>
 					        <align>center</align>
 					        <shadowcolor></shadowcolor>
 					        <label>$VAR[ContainerRatingOverlayVar]</label>

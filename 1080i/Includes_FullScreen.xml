@@ -690,13 +690,14 @@
 		<!-- Episode List -->
 		<control type="radiobutton" id="6071">
 		    <include content="OSDButtons">
-			    <param name="icon">OSD/OSDEpgNF.png</param>
+			    <param name="icon">OSD/OSDTeletextNF.png</param>
 		    </include>
 			<onclick>SetProperty(PlayerTVShowID,$INFO[Container(43261).ListItem.DBID],home)</onclick>
 			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
 			<onclick>ActivateWindow(1145)</onclick>
 		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</visible>
-		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+		    <visible>Skin.HasSetting(ShowEpisodeList)</visible>
+			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		</control>
 		<!-- PVR Teletext -->
@@ -834,7 +835,8 @@
 			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
 			<onclick>ActivateWindow(1145)</onclick>
 		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</visible>
-		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+		    <visible>Skin.HasSetting(ShowEpisodeList)</visible>
+			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		</control>
 		<!-- Teletext -->

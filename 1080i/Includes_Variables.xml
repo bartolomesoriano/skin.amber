@@ -2002,17 +2002,13 @@
 	</variable>
 	
 	<variable name="ContainerRatingOverlayVar">
-		<value condition="Skin.HasSetting(UserRatingOverlay) + !String.IsEqual(Container.ListItem.UserRating,10.0)">$INFO[Container.ListItem.UserRating]</value>
-		<value condition="Skin.HasSetting(UserRatingOverlay) + String.IsEqual(Container.ListItem.UserRating,10.0)">10</value>
-		<value condition="!String.IsEqual(Container.ListItem.Rating,10.0)">$INFO[Container.ListItem.Rating]</value>
-		<value condition="String.IsEqual(Container.ListItem.Rating,10.0)">10</value>
+		<value condition="Skin.HasSetting(UserRatingOverlay)">$INFO[Container.ListItem.UserRating]</value>
+		<value>$INFO[Container.ListItem.Rating]</value>
 	</variable>
 	
 	<variable name="RatingOverlayVar">
-		<value condition="Skin.HasSetting(UserRatingOverlay) + !String.IsEqual(ListItem.UserRating,10.0)">$INFO[ListItem.UserRating]</value>
-		<value condition="Skin.HasSetting(UserRatingOverlay) + String.IsEqual(ListItem.UserRating,10.0)">10</value>
-		<value condition="!String.IsEqual(ListItem.Rating,10.0)">$INFO[ListItem.Rating]</value>
-		<value condition="String.IsEqual(Rating,10.0)">10</value>
+		<value condition="Skin.HasSetting(UserRatingOverlay)">$INFO[ListItem.UserRating]</value>
+		<value>$INFO[ListItem.Rating]</value>
 	</variable>
 	
 	<variable name="RightListItemType">

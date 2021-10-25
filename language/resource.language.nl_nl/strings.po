@@ -3609,6 +3609,18 @@ msgctxt "#32455"
 msgid "Open ExtendedInfo for Info Dialogs"
 msgstr ""
 
+msgctxt "#32456"
+msgid "Cert"
+msgstr ""
+
+msgctxt "#32457"
+msgid "Show Episodes List button"
+msgstr ""
+
+msgctxt "#32458"
+msgid "Include Seasons in Episodes List popup"
+msgstr ""
+
 #~ msgctxt "#31035"
 #~ msgid "Hide media flags from views"
 #~ msgstr "Verberg mediavlaggen van weergaven"

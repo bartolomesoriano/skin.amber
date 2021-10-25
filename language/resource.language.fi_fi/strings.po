@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: translations@kodi.tv\n"
+"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-10-11 09:13+0000\n"
+"PO-Revision-Date: 2021-10-23 20:09+0000\n"
 "Last-Translator: G0mez82 <jalehto_99@hotmail.com>\n"
 "Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/fi_fi/>\n"
 "Language: fi_fi\n"
@@ -1523,7 +1523,7 @@ msgstr "Kuvake"
 
 msgctxt "#31620"
 msgid "Landscape"
-msgstr "Maisema"
+msgstr "Vaakakuva"
 
 msgctxt "#31621"
 msgid "Clear Logo"
@@ -3060,7 +3060,7 @@ msgstr "Näytä logo"
 
 msgctxt "#32297"
 msgid "Use Landscape"
-msgstr "Käytä maisemaa"
+msgstr "Käytä Vaakakuvaa"
 
 msgctxt "#32298"
 msgid "Dim Level for Unfocused"
@@ -3605,6 +3605,18 @@ msgstr "Käytä aina TV-sarjan julistetta jaksoille"
 msgctxt "#32455"
 msgid "Open ExtendedInfo for Info Dialogs"
 msgstr "Avaa ExtendedInfo Tiedot -valintaikkunaan"
+
+msgctxt "#32456"
+msgid "Cert"
+msgstr ""
+
+msgctxt "#32457"
+msgid "Show Episodes List button"
+msgstr ""
+
+msgctxt "#32458"
+msgid "Include Seasons in Episodes List popup"
+msgstr ""
 
 #~ msgctxt "#31650"
 #~ msgid "Show Information Popup (after 3 seconds)"

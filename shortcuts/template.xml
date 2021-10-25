@@ -67,6 +67,12 @@
 		<condition tag="property" attribute="name|widgetPath.5" />
 		<condition tag="property" attribute="name|widgetPath.6" />
 		<match>any</match>
+		
+		<!-- Retrieve properties -->
+		<property name="id" tag="mainmenuid" />
+		<property name="widgetTwoShelves" tag="property" attribute="name|widgetTwoShelves" />
+		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
+		
 		<!-- Check if other widgets are set -->
 		<property name="target1" tag="property" attribute="name|widgetTarget" value="false">false</property>
 		<property name="target1">true</property>
@@ -398,6 +404,15 @@
 		
 		<!-- 2 Widgets together -->
 		<!-- Only widget 1 has items -->
+		<!-- shelves info -->
+		<property name="top" propertyValue="515">
+	        <rule tag="property" attribute="name|widgetTwoShelves" value="true" />
+			<rule tag="property" attribute="name|widgetThreeShelves" value="false" />
+			<rule tag="property" attribute="name|widgetType.2" value="none" />
+			<rule tag="property" attribute="name|showShelvesInfo" value="true" />
+			<match>all</match>
+        </property>
+		<!-- No shelves info -->
 		<!-- widgets in standard position -->
 		<property name="top" propertyValue="235">
 	        <rule tag="property" attribute="name|horizontalWidgetPos" value="Standard" />
@@ -569,18 +584,17 @@
 			<rule tag="property" attribute="name|showShelvesInfo" value="false" />
 			<match>all</match>
         </property>
-		
-		<!-- Show Info position -->
-		<property name="top" propertyValue="575">
-	        <rule tag="property" attribute="name|showShelvesInfo" value="true" />
+	    
+		<property name="top" propertyValue="515">
+	        <rule tag="property" attribute="name|widgetTwoShelves" value="false" />
+			<rule tag="property" attribute="name|widgetThreeShelves" value="false" />
+			<rule tag="property" attribute="name|showShelvesInfo" value="true" />
 			<match>all</match>
         </property>
 		
 		<!-- All other scenarios -->
 		<property name="top">315</property>
 		
-		<!-- Retrieve properties -->
-		<property name="id" tag="mainmenuid" />
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
@@ -640,12 +654,15 @@
 		<property name="widgetlow1" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="artwork1" tag="property" attribute="name|widgetArtwork" />
 		<property name="labelscroll1" tag="property" attribute="name|widgetLabelScroll" />
-		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay1" tag="property" attribute="name|widgetPopupDelay" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
 		
-        <!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
+        <!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup1" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
+		
+		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.2" value="none">false</property>
 		<property name="onup">true</property>
 		<!-- Top -->
@@ -955,7 +972,7 @@
 							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]1</param>
 								<param name="left">20</param>
-								<param name="width">1400</param>
+								<param name="width">1850</param>
 							</include>
 							<!-- Info for vertical menu, text -->
 							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
@@ -1003,7 +1020,7 @@
 					<param name="ShowMediumLogo">false</param>
 					<param name="ShowMedium2Logo">false</param>
 					<param name="ShowLargeLogo">false</param>
-					<param name="ShowLarge2Logo">true</param>
+					<param name="ShowLarge2Logo">false</param>
 				</include>
 				<!-- Background when shelf info is enabled - low and only one row -->
 				<include content="WidgetBackground" condition="Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">
@@ -1271,10 +1288,13 @@
 		<property name="artwork2" tag="property" attribute="name|widgetArtwork.2" />
 		<property name="widgetlow2" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="labelscroll2" tag="property" attribute="name|widgetLabelScroll.2" />
-		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay2" tag="property" attribute="name|widgetPopupDelay.2" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup2" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.3" value="none">false</property>
@@ -1581,7 +1601,7 @@
 							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]2</param>
 								<param name="left">20</param>
-								<param name="width">1400</param>
+								<param name="width">1850</param>
 							</include>
 							<!-- Info for vertical menu, text -->
 							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
@@ -1627,7 +1647,7 @@
 					<param name="ShowMediumLogo">false</param>
 					<param name="ShowMedium2Logo">false</param>
 					<param name="ShowLargeLogo">false</param>
-					<param name="ShowLarge2Logo">true</param>
+					<param name="ShowLarge2Logo">false</param>
 				</include>
 				<!-- Background when shelf info is enabled - low and only one row -->
 				<include content="WidgetBackground" condition="Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">
@@ -1896,10 +1916,13 @@
 		<property name="artwork3" tag="property" attribute="name|widgetArtwork.3" />
 		<property name="widgetlow3" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="labelscroll3" tag="property" attribute="name|widgetLabelScroll.3" />
-		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay3" tag="property" attribute="name|widgetPopupDelay.3" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup3" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.4" value="none">false</property>
@@ -2205,7 +2228,7 @@
 							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]3</param>
 								<param name="left">20</param>
-								<param name="width">1400</param>
+								<param name="width">1850</param>
 							</include>
 							<!-- Info for vertical menu, text -->
 							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
@@ -2251,7 +2274,7 @@
 					<param name="ShowMediumLogo">false</param>
 					<param name="ShowMedium2Logo">false</param>
 					<param name="ShowLargeLogo">false</param>
-					<param name="ShowLarge2Logo">true</param>
+					<param name="ShowLarge2Logo">false</param>
 				</include>
 				<!-- Background when shelf info is enabled - low and only one row -->
 				<include content="WidgetBackground" condition="Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">
@@ -2520,10 +2543,13 @@
 		<property name="artwork4" tag="property" attribute="name|widgetArtwork.4" />
 		<property name="widgetlow4" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="labelscroll4" tag="property" attribute="name|widgetLabelScroll.4" />
-		<property name="doInfoPopup4" tag="property" attribute="name|doInfoPopup.4" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay4" tag="property" attribute="name|widgetPopupDelay.4" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup4" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup4" tag="property" attribute="name|doInfoPopup.4" />
 		
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.5" value="none">false</property>
@@ -2967,7 +2993,7 @@
 							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]4</param>
 								<param name="left">20</param>
-								<param name="width">1400</param>
+								<param name="width">1850</param>
 							</include>
 							<!-- Info for vertical menu, text -->
 							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
@@ -3013,7 +3039,7 @@
 					<param name="ShowMediumLogo">false</param>
 					<param name="ShowMedium2Logo">false</param>
 					<param name="ShowLargeLogo">false</param>
-					<param name="ShowLarge2Logo">true</param>
+					<param name="ShowLarge2Logo">false</param>
 				</include>
 				<!-- Background when shelf info is enabled - low and only one row -->
 				<include content="WidgetBackground" condition="Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">
@@ -3274,10 +3300,13 @@
 		<property name="artwork5" tag="property" attribute="name|widgetArtwork.5" />
 		<property name="widgetlow5" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="labelscroll5" tag="property" attribute="name|widgetLabelScroll.5" />
-		<property name="doInfoPopup5" tag="property" attribute="name|doInfoPopup.5" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay5" tag="property" attribute="name|widgetPopupDelay.5" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup5" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup5" tag="property" attribute="name|doInfoPopup.5" />
 		
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.6" value="none">false</property>
@@ -3721,7 +3750,7 @@
 							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]5</param>
 								<param name="left">20</param>
-								<param name="width">1400</param>
+								<param name="width">1850</param>
 							</include>
 							<!-- Info for vertical menu, text -->
 							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
@@ -3767,7 +3796,7 @@
 					<param name="ShowMediumLogo">false</param>
 					<param name="ShowMedium2Logo">false</param>
 					<param name="ShowLargeLogo">false</param>
-					<param name="ShowLarge2Logo">true</param>
+					<param name="ShowLarge2Logo">false</param>
 				</include>
 				<!-- Background when shelf info is enabled - low and only one row -->
 				<include content="WidgetBackground" condition="Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">
@@ -4029,10 +4058,13 @@
 		<property name="artwork6" tag="property" attribute="name|widgetArtwork.6" />
 		<property name="widgetlow6" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="labelscroll6" tag="property" attribute="name|widgetLabelScroll.6" />
-		<property name="doInfoPopup6" tag="property" attribute="name|doInfoPopup.6" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay6" tag="property" attribute="name|widgetPopupDelay.6" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup6" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup6" tag="property" attribute="name|doInfoPopup.6" />
 		
 		<!-- Always navigate to widget 1 from here, so set onup to false -->
 		<property name="onup">false</property>
@@ -4476,7 +4508,7 @@
 							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]6</param>
 								<param name="left">20</param>
-								<param name="width">1400</param>
+								<param name="width">1850</param>
 							</include>
 							<!-- Info for vertical menu, text -->
 							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
@@ -4522,7 +4554,7 @@
 					<param name="ShowMediumLogo">false</param>
 					<param name="ShowMedium2Logo">false</param>
 					<param name="ShowLargeLogo">false</param>
-					<param name="ShowLarge2Logo">true</param>
+					<param name="ShowLarge2Logo">false</param>
 				</include>
 				<!-- Background when shelf info is enabled - low and only one row -->
 				<include content="WidgetBackground" condition="Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">
@@ -4779,9 +4811,12 @@
 		<property name="widgetlow" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="double1" tag="property" attribute="name|widgetDouble" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget" />
-		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay1" tag="property" attribute="name|widgetPopupDelay" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup1" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		
         <!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.2" value="none">false</property>
@@ -5065,9 +5100,12 @@
 		<property name="double2" tag="property" attribute="name|widgetDouble.2" />
         <property name="widgetlow" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.2" />
-		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay2" tag="property" attribute="name|widgetPopupDelay.2" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup2" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.3" value="none">false</property>
@@ -5353,9 +5391,12 @@
 		<property name="double3" tag="property" attribute="name|widgetDouble.3" />
         <property name="widgetlow" tag="property" attribute="name|horizontalWidgetPos" />  
         <property name="shortstatic" tag="property" attribute="name|shortStaticWidget.3" />	
-        <property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
         <property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay3" tag="property" attribute="name|widgetPopupDelay.3" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup3" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		
 	    <!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.4" value="none">false</property>
@@ -5641,9 +5682,12 @@
 		<property name="triple4" tag="property" attribute="name|widgetTriple.4" />
 		<property name="double4" tag="property" attribute="name|widgetDouble.4" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.4" />
-		<property name="doInfoPopup4" tag="property" attribute="name|doInfoPopup.4" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay4" tag="property" attribute="name|widgetPopupDelay.4" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup4" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup4" tag="property" attribute="name|doInfoPopup.4" />
 		
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.5" value="none">false</property>
@@ -5950,9 +5994,12 @@
 		<property name="triple5" tag="property" attribute="name|widgetTriple.5" />
 		<property name="double5" tag="property" attribute="name|widgetDouble.5" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.5" />
-		<property name="doInfoPopup5" tag="property" attribute="name|doInfoPopup.5" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay5" tag="property" attribute="name|widgetPopupDelay.5" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup5" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup5" tag="property" attribute="name|doInfoPopup.5" />
 		
         <!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.6" value="none">false</property>
@@ -6260,9 +6307,12 @@
 		<property name="triple6" tag="property" attribute="name|widgetTriple.6" />
 		<property name="double6" tag="property" attribute="name|widgetDouble.6" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.6" />
-		<property name="doInfoPopup6" tag="property" attribute="name|doInfoPopup.6" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay6" tag="property" attribute="name|widgetPopupDelay.6" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup6" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup6" tag="property" attribute="name|doInfoPopup.6" />
 		
 		<!-- Top -->
 		<property name="top" propertyValue="10">
@@ -6553,6 +6603,21 @@
 		<property name="labelscroll2" tag="property" attribute="name|widgetLabelScroll.2" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
 		
+		
+		<!-- if shelves info enabled, coordinates for both widgets big -->
+		<property name="topdouble" propertyValue="170">
+	        <rule tag="property" attribute="name|showShelvesInfo" value="true" />
+			<match>all</match>
+        </property>
+		<property name="label1topdouble" propertyValue="636">
+	        <rule tag="property" attribute="name|showShelvesInfo" value="true" />
+			<match>all</match>
+        </property>
+		<property name="heightdouble" propertyValue="727">
+	        <rule tag="property" attribute="name|showShelvesInfo" value="true" />
+			<match>all</match>
+        </property>
+		
 		<!-- Top when both widgets have items -->
 		<!-- Both widgets are small -->
 		<!-- Widgets in low position -->
@@ -6774,7 +6839,7 @@
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
 				
-				<include content="WidgetBackground2" condition="![!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)] + !$SKINSHORTCUTS[showShelvesInfo]">
+				<include content="WidgetBackground2" condition="![!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)]">
 					<param name="id1">1600$SKINSHORTCUTS[id]1</param>
 					<param name="id2">1600$SKINSHORTCUTS[id]2</param>
 					<param name="label1">$SKINSHORTCUTS[label1]</param>
@@ -6788,6 +6853,7 @@
 					<param name="heightsingle">$SKINSHORTCUTS[heightsingle]</param>
 					<param name="ShowMediumLogo">$SKINSHORTCUTS[ShowMediumLogo]</param>
 					<param name="ShowLargeLogo">$SKINSHORTCUTS[ShowLargeLogo]</param>
+					<param name="showShelvesInfo">$SKINSHORTCUTS[showShelvesInfo]</param>
 				</include>
 				
 			</control>
@@ -6819,10 +6885,16 @@
 		<property name="widgetlow1" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="artwork1" tag="property" attribute="name|widgetArtwork" />
 		<property name="labelscroll1" tag="property" attribute="name|widgetLabelScroll" />
-		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay1" tag="property" attribute="name|widgetPopupDelay" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup1" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
+		
+		<property name="singleWidget" tag="property" attribute="name|widgetType.2" value="none">true</property>
+		<property name="singleWidget">false</property>
 		
 		<property name="top" propertyValue="703">
 	        <rule tag="property" attribute="name|horizontalWidgetPos" value="Low" />
@@ -6832,6 +6904,8 @@
 		<property name="top" tag="property" attribute="name|horizontalWidgetPos" value="Low">505</property>
 		<property name="top" tag="property" attribute="name|horizontalWidgetPos" value="High">330</property>
 		<property name="top">485</property>
+		
+		<property name="paneltop" tag="property" attribute="name|showShelvesinfo" value="true">487</property>
 		
 		<!-- Panel top when only widget 1 has items -->
 		<!-- Widget 1 is small -->
@@ -7148,33 +7222,42 @@
 				<control type="group">
 					<visible>Control.HasFocus(1600$SKINSHORTCUTS[id]1) + $SKINSHORTCUTS[showShelvesInfo]</visible>
 					
-					<include condition="Skin.HasSetting(VerticalHome)">ShelfInfoTopVert</include>
-					<include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoTopHorz</include>
-					
+					<top>100</top>
 					<left>0</left>
+					
+					<!-- Dark background for readability -->
+					<control type="image">
+						<left>0</left>
+						<top>-20</top>
+						<height>420</height>
+						<width>1940</width>
+						<texture colordiffuse="CFFFFFFF">img/list_shadow.png</texture>
+						<visible>$SKINSHORTCUTS[singleWidget]</visible>
+					</control>
+					
 					<control type="group">
 						<animation effect="fade" end="0">WindowClose</animation>
-						<!-- Dark background for readability -->
-						<control type="image">
-						
-							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVert</include>
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVertIcon</include>
-					        <include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoBackCoordsHorz</include>
-							
-							<texture colordiffuse="CFFFFFFF">img/list_shadow.png</texture>
-						</control>
 						<control type="group">
 						    <!-- Info for horizontal mennu -->
-							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
+							<include condition="!Skin.HasSetting(VerticalHome)" content="ShelfInfoContentTwoShelves">
 								<param name="id">1600$SKINSHORTCUTS[id]1</param>
-								<param name="left">20</param>
-								<param name="width">1400</param>
+								<param name="left">38</param>
+								<param name="width">1850</param>
+								<param name="isTopShelf">true</param>
 							</include>
 							<!-- Info for vertical menu, text -->
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContentTwoShelves">
 								<param name="id">1600$SKINSHORTCUTS[id]1</param>
-								<param name="left">20</param>
+								<param name="left">38</param>
+								<param name="width">1420</param>
+								<param name="isTopShelf">true</param>
+							</include>
+							<!-- Info for vertical menu, icons -->
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContentTwoShelves">
+								<param name="id">1600$SKINSHORTCUTS[id]1</param>
+								<param name="left">38</param>
 								<param name="width">1700</param>
+								<param name="isTopShelf">true</param>
 							</include>
 						</control>
 					</control>
@@ -7191,41 +7274,14 @@
 					<param name="ShowMedium2Logo">false</param>
 					<param name="ShowLargeLogo">false</param>
 				</include>
-				<!-- Background when shelf info is enabled - low and only one row -->
-				<include content="WidgetBackground" condition="!Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">
-					<param name="id">1600$SKINSHORTCUTS[id]1</param>
-					<param name="label">$SKINSHORTCUTS[label1]</param>
-					<param name="labelscroll">$SKINSHORTCUTS[labelscroll1]</param>
-					<param name="top">534</param>
-					<param name="height">375</param>
-					<param name="visible">String.IsEmpty(Window(home).Property(WidgetFocus$SKINSHORTCUTS[id]))</param>
-					<param name="ShowMediumLogo">false</param>
-					<param name="ShowMedium2Logo">false</param>
-					<param name="ShowLargeLogo">false</param>
-					<param name="ShowLarge2Logo">true</param>
-				</include>
-				<!-- Background when shelf info is enabled - low and only one row -->
-				<include content="WidgetBackground" condition="Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">
-					<param name="id">1600$SKINSHORTCUTS[id]1</param>
-					<param name="label">$SKINSHORTCUTS[label1]</param>
-					<param name="labelscroll">$SKINSHORTCUTS[labelscroll1]</param>
-					<param name="top">594</param>
-					<param name="height">375</param>
-					<param name="visible">String.IsEmpty(Window(home).Property(WidgetFocus$SKINSHORTCUTS[id]))</param>
-					<param name="ShowMediumLogo">false</param>
-					<param name="ShowMedium2Logo">false</param>
-					<param name="ShowLargeLogo">false</param>
-					<param name="ShowLargeLogoUnfocused">true</param>
-				</include>
 				
 				<control type="$SKINSHORTCUTS[containertype1]" id="1600$SKINSHORTCUTS[id]1">
 					
 					<!-- If bottomn shortcuts enabled, widget needs to be in high position and only one widget row -->
 					<include condition="!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)">StaticWidgetPositioning</include>
 					
-					<!-- If shelves info enabled, widget needs to be in low position and only one widget row -->
-					<include condition="!Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">ShelfInfoWidgetPositioningHorz</include>
-					<include condition="Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">ShelfInfoWidgetPositioningVert</include>
+					<!-- Fade out this shelf if the other is focused, so there is room for the shelf info -->
+					<animation effect="fade" start="100" end="0" time="0" condition="Control.HasFocus(1600$SKINSHORTCUTS[id]2) + $SKINSHORTCUTS[showShelvesInfo]">conditional</animation>
 					
 					<include condition="!Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[centerShelves] + !$SKINSHORTCUTS[isAutoScroll]" content="ShelfCenterAnimationsHoriz">
 	                    <param name="id">1600$SKINSHORTCUTS[id]1</param>
@@ -7280,7 +7336,6 @@
 					<height>315</height>
 					<autoscroll time="$SKINSHORTCUTS[autoscroll1]">!Control.HasFocus(1600$SKINSHORTCUTS[id]1)</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]1,Home)</onfocus>
-<!--					<onclick condition="String.IsEqual(ListItem.DBType,season)">ActivateWindow(Videos,videodb://tvshows/titles/$INFO[ListItem.Property(TVShowID)]/$INFO[ListItem.Property(Season)]/?tvshowid=$INFO[ListItem.Property(TVShowID)])</onclick> -->
                     <onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0)">SetProperty(WidgetFocus$SKINSHORTCUTS[id],2,home)</onup>
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]2)</onup>
@@ -7354,11 +7409,16 @@
 		<property name="widgetlow2" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="artwork2" tag="property" attribute="name|widgetArtwork.2" />
         <property name="labelscroll2" tag="property" attribute="name|widgetLabelScroll.2" />
-		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="autoscrolltext" tag="property" attribute="name|widgetAutoScroll.2" />
 		<property name="widgetPopupDelay2" tag="property" attribute="name|widgetPopupDelay.2" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup2" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
+		
+		<property name="top" tag="property" attribute="name|showShelvesInfo" value="true">170</property>
 		
 		<!-- Top when both widgets have items -->
 		<!-- Both widgets are small -->
@@ -7508,33 +7568,31 @@
 				<control type="group">
 					<visible>Control.HasFocus(1600$SKINSHORTCUTS[id]2) + $SKINSHORTCUTS[showShelvesInfo]</visible>
 					
-					<include condition="Skin.HasSetting(VerticalHome)">ShelfInfoTopVert</include>
-					<include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoTopHorz</include>
-					
+					<top>435</top>
 					<left>0</left>
 					<control type="group">
 						<animation effect="fade" end="0">WindowClose</animation>
-						<!-- Dark background for readability -->
-						<control type="image">
-						
-							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVert</include>
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVertIcon</include>
-					        <include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoBackCoordsHorz</include>
-							
-							<texture colordiffuse="CFFFFFFF">img/list_shadow.png</texture>
-						</control>
 						<control type="group">
 						    <!-- Info for horizontal mennu -->
-							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
+							<include condition="!Skin.HasSetting(VerticalHome)" content="ShelfInfoContentTwoShelves">
 								<param name="id">1600$SKINSHORTCUTS[id]2</param>
-								<param name="left">20</param>
-								<param name="width">1400</param>
+								<param name="left">38</param>
+								<param name="width">1850</param>
+								<param name="isTopShelf">true</param>
 							</include>
 							<!-- Info for vertical menu, text -->
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContentTwoShelves">
 								<param name="id">1600$SKINSHORTCUTS[id]2</param>
-								<param name="left">20</param>
+								<param name="left">38</param>
+								<param name="width">1420</param>
+								<param name="isTopShelf">true</param>
+							</include>
+							<!-- Info for vertical menu, icons -->
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContentTwoShelves">
+								<param name="id">1600$SKINSHORTCUTS[id]2</param>
+								<param name="left">38</param>
 								<param name="width">1700</param>
+								<param name="isTopShelf">true</param>
 							</include>
 						</control>
 					</control>
@@ -7551,41 +7609,17 @@
 					<param name="ShowMedium2Logo">false</param>
 					<param name="ShowLargeLogo">false</param>
 				</include>
-				<!-- Background when shelf info is enabled - low and only one row -->
-				<include content="WidgetBackground" condition="!Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">
-					<param name="id">1600$SKINSHORTCUTS[id]2</param>
-					<param name="label">$SKINSHORTCUTS[label2]</param>
-					<param name="labelscroll">$SKINSHORTCUTS[labelscroll2]</param>
-					<param name="top">534</param>
-					<param name="height">375</param>
-					<param name="visible">String.IsEqual(Window(home).Property(WidgetFocus$SKINSHORTCUTS[id]),2)</param>
-					<param name="ShowMediumLogo">false</param>
-					<param name="ShowMedium2Logo">false</param>
-					<param name="ShowLargeLogo">false</param>
-					<param name="ShowLarge2Logo">true</param>
-				</include>
-				<!-- Background when shelf info is enabled - low and only one row -->
-				<include content="WidgetBackground" condition="Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">
-					<param name="id">1600$SKINSHORTCUTS[id]2</param>
-					<param name="label">$SKINSHORTCUTS[label2]</param>
-					<param name="labelscroll">$SKINSHORTCUTS[labelscroll2]</param>
-					<param name="top">594</param>
-					<param name="height">375</param>
-					<param name="visible">String.IsEqual(Window(home).Property(WidgetFocus$SKINSHORTCUTS[id]),2)</param>
-					<param name="ShowMediumLogo">false</param>
-					<param name="ShowMedium2Logo">false</param>
-					<param name="ShowLargeLogo">false</param>
-					<param name="ShowLargeLogoUnfocused">true</param>
-				</include>
 				
 				<control type="$SKINSHORTCUTS[containertype2]" id="1600$SKINSHORTCUTS[id]2">
 					
 					<!-- If bottomn shortcuts enabled, widget needs to be in high position and only one widget row -->
 					<include condition="!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)">StaticWidgetPositioning</include>
 					
-					<!-- If shelves info enabled, widget needs to be in low position and only one widget row -->
-					<include condition="!Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">ShelfInfoWidgetPositioningHorz</include>
-					<include condition="Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[showShelvesInfo]">ShelfInfoWidgetPositioningVert</include>
+					<!-- Fade out this shelf if the other one is focused, so there is room for the shelf info -->
+					<animation effect="fade" start="100" end="0" time="0" condition="Control.HasFocus(1600$SKINSHORTCUTS[id]1) + $SKINSHORTCUTS[showShelvesInfo]">conditional</animation>
+					
+					<!-- Slide shelf up when shelves info shown, so there's more room for the shelf info -->
+					<animation effect="slide" start="0,0" end="0,-60" time="250" tween="sine" easing="in" condition="Control.HasFocus(1600$SKINSHORTCUTS[id]2) + $SKINSHORTCUTS[showShelvesInfo]">conditional</animation>
 					
 					<include condition="!Skin.HasSetting(VerticalHome) + $SKINSHORTCUTS[centerShelves] + !$SKINSHORTCUTS[isAutoScroll]" content="ShelfCenterAnimationsHoriz">
 	                    <param name="id">1600$SKINSHORTCUTS[id]2</param>
@@ -7641,16 +7675,11 @@
 					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2)</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]2,Home)</onfocus>
 					<onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
-                    <onup condition="$SKINSHORTCUTS[showShelvesInfo]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
-					<onup condition="$SKINSHORTCUTS[showShelvesInfo]">SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
-					<ondown condition="$SKINSHORTCUTS[showShelvesInfo]">300</ondown>
-					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0) + !$SKINSHORTCUTS[showShelvesInfo]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</ondown>
-					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0) + !$SKINSHORTCUTS[showShelvesInfo]">SetFocus(1600$SKINSHORTCUTS[id]1)</ondown>
-					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0) + !$SKINSHORTCUTS[showShelvesInfo]">300</ondown>
+					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</ondown>
+					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">SetFocus(1600$SKINSHORTCUTS[id]1)</ondown>
+					<ondown condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">300</ondown>
 					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</ondown>
 					<ondown condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</ondown>
-					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
-					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
 					<preloaditems>2</preloaditems>
@@ -7692,6 +7721,7 @@
 					</content>                    
 					<content sortby="$SKINSHORTCUTS[sortby2]" sortorder="$SKINSHORTCUTS[sortorder2]" limit="$SKINSHORTCUTS[limit2]" target="$SKINSHORTCUTS[target2]">$SKINSHORTCUTS[path2]</content>
 				</control>
+				
 			</control>
 		</controls>
 	</other>
@@ -7718,9 +7748,12 @@
 		<property name="sortorder1" tag="property" attribute="name|widgetSortOrder" />
 		<property name="limit1" tag="property" attribute="name|widgetLimit" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget" />
-		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay1" tag="property" attribute="name|widgetPopupDelay" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup1" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		
 		<!-- Top when only widget 1 has items -->
 		<!-- Widgets in standard position -->
@@ -7889,9 +7922,12 @@
 		<property name="sortorder2" tag="property" attribute="name|widgetSortOrder.2" />
 		<property name="limit2" tag="property" attribute="name|widgetLimit.2" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.2" />
-		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay2" tag="property" attribute="name|widgetPopupDelay.2" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup2" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		
 		<!-- Top when both widgets have items -->
 		<!-- Widget 1 is small -->
@@ -10042,12 +10078,15 @@
 		<property name="artwork1" tag="property" attribute="name|widgetArtwork" />
 		<property name="widgetlow" tag="property" attribute="name|horizontalWidgetPos" />
         <property name="labelscroll1" tag="property" attribute="name|widgetLabelScroll" />
-		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay1" tag="property" attribute="name|widgetPopupDelay" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
 		
-	   <!-- Panel height -->
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup1" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
+		
+	    <!-- Panel height -->
 		<property name="panelheight" tag="property" attribute="name|widgetType.2" value="none">315</property>
 		<property name="panelheight" tag="property" attribute="name|widgetType.3" value="none">315</property>
 		<property name="panelheight">220</property>
@@ -11698,10 +11737,13 @@
 		<property name="limit2" tag="property" attribute="name|widgetLimit.2" />
 		<property name="artwork2" tag="property" attribute="name|widgetArtwork.2" />
         <property name="labelscroll2" tag="property" attribute="name|widgetLabelScroll.2" />
-        <property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
         <property name="centerShelves" tag="property" attribute="name|centerShelves" />
         <property name="widgetPopupDelay2" tag="property" attribute="name|widgetPopupDelay.2" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup2" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.3" value="none">false</property>
@@ -12882,10 +12924,14 @@
 		<property name="limit3" tag="property" attribute="name|widgetLimit.3" />
 		<property name="artwork3" tag="property" attribute="name|widgetArtwork.3" />
         <property name="labelscroll3" tag="property" attribute="name|widgetLabelScroll.3" />
-		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay3" tag="property" attribute="name|widgetPopupDelay.3" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup3" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
+		
 		<!-- Panel height -->
 		<property name="panelheight" tag="property" attribute="name|widgetType.2" value="none">315</property>
 		<property name="panelheight">220</property>
@@ -13681,9 +13727,13 @@
 		<property name="limit1" tag="property" attribute="name|widgetLimit" />
 		<property name="widgetlow" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget" />
-		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay1" tag="property" attribute="name|widgetPopupDelay" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup1" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
+		
 		<!-- Panel height -->
 		<property name="panelheight" tag="property" attribute="name|widgetType.2" value="none">315</property>
 		<property name="panelheight" tag="property" attribute="name|widgetType.3" value="none">315</property>
@@ -14024,9 +14074,12 @@
 		<property name="limit2" tag="property" attribute="name|widgetLimit.2" />
 		<property name="widgetlow" tag="property" attribute="name|horizontalWidgetPos" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.2" />
-		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay2" tag="property" attribute="name|widgetPopupDelay.2" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup2" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		
 		<!-- Panel height -->
 		<property name="panelheight" tag="property" attribute="name|widgetType.3" value="none">315</property>
@@ -14248,9 +14301,12 @@
 		<property name="sortorder3" tag="property" attribute="name|widgetSortOrder.3" />
 		<property name="limit3" tag="property" attribute="name|widgetLimit.3" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.3" />
-		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay3" tag="property" attribute="name|widgetPopupDelay.3" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup3" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		
 		<!-- Panel height -->
 		<property name="panelheight" tag="property" attribute="name|widgetType.2" value="none">315</property>
@@ -15773,10 +15829,13 @@
 		<property name="limit1" tag="property" attribute="name|widgetLimit" />
 		<property name="artwork1" tag="property" attribute="name|widgetArtwork" />
 		<property name="labelscroll1" tag="property" attribute="name|widgetLabelScroll" />
-		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay1" tag="property" attribute="name|widgetPopupDelay" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup1" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		
 		<!-- Panel top -->
 		<!-- Only widget 1 has items -->
@@ -16403,10 +16462,13 @@
 		<property name="limit2" tag="property" attribute="name|widgetLimit.2" />
         <property name="artwork2" tag="property" attribute="name|widgetArtwork.2" />
 		<property name="labelscroll2" tag="property" attribute="name|widgetLabelScroll.2" />
-		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay2" tag="property" attribute="name|widgetPopupDelay.2" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup2" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		
 		<!-- If target is set to true for next widget navigate to next (fallback if empty set to false in overrides.xml) -->
 		<property name="onup" tag="property" attribute="name|widgetType.3" value="none">false</property>
@@ -16972,10 +17034,13 @@
 		<property name="limit3" tag="property" attribute="name|widgetLimit.3" />
         <property name="artwork3" tag="property" attribute="name|widgetArtwork.3" />
 		<property name="labelscroll3" tag="property" attribute="name|widgetLabelScroll.3" />
-		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay3" tag="property" attribute="name|widgetPopupDelay.3" />
 		<property name="showShelvesInfo" tag="property" attribute="name|showShelvesInfo" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup3" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		
 		<!-- Panel top -->
 		<!-- Widgets 1 and 3 have items, widget 2 does not -->
@@ -17466,9 +17531,12 @@
 		<property name="sortorder1" tag="property" attribute="name|widgetSortOrder" />
 		<property name="limit1" tag="property" attribute="name|widgetLimit" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget" />
-		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay1" tag="property" attribute="name|widgetPopupDelay" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup1" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup1" tag="property" attribute="name|doInfoPopup" />
 		
         <!-- Itemlayout/Focusedlayout Height/Width -->
 		<property name="layoutheight">315</property>
@@ -17725,9 +17793,12 @@
 		<property name="sortorder2" tag="property" attribute="name|widgetSortOrder.2" />
 		<property name="limit2" tag="property" attribute="name|widgetLimit.2" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.2" />
-		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay2" tag="property" attribute="name|widgetPopupDelay.2" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup2" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup2" tag="property" attribute="name|doInfoPopup.2" />
 		
 		<!-- Itemlayout/Focusedlayout Height/Width -->
 		<property name="layoutheight">315</property>
@@ -17885,9 +17956,12 @@
 		<property name="sortorder3" tag="property" attribute="name|widgetSortOrder.3" />
 		<property name="limit3" tag="property" attribute="name|widgetLimit.3" />
 		<property name="shortstatic" tag="property" attribute="name|shortStaticWidget.3" />
-		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		<property name="centerShelves" tag="property" attribute="name|centerShelves" />
 		<property name="widgetPopupDelay3" tag="property" attribute="name|widgetPopupDelay.3" />
+		
+		<!-- If show selves info is true then do not show info popup -->
+		<property name="doInfoPopup3" tag="property" attribute="name|showShelvesInfo" value="true">false</property>
+		<property name="doInfoPopup3" tag="property" attribute="name|doInfoPopup.3" />
 		
 		<!-- Itemlayout/Focusedlayout Height/Width -->
 		<property name="layoutheight">315</property>
@@ -19381,7 +19455,8 @@
 		    <rule tag="property" attribute="name|widgetDouble" value="false" />
 	        <rule tag="property" attribute="name|widgetTriple" value="false" />
 			<rule tag="property" attribute="name|widgetAutoScroll" value="$NUMBER[7000]|$NUMBER[8000]|$NUMBER[9000]|$NUMBER[10000]|$NUMBER[11000]|$NUMBER[12000]|$NUMBER[15000]||$NUMBER[20000]|$NUMBER[30000]|$NUMBER[60000]" />
-		    <match>all</match>
+		    <rule tag="property" attribute="name|showShelvesInfo" value="false" />
+			<match>all</match>
 		</property>
 		<property name="containertype1">panel</property>
 		<!-- Autoscroll values, need to get them from number to string to plugin in the autoscroll tag of the container -->
@@ -19399,12 +19474,13 @@
 	</propertyGroup>
 	
 	<propertyGroup name="widget2Common">
-		<!-- Container type, wraplist if autoscroll, if not panel -->
+		<!-- Container type, wraplist if autoscroll and not shelves info, if not panel -->
 		<property name="containertype2" propertyValue="wraplist">
 		    <rule tag="property" attribute="name|widgetDouble.2" value="false" />
 	        <rule tag="property" attribute="name|widgetTriple.2" value="false" />
 			<rule tag="property" attribute="name|widgetAutoScroll.2" value="$NUMBER[7000]|$NUMBER[8000]|$NUMBER[9000]|$NUMBER[10000]|$NUMBER[11000]|$NUMBER[12000]|$NUMBER[15000]||$NUMBER[20000]|$NUMBER[30000]|$NUMBER[60000]" />
-		    <match>all</match>
+		    <rule tag="property" attribute="name|showShelvesInfo" value="false" />
+			<match>all</match>
 		</property>
 		<property name="containertype2">panel</property>
 		<!-- Autoscroll values, need to get them from number to string to plugin in the autoscroll tag of the container -->

@@ -1024,6 +1024,18 @@
 							<param name="itemlabel" value="$LOCALIZE[32367]"/>
 							<param name="skinsetting" value="NoFallbackThumbOSD"/>
 						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="17"/>
+							<param name="itemlabel" value="[B]$LOCALIZE[32457][/B]"/>
+							<param name="skinsetting" value="ShowEpisodeList"/>
+							<param name="itemvisibility">Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</param>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="18"/>
+							<param name="itemlabel" value="      $LOCALIZE[32458]"/>
+							<param name="skinsetting" value="SeasonsEpisodeList"/>
+							<param name="itemvisibility">Skin.HasSetting(ShowEpisodeList)</param>
+						</include>
 					</content>
 				</control>				
                 <!-- 9000 8 Video Info options -->
