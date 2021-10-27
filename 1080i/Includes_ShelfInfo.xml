@@ -1096,7 +1096,7 @@
 			    <!-- Slightly larger plot for tv shows -->
 			    <control type="textbox">
 				    <width>auto</width>
-    				<height>198</height>
+    				<height>160</height>
 				    <font>InfoPlot</font>
 				    <align>justify</align>
 				    <label>$VAR[ShelfInfoPlot]</label>
