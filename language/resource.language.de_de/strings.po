@@ -3617,6 +3617,10 @@ msgctxt "#32458"
 msgid "Include Seasons in Episodes List popup"
 msgstr ""
 
+msgctxt "#32459"
+msgid "Next Aired"
+msgstr ""
+
 #~ msgctxt "#31650"
 #~ msgid "Show Information Popup (after 3 seconds)"
 #~ msgstr "Informations-Popup anzeigen (nach 3 Sekunden)"

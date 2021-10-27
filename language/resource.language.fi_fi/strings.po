@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-10-23 20:09+0000\n"
+"PO-Revision-Date: 2021-10-26 00:12+0000\n"
 "Last-Translator: G0mez82 <jalehto_99@hotmail.com>\n"
 "Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/fi_fi/>\n"
 "Language: fi_fi\n"
@@ -2018,7 +2018,7 @@ msgstr "Uusi haku"
 
 msgctxt "#32025"
 msgid "Movies Starring"
-msgstr "Elokuvien pääosissa"
+msgstr "Elokuvien pääosassa"
 
 msgctxt "#32026"
 msgid "Movies Directed by"
@@ -2026,7 +2026,7 @@ msgstr "Elokuvat ohjannut"
 
 msgctxt "#32027"
 msgid "TV Shows Starring"
-msgstr "TV-sarjat pääosissa"
+msgstr "TV-sarjojen pääosassa"
 
 msgctxt "#32028"
 msgid "TV Shows Directed by"
@@ -3608,14 +3608,18 @@ msgstr "Avaa ExtendedInfo Tiedot -valintaikkunaan"
 
 msgctxt "#32456"
 msgid "Cert"
-msgstr ""
+msgstr "Sert"
 
 msgctxt "#32457"
 msgid "Show Episodes List button"
-msgstr ""
+msgstr "Näytä jaksolista painike"
 
 msgctxt "#32458"
 msgid "Include Seasons in Episodes List popup"
+msgstr "Sisällytä kaudet jaksoluettelo ponnahdusikkunaan"
+
+msgctxt "#32459"
+msgid "Next Aired"
 msgstr ""
 
 #~ msgctxt "#31650"

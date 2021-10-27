@@ -944,6 +944,9 @@
 		<property name="isAutoScroll" tag="property" attribute="name|widgetAutoScroll" value="none">false</property>
 		<property name="isAutoScroll">true</property>
 		
+		<property name="overlaylabelyoffset1" tag="property" attribute="name|widgetArtwork" value="Landscape">82r</property>
+		<property name="overlaylabelyoffset1">65r</property>
+		
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
@@ -961,24 +964,28 @@
 						<!-- Dark background for readability -->
 						<control type="image">
 						
-							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVert</include>
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVertIcon</include>
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVert</include>
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVertIcon</include>
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVertHideFocus</include>
 					        <include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoBackCoordsHorz</include>
 							
 							<texture colordiffuse="CFFFFFFF">img/list_shadow.png</texture>
 						</control>
 						<control type="group">
-						    <!-- Info for horizontal mennu -->
-							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
+						    <!-- Info for horizontal mennu or vertical menu when menu is hidden when widgets focused -->
+							<include condition="!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)]" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]1</param>
-								<param name="left">20</param>
 								<param name="width">1850</param>
 							</include>
 							<!-- Info for vertical menu, text -->
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]1</param>
-								<param name="left">20</param>
-								<param name="width">1700</param>
+								<param name="width">1420</param>
+							</include>
+							<!-- Info for vertical menu, icons -->
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContent">
+								<param name="id">1600$SKINSHORTCUTS[id]1</param>
+								<param name="width">1740</param>
 							</include>
 						</control>
 					</control>
@@ -1213,6 +1220,7 @@
 						<param name="isThumb">$SKINSHORTCUTS[isthumb1]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay1]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset1]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content1]" condition="!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)">
@@ -1247,6 +1255,7 @@
 						<param name="isThumb">$SKINSHORTCUTS[isthumb1]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay1]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset1]</param>
 					</include>
 					
                     <content>
@@ -1573,6 +1582,9 @@
 		<property name="isAutoScroll" tag="property" attribute="name|widgetAutoScroll.2" value="none">false</property>
 		<property name="isAutoScroll">true</property>
 		
+		<property name="overlaylabelyoffset2" tag="property" attribute="name|widgetArtwork.2" value="Landscape">82r</property>
+		<property name="overlaylabelyoffset2">65r</property>
+		
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
@@ -1590,24 +1602,28 @@
 						<!-- Dark background for readability -->
 						<control type="image">
 						
-							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVert</include>
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVertIcon</include>
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVert</include>
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVertIcon</include>
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVertHideFocus</include>
 					        <include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoBackCoordsHorz</include>
 							
 							<texture colordiffuse="CFFFFFFF">img/list_shadow.png</texture>
 						</control>
 						<control type="group">
-						    <!-- Info for horizontal mennu -->
-							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
+						    <!-- Info for horizontal mennu or vertical menu when menu is hidden when widgets focused -->
+							<include condition="!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)]" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]2</param>
-								<param name="left">20</param>
 								<param name="width">1850</param>
 							</include>
 							<!-- Info for vertical menu, text -->
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]2</param>
-								<param name="left">20</param>
-								<param name="width">1700</param>
+								<param name="width">1420</param>
+							</include>
+							<!-- Info for vertical menu, icons -->
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContent">
+								<param name="id">1600$SKINSHORTCUTS[id]2</param>
+								<param name="width">1740</param>
 							</include>
 						</control>
 					</control>
@@ -1840,6 +1856,7 @@
 						<param name="isThumb">$SKINSHORTCUTS[isthumb2]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay2]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset2]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content2]" condition="!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)">
@@ -1874,6 +1891,7 @@
 						<param name="isThumb">$SKINSHORTCUTS[isthumb2]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay2]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset2]</param>
 					</include>
 					
                     <content>
@@ -2200,6 +2218,9 @@
 		<property name="isAutoScroll" tag="property" attribute="name|widgetAutoScroll.3" value="none">false</property>
 		<property name="isAutoScroll">true</property>
 		
+		<property name="overlaylabelyoffset3" tag="property" attribute="name|widgetArtwork.3" value="Landscape">82r</property>
+		<property name="overlaylabelyoffset3">65r</property>
+		
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
@@ -2217,24 +2238,28 @@
 						<!-- Dark background for readability -->
 						<control type="image">
 						
-							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVert</include>
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVertIcon</include>
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVert</include>
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVertIcon</include>
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVertHideFocus</include>
 					        <include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoBackCoordsHorz</include>
 							
 							<texture colordiffuse="CFFFFFFF">img/list_shadow.png</texture>
 						</control>
 						<control type="group">
-						    <!-- Info for horizontal mennu -->
-							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
+						    <!-- Info for horizontal mennu or vertical menu when menu is hidden when widgets focused -->
+							<include condition="!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)]" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]3</param>
-								<param name="left">20</param>
 								<param name="width">1850</param>
 							</include>
 							<!-- Info for vertical menu, text -->
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]3</param>
-								<param name="left">20</param>
-								<param name="width">1700</param>
+								<param name="width">1420</param>
+							</include>
+							<!-- Info for vertical menu, icons -->
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContent">
+								<param name="id">1600$SKINSHORTCUTS[id]3</param>
+								<param name="width">1740</param>
 							</include>
 						</control>
 					</control>
@@ -2468,6 +2493,7 @@
 						<param name="isThumb">$SKINSHORTCUTS[isthumb3]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay3]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset3]</param>
 					</include>
 					
 					<include content="$SKINSHORTCUTS[content3]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)]">
@@ -2502,6 +2528,7 @@
 						<param name="isThumb">$SKINSHORTCUTS[isthumb3]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup3]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay3]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset3]</param>
 					</include>
                     
 					<content>
@@ -2965,6 +2992,9 @@
 		<property name="isAutoScroll" tag="property" attribute="name|widgetAutoScroll.4" value="none">false</property>
 		<property name="isAutoScroll">true</property>
 		
+		<property name="overlaylabelyoffset4" tag="property" attribute="name|widgetArtwork.4" value="Landscape">82r</property>
+		<property name="overlaylabelyoffset4">65r</property>
+		
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
@@ -2982,24 +3012,28 @@
 						<!-- Dark background for readability -->
 						<control type="image">
 						
-							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVert</include>
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVertIcon</include>
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVert</include>
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVertIcon</include>
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVertHideFocus</include>
 					        <include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoBackCoordsHorz</include>
 							
 							<texture colordiffuse="CFFFFFFF">img/list_shadow.png</texture>
 						</control>
 						<control type="group">
-						    <!-- Info for horizontal mennu -->
-							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
+						    <!-- Info for horizontal mennu or vertical menu when menu is hidden when widgets focused -->
+							<include condition="!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)]" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]4</param>
-								<param name="left">20</param>
 								<param name="width">1850</param>
 							</include>
 							<!-- Info for vertical menu, text -->
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]4</param>
-								<param name="left">20</param>
-								<param name="width">1700</param>
+								<param name="width">1420</param>
+							</include>
+							<!-- Info for vertical menu, icons -->
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContent">
+								<param name="id">1600$SKINSHORTCUTS[id]4</param>
+								<param name="width">1740</param>
 							</include>
 						</control>
 					</control>
@@ -3227,6 +3261,7 @@
 						<param name="isThumb">$SKINSHORTCUTS[isthumb4]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup4]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay4]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset4]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content4]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)]">
 						<param name="id1">1600$SKINSHORTCUTS[id]4</param>
@@ -3260,6 +3295,7 @@
 						<param name="isThumb">$SKINSHORTCUTS[isthumb4]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup4]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay4]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset4]</param>
 					</include>
                     <content>
 						<item>
@@ -3722,6 +3758,9 @@
 		<property name="isAutoScroll" tag="property" attribute="name|widgetAutoScroll.5" value="none">false</property>
 		<property name="isAutoScroll">true</property>
 		
+		<property name="overlaylabelyoffset5" tag="property" attribute="name|widgetArtwork.5" value="Landscape">82r</property>
+		<property name="overlaylabelyoffset5">65r</property>
+		
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
@@ -3739,24 +3778,28 @@
 						<!-- Dark background for readability -->
 						<control type="image">
 						
-							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVert</include>
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVertIcon</include>
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVert</include>
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVertIcon</include>
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVertHideFocus</include>
 					        <include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoBackCoordsHorz</include>
 							
 							<texture colordiffuse="CFFFFFFF">img/list_shadow.png</texture>
 						</control>
 						<control type="group">
-						    <!-- Info for horizontal mennu -->
-							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
+						    <!-- Info for horizontal mennu or vertical menu when menu is hidden when widgets focused -->
+							<include condition="!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)]" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]5</param>
-								<param name="left">20</param>
 								<param name="width">1850</param>
 							</include>
 							<!-- Info for vertical menu, text -->
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]5</param>
-								<param name="left">20</param>
-								<param name="width">1700</param>
+								<param name="width">1420</param>
+							</include>
+							<!-- Info for vertical menu, icons -->
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContent">
+								<param name="id">1600$SKINSHORTCUTS[id]5</param>
+								<param name="width">1740</param>
 							</include>
 						</control>
 					</control>
@@ -3984,6 +4027,7 @@
 						<param name="isThumb">$SKINSHORTCUTS[isthumb5]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup5]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay5]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset5]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content5]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)]">
 						<param name="id1">1600$SKINSHORTCUTS[id]5</param>
@@ -4017,6 +4061,7 @@
 						<param name="isThumb">$SKINSHORTCUTS[isthumb5]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup5]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay5]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset5]</param>
 					</include>
                     <content>
 						<item>
@@ -4480,6 +4525,9 @@
 		<property name="isAutoScroll" tag="property" attribute="name|widgetAutoScroll.6" value="none">false</property>
 		<property name="isAutoScroll">true</property>
 		
+		<property name="overlaylabelyoffset6" tag="property" attribute="name|widgetArtwork.6" value="Landscape">82r</property>
+		<property name="overlaylabelyoffset6">65r</property>
+		
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
@@ -4497,24 +4545,28 @@
 						<!-- Dark background for readability -->
 						<control type="image">
 						
-							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVert</include>
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)">ShelfInfoBackCoordsVertIcon</include>
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVert</include>
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVertIcon</include>
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfInfoBackCoordsVertHideFocus</include>
 					        <include condition="!Skin.HasSetting(VerticalHome)">ShelfInfoBackCoordsHorz</include>
 							
 							<texture colordiffuse="CFFFFFFF">img/list_shadow.png</texture>
 						</control>
 						<control type="group">
-						    <!-- Info for horizontal mennu -->
-							<include condition="[!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)]]" content="ShelfInfoContent">
+						    <!-- Info for horizontal mennu or vertical menu when menu is hidden when widgets focused -->
+							<include condition="!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)]" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]6</param>
-								<param name="left">20</param>
 								<param name="width">1850</param>
 							</include>
 							<!-- Info for vertical menu, text -->
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContent">
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContent">
 								<param name="id">1600$SKINSHORTCUTS[id]6</param>
-								<param name="left">20</param>
-								<param name="width">1700</param>
+								<param name="width">1420</param>
+							</include>
+							<!-- Info for vertical menu, icons -->
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContent">
+								<param name="id">1600$SKINSHORTCUTS[id]6</param>
+								<param name="width">1740</param>
 							</include>
 						</control>
 					</control>
@@ -4739,6 +4791,7 @@
 						<param name="isThumb">$SKINSHORTCUTS[isthumb6]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup6]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay6]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset6]</param>
 					</include>
 					<include content="$SKINSHORTCUTS[content6]" condition="[!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts)]">
 						<param name="id1">1600$SKINSHORTCUTS[id]6</param>
@@ -4772,6 +4825,7 @@
 						<param name="isThumb">$SKINSHORTCUTS[isthumb6]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup6]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay6]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset6]</param>
 					</include>
                     <content>
 						<item>
@@ -7213,6 +7267,9 @@
 		<property name="isAutoScroll" tag="property" attribute="name|widgetAutoScroll" value="none">false</property>
 		<property name="isAutoScroll">true</property>
 		
+		<property name="overlaylabelyoffset1" tag="property" attribute="name|widgetArtwork" value="Landscape">82r</property>
+		<property name="overlaylabelyoffset1">65r</property>
+		
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
@@ -7238,25 +7295,25 @@
 					<control type="group">
 						<animation effect="fade" end="0">WindowClose</animation>
 						<control type="group">
-						    <!-- Info for horizontal mennu -->
-							<include condition="!Skin.HasSetting(VerticalHome)" content="ShelfInfoContentTwoShelves">
+						    <!-- Info for horizontal mennu, or vertical menu when menu is hidden when widgets focused -->
+							<include condition="!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)]" content="ShelfInfoContentTwoShelves">
 								<param name="id">1600$SKINSHORTCUTS[id]1</param>
 								<param name="left">38</param>
 								<param name="width">1850</param>
 								<param name="isTopShelf">true</param>
 							</include>
 							<!-- Info for vertical menu, text -->
-							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContentTwoShelves">
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContentTwoShelves">
 								<param name="id">1600$SKINSHORTCUTS[id]1</param>
 								<param name="left">38</param>
 								<param name="width">1420</param>
 								<param name="isTopShelf">true</param>
 							</include>
 							<!-- Info for vertical menu, icons -->
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContentTwoShelves">
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContentTwoShelves">
 								<param name="id">1600$SKINSHORTCUTS[id]1</param>
 								<param name="left">38</param>
-								<param name="width">1700</param>
+								<param name="width">1730</param>
 								<param name="isTopShelf">true</param>
 							</include>
 						</control>
@@ -7373,6 +7430,7 @@
 						<param name="isThumb">$SKINSHORTCUTS[isthumb1]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup1]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay1]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset1]</param>
 					</include>
                     <content>
 						<item>
@@ -7559,6 +7617,9 @@
 		<property name="isAutoScroll" tag="property" attribute="name|widgetAutoScroll.2" value="none">false</property>
 		<property name="isAutoScroll">true</property>
 		
+		<property name="overlaylabelyoffset2" tag="property" attribute="name|widgetArtwork.2" value="Landscape">82r</property>
+		<property name="overlaylabelyoffset2">65r</property>
+		
 		<controls>
 			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
@@ -7574,24 +7635,24 @@
 						<animation effect="fade" end="0">WindowClose</animation>
 						<control type="group">
 						    <!-- Info for horizontal mennu -->
-							<include condition="!Skin.HasSetting(VerticalHome)" content="ShelfInfoContentTwoShelves">
+							<include condition="!Skin.HasSetting(VerticalHome) | [Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)]" content="ShelfInfoContentTwoShelves">
 								<param name="id">1600$SKINSHORTCUTS[id]2</param>
 								<param name="left">38</param>
 								<param name="width">1850</param>
 								<param name="isTopShelf">true</param>
 							</include>
 							<!-- Info for vertical menu, text -->
-							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContentTwoShelves">
+							<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContentTwoShelves">
 								<param name="id">1600$SKINSHORTCUTS[id]2</param>
 								<param name="left">38</param>
 								<param name="width">1420</param>
 								<param name="isTopShelf">true</param>
 							</include>
 							<!-- Info for vertical menu, icons -->
-							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly)" content="ShelfInfoContentTwoShelves">
+							<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)" content="ShelfInfoContentTwoShelves">
 								<param name="id">1600$SKINSHORTCUTS[id]2</param>
 								<param name="left">38</param>
-								<param name="width">1700</param>
+								<param name="width">1730</param>
 								<param name="isTopShelf">true</param>
 							</include>
 						</control>
@@ -7711,6 +7772,7 @@
                         <param name="isThumb">$SKINSHORTCUTS[isthumb2]</param>
 						<param name="doInfoPopup">$SKINSHORTCUTS[doInfoPopup2]</param>
 						<param name="widgetPopupDelay">$SKINSHORTCUTS[widgetPopupDelay2]</param>
+						<param name="overlaylabelyoffset">$SKINSHORTCUTS[overlaylabelyoffset2]</param>
 					</include>
                     <content>
 						<item>

@@ -2,7 +2,7 @@
 <includes>
 	
 	<variable name="ShelfInfoCast">
-	    <value>$VAR[ShelfInfoCast1]$VAR[ShelfInfoCast2]$VAR[ShelfInfoCast3]$VAR[ShelfInfoCast4]$VAR[ShelfInfoCast5]</value>
+	    <value>$VAR[ShelfInfoCast1]$VAR[ShelfInfoCast2]$VAR[ShelfInfoCast3]$VAR[ShelfInfoCast4]$VAR[ShelfInfoCast5]$VAR[ShelfInfoCast6]$VAR[ShelfInfoCast7]$VAR[ShelfInfoCast8]$VAR[ShelfInfoCast9]$VAR[ShelfInfoCast10]</value>
 	</variable>
 	
 	<variable name="ShelfInfoCast1">
@@ -34,9 +34,44 @@
 		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.4.Name))"></value>
 	</variable>
 	<variable name="ShelfInfoCast5">
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role)][/I]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)][/B]</value>
+	    <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role)][/I]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role)][/I]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)][/B]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name)][/B]</value>
 		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.5.Name))"></value>
+	</variable>
+	<variable name="ShelfInfoCast6">
+	    <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.6.Role)][/I]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.6.Role)][/I]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name)][/B]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name)][/B]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.6.Name))"></value>
+	</variable>
+	<variable name="ShelfInfoCast7">
+	    <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.8.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.7.Role)][/I]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.8.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.7.Role)][/I]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.8.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name)][/B]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.8.Name))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name)][/B]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.7.Name))"></value>
+	</variable>
+	<variable name="ShelfInfoCast8">
+	    <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.8.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.8.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.9.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.8.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.8.Role)][/I]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.8.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.8.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.9.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.8.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.8.Role)][/I]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.8.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.8.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.9.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.8.Name)][/B]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.8.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.8.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.9.Name))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.8.Name)][/B]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.8.Name))"></value>
+	</variable>
+	<variable name="ShelfInfoCast9">
+	    <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.9.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.9.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.10.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.9.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.9.Role)][/I]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.9.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.9.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.10.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.9.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.9.Role)][/I]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.9.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.9.Role)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.10.Name))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.9.Name)][/B]  / </value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.9.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.9.Role)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.10.Name))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.9.Name)][/B]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.9.Name))"></value>
+	</variable>
+	<variable name="ShelfInfoCast10">
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.10.Name)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.10.Role))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.10.Name)][/B] [LOWERCASE]$LOCALIZE[20347][/LOWERCASE] [I]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.10.Role)][/I]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.10.Name)) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.10.Role))">[B]$INFO[Window(Home).Property(TMDbHelper.ListItem.Cast.10.Name)][/B]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Cast.10.Name))"></value>
 	</variable>
 	
 	<variable name="ShelfInfoDetails">
@@ -56,10 +91,10 @@
 		<value condition="String.IsEqual(Container.ListItem.DBType,movie) + String.IsEmpty(Container.ListItem.RatingAndVotes) + !String.IsEmpty(Container.ListItem.Top250) + String.IsEmpty(Container.ListItem.Duration) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[Container.ListItem.Top250]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Container.ListItem.Year]</value>
 		<value condition="String.IsEqual(Container.ListItem.DBType,movie) + String.IsEmpty(Container.ListItem.RatingAndVotes) + String.IsEmpty(Container.ListItem.Top250) + String.IsEmpty(Container.ListItem.Duration) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Container.ListItem.Year]</value>
 		<value condition="String.IsEqual(Container.ListItem.DBType,movie) + String.IsEmpty(Container.ListItem.RatingAndVotes) + String.IsEmpty(Container.ListItem.Top250) + String.IsEmpty(Container.ListItem.Duration) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Container.ListItem.Year]</value>
-	    <value condition="String.IsEqual(Container.ListItem.DBType,episode) + !String.IsEmpty(Container.ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Container.ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDurationMins),, $LOCALIZE[12391]]</value>
-		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + !String.IsEmpty(Container.ListItem.Rating) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Container.ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]</value>
-		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + String.IsEmpty(Container.ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Container.ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDurationMins),, $LOCALIZE[12391]]</value>
-		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + String.IsEmpty(Container.ListItem.Rating) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Container.ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]</value>
+	    <value condition="String.IsEqual(Container.ListItem.DBType,episode) + !String.IsEmpty(Container.ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDurationMins),, $LOCALIZE[12391]]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[32294]: [/COLOR]$INFO[Container.ListItem.EndTime]</value>
+		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + !String.IsEmpty(Container.ListItem.Rating) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[32294]: [/COLOR]$INFO[Container.ListItem.EndTime]</value>
+		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + String.IsEmpty(Container.ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDurationMins),, $LOCALIZE[12391]]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[32294]: [/COLOR]$INFO[Container.ListItem.EndTime]</value>
+		<value condition="String.IsEqual(Container.ListItem.DBType,episode) + String.IsEmpty(Container.ListItem.Rating) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[WidgetItemDurationVar]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[32294]: [/COLOR]$INFO[Container.ListItem.EndTime]</value>
 	    <value condition="String.IsEqual(Container.ListItem.DBType,tvshow) + !String.IsEmpty(Container.ListItem.RatingAndVotes) + !String.IsEmpty(Container.ListItem.Premiered)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.RatingAndVotes]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Container.ListItem.Premiered]</value>
 		<value condition="String.IsEqual(Container.ListItem.DBType,tvshow) + !String.IsEmpty(Container.ListItem.RatingAndVotes) + String.IsEmpty(Container.ListItem.Premiered)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[Container.ListItem.RatingAndVotes]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[562]: [/COLOR]$INFO[Container.ListItem.Year]</value>
 		<value condition="String.IsEqual(Container.ListItem.DBType,tvshow) + String.IsEmpty(Container.ListItem.RatingAndVotes) + !String.IsEmpty(Container.ListItem.Premiered)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[Container.ListItem.Premiered]</value>
@@ -74,6 +109,11 @@
 	
 	<variable name="ShelfInfoTVShowDetails">
 	    <value>[COLOR=$VAR[HighlightColor]]$LOCALIZE[33054]: [/COLOR]$VAR[ShelfInfoTotalSeasons]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[20360]: [/COLOR]$VAR[ShelfInfoTotalEpisodes]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[16101]: [/COLOR]$INFO[Container.ListItem.Property(UnwatchedEpisodes)]</value>
+	</variable>
+	
+	<variable name="ShelfInfoNextAiredDetails">
+	    <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name))">[COLOR=$VAR[HighlightColor]]$LOCALIZE[32459]: [/COLOR]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired)] - $VAR[ShelfInfoNextAiredSeasonEpisodeLabel] - $INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name)]</value>
+		<value condition="String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Name))">[COLOR=$VAR[HighlightColor]]$LOCALIZE[32459]: [/COLOR]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired)] - $VAR[ShelfInfoNextAiredSeasonEpisodeLabel]</value>
 	</variable>
 	
 	<variable name="ShelfInfoStudios">
@@ -163,6 +203,13 @@
         <value condition="!Integer.IsLess(Container.ListItem.Episode,10) + !Integer.IsLess(Container.ListItem.Season,10)">$INFO[Container.ListItem.Season,s,]$INFO[Container.ListItem.Episode,e,]</value>
     </variable>
 	
+	<variable name="ShelfInfoNextAiredSeasonEpisodeLabel">
+        <value condition="Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),10) + Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),10)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),s0,]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),e0,]</value>
+        <value condition="Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),10) + !Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),10)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),s,]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),e0,]</value>
+        <value condition="!Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),10) + Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),10)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),s0,]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),e,]</value>
+        <value condition="!Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),10) + !Integer.IsLess(Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),10)">$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Season),s,]$INFO[Window(Home).Property(TMDbHelper.ListItem.Next_Aired.Episode),e,]</value>
+    </variable>
+	
 	<variable name="ShelfInfoSeasonsLabel">
 		<value condition="String.IsEqual(Container.ListItem.Property(TotalSeasons),1) | String.IsEqual(Container.ListItem.Season,1)">$LOCALIZE[20373]</value>
 		<value>$LOCALIZE[33054]</value>
@@ -216,12 +263,17 @@
 	<include name="ShelfInfoBackCoordsVert">
 	    <top>-60</top>
 		<height>670</height>
-		<width>1460</width>
+		<width>1500</width>
 	</include>
 	<include name="ShelfInfoBackCoordsVertIcon">
 	    <top>-60</top>
 		<height>650</height>
-		<width>1760</width>
+		<width>1800</width>
+	</include>
+	<include name="ShelfInfoBackCoordsVertHideFocus">
+	    <top>-60</top>
+		<height>650</height>
+		<width>1920</width>
 	</include>
 	<include name="ShelfInfoBackCoordsHorz">
 	    <top>-30</top>
@@ -332,7 +384,7 @@
 	
 	<include name="ShelfInfoContent">
 	    <param name="id"></param>
-		<param name="left"></param>
+		<param name="left">20</param>
 		<param name="width"></param>
 		<definition>
 		<control type="grouplist">
@@ -391,7 +443,7 @@
 			<control type="label">
 				<width>$PARAM[width]</width>
 				<height>45</height>
-				<font>font20_title</font>
+				<font>font12_title</font>
 				<label>[I]$INFO[Container.ListItem.AddonSummary][/I]</label>
 				<visible>!String.IsEmpty(Container.ListItem.AddonName) + !String.IsEmpty(Container.ListItem.AddonSummary)</visible>
 				<scroll>true</scroll>
@@ -573,7 +625,7 @@
 				<font>font12_title</font>
 				<label>$VAR[ShelfInfoCast]</label>
 				<visible>!String.IsEmpty(Window(home).Property(TMDbHelper.ListItem.Cast.1.Name)) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,episode)]</visible>
-				<scroll>false</scroll>
+				<scroll>true</scroll>
 			</control>
 			<!-- Details line -->
 			<control type="label">
@@ -797,7 +849,7 @@
 				    <height>10</height>
 				    <font>font12_title</font>
 				    <label></label>
-				    <visible>!String.IsEmpty(Container.ListItem.Title) + [String.IsEqual(Container.ListItem.DBType,episode) | String.IsEqual(Container.ListItem.DBType,song) | String.IsEqual(Container.ListItem.DBType,musicvideo)]</visible>
+				    <visible>!String.IsEmpty(Container.ListItem.Title)</visible>
 			    </control>
 			    <!-- Episode title and number -->
 				<control type="label">
@@ -814,7 +866,7 @@
 				    <font>font24_title</font>
 				    <label>$INFO[Container.ListItem.Title]</label>
 					<textcolor>$VAR[HighlightColor]</textcolor>
-				    <visible>!String.IsEmpty(Container.ListItem.Title) + [String.IsEqual(Container.ListItem.DBType,song) | String.IsEqual(Container.ListItem.DBType,musicvideo)]</visible>
+				    <visible>!String.IsEmpty(Container.ListItem.Title) + !String.IsEqual(Container.ListItem.DBType,episode)</visible>
 			    </control>
 				<!-- Spacer -->
 			    <control type="label">
@@ -853,7 +905,7 @@
 			    <control type="label">
 				    <width>$PARAM[width]</width>
 				    <height>45</height>
-				    <font>font20_title</font>
+				    <font>font12_title</font>
 				    <label>[I]$INFO[Container.ListItem.AddonSummary][/I]</label>
 				    <visible>!String.IsEmpty(Container.ListItem.AddonName) + !String.IsEmpty(Container.ListItem.AddonSummary)</visible>
 				    <scroll>true</scroll>
@@ -919,9 +971,19 @@
 			    <control type="label">
 				    <width>$PARAM[width]</width>
 				    <height>30</height>
+				    <font>font12_title</font>
+				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Container.ListItem.Genre]</label>
+				    <visible>!String.IsEmpty(Container.ListItem.Genre) + ![String.IsEqual(Container.ListItem.DBType,episode) | String.IsEqual(Container.ListItem.DBType,artist) | String.IsEqual(Container.ListItem.DBType,album) | String.IsEqual(Container.ListItem.DBType,song)]</visible>
+				    <scroll>true</scroll>
+			    </control>
+				
+				<!-- Video Genre -->
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>30</height>
 				    <font>font13_title</font>
 				    <label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Container.ListItem.Genre]</label>
-				    <visible>!String.IsEmpty(Container.ListItem.Genre) + ![String.IsEqual(Container.ListItem.DBType,artist) | String.IsEqual(Container.ListItem.DBType,album) | String.IsEqual(Container.ListItem.DBType,song)]</visible>
+				    <visible>!String.IsEmpty(Container.ListItem.Genre) + String.IsEqual(Container.ListItem.DBType,episode) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</visible>
 				    <scroll>true</scroll>
 			    </control>
 				
@@ -995,17 +1057,27 @@
 				    <font>font12_title</font>
 				    <label>$VAR[ShelfInfoCast]</label>
 				    <visible>!String.IsEmpty(Window(home).Property(TMDbHelper.ListItem.Cast.1.Name)) + [String.IsEqual(Container.ListItem.DBType,movie) | String.IsEqual(Container.ListItem.DBType,episode)]</visible>
-				    <scroll>false</scroll>
+				    <scroll>true</scroll>
 			    </control>
 			
 			    <!-- Details line -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
 				    <height>40</height>
-				    <font>font13_title</font>
+				    <font>font12_title</font>
 				    <label>$VAR[ShelfInfoDetails]</label>
 				    <visible>![String.IsEqual(Container.ListItem.DBType,artist) | String.IsEqual(Container.ListItem.DBType,album) | String.Contains(Container.ListItem.FolderPath,type=person)]</visible>
 			    </control>
+				
+				<!-- Next Aired -->
+			    <control type="label">
+				    <width>$PARAM[width]</width>
+				    <height>40</height>
+				    <font>font13_title</font>
+				    <label>$VAR[ShelfInfoNextAiredDetails]</label>
+				    <visible>String.IsEqual(Container.ListItem.DBType,episode) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired))</visible>
+			    </control>
+				
 			    <!-- Additional line for tv shows -->
 			    <control type="label">
 				    <width>$PARAM[width]</width>
@@ -1033,7 +1105,7 @@
 			    </control>
 			    <control type="textbox">
 				    <width>auto</width>
-        			<height>162</height>
+        			<height>126</height>
 		    		<font>InfoPlot</font>
 			    	<align>justify</align>
 				    <label>$VAR[ShelfInfoPlot]</label>

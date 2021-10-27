@@ -1503,7 +1503,7 @@
                 <!-- Normal overlay, regular icons -->
 				<control type="group">
 				    <visible>![$PARAM[isSmallIcon]] + ![$PARAM[isSearch]]</visible>
-					<visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !ListItem.IsResumable</visible>
+					<visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !ListItem.IsResumable + !ListItem.IsCollection</visible>
 					<control type="image">
 				        <visible>!$PARAM[isFocused] + ![$PARAM[isWideIcon]]</visible>
 				        <texture background="true">$VAR[TopRightOverlay]</texture>
@@ -1543,7 +1543,7 @@
                 <!-- Normal overlay for small icons -->
 				<control type="group">
 				    <visible>$PARAM[isSmallIcon] + ![$PARAM[isSearch]]</visible>
-					<visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !ListItem.IsResumable</visible>
+					<visible>!Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0) + !ListItem.IsResumable + !ListItem.IsCollection</visible>
 					<!-- regular icons, media views -->
 					<control type="group">
 					    <visible>![$PARAM[isWideIcon]] + !String.IsEmpty(Container.Viewmode)</visible>
@@ -1596,7 +1596,7 @@
 				                <visible>!$PARAM[isFocused]</visible>
 				                <texture background="true">$VAR[TopRightOverlay]</texture>
 				                <posx>102r</posx>
-				                <posy>22</posy>
+				                <posy>30</posy>
 				                <height>82</height>
 				                <width>82</width>
 				                <aspectratio>keep</aspectratio>
@@ -1605,7 +1605,7 @@
 				                <visible>$PARAM[isFocused]</visible>
 				                <texture background="true">$VAR[TopRightOverlay]</texture>
 				                <posx>102r</posx>
-				                <posy>22</posy>
+				                <posy>30</posy>
 				                <height>82</height>
 				                <width>82</width>
 				                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
