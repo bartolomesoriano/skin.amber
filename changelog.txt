@@ -1,3 +1,7 @@
+3.2.151 (28-10-2021)
+- Shelf Info for 2 shelves together
+- Episodes List button in OSD
+- Misc. fixes
 3.2.150 (17-10-2021)
 - Show Info for shelf items
 - Search movies by tag
