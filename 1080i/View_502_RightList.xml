@@ -1637,9 +1637,10 @@
 					        <font>ListDetailsSmall</font>
 				        </control>
 				        <control type="image">
-					        <left>64</left>
-					        <height>80</height>
-				            <width>145</width>
+					        <top>20</top>
+							<left>89</left>
+					        <height>70</height>
+				            <width>90</width>
 				            <bordersize>3</bordersize>
 				            <aspectratio align="center" aligny="center">keep</aspectratio>
 					        <texture background="true">$VAR[RightListNextAiredStatusImage]</texture>

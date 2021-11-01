@@ -310,7 +310,6 @@
         <onfocus condition="Skin.String(OSDTimeout,twenty)">AlarmClock(osd_timeout,SetFocus(99220),00:20,silent)</onfocus>
         <onfocus condition="Skin.String(OSDTimeout,thirty)">AlarmClock(osd_timeout,SetFocus(99220),00:30,silent)</onfocus>
         <onfocus condition="Skin.String(OSDTimeout,oneminute)">AlarmClock(osd_timeout,SetFocus(99220),01:00,silent)</onfocus>
-        <onunfocus>CancelAlarm(osd_timeout,true)</onunfocus>
     </include>
 	
 	<include name="ButtonGroup1Standard">
@@ -658,11 +657,12 @@
 		    </include>
 		    <onup condition="!Skin.HasSetting(SubtitleOpensSettings)">1110</onup>
 		    <onfocus>ClearProperty(PopupMenuActive,Home)</onfocus>
-            <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
+			<onclick condition="Skin.HasSetting(SubtitleOpensSettings)">SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
 			<onclick condition="Skin.HasSetting(SubtitleOpensSettings)">ActivateWindow(osdsubtitlesettings)</onclick>
 		    <onclick condition="!Skin.HasSetting(SubtitleOpensSettings)">SetProperty(PopupMenuActive,Yes,Home)</onclick>
 			<onclick condition="!Skin.HasSetting(SubtitleOpensSettings)">SetFocus(1110)</onclick>
-		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 			<visible>Window.IsVisible(VideoOSD)</visible>
 		</control>
 		<!-- PVR OSD Channels -->
@@ -694,6 +694,7 @@
 		    </include>
 			<onclick>SetProperty(PlayerTVShowID,$INFO[Container(43261).ListItem.DBID],home)</onclick>
 			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
+			<onclick>SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
 			<onclick>ActivateWindow(1145)</onclick>
 		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</visible>
 		    <visible>Skin.HasSetting(ShowEpisodeList)</visible>
@@ -707,7 +708,7 @@
 		    </include>
 			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 			<onclick>Dialog.Close(VideoOSD)</onclick>
-		    <onclick>ActivateWindow(Teletext)</onclick>
+			<onclick>ActivateWindow(Teletext)</onclick>
 		    <visible>VideoPlayer.Content(livetv)</visible>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
@@ -717,6 +718,7 @@
 			    <param name="icon">OSD/OSDBookmarksNF.png</param>
 		    </include>
 			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
+			<onclick>SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
 			<onclick>ActivateWindow(VideoBookmarks)</onclick>
 		    <visible>!VideoPlayer.Content(livetv)</visible>
 			<visible>Window.IsVisible(VideoOSD)</visible>
@@ -746,6 +748,7 @@
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 			<onfocus>ClearProperty(PopupMenu2Active,Home)</onfocus>
 			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
+			<onclick>SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
 			<onclick>SetProperty(PopupMenu2Active,Yes,Home)</onclick>
 		    <onclick>SetFocus(1010)</onclick>
 		</control>
@@ -787,7 +790,8 @@
             <texturenofocus>OSD/compact/subs.png</texturenofocus>
 		    <onup condition="!Skin.HasSetting(SubtitleOpensSettings)">1110</onup>
 		    <onfocus>ClearProperty(PopupMenuActive,Home)</onfocus>
-		    <onclick condition="Skin.HasSetting(SubtitleOpensSettings)">ActivateWindow(osdsubtitlesettings)</onclick>
+		    <onclick condition="Skin.HasSetting(SubtitleOpensSettings)">SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
+			<onclick condition="Skin.HasSetting(SubtitleOpensSettings)">ActivateWindow(osdsubtitlesettings)</onclick>
 		    <onclick condition="!Skin.HasSetting(SubtitleOpensSettings)">SetProperty(PopupMenuActive,Yes,Home)</onclick>
 		    <onclick condition="!Skin.HasSetting(SubtitleOpensSettings)">SetFocus(1110)</onclick>
 		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
@@ -833,6 +837,7 @@
             <texturenofocus>OSD/compact/playlist.png</texturenofocus>
 		    <onclick>SetProperty(PlayerTVShowID,$INFO[Container(43261).ListItem.DBID],home)</onclick>
 			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
+			<onclick>SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
 			<onclick>ActivateWindow(1145)</onclick>
 		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</visible>
 		    <visible>Skin.HasSetting(ShowEpisodeList)</visible>
@@ -863,7 +868,8 @@
             <font/>
             <texturefocus colordiffuse="$VAR[HighlightColor]">OSD/compact/bookmarks.png</texturefocus>
             <texturenofocus>OSD/compact/bookmarks.png</texturenofocus>
-		    <onclick>ActivateWindow(VideoBookmarks)</onclick>
+		    <onclick>SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
+			<onclick>ActivateWindow(VideoBookmarks)</onclick>
 		    <visible>!VideoPlayer.Content(livetv) + Window.IsVisible(VideoOSD)</visible>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
@@ -898,7 +904,8 @@
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		    <onfocus>ClearProperty(PopupMenu2Active,Home)</onfocus>
 		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
-		    <onclick>SetProperty(PopupMenu2Active,Yes,Home)</onclick>
+		    <onclick>SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
+			<onclick>SetProperty(PopupMenu2Active,Yes,Home)</onclick>
 		    <onclick>SetFocus(1010)</onclick>
 		</control>
 	</include>

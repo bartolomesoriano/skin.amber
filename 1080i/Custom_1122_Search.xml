@@ -396,7 +396,7 @@
 			         !Control.IsVisible(108) + !Control.IsVisible(109) + !Control.IsVisible(110) + !Control.IsVisible(111) + !Control.IsVisible(112) + !Control.IsVisible(113) + !Control.IsVisible(114) + 
 					 !Control.IsVisible(115) + !Control.IsVisible(116) + !Control.IsVisible(117) + !Control.IsVisible(118) + !Control.IsVisible(119) + !Control.IsVisible(120) + !Control.IsVisible(121) + 
 					 !Control.IsVisible(122) + !Control.IsVisible(123) + !Control.IsVisible(124) + !Control.IsVisible(125) + !Control.IsVisible(126) + !Control.IsVisible(127) + !Control.IsVisible(128) + 
-					 !Control.IsVisible(129)</visible>
+					 !Control.IsVisible(129) + !Control.IsVisible(130)</visible>
 			<width>100%</width>
 			<height>420</height>
 			<control type="label">

@@ -172,7 +172,7 @@
                 <height>$PARAM[overlayheight]</height>
                 <texture border="0,30,0,0">OSD/FS_OSDBackground.png</texture> 
                 <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
-            <!--     <colordiffuse>8FFFFFFF</colordiffuse> -->
+<!--                 <colordiffuse>8FFFFFFF</colordiffuse> -->
             </control>
         </definition>
     </include>
@@ -1448,7 +1448,7 @@
                     <include>ContentFade</include>
                     <width>$PARAM[width]</width>
                     <height>$PARAM[flagitemheight]</height>
-                    <itemgap>0</itemgap>
+                    <itemgap>10</itemgap>
                     <orientation>horizontal</orientation>
                     <align>left</align>
                     <include condition="Skin.HasSetting(Show.ColorRangeFlags)" content="MediaFlagItems">
@@ -3087,7 +3087,6 @@
 	    <onunfocus condition="!Skin.HasSetting(VerticalHome)+ String.IsEqual(Container(211).ListItem.Property(widgetThreeShelvesLarge),true)">SetProperty(customProperty,widgetThreeShelvesLarge)</onunfocus>
 		<onunfocus condition="!Skin.HasSetting(VerticalHome)+ String.IsEqual(Container(211).ListItem.Property(widgetThreeShelvesLarge),true)">SetProperty(customValue,false)</onunfocus>
 		<onunfocus condition="!Skin.HasSetting(VerticalHome)+ String.IsEqual(Container(211).ListItem.Property(widgetThreeShelvesLarge),true)">SendClick(404)</onunfocus>
-    </include>	
+    </include>
 	
-
 </includes>

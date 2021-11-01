@@ -5,6 +5,10 @@
     <include>DialogOpenClose</include>
 	<onunload condition="Player.Paused">PlayerControl(Play)</onunload>
 	<onunload>ClearProperty(PlayerTVShowID,home)</onunload>
+	<!-- Needed to auto close the video osd after any settings dialog is closed -->
+	<onunload condition="!String.IsEmpty(Window(home).Property(ShowingOSDSettings))">ActivateWindow(1196)</onunload>
+	<onunload condition="!String.IsEmpty(Window(home).Property(ShowingOSDSettings))">ClearProperty(ShowingOSDSettings,home)</onunload>
+	
 	<controls>
 	
 		<control type="button">

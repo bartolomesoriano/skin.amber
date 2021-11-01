@@ -165,7 +165,7 @@
 				        <visible>!Skin.HasSetting(enable.bottomseekbar)</visible>
 			        </control>
 			    </control>
-			</control>	
+			</control>
 			
 			<!-- Media Details -->
 			<control type="group" id="26">
@@ -220,19 +220,19 @@
 			
 			<!-- Media Flags -->
 			<control type="group" id="1">
-			    <posx>850</posx>
-				<width>480</width>
+			    <posx>800</posx>
+				<width>578</width>
 <!--			    <visible>!Skin.HasSetting(OSDInfo)</visible> -->
 			    <control type="grouplist" id="3">
 				    <visible>!Skin.HasSetting(Show.ColorRangeFlags) | ![String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)]</visible>
 				    <top>20</top>
 				    <orientation>horizontal</orientation>
-				    <height>65</height>
-					<itemgap>15</itemgap>
+				    <height>80</height>
+					<itemgap>10</itemgap>
 				    <align>right</align>
 				    <include content="PlayerMediaFlagItems">
-					    <param name="itemheight" value="65"/>
-     				    <param name="itemwidth" value="70"/>
+					    <param name="itemheight" value="80"/>
+     				    <param name="itemwidth" value="90"/>
 					    <param name="diffuse">$VAR[LabelTextColor]</param>
 				    </include>
 			    </control>
@@ -240,12 +240,12 @@
 				    <visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Player.Filename,hdr) | String.Contains(Player.Filename,sdr)] + !Skin.HasSetting(coloredflags)</visible>
 				    <top>30</top>
 				    <orientation>horizontal</orientation>
-				    <height>65</height>
-					<itemgap>5</itemgap>
+				    <height>72</height>
+					<itemgap>10</itemgap>
 				    <align>right</align>
 				    <include content="PlayerMediaFlagItems">
-					    <param name="itemheight" value="65"/>
-     				    <param name="itemwidth" value="70"/>
+					    <param name="itemheight" value="72"/>
+     				    <param name="itemwidth" value="74"/>
 					    <param name="diffuse">$VAR[LabelTextColor]</param>
 				    </include>
 			    </control>
@@ -254,11 +254,11 @@
 				    <top>30</top>
 				    <orientation>horizontal</orientation>
 				    <height>65</height>
-					<itemgap>5</itemgap>
+					<itemgap>10</itemgap>
 				    <align>right</align>
 				    <include content="PlayerMediaFlagItems">
-					    <param name="itemheight" value="65"/>
-     				    <param name="itemwidth" value="70"/>
+					    <param name="itemheight" value="72"/>
+     				    <param name="itemwidth" value="74"/>
 					    <param name="diffuse">$VAR[LabelTextColor]</param>
 				    </include>
 			    </control>
@@ -357,7 +357,7 @@
 		
 		
 		<!-- Art: Poster/Thumb/Icon for Compact and Ultra Compact OSD -->			
-			<control type="group" id="1">
+<!--			<control type="group" id="1">
 				<visible>$EXP[showPosterOSD] + Window.IsVisible(VideoOSD)</visible>
 			    <control type="group" id="1">
 			        <visible>!Skin.HasSetting(OSDInfo) + Skin.HasSetting(UseCompactOSD)</visible>
@@ -399,7 +399,7 @@
 			            <aspectratio align="center" aligny="bottom">keep</aspectratio>
 			        </control>
 			    </control>
-			</control>
+			</control> -->
 		
 		
 		<!-- Art: ClearLogo, ClearArt, CharacterArt or DiscArt -->

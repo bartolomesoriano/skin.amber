@@ -1,0 +1,14 @@
+<window id="1196" type="dialog"> 
+	
+	<onload condition="System.HasAlarm(osd_timeout2)">CancelAlarm(osd_timeout2)</onload>
+	<onload condition="String.IsEmpty(Skin.String(OSDTimeout))">AlarmClock(osd_timeout2,Dialog.Close(all,true),00:05,silent)</onload>
+	<onload condition="Skin.String(OSDTimeout,three)">AlarmClock(osd_timeout2,Dialog.Close(all,true),00:03,silent)</onload>
+    <onload condition="Skin.String(OSDTimeout,five)">AlarmClock(osd_timeout2,Dialog.Close(all,true),00:05,silent)</onload>
+    <onload condition="Skin.String(OSDTimeout,ten)">AlarmClock(osd_timeout2,Dialog.Close(all,true),00:10,silent)</onload>
+    <onload condition="Skin.String(OSDTimeout,fifteen)">AlarmClock(osd_timeout2,Dialog.Close(all,true),00:15,silent)</onload>
+    <onload condition="Skin.String(OSDTimeout,twenty)">AlarmClock(osd_timeout2,Dialog.Close(all,true),00:20,silent)</onload>
+    <onload condition="Skin.String(OSDTimeout,thirty)">AlarmClock(osd_timeout2,Dialog.Close(all,true),00:30,silent)</onload>
+    <onload condition="Skin.String(OSDTimeout,oneminute)">AlarmClock(osd_timeout2,Dialog.Close(all,true),01:00,silent)</onload>
+    
+	<controls />
+</window>
