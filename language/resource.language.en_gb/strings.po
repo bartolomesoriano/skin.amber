@@ -3719,3 +3719,7 @@ msgstr ""
 msgctxt "#32459"
 msgid "Next Aired"
 msgstr ""
+
+msgctxt "#32460"
+msgid "Enable Direct Seeking in Full Screen Info"
+msgstr ""

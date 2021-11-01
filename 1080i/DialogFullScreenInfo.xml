@@ -4,6 +4,9 @@
 	<onload>ClearProperty(BringDownSeekBar,Home)</onload>
 	<!-- If seek bar is visible and supposed to be at bottom, set a window prop to bring it down when this window unloads -->
 	<onunload condition="Window.IsVisible(DialogSeekBar.xml) + Skin.HasSetting(enable.bottomseekbar)">SetProperty(BringDownSeekBar,true,Home)</onunload>
+	
+	<include condition="!Skin.HasSetting(DirectSeekInInfo)">FullScreenInfoDefaultCtrl</include>
+	
 	<include>OSDFade</include>
 	<controls>
 		<control type="group">
@@ -70,6 +73,9 @@
 							<param name="diffuse">$VAR[LabelTextColor]</param>
 						</include>
 					</control>
+					
+					<include condition="!Skin.HasSetting(DirectSeekInInfo)">FullScreenInfoButtons</include>
+					
 				</control>
 			</control>
 		</control>

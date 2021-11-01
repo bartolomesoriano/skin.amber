@@ -30,51 +30,6 @@
         <value  condition="String.IsEmpty(Visualisation.Name)">$LOCALIZE[16018]</value>
     </variable>
 
-
-    <variable name="DialogFullScreenPlot">
-        <value condition="Window.IsActive(custom_1123_pausedoverlay.xml) + !String.IsEmpty(VideoPlayer.Plot)">$INFO[VideoPlayer.Plot]</value>
-        <value condition="Window.IsActive(custom_1123_pausedoverlay.xml) + !String.IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
-        <value condition="!String.IsEmpty(VideoPlayer.Plot)">$INFO[VideoPlayer.Plot]</value>
-        <value condition="!String.IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
-        <value condition="Videoplayer.content(livetv) + !String.IsEmpty(VideoPlayer.NextPlot)">$INFO[VideoPlayer.NextPlot]</value>
-        <value condition="Videoplayer.content(livetv) + !String.IsEmpty(VideoPlayer.NextPlotOutline)">$INFO[VideoPlayer.NextPlotOutline]</value>
-<!--        <value condition="Control.HasFocus(603)">$INFO[VideoPlayer.CastAndRole]</value>
-        <value condition="Control.HasFocus(604)">$INFO[PVR.ActStreamClient,[B]$LOCALIZE[19012]:[/B] ][CR]$INFO[PVR.ActStreamSignal,[B]$LOCALIZE[19008]:[/B] ][CR]$INFO[PVR.ActStreamSNR,[B]$LOCALIZE[19009]:[/B] ]</value> -->
-    </variable>
-
-    <variable name="DialogFullScreenBtn601">
-        <value condition="Videoplayer.Content(livetv)">$LOCALIZE[19030]</value>
-        <value>$LOCALIZE[207]</value>
-    </variable>
-
-    <variable name="FullScreenTitle">
-        <value condition="Player.HasAudio">$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album,, - ]$INFO[MusicPlayer.TrackNumber,,: ][B]$INFO[Player.Title][/B]</value>
-		<value condition="VideoPlayer.Content(Movies)">$INFO[VideoPlayer.Title,[B],[/B]]$INFO[VideoPlayer.Year, (,)]</value>
-        <value condition="VideoPlayer.Content(livetv) + Control.HasFocus(601)" >$INFO[VideoPlayer.Title,$LOCALIZE[19030]: ]</value>
-        <value condition="VideoPlayer.Content(livetv) + Control.HasFocus(602)" >$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031]: ]</value>
-        <value condition="VideoPlayer.Content(Episodes)">[B]$INFO[VideoPlayer.TVShowTitle][/B][COLOR=$VAR[HighlightColor]]  •  [/COLOR]$INFO[VideoPlayer.Season,$LOCALIZE[31954],]$INFO[VideoPlayer.Episode,$LOCALIZE[31973],][COLOR=$VAR[HighlightColor]]  •  [/COLOR][B]$INFO[VideoPlayer.Title][/B]</value>
-        <value condition="VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</value>
-        <value>$INFO[VideoPlayer.Title,[B],[/B]]</value>
-    </variable>
-
-    <variable name="VideoFullScreenPlot">
-        <value condition="!String.IsEmpty(VideoPlayer.Plot)">$INFO[VideoPlayer.Plot]</value>
-        <value condition="!String.IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
-    </variable>
-
-    <variable name="VideoTopHeading">
-        <value condition="VideoPlayer.Content(Movies)">$INFO[VideoPlayer.Studio]</value>
-        <value condition="VideoPlayer.Content(Episodes)">$INFO[VideoPlayer.TVShowTitle]</value>
-        <value condition="VideoPlayer.Content(MusicVideos)">$INFO[VideoPlayer.Artist] $INFO[VideoPlayer.Album, - ]</value>
-        <value condition="VideoPlayer.Content(livetv)">[COLOR=$VAR[HighlightColor]]$INFO[VideoPlayer.ChannelNumberLabel][/COLOR] $INFO[VideoPlayer.ChannelName,  •  ,]$INFO[VideoPlayer.ChannelGroup,  •  (,)]</value>
-    </variable>
-
-    <variable name="VideoBottomHeading">
-        <value condition="VideoPlayer.Content(Movies)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20339]:[/COLOR] $INFO[VideoPlayer.Director]</value>
-        <value condition="VideoPlayer.Content(Episodes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20373]:[/COLOR] $INFO[VideoPlayer.Season] • [COLOR=$VAR[HighlightColor]]$LOCALIZE[20359]:[/COLOR] $INFO[VideoPlayer.Episode]</value>
-        <value condition="VideoPlayer.Content(livetv)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[19031]:[/COLOR] $INFO[VideoPlayer.NextTitle]</value>
-    </variable>
-
     <variable name="PlaylistHeader" description="Header for MyPlaylist window">
         <value condition="Window.IsActive(videoplaylist)">$LOCALIZE[10522]</value>
         <value condition="Window.IsActive(musicplaylist)">$LOCALIZE[10517]</value>
@@ -89,20 +44,6 @@
     <variable name="PVRChannelsOSDHeader" description="Header for PVRChannelsOSD dialog">
         <value condition="!pvr.IsPlayingRadio">$LOCALIZE[19023] • $INFO[VideoPlayer.ChannelGroup]</value>
         <value condition="pvr.IsPlayingRadio">$LOCALIZE[19024] • $INFO[MusicPlayer.ChannelGroup]</value>
-    </variable>
-
-    <variable name="VideoPlayerTitle">
-        <value condition="Player.HasAudio">[B]$INFO[MusicPlayer.TrackNumber,,: ]$INFO[Player.Title][/B]</value>
-		<value condition="VideoPlayer.Content(Movies) + !Skin.HasSetting(UseCompactOSD)">$INFO[VideoPlayer.Title,[B],[/B]]$INFO[VideoPlayer.Year, (,)]</value>
-        <value>$INFO[VideoPlayer.Title,[B],[/B]]</value>
-    </variable>
-	
-	<variable name="VideoPlayerSecondLine">
-        <value condition="Player.HasAudio">$INFO[MusicPlayer.Artist][COLOR=$VAR[HighlightColor]]  •  [/COLOR]$INFO[MusicPlayer.Album][COLOR=$VAR[HighlightColor]]  •  [/COLOR]$INFO[MusicPlayer.Year]</value>
-		<value condition="VideoPlayer.Content(Movies) + !String.IsEmpty(VideoPlayer.MPAA)">$INFO[VideoPlayer.Year][COLOR=$VAR[HighlightColor]]  •  [/COLOR]$INFO[VideoPlayer.MPAA]</value>
-		<value condition="VideoPlayer.Content(Movies) + String.IsEmpty(VideoPlayer.MPAA)">$INFO[VideoPlayer.Year]</value>
-        <value condition="VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.Premiered)">$INFO[VideoPlayer.TVShowtitle][COLOR=$VAR[HighlightColor]]  •  [/COLOR]S$INFO[VideoPlayer.Season]E$INFO[VideoPlayer.Episode][COLOR=$VAR[HighlightColor]]  •  [/COLOR]$INFO[VideoPlayer.Premiered]</value>
-		<value condition="VideoPlayer.Content(episodes) + String.IsEmpty(VideoPlayer.Premiered)">$INFO[VideoPlayer.TVShowtitle][COLOR=$VAR[HighlightColor]]  •  [/COLOR]S$INFO[VideoPlayer.Season]E$INFO[VideoPlayer.Episode]</value>
     </variable>
 
     <variable name="MusicInfoHeader" description="Header for MusicInfo window">
@@ -686,8 +627,8 @@
 		
 		<value condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRTimers.xml)] + !ListItem.HasEpg + String.IsEmpty(ListItem.Season)">$INFO[Listitem.Title] $INFO[ListItem.Year,(,)]</value>
 		<value condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRTimers.xml)] + ListItem.HasEpg + String.IsEmpty(ListItem.Season)">$INFO[Listitem.EpgEventTitle] $INFO[ListItem.Year,(,)]</value>
-		<value condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRTimers.xml)] + !ListItem.HasEpg + !String.IsEmpty(ListItem.Season)">$INFO[Listitem.Title] $INFO[ListItem.Year,(,)][CR][COLOR=Grey][I]$VAR[PVRSeasonEpisodeLabel]$INFO[ListItem.EpisodeName][/I][/COLOR]</value>
-		<value condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRTimers.xml)] + ListItem.HasEpg + !String.IsEmpty(ListItem.Season)">$INFO[Listitem.EpgEventTitle] $INFO[ListItem.Year,(,)][CR][COLOR=Grey][I]$VAR[PVRSeasonEpisodeLabel]$INFO[ListItem.EpisodeName][/I][/COLOR]</value>
+		<value condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRTimers.xml)] + !ListItem.HasEpg + ![String.IsEmpty(ListItem.Season) + String.IsEmpty(Episode)]">$INFO[Listitem.Title] $INFO[ListItem.Year,(,)][CR][COLOR=Grey][I]$VAR[PVRSeasonEpisodeLabel]$INFO[ListItem.EpisodeName][/I][/COLOR]</value>
+		<value condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRTimers.xml)] + ListItem.HasEpg + ![String.IsEmpty(ListItem.Season) + String.IsEmpty(Episode)]">$INFO[Listitem.EpgEventTitle] $INFO[ListItem.Year,(,)][CR][COLOR=Grey][I]$VAR[PVRSeasonEpisodeLabel]$INFO[ListItem.EpisodeName][/I][/COLOR]</value>
 		
 		<value condition="Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + Integer.IsGreater(Container(80).NumItems,0)">$INFO[ListItem.label] $INFO[Container(80).NumItems,[B](,)[/B]]</value>
         
@@ -966,8 +907,8 @@
     </variable>
  
 	<variable name="PVRSeasonEpisodeLabel">
-		<value condition="String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E]</value>
-		<value>$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E,: ]</value>
+		<value condition="String.IsEmpty(ListItem.EpisodeName)">$VAR[SeasonEpisodeLabel]</value>
+		<value>$VAR[SeasonEpisodeLabel]: </value>
 	</variable>
 	
 	<variable name="PVRInfoSubheader">

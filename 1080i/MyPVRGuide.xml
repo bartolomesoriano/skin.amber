@@ -26,7 +26,7 @@
             </include>
             <control type="group">
                 <posx>490</posx>
-                <posy>65</posy>
+                <posy>45</posy>
                 <control type="label">
                     <width>1400</width>
                     <height>60</height>
@@ -36,8 +36,28 @@
                     <label>[COLOR=$VAR[HighlightColor]]$INFO[ListItem.Label][/COLOR]$INFO[ListItem.Genre,  -  ,  -]  [COLOR=Grey3]$INFO[ListItem.StartTime,(,  -  ]$INFO[ListItem.EndTime,,)][/COLOR]</label>
 					<wrapmultiline>true</wrapmultiline>
                 </control>
+				<control type="label">
+                    <top>70</top>
+					<width>1400</width>
+                    <height>30</height>
+                    <aligny>center</aligny>
+                    <align>left</align>
+                    <scroll>false</scroll>
+                    <label>[COLOR=$VAR[HighlightColor]]$VAR[SeasonEpisodeLabel][/COLOR] - $INFO[ListItem.EpisodeName]</label>
+					<visible>![String.IsEmpty(ListItem.Season) + String.IsEmpty(ListItem.Episode)] + !String.IsEmpty(ListItem.EpisodeName)</visible>
+                </control>
+				<control type="label">
+                    <top>70</top>
+					<width>1400</width>
+                    <height>30</height>
+                    <aligny>center</aligny>
+                    <align>left</align>
+                    <scroll>false</scroll>
+                    <label>[COLOR=$VAR[HighlightColor]]$VAR[SeasonEpisodeLabel][/COLOR]</label>
+					<visible>![String.IsEmpty(ListItem.Season) + String.IsEmpty(ListItem.Episode)] + String.IsEmpty(ListItem.EpisodeName)</visible>
+                </control>
                 <control type="textbox">
-                    <posy>70</posy>
+                    <posy>115</posy>
                     <width>1355</width>
                     <height>120</height>
                     <align>justify</align>

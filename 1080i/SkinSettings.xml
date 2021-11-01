@@ -1036,6 +1036,11 @@
 							<param name="skinsetting" value="SeasonsEpisodeList"/>
 							<param name="itemvisibility">Skin.HasSetting(ShowEpisodeList)</param>
 						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="19"/>
+							<param name="itemlabel" value="$LOCALIZE[32460]"/>
+							<param name="skinsetting" value="DirectSeekInInfo"/>
+						</include>
 					</content>
 				</control>				
                 <!-- 9000 8 Video Info options -->
