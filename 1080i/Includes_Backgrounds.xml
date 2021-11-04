@@ -1589,7 +1589,7 @@
 		<param name="discsize">450</param>
 		<definition>
 			<control type="group">
-				<visible>Skin.HasSetting($PARAM[viewid]_Show_Disc) + Control.IsVisible($PARAM[viewid]) + [Container.Content(movies) | Container.Content(sets) | Container.Content(musicvideos)]</visible>
+				<visible>Skin.HasSetting($PARAM[viewid]_Show_Disc) + !Skin.HasSetting($PARAM[viewid]_Show_Top_Disc) + Control.IsVisible($PARAM[viewid]) + [Container.Content(movies) | [Container.Content(sets) + !Skin.HasSetting($PARAM[viewid]_Hide_Set_Disc)] | Container.Content(musicvideos)]</visible>
 				<posx>$PARAM[posx]</posx>
 				<posy>$PARAM[posy]</posy>
 				<width>$PARAM[discsize]</width>
@@ -1603,6 +1603,27 @@
 					<fadetime>480</fadetime>
 					<texture diffuse="img/disc.png" background="true">$INFO[ListItem.Art(discart)]</texture>
 					<include>SlideLeftSpinningDisc</include>
+				</control>
+			</control>	
+		</definition>	
+	</include>
+	
+	<include name="ListTopDisc">
+		<param name="viewid">50</param>
+		<param name="discsize">450</param>
+		<param name="left">50</param>
+		<param name="top">80</param>
+		<definition>
+			<control type="group">
+				<visible>!Container.Content(sets) + Skin.HasSetting($PARAM[viewid]_Show_Top_Disc) + Control.IsVisible($PARAM[viewid])</visible>
+				<control type="image">
+					<left>$PARAM[left]</left>
+					<top>$PARAM[top]</top>
+					<width>$PARAM[discsize]</width>
+					<height>$PARAM[discsize]</height>
+					<texture diffuse="img/disc.png" background="true">$INFO[ListItem.Art(discart)]</texture>
+					<visible>!String.IsEmpty(ListItem.Art(discart))</visible>
+					<animation effect="slide" start="-800,0" end="0,0" delay="1400" time="1300" tween="cubic" easing="inout" condition="!Container.OnNext + !Container.OnPrevious">Conditional</animation>
 				</control>
 			</control>	
 		</definition>	

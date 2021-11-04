@@ -6,6 +6,7 @@
 			<control type="group">
 				
 				<include condition="Skin.HasSetting(ShowSetCount)">ListMovieSetDiscs</include>
+				<include>ListTopDisc</include>
 				<include>ListMusicDisc</include>
 				
 				<include content="BackgroundOverlay">

@@ -7,6 +7,13 @@
 				
 				<include condition="Skin.HasSetting(ShowSetCount)">LowListMovieSetDiscs</include>
 				
+				<include content="ListTopDisc">
+				    <param name="viewid">54</param>
+	                <param name="discsize">275</param>
+		            <param name="left">40</param>
+		            <param name="top">420</param>
+				</include>	
+				
 				<include content="ListMusicDisc">
 				    <param name="viewid">54</param>
 	                <param name="discsize">275</param>

@@ -653,6 +653,24 @@
                 <textoffsetx>16</textoffsetx>
                 <label>- $LOCALIZE[32324]</label>
             </control>
+			<control type="radiobutton" id="9$PARAM[viewid]291">
+                <visible>Control.IsVisible($PARAM[viewid]) + !Control.IsVisible(501) + Skin.HasSetting($PARAM[viewid]_Show_Disc) + [Container.Content(movies) | Container.Content(musicvideos) | Container.Content(albums) | Container.Content(songs)]</visible>
+                <font>ListDetails</font>
+                <include>9000SysButtons</include>
+				<onclick>Skin.ToggleSetting($PARAM[viewid]_Show_Top_Disc)</onclick>
+				<selected>Skin.HasSetting($PARAM[viewid]_Show_Top_Disc)</selected>
+                <textoffsetx>16</textoffsetx>
+                <label>    -- $LOCALIZE[32461]</label>
+            </control>
+			<control type="radiobutton" id="9$PARAM[viewid]292">
+                <visible>Control.IsVisible($PARAM[viewid]) + Skin.HasSetting($PARAM[viewid]_Show_Disc) + [Container.Content(sets)]</visible>
+                <font>ListDetails</font>
+                <include>9000SysButtons</include>
+				<onclick>Skin.ToggleSetting($PARAM[viewid]_Hide_Set_Disc)</onclick>
+				<selected>Skin.HasSetting($PARAM[viewid]_Hide_Set_Disc)</selected>
+                <textoffsetx>16</textoffsetx>
+                <label>    -- $LOCALIZE[32462]</label>
+            </control>
 		</definition>	
 	</include>
 	
