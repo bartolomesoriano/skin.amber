@@ -138,13 +138,13 @@
         <font>
             <name>Shelf_Label</name>
             <filename>UbuntuCondensed.ttf</filename>
-            <style>uppercase</style>
+            <style>bold uppercase</style>
             <size>26</size>
         </font>
         <font>
             <name>Shelf_Title</name>
             <filename>UbuntuCondensed.ttf</filename>
-            <style>uppercase</style>
+            <style>bold uppercase</style>
             <size>28</size>
         </font>
         <font>

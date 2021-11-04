@@ -4218,6 +4218,7 @@
 		<param name="labelvisibility"/>
 		<param name="labeltext"/>
 		<param name="labelalign"/>
+		<param name="labelaligny">center</param>
 		<param name="bordersize"/>
 		<param name="labelfont">Shelf_Label</param>
 		<param name="labelscroll">false</param>

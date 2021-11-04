@@ -1604,7 +1604,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
@@ -1644,7 +1644,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
@@ -1702,7 +1702,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
@@ -1742,7 +1742,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
@@ -1806,7 +1806,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
@@ -1845,7 +1845,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
@@ -1902,7 +1902,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
@@ -1941,7 +1941,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
@@ -2004,7 +2004,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
@@ -2044,7 +2044,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
@@ -2101,7 +2101,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
@@ -2141,7 +2141,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
@@ -2245,7 +2245,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
@@ -2313,7 +2313,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
@@ -2380,7 +2380,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
@@ -2447,7 +2447,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
@@ -2513,7 +2513,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
@@ -2580,7 +2580,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">$PARAM[labelalign]</param>
@@ -2677,7 +2677,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -2709,7 +2709,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -2757,7 +2757,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -2789,7 +2789,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -2832,7 +2832,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -2862,7 +2862,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -2907,7 +2907,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -2937,7 +2937,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -2979,7 +2979,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -3010,7 +3010,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -3056,7 +3056,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -3087,7 +3087,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -3130,7 +3130,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -3161,7 +3161,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -3207,7 +3207,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
@@ -3238,7 +3238,7 @@
 						<param name="bordersizeLT">12</param>
 						<param name="bordersizeRB">20</param>
 						<param name="overlaylabelvisibility">[$PARAM[labelvisibility] + !String.IsEqual(ListItem.Icon,DefaultAddonNone.png)]</param>
-						<param name="overlaylabel">[B]$PARAM[overlaylabel][/B]</param>
+						<param name="overlaylabel">$PARAM[overlaylabel]</param>
 						<param name="overlaylabelfont">$PARAM[labelfont]</param>
 						<param name="overlaylabelheight">$PARAM[labelheight]</param>
 						<param name="overlaylabelalign">center</param>
