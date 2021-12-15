@@ -161,6 +161,10 @@
 				<animation effect="slide" start="0,0" end="-128,0" time="0" condition="String.IsEqual(Container(9001).NumItems,2) | String.IsEqual(Container(9001).NumItems,4) | String.IsEqual(Container(9001).NumItems,6)">conditional</animation>
 				<animation effect="slide" start="0,0" end="0,100" time="250" tween="sine" easing="in" condition="!Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,350" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,280" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + 
+				                                                                                                 [String.IsEqual(Container(300).ListItem.Property(widgetTwoShelves),true) | 
+																												  String.IsEqual(Container(300).ListItem.Property(showShelvesInfo),true)] + 
+																												  ControlGroup(700).HasFocus">Conditional</animation>
 <!--				<include>VisibleFadeEffect</include> -->
 				<posx>64</posx>
 				<posy>782</posy>
