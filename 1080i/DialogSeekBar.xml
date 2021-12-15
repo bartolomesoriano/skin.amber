@@ -12,12 +12,8 @@
 			 !String.IsEmpty(Player.SeekNumeric) | !String.IsEmpty(PVR.ChannelNumberInput)</visible>
 	<visible>![Window.IsActive(sliderdialog) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrguideinfo)]</visible>
 	<visible>Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)</visible>
-	
-	<zorder>1</zorder>
-	
-	
-	
-   <include>OSDFade</include>
+	<include>OSDFade</include>
+	<zorder>0</zorder>
 	<controls>
         <include>PVRChannelNumberInput</include>
 		<control type="group" description="Seek bar">
