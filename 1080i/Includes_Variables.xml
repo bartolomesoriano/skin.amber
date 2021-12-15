@@ -415,6 +415,7 @@
         <value condition="[Container.content(genres) | String.IsEqual(ListItem.DBType,genre)] + ![String.Contains(ListItem.Icon,Music) | String.Contains(ListItem.FolderPath,music)]">$VAR[MovieGenres]</value>
 		<value condition="[Container.content(genres) | String.IsEqual(ListItem.DBType,genre)] + [String.Contains(ListItem.Icon,Music) | String.Contains(ListItem.FolderPath,music)]">$VAR[MusicGenres]</value>
         <value condition="Container.content(tags) | String.IsEqual(ListItem.DBType,tag)">DefaultTags.png</value>
+		<value condition="[Container.Content(files) | Container.Content(videos)] + !String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 		<value condition="ListItem.IsFolder + String.Contains(ListItem.FolderPath,playlists)">DefaultPlaylist.png</value>
 		<value condition="ListItem.IsFolder + !String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
 		<value condition="ListItem.IsFolder + !ListItem.IsCollection + String.IsEmpty(ListItem.Thumb) + String.IsEmpty(ListItem.Icon)">DefaultFolder.png</value>
@@ -1373,6 +1374,10 @@
 		<value>dfcebe9e</value>
 	</variable>
 	
+	<variable name="TimeshiftBufferColor">
+		<value condition="!String.IsEmpty(Skin.String(TimeshiftBufferColorStr)) + !String.IsEqual(Skin.String(TimeshiftBufferColorStr),None)">$INFO[Skin.String(TimeshiftBufferColorStr)]</value>
+		<value>Diffuse2</value>
+	</variable>
 	<variable name="MusicNonASFanart">
 	    <value condition="!String.IsEmpty(Player.Art(artist.fanart))">$INFO[Player.Art(artist.fanart)]</value>
 		<value condition="!String.IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
@@ -1861,6 +1866,7 @@
 	</variable>
 	
 	<variable name="OSDExtraArtLabelVar">
+		<value condition="Skin.String(OSDExtraArt,epgicon)">$LOCALIZE[32473]</value>
 		<value condition="Skin.String(OSDExtraArt,poster)">$LOCALIZE[32402]</value>
 		<value condition="Skin.String(OSDExtraArt,logo)">$LOCALIZE[31621]</value>
 		<value condition="Skin.String(OSDExtraArt,clearart)">$LOCALIZE[31622]</value>
@@ -1871,7 +1877,12 @@
 	
 	<variable name="OSDTimeoutLabelVar">
 	    <value condition="Skin.String(OSDTimeout,three)">3 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(OSDTimeout,four)">4 $LOCALIZE[32047]</value>
 		<value condition="Skin.String(OSDTimeout,five)">5 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(OSDTimeout,six)">6 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(OSDTimeout,seven)">7 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(OSDTimeout,eight)">8 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(OSDTimeout,nine)">9 $LOCALIZE[32047]</value>
 		<value condition="Skin.String(OSDTimeout,ten)">10 $LOCALIZE[32047]</value>
 		<value condition="Skin.String(OSDTimeout,fifteen)">15 $LOCALIZE[32047]</value>
 		<value condition="Skin.String(OSDTimeout,twenty)">20 $LOCALIZE[32047]</value>
@@ -1919,6 +1930,35 @@
 		<value condition="!String.IsEmpty(Skin.String(StartupImagePath))">$INFO[Skin.String(StartupImagePath)]</value>
 		<value condition="!String.IsEmpty(Skin.String(StartupPlaylist))">$INFO[Skin.String(StartupPlaylist)]</value>
 		<value>$LOCALIZE[16018]</value>
+	</variable>
+	
+	<variable name="StartupVideoDurationLabelVar">
+		<value condition="Skin.String(StartupVideoDuration,00:05)">5 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:06)">6 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:07)">7 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:08)">8 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:09)">9 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:10)">10 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:11)">11 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:12)">12 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:13)">13 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:14)">14 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:15)">15 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:16)">16 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:17)">17 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:18)">18 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:19)">19 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:20)">20 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:21)">21 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:22)">22 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:23)">23 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:24)">24 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:25)">25 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:26)">26 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:27)">27 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:28)">28 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:29)">29 $LOCALIZE[32047]</value>
+		<value condition="Skin.String(StartupVideoDuration,00:30)">30 $LOCALIZE[32047]</value>
 	</variable>
 	<variable name="PVRGuideIcon">
 	    <value condition="!String.IsEmpty(ListItem.EPGEventIcon)">$INFO[ListItem.EPGEventIcon]</value>
@@ -1972,6 +2012,15 @@
 		<value condition="!String.IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(album.discart))">$INFO[ListItem.Art(album.discart)]</value>
 	</variable>
+	
+	<variable name="SubcontentPathVar">
+	    <value condition="String.IsEmpty(Container.PluginName)">$INFO[ListItem.FolderPath]</value>
+		<value></value>
+	</variable>
+	
+	<expression name="ShowSubcontent">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)] | 
+	                                  [String.IsEqual(ListItem.DBType,artist) + String.IsEmpty(ListItem.Property(Artist_Description))] | 
+									  [String.IsEqual(ListItem.DBType,album) + String.IsEmpty(ListItem.Property(Album_Description))]</expression>
     <expression name="WidgetFanartVisible">String.IsEmpty(Container(300).ListItem.Property(widgetDisableFanart)) + ControlGroup(700).HasFocus</expression>
     
     <expression name="SortLetterIsNumber">[String.IsEqual(ListItem.SortLetter,$NUMBER[0]) | String.IsEqual(ListItem.SortLetter,$NUMBER[1]) | String.IsEqual(ListItem.SortLetter,$NUMBER[2]) | String.IsEqual(ListItem.SortLetter,$NUMBER[3]) | String.IsEqual(ListItem.SortLetter,$NUMBER[4]) | String.IsEqual(ListItem.SortLetter,$NUMBER[5]) | String.IsEqual(ListItem.SortLetter,$NUMBER[6]) | String.IsEqual(ListItem.SortLetter,$NUMBER[7]) | String.IsEqual(ListItem.SortLetter,$NUMBER[8]) | String.IsEqual(ListItem.SortLetter,$NUMBER[9])]</expression>
@@ -1980,7 +2029,7 @@
                                        [String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),tvshow) | 
                                         String.IsEqual(Window(Home).Property(InfoExtrasDBType),season) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),episode)]]</expression>
 										
-	<expression name="PanelShouldShow">[!Container.Content(songs) + [[!String.IsEmpty(ListItem.Duration) | !String.IsEmpty(ListItem.Plot) | [!String.IsEmpty(ListItem.Genre) + !Container.Content(genres)] | [!String.IsEmpty(ListItem.Year) + !Container.Content(years)] | !String.IsEmpty(ListItem.AddonDescription)] | 
+	<expression name="PanelShouldShow">Skin.HasSetting(AlwaysShowListInfo) | [!Container.Content(songs) + [[!String.IsEmpty(ListItem.Duration) | !String.IsEmpty(ListItem.Plot) | [!String.IsEmpty(ListItem.Genre) + !Container.Content(genres)] | [!String.IsEmpty(ListItem.Year) + !Container.Content(years)] | !String.IsEmpty(ListItem.AddonDescription)] | 
 	                                   [!String.IsEmpty(ListItem(1).Duration) | !String.IsEmpty(ListItem(1).Plot) | [!String.IsEmpty(ListItem(1).Genre) + !Container.Content(genres)] | [!String.IsEmpty(ListItem(1).Year) + !Container.Content(years)] | !String.IsEmpty(ListItem(1).AddonDescription)] | 
 									   [!String.IsEmpty(ListItem(2).Duration) | !String.IsEmpty(ListItem(2).Plot) | [!String.IsEmpty(ListItem(2).Genre) + !Container.Content(genres)] | [!String.IsEmpty(ListItem(2).Year) + !Container.Content(years)] | !String.IsEmpty(ListItem(2).AddonDescription)] | 
 									   [!String.IsEmpty(ListItem(3).Duration) | !String.IsEmpty(ListItem(3).Plot) | [!String.IsEmpty(ListItem(3).Genre) + !Container.Content(genres)] | [!String.IsEmpty(ListItem(3).Year) + !Container.Content(years)] | !String.IsEmpty(ListItem(3).AddonDescription)] | 

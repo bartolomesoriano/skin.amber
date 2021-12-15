@@ -13,10 +13,12 @@
 	<onload condition="System.HasAddon(script.artistslideshow)">RunScript(script.artistslideshow, daemon=True)</onload>
 	<onload condition="String.IsEmpty(Skin.String(OSDExtraArt))">Skin.SetString(OSDExtraArt,none)</onload>
 	
-	<onload condition="!System.HasAddon(script.embuary.helper)">Skin.Reset(Enable.EmbuaryHelper)</onload>
-	<onload condition="!System.HasAddon(script.embuary.helper)">Skin.Reset(UseEHBackgrounds)</onload>
-	<onload condition="!System.HasAddon(script.embuary.helper)">Skin.Reset(Show.EHJumpToLetter)</onload>
-	<onload condition="!System.HasAddon(plugin.video.themoviedb.helper)">Skin.Reset(Enable.TMDbHelper)</onload>
+	<onload condition="String.IsEmpty(Skin.String(StartupVideoDuration))">Skin.SetString(StartupVideoDuration,00:05)</onload>
+	
+	<onload condition="![System.HasAddon(script.embuary.helper) + System.AddonIsEnabled(script.embuary.helper)]">Skin.Reset(Enable.EmbuaryHelper)</onload>
+	<onload condition="![System.HasAddon(script.embuary.helper) + System.AddonIsEnabled(script.embuary.helper)]">Skin.Reset(UseEHBackgrounds)</onload>
+	<onload condition="![System.HasAddon(script.embuary.helper) + System.AddonIsEnabled(script.embuary.helper)]">Skin.Reset(Show.EHJumpToLetter)</onload>
+	<onload condition="![System.HasAddon(plugin.video.themoviedb.helper) + System.AddonIsEnabled(plugin.video.themoviedb.helper)]">Skin.Reset(Enable.TMDbHelper)</onload>
 	
 	<onload condition="String.IsEmpty(Skin.String(StartupImage)) + String.IsEmpty(Skin.String(StartupImagePath)) + String.IsEmpty(Skin.String(StartupPlaylist))">ReplaceWindow($INFO[System.StartupWindow])</onload>
 	
@@ -28,7 +30,7 @@
 			<onfocus condition="!String.IsEmpty(Skin.String(StartupImage))">AlarmClock(GoHome,ReplaceWindow($INFO[System.StartupWindow]),00:03,silent,false)</onfocus>
 			<onfocus condition="!String.IsEmpty(Skin.String(StartupImagePath))">AlarmClock(GoHome,ReplaceWindow($INFO[System.StartupWindow]),00:08,silent,false)</onfocus>
 			<onfocus condition="!String.IsEmpty(Skin.String(StartupPlaylist))">PlayMedia($ESCINFO[Skin.String(StartupPlaylist)],1)</onfocus>
-			<onfocus condition="!String.IsEmpty(Skin.String(StartupPlaylist))">AlarmClock(GoHome,ReplaceWindow($INFO[System.StartupWindow]),00:12,silent,false)</onfocus>
+			<onfocus condition="!String.IsEmpty(Skin.String(StartupPlaylist))">AlarmClock(GoHome,ReplaceWindow($INFO[System.StartupWindow]),$INFO[Skin.String(StartupVideoDuration)],silent,false)</onfocus>
 		</control>
 		<control type="group">
 			<visible>Player.HasVideo</visible>

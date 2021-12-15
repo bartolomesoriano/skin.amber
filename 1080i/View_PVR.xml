@@ -317,7 +317,6 @@
 						<height>71</height>
 						<texture>$VAR[PVROverlay]</texture>
 						<aspectratio>keep</aspectratio>
-						<visible>$EXP[ShowPVROverlay]</visible>
 					</control>
 					<control type="label" id="1">
 						<posx>33</posx>
@@ -356,7 +355,6 @@
 						<height>71</height>
 						<texture colordiffuse="$VAR[FocusedTextColor]">$VAR[PVROverlay]</texture>
 						<aspectratio>keep</aspectratio>
-						<visible>$EXP[ShowPVROverlay]</visible>
 					</control>
 					<control type="label" id="1">
 						<posx>33</posx>

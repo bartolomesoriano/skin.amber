@@ -3,6 +3,7 @@
 	<defaultcontrol always="true">2</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<controls>
+		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 		<include>DefaultBackground</include>
 		<include>Time</include>
 		<control type="group" description="Content">

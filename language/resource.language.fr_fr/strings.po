@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-08-25 21:20+0000\n"
+"PO-Revision-Date: 2021-11-01 21:44+0000\n"
 "Last-Translator: bsoriano <bsoriano@gmail.com>\n"
 "Language-Team: French (France) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/fr_fr/>\n"
 "Language: fr_fr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.8.1\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -1643,7 +1643,7 @@ msgstr "Décennies"
 
 msgctxt "#31650"
 msgid "Show Information Popup"
-msgstr ""
+msgstr "Afficher la popup d'informations"
 
 msgctxt "#31651"
 msgid "Center shelf items on screen"
@@ -1659,7 +1659,7 @@ msgstr "Délai d'affichage de la popup d'informations"
 
 msgctxt "#31654"
 msgid "Show Information for Shelves"
-msgstr ""
+msgstr "Afficher les informations pour les étagères"
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
@@ -3421,7 +3421,7 @@ msgstr "Afficher la superposition des notes"
 
 msgctxt "#32388"
 msgid "Use User Rating for Overlay"
-msgstr ""
+msgstr "Utiliser l'évaluation de l'utilisateur pour la superposition"
 
 msgctxt "#32390"
 msgid "Select Items to Show in Views"
@@ -3497,7 +3497,7 @@ msgstr "Liste fixe"
 
 msgctxt "#32409"
 msgid "Centered Static Menu (less than 8 items)"
-msgstr ""
+msgstr "Menu statique centré (moins de 8 éléments)"
 
 msgctxt "#32410"
 msgid "Compact OSD"
@@ -3525,7 +3525,7 @@ msgstr "Lecture automatique de la bande-annonce (bande-annonce locale seulement)
 
 msgctxt "#32416"
 msgid "Auto Play Trailer Delay"
-msgstr ""
+msgstr "Délai de lecture automatique de la bande-annonce"
 
 msgctxt "#32417"
 msgid "Fanart Title Button Opens Info Dialog"
@@ -3557,66 +3557,130 @@ msgstr "Utiliser l'illustration de disque au lieu de la pochette"
 
 msgctxt "#32424"
 msgid "Auto Play Trailer from Shelf Items"
-msgstr ""
+msgstr "Lecture automatique de la bande-annonce depuis les éléments d'une étagère"
 
 msgctxt "#32425"
 msgid "Shelf Trailer Delay"
-msgstr ""
+msgstr "Délai de la bande-annonce d'étagère"
 
 msgctxt "#32426"
 msgid "Slide Out Media Items While Trailer Playing"
-msgstr ""
+msgstr "Masquer les éléments multimédias pendant la lecture de la bande-annonce"
 
 msgctxt "#32427"
 msgid "Hide PVR Channel Preview"
-msgstr ""
+msgstr "Masquer l'aperçu de la chaîne TV"
 
 msgctxt "#32428"
 msgid "Art Downloader: Select Artwork"
-msgstr ""
+msgstr "Artwork Downloader : Sélectionner un artwork"
 
 msgctxt "#32429"
 msgid "Art Downloader: All Artwork"
-msgstr ""
+msgstr "Artwork Downloader : Tous les artworks"
 
 msgctxt "#32450"
 msgid "Show Artwork Downloader items in Context Menu"
-msgstr ""
+msgstr "Afficher les éléments du Artwork Downloader dans le menu contextuel"
 
 msgctxt "#32451"
 msgid "Movies with Tag"
-msgstr ""
+msgstr "Films avec balise"
 
 msgctxt "#32452"
 msgid "Select a Tag"
-msgstr ""
+msgstr "Sélectionner une balise"
 
 msgctxt "#32453"
 msgid "With Tag"
-msgstr ""
+msgstr "Avec balise"
 
 msgctxt "#32454"
 msgid "Always Use TV Show Poster for Episodes"
-msgstr ""
+msgstr "Toujours utiliser l'affiche de la série TV pour les épisodes"
 
 msgctxt "#32455"
 msgid "Open ExtendedInfo for Info Dialogs"
-msgstr ""
+msgstr "Ouvrir ExtendedInfo pour les boîtes de dialogue d'informations"
 
 msgctxt "#32456"
 msgid "Cert"
-msgstr ""
+msgstr "Cert"
 
 msgctxt "#32457"
 msgid "Show Episodes List button"
-msgstr ""
+msgstr "Afficher le bouton de la liste des épisodes"
 
 msgctxt "#32458"
 msgid "Include Seasons in Episodes List popup"
-msgstr ""
+msgstr "Inclure les saisons dans la popup de la liste des épisodes"
 
 msgctxt "#32459"
 msgid "Next Aired"
+msgstr "Prochaine diffusion"
+
+msgctxt "#32460"
+msgid "Enable Direct Seeking in Full Screen Info"
+msgstr ""
+
+msgctxt "#32461"
+msgid "Show Disc above Poster"
+msgstr ""
+
+msgctxt "#32462"
+msgid "Hide Disc over Set Poster"
+msgstr ""
+
+msgctxt "#32463"
+msgid "Play trailer in a window"
+msgstr ""
+
+msgctxt "#32464"
+msgid "Search Trailer"
+msgstr ""
+
+msgctxt "#32465"
+msgid "Search for Trailers with IMDb Trailers Addon"
+msgstr ""
+
+msgctxt "#32466"
+msgid "Fade out Non-focused Menu Items"
+msgstr ""
+
+msgctxt "#32467"
+msgid "Cloudiness"
+msgstr ""
+
+msgctxt "#32468"
+msgid "Probability of Precipitation"
+msgstr ""
+
+msgctxt "#32469"
+msgid "Intro Video Duration"
+msgstr ""
+
+msgctxt "#32470"
+msgid "PVR Timeshift Buffer Color"
+msgstr ""
+
+msgctxt "#32471"
+msgid "Use Main Menu item Background for Sub Windows"
+msgstr ""
+
+msgctxt "#32472"
+msgid "Teletext Button Opens EPG"
+msgstr ""
+
+msgctxt "#32473"
+msgid "EPG Icon"
+msgstr ""
+
+msgctxt "#32474"
+msgid "Channel Logo"
+msgstr ""
+
+msgctxt "#32475"
+msgid "Always Show Information Panel"
 msgstr ""
 
 #~ msgctxt "#31650"

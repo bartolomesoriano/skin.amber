@@ -7,31 +7,33 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-09-26 16:48+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2021-11-10 17:30+0000\n"
+"Last-Translator: ilia prom <iliapro@gmail.com>\n"
 "Language-Team: Russian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/ru_ru/>\n"
 "Language: ru_ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.8.1\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
-msgstr ""
+msgstr "No bloatware, just your media with an easy to navigate interface"
 
 msgctxt "Addon Description"
 msgid "No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins."
 msgstr ""
 
+#, fuzzy
 msgctxt "#31000"
 msgid "Picture Channels"
-msgstr ""
+msgstr "Picture Channels"
 
+#, fuzzy
 msgctxt "#31001"
 msgid "Video Channels"
-msgstr ""
+msgstr "Video Channels"
 
 msgctxt "#31002"
 msgid "Music Channels"
@@ -3641,4 +3643,68 @@ msgstr ""
 
 msgctxt "#32459"
 msgid "Next Aired"
+msgstr ""
+
+msgctxt "#32460"
+msgid "Enable Direct Seeking in Full Screen Info"
+msgstr ""
+
+msgctxt "#32461"
+msgid "Show Disc above Poster"
+msgstr ""
+
+msgctxt "#32462"
+msgid "Hide Disc over Set Poster"
+msgstr ""
+
+msgctxt "#32463"
+msgid "Play trailer in a window"
+msgstr ""
+
+msgctxt "#32464"
+msgid "Search Trailer"
+msgstr ""
+
+msgctxt "#32465"
+msgid "Search for Trailers with IMDb Trailers Addon"
+msgstr ""
+
+msgctxt "#32466"
+msgid "Fade out Non-focused Menu Items"
+msgstr ""
+
+msgctxt "#32467"
+msgid "Cloudiness"
+msgstr ""
+
+msgctxt "#32468"
+msgid "Probability of Precipitation"
+msgstr ""
+
+msgctxt "#32469"
+msgid "Intro Video Duration"
+msgstr ""
+
+msgctxt "#32470"
+msgid "PVR Timeshift Buffer Color"
+msgstr ""
+
+msgctxt "#32471"
+msgid "Use Main Menu item Background for Sub Windows"
+msgstr ""
+
+msgctxt "#32472"
+msgid "Teletext Button Opens EPG"
+msgstr ""
+
+msgctxt "#32473"
+msgid "EPG Icon"
+msgstr ""
+
+msgctxt "#32474"
+msgid "Channel Logo"
+msgstr ""
+
+msgctxt "#32475"
+msgid "Always Show Information Panel"
 msgstr ""

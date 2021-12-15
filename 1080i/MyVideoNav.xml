@@ -172,6 +172,8 @@
 		<include condition="Skin.HasSetting(ShowSpecialFanart)">SpecialFanartList</include>
 		<include condition="System.HasAddon(script.embuary.helper) + Skin.HasSetting(ShowRatingMain)">EmbuaryHelperDetailsList</include>
 		
+		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
+		
 		<include>DefaultBackground</include>
 		
 		<control type="group">
@@ -220,7 +222,7 @@
 		    <include>View_58_Logo</include>
 		
 		    <include >View_502_RightList</include>
-		</control>	
+		</control>
 		
 		<include content="View_56_Fanart" condition="!Skin.HasSetting(FanartCenterFocus)">
 		    <param name="focusposition">2</param>

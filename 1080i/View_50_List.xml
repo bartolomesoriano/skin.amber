@@ -219,30 +219,8 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
-					<param name="subcontent_label">$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)]</param>
-					<param name="subcontent_path">$INFO[ListItem.FolderPath]</param>
-					<param name="subcontent_visible">String.IsEmpty(ListItem.Property(Artist_Description))</param>
-					<param name="subcontent_image_visible">false</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">Control.IsVisible(50) + ![$EXP[ListPanelIsDisabled]] + ![$EXP[ListPanelIsSwapped]] + Container.content(artists)</param>
-				</include>
-				<include content="PanelTemplate">
-					<param name="top">355</param>
-					<param name="left">535</param>
-					<param name="height">395</param>
-					<param name="width">650</param>
-					<param name="heading">$VAR[panelheading]</param>
-					<param name="subheading">$VAR[panelsubheading]</param>
-					<param name="plot">$VAR[Plots]</param>
-					<param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
-					<param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins,  (,)]</param>
-					<param name="subcontent_path">$INFO[ListItem.FolderPath]</param>
-					<param name="subcontent_sortby" value="track" />
-					<param name="subcontent_sortorder" value="ascending" />
-					<param name="subcontent_visible">String.IsEmpty(ListItem.Property(Album_Description))</param>
-					<param name="subcontent_image_visible">false</param>
-					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">Control.IsVisible(50) + ![$EXP[ListPanelIsDisabled]] + ![$EXP[ListPanelIsSwapped]] + Container.content(albums)</param>
+					<param name="visibility">Control.IsVisible(50) + ![$EXP[ListPanelIsDisabled]] + ![$EXP[ListPanelIsSwapped]] + [Container.content(artists) | Container.content(albums)]</param>
 				</include>
 
 				<!-- Panels in swapped position -->
@@ -305,30 +283,8 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
-					<param name="subcontent_label">$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)]</param>
-					<param name="subcontent_path">$INFO[ListItem.FolderPath]</param>
-					<param name="subcontent_visible">String.IsEmpty(ListItem.Property(Artist_Description))</param>
-					<param name="subcontent_image_visible">false</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">Control.IsVisible(50) + ![$EXP[ListPanelIsDisabled]] + $EXP[ListPanelIsSwapped] + Container.content(artists)</param>
-				</include>
-				<include content="PanelTemplate">
-					<param name="top">355</param>
-					<param name="left">1230</param>
-					<param name="height">395</param>
-					<param name="width">650</param>
-					<param name="heading">$VAR[panelheading]</param>
-					<param name="subheading">$VAR[panelsubheading]</param>
-					<param name="plot">$VAR[Plots]</param>
-					<param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
-					<param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins,  (,)]</param>
-					<param name="subcontent_path">$INFO[ListItem.FolderPath]</param>
-					<param name="subcontent_sortby" value="track" />
-					<param name="subcontent_sortorder" value="ascending" />
-					<param name="subcontent_visible">String.IsEmpty(ListItem.Property(Album_Description))</param>
-					<param name="subcontent_image_visible">false</param>
-					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">Control.IsVisible(50) + ![$EXP[ListPanelIsDisabled]] + $EXP[ListPanelIsSwapped] + Container.content(albums)</param>
+					<param name="visibility">Control.IsVisible(50) + ![$EXP[ListPanelIsDisabled]] + $EXP[ListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
 				</include>
 
 				<control type="group" description="50 MediaInfo">
@@ -349,7 +305,7 @@
 						<param name="height">700</param>
 						<param name="texture">$VAR[Poster]</param>
 						<param name="aspect">stretch</param>
-						<param name="visibility">Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets) | Container.Content(seasons)</param>
+						<param name="visibility">[Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets) | Container.Content(seasons)]</param>
 					</include>
 					<include content="ShadowedImage">
 						<param name="width">490</param>

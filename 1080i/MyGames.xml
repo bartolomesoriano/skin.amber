@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
+	
+	
 	<include>ViewIDs</include>
 	<menucontrol>9000</menucontrol>
 	<controls>
+		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 		<include>DefaultBackground</include>
 		<include content="View_50_List" condition="!Skin.HasSetting(ListCenterFocus)">
 		    <param name="ListType">list</param>
@@ -41,6 +44,8 @@
 		    <param name="ListType">fixedlist</param>
 		</include>
 		<include>View_57_SimpleList</include>
+		<include>View_58_Logo</include>
+		<include>View_502_RightList</include> 
 		<control type="group">
 			<include>VignetteFade</include>
 			<include>Time</include>

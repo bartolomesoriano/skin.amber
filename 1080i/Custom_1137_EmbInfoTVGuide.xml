@@ -5,7 +5,8 @@
 	<onload>SetFocus(10)</onload>
 
 	<controls>
-        <!-- Default background if no show selected -->
+        <include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>      
+	    <!-- Default background if no show selected -->
 		<include>DefaultBackground</include>
 		<include>OpenClose</include>
 

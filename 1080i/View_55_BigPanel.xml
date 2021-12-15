@@ -130,10 +130,6 @@
                 <param name="heading">$VAR[panelheading]</param>
                 <param name="subheading">$VAR[panelsubheading]</param>
                 <param name="plot">$VAR[Plots]</param>
-                <param name="subcontent_label">$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)]</param>
-                <param name="subcontent_path">$INFO[ListItem.FolderPath]</param>
-                <param name="subcontent_visible">String.IsEmpty(ListItem.Property(Artist_Description))</param>
-                <param name="subcontent_image_visible">false</param>
                 <param name="footer"></param>
                 <param name="footer">$VAR[panelfooter]</param>
                 <param name="visibility">Container.Content(artists)</param>
@@ -147,11 +143,6 @@
                 <param name="heading">$VAR[panelheading]</param>
                 <param name="subheading">$VAR[panelsubheading]</param>
                 <param name="plot">$VAR[Plots]</param>
-                <param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration, • (,)]</param>
-                <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins, • (,)]</param>
-                <param name="subcontent_path">$INFO[ListItem.FolderPath]</param>
-                <param name="subcontent_visible">String.IsEmpty(ListItem.Property(Album_Description))</param>
-                <param name="subcontent_image_visible">false</param>
                 <param name="footer">$VAR[panelfooter]</param>
                 <param name="visibility">Container.Content(albums)</param>
             </include>

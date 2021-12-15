@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-09-18 02:04+0000\n"
+"PO-Revision-Date: 2021-11-01 21:44+0000\n"
 "Last-Translator: bsoriano <bsoriano@gmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/es_es/>\n"
 "Language: es_es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.8.1\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -1659,7 +1659,7 @@ msgstr "Intervalo para Popup de Info"
 
 msgctxt "#31654"
 msgid "Show Information for Shelves"
-msgstr ""
+msgstr "Mostrar Información de Widgets"
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
@@ -3597,26 +3597,90 @@ msgstr "Con Tag"
 
 msgctxt "#32454"
 msgid "Always Use TV Show Poster for Episodes"
-msgstr ""
+msgstr "Siempre usar Poster de Serie de TV para Episodios"
 
 msgctxt "#32455"
 msgid "Open ExtendedInfo for Info Dialogs"
-msgstr ""
+msgstr "Abrir ExtendedInfo para diálogos de información"
 
 msgctxt "#32456"
 msgid "Cert"
-msgstr ""
+msgstr "Calif."
 
 msgctxt "#32457"
 msgid "Show Episodes List button"
-msgstr ""
+msgstr "Mostrar botón de Lista de Episodios"
 
 msgctxt "#32458"
 msgid "Include Seasons in Episodes List popup"
-msgstr ""
+msgstr "Incluir Temporadas en popup de Lista de Episodios"
 
 msgctxt "#32459"
 msgid "Next Aired"
+msgstr "Próximo a estrenarse"
+
+msgctxt "#32460"
+msgid "Enable Direct Seeking in Full Screen Info"
+msgstr ""
+
+msgctxt "#32461"
+msgid "Show Disc above Poster"
+msgstr ""
+
+msgctxt "#32462"
+msgid "Hide Disc over Set Poster"
+msgstr ""
+
+msgctxt "#32463"
+msgid "Play trailer in a window"
+msgstr ""
+
+msgctxt "#32464"
+msgid "Search Trailer"
+msgstr ""
+
+msgctxt "#32465"
+msgid "Search for Trailers with IMDb Trailers Addon"
+msgstr ""
+
+msgctxt "#32466"
+msgid "Fade out Non-focused Menu Items"
+msgstr ""
+
+msgctxt "#32467"
+msgid "Cloudiness"
+msgstr ""
+
+msgctxt "#32468"
+msgid "Probability of Precipitation"
+msgstr ""
+
+msgctxt "#32469"
+msgid "Intro Video Duration"
+msgstr ""
+
+msgctxt "#32470"
+msgid "PVR Timeshift Buffer Color"
+msgstr ""
+
+msgctxt "#32471"
+msgid "Use Main Menu item Background for Sub Windows"
+msgstr ""
+
+msgctxt "#32472"
+msgid "Teletext Button Opens EPG"
+msgstr ""
+
+msgctxt "#32473"
+msgid "EPG Icon"
+msgstr ""
+
+msgctxt "#32474"
+msgid "Channel Logo"
+msgstr ""
+
+msgctxt "#32475"
+msgid "Always Show Information Panel"
 msgstr ""
 
 #~ msgctxt "#31650"

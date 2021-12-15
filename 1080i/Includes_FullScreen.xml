@@ -24,7 +24,9 @@
     <variable name="FullScreenTitle">
         <value condition="Player.HasAudio">$INFO[MusicPlayer.Artist,, - ]$INFO[MusicPlayer.Album,, - ]$INFO[MusicPlayer.TrackNumber,,: ][B]$INFO[Player.Title][/B]</value>
 		<value condition="VideoPlayer.Content(Movies)">$INFO[VideoPlayer.Title,[B],[/B]]$INFO[VideoPlayer.Year, (,)]</value>
-        <value condition="!Skin.HasSetting(DirectSeekInInfo) + VideoPlayer.Content(livetv) + Control.HasFocus(601)" >$INFO[VideoPlayer.Title,$LOCALIZE[19030]: ]</value>
+		<value condition="!Skin.HasSetting(DirectSeekInInfo) + VideoPlayer.Content(livetv) + Control.HasFocus(601) + String.IsEmpty(VideoPlayer.Season) + String.IsEmpty(VideoPlayer.Episode)">$INFO[VideoPlayer.Title,$LOCALIZE[19030]: ] ($INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime])</value>
+		<value condition="!Skin.HasSetting(DirectSeekInInfo) + VideoPlayer.Content(livetv) + Control.HasFocus(601) + ![String.IsEmpty(VideoPlayer.Season) + String.IsEmpty(VideoPlayer.Episode)] + String.IsEmpty(VideoPlayer.EpisodeName)">$INFO[VideoPlayer.Title,$LOCALIZE[19030]: ] - [I]$VAR[PlayerSeasonEpisodeLabel][/I] ($INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime])</value>
+		<value condition="!Skin.HasSetting(DirectSeekInInfo) + VideoPlayer.Content(livetv) + Control.HasFocus(601) + ![String.IsEmpty(VideoPlayer.Season) + String.IsEmpty(VideoPlayer.Episode)] + !String.IsEmpty(VideoPlayer.EpisodeName)">$INFO[VideoPlayer.Title,$LOCALIZE[19030]: ] - [I]$VAR[PlayerSeasonEpisodeLabel]: $INFO[VideoPlayer.EpisodeName][/I] ($INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime])</value>
         <value condition="!Skin.HasSetting(DirectSeekInInfo) + VideoPlayer.Content(livetv) + Control.HasFocus(602)" >$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031]: ]</value>
 		<value condition="Skin.HasSetting(DirectSeekInInfo) + VideoPlayer.Content(livetv) + String.IsEmpty(VideoPlayer.Season) + String.IsEmpty(VideoPlayer.Episode)">$INFO[VideoPlayer.Title,$LOCALIZE[19030]: ]</value>
 		<value condition="Skin.HasSetting(DirectSeekInInfo) + VideoPlayer.Content(livetv) + ![String.IsEmpty(VideoPlayer.Season) + String.IsEmpty(VideoPlayer.Episode)] + String.IsEmpty(VideoPlayer.EpisodeName)">$INFO[VideoPlayer.Title,$LOCALIZE[19030]: ] - [I]$VAR[PlayerSeasonEpisodeLabel][/I]</value>
@@ -49,7 +51,8 @@
     <variable name="VideoBottomHeading">
         <value condition="VideoPlayer.Content(Movies)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20339]:[/COLOR] $INFO[VideoPlayer.Director]</value>
         <value condition="VideoPlayer.Content(Episodes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20373]:[/COLOR] $INFO[VideoPlayer.Season] • [COLOR=$VAR[HighlightColor]]$LOCALIZE[20359]:[/COLOR] $INFO[VideoPlayer.Episode]</value>
-        <value condition="VideoPlayer.Content(livetv)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[19031]:[/COLOR] $INFO[VideoPlayer.NextTitle]</value>
+        <value condition="VideoPlayer.Content(livetv) + PVR.IsTimeShift">[COLOR=$VAR[HighlightColor]]$INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime][/COLOR]</value>
+		<value condition="VideoPlayer.Content(livetv) + !PVR.IsTimeShift">[COLOR=$VAR[HighlightColor]]$LOCALIZE[19031]:[/COLOR] $INFO[VideoPlayer.NextTitle]</value>
     </variable>
 
     <variable name="VideoPlayerTitle">
@@ -66,7 +69,7 @@
 		<value condition="VideoPlayer.Content(episodes) + String.IsEmpty(VideoPlayer.Premiered)">$INFO[VideoPlayer.TVShowtitle][COLOR=$VAR[HighlightColor]]  •  [/COLOR]S$INFO[VideoPlayer.Season]E$INFO[VideoPlayer.Episode]</value>
     </variable>
 	
-    <expression name="showPosterOSD">String.IsEqual(Skin.String(OSDExtraArt),poster) | [![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))] + 
+    <expression name="showPosterOSD">String.IsEqual(Skin.String(OSDExtraArt),poster) | String.IsEqual(Skin.String(OSDExtraArt),epgicon) | [![String.IsEqual(Skin.String(OSDExtraArt),none) | String.IsEmpty(Skin.String(OSDExtraArt))] + 
 	                                [[String.IsEqual(Skin.String(OSDExtraArt),clearart) + String.IsEmpty(Player.Art(clearart)) + String.IsEmpty(Player.Art(tvshow.clearart)) + String.IsEmpty(Player.Art(artist.clearart)) + 
 									  String.IsEmpty(Player.Art(albumartist.clearart)) + String.IsEmpty(Player.Art(clearlogo)) + String.IsEmpty(Player.Art(tvshow.clearlogo)) + String.IsEmpty(Player.Art(artist.clearlogo)) + 
 									  String.IsEmpty(Player.Art(albumartist.clearlogo))] | 
@@ -181,6 +184,43 @@
 				<label>$LOCALIZE[19008]</label>
 			</control>
 		</control>
+	</include>
+	
+	<include name="CloseOSD3">
+	    <visible>System.IdleTime(3)</visible>
+	</include>
+	<include name="CloseOSD4">
+	    <visible>System.IdleTime(4)</visible>
+	</include>
+	<include name="CloseOSD5">
+	    <visible>System.IdleTime(5)</visible>
+	</include>
+	<include name="CloseOSD6">
+	    <visible>System.IdleTime(6)</visible>
+	</include>
+	<include name="CloseOSD7">
+	    <visible>System.IdleTime(7)</visible>
+	</include>
+	<include name="CloseOSD8">
+	    <visible>System.IdleTime(8)</visible>
+	</include>
+	<include name="CloseOSD9">
+	    <visible>System.IdleTime(9)</visible>
+	</include>
+	<include name="CloseOSD10">
+	    <visible>System.IdleTime(10)</visible>
+	</include>
+	<include name="CloseOSD15">
+	    <visible>System.IdleTime(15)</visible>
+	</include>
+	<include name="CloseOSD20">
+	    <visible>System.IdleTime(20)</visible>
+	</include>
+	<include name="CloseOSD30">
+	    <visible>System.IdleTime(30)</visible>
+	</include>
+	<include name="CloseOSD60">
+	    <visible>System.IdleTime(60)</visible>
 	</include>
 	
     
@@ -417,17 +457,6 @@
 		</definition>
 	</include>
 	
-	<include name="OSDButtonOnFocus">
-        <onfocus condition="String.IsEmpty(Skin.String(OSDTimeout))">AlarmClock(osd_timeout,SetFocus(99220),00:05,silent)</onfocus>
-		<onfocus condition="Skin.String(OSDTimeout,three)">AlarmClock(osd_timeout,SetFocus(99220),00:03,silent)</onfocus>
-        <onfocus condition="Skin.String(OSDTimeout,five)">AlarmClock(osd_timeout,SetFocus(99220),00:05,silent)</onfocus>
-        <onfocus condition="Skin.String(OSDTimeout,ten)">AlarmClock(osd_timeout,SetFocus(99220),00:10,silent)</onfocus>
-        <onfocus condition="Skin.String(OSDTimeout,fifteen)">AlarmClock(osd_timeout,SetFocus(99220),00:15,silent)</onfocus>
-        <onfocus condition="Skin.String(OSDTimeout,twenty)">AlarmClock(osd_timeout,SetFocus(99220),00:20,silent)</onfocus>
-        <onfocus condition="Skin.String(OSDTimeout,thirty)">AlarmClock(osd_timeout,SetFocus(99220),00:30,silent)</onfocus>
-        <onfocus condition="Skin.String(OSDTimeout,oneminute)">AlarmClock(osd_timeout,SetFocus(99220),01:00,silent)</onfocus>
-    </include>
-	
 	<include name="ButtonGroup1Standard">
 	    <!-- Music Repeat One, All, None -->
 		<control type="group" id="590">
@@ -484,7 +513,6 @@
 			<include content="OSDButtons" condition="VideoPlayer.Content(livetv)">
 			    <param name="icon">OSD/OSDChannelDownNF.png</param>
 		    </include>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 			<onclick>PlayerControl(Previous)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
@@ -493,7 +521,6 @@
 		    <include content="OSDButtons">
 			    <param name="icon">OSD/OSDRWNF.png</param>
 		    </include>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <enable>Player.SeekEnabled</enable>
 			<onclick>PlayerControl(Rewind)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
@@ -515,7 +542,6 @@
 		    <radioposy>0</radioposy>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		    <selected>[Player.Paused | Player.Rewinding | Player.Forwarding]</selected>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 			<onclick>PlayerControl(Play)</onclick>
 		    <visible>Player.PauseEnabled</visible>
 		</control>
@@ -524,7 +550,6 @@
 		    <include content="OSDButtons">
 			    <param name="icon">OSD/OSDStopNF.png</param>
 		    </include>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 			<onclick>PlayerControl(Stop)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
@@ -534,7 +559,6 @@
 			    <param name="icon">OSD/OSDFWNF.png</param>
 		    </include>
 		    <enable>Player.SeekEnabled</enable>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 			<onclick>PlayerControl(Forward)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
@@ -547,7 +571,6 @@
 			    <param name="icon">OSD/OSDChannelUpNF.png</param>
 		    </include>
 		    <onclick>PlayerControl(Next)</onclick>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
 		<!-- Video Menu -->
@@ -555,7 +578,6 @@
 		    <include content="OSDButtons">
 			    <param name="icon">OSD/OSDDvdNF.png</param>
 		    </include>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 			<onclick>PlayerControl(ShowVideoMenu)</onclick>
 		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.HasMenu</visible>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
@@ -567,7 +589,6 @@
 		    <include content="OSDButtons">
 		        <param name="icon">OSD/OSDRecordNF.png</param>
 			</include>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 			<onclick>PVR.ToggleRecordPlayingChannel</onclick>
 			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
@@ -643,7 +664,6 @@
             <font/>
             <texturefocus colordiffuse="$VAR[HighlightColor]" flipx="true">OSD/compact/next.png</texturefocus>
             <texturenofocus flipx="true">OSD/compact/next.png</texturenofocus>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <onclick>PlayerControl(Previous)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
@@ -655,8 +675,6 @@
             <font/>
             <texturefocus colordiffuse="$VAR[HighlightColor]" flipx="true">OSD/compact/ff.png</texturefocus>
             <texturenofocus flipx="true">OSD/compact/ff.png</texturenofocus>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <onclick>PlayerControl(Rewind)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
@@ -675,7 +693,6 @@
 		    <onclick>PlayerControl(Play)</onclick>
 		    <visible>Player.PauseEnabled</visible>
             <animation effect="fade" start="100" end="33" time="100" condition="!Player.PauseEnabled">Conditional</animation>
-            <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
         </control>
 		<!-- Stop -->
@@ -686,7 +703,6 @@
             <font/>
             <texturefocus colordiffuse="$VAR[HighlightColor]">OSD/compact/stop.png</texturefocus>
             <texturenofocus>OSD/compact/stop.png</texturenofocus>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <onclick>PlayerControl(Stop)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
@@ -698,7 +714,6 @@
             <font/>
             <texturefocus colordiffuse="$VAR[HighlightColor]">OSD/compact/ff.png</texturefocus>
             <texturenofocus>OSD/compact/ff.png</texturenofocus>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <onclick>PlayerControl(Forward)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
@@ -711,7 +726,6 @@
             <texturefocus colordiffuse="$VAR[HighlightColor]">OSD/compact/next.png</texturefocus>
             <texturenofocus>OSD/compact/next.png</texturenofocus>
 		    <onclick>PlayerControl(Next)</onclick>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
 		<!-- Video Menu -->
@@ -725,7 +739,6 @@
 		    <onclick>PlayerControl(ShowVideoMenu)</onclick>
 		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.HasMenu</visible>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		</control>
 		<!-- Record -->
 		<control type="togglebutton" id="700">
@@ -742,7 +755,6 @@
             <enable>PVR.CanRecordPlayingChannel</enable>
             <visible>VideoPlayer.Content(LiveTV) | MusicPlayer.Content(LiveTV)</visible>
             <animation effect="fade" start="100" end="33" time="100" condition="!PVR.CanRecordPlayingChannel">Conditional</animation>
-            <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
         </control>
 	</include>
@@ -763,7 +775,6 @@
 			    <param name="icon">OSD/OSDStereoscopicNF.png</param>
 		    </include>
 		    <onup>1200</onup>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
 		<!-- Subtitles -->
@@ -773,12 +784,10 @@
 		    </include>
 		    <onup condition="!Skin.HasSetting(SubtitleOpensSettings)">1110</onup>
 		    <onfocus>ClearProperty(PopupMenuActive,Home)</onfocus>
-			<onclick condition="Skin.HasSetting(SubtitleOpensSettings)">SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
 			<onclick condition="Skin.HasSetting(SubtitleOpensSettings)">ActivateWindow(osdsubtitlesettings)</onclick>
 		    <onclick condition="!Skin.HasSetting(SubtitleOpensSettings)">SetProperty(PopupMenuActive,Yes,Home)</onclick>
 			<onclick condition="!Skin.HasSetting(SubtitleOpensSettings)">SetFocus(1110)</onclick>
 			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 			<visible>Window.IsVisible(VideoOSD)</visible>
 		</control>
 		<!-- PVR OSD Channels -->
@@ -786,7 +795,6 @@
 		    <include content="OSDButtons">
 			    <param name="icon">OSD/OSDChannelsNF.png</param>
 		    </include>
-            <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <onclick>ActivateWindow(PVROSDChannels)</onclick>
 		    <onclick>Dialog.Close(VideoOSD)</onclick>
 		    <visible>VideoPlayer.Content(livetv)</visible>
@@ -797,7 +805,6 @@
 		    <include content="OSDButtons">
 			    <param name="icon">OSD/OSDEpgNF.png</param>
 		    </include>
-            <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 			<onclick>ActivateWindow(PVRChannelGuide)</onclick>
 		    <onclick>Dialog.Close(VideoOSD)</onclick>
 		    <visible>VideoPlayer.Content(livetv)</visible>
@@ -810,21 +817,19 @@
 		    </include>
 			<onclick>SetProperty(PlayerTVShowID,$INFO[Container(43261).ListItem.DBID],home)</onclick>
 			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
-			<onclick>SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
 			<onclick>ActivateWindow(1145)</onclick>
-		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</visible>
+		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.AddonIsEnabled(script.embuary.helper)</visible>
 		    <visible>Skin.HasSetting(ShowEpisodeList)</visible>
 			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		</control>
 		<!-- PVR Teletext -->
 		<control type="radiobutton" id="650">
 		    <include content="OSDButtons">
 			    <param name="icon">OSD/OSDTeletextNF.png</param>
 		    </include>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 			<onclick>Dialog.Close(VideoOSD)</onclick>
-			<onclick>ActivateWindow(Teletext)</onclick>
+			<onclick condition="!Skin.HasSetting(TeletextOpensEPG)">ActivateWindow(Teletext)</onclick>
+			<onclick condition="Skin.HasSetting(TeletextOpensEPG)">ActivateWindow(TVGuide)</onclick>
 		    <visible>VideoPlayer.Content(livetv)</visible>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
@@ -833,8 +838,6 @@
 		    <include content="OSDButtons">
 			    <param name="icon">OSD/OSDBookmarksNF.png</param>
 		    </include>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
-			<onclick>SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
 			<onclick>ActivateWindow(VideoBookmarks)</onclick>
 		    <visible>!VideoPlayer.Content(livetv)</visible>
 			<visible>Window.IsVisible(VideoOSD)</visible>
@@ -846,7 +849,6 @@
 			<include content="OSDButtons">
 	    		<param name="icon">OSD/OSDInfoNF.png</param>
 			</include>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 			<onclick condition="!Skin.HasSetting(InfoOpensVideoInfo) | String.IsEmpty(VideoPlayer.DBID)">Skin.ToggleSetting(OSDInfo)</onclick>
 		    <!-- If setting enabled, set focus to hidden list from library data provider to be able to open video info dialog -->
 		    <onclick condition="Skin.HasSetting(InfoOpensVideoInfo) + !String.IsEmpty(VideoPlayer.DBID)">SetProperty(OSDinfodialogButtonActive,True,home)</onclick>
@@ -863,8 +865,6 @@
 		    <onup>1010</onup>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 			<onfocus>ClearProperty(PopupMenu2Active,Home)</onfocus>
-			<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
-			<onclick>SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
 			<onclick>SetProperty(PopupMenu2Active,Yes,Home)</onclick>
 		    <onclick>SetFocus(1010)</onclick>
 		</control>
@@ -891,7 +891,6 @@
             <texturefocus colordiffuse="$VAR[HighlightColor]">OSD/compact/3d.png</texturefocus>
             <texturenofocus>OSD/compact/3d.png</texturenofocus>
 		    <onup>1200</onup>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <visible>!VideoPlayer.Content(livetv) + Window.IsVisible(VideoOSD)</visible>
 		    <visible>VideoPlayer.IsStereoscopic</visible>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
@@ -906,11 +905,9 @@
             <texturenofocus>OSD/compact/subs.png</texturenofocus>
 		    <onup condition="!Skin.HasSetting(SubtitleOpensSettings)">1110</onup>
 		    <onfocus>ClearProperty(PopupMenuActive,Home)</onfocus>
-		    <onclick condition="Skin.HasSetting(SubtitleOpensSettings)">SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
 			<onclick condition="Skin.HasSetting(SubtitleOpensSettings)">ActivateWindow(osdsubtitlesettings)</onclick>
 		    <onclick condition="!Skin.HasSetting(SubtitleOpensSettings)">SetProperty(PopupMenuActive,Yes,Home)</onclick>
 		    <onclick condition="!Skin.HasSetting(SubtitleOpensSettings)">SetFocus(1110)</onclick>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 			<visible>Window.IsVisible(VideoOSD)</visible>
 		</control>
@@ -927,7 +924,6 @@
 		    <onclick>Dialog.Close(VideoOSD)</onclick>
 		    <visible>VideoPlayer.Content(livetv)</visible>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		</control>
 		<!-- OSD Guide -->
     	<control type="button" id="607">
@@ -941,7 +937,6 @@
 		    <onclick>Dialog.Close(VideoOSD)</onclick>
 		    <visible>VideoPlayer.Content(livetv)</visible>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		</control>
 		<!-- Episode List -->
     	<control type="button" id="6071">
@@ -953,12 +948,10 @@
             <texturenofocus>OSD/compact/playlist.png</texturenofocus>
 		    <onclick>SetProperty(PlayerTVShowID,$INFO[Container(43261).ListItem.DBID],home)</onclick>
 			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
-			<onclick>SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
 			<onclick>ActivateWindow(1145)</onclick>
-		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</visible>
+		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.AddonIsEnabled(script.embuary.helper)</visible>
 		    <visible>Skin.HasSetting(ShowEpisodeList)</visible>
 			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		</control>
 		<!-- Teletext -->
 		<control type="button" id="650">
@@ -969,9 +962,9 @@
             <font/>
             <texturefocus colordiffuse="$VAR[HighlightColor]">OSD/compact/text.png</texturefocus>
             <texturenofocus>OSD/compact/text.png</texturenofocus>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <onclick>Dialog.Close(VideoOSD)</onclick>
-		    <onclick>ActivateWindow(Teletext)</onclick>
+		    <onclick condition="!Skin.HasSetting(TeletextOpensEPG)">ActivateWindow(Teletext)</onclick>
+			<onclick condition="Skin.HasSetting(TeletextOpensEPG)">ActivateWindow(TVGuide)</onclick>
 		    <visible>VideoPlayer.Content(livetv)</visible>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
@@ -984,11 +977,9 @@
             <font/>
             <texturefocus colordiffuse="$VAR[HighlightColor]">OSD/compact/bookmarks.png</texturefocus>
             <texturenofocus>OSD/compact/bookmarks.png</texturenofocus>
-		    <onclick>SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
 			<onclick>ActivateWindow(VideoBookmarks)</onclick>
 		    <visible>!VideoPlayer.Content(livetv) + Window.IsVisible(VideoOSD)</visible>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		</control>
 		<!-- Info -->
 		<control type="button" id="701">
@@ -999,7 +990,6 @@
             <font/>
             <texturefocus colordiffuse="$VAR[HighlightColor]">OSD/compact/info.png</texturefocus>
             <texturenofocus>OSD/compact/info.png</texturenofocus>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 		    <onclick condition="!Skin.HasSetting(InfoOpensVideoInfo) | String.IsEmpty(VideoPlayer.DBID)">Skin.ToggleSetting(OSDInfo)</onclick>
 		    <!-- If setting enabled, set focus to hidden list from library data provider to be able to open video info dialog -->
 		    <onclick condition="Skin.HasSetting(InfoOpensVideoInfo) + !String.IsEmpty(VideoPlayer.DBID)">SetProperty(OSDinfodialogButtonActive,True,home)</onclick>
@@ -1019,8 +1009,6 @@
 		    <onup>1010</onup>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		    <onfocus>ClearProperty(PopupMenu2Active,Home)</onfocus>
-		    <include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
-		    <onclick>SetProperty(ShowingOSDSettings,Yes,Home)</onclick>
 			<onclick>SetProperty(PopupMenu2Active,Yes,Home)</onclick>
 		    <onclick>SetFocus(1010)</onclick>
 		</control>
@@ -1070,7 +1058,6 @@
 					    <width>470</width>
 					    <font>Details</font>
 					    <label>$LOCALIZE[13396]</label>
-						<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 						<onclick>ActivateWindow(osdaudiosettings)</onclick>
 					    <texturenofocus colordiffuse="ff161612">img/WhiteRoundedST2.png</texturenofocus>
 						<visible>Window.IsVisible(videoOSD)</visible>
@@ -1080,7 +1067,6 @@
 					    <width>470</width>
 					    <font>Details</font>
 					    <label>$LOCALIZE[13395]</label>
-						<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 						<onclick>ActivateWindow(osdvideosettings)</onclick>
 					    <texturenofocus colordiffuse="ff161612">img/WhiteRoundedST2.png</texturenofocus>
 						<visible>Window.IsVisible(videoOSD)</visible>
@@ -1090,7 +1076,6 @@
 					    <width>470</width>
 					    <font>Details</font>
 					    <label>$LOCALIZE[36560]</label>
-						<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 						<onclick>ActivateWindow(osdcmssettings)</onclick>
 					    <texturenofocus colordiffuse="ff161612">img/WhiteRoundedST2.png</texturenofocus>
 					    <visible>System.HasCMS</visible>
@@ -1102,7 +1087,6 @@
 					    <font>Details</font>
 					    <label>$LOCALIZE[31133]</label>
 					    <label2>$INFO[VideoPlayer.AudioLanguage,[COLOR=Hghlight],[/COLOR]]</label2>
-						<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 						<onclick>AudioNextLanguage</onclick>
 					    <texturenofocus colordiffuse="ff161612">img/WhiteRoundedST2.png</texturenofocus>
 						<visible>Window.IsVisible(videoOSD)</visible>
@@ -1218,7 +1202,6 @@
 					    <height>80</height>
 					    <width>470</width>
 					    <label>$LOCALIZE[22006]</label>
-						<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 						<onclick>SubtitleDelay</onclick>
 					    <enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
 					    <font>Details</font>
@@ -1229,7 +1212,6 @@
 					    <width>470</width>
 					    <label>$LOCALIZE[32004]</label>
 					    <label2>[COLOR=$VAR[SelectedTextColor]]$INFO[VideoPlayer.SubtitlesLanguage][/COLOR]</label2>
-						<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 						<onclick>CycleSubtitle</onclick>
 					    <enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
 					    <font>Details</font>
@@ -1240,7 +1222,6 @@
 					    <width>470</width>
 					    <label>$LOCALIZE[449]</label>
 					    <radioposx>380</radioposx>
-						<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 						<onclick>ShowSubtitles</onclick>
 					    <selected>VideoPlayer.SubtitlesEnabled + VideoPlayer.HasSubtitles</selected>
 					    <enable>VideoPlayer.HasSubtitles</enable>
@@ -1268,7 +1249,6 @@
 					    <width>470</width>
 					    <radioposx>380</radioposx>
 					    <label>$LOCALIZE[24022]</label>
-						<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 						<onclick>ToggleStereoMode</onclick>
 					    <selected>Integer.IsGreater(System.StereoscopicMode,0)</selected>
 					    <font>Details</font>
@@ -1279,7 +1259,6 @@
 					    <width>470</width>
 					    <label>$LOCALIZE[31135]</label>
 					    <label2>$INFO[VideoPlayer.StereoscopicMode]</label2>
-						<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 						<onclick>StereoMode</onclick>
 					    <font>Details</font>
 					    <texturenofocus colordiffuse="ff161612">img/WhiteRoundedST2.png</texturenofocus>
@@ -1289,7 +1268,6 @@
 					    <width>470</width>
 					    <radioposx>380</radioposx>
 					    <label>$LOCALIZE[31136]</label>
-						<include condition="Skin.HasSetting(AutoClose.VideoOSD) + !Skin.HasSetting(AutoClose.withInfoService)">OSDButtonOnFocus</include>
 						<onclick>StereoModeToMono</onclick>
 					    <selected>Integer.IsEqual(System.StereoscopicMode,9)</selected>
 					    <font>Details</font>

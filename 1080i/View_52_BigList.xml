@@ -212,24 +212,6 @@
 					    </include>
 				    </focusedlayout>
 					
-<!--				    <itemlayout height="104" width="1070" condition="![container.content(episodes) | container.content(addons) | container.content(artists) | container.content(albums) | container.content(songs) | Container.Content(images) | Container.Content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)]">
-					    <include content="52_layout">
-						    <param name="left">90</param>
-						    <param name="width">1150</param>
-						    <param name="imgwidth">60</param>
-						    <param name="isfocused">false</param>
-						    <param name="image">$VAR[Square]</param>
-					    </include>
-				    </itemlayout>
-				    <focusedlayout height="104" width="1070" condition="![container.content(episodes) | container.content(addons) | container.content(artists) | container.content(albums) | container.content(songs) | Container.Content(images) | Container.Content(musicvideos) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)]">
-					    <include content="52_layout">
-    						<param name="left">90</param>
-	    					<param name="width">1150</param>
-		    				<param name="imgwidth">60</param>
-			    			<param name="image">$VAR[Square]</param>
-				    		<param name="isfocused">true</param>
-					    </include>
-				    </focusedlayout> -->
 			    </control>
 
 			    <control type="scrollbar" id="62">
@@ -397,10 +379,6 @@
 				
 			    <include content="PanelTemplate52">
                     <param name="plotheight">360</param>
-				    <param name="subcontent_label">$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)]</param>
-				    <param name="subcontent_path">$INFO[ListItem.FolderPath]</param>
-				    <param name="subcontent_visible">String.IsEmpty(ListItem.Property(Artist_Description))</param>
-				    <param name="subcontent_image_visible">false</param>
 				    <param name="visibility">![$EXP[BigListPanelIsSwapped]] + Container.content(artists)</param>
 			    </include>
 				<include content="PanelTemplate52">
@@ -409,22 +387,11 @@
 					<param name="plotwidth">810</param>
 		            <param name="labelwidth">790</param>
 					<param name="plotheight">360</param>
-				    <param name="subcontent_label">$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)]</param>
-				    <param name="subcontent_path">$INFO[ListItem.FolderPath]</param>
-				    <param name="subcontent_visible">String.IsEmpty(ListItem.Property(Artist_Description))</param>
-				    <param name="subcontent_image_visible">false</param>
 				    <param name="visibility">$EXP[BigListPanelIsSwapped] + Container.content(artists)</param>
 			    </include>
 				
 			    <include content="PanelTemplate52">
                     <param name="plotheight">360</param>
-				    <param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
-                    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins,  (,)]</param>
-				    <param name="subcontent_path">$INFO[ListItem.FolderPath]</param>
-				    <param name="subcontent_sortby" value="track" />
-				    <param name="subcontent_sortorder" value="ascending" />
-				    <param name="subcontent_visible">String.IsEmpty(ListItem.Property(Album_Description))</param>
-				    <param name="subcontent_image_visible">false</param>
 				    <param name="visibility">![$EXP[BigListPanelIsSwapped]] + Container.content(albums)</param>
 			    </include>
 				<include content="PanelTemplate52">
@@ -433,13 +400,6 @@
 					<param name="plotwidth">810</param>
 		            <param name="labelwidth">790</param>
 					<param name="plotheight">360</param>
-				    <param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
-                    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins,  (,)]</param>
-				    <param name="subcontent_path">$INFO[ListItem.FolderPath]</param>
-				    <param name="subcontent_sortby" value="track" />
-				    <param name="subcontent_sortorder" value="ascending" />
-				    <param name="subcontent_visible">String.IsEmpty(ListItem.Property(Album_Description))</param>
-				    <param name="subcontent_image_visible">false</param>
 				    <param name="visibility">$EXP[BigListPanelIsSwapped] + Container.content(albums)</param>
 			    </include>
 				

@@ -482,7 +482,7 @@
 					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="radiobutton" id="813">
-					<visible>!Skin.HasSetting(Hide.AllShelves)</visible>
+					<visible>!Skin.HasSetting(Hide.AllShelves) + String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 					<label>$LOCALIZE[31654]</label>
 					<onclick condition="!String.IsEmpty(Container(211).ListItem.Property(showShelvesInfo))">SetProperty(customProperty,showShelvesInfo)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SetProperty(customProperty,showShelvesInfo)</onclick>
@@ -493,21 +493,6 @@
 					<width>1340</width>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 					<font>ListDetails</font>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SetProperty(customProperty,horizontalWidgetPos)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SetProperty(customValue,Low)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SendClick(404)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SetProperty(customProperty,widgetTwoShelves)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SetProperty(customValue,false)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SendClick(404)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SetProperty(customProperty,widgetThreeShelves)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SetProperty(customValue,false)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SendClick(404)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SetProperty(customProperty,widgetThreeShelvesLarge)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SetProperty(customValue,false)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SendClick(404)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SetProperty(customProperty,UseBottomShortcuts)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SetProperty(customValue,false)</onunfocus>
-					<onunfocus condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SendClick(404)</onunfocus>
 					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="button" id="800">

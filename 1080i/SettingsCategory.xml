@@ -3,7 +3,8 @@
     <backgroundcolor>0</backgroundcolor>
     <defaultcontrol always="true">3</defaultcontrol>
     <controls>
-        <include>DefaultBackground</include>
+        <include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
+		<include>DefaultBackground</include>
         <include>Time</include>
         <control type="group" description="Content">
             <animation effect="fade" time="250" condition="!Window.Previous(Settings.xml)">WindowOpen</animation>

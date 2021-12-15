@@ -4,6 +4,7 @@
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<menucontrol>9000</menucontrol>
 	<controls>
+		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 		<include>DefaultBackground</include>
 		<include>Time</include>
 		<control type="button" id="50">

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-10-26 00:12+0000\n"
+"PO-Revision-Date: 2021-12-02 18:13+0000\n"
 "Last-Translator: G0mez82 <jalehto_99@hotmail.com>\n"
 "Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/fi_fi/>\n"
 "Language: fi_fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.9.1\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -2503,27 +2503,27 @@ msgstr "Palaavat sarjat"
 
 msgctxt "#32147"
 msgid "Acting"
-msgstr "Näyttelee"
+msgstr "Näyttelemisestä"
 
 msgctxt "#32148"
 msgid "Directing"
-msgstr "Ohjaa"
+msgstr "Ohjaamisesta"
 
 msgctxt "#32149"
 msgid "Writing"
-msgstr "Kirjoittaa"
+msgstr "Kirjoittamisesta"
 
 msgctxt "#32150"
 msgid "Production"
-msgstr "Tuotanto"
+msgstr "Tuottamisesta"
 
 msgctxt "#32151"
 msgid "Sound"
-msgstr "Ääni"
+msgstr "Äänittämisestä"
 
 msgctxt "#32152"
 msgid "Creator"
-msgstr "Luoja"
+msgstr "Luomisesta"
 
 msgctxt "#32153"
 msgid "Died at Age"
@@ -3620,7 +3620,75 @@ msgstr "Sisällytä kaudet jaksoluettelo ponnahdusikkunaan"
 
 msgctxt "#32459"
 msgid "Next Aired"
+msgstr "Seuraava esitys"
+
+msgctxt "#32460"
+msgid "Enable Direct Seeking in Full Screen Info"
+msgstr "Ota suora haku käyttöön koko näytön tiedoissa"
+
+msgctxt "#32461"
+msgid "Show Disc above Poster"
+msgstr "Näytä levy julisteen yläpuolella"
+
+msgctxt "#32462"
+msgid "Hide Disc over Set Poster"
+msgstr "Piilota levy kokoelmakuvan päältä"
+
+msgctxt "#32463"
+msgid "Play trailer in a window"
+msgstr "Toista traileri ikkunassa"
+
+msgctxt "#32464"
+msgid "Search Trailer"
+msgstr "Etsi traileri"
+
+msgctxt "#32465"
+msgid "Search for Trailers with IMDb Trailers Addon"
+msgstr "Etsi trailereita IMDb Trailers lisäosalla"
+
+msgctxt "#32466"
+msgid "Fade out Non-focused Menu Items"
+msgstr "Häivytä tarkentamattomat valikkokohdat"
+
+msgctxt "#32467"
+msgid "Cloudiness"
+msgstr "Pilvisyys"
+
+msgctxt "#32468"
+msgid "Probability of Precipitation"
+msgstr "Sateen todennäköisyys"
+
+msgctxt "#32469"
+msgid "Intro Video Duration"
+msgstr "Käynnistysvideon kesto"
+
+msgctxt "#32470"
+msgid "PVR Timeshift Buffer Color"
+msgstr "PVR ajansiirron puskuroinnin väri"
+
+msgctxt "#32471"
+msgid "Use Main Menu item Background for Sub Windows"
+msgstr "Käytä päävalikon kohdan taustakuvaa alaikkunoissa"
+
+msgctxt "#32472"
+msgid "Teletext Button Opens EPG"
+msgstr "Teksti-TV Painike Avaa Ohjelmaoppaan"
+
+msgctxt "#32473"
+msgid "EPG Icon"
 msgstr ""
+
+msgctxt "#32474"
+msgid "Channel Logo"
+msgstr ""
+
+msgctxt "#32475"
+msgid "Always Show Information Panel"
+msgstr ""
+
+#~ msgctxt "#32473"
+#~ msgid "EPG Icon/Channel Logo"
+#~ msgstr "EPG kuvake/Kanava logo"
 
 #~ msgctxt "#31650"
 #~ msgid "Show Information Popup (after 3 seconds)"

@@ -1150,6 +1150,80 @@
             </item>
         </definition>
     </include>
+	
+	<include name="SubcontentInfoList">
+	    <param name="subcontent_label1">$INFO[ListItem.Label][COLOR $VAR[HighlightColor]]$INFO[ListItem.Year,  (,)][/COLOR]</param>
+        <param name="subcontent_label2">$INFO[ListItem.Label][COLOR $VAR[HighlightColor]]$INFO[ListItem.Year,  (,)][/COLOR]</param>
+        <param name="subcontent_path">$VAR[SubcontentPathVar]</param>
+        <param name="subcontent_sortby">year</param>
+        <param name="subcontent_sortorder">ascending</param>
+        <param name="subcontent_visible">true</param>
+        <param name="subcontent_image_visible">true</param>
+        <param name="subcontent_image_texture">$VAR[Overlay]</param>
+		<param name="list_id">4100</param>
+		<param name="width">500</param>
+		<param name="labelwidth">500</param>
+	    <definition>
+		    <!-- Panel to show set info or artist discography info or album track info -->
+            <control type="panel" id="$PARAM[list_id]">
+                <visible>$PARAM[subcontent_visible]</visible>
+                <visible>!ListItem.IsParentFolder</visible>
+                <orientation>vertical</orientation>
+                <focusedlayout height="40" width="$PARAM[width]">
+                </focusedlayout>
+                <itemlayout height="40" width="$PARAM[width]">
+                    <control type="image">
+                        <top>5</top>
+                        <width>30</width>
+                        <height>30</height>
+                        <visible>$PARAM[subcontent_image_visible]</visible>
+                        <texture>$PARAM[subcontent_image_texture]</texture>
+                    </control>
+                    <control type="label">
+                        <left>40</left>
+                        <height>40</height>
+                        <width>$PARAM[labelwidth]</width>
+                        <aligny>center</aligny>
+                        <label>$PARAM[subcontent_label1]</label>
+                        <font>ListDetails</font>
+                        <scrollspeed>25</scrollspeed>
+                        <visible>$PARAM[subcontent_image_visible] + !Skin.HasSetting(Enable.HourMinutes)</visible>
+                    </control>
+                    <control type="label">
+                        <left>40</left>
+                        <height>40</height>
+                        <width>$PARAM[labelwidth]</width>
+                        <aligny>center</aligny>
+                        <label>$PARAM[subcontent_label2]</label>
+                        <font>ListDetails</font>
+                        <scrollspeed>25</scrollspeed>
+                        <visible>$PARAM[subcontent_image_visible] + Skin.HasSetting(Enable.HourMinutes)</visible>
+                    </control>
+                    <control type="label">
+                        <left>0</left>
+                        <height>40</height>
+                        <width>$PARAM[labelwidth]</width>
+                        <aligny>center</aligny>
+                        <label>$PARAM[subcontent_label1]</label>
+                        <font>ListDetails</font>
+                        <scrollspeed>25</scrollspeed>
+                        <visible>!$PARAM[subcontent_image_visible] + !Skin.HasSetting(Enable.HourMinutes)</visible>
+                    </control>
+                    <control type="label">
+                        <left>0</left>
+                        <height>40</height>
+                        <width>$PARAM[labelwidth]</width>
+                        <aligny>center</aligny>
+                        <label>$PARAM[subcontent_label2]</label>
+                        <font>ListDetails</font>
+                        <scrollspeed>25</scrollspeed>
+                        <visible>!$PARAM[subcontent_image_visible] + Skin.HasSetting(Enable.HourMinutes)</visible>
+                    </control>
+                </itemlayout>
+                <content sortby="$PARAM[subcontent_sortby]" sortorder="$PARAM[subcontent_order]">$PARAM[subcontent_path]</content>
+            </control>
+		</definition>
+	</include>
 
     <!-- Panel Template for all views except Tall List and Big List -->
     <include name="PanelTemplate">
@@ -1166,14 +1240,6 @@
         <param name="plot">$INFO[ListItem.Plot]</param>
 		<param name="plotheight">355</param>
 		<param name="plotheightlow">200</param>
-        <param name="subcontent_label1">$INFO[ListItem.Label][COLOR $VAR[HighlightColor]]$INFO[ListItem.Year,  (,)][/COLOR]</param>
-        <param name="subcontent_label2">$INFO[ListItem.Label][COLOR $VAR[HighlightColor]]$INFO[ListItem.Year,  (,)][/COLOR]</param>
-        <param name="subcontent_path">videodb://movies/sets/$INFO[ListItem.DBID]/?setid=$INFO[ListItem.DBID]</param>
-        <param name="subcontent_sortby">year</param>
-        <param name="subcontent_sortorder">descending</param>
-        <param name="subcontent_visible">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)]</param>
-        <param name="subcontent_image_visible">true</param>
-        <param name="subcontent_image_texture">$VAR[Overlay]</param>
         <param name="footer"></param>
         <param name="visibility"></param>
         <param name="showfooter">true</param>
@@ -1288,7 +1354,7 @@
                     </control>
 					<!-- Plot for other content types -->
 					<control type="textbox">
-                        <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + ![$PARAM[subcontent_visible]]</visible>
+                        <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !$EXP[ShowSubcontent]</visible>
 						<align>justify</align>
                         <label fallback="19055">$PARAM[plot]</label>
                         <font>InfoPlot</font>
@@ -1326,64 +1392,30 @@
                         <font>InfoPlot</font>
                         <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
                     </control>
-					<!-- Panel to show set info or artist discography info or album track info -->
-                    <control type="panel">
-                        <visible>$PARAM[subcontent_visible]</visible>
-                        <visible>!ListItem.IsParentFolder</visible>
-                        <orientation>vertical</orientation>
-                        <focusedlayout height="40" width="$PARAM[width]">
-                        </focusedlayout>
-                        <itemlayout height="40" width="$PARAM[width]">
-                            <control type="image">
-                                <top>5</top>
-                                <width>30</width>
-                                <height>30</height>
-                                <visible>$PARAM[subcontent_image_visible]</visible>
-                                <texture>$PARAM[subcontent_image_texture]</texture>
-                            </control>
-                            <control type="label">
-                                <left>40</left>
-                                <height>40</height>
-                                <width>$PARAM[width]</width>
-                                <aligny>center</aligny>
-                                <label>$PARAM[subcontent_label1]</label>
-                                <font>ListDetails</font>
-                                <scrollspeed>25</scrollspeed>
-                                <visible>$PARAM[subcontent_image_visible] + !Skin.HasSetting(Enable.HourMinutes)</visible>
-                            </control>
-                            <control type="label">
-                                <left>40</left>
-                                <height>40</height>
-                                <width>$PARAM[width]</width>
-                                <aligny>center</aligny>
-                                <label>$PARAM[subcontent_label2]</label>
-                                <font>ListDetails</font>
-                                <scrollspeed>25</scrollspeed>
-                                <visible>$PARAM[subcontent_image_visible] + Skin.HasSetting(Enable.HourMinutes)</visible>
-                            </control>
-                            <control type="label">
-                                <left>0</left>
-                                <height>40</height>
-                                <width>$PARAM[width]</width>
-                                <aligny>center</aligny>
-                                <label>$PARAM[subcontent_label1]</label>
-                                <font>ListDetails</font>
-                                <scrollspeed>25</scrollspeed>
-                                <visible>!$PARAM[subcontent_image_visible] + !Skin.HasSetting(Enable.HourMinutes)</visible>
-                            </control>
-                            <control type="label">
-                                <left>0</left>
-                                <height>40</height>
-                                <width>$PARAM[width]</width>
-                                <aligny>center</aligny>
-                                <label>$PARAM[subcontent_label2]</label>
-                                <font>ListDetails</font>
-                                <scrollspeed>25</scrollspeed>
-                                <visible>!$PARAM[subcontent_image_visible] + Skin.HasSetting(Enable.HourMinutes)</visible>
-                            </control>
-                        </itemlayout>
-                        <content sortby="$PARAM[subcontent_sortby]" sortorder="$PARAM[subcontent_order]">$PARAM[subcontent_path]</content>
-                    </control>
+					<include content="SubcontentInfoList">
+                        <param name="subcontent_visible">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)]</param>
+		                <param name="width">$PARAM[width]</param>
+						<param name="labelwidth">$PARAM[width]</param>
+					</include>
+					<include content="SubcontentInfoList">
+                        <param name="list_id">4200</param>
+						<param name="subcontent_label1">$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)]</param>
+						<param name="subcontent_order">descending</param>
+						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,artist) + String.IsEmpty(ListItem.Property(Artist_Description))]</param>
+		                <param name="subcontent_image_visible">false</param>
+						<param name="width">$PARAM[width]</param>
+						<param name="labelwidth">$PARAM[width]</param>
+					</include>	
+					<include content="SubcontentInfoList">
+                        <param name="list_id">4300</param>
+						<param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
+					    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins,  (,)]</param>
+						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,album) + String.IsEmpty(ListItem.Property(Album_Description))]</param>
+		                <param name="subcontent_image_visible">false</param>
+						<param name="subcontent_sortby" value="track" />
+						<param name="width">$PARAM[width]</param>
+						<param name="labelwidth">$PARAM[width]</param>
+					</include>	
                 </control>
 			</control>
 			<!-- Footer and media flags -->
@@ -1540,14 +1572,6 @@
         <param name="plotgrouptop"></param>
 		<param name="plotheight">630</param>
         <param name="plot">$INFO[ListItem.Plot]</param>
-        <param name="subcontent_label1">$INFO[ListItem.Label][COLOR $VAR[HighlightColor]]$INFO[ListItem.Year,  (,)][/COLOR]</param>
-        <param name="subcontent_label2">$INFO[ListItem.Label][COLOR $VAR[HighlightColor]]$INFO[ListItem.Year,  (,)][/COLOR]</param>
-        <param name="subcontent_path">$INFO[ListItem.Path]</param>
-        <param name="subcontent_sortby">year</param>
-        <param name="subcontent_sortorder">descending</param>
-        <param name="subcontent_visible">ListItem.IsCollection + String.IsEmpty(ListItem.Plot)</param>
-        <param name="subcontent_image_visible">true</param>
-        <param name="subcontent_image_texture">$VAR[Overlay]</param>
         <param name="footer"></param>
 		<param name="footer2"></param>
         <param name="visibility"></param>
@@ -1639,69 +1663,36 @@
                     </control>
 					<!-- Plot for other content types -->
 					<control type="textbox" id="4001">
-                        <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + ![$PARAM[subcontent_visible]]</visible>
+                        <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !$EXP[ShowSubcontent]</visible>
 						<align>justify</align>
                         <label fallback="19055">$PARAM[plot]</label>
                         <font>InfoPlot</font>
                         <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
                     </control>
-                    <control type="panel" id="4002">
-                        <visible>$PARAM[subcontent_visible]</visible>
-                        <visible>!ListItem.IsParentFolder</visible>
-                        <orientation>vertical</orientation>
-                        <focusedlayout height="40" width="$PARAM[width]">
-                        </focusedlayout>
-                        <itemlayout height="40" width="$PARAM[width]">
-                            <control type="image">
-                                <top>5</top>
-                                <width>30</width>
-                                <height>30</height>
-                                <visible>$PARAM[subcontent_image_visible]</visible>
-                                <texture>$PARAM[subcontent_image_texture]</texture>
-                            </control>
-                            <control type="label">
-                                <left>40</left>
-                                <height>40</height>
-                                <width>$PARAM[width]</width>
-                                <aligny>center</aligny>
-                                <label>$PARAM[subcontent_label1]</label>
-                                <font>ListDetails</font>
-                                <scrollspeed>25</scrollspeed>
-                                <visible>$PARAM[subcontent_image_visible] + !Skin.HasSetting(Enable.HourMinutes)</visible>
-                            </control>
-                            <control type="label">
-                                <left>40</left>
-                                <height>40</height>
-                                <width>$PARAM[width]</width>
-                                <aligny>center</aligny>
-                                <label>$PARAM[subcontent_label2]</label>
-                                <font>ListDetails</font>
-                                <scrollspeed>25</scrollspeed>
-                                <visible>$PARAM[subcontent_image_visible] + Skin.HasSetting(Enable.HourMinutes)</visible>
-                            </control>
-                            <control type="label">
-                                <left>0</left>
-                                <height>40</height>
-                                <width>$PARAM[width]</width>
-                                <aligny>center</aligny>
-                                <label>$PARAM[subcontent_label1]</label>
-                                <font>ListDetails</font>
-                                <scrollspeed>25</scrollspeed>
-                                <visible>!$PARAM[subcontent_image_visible] + !Skin.HasSetting(Enable.HourMinutes)</visible>
-                            </control>
-                            <control type="label">
-                                <left>0</left>
-                                <height>40</height>
-                                <width>$PARAM[width]</width>
-                                <aligny>center</aligny>
-                                <label>$PARAM[subcontent_label2]</label>
-                                <font>ListDetails</font>
-                                <scrollspeed>25</scrollspeed>
-                                <visible>!$PARAM[subcontent_image_visible] + Skin.HasSetting(Enable.HourMinutes)</visible>
-                            </control>
-                        </itemlayout>
-                        <content sortby="$PARAM[subcontent_sortby]" sortorder="$PARAM[subcontent_order]">$PARAM[subcontent_path]</content>
-                    </control>
+					<include content="SubcontentInfoList">
+                        <param name="subcontent_visible">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)]</param>
+		                <param name="width">$PARAM[width]</param>
+						<param name="labelwidth">$PARAM[width]</param>
+					</include>
+					<include content="SubcontentInfoList">
+                        <param name="list_id">4200</param>
+						<param name="subcontent_label1">$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)]</param>
+						<param name="subcontent_order">descending</param>
+						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,artist) + String.IsEmpty(ListItem.Property(Artist_Description))]</param>
+		                <param name="subcontent_image_visible">false</param>
+						<param name="width">$PARAM[width]</param>
+						<param name="labelwidth">$PARAM[width]</param>
+					</include>	
+					<include content="SubcontentInfoList">
+                        <param name="list_id">4300</param>
+						<param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
+					    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins,  (,)]</param>
+						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,album) + String.IsEmpty(ListItem.Property(Album_Description))]</param>
+		                <param name="subcontent_image_visible">false</param>
+						<param name="subcontent_sortby" value="track" />
+						<param name="width">$PARAM[width]</param>
+						<param name="labelwidth">$PARAM[width]</param>
+					</include>
                 </control>                
                 <control type="label" description="Footer 2">
                     <top>$PARAM[footertop]</top>
@@ -1740,14 +1731,6 @@
 		<param name="labelwidth">800</param>
 		<param name="subheading2"></param>
 		<param name="subheading2_visible">false</param>
-        <param name="subcontent_label1">$INFO[ListItem.Label][COLOR $VAR[HighlightColor]]$INFO[ListItem.Year,  (,)][/COLOR]</param>
-        <param name="subcontent_label2">$INFO[ListItem.Label][COLOR $VAR[HighlightColor]]$INFO[ListItem.Year,  (,)][/COLOR]</param>
-        <param name="subcontent_path">$INFO[ListItem.Path]</param>
-        <param name="subcontent_sortby">year</param>
-        <param name="subcontent_sortorder">descending</param>
-        <param name="subcontent_visible">ListItem.IsCollection + String.IsEmpty(ListItem.Plot)</param>
-        <param name="subcontent_image_visible">true</param>
-        <param name="subcontent_image_texture">$VAR[Overlay]</param>
         <param name="visibility">false</param>
         <definition>
             <control type="group" id="4000" description="Media Info Panel">
@@ -1866,63 +1849,30 @@
                         <height>$PARAM[plotheight]</height>
                         <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
                     </control>
-                    <control type="panel" id="4002">
-                        <visible>$PARAM[subcontent_visible]</visible>
-                        <visible>!ListItem.IsParentFolder</visible>
-                        <orientation>vertical</orientation>
-                        <focusedlayout height="40" width="800">
-                        </focusedlayout>
-                        <itemlayout height="40" width="800">
-                            <control type="image">
-                                <top>5</top>
-                                <width>30</width>
-                                <height>30</height>
-                                <visible>$PARAM[subcontent_image_visible]</visible>
-                                <texture>$PARAM[subcontent_image_texture]</texture>
-                            </control>
-                            <control type="label">
-                                <left>40</left>
-                                <height>40</height>
-                                <width>$PARAM[labelwidth]</width>
-                                <aligny>center</aligny>
-                                <label>$PARAM[subcontent_label1]</label>
-                                <font>ListDetails</font>
-                                <scrollspeed>25</scrollspeed>
-                                <visible>$PARAM[subcontent_image_visible] + !Skin.HasSetting(Enable.HourMinutes)</visible>
-                            </control>
-                            <control type="label">
-                                <left>40</left>
-                                <height>40</height>
-                                <width>$PARAM[labelwidth]</width>
-                                <aligny>center</aligny>
-                                <label>$PARAM[subcontent_label2]</label>
-                                <font>ListDetails</font>
-                                <scrollspeed>25</scrollspeed>
-                                <visible>$PARAM[subcontent_image_visible] + Skin.HasSetting(Enable.HourMinutes)</visible>
-                            </control>
-                            <control type="label">
-                                <left>0</left>
-                                <height>40</height>
-                                <width>$PARAM[labelwidth]</width>
-                                <aligny>center</aligny>
-                                <label>$PARAM[subcontent_label1]</label>
-                                <font>ListDetails</font>
-                                <scrollspeed>25</scrollspeed>
-                                <visible>!$PARAM[subcontent_image_visible] + !Skin.HasSetting(Enable.HourMinutes)</visible>
-                            </control>
-                            <control type="label">
-                                <left>0</left>
-                                <height>40</height>
-                                <width>$PARAM[labelwidth]</width>
-                                <aligny>center</aligny>
-                                <label>$PARAM[subcontent_label2]</label>
-                                <font>ListDetails</font>
-                                <scrollspeed>25</scrollspeed>
-                                <visible>!$PARAM[subcontent_image_visible] + Skin.HasSetting(Enable.HourMinutes)</visible>
-                            </control>
-                        </itemlayout>
-                        <content sortby="$PARAM[subcontent_sortby]" sortorder="$PARAM[subcontent_order]">$PARAM[subcontent_path]</content>
-                    </control>
+                    <include content="SubcontentInfoList">
+                        <param name="subcontent_visible">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)]</param>
+		                <param name="width">800</param>
+						<param name="labelwidth">$PARAM[labelwidth]</param>
+					</include>
+					<include content="SubcontentInfoList">
+                        <param name="list_id">4200</param>
+						<param name="subcontent_label1">$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)]</param>
+						<param name="subcontent_order">descending</param>
+						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,artist) + String.IsEmpty(ListItem.Property(Artist_Description))]</param>
+		                <param name="subcontent_image_visible">false</param>
+						<param name="width">800</param>
+						<param name="labelwidth">$PARAM[labelwidth]</param>
+					</include>	
+					<include content="SubcontentInfoList">
+                        <param name="list_id">4300</param>
+						<param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
+					    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins,  (,)]</param>
+						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,album) + String.IsEmpty(ListItem.Property(Album_Description))]</param>
+		                <param name="subcontent_image_visible">false</param>
+						<param name="subcontent_sortby" value="track" />
+						<param name="width">800</param>
+						<param name="labelwidth">$PARAM[labelwidth]</param>
+					</include>
                 </control>
 		        <control type="grouplist" description="Flags">
 			        <top>975</top>
@@ -2923,7 +2873,7 @@
     </include>
 	
 	<include name="ViewIDs">
-        <views>50,51,511,52,53,54,55,551,56,501,57,600,58,502</views>
+        <views>50,51,511,52,53,54,55,551,56,501,57,58,502,600</views>
 		<defaultcontrol>50</defaultcontrol>
 		<onload>SetFocus(50)</onload>
     </include>
@@ -2963,7 +2913,7 @@
 		<control type="list" id="4451">
 	        <left>-100</left>
 		    <top>-100</top>
-			<content limit="20" sortby="random">$INFO[ListItem.FolderPath]</content>
+			<content limit="20" sortby="random">$VAR[myPathVar]</content>
 	        <autoscroll time="8000">true</autoscroll>
 	        <itemlayout />
 	        <focusedlayout />

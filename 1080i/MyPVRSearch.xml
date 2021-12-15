@@ -4,7 +4,8 @@
     <onload>ClearProperty(MediaMenu,Home)</onload>
 	<views>50</views>
     <controls>
-        <include>DefaultBackground</include>
+        <include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
+		<include>DefaultBackground</include>
         <include content="BackgroundOverlay">
             <param name="parentid" value="50"/>
         </include>

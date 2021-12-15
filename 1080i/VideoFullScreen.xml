@@ -120,7 +120,7 @@
 			    </control>			
 			</control>
 			
-            <!-- Art: Poster/Thumb/Icon -->			
+            <!-- Art: Poster/Thumb/Icon/Channel logo -->			
 			<control type="group" id="1">
 			    <visible>$EXP[showPosterOSD]</visible>
 			    <control type="group" id="1">

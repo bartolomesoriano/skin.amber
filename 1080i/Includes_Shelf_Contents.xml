@@ -188,6 +188,7 @@
 		<param name="ShowMedium2Logo">false</param>
 		<param name="ShowLargeLogo">false</param>
 		<param name="showShelvesInfo">false</param>
+		<param name="singleWidget">false</param>
 		<definition>
 			<!-- Both widgets have items -->
 			<control type="group">
@@ -340,7 +341,7 @@
 			</control>
 			<!-- Widget 1 has items, widget 2 does not -->
 			<control type="group">
-				<visible>Integer.IsGreater(Container($PARAM[id1]).NumItems,0) + !Integer.IsGreater(Container($PARAM[id2]).NumItems,0)</visible>
+				<visible>Integer.IsGreater(Container($PARAM[id1]).NumItems,0) + !Integer.IsGreater(Container($PARAM[id2]).NumItems,0) + ![!Skin.HasSetting(VerticalHome) + Skin.HasSetting(Enable.BottomShortcuts) + $PARAM[singleWidget]]</visible>
 				<top>$PARAM[topsingle]</top>
 				<control type="image">
 					<top>-48</top>

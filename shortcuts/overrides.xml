@@ -97,6 +97,13 @@
 		<action>Skin.SetString(FocusedMenu.Background,$INFO[Container(300).ListItem.Property(Background)])</action>
 		<action>ActivateWindow(favourites)</action>
 	</override>
+	<override action="bottom_shortcuts">
+		<action>Skin.ToggleSetting(Enable.BottomShortcuts)</action>
+		<action>ReloadSkin()</action>
+	</override>
+	<override action="hide_shelves">
+		<action>Skin.ToggleSetting(Hide.AllShelves)</action>
+	</override>
 
     <!-- For Power Menu -->
     <groupoverride group="powermenu" condition="Window.IsActive(DialogButtonMenu.xml)">Close</groupoverride>
@@ -774,16 +781,16 @@
 	<propertyfallback property="widgetType.6">none</propertyfallback>    
 	<!-- Set widgetContent to static for non-dynamic widgets -->
 	<propertyfallback property="widgetContent" attribute="widget" value="static">static</propertyfallback>
-    <propertyfallback property="widgetContent.2" attribute="widget.2" value="static">static</propertyfallback>
-    <propertyfallback property="widgetContent.3" attribute="widget.3" value="static">static</propertyfallback>
-    <propertyfallback property="widgetContent.4" attribute="widget.4" value="static">static</propertyfallback>
-    <propertyfallback property="widgetContent.5" attribute="widget.5" value="static">static</propertyfallback>
-    <propertyfallback property="widgetContent.6" attribute="widget.6" value="static">static</propertyfallback>
 	<propertyfallback property="widgetContent">default</propertyfallback>
-    <propertyfallback property="widgetContent.2">default</propertyfallback>
-    <propertyfallback property="widgetContent.3">default</propertyfallback>
-    <propertyfallback property="widgetContent.4">default</propertyfallback>
-    <propertyfallback property="widgetContent.5">default</propertyfallback>
+    <propertyfallback property="widgetContent.2" attribute="widget.2" value="static">static</propertyfallback>
+	<propertyfallback property="widgetContent.2">default</propertyfallback>
+    <propertyfallback property="widgetContent.3" attribute="widget.3" value="static">static</propertyfallback>
+	<propertyfallback property="widgetContent.3">default</propertyfallback>
+    <propertyfallback property="widgetContent.4" attribute="widget.4" value="static">static</propertyfallback>
+	<propertyfallback property="widgetContent.4">default</propertyfallback>
+    <propertyfallback property="widgetContent.5" attribute="widget.5" value="static">static</propertyfallback>
+	<propertyfallback property="widgetContent.5">default</propertyfallback>
+    <propertyfallback property="widgetContent.6" attribute="widget.6" value="static">static</propertyfallback>
     <propertyfallback property="widgetContent.6">default</propertyfallback>
 	<!-- Show Info Popup is false by default -->
 	<propertyfallback property="doInfoPopup">false</propertyfallback>
@@ -893,7 +900,8 @@
 		</node>
         <node label="32007">
             <node label="32009">
-                <shortcut label="10001" type="32021" icon="DefaultAddonProgram.png">ActivateWindow(Programs,Addons,return)</shortcut>
+                <shortcut label="20244" type="10001" icon="DefaultAddonProgram.png" condition="System.Platform.Android">ActivateWindow(Programs,androidapp://sources/apps,return)</shortcut>
+				<shortcut label="10001" type="32021" icon="DefaultAddonProgram.png">ActivateWindow(Programs,Addons,return)</shortcut>
                 <content>addon-program</content>
             </node>
             <node label="32010">
@@ -949,7 +957,7 @@
 				<shortcut widget="NewTvShows" label="$LOCALIZE[31433]" icon="DefaultRecentlyAddedEpisodes.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">$VAR[RecentlyAddedTVShowsVar]</shortcut>
 				<shortcut widget="RecentTvShows" label="$LOCALIZE[31434]" icon="DefaultRecentlyPlayedEpisodes.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">$VAR[RecentlyPlayedTVShowsVar]</shortcut>
 				<shortcut widget="RandomTvShows" label="$LOCALIZE[31435]" icon="DefaultRandomEpisodes.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">special://skin/extras/playlists/tvshows_random.xsp</shortcut>
-				<shortcut widget="InProgressTVShows" label="$LOCALIZE[31436]" icon="DefaultInProgressEpisodes.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">library://video/tvshows/inprogressshows.xml</shortcut>
+				<shortcut widget="InProgressTVShows" label="$LOCALIZE[31436]" icon="DefaultInProgressEpisodes.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">videodb://inprogresstvshows</shortcut>
 				<shortcut widget="TopRatedTvShows" label="$LOCALIZE[31438]" icon="DefaultTopRatedEpisodes.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">special://skin/extras/playlists/tvshows_toprated.xsp</shortcut>
 				<shortcut widget="UnwatchedTVShows" label="$LOCALIZE[31493]" icon="DefaultUnwatchedEpisodes.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">special://skin/extras/playlists/tvshows_unwatched.xsp</shortcut>
                 <shortcut widget="TvShowNodes" label="$LOCALIZE[31440]" icon="DefaultTVShows.png" widgetType="tvshows" widgetTarget="video" condition="Library.HasContent(tvshows)">library://video/tvshows/</shortcut>
@@ -1027,9 +1035,9 @@
 			<!-- Favourites -->
 			<shortcut widget="allfavorites" label="$LOCALIZE[1036]" icon="DefaultFavourites.png" widgetType="favourite" widgetTarget="video" condition="System.HasAddon(script.favourites)">favourites://</shortcut>
 			<!-- System -->
-			<shortcut widget="static" label="$LOCALIZE[130]" icon="thumbs/systeminfo/square/system.png" widgetType="system" condition="true">$INCLUDE[skinshortcuts-template-SystemContent]</shortcut>
+			<shortcut widget="static" widgetContent="static" label="$LOCALIZE[130]" icon="thumbs/systeminfo/square/system.png" widgetType="system" widgetTarget="programs" condition="true">$INCLUDE[skinshortcuts-template-SystemContent]</shortcut>
 			<!-- Favourite Addons -->
-			<shortcut widget="static" label="$LOCALIZE[31487]" icon="DefaultAddon.png" widgetType="favouriteaddons" condition="!String.IsEmpty(Skin.String(ShelfAddons.1.Label))">$INCLUDE[skinshortcuts-template-FavouriteAddonsContent]</shortcut>
+			<shortcut widget="static" label="$LOCALIZE[31487]" icon="DefaultAddon.png" widgetType="favouriteaddons" widgetTarget="programs" condition="!String.IsEmpty(Skin.String(ShelfAddons.1.Label))">$INCLUDE[skinshortcuts-template-FavouriteAddonsContent]</shortcut>
 			<!-- Submenu -->
 			<shortcut widget="mysubmenu" label="$LOCALIZE[1034]" icon="DefaultAddon.png" widgetType="addons" widgetTarget="programs">$INCLUDE[skinshortcuts-submenu]</shortcut>
 			<!-- Custom -->
@@ -1351,16 +1359,16 @@
     <propertydefault labelID="weather" property="widget">static</propertydefault>
     <propertydefault labelID="weather" property="widgetName">$LOCALIZE[31475]</propertydefault>
 	<propertydefault labelID="weather" property="widgetType">weatherdaily</propertydefault>
-    <propertydefault labelID="weather" property="widgetTarget">weather</propertydefault>
 	<propertydefault labelID="weather" property="widgetPath">$INCLUDE[skinshortcuts-template-WeatherContentDaily]</propertydefault>
     <propertydefault labelID="weather" property="widgetArtwork">Square</propertydefault>
+	<propertydefault labelID="weather" property="widgetContent">static</propertydefault>
 
 	<propertydefault labelID="weather" property="widget.2">static</propertydefault>
     <propertydefault labelID="weather" property="widgetName.2">$LOCALIZE[31476]</propertydefault>
 	<propertydefault labelID="weather" property="widgetType.2">weatherhourly</propertydefault>
-	<propertydefault labelID="weather" property="widgetTarget.2">weather</propertydefault>
     <propertydefault labelID="weather" property="widgetPath.2">$INCLUDE[skinshortcuts-template-WeatherContentHourly]</propertydefault>
     <propertydefault labelID="weather" property="widgetArtwork.2">Square</propertydefault>
+	<propertydefault labelID="weather" property="widgetContent.2">static</propertydefault>
 
     <!-- Favourites  -->
     <propertydefault labelID="favorites" property="widget">allfavorites</propertydefault>
@@ -1375,9 +1383,9 @@
     <propertydefault labelID="settings" property="widget">static</propertydefault>
     <propertydefault labelID="settings" property="widgetName">$LOCALIZE[130]</propertydefault>
 	<propertydefault labelID="settings" property="widgetType">system</propertydefault>
-	<propertydefault labelID="settings" property="widgetTarget">system</propertydefault>
     <propertydefault labelID="settings" property="widgetPath">$INCLUDE[skinshortcuts-template-SystemContent]</propertydefault>
     <propertydefault labelID="settings" property="widgetArtwork">Square</propertydefault>
+	<propertydefault labelID="settings" property="widgetContent">static</propertydefault>
 
 
 	<!-- On backs for management dialog -->
