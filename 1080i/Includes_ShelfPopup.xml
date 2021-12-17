@@ -181,7 +181,7 @@
 	<include name="PopupMediaFlagItems">
 		<param name="itemwidth" default="90"/>
 		<param name="itemheight" default="80"/>
-		<param name="diffuse">Silver</param>
+		<param name="diffuse"></param>
 		<definition>
 			<control type="image">
 				<visible>!String.IsEmpty(Window(1144).Property(VideoResolution))</visible>

@@ -496,7 +496,6 @@
 		                <include content="PopupMediaFlagItems">
 			                <param name="itemwidth">100</param>
 		                    <param name="itemheight">90</param>
-			                <param name="diffuse">$VAR[LabelTextColor]</param>
 		                </include>
 		            </control>
 				    <control type="grouplist">
@@ -509,7 +508,6 @@
 		                <include content="PopupMediaFlagItems">
 			                <param name="itemwidth">100</param>
 		                    <param name="itemheight">90</param>
-			                <param name="diffuse">$VAR[LabelTextColor]</param>
 		                </include>
 		            </control>
 		        </control>
