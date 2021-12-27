@@ -818,7 +818,7 @@
 			<onclick>SetProperty(PlayerTVShowID,$INFO[Container(43261).ListItem.DBID],home)</onclick>
 			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
 			<onclick>ActivateWindow(1145)</onclick>
-		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.AddonIsEnabled(script.embuary.helper)</visible>
+		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</visible>
 		    <visible>Skin.HasSetting(ShowEpisodeList)</visible>
 			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
@@ -949,7 +949,7 @@
 		    <onclick>SetProperty(PlayerTVShowID,$INFO[Container(43261).ListItem.DBID],home)</onclick>
 			<onclick condition="!Player.Paused">PlayerControl(Play)</onclick>
 			<onclick>ActivateWindow(1145)</onclick>
-		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.AddonIsEnabled(script.embuary.helper)</visible>
+		    <visible>!VideoPlayer.Content(livetv) + VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</visible>
 		    <visible>Skin.HasSetting(ShowEpisodeList)</visible>
 			<oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
 		</control>
