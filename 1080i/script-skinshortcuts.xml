@@ -376,9 +376,9 @@
 				<control type="radiobutton" id="807">
 					<label>$LOCALIZE[32258]</label>
 					<description>Use Embuary Helper for Playlist/Node Fanart</description>
-					<onclick condition="!String.IsEmpty(Container(211).ListItem.Property(EHPlaylistFanart))">SetProperty(customProperty,EHPlaylistFanart)</onclick>
-					<onclick condition="String.IsEqual(Container(211).ListItem.Property(EHPlaylistFanart),true)">SetProperty(customProperty,EHPlaylistFanart)</onclick>
-					<onclick condition="String.IsEqual(Container(211).ListItem.Property(EHPlaylistFanart),false)">SetProperty(customValue,true)</onclick>
+					<onclick>SetProperty(customProperty,EHPlaylistFanart)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(EHPlaylistFanart),true)">SetProperty(customValue,false)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(EHPlaylistFanart),false) | String.IsEmpty(Container(211).ListItem.Property(EHPlaylistFanart))">SetProperty(customValue,true)</onclick>
 					<onclick>SendClick(404)</onclick>
 					<selected>String.IsEqual(Container(211).ListItem.Property(EHPlaylistFanart),true)</selected>
 					<height>60</height>
