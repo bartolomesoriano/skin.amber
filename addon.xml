@@ -5,6 +5,7 @@
         <import addon="script.favourites" version="7.1.1"/>
         <import addon="resource.uisounds.amber" version="1.0.0"/>
         <import addon="script.skinshortcuts" version="1.0.17"/>
+        <import addon="script.grab.fanart" version="0.16.0"/>
     </requires>
     <extension point="xbmc.gui.skin" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
@@ -72,3 +73,4 @@
         <description lang="pt_PT">Um tema sem excessos que apenas mostra a sua média com uma interface de navegação simples.[CR]Utiliza algumas texturas dos temas Mediastream e Aeon.</description>
     </extension>
 </addon>
+
