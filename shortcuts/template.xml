@@ -1188,7 +1188,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
                     <scrolltime>200</scrolltime>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll1]">!Control.HasFocus(1600$SKINSHORTCUTS[id]1)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll1]">!Control.HasFocus(1600$SKINSHORTCUTS[id]1) | [Control.HasFocus(1600$SKINSHORTCUTS[id]1) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
 					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]1,Home)</onfocus>
 					<onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
                     <onup condition="$SKINSHORTCUTS[onup]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],2,home)</onup>
@@ -1833,7 +1833,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + !Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertText</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2) | [Control.HasFocus(1600$SKINSHORTCUTS[id]2) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
 					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]2,Home)</onfocus>
 					<onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
                     <onup condition="$SKINSHORTCUTS[onup]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],3,home)</onup>
@@ -2481,7 +2481,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PYTHON[$SKINSHORTCUTS[height]]</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll3]">!Control.HasFocus(1600$SKINSHORTCUTS[id]3)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll3]">!Control.HasFocus(1600$SKINSHORTCUTS[id]3) | [Control.HasFocus(1600$SKINSHORTCUTS[id]3) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
 					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]3,Home)</onfocus>
 					<onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
                     <onup condition="$SKINSHORTCUTS[onup]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],4,home)</onup>
@@ -3075,7 +3075,6 @@
 					</control>
 				</control>
 				
-				
 				<control type="group">
 				
 				    <!-- Lower the background if bottom shortcuts and showing info and widgets are focused -->
@@ -3261,7 +3260,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PYTHON[$SKINSHORTCUTS[height]]</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll4]">!Control.HasFocus(1600$SKINSHORTCUTS[id]4)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll4]">!Control.HasFocus(1600$SKINSHORTCUTS[id]4) | [Control.HasFocus(1600$SKINSHORTCUTS[id]4) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
 					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]4,Home)</onfocus>
 					<onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
                     <onup condition="$SKINSHORTCUTS[onup]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],5,home)</onup>
@@ -4037,7 +4036,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PYTHON[$SKINSHORTCUTS[height]]</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll5]">!Control.HasFocus(1600$SKINSHORTCUTS[id]5)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll5]">!Control.HasFocus(1600$SKINSHORTCUTS[id]5) | [Control.HasFocus(1600$SKINSHORTCUTS[id]5) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
 					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]5,Home)</onfocus>
 					<onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
                     <onup condition="$SKINSHORTCUTS[onup]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],6,home)</onup>
@@ -4814,7 +4813,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PYTHON[$SKINSHORTCUTS[height]]</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll6]">!Control.HasFocus(1600$SKINSHORTCUTS[id]6)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll6]">!Control.HasFocus(1600$SKINSHORTCUTS[id]6) | [Control.HasFocus(1600$SKINSHORTCUTS[id]6) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
 					<onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]6,Home)</onfocus>
 					<onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
 					<onup>ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
@@ -5210,7 +5209,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PYTHON[$SKINSHORTCUTS[height]]</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll1]">!Control.HasFocus(1600$SKINSHORTCUTS[id]1)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll1]">!Control.HasFocus(1600$SKINSHORTCUTS[id]1) | [Control.HasFocus(1600$SKINSHORTCUTS[id]1) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]1,Home)</onfocus>
                     <onup condition="$SKINSHORTCUTS[onup]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],2,home)</onup>
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]2)</onup>
@@ -5583,7 +5582,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PYTHON[$SKINSHORTCUTS[height]]</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2) | [Control.HasFocus(1600$SKINSHORTCUTS[id]2) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]2,Home)</onfocus>
                     <onup condition="$SKINSHORTCUTS[onup]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],3,home)</onup>
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]3)</onup>
@@ -5959,7 +5958,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PYTHON[$SKINSHORTCUTS[height]]</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll3]">!Control.HasFocus(1600$SKINSHORTCUTS[id]3)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll3]">!Control.HasFocus(1600$SKINSHORTCUTS[id]3) | [Control.HasFocus(1600$SKINSHORTCUTS[id]3) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]3,Home)</onfocus>
                     <onup condition="$SKINSHORTCUTS[onup]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],4,home)</onup>
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]4)</onup>
@@ -6355,7 +6354,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PYTHON[$SKINSHORTCUTS[height]]</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll4]">!Control.HasFocus(1600$SKINSHORTCUTS[id]4)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll4]">!Control.HasFocus(1600$SKINSHORTCUTS[id]4) | [Control.HasFocus(1600$SKINSHORTCUTS[id]4) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]4,Home)</onfocus>
                     <onup condition="$SKINSHORTCUTS[onup]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],5,home)</onup>
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]5)</onup>
@@ -6752,7 +6751,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PYTHON[$SKINSHORTCUTS[height]]</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll5]">!Control.HasFocus(1600$SKINSHORTCUTS[id]5)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll5]">!Control.HasFocus(1600$SKINSHORTCUTS[id]5) | [Control.HasFocus(1600$SKINSHORTCUTS[id]5) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]5,Home)</onfocus>
                     <onup condition="$SKINSHORTCUTS[onup]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],6,home)</onup>
 					<onup condition="$SKINSHORTCUTS[onup]">SetFocus(1600$SKINSHORTCUTS[id]6)</onup>
@@ -7147,7 +7146,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$PYTHON[$SKINSHORTCUTS[height]]</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll6]">!Control.HasFocus(1600$SKINSHORTCUTS[id]6)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll6]">!Control.HasFocus(1600$SKINSHORTCUTS[id]6) | [Control.HasFocus(1600$SKINSHORTCUTS[id]6) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]6,Home)</onfocus>
                     <onup>ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
 					<onup>SetFocus(1600$SKINSHORTCUTS[id]1)</onup>
@@ -8011,7 +8010,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>315</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll1]">!Control.HasFocus(1600$SKINSHORTCUTS[id]1)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll1]">!Control.HasFocus(1600$SKINSHORTCUTS[id]1) | [Control.HasFocus(1600$SKINSHORTCUTS[id]1) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]1,Home)</onfocus>
 					<onfocus>ClearProperty(SecondWidgetFocused1600$SKINSHORTCUTS[id],Home)</onfocus>
                     <onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
@@ -8361,7 +8360,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>315</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2) | [Control.HasFocus(1600$SKINSHORTCUTS[id]2) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]2,Home)</onfocus>
 					<onfocus>SetProperty(SecondWidgetFocused1600$SKINSHORTCUTS[id],Yes,Home)</onfocus>
 					<onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
@@ -8633,7 +8632,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>315</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll1]">!Control.HasFocus(1600$SKINSHORTCUTS[id]1)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll1]">!Control.HasFocus(1600$SKINSHORTCUTS[id]1) | [Control.HasFocus(1600$SKINSHORTCUTS[id]1) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]1,Home)</onfocus>
 					<onfocus>ClearProperty(SecondWidgetFocused1600$SKINSHORTCUTS[id],Home)</onfocus>
 					<onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0)">SetProperty(WidgetFocus$SKINSHORTCUTS[id],2,home)</onup>
@@ -8832,7 +8831,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>315</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2) | [Control.HasFocus(1600$SKINSHORTCUTS[id]2) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]2,Home)</onfocus>
 					<onfocus>SetProperty(SecondWidgetFocused1600$SKINSHORTCUTS[id],Yes,Home)</onfocus>
 					<ondown condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]1).NumItems,0)">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</ondown>
@@ -12433,7 +12432,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$SKINSHORTCUTS[panelheight]</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll1]">!Control.HasFocus(1600$SKINSHORTCUTS[id]1)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll1]">!Control.HasFocus(1600$SKINSHORTCUTS[id]1) | [Control.HasFocus(1600$SKINSHORTCUTS[id]1) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]1,Home)</onfocus>
 <!--					<onclick condition="String.IsEqual(ListItem.DBType,season)">ActivateWindow(Videos,videodb://tvshows/titles/$INFO[ListItem.Property(TVShowID)]/$INFO[ListItem.Property(Season)]/?tvshowid=$INFO[ListItem.Property(TVShowID)])</onclick> -->
                     <onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
@@ -13616,7 +13615,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$SKINSHORTCUTS[panelheight]</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2) | [Control.HasFocus(1600$SKINSHORTCUTS[id]2) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]2,Home)</onfocus>
 					<onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
                     <onup condition="Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0)">SetProperty(WidgetFocus$SKINSHORTCUTS[id],3,home)</onup>
@@ -14417,7 +14416,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>$SKINSHORTCUTS[panelheight]</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll3]">!Control.HasFocus(1600$SKINSHORTCUTS[id]3)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll3]">!Control.HasFocus(1600$SKINSHORTCUTS[id]3) | [Control.HasFocus(1600$SKINSHORTCUTS[id]3) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]3,Home)</onfocus>
 					<onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
 					<onup condition="$SKINSHORTCUTS[showShelvesInfo]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
@@ -17157,7 +17156,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>315</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll1]">!Control.HasFocus(1600$SKINSHORTCUTS[id]1)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll1]">!Control.HasFocus(1600$SKINSHORTCUTS[id]1) | [Control.HasFocus(1600$SKINSHORTCUTS[id]1) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]1,Home)</onfocus>
 <!--					<onclick condition="String.IsEqual(ListItem.DBType,season)">ActivateWindow(Videos,videodb://tvshows/titles/$INFO[ListItem.Property(TVShowID)]/$INFO[ListItem.Property(Season)]/?tvshowid=$INFO[ListItem.Property(TVShowID)])</onclick> -->
                     <onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
@@ -17167,13 +17166,6 @@
 					<onup condition="!Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]2).NumItems,0) + Integer.IsGreater(Container(1600$SKINSHORTCUTS[id]3).NumItems,0) + $SKINSHORTCUTS[showShelvesInfo]">SetProperty(WidgetFocus$SKINSHORTCUTS[id],3,home)</onup>
 					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Player.HasVideo">PlayerControl(Stop)</onup>
 					<onup condition="!String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying))">ClearProperty(ShelfTrailerPlaying,Home)</onup>
-					
-					
-					
-					
-					
-					
-					
 					<ondown>300</ondown>
 					<onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
 					<onback>300</onback>
@@ -17731,7 +17723,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>315</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll2]">!Control.HasFocus(1600$SKINSHORTCUTS[id]2) | [Control.HasFocus(1600$SKINSHORTCUTS[id]2) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]2,Home)</onfocus>
 					<onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
 <!--					<onclick condition="String.IsEqual(ListItem.DBType,season)">ActivateWindow(Videos,videodb://tvshows/titles/$INFO[ListItem.Property(TVShowID)]/$INFO[ListItem.Property(Season)]/?tvshowid=$INFO[ListItem.Property(TVShowID)])</onclick>  -->
@@ -18230,7 +18222,7 @@
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.IconOnly) + !Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertIcon</include>
 					<include condition="Skin.HasSetting(VerticalHome) + Skin.HasSetting(Vertical.HideFocusShelves)">ShelfWidthVertHiddenMenu</include>
 					<height>315</height>
-					<autoscroll time="$SKINSHORTCUTS[autoscroll3]">!Control.HasFocus(1600$SKINSHORTCUTS[id]3)</autoscroll>
+					<autoscroll time="$SKINSHORTCUTS[autoscroll3]">!Control.HasFocus(1600$SKINSHORTCUTS[id]3) | [Control.HasFocus(1600$SKINSHORTCUTS[id]3) + $SKINSHORTCUTS[showShelvesInfo]]</autoscroll>
                     <onfocus>SetProperty(TMDbHelper.WidgetContainer,1600$SKINSHORTCUTS[id]3,Home)</onfocus>
 					<onclick condition="System.HasAddon(script.playalbum) + Skin.HasSetting(Shelf.PlayAlbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
 					<onup condition="$SKINSHORTCUTS[showShelvesInfo]">ClearProperty(WidgetFocus$SKINSHORTCUTS[id],home)</onup>
@@ -20544,7 +20536,7 @@
 		    <rule tag="property" attribute="name|widgetDouble" value="false" />
 	        <rule tag="property" attribute="name|widgetTriple" value="false" />
 			<rule tag="property" attribute="name|widgetAutoScroll" value="$NUMBER[7000]|$NUMBER[8000]|$NUMBER[9000]|$NUMBER[10000]|$NUMBER[11000]|$NUMBER[12000]|$NUMBER[15000]||$NUMBER[20000]|$NUMBER[30000]|$NUMBER[60000]" />
-		    <rule tag="property" attribute="name|showShelvesInfo" value="false" />
+<!--		    <rule tag="property" attribute="name|showShelvesInfo" value="false" /> -->
 			<match>all</match>
 		</property>
 		<property name="containertype1">panel</property>
@@ -20568,7 +20560,6 @@
 		    <rule tag="property" attribute="name|widgetDouble.2" value="false" />
 	        <rule tag="property" attribute="name|widgetTriple.2" value="false" />
 			<rule tag="property" attribute="name|widgetAutoScroll.2" value="$NUMBER[7000]|$NUMBER[8000]|$NUMBER[9000]|$NUMBER[10000]|$NUMBER[11000]|$NUMBER[12000]|$NUMBER[15000]||$NUMBER[20000]|$NUMBER[30000]|$NUMBER[60000]" />
-		    <rule tag="property" attribute="name|showShelvesInfo" value="false" />
 			<match>all</match>
 		</property>
 		<property name="containertype2">panel</property>
