@@ -539,7 +539,7 @@
 							<param name="itemid" value="3"/>
 							<param name="itemlabel" value="      $LOCALIZE[32417]"/>
 							<param name="skinsetting" value="FanartTitle.OpensInfo"/>
-							<param name="itemvisibility" value="Skin.HasSetting(Enable.FanartTitle) + Skin.HasSetting(Enable.TMDbHelper)"/>
+							<param name="itemvisibility" value="Skin.HasSetting(Enable.FanartTitle) + System.HasAddon(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">4</param>
@@ -557,7 +557,7 @@
 							<param name="itemid" value="6"/>
 							<param name="itemlabel" value="$LOCALIZE[32262]"/>
 							<param name="skinsetting" value="UseEHBackgrounds"/>
-							<param name="itemvisibility" value="System.HasAddon(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)"/>
+							<param name="itemvisibility" value="System.HasAddon(script.embuary.helper)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">7</param>
@@ -1394,8 +1394,18 @@
 							<param name="itemlabel" value="$LOCALIZE[32228]"/>
 							<param name="skinsetting" value="OnlyLocalSearches"/>
 						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="3"/>
+							<param name="itemlabel" value="$LOCALIZE[32476]"/>
+							<param name="skinsetting" value="DoCustomVideoSearch"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="4"/>
+							<param name="itemlabel" value="$LOCALIZE[32477]"/>
+							<param name="skinsetting" value="DoCustomMusicSearch"/>
+						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">3</param>
+                            <param name="itemid">5</param>
                             <param name="itemlabel">$LOCALIZE[32168]</param>
                             <param name="CustomProperty">CustomSelectSearchOptions</param>
 		                    <param name="CustomDialog">1133</param>
