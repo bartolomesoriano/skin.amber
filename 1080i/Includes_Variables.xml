@@ -89,6 +89,7 @@
 		<value condition="Container.Content(songs) + !Window.IsVisible(script.globalsearch.xml) + Skin.HasSetting(Hide.Label2.Lists) + Skin.HasSetting(Enable.HourMinutes) + Skin.HasSetting(ShowRatingMain) + !Skin.HasSetting(ShowRatingUser) + [Integer.IsGreater(ListItem.PlayCount,0) + Skin.HasSetting(ShowPlayCount)]">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]$VAR[ItemDurationHrMins, • (,)]$INFO[ListItem.Rating,, • ]$INFO[ListItem.PlayCount, • $LOCALIZE[32022] ]</value>
 		<value condition="Container.Content(songs) + !Window.IsVisible(script.globalsearch.xml) + Skin.HasSetting(Hide.Label2.Lists) + Skin.HasSetting(Enable.HourMinutes) + !Skin.HasSetting(ShowRatingMain) + Skin.HasSetting(ShowRatingUser) + [Integer.IsGreater(ListItem.PlayCount,0) + Skin.HasSetting(ShowPlayCount)]">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]$VAR[ItemDurationHrMins, • (,)]$INFO[ListItem.UserRating,, • ]$INFO[ListItem.PlayCount, • $LOCALIZE[32022] ]</value>
 		<value condition="Container.Content(songs) + !Window.IsVisible(script.globalsearch.xml) + Skin.HasSetting(Hide.Label2.Lists) + Skin.HasSetting(Enable.HourMinutes) + !Skin.HasSetting(ShowRatingMain) + !Skin.HasSetting(ShowRatingUser) + [Integer.IsGreater(ListItem.PlayCount,0) + Skin.HasSetting(ShowPlayCount)]">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]$VAR[ItemDurationHrMins, • (,)]$INFO[ListItem.PlayCount, • $LOCALIZE[32022] ]</value>
+        <value condition="Window.IsActive(MyPVRChannels.xml)">[B]$INFO[ListItem.ChannelNumberLabel][/B] - $INFO[ListItem.ChannelName]</value>																																			 
         <value>$INFO[ListItem.Label]</value>
     </variable>
 
@@ -122,6 +123,43 @@
         <value></value>
     </variable>
 	
+	<variable name="EpisodesListOverlay" description="Overlay image">
+        <value condition="!Skin.HasSetting(Hide_InProgress_Marks) + !String.IsEmpty(Container(6001).ListItem.Overlay) + Container(6001).ListItem.IsResumable">$VAR[EpisodesListSoloInProgress]</value>
+        <value condition="Skin.HasSetting(Hide_InProgress_Marks) + !String.IsEmpty(Container(6001).ListItem.Overlay) + Container(6001).ListItem.IsResumable"></value>
+        <value condition="!Skin.HasSetting(Hide_Watched_Marks) + !String.IsEmpty(Container(6001).ListItem.Overlay) + String.IsEqual(Container(6001).ListItem.Overlay,OverlayWatched.png)">$INFO[Container(6001).ListItem.Overlay]</value>
+        <value condition="!Skin.HasSetting(Hide_Unwatched_Marks) + !String.IsEmpty(Container(6001).ListItem.Overlay) + String.IsEqual(Container(6001).ListItem.Overlay,OverlayUnWatched.png)">$INFO[Container(6001).ListItem.Overlay]</value>
+        <value></value>
+    </variable>
+	
+	<variable name="EpisodesListSoloInProgress" description="Overlay image">
+        <value condition="Integer.IsLess(Container(6001).ListItem.PercentPlayed,20)">OverlayInProgress10.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,20) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,30)">OverlayInProgress20.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,30) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,40)">OverlayInProgress30.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,40) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,50)">OverlayInProgress40.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,50) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,60)">OverlayInProgress50.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,60) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,70)">OverlayInProgress60.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,70) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,80)">OverlayInProgress70.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,80) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,90)">OverlayInProgress80.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,90) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,100)">OverlayInProgress90.png</value>
+    </variable>
+	
+	<variable name="EpisodesListTopRightOverlay" description="Overlay image">
+        <value condition="!Skin.HasSetting(Hide_Watched_Marks) + !String.IsEmpty(Container(6001).ListItem.Overlay) + String.IsEqual(Container(6001).ListItem.Overlay,OverlayWatched.png)">overlays/toprightwatched.png</value>
+        <value condition="!Skin.HasSetting(Hide_Unwatched_Marks) + !String.IsEmpty(Container(6001).ListItem.Overlay) + String.IsEqual(Container(6001).ListItem.Overlay,OverlayUnWatched.png)">overlays/toprightunwatched.png</value>
+        <value></value>
+    </variable>
+	
+	<variable name="EpisodesListTopRightInProgress" description="Overlay image">
+        <value condition="Integer.IsLess(Container(6001).ListItem.PercentPlayed,20)">overlays/toprightinprogress10.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,20) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,30)">overlays/toprightinprogress20.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,30) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,40)">overlays/toprightinprogress30.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,40) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,50)">overlays/toprightinprogress40.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,50) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,60)">overlays/toprightinprogress50.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,60) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,70)">overlays/toprightinprogress60.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,70) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,80)">overlays/toprightinprogress70.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,80) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,90)">overlays/toprightinprogress80.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Container(6001).ListItem.PercentPlayed,90) + Integer.IsLess(Container(6001).ListItem.PercentPlayed,100)">overlays/toprightinprogress90.png</value>
+    </variable>
 	<variable name="SoloInProgress" description="Overlay image">
         <value condition="Integer.IsLess(ListItem.PercentPlayed,20)">OverlayInProgress10.png</value>
 		<value condition="Integer.IsGreaterOrEqual(ListItem.PercentPlayed,20) + Integer.IsLess(ListItem.PercentPlayed,30)">OverlayInProgress20.png</value>
@@ -630,19 +668,32 @@
 		<value condition="String.IsEqual(ListItem.DBType,episode) + Window.IsActive(DialogVideoInfo.xml) + Skin.HasSetting(Show.SeasonEpisodeInfo)">[B]$INFO[ListItem.TVshowTitle][/B] - $INFO[ListItem.Season,S,]$INFO[ListItem.Episode,E,] • $INFO[ListItem.Title]</value>
         <value condition="[String.IsEqual(ListItem.DBType,episode) + Window.IsActive(DialogVideoInfo.xml) + !Skin.HasSetting(Show.SeasonEpisodeInfo)]">[B]$INFO[ListItem.TVshowTitle][/B] • $INFO[ListItem.Title]</value>
         <value condition="[String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,season)] + Window.IsActive(script-globalsearch.xml)">$INFO[ListItem.TVShowTitle,, • ]$INFO[ListItem.Label]</value>
-		
+        
 		<value condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRTimers.xml)] + !ListItem.HasEpg + String.IsEmpty(ListItem.Season)">$INFO[Listitem.Title] $INFO[ListItem.Year,(,)]</value>
 		<value condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRTimers.xml)] + ListItem.HasEpg + String.IsEmpty(ListItem.Season)">$INFO[Listitem.EpgEventTitle] $INFO[ListItem.Year,(,)]</value>
 		<value condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRTimers.xml)] + !ListItem.HasEpg + ![String.IsEmpty(ListItem.Season) + String.IsEmpty(Episode)]">$INFO[Listitem.Title] $INFO[ListItem.Year,(,)][CR][COLOR=Grey][I]$VAR[PVRSeasonEpisodeLabel]$INFO[ListItem.EpisodeName][/I][/COLOR]</value>
 		<value condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRTimers.xml)] + ListItem.HasEpg + ![String.IsEmpty(ListItem.Season) + String.IsEmpty(Episode)]">$INFO[Listitem.EpgEventTitle] $INFO[ListItem.Year,(,)][CR][COLOR=Grey][I]$VAR[PVRSeasonEpisodeLabel]$INFO[ListItem.EpisodeName][/I][/COLOR]</value>
 		
-		<value condition="Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + Integer.IsGreater(Container(80).NumItems,0)">$INFO[ListItem.label] $INFO[Container(80).NumItems,[B](,)[/B]]</value>
-        
+		<value condition="Window.IsActive(MyPVRRecordings.xml) + !$EXP[isPVRRecordingsGroups]">$INFO[ListItem.label,[B],[/B]] • $INFO[ListItem.Date] • $INFO[ListItem.Size]</value>
+		
+		<value condition="$EXP[isPVRRecordingsGroups] + Control.HasFocus(50) + !$EXP[ListPanelIsSwapped] + Integer.IsGreater(Container(440050).NumItems,0)">$INFO[ListItem.label] $INFO[Container(440050).NumItems,[B](,)[/B]] • $INFO[ListItem.Size]</value>
+		<value condition="$EXP[isPVRRecordingsGroups] + Control.HasFocus(50) + $EXP[ListPanelIsSwapped] + Integer.IsGreater(Container(4400150).NumItems,0)">$INFO[ListItem.label] $INFO[Container(4400150).NumItems,[B](,)[/B]] • $INFO[ListItem.Size]</value>
+		<value condition="$EXP[isPVRRecordingsGroups] + Control.HasFocus(54) + !$EXP[LowListPanelIsSwapped] + Integer.IsGreater(Container(440054).NumItems,0)">$INFO[ListItem.label] $INFO[Container(440054).NumItems,[B](,)[/B]] • $INFO[ListItem.Size]</value>
+		<value condition="$EXP[isPVRRecordingsGroups] + Control.HasFocus(54) + $EXP[LowListPanelIsSwapped] + Integer.IsGreater(Container(4400154).NumItems,0)">$INFO[ListItem.label] $INFO[Container(4400154).NumItems,[B](,)[/B]] • $INFO[ListItem.Size]</value>
+		<value condition="$EXP[isPVRRecordingsGroups] + Control.HasFocus(501) + !$EXP[TallListPanelIsSwapped] + Integer.IsGreater(Container(440501).NumItems,0)">$INFO[ListItem.label] $INFO[Container(440501).NumItems,[B](,)[/B]] • $INFO[ListItem.Size]</value>
+		<value condition="$EXP[isPVRRecordingsGroups] + Control.HasFocus(501) + $EXP[TallListPanelIsSwapped] + Integer.IsGreater(Container(4401501).NumItems,0)">$INFO[ListItem.label] $INFO[Container(4401501).NumItems,[B](,)[/B]] • $INFO[ListItem.Size]</value>
+		<value condition="$EXP[isPVRRecordingsGroups] + Control.HasFocus(52) + !$EXP[BigListPanelIsSwapped] + Integer.IsGreater(Container(440052).NumItems,0)">$INFO[ListItem.label] $INFO[Container(440052).NumItems,[B](,)[/B]] • $INFO[ListItem.Size]</value>
+		<value condition="$EXP[isPVRRecordingsGroups] + Control.HasFocus(52) + $EXP[BigListPanelIsSwapped] + Integer.IsGreater(Container(4400152).NumItems,0)">$INFO[ListItem.label] $INFO[Container(4400152).NumItems,[B](,)[/B]] • $INFO[ListItem.Size]</value>
+		<value condition="$EXP[isPVRRecordingsGroups] + Control.HasFocus(51) + Integer.IsGreater(Container(440051).NumItems,0)">$INFO[ListItem.label] $INFO[Container(440051).NumItems,[B](,)[/B]] • $INFO[ListItem.Size]</value>
+		<value condition="$EXP[isPVRRecordingsGroups] + Control.HasFocus(511) + Integer.IsGreater(Container(4400511).NumItems,0)">$INFO[ListItem.label] $INFO[Container(4400511).NumItems,[B](,)[/B]] • $INFO[ListItem.Size]</value>
+		<value condition="$EXP[isPVRRecordingsGroups] + Control.HasFocus(55) + Integer.IsGreater(Container(440055).NumItems,0)">$INFO[ListItem.label] $INFO[Container(440055).NumItems,[B](,)[/B]] • $INFO[ListItem.Size]</value>
+		<value condition="$EXP[isPVRRecordingsGroups] + Control.HasFocus(551) + Integer.IsGreater(Container(4400551).NumItems,0)">$INFO[ListItem.label] $INFO[Container(4400551).NumItems,[B](,)[/B]] • $INFO[ListItem.Size]</value>
+		
 		<value condition="[Container.Content(movies) | Container.Content(tvshows)] + String.IsEqual(ListItem.DBType,video) + Control.IsVisible(52) + !Skin.HasSetting(HideTop250MediaViews)">$INFO[Listitem.Title,, ]$INFO[ListItem.Year,(,)][B]$INFO[ListItem.Top250, #,][/B]</value>
 		<value condition="[Container.Content(movies) | Container.Content(tvshows)] + String.IsEqual(ListItem.DBType,video) + Control.IsVisible(52) + Skin.HasSetting(HideTop250MediaViews)">$INFO[Listitem.Title,, ]$INFO[ListItem.Year,(,)]</value>
 		<value condition="[Container.Content(movies) | Container.Content(tvshows)] + String.IsEqual(ListItem.DBType,video) + !Control.IsVisible(52) + !Skin.HasSetting(HideTop250MediaViews)">$INFO[Listitem.Title,[B],[/B] ]$INFO[ListItem.Year,(,)][B]$INFO[ListItem.Top250, #,][/B]</value>
 		<value condition="[Container.Content(movies) | Container.Content(tvshows)] + String.IsEqual(ListItem.DBType,video) + !Control.IsVisible(52) + Skin.HasSetting(HideTop250MediaViews)">$INFO[Listitem.Title,[B],[/B] ]$INFO[ListItem.Year,(,)]</value>
-		<value>$INFO[Listitem.label]</value>
+		<value>$INFO[ListItem.Label]</value>
     </variable>
 
     <variable name="panelsubheading">
@@ -789,8 +840,8 @@
         <value condition="Container.Content(images) + !ListItem.IsFolder">$INFO[Listitem.Size]$INFO[ListItem.PictureDateTime, • ,]</value>
         <value condition="Window.IsActive(MyPVRChannels.xml)">[COLOR=Grey3]$LOCALIZE[142] [/COLOR]$INFO[ListItem.StartTime,, / ]$INFO[ListItem.EndTime] </value>
         <value condition="Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml)">$INFO[ListItem.Date] $INFO[ListItem.ChannelName,  •  ]</value>
-        <value condition="Window.IsActive(MyPVRRecordings.xml) + !Skin.HasSetting(Enable.HourMinutes)">$INFO[ListItem.Duration,[COLOR=Grey3] [/COLOR]]</value>
-        <value condition="Window.IsActive(MyPVRRecordings.xml) + Skin.HasSetting(Enable.HourMinutes)">$VAR[ItemDurationHrMins,[COLOR=Grey3] [/COLOR]]</value>
+        <value condition="!ListItem.IsParentFolder + Window.IsActive(MyPVRRecordings.xml) + !$EXP[isPVRRecordingsGroups] + !Skin.HasSetting(Enable.HourMinutes)">$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Duration][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Size]</value>
+        <value condition="!LISTItem.IsParentFolder + Window.IsActive(MyPVRRecordings.xml) + !$EXP[isPVRRecordingsGroups] + Skin.HasSetting(Enable.HourMinutes)">$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$VAR[ItemDurationHrMins][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Size]</value>
         <value condition="String.IsEqual(ListItem.DBType,musicvideo) + [Window.IsActive(script-globalsearch.xml) | !Skin.HasSetting(Hide.Label2.Lists)] + !Skin.HasSetting(Enable.HourMinutes)">$INFO[Listitem.Artist,, • ]$INFO[Listitem.Year,, • ]$INFO[Listitem.Duration]</value>
         <value condition="String.IsEqual(ListItem.DBType,musicvideo) + [Window.IsActive(script-globalsearch.xml) | !Skin.HasSetting(Hide.Label2.Lists)] + Skin.HasSetting(Enable.HourMinutes)">$INFO[Listitem.Artist,, • ]$INFO[Listitem.Year,, • ]$VAR[ItemDurationHrMins]</value>
         <value condition="String.IsEqual(ListItem.DBType,musicvideo) + !Window.IsActive(script-globalsearch.xml) + Skin.HasSetting(Hide.Label2.Lists) + Skin.HasSetting(ShowMPAA) + Skin.HasSetting(ShowPlayCount)">[CR]$INFO[Listitem.Title]$INFO[ListItem.MPAA, • ]$INFO[ListItem.DateAdded, • $LOCALIZE[32021] ]$INFO[ListItem.PlayCount, • $LOCALIZE[32022] ]</value>
@@ -889,7 +940,7 @@
   
 
     <variable name="Plots" description="Plots and descriptions">
-        <value condition="Window.IsActive(script-embuary-video.xml)">$INFO[Container(10051).ListItem.Plot]</value>
+	    <value condition="Window.IsActive(script-embuary-video.xml)">$INFO[Container(10051).ListItem.Plot]</value>
 		<value condition="String.Contains(ListItem.FolderPath,type=person) + !String.IsEmpty(ListItem.Property(Biography))">$INFO[ListItem.Property(Biography)]</value>
 		<value condition="String.Contains(ListItem.FolderPath,type=person) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Biography))">$INFO[Window(Home).Property(TMDbHelper.ListItem.Biography)]</value>
         <value condition="ListItem.IsParentFolder"> </value>
@@ -903,10 +954,9 @@
 		<value condition="Container.Content(images) + !String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
 		<value condition="Container.Content(images) + !ListItem.IsParentFolder + ListItem.IsFolder">$LOCALIZE[19055]</value>
         <value condition="Container.Content(images)">$INFO[ListItem.PictureDatetime,[B][COLOR=Silver]$LOCALIZE[21820]: [/COLOR][/B] ,[CR]]$INFO[ListItem.PictureResolution,[B][COLOR=Silver]$LOCALIZE[21805]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureAperture,[B][COLOR=Silver]$LOCALIZE[21826]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureAuthor,[B][COLOR=Silver]$LOCALIZE[21863]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureByline,[B][COLOR=Silver]$LOCALIZE[21867]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureBylineTitle,[B][COLOR=Silver]$LOCALIZE[21868]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureCamMake,[B][COLOR=Silver]$LOCALIZE[21822]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureCamModel,[B][COLOR=Silver]$LOCALIZE[21823]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureCaption,[B][COLOR=Silver]$LOCALIZE[21862]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureCategory,[B][COLOR=Silver]$LOCALIZE[21866]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureCCDWidth,[B][COLOR=Silver]$LOCALIZE[21839]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureCopyrightNotice,[B][COLOR=Silver]$LOCALIZE[21871]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureCountry,[B][COLOR=Silver]$LOCALIZE[21875]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureCountryCode,[B][COLOR=Silver]$LOCALIZE[21879]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureCredit,[B][COLOR=Silver]$LOCALIZE[21869]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureDesc,[B][COLOR=Silver]$LOCALIZE[21821]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureDigitalZoom,[B][COLOR=Silver]$LOCALIZE[21838]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureExpMode,[B][COLOR=Silver]$LOCALIZE[21832]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureExposure,[B][COLOR=Silver]$LOCALIZE[21829]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureExposureBias,[B][COLOR=Silver]$LOCALIZE[21831]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureExpTime,[B][COLOR=Silver]$LOCALIZE[21830]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureFlashUsed,[B][COLOR=Silver]$LOCALIZE[21833]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureFocalLen,[B][COLOR=Silver]$LOCALIZE[21827]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureFocusDist,[B][COLOR=Silver]$LOCALIZE[21828]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureGPSLat,[B][COLOR=Silver]$LOCALIZE[21840]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureGPSLon,[B][COLOR=Silver]$LOCALIZE[21841]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureGPSAlt,[B][COLOR=Silver]$LOCALIZE[21842]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureHeadline,[B][COLOR=Silver]$LOCALIZE[21864]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureImageType,[B][COLOR=Silver]$LOCALIZE[21858]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureISO,[B][COLOR=Silver]$LOCALIZE[21837]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureKeywords,[B][COLOR=Silver]$LOCALIZE[21861]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureOrientation,[B][COLOR=Silver]$LOCALIZE[21843]: [/COLOR][/B],[CR]]$INFO[ListItem.PictureProcess,[B][COLOR=Silver]$LOCALIZE[21808]: [/COLOR][/B],[CR]]</value>
-		<value condition="Window.IsActive(MyPVRTimers.xml) + !String.IsEmpty(ListItem.Genre)">$VAR[NewLiveFinaleLabel,,[CR]][COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[ListItem.Genre,,[CR]][COLOR=$VAR[HighlightColor]]$LOCALIZE[803]: [/COLOR]$INFO[ListItem.TimerType,,[CR]]$INFO[ListItem.Plot,[CR]]</value>
-		<value condition="Window.IsActive(MyPVRTimers.xml) + String.IsEmpty(ListItem.Genre)">$VAR[NewLiveFinaleLabel,,[CR]][COLOR=$VAR[HighlightColor]]$LOCALIZE[803]: [/COLOR]$INFO[ListItem.TimerType,,[CR]]$INFO[ListItem.Plot,[CR]]</value>
-		<value condition="Window.IsVisible(MyPVRRecordings.xml) + Control.IsVisible(80)"> </value>
-		<value condition="Window.IsActive(MyPVRRecordings.xml) + !String.IsEmpty(ListItem.Size) + !String.IsEqual(ListItem.Size,0 B)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[289]: [/COLOR]$INFO[ListItem.Size,,[CR]]$INFO[ListItem.Plot,[CR]]</value>
+		<value condition="[!ListItem.IsParentFolder + !String.IsEqual(ListItem.Label,$LOCALIZE[19026])] + Window.IsActive(MyPVRTimers.xml) + !String.IsEmpty(ListItem.Genre)">$VAR[NewLiveFinaleLabel,,[CR]][COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[ListItem.Genre,,[CR]][COLOR=$VAR[HighlightColor]]$LOCALIZE[803]: [/COLOR]$INFO[ListItem.TimerType,,[CR]]$INFO[ListItem.Plot,[CR]]</value>
+		<value condition="[!ListItem.IsParentFolder + !String.IsEqual(ListItem.Label,$LOCALIZE[19026])] + Window.IsActive(MyPVRTimers.xml) + String.IsEmpty(ListItem.Genre) + !String.IsEmpty(ListItem.Comment) + String.IsEmpty(ListItem.Plot)">$VAR[NewLiveFinaleLabel,,[CR]][COLOR=$VAR[HighlightColor]]$LOCALIZE[803]: [/COLOR]$INFO[ListItem.TimerType,,[CR]]$INFO[ListItem.Comment,[CR]]</value>
+		<value condition="[!ListItem.IsParentFolder + !String.IsEqual(ListItem.Label,$LOCALIZE[19026])] + Window.IsActive(MyPVRTimers.xml) + String.IsEmpty(ListItem.Genre) + !String.IsEmpty(ListItem.Plot)">$VAR[NewLiveFinaleLabel,,[CR]][COLOR=$VAR[HighlightColor]]$LOCALIZE[803]: [/COLOR]$INFO[ListItem.TimerType,,[CR]]$INFO[ListItem.Plot,[CR]]</value>
 		<value condition="[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRGuide.xml)] + !String.IsEmpty(ListItem.Plot) + !String.IsEmpty(EpisodeName) + !String.IsEqual(ListItem.EpisodeName,ListItem.Plot)">$INFO[ListItem.EpisodeName,[B],[/B][CR][CR]]$INFO[ListItem.Plot]</value>
         <value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
         <value condition="!String.IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
@@ -936,11 +986,13 @@
         <value condition="[String.IsEqual(ListItem.DBType,episode) | Container.Content(episodes)]  + !String.IsEmpty(ListItem.Episode)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20373]:[/COLOR] $INFO[Listitem.Season] • [COLOR=$VAR[HighlightColor]][CAPITALIZE]$LOCALIZE[20452][/CAPITALIZE]:[/COLOR] $INFO[Listitem.Episode][CR][COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Listitem.Genre]</value>
         <value condition="String.IsEqual(ListItem.DBType,album)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[ListItem.Genre][CR][COLOR=$VAR[HighlightColor]]$LOCALIZE[562]:[/COLOR] $INFO[ListItem.Year] • [COLOR=$VAR[HighlightColor]]$LOCALIZE[21899]:[/COLOR] $INFO[ListItem.Property(Album_Label)]</value>
         <value condition="String.IsEqual(ListItem.DBType,artist)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Listitem.Property(Artist_Genre)][CR][COLOR=$VAR[HighlightColor]]$LOCALIZE[21898]:[/COLOR] $INFO[Listitem.Property(Artist_YearsActive)]</value>
-        <value condition="String.IsEqual(ListItem.DBType,song) + Control.IsVisible(52)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[558]: [/COLOR]$INFO[Listitem.Album] • [COLOR=$VAR[HighlightColor]]$LOCALIZE[562]: [/COLOR]$INFO[Listitem.Year] • [COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Listitem.Genre]</value>
+		<value condition="String.IsEqual(ListItem.DBType,song) + [Control.IsVisible(52) | Control.IsVisible(51) | Control.IsVisible(511) | Control.IsVisible(55) | Control.IsVisible(551)]">[COLOR=$VAR[HighlightColor]]$LOCALIZE[558]: [/COLOR]$INFO[Listitem.Album] • [COLOR=$VAR[HighlightColor]]$LOCALIZE[562]: [/COLOR]$INFO[Listitem.Year] • [COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Listitem.Genre]</value>
 		<value condition="String.IsEqual(ListItem.DBType,musicvideo) + Control.IsVisible(52) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[180]: [/COLOR]$INFO[Listitem.Duration]$LOCALIZE[31297] • [COLOR=$VAR[HighlightColor]]$LOCALIZE[562]: [/COLOR]$INFO[Listitem.Year] • [COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Listitem.Genre]</value>
         <value condition="String.IsEqual(ListItem.DBType,musicvideo) + Control.IsVisible(52) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[180]: [/COLOR]$VAR[ItemDurationHrMins] • [COLOR=$VAR[HighlightColor]]$LOCALIZE[562]: [/COLOR]$INFO[Listitem.Year] • [COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Listitem.Genre]</value>
         <value condition="Window.IsActive(MyPVRChannels.xml)">[COLOR=Grey3]$LOCALIZE[19031]: [/COLOR]$INFO[ListItem.NextTitle]</value>
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[PVR.NextTimer]</value>
+		<value condition="Window.IsActive(MyPVRSearch.xml) + !String.IsEmpty(ListItem.Genre)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Listitem.Genre][CR]$VAR[TVSearchStatus]</value>
+		<value condition="Window.IsActive(MyPVRSearch.xml) + String.IsEmpty(ListItem.Genre)">$VAR[TVSearchStatus]</value>
 		<value condition="!String.IsEmpty(ListItem.Genre)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[515]: [/COLOR]$INFO[Listitem.Genre]</value>
 	</variable>
 	
@@ -955,7 +1007,8 @@
         <value condition="Container.Content(songs)">$INFO[Listitem.Album]$INFO[ListItem.Year, (,)]</value>
     </variable>
     <variable name="listmediafooter">
-        <value condition="Container.Content(songs)">$INFO[Listitem.AlbumArtist]</value>
+        <value condition="Container.Content(songs) + !String.IsEmpty(ListItem.AlbumArtist)">$INFO[Listitem.AlbumArtist]</value>
+		<value condition="Container.Content(songs) + String.IsEmpty(ListItem.AlbumArtist)">$INFO[Listitem.Artist]</value>
     </variable>
 
     <variable name="SeekLabel">
@@ -1997,6 +2050,10 @@
 		<value>$INFO[ListItem.Rating]</value>
 	</variable>
 	
+	<variable name="EpisodesListRatingOverlayVar">
+		<value condition="Skin.HasSetting(UserRatingOverlay)">$INFO[Container(6001).ListItem.UserRating]</value>
+		<value>$INFO[Container(6001).ListItem.Rating]</value>
+	</variable>
 	<variable name="RightListItemType">
 		<value condition="Skin.HasSetting(502_UseBanner)">$LOCALIZE[32400]</value>
 		<value condition="Skin.HasSetting(502_UseLogo)">$LOCALIZE[31621]</value>
@@ -2029,7 +2086,7 @@
                                        [String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),tvshow) | 
                                         String.IsEqual(Window(Home).Property(InfoExtrasDBType),season) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),episode)]]</expression>
 										
-	<expression name="PanelShouldShow">Skin.HasSetting(AlwaysShowListInfo) | [!Container.Content(songs) + [[!String.IsEmpty(ListItem.Duration) | !String.IsEmpty(ListItem.Plot) | [!String.IsEmpty(ListItem.Genre) + !Container.Content(genres)] | [!String.IsEmpty(ListItem.Year) + !Container.Content(years)] | !String.IsEmpty(ListItem.AddonDescription)] | 
+	<expression name="PanelShouldShow">[Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder] | Skin.HasSetting(AlwaysShowListInfo) | [!Container.Content(songs) + [[!String.IsEmpty(ListItem.Duration) | !String.IsEmpty(ListItem.Plot) | [!String.IsEmpty(ListItem.Genre) + !Container.Content(genres)] | [!String.IsEmpty(ListItem.Year) + !Container.Content(years)] | !String.IsEmpty(ListItem.AddonDescription)] | 
 	                                   [!String.IsEmpty(ListItem(1).Duration) | !String.IsEmpty(ListItem(1).Plot) | [!String.IsEmpty(ListItem(1).Genre) + !Container.Content(genres)] | [!String.IsEmpty(ListItem(1).Year) + !Container.Content(years)] | !String.IsEmpty(ListItem(1).AddonDescription)] | 
 									   [!String.IsEmpty(ListItem(2).Duration) | !String.IsEmpty(ListItem(2).Plot) | [!String.IsEmpty(ListItem(2).Genre) + !Container.Content(genres)] | [!String.IsEmpty(ListItem(2).Year) + !Container.Content(years)] | !String.IsEmpty(ListItem(2).AddonDescription)] | 
 									   [!String.IsEmpty(ListItem(3).Duration) | !String.IsEmpty(ListItem(3).Plot) | [!String.IsEmpty(ListItem(3).Genre) + !Container.Content(genres)] | [!String.IsEmpty(ListItem(3).Year) + !Container.Content(years)] | !String.IsEmpty(ListItem(3).AddonDescription)] | 
@@ -2104,6 +2161,13 @@
 
     <expression name="canShowContainerRatingOverlay">!String.IsEmpty(Container.ListItem.Rating) | [Skin.HasSetting(UserRatingOverlay) + !String.IsEmpty(Container.ListItem.UserRating)]</expression>
 
-    <expression name="canShowRatingOverlay">!ListItem.IsParentFolder + !String.IsEmpty(ListItem.Rating) | [Skin.HasSetting(UserRatingOverlay) + !String.IsEmpty(ListItem.UserRating)]</expression>	
+    <expression name="canShowRatingOverlay">!ListItem.IsParentFolder + !String.IsEmpty(ListItem.Rating) | [Skin.HasSetting(UserRatingOverlay) + !String.IsEmpty(ListItem.UserRating)]</expression>
 	
+	<expression name="isPVRRecordingsGroups">Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder</expression>	
+	
+	<expression name="isPVRTimerRules">Window.IsActive(MyPVRTimers.xml) + ListItem.IsFolder + !ListItem.IsParentFolder</expression>
+	
+	<expression name="isPVRTimer">Window.IsActive(MyPVRTimers.xml) + !ListItem.IsFolder + !ListItem.IsParentFolder</expression>	
+	
+	<expression name="PVRChannelPlaying">[Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRCHannels.xml) | Window.IsActive(MyPVRSearch.xml)] + !Skin.HasSetting(Show_VideoBackground) + Player.HasVideo + [VideoPlayer.Content(livetv) | PVR.IsPlayingRecording]</expression>	
 </includes>
