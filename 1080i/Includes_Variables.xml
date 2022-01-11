@@ -89,8 +89,8 @@
 		<value condition="Container.Content(songs) + !Window.IsVisible(script.globalsearch.xml) + Skin.HasSetting(Hide.Label2.Lists) + Skin.HasSetting(Enable.HourMinutes) + Skin.HasSetting(ShowRatingMain) + !Skin.HasSetting(ShowRatingUser) + [Integer.IsGreater(ListItem.PlayCount,0) + Skin.HasSetting(ShowPlayCount)]">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]$VAR[ItemDurationHrMins, • (,)]$INFO[ListItem.Rating,, • ]$INFO[ListItem.PlayCount, • $LOCALIZE[32022] ]</value>
 		<value condition="Container.Content(songs) + !Window.IsVisible(script.globalsearch.xml) + Skin.HasSetting(Hide.Label2.Lists) + Skin.HasSetting(Enable.HourMinutes) + !Skin.HasSetting(ShowRatingMain) + Skin.HasSetting(ShowRatingUser) + [Integer.IsGreater(ListItem.PlayCount,0) + Skin.HasSetting(ShowPlayCount)]">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]$VAR[ItemDurationHrMins, • (,)]$INFO[ListItem.UserRating,, • ]$INFO[ListItem.PlayCount, • $LOCALIZE[32022] ]</value>
 		<value condition="Container.Content(songs) + !Window.IsVisible(script.globalsearch.xml) + Skin.HasSetting(Hide.Label2.Lists) + Skin.HasSetting(Enable.HourMinutes) + !Skin.HasSetting(ShowRatingMain) + !Skin.HasSetting(ShowRatingUser) + [Integer.IsGreater(ListItem.PlayCount,0) + Skin.HasSetting(ShowPlayCount)]">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]$VAR[ItemDurationHrMins, • (,)]$INFO[ListItem.PlayCount, • $LOCALIZE[32022] ]</value>
-        <value condition="Window.IsActive(MyPVRChannels.xml)">[B]$INFO[ListItem.ChannelNumberLabel][/B] - $INFO[ListItem.ChannelName]</value>																																			 
-        <value>$INFO[ListItem.Label]</value>
+        <value condition="Window.IsActive(MyPVRChannels.xml)">[B]$INFO[ListItem.ChannelNumberLabel][/B] - $INFO[ListItem.ChannelName]</value>
+		<value>$INFO[ListItem.Label]</value>
     </variable>
 
     <variable name="MediaListLabel2">
@@ -1081,9 +1081,9 @@
     </variable>
 
 	<variable name="ShelfSeasonEpisodeLabel">
-        <value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(air_day))">$INFO[ListItem.Property(air_time)]$INFO[ListItem.Property(Studio.1.Name), @ ,]</value>
+        <value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(air_day))">$INFO[ListItem.Property(air_time)]$INFO[ListItem.Studio, @ ,]</value>
 		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Property(airday))">$INFO[ListItem.Property(airtime)]$INFO[ListItem.Studio, @ ,]</value>
-		<value condition="[Container.Content(episodes) | String.IsEqual(ListItem.DBType,episode)] + [String.IsEmpty(ListItem.Season) | String.Contains(Window.Property(Episode),s)]">$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Episode]</value>
+		<value condition="[Container.Content(episodes) | String.IsEqual(ListItem.DBType,episode)] + String.IsEmpty(ListItem.Season)">$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Episode]</value>
         <value condition="[Container.Content(episodes) | String.IsEqual(ListItem.DBType,episode)] + Integer.IsLess(ListItem.Episode,10) + Integer.IsLess(ListItem.Season,10)">$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Season,s0,]$INFO[ListItem.Episode,e0,]</value>
         <value condition="[Container.Content(episodes) | String.IsEqual(ListItem.DBType,episode)] + Integer.IsLess(ListItem.Episode,10) + !Integer.IsLess(ListItem.Season,10)">$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Season,s,]$INFO[ListItem.Episode,e0,]</value>
         <value condition="[Container.Content(episodes) | String.IsEqual(ListItem.DBType,episode)] + !Integer.IsLess(ListItem.Episode,10) + Integer.IsLess(ListItem.Season,10)">$INFO[ListItem.TVShowTitle] - $INFO[ListItem.Season,s0,]$INFO[ListItem.Episode,e,]</value>

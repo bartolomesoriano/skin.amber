@@ -3683,6 +3683,18 @@ msgctxt "#32475"
 msgid "Always Show Information Panel"
 msgstr ""
 
+msgctxt "#32476"
+msgid "Use Custom Search for Video Library"
+msgstr ""
+
+msgctxt "#32477"
+msgid "Use Custom Search for Music Library"
+msgstr ""
+
+msgctxt "#32478"
+msgid "Current Programme Progress:"
+msgstr ""
+
 #~ msgctxt "#32232"
 #~ msgid "Main Rating"
 #~ msgstr "Note principale"

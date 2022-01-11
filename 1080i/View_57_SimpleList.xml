@@ -14,7 +14,8 @@
 	
 	<include name="View_57_SimpleList">
         <control type="group" description="Content">
-            <include content="BackgroundOverlay">
+            
+			<include content="BackgroundOverlay">
                 <param name="parentid" value="57"/>
             </include>
             <visible>Control.IsVisible(57)</visible>

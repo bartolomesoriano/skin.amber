@@ -1120,7 +1120,8 @@
 
     <variable name="ViewModeSwitch">
         <value condition="!String.IsEmpty(Container.Content)">$INFO[Container.Content]</value>
-        <value condition="Window.IsVisible(MyPVRRecordings.xml)">pvr-recordings</value>
+        <value condition="Window.IsVisible(MyPVRChannels.xml)">pvr-channels</value>
+		<value condition="Window.IsVisible(MyPVRRecordings.xml)">pvr-recordings</value>
         <value condition="Window.IsVisible(MyPVRTimers.xml)">pvr-timers</value>
         <value condition="Window.IsVisible(MyPVRSearch.xml)">pvr-search</value>
         <value>none</value>
@@ -1297,7 +1298,6 @@
 		<onright condition="Control.IsVisible(551)">551</onright>
 		<onright condition="Control.IsVisible(501)">501</onright>
 		<onright condition="Control.IsVisible(53)">53</onright>
-		<onright condition="Control.IsVisible(57)">57</onright>
         <onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
 		<onup condition="!Skin.HasSetting(Enable.TouchSupport)">9000</onup>
         <ondown>9000</ondown>
@@ -1311,7 +1311,6 @@
 		<onback condition="Control.IsVisible(551)">551</onback>
 		<onback condition="Control.IsVisible(501)">501</onback>
 		<onback condition="Control.IsVisible(53)">53</onback>
-		<onback condition="Control.IsVisible(57)">57</onback>
         <scrolltime>200</scrolltime>
         <orientation>vertical</orientation>
         <animation effect="fade" time="200" start="100" end="20" reversible="true" condition="[!ControlGroup(9000).HasFocus() + !Control.HasFocus(909090)]">Conditional</animation>
@@ -1327,8 +1326,8 @@
             <label>$LOCALIZE[31023]</label>
             <label2>$INFO[Container.Viewmode]</label2>
             <enable>Integer.IsGreater(Container(9600).NumItems,1)</enable>
-            <onclick condition="!Skin.HasSetting(Enable.NewViewSelector)">Control.SetFocus(9600)</onclick>
-			<onclick condition="Skin.HasSetting(Enable.NewViewSelector)">Runscript(script.skinvariables,action=buildviews,contentid=$VAR[ViewModeSwitch],pluginname=$INFO[Container.PluginName])</onclick>
+            <onclick condition="!Skin.HasSetting(Enable.NewViewSelector) + !Window.IsVisible(MyPVRGuide.xml)">Control.SetFocus(9600)</onclick>
+			<onclick condition="Skin.HasSetting(Enable.NewViewSelector) + !Window.IsVisible(MyPVRGuide.xml)">Runscript(script.skinvariables,action=buildviews,contentid=$VAR[ViewModeSwitch],pluginname=$INFO[Container.PluginName])</onclick>
         </control>
 
 		<include content="IconViewSwitches">

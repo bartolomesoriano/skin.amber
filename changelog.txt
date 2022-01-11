@@ -1,3 +1,9 @@
+3.2.152 (11-01-2022)
+- Allow different view types for PVR
+- Search for trailer and play trailer in window (video info)
+- Date added and Last Played in video info dialog
+- Linked movie info in episodes list dialog
+- Many, many fixes!
 3.2.151 (28-10-2021)
 - Shelf Info for 2 shelves together
 - Episodes List button in OSD

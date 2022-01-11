@@ -3,7 +3,12 @@
 	
 	<include name="View_551_BigPanel2">
         <control type="group" description="Content">
-            <include content="BackgroundOverlay">
+            
+			<include content="PVRBackground">
+			    <param name="viewid">551</param>
+			</include>
+			
+			<include content="BackgroundOverlay">
                 <param name="parentid" value="551"/>
             </include>
             <visible>Control.IsVisible(551)</visible>
@@ -39,7 +44,11 @@
                     <param name="viewid">551</param>
                 </include>
 
-                <include content="PosterLayout">
+                <include content="RecordingsLayout">
+                    <param name="viewid">551</param>
+                </include>
+				
+				<include content="PosterLayout">
                     <param name="viewid">551</param>
                 </include>
 
@@ -65,7 +74,39 @@
             </control>
 
             <include content="PanelTemplate">
-                <param name="top">100</param>
+                <param name="viewid">551</param>
+				<param name="top">100</param>
+                <param name="left">1000</param>
+				<param name="height">640</param>
+                <param name="width">850</param>
+				<param name="groupheight">850</param>
+				<param name="plotheight">590</param>
+                <param name="heading">$VAR[panelheading]</param>
+                <param name="subheading">$VAR[panelsubheading]</param>
+                <param name="plot">$VAR[Plots]</param>
+                <param name="footer">$VAR[panelfooter]</param>
+				<param name="footertop">900</param>
+                <param name="visibility">[$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer] | Window.IsActive(MyPVRChannels.xml)] + !$EXP[PVRChannelPlaying]</param>
+            </include>
+			<include content="PanelTemplate">
+                <param name="viewid">551</param>
+				<param name="top">100</param>
+                <param name="left">1000</param>
+				<param name="height">245</param>
+                <param name="width">850</param>
+				<param name="groupheight">850</param>
+				<param name="plotheight">590</param>
+                <param name="heading">$VAR[panelheading]</param>
+                <param name="subheading">$VAR[panelsubheading]</param>
+                <param name="plot">$VAR[Plots]</param>
+                <param name="footer"></param>
+				<param name="footertop">900</param>
+                <param name="visibility">[Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml) | Window.IsActive(MyPVRSearch.xml) | Window.IsActive(MyPVRChannels.xml)] + $EXP[PVRChannelPlaying]</param>
+            </include>
+			
+			<include content="PanelTemplate">
+                <param name="viewid">551</param>
+				<param name="top">100</param>
                 <param name="left">1000</param>
 				<param name="height">640</param>
                 <param name="width">850</param>
@@ -80,9 +121,10 @@
 				<param name="footertop">900</param>
 				<param name="flagitemwidth">102</param>
 				<param name="flagitemheight">70</param>
-                <param name="visibility">![Container.Content(artists) | Container.Content(albums) | Container.Content(images) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)]</param>
+                <param name="visibility">![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer] | $EXP[PVRChannelPlaying]] + ![Container.Content(artists) | Container.Content(albums) | Container.Content(images) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)]</param>
             </include>
 			<include content="PanelTemplate">
+				<param name="viewid">551</param>
 				<param name="top">100</param>
 				<param name="left">1000</param>
 				<param name="height">640</param>
@@ -98,7 +140,8 @@
 				<param name="visibility">[Container.Content(tvshows) | Container.Content(seasons)]</param>
 			</include>            
             <include content="PanelTemplate">
-                <param name="top">100</param>
+                <param name="viewid">551</param>
+				<param name="top">100</param>
                 <param name="left">1000</param>
 				<param name="height">640</param>
                 <param name="width">850</param>
@@ -110,7 +153,8 @@
                 <param name="visibility">Container.Content(sets)</param>
             </include>
             <include content="PanelTemplate">
-                <param name="top">100</param>
+                <param name="viewid">551</param>
+				<param name="top">100</param>
                 <param name="left">1000</param>
 				<param name="height">760</param>
                 <param name="width">850</param>
@@ -123,7 +167,8 @@
                 <param name="visibility">Container.Content(images)</param>
             </include>
             <include content="PanelTemplate">
-                <param name="top">100</param>
+                <param name="viewid">551</param>
+				<param name="top">100</param>
                 <param name="left">1000</param>
 				<param name="height">710</param>
                 <param name="width">850</param>
@@ -137,7 +182,8 @@
                 <param name="visibility">Container.Content(artists)</param>
             </include>
             <include content="PanelTemplate">
-                <param name="top">100</param>
+                <param name="viewid">551</param>
+				<param name="top">100</param>
                 <param name="left">1000</param>
 				<param name="height">635</param>
                 <param name="width">850</param>
@@ -266,6 +312,28 @@
                 <animation effect="fade" start="100" end="0" condition="![String.IsEqual(ListItem.SortLetter,O) | String.IsEqual(ListItem.SortLetter,P) | String.IsEqual(ListItem.SortLetter,Q) | String.IsEqual(ListItem.SortLetter,R) | String.IsEqual(ListItem.SortLetter,S) | String.IsEqual(ListItem.SortLetter,T) | String.IsEqual(ListItem.SortLetter,U) | String.IsEqual(ListItem.SortLetter,V) | String.IsEqual(ListItem.SortLetter,W) | String.IsEqual(ListItem.SortLetter,X) | String.IsEqual(ListItem.SortLetter,Y) | String.IsEqual(ListItem.SortLetter,Z)]">Conditional</animation>
                 <visible>Control.IsVisible(551)</visible>
                 <visible>Skin.HasSetting(Show.JumpToLetter) + !Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
+            </control>
+			
+			<include content="PVRRecordingSpaceUsage">
+			    <param name="posx">1000</param>
+				<param name="posy">980</param>
+				<param name="width">850</param>
+			</include>
+			
+			<include content="PVRChannelProgress">
+			    <param name="posx">1000</param>
+				<param name="posy">980</param>
+				<param name="width">850</param>
+			</include>
+			
+			<control type="group">
+		        <visible>$EXP[PVRChannelPlaying]</visible>
+                <left>970</left>
+			    <top>500</top>
+                <control type="videowindow">
+			        <width>900</width>
+			        <height>450</height>
+                </control>
             </control>
 
 			<include condition="Skin.HasSetting(Enable.TouchSupport)" content="TouchButtons">

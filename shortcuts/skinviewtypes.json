@@ -145,23 +145,28 @@
             "viewtypes": ["50", "54", "501", "52", "51", "511", "55", "551", "53", "56", "57"],
             "library": "50"
         },
+		"pvr-channels": {
+            "rule": "Window.IsVisible(MyPVRChannels.xml)",
+            "viewtypes": ["50", "54", "501", "52", "51", "511", "55", "551", "53"],
+            "library": "50"
+        },
         "pvr-timers": {
             "rule": "Window.IsVisible(MyPVRTimers.xml)",
-            "viewtypes": ["50"],
+            "viewtypes": ["50", "54", "501", "52", "51", "511", "55", "551", "53"],
             "library": "50"
         },
         "pvr-search": {
             "rule": "Window.IsVisible(MyPVRSearch.xml)",
-            "viewtypes": ["50"],
+            "viewtypes": ["50", "54", "501", "52", "51", "511", "55", "551", "53"],
             "library": "50"
         },
         "pvr-recordings": {
             "rule": "Window.IsVisible(MyPVRRecordings.xml)",
-            "viewtypes": ["50"],
+            "viewtypes": ["50", "54", "501", "52", "51", "511", "55", "551", "53"],
             "library": "50"
         },
         "none": {
-            "rule": "Container.Content() + !Window.IsVisible(MyPVRTimers.xml) + !Window.IsVisible(MyPVRSearch.xml) + !Window.IsVisible(MyPVRRecordings.xml)",
+            "rule": "Container.Content() + !Window.IsVisible(MyPVRChannels.xml) + !Window.IsVisible(MyPVRTimers.xml) + !Window.IsVisible(MyPVRSearch.xml) + !Window.IsVisible(MyPVRRecordings.xml)",
             "viewtypes": ["50", "54", "501", "52", "51", "511", "55", "551", "53", "56", "57"],
             "library": "50",
             "plugins": "50"

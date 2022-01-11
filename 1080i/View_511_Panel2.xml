@@ -2,12 +2,19 @@
 <includes>
 	
 	<include name="View_511_Panel2">
-		<include content="BackgroundOverlay">
-			<param name="parentid" value="511"/>
-			<param name="overlaytop" value="300"/>
-			<param name="overlayheight" value="1620"/>
-		</include>
+		
 		<control type="group" description="Content">
+			
+			<include content="PVRBackground">
+			    <param name="viewid">511</param>
+			</include>
+			
+			<include content="BackgroundOverlay">
+			    <param name="parentid" value="511"/>
+			    <param name="overlaytop" value="300"/>
+			    <param name="overlayheight" value="1620"/>
+		    </include>
+			
 			<visible>Control.IsVisible(511)</visible>
 			<include>ContentFade</include>
 
@@ -42,6 +49,10 @@
 					<param name="viewid">511</param>
 				</include>
 
+				<include content="RecordingsLayout">
+					<param name="viewid">511</param>
+				</include>
+				
 				<include content="PosterLayout">
 					<param name="viewid">511</param>
 				</include>
@@ -72,6 +83,20 @@
 			</control>
 
 			<include content="PanelTemplate">
+				<param name="viewid">511</param>
+				<param name="top">345</param>
+				<param name="left">1000</param>
+				<param name="height">400</param>
+                <param name="width">860</param>
+				<param name="heading">$VAR[panelheading]</param>
+				<param name="subheading">$VAR[panelsubheading]</param>
+				<param name="plot">$VAR[Plots]</param>
+				<param name="footer">$VAR[panelfooter]</param>
+				<param name="footertop">900</param>
+				<param name="visibility">[$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]]</param>
+			</include>
+			<include content="PanelTemplate">
+				<param name="viewid">511</param>
 				<param name="top">345</param>
 				<param name="left">1000</param>
 				<param name="height">400</param>
@@ -85,9 +110,10 @@
 				<param name="footertop">900</param>
 				<param name="flagitemwidth">95</param>
 				<param name="flagitemheight">75</param>
-				<param name="visibility">![Container.Content(artists) | Container.Content(albums) | Container.Content(images) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)]</param>
+				<param name="visibility">![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + ![Container.Content(artists) | Container.Content(albums) | Container.Content(images) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)]</param>
 			</include>
 			<include content="PanelTemplate">
+				<param name="viewid">511</param>
 				<param name="top">345</param>
 				<param name="left">1000</param>
 				<param name="height">400</param>
@@ -102,6 +128,7 @@
 				<param name="visibility">[Container.Content(tvshows) | Container.Content(seasons)]</param>
 			</include>            
 			<include content="PanelTemplate">
+				<param name="viewid">511</param>
 				<param name="top">345</param>
 				<param name="left">1000</param>
 				<param name="height">440</param>
@@ -112,6 +139,7 @@
 				<param name="visibility">Container.Content(sets)</param>
 			</include>
 			<include content="PanelTemplate">
+				<param name="viewid">511</param>
 				<param name="top">345</param>
 				<param name="left">1000</param>
 				<param name="height">545</param>
@@ -123,6 +151,7 @@
 				<param name="visibility">Container.Content(images)</param>
 			</include>
 			<include content="PanelTemplate">
+				<param name="viewid">511</param>
 				<param name="top">345</param>
 				<param name="left">1000</param>
 				<param name="height">400</param>
@@ -254,6 +283,28 @@
 				<param name="clearartwidth">463</param>
 				<param name="clearartheight">260</param>
 			</include>
+			
+			<include content="PVRRecordingSpaceUsage">
+			    <param name="posx">1000</param>
+				<param name="posy">1015</param>
+				<param name="width">860</param>
+			</include>
+			
+			<include content="PVRChannelProgress">
+			    <param name="posx">1000</param>
+				<param name="posy">1015</param>
+				<param name="width">860</param>
+			</include>
+			
+			<control type="group">
+		        <visible>$EXP[PVRChannelPlaying]</visible>
+                <left>7</left>
+			    <top>50</top>
+                <control type="videowindow">
+			        <width>440</width>
+			        <height>265</height>
+                </control>
+            </control>
 			
 			<include condition="Skin.HasSetting(Enable.TouchSupport)" content="TouchButtons">
 			    <param name="ButtonsTop">980</param>

@@ -255,7 +255,7 @@
 		<control type="group" id="2">
 			<include>OSDFade</include>
 			<visible>!Skin.HasSetting(UseUltraCompactOSD) + $EXP[showCompactSeekBar] + [Player.ShowInfo | Window.IsActive(VideoOSD)] + ![Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(SliderDialog)]</visible>
-			<animation effect="fade" time="200">VisibleChange</animation>
+    		<animation effect="fade" time="200">VisibleChange</animation>
 			<top>700</top>
 			
 			<!-- Background -->

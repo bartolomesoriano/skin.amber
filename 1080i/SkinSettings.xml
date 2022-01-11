@@ -557,7 +557,7 @@
 							<param name="itemid" value="6"/>
 							<param name="itemlabel" value="$LOCALIZE[32262]"/>
 							<param name="skinsetting" value="UseEHBackgrounds"/>
-							<param name="itemvisibility" value="System.HasAddon(script.embuary.helper)"/>
+							<param name="itemvisibility" value="System.HasAddon(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">7</param>

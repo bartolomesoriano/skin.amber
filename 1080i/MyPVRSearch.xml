@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">50</defaultcontrol>
+    <defaultcontrol>50</defaultcontrol>
+	<onload>ClearProperty(MediaMenu,Home)</onload>
+	<views>50,54,501,52,51,511,55,551,53</views>
+	<menucontrol>9000</menucontrol>
+	<controls>
+		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>       
+		<include>DefaultBackground</include>
+		<control type="group">
+		    
+			<include content="View_50_List" condition="!Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">list</param>
+		    </include>
+		    <include content="View_50_List" condition="Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">fixedlist</param>
+		    </include>
+			<include content="View_54_LowList" condition="!Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">list</param>
+		    </include>
+		    <include content="View_54_LowList" condition="Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">fixedlist</param>
+		    </include>
+			<include content="View_501_TallList" condition="!Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">list</param>
+		    </include>
+		    <include content="View_501_TallList" condition="Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">fixedlist</param>
+		    </include>
+			<include content="View_52_BigList" condition="!Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">list</param>
+		    </include>
+		    <include content="View_52_BigList" condition="Skin.HasSetting(ListCenterFocus)">
+		        <param name="ListType">fixedlist</param>
+		    </include>
+			
+			<include>View_51_Panel</include>
+			<include>View_511_Panel2</include>
+			
+			<include>View_55_BigPanel</include>
+			<include>View_551_BigPanel2</include>
+			
+            <include>View_53_Icons</include>			
+	        
+		</control>
+	    <include>Time</include>
+		<include>PVRSideBlade</include>
+	</controls>
+</window>	
+<!--	<defaultcontrol always="true">50</defaultcontrol>
     <onload>ClearProperty(MediaMenu,Home)</onload>
 	<views>50</views>
     <controls>
@@ -117,4 +164,4 @@
         </control>
         <include>PVRSideBlade</include>
     </controls>
-</window>
+</window> -->

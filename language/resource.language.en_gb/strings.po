@@ -3791,3 +3791,7 @@ msgstr ""
 msgctxt "#32477"
 msgid "Use Custom Search for Music Library"
 msgstr ""
+
+msgctxt "#32478"
+msgid "Current Programme Progress:"
+msgstr ""

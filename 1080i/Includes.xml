@@ -915,7 +915,7 @@
                 <include>VisibleFadeEffect</include>
                 <left>$PARAM[left]</left>
                 <top>$PARAM[top]</top>
-                <control type="group" description="Video Window Grouo">
+                <control type="group" description="Video Window Group">
                     <visible>Player.HasVideo + !Skin.HasSetting(Show_VideoBackground) + !Skin.HasSetting(HidePVRPreview)</visible>
                     <control type="videowindow" description="Current Video">
                         <width>$PARAM[width]</width>
@@ -1160,15 +1160,18 @@
         <param name="subcontent_visible">true</param>
         <param name="subcontent_image_visible">true</param>
         <param name="subcontent_image_texture">$VAR[Overlay]</param>
+		<param name="viewid">50</param>
 		<param name="list_id">4100</param>
 		<param name="width">500</param>
 		<param name="labelwidth">500</param>
+		<param name="height">430</param>
 	    <definition>
 		    <!-- Panel to show set info or artist discography info or album track info -->
-            <control type="panel" id="$PARAM[list_id]">
+            <control type="panel" id="$PARAM[list_id]$PARAM[viewid]">
                 <visible>$PARAM[subcontent_visible]</visible>
                 <visible>!ListItem.IsParentFolder</visible>
                 <orientation>vertical</orientation>
+				<height>$PARAM[height]</height>
                 <focusedlayout height="40" width="$PARAM[width]">
                 </focusedlayout>
                 <itemlayout height="40" width="$PARAM[width]">
@@ -1227,10 +1230,12 @@
 
     <!-- Panel Template for all views except Tall List and Big List -->
     <include name="PanelTemplate">
-        <param name="lowpanel">false</param>
+        <param name="viewid">50</param>
+		<param name="lowpanel">false</param>
         <param name="top"></param>
         <param name="left">60</param>
         <param name="height">430</param>
+		<param name="subinfoheight">430</param>
 		<param name="groupheight">610</param>
         <param name="width">870</param>
         <param name="heading"></param>
@@ -1257,10 +1262,10 @@
             <control type="grouplist" id="4000" description="Media Info Panel">
                 <include>OpenClose</include>
                 <visible>$PARAM[visibility]</visible>
-                <visible>[$EXP[PanelShouldShow] + [Container.Content(files) | Container.Content(videos) | Container.Content() | Container.Content(episodes) | 
+                <visible>[[$EXP[PanelShouldShow] | $EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules]] + [Container.Content(files) | Container.Content(videos) | Container.Content() | Container.Content(episodes) | 
 				         Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]] | 
 						 [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | 
-						 Container.Content(images) | Container.Content(games)]</visible>
+						 Container.Content(images) | Container.Content(games) | Container.Content(songs)]</visible>
                 <posx>$PARAM[left]</posx>
                 <posy>$PARAM[top]</posy>
                 <width>$PARAM[width]</width>
@@ -1340,74 +1345,91 @@
                 <control type="group">
                     <width>$PARAM[width]</width>
                     <height>$PARAM[height]</height>
-                    <!-- Plot when there is no next episode info or audio/sub info being displayed -->
-					<control type="textbox">
-                        <top>5</top>
-						<visible>[!Skin.HasSetting(ShowAudioSub) + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot)] | 
-						         [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | 
-								 [String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
-						<align>justify</align>
-                        <label fallback="19055">$PARAM[plot]</label>
-                        <font>InfoPlot</font>
-						<height>$PARAM[plotheight]</height>
-                        <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-                    </control>
-					<!-- Plot for other content types -->
-					<control type="textbox">
-                        <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !$EXP[ShowSubcontent]</visible>
-						<align>justify</align>
-                        <label fallback="19055">$PARAM[plot]</label>
-                        <font>InfoPlot</font>
-                        <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-                    </control>
-					<!-- Plot for normal panel when audio/sub info or next aired episode info is shown -->
-					<control type="textbox">
-					    <top>40</top>
-						<visible>!$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] | 
-						         [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
-						<height>$PARAM[plotheight]</height>
-                        <align>justify</align>
-                        <label fallback="19055">$PARAM[plot]</label>
-                        <font>InfoPlot</font>
-                        <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-                    </control>
-					<!-- Plot for episodes/tv shows/seasons in low panel when audio/sub info or next aired episode info is shown -->
-					<control type="textbox">
-					    <top>40</top>
-						<visible>$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + Container.Content(episodes) + 
-						         ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
-						<height>160</height>
-                        <align>justify</align>
-                        <label fallback="19055">$PARAM[plot]</label>
-                        <font>InfoPlot</font>
-                        <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-                    </control>
-					<!-- Plot for movies in low panel when audio/sub info is shown -->
-					<control type="textbox">
-					    <top>40</top>
-						<visible>$PARAM[lowpanel] + [Skin.HasSetting(ShowAudioSub) + Container.Content(movies) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</visible>
-						<height>160</height>
-                        <align>justify</align>
-                        <label fallback="19055">$PARAM[plot]</label>
-                        <font>InfoPlot</font>
-                        <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-                    </control>
+					<control type="group">
+					    <visible>![Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</visible>
+					    <!-- Plot when there is no next episode info or audio/sub info being displayed -->
+						<control type="textbox">
+                            <top>5</top>
+						    <visible>[!Skin.HasSetting(ShowAudioSub) + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot)] | 
+						             [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | 
+								     [String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
+						    <align>justify</align>
+                            <label fallback="19055">$PARAM[plot]</label>
+                            <font>InfoPlot</font>
+						    <height>$PARAM[plotheight]</height>
+                            <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+                        </control>
+					    <!-- Plot for other content types -->
+					    <control type="textbox">
+                            <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !$EXP[ShowSubcontent]</visible>
+						    <align>justify</align>
+                            <label fallback="19055">$PARAM[plot]</label>
+                            <font>InfoPlot</font>
+                            <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+                        </control>
+					    <!-- Plot for normal panel when audio/sub info or next aired episode info is shown -->
+					    <control type="textbox">
+    					    <top>40</top>
+						    <visible>!$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] | 
+						             [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
+						    <height>$PARAM[plotheight]</height>
+                            <align>justify</align>
+                            <label fallback="19055">$PARAM[plot]</label>
+                            <font>InfoPlot</font>
+                            <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+                        </control>
+					    <!-- Plot for episodes/tv shows/seasons in low panel when audio/sub info or next aired episode info is shown -->
+					    <control type="textbox">
+					        <top>40</top>
+						    <visible>$PARAM[lowpanel] + [[Skin.HasSetting(ShowAudioSub) + Container.Content(episodes) + 
+						             ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]] | [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
+						    <height>160</height>
+                            <align>justify</align>
+                            <label fallback="19055">$PARAM[plot]</label>
+                            <font>InfoPlot</font>
+                            <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+                        </control>
+					    <!-- Plot for movies in low panel when audio/sub info is shown -->
+					    <control type="textbox">
+    					    <top>40</top>
+						    <visible>$PARAM[lowpanel] + [Skin.HasSetting(ShowAudioSub) + Container.Content(movies) + ![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))]]</visible>
+						    <height>160</height>
+                            <align>justify</align>
+                            <label fallback="19055">$PARAM[plot]</label>
+                            <font>InfoPlot</font>
+                            <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+                        </control>
+					</control>
+					<control type="group">
+					    <visible>[Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</visible>
+						<!-- Plot for other content types -->
+					    <control type="textbox">
+						    <align>justify</align>
+                            <label>$PARAM[plot]</label>
+                            <font>InfoPlot</font>
+                        </control>
+					</control>	
 					<include content="SubcontentInfoList">
-                        <param name="subcontent_visible">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)]</param>
+                        <param name="viewid">$PARAM[viewid]</param>
+						<param name="subcontent_visible">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)]</param>
 		                <param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
+						<param name="height">$PARAM[subinfoheight]</param>
 					</include>
 					<include content="SubcontentInfoList">
-                        <param name="list_id">4200</param>
+                        <param name="viewid">$PARAM[viewid]</param>
+						<param name="list_id">4200</param>
 						<param name="subcontent_label1">$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)]</param>
 						<param name="subcontent_order">descending</param>
 						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,artist) + String.IsEmpty(ListItem.Property(Artist_Description))]</param>
 		                <param name="subcontent_image_visible">false</param>
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
+						<param name="height">$PARAM[subinfoheight]</param>
 					</include>	
 					<include content="SubcontentInfoList">
-                        <param name="list_id">4300</param>
+                        <param name="viewid">$PARAM[viewid]</param>
+						<param name="list_id">4300</param>
 						<param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
 					    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins,  (,)]</param>
 						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,album) + String.IsEmpty(ListItem.Property(Album_Description))]</param>
@@ -1415,7 +1437,20 @@
 						<param name="subcontent_sortby" value="track" />
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
-					</include>	
+						<param name="height">$PARAM[subinfoheight]</param>
+					</include>
+                    <include content="SubcontentInfoList">
+                        <param name="viewid">$PARAM[viewid]</param>
+						<param name="list_id">4400</param>
+						<param name="subcontent_label1">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Duration]</param>
+					    <param name="subcontent_label2">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$VAR[ItemDurationHrMins]</param>
+						<param name="subcontent_visible">Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder</param>
+		                <param name="subcontent_image_visible">false</param>
+						<param name="subcontent_sortby" value="date" />
+						<param name="width">$PARAM[width]</param>
+						<param name="labelwidth">$PARAM[width]</param>
+						<param name="height">$PARAM[subinfoheight]</param>
+					</include>					
                 </control>
 			</control>
 			<!-- Footer and media flags -->
@@ -1560,9 +1595,11 @@
     </include>
     <!-- Panel Template for Tall List -->
     <include name="PanelTemplateTall">
-        <param name="top"></param>
+		<param name="viewid">501</param>
+		<param name="top"></param>
         <param name="left">60</param>
         <param name="height"></param>
+		<param name="subinfoheight"></param>
         <param name="width">870</param>
 		<param name="groupheight">710</param>
         <param name="heading"></param>
@@ -1639,52 +1676,69 @@
                     <width>$PARAM[width]</width>
                     <height>$PARAM[height]</height>
                     <top>$PARAM[plotgrouptop]</top>
-					<!-- Plot when there is no next episode info or audio/sub info being displayed -->
-					<control type="textbox" id="4001">
-                        <top>5</top>
-						<visible>[!Skin.HasSetting(ShowAudioSub) + [Container.Content(movies) | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot)] | 
-						         [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | 
-								 [String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
-						<align>justify</align>
-                        <label fallback="19055">$PARAM[plot]</label>
-                        <font>InfoPlot</font>
-                        <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-                    </control>
-					<!-- Plot for normal panel when audio/sub info or next aired episode info is shown -->
-					<control type="textbox" id="4001">
-					    <top>40</top>
-						<visible>[[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] | 
-						         [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
-						<height>$PARAM[plotheight]</height>
-                        <align>justify</align>
-                        <label fallback="19055">$PARAM[plot]</label>
-                        <font>InfoPlot</font>
-                        <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-                    </control>
-					<!-- Plot for other content types -->
-					<control type="textbox" id="4001">
-                        <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !$EXP[ShowSubcontent]</visible>
-						<align>justify</align>
-                        <label fallback="19055">$PARAM[plot]</label>
-                        <font>InfoPlot</font>
-                        <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-                    </control>
+					<control type="group">
+					    <visible>![Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</visible>
+						<!-- Plot when there is no next episode info or audio/sub info being displayed -->
+					    <control type="textbox" id="4001">
+                            <top>5</top>
+						    <visible>[!Skin.HasSetting(ShowAudioSub) + [Container.Content(movies) | Container.Content(episodes)]] | [ListItem.IsCollection + !String.IsEmpty(ListItem.Plot)] | 
+						             [Skin.HasSetting(ShowAudioSub) + [String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [[Container.Content(movies) + !ListItem.IsCollection] | Container.Content(episodes)]] | 
+								     [String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]</visible>
+						    <align>justify</align>
+                            <label fallback="19055">$PARAM[plot]</label>
+                            <font>InfoPlot</font>
+                            <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+                        </control>
+					    <!-- Plot for normal panel when audio/sub info or next aired episode info is shown -->
+					    <control type="textbox" id="4001">
+					        <top>40</top>
+						    <visible>[[Skin.HasSetting(ShowAudioSub) + [!String.IsEmpty(ListItem.Property(AudioLanguage.1)) | !String.IsEmpty(ListItem.Property(SubtitleLanguage.1))] + [Container.Content(movies) | Container.Content(episodes)]] | 
+						             [!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Next_Aired)) + [Container.Content(tvshows) | Container.Content(seasons)]]]</visible>
+						    <height>$PARAM[plotheight]</height>
+                            <align>justify</align>
+                            <label fallback="19055">$PARAM[plot]</label>
+                            <font>InfoPlot</font>
+                            <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+                        </control>
+					    <!-- Plot for other content types -->
+					    <control type="textbox" id="4001">
+                            <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)] + !$EXP[ShowSubcontent]</visible>
+						    <align>justify</align>
+                            <label fallback="19055">$PARAM[plot]</label>
+                            <font>InfoPlot</font>
+                            <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+                        </control>
+					</control>
+					<control type="group">
+					    <visible>[Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</visible>
+						<!-- Plot for other content types -->
+					    <control type="textbox" id="4001">
+						    <align>justify</align>
+                            <label>$PARAM[plot]</label>
+                            <font>InfoPlot</font>
+                        </control>
+					</control>	
 					<include content="SubcontentInfoList">
-                        <param name="subcontent_visible">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)]</param>
+                        <param name="viewid">$PARAM[viewid]</param>
+						<param name="subcontent_visible">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)]</param>
 		                <param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
+						<param name="height">$PARAM[subinfoheight]</param>
 					</include>
 					<include content="SubcontentInfoList">
-                        <param name="list_id">4200</param>
+                        <param name="viewid">$PARAM[viewid]</param>
+						<param name="list_id">420</param>
 						<param name="subcontent_label1">$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)]</param>
 						<param name="subcontent_order">descending</param>
 						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,artist) + String.IsEmpty(ListItem.Property(Artist_Description))]</param>
 		                <param name="subcontent_image_visible">false</param>
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
+						<param name="height">$PARAM[subinfoheight]</param>
 					</include>	
 					<include content="SubcontentInfoList">
-                        <param name="list_id">4300</param>
+                        <param name="viewid">$PARAM[viewid]</param>
+						<param name="list_id">430</param>
 						<param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
 					    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins,  (,)]</param>
 						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,album) + String.IsEmpty(ListItem.Property(Album_Description))]</param>
@@ -1692,7 +1746,20 @@
 						<param name="subcontent_sortby" value="track" />
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
+						<param name="height">$PARAM[subinfoheight]</param>
 					</include>
+					<include content="SubcontentInfoList">
+                        <param name="viewid">$PARAM[viewid]</param>
+						<param name="list_id">440</param>
+						<param name="subcontent_label1">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Duration]</param>
+					    <param name="subcontent_label2">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$VAR[ItemDurationHrMins]</param>
+						<param name="subcontent_visible">Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder</param>
+		                <param name="subcontent_image_visible">false</param>
+						<param name="subcontent_sortby" value="date" />
+						<param name="width">$PARAM[width]</param>
+						<param name="labelwidth">$PARAM[width]</param>
+						<param name="height">$PARAM[subinfoheight]</param>
+					</include>					
                 </control>                
                 <control type="label" description="Footer 2">
                     <top>$PARAM[footertop]</top>
@@ -1721,12 +1788,14 @@
     </include>
     <!-- Panel Template for Big List -->
     <include name="PanelTemplate52">
-        <param name="top">40</param>
+        <param name="viewid">52</param>
+		<param name="top">40</param>
         <param name="left">0</param>
         <param name="width">880</param>
         <param name="heading">$VAR[panelheading]</param>
         <param name="plot">$VAR[Plots]</param>
         <param name="plotheight">320</param>
+		<param name="subinfoheight">320</param>
 		<param name="plotwidth">820</param>
 		<param name="labelwidth">800</param>
 		<param name="subheading2"></param>
@@ -1739,7 +1808,7 @@
                 <posx>$PARAM[left]</posx>
                 <posy>$PARAM[top]</posy>
                 <width>$PARAM[width]</width>
-                <control type="label" description="Heading Label">
+				<control type="label" description="Heading Label">
                     <top>30</top>
                     <left>47</left>
                     <width>$PARAM[labelwidth]</width>
@@ -1751,34 +1820,65 @@
                     <wrapmultiline>true</wrapmultiline>
                     <label>$PARAM[heading]</label>
                 </control>
-				<include content="ShadowedImage">
-                    <param name="top">105</param>
-                    <param name="left">67</param>
-					<param name="width">750</param>
-					<param name="height">399</param>
-					<param name="texture">$VAR[Fanart]</param>
-				</include>
 				<control type="group">
-				    <visible>Skin.HasSetting(ShowRatingOverlays) + $EXP[canShowRatingOverlay]</visible>
-					<control type="image">
-				        <texture background="true" colordiffuse="$VAR[HighlightColor]">common/box.png</texture>
-				        <posx>127</posx>
-				        <posy>80</posy>
-				        <height>52</height>
-				        <width>52</width>
-			        </control>
-				    <control type="label" description="l2">
-					    <posx>103</posx>
-				        <posy>90</posy>
-					    <height>30</height>
-					    <width>100</width>
-					    <font>font20_title</font>
-					    <align>center</align>
-					    <shadowcolor></shadowcolor>
-					    <label>[B]$VAR[RatingOverlayVar][/B]</label>
-					    <textcolor>$VAR[FocusedTextColor]</textcolor>
+		            <visible>$EXP[PVRChannelPlaying]</visible>
+                    <left>67</left>
+			        <top>105</top>
+                    <control type="videowindow">
+			            <width>750</width>
+			            <height>399</height>
+                    </control>
+                </control>
+				
+				<control type="group">
+				    <animation effect="fade" start="100" end="0" time="100" condition="$EXP[PVRChannelPlaying]">Conditional</animation>
+				    <include content="ShadowedImage">
+                        <param name="top">105</param>
+                        <param name="left">67</param>
+					    <param name="width">750</param>
+					    <param name="height">399</param>
+					    <param name="texture">$VAR[Fanart]</param>
+					    <param name="visibility">!$EXP[isPVRRecordingsGroups]</param>
+				    </include>
+				    <include content="ShadowedImage">
+                        <param name="top">105</param>
+                        <param name="left">67</param>
+					    <param name="width">750</param>
+					    <param name="height">399</param>
+					    <param name="texture">$INFO[Container(440052).ListItem.Art(fanart)]</param>
+					    <param name="visibility">$EXP[isPVRRecordingsGroups] + !$EXP[BigListPanelIsSwapped]</param>
+				    </include>
+				    <include content="ShadowedImage">
+                        <param name="top">105</param>
+                        <param name="left">67</param>
+					    <param name="width">750</param>
+					    <param name="height">399</param>
+					    <param name="texture">$INFO[Container(4400152).ListItem.Art(fanart)]</param>
+					    <param name="visibility">$EXP[isPVRRecordingsGroups] + $EXP[BigListPanelIsSwapped]</param>
+				    </include>
+				    <control type="group">
+				        <visible>Skin.HasSetting(ShowRatingOverlays) + $EXP[canShowRatingOverlay]</visible>
+					    <control type="image">
+				            <texture background="true" colordiffuse="$VAR[HighlightColor]">common/box.png</texture>
+				            <posx>127</posx>
+				            <posy>80</posy>
+				            <height>52</height>
+				            <width>52</width>
+			            </control>
+				        <control type="label" description="l2">
+    					    <posx>103</posx>
+				            <posy>90</posy>
+					        <height>30</height>
+					        <width>100</width>
+					        <font>font20_title</font>
+					        <align>center</align>
+					        <shadowcolor></shadowcolor>
+					        <label>[B]$VAR[RatingOverlayVar][/B]</label>
+					        <textcolor>$VAR[FocusedTextColor]</textcolor>
+				        </control>
 				    </control>
-				</control>
+				</control>	
+				
                 <control type="group">
 				    <visible>String.IsEqual(ListItem.DBType,episode)</visible>
 					<control type="label" description="Subheading Label">
@@ -1849,22 +1949,27 @@
                         <height>$PARAM[plotheight]</height>
                         <autoscroll delay="3000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
                     </control>
-                    <include content="SubcontentInfoList">
-                        <param name="subcontent_visible">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)]</param>
+					<include content="SubcontentInfoList">
+                        <param name="viewid">$PARAM[viewid]</param>
+						<param name="subcontent_visible">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)]</param>
 		                <param name="width">800</param>
 						<param name="labelwidth">$PARAM[labelwidth]</param>
+						<param name="height">$PARAM[subinfoheight]</param>
 					</include>
 					<include content="SubcontentInfoList">
-                        <param name="list_id">4200</param>
+                        <param name="viewid">$PARAM[viewid]</param>
+						<param name="list_id">4200</param>
 						<param name="subcontent_label1">$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)]</param>
 						<param name="subcontent_order">descending</param>
 						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,artist) + String.IsEmpty(ListItem.Property(Artist_Description))]</param>
 		                <param name="subcontent_image_visible">false</param>
 						<param name="width">800</param>
 						<param name="labelwidth">$PARAM[labelwidth]</param>
+						<param name="height">$PARAM[subinfoheight]</param>
 					</include>	
 					<include content="SubcontentInfoList">
-                        <param name="list_id">4300</param>
+                        <param name="viewid">$PARAM[viewid]</param>
+						<param name="list_id">4300</param>
 						<param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
 					    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins,  (,)]</param>
 						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,album) + String.IsEmpty(ListItem.Property(Album_Description))]</param>
@@ -1872,7 +1977,20 @@
 						<param name="subcontent_sortby" value="track" />
 						<param name="width">800</param>
 						<param name="labelwidth">$PARAM[labelwidth]</param>
+						<param name="height">$PARAM[subinfoheight]</param>
 					</include>
+					<include content="SubcontentInfoList">
+                        <param name="viewid">$PARAM[viewid]</param>
+						<param name="list_id">4400</param>
+						<param name="subcontent_label1">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Duration]</param>
+					    <param name="subcontent_label2">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$VAR[ItemDurationHrMins]</param>
+						<param name="subcontent_visible">Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder</param>
+		                <param name="subcontent_image_visible">false</param>
+						<param name="subcontent_sortby" value="date" />
+						<param name="width">$PARAM[width]</param>
+						<param name="labelwidth">$PARAM[width]</param>
+						<param name="height">$PARAM[subinfoheight]</param>
+					</include>					
                 </control>
 		        <control type="grouplist" description="Flags">
 			        <top>975</top>

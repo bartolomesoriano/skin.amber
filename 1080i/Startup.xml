@@ -15,10 +15,10 @@
 	
 	<onload condition="String.IsEmpty(Skin.String(StartupVideoDuration))">Skin.SetString(StartupVideoDuration,00:05)</onload>
 	
-	<onload condition="!System.HasAddon(script.embuary.helper)">Skin.Reset(Enable.EmbuaryHelper)</onload>
-	<onload condition="!System.HasAddon(script.embuary.helper)">Skin.Reset(UseEHBackgrounds)</onload>
-	<onload condition="!System.HasAddon(script.embuary.helper)">Skin.Reset(Show.EHJumpToLetter)</onload>
-	<onload condition="!System.HasAddon(plugin.video.themoviedb.helper)">Skin.Reset(Enable.TMDbHelper)</onload>
+	<onload condition="![System.HasAddon(script.embuary.helper)]">Skin.Reset(Enable.EmbuaryHelper)</onload>
+	<onload condition="![System.HasAddon(script.embuary.helper)]">Skin.Reset(UseEHBackgrounds)</onload>
+	<onload condition="![System.HasAddon(script.embuary.helper)]">Skin.Reset(Show.EHJumpToLetter)</onload>
+	<onload condition="![System.HasAddon(plugin.video.themoviedb.helper)]">Skin.Reset(Enable.TMDbHelper)</onload>
 	
 	<onload condition="String.IsEmpty(Skin.String(StartupImage)) + String.IsEmpty(Skin.String(StartupImagePath)) + String.IsEmpty(Skin.String(StartupPlaylist))">ReplaceWindow($INFO[System.StartupWindow])</onload>
 	

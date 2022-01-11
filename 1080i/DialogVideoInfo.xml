@@ -117,7 +117,7 @@
 			    <fadetime>IconCrossfadeTime</fadetime>
 				<visible>!String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEqual(ListItem.Title,Player.Title)</visible>
             </control>
-            <include condition="Skin.HasSetting(Enable.BlurredVideoInfo) + String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))" content="BackgroundOverlayVideoInfo">
+			<include condition="Skin.HasSetting(Enable.BlurredVideoInfo) + String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))" content="BackgroundOverlayVideoInfo">
                 <param name="parentid" value="9000"/>
 				<param name="colordiffuse">9FFFFFFF</param>
             </include>
@@ -953,7 +953,7 @@
             <height>90</height>
             <align>center</align>
             <onup>90003</onup>
-            <ondown condition="Skin.HasSetting(Disable.OnlineTMDbInfo)">SetProperty(KodiDefaultCastSearch,true,home)</ondown>
+			<ondown condition="Skin.HasSetting(Disable.OnlineTMDbInfo)">SetProperty(KodiDefaultCastSearch,true,home)</ondown>
 		    <ondown>91001</ondown>
             <orientation>horizontal</orientation>
             <defaultcontrol always="true">8000</defaultcontrol>

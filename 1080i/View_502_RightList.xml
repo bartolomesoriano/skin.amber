@@ -2411,6 +2411,18 @@
 					<label>$VAR[Plots]</label>
 					<font>InfoPlot</font>
 					<autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>!String.IsEqual(Skin.Font,Default no caps)</visible>
+				</control>
+				<control type="textbox">
+					<left>99</left>
+					<top>124</top>
+					<width>740</width>
+					<height>102</height>
+					<align>right</align>
+					<label>$VAR[Plots]</label>
+					<font>InfoPlot</font>
+					<autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>String.IsEqual(Skin.Font,Default no caps)</visible>
 				</control>
 			</control>
 		</focusedlayout>
@@ -2524,6 +2536,18 @@
 					    <font>InfoPlot</font>
 					    <label>$VAR[Plots]</label>
 					    <autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<visible>!String.IsEqual(Skin.Font,Default no caps)</visible>
+				    </control>
+					<control type="textbox">
+					    <left>199</left>
+					    <top>122</top>
+					    <width>640</width>
+					    <height>100</height>
+					    <align>right</align>
+					    <font>InfoPlot</font>
+					    <label>$VAR[Plots]</label>
+					    <autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<visible>String.IsEqual(Skin.Font,Default no caps)</visible>
 				    </control>
 				</control>
 				<control type="group">
@@ -2560,6 +2584,18 @@
 					    <font>InfoPlot</font>
 					    <label>$VAR[Plots]</label>
 					    <autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<visible>!String.IsEqual(Skin.Font,Default no caps)</visible>
+				    </control>
+					<control type="textbox">
+					    <left>199</left>
+					    <top>122</top>
+					    <width>640</width>
+					    <height>100</height>
+					    <align>right</align>
+					    <font>InfoPlot</font>
+					    <label>$VAR[Plots]</label>
+					    <autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<visible>String.IsEqual(Skin.Font,Default no caps)</visible>
 				    </control>
 				</control>
 			</control>

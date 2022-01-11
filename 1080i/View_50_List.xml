@@ -5,6 +5,14 @@
 		<definition>
 			<control type="group">
 				
+				<include content="PVRBackground">
+				    <param name="viewid">50</param>
+				</include>
+
+                <include condition="$EXP[ListPanelIsSwapped]" content="PVRBackground">
+				    <param name="viewid">150</param>
+				</include>				
+				
 				<include condition="Skin.HasSetting(ShowSetCount)">ListMovieSetDiscs</include>
 				<include>ListTopDisc</include>
 				<include>ListMusicDisc</include>
@@ -159,6 +167,19 @@
 				</control>
 
                 <!-- Panels in original position -->
+				<!-- Panel for Recordings or Timers -->
+				<include content="PanelTemplate">
+					<param name="top">355</param>
+					<param name="left">535</param>
+					<param name="height">400</param>
+					<param name="width">650</param>
+					<param name="heading">$VAR[panelheading]</param>
+					<param name="subheading">$VAR[panelsubheading]</param>
+					<param name="plot">$VAR[Plots]</param>
+					<param name="footer">$VAR[panelfooter]</param>
+					<param name="visibility">Control.IsVisible(50) + ![$EXP[ListPanelIsSwapped]] + [$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]]</param>
+				</include>
+				
 				<include content="PanelTemplate">
 					<param name="top">355</param>
 					<param name="left">535</param>
@@ -220,10 +241,36 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">Control.IsVisible(50) + ![$EXP[ListPanelIsDisabled]] + ![$EXP[ListPanelIsSwapped]] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">Control.IsVisible(50) + !String.IsEqual(Skin.Font,Default no caps) + ![$EXP[ListPanelIsDisabled]] + ![$EXP[ListPanelIsSwapped]] + [Container.content(artists) | Container.content(albums)]</param>
+				</include>
+				<include content="PanelTemplate">
+					<param name="top">355</param>
+					<param name="left">535</param>
+					<param name="height">390</param>
+					<param name="subinfoheight">400</param>
+					<param name="width">650</param>
+					<param name="heading">$VAR[panelheading]</param>
+					<param name="subheading">$VAR[panelsubheading]</param>
+					<param name="plot">$VAR[Plots]</param>
+					<param name="footer">$VAR[panelfooter]</param>
+					<param name="visibility">Control.IsVisible(50) + String.IsEqual(Skin.Font,Default no caps) + ![$EXP[ListPanelIsDisabled]] + ![$EXP[ListPanelIsSwapped]] + [Container.content(artists) | Container.content(albums)]</param>
 				</include>
 
 				<!-- Panels in swapped position -->
+				<!-- Panel for PVR Recordings or Timers -->
+				<include content="PanelTemplate">
+					<param name="viewid">150</param>
+					<param name="top">355</param>
+					<param name="left">1230</param>
+					<param name="height">405</param>
+					<param name="width">650</param>
+					<param name="heading">$VAR[panelheading]</param>
+					<param name="subheading">$VAR[panelsubheading]</param>
+					<param name="plot">$VAR[Plots]</param>
+					<param name="footer">$VAR[panelfooter]</param>
+					<param name="visibility">Control.IsVisible(50) + $EXP[ListPanelIsSwapped] + [$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]]</param>
+				</include>
+				
 				<include content="PanelTemplate">
 					<param name="top">355</param>
 					<param name="left">1230</param>
@@ -284,7 +331,19 @@
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
 					<param name="footer">$VAR[panelfooter]</param>
-					<param name="visibility">Control.IsVisible(50) + ![$EXP[ListPanelIsDisabled]] + $EXP[ListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
+					<param name="visibility">Control.IsVisible(50) + !String.IsEqual(Skin.Font,Default no caps) + ![$EXP[ListPanelIsDisabled]] + $EXP[ListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
+				</include>
+				<include content="PanelTemplate">
+					<param name="top">355</param>
+					<param name="left">1230</param>
+					<param name="height">390</param>
+					<param name="subinfoheight">400</param>
+					<param name="width">650</param>
+					<param name="heading">$VAR[panelheading]</param>
+					<param name="subheading">$VAR[panelsubheading]</param>
+					<param name="plot">$VAR[Plots]</param>
+					<param name="footer">$VAR[panelfooter]</param>
+					<param name="visibility">Control.IsVisible(50) + String.IsEqual(Skin.Font,Default no caps) + ![$EXP[ListPanelIsDisabled]] + $EXP[ListPanelIsSwapped] + [Container.content(artists) | Container.content(albums)]</param>
 				</include>
 
 				<control type="group" description="50 MediaInfo">
@@ -307,6 +366,39 @@
 						<param name="aspect">stretch</param>
 						<param name="visibility">[Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets) | Container.Content(seasons)]</param>
 					</include>
+					
+					<include content="ShadowedImage">
+						<param name="width">490</param>
+						<param name="height">700</param>
+						<param name="texture">$INFO[Container(440050).ListItem.Icon]</param>
+						<param name="aspect">stretch</param>
+						<param name="visibility">!$EXP[PVRChannelPlaying] + $EXP[isPVRRecordingsGroups] + !$EXP[ListPanelIsSwapped]</param>
+					</include>
+					<include content="ShadowedImage">
+						<param name="left">100</param>
+						<param name="width">240</param>
+						<param name="height">350</param>
+						<param name="texture">$INFO[Container(440050).ListItem.Icon]</param>
+						<param name="aspect">stretch</param>
+						<param name="visibility">$EXP[PVRChannelPlaying] + $EXP[isPVRRecordingsGroups] + !$EXP[ListPanelIsSwapped]</param>
+					</include>
+					
+					<include content="ShadowedImage">
+						<param name="width">490</param>
+						<param name="height">700</param>
+						<param name="texture">$INFO[Container(4400150).ListItem.Icon]</param>
+						<param name="aspect">stretch</param>
+						<param name="visibility">!$EXP[PVRChannelPlaying] + $EXP[isPVRRecordingsGroups] + $EXP[ListPanelIsSwapped]</param>
+					</include>
+					<include content="ShadowedImage">
+						<param name="left">100</param>
+						<param name="width">240</param>
+						<param name="height">350</param>
+						<param name="texture">$INFO[Container(4400150).ListItem.Icon]</param>
+						<param name="aspect">stretch</param>
+						<param name="visibility">$EXP[PVRChannelPlaying] + $EXP[isPVRRecordingsGroups] + $EXP[ListPanelIsSwapped]</param>
+					</include>
+					
 					<include content="ShadowedImage">
 						<param name="width">490</param>
 						<param name="height">700</param>
@@ -320,12 +412,21 @@
 						<param name="aspect">stretch</param>
 						<param name="visibility">Container.Content(episodes) + Skin.HasSetting(EpisodesUsePoster)</param>
 					</include>
+					
 					<include content="ShadowedImage">
 						<param name="width">490</param>
 						<param name="height">700</param>
 						<param name="texture">$VAR[Square]</param>
-						<param name="visibility">![Container.Content(images) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets) | Container.Content(seasons) | Container.Content(episodes)]</param>
+						<param name="visibility">!$EXP[PVRChannelPlaying] + ![Container.Content(images) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets) | Container.Content(seasons) | Container.Content(episodes)] + ![Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</param>
 					</include>
+					<include content="ShadowedImage">
+						<param name="left">100</param>
+						<param name="width">240</param>
+						<param name="height">360</param>
+						<param name="texture">$VAR[Square]</param>
+						<param name="visibility">$EXP[PVRChannelPlaying] + !$EXP[isPVRRecordingsGroups] + ![Container.Content(images) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(sets) | Container.Content(seasons) | Container.Content(episodes)] + ![Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</param>
+					</include>
+					
 					<include content="ShadowedImage">
 						<param name="width">490</param>
 						<param name="height">700</param>
@@ -416,6 +517,40 @@
 					<param name="clearartwidth">463</param>
 					<param name="clearartheight">260</param>
 				</include>
+				
+				<include condition="!$EXP[ListPanelIsSwapped]" content="PVRRecordingSpaceUsage">
+				    <param name="posx">535</param>
+					<param name="posy">1018</param>
+					<param name="width">650</param>
+				</include>
+				
+				<include condition="$EXP[ListPanelIsSwapped]" content="PVRRecordingSpaceUsage">
+				    <param name="posx">1230</param>
+					<param name="posy">1018</param>
+					<param name="width">650</param>
+				</include>
+				
+				<include condition="!$EXP[ListPanelIsSwapped]" content="PVRChannelProgress">
+				    <param name="posx">535</param>
+					<param name="posy">1018</param>
+					<param name="width">650</param>
+				</include>
+				
+				<include condition="$EXP[ListPanelIsSwapped]" content="PVRChannelProgress">
+				    <param name="posx">1230</param>
+					<param name="posy">1018</param>
+					<param name="width">650</param>
+				</include>
+				
+				<control type="group">
+		            <visible>$EXP[PVRChannelPlaying]</visible>
+                    <left>20</left>
+			        <top>726</top>
+                    <control type="videowindow">
+			            <width>480</width>
+			            <height>300</height>
+                    </control>
+                </control>
 				
 				<include content="TouchButtons">
 		            <param name="ButtonsTop">980</param>

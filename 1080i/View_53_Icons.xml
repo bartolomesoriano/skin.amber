@@ -2,7 +2,12 @@
 <includes>
     <include name="View_53_Icons">
         <control type="group" description="Grid view">
-            <include content="BackgroundOverlay">
+            
+			<include content="PVRBackground">
+			    <param name="viewid">53</param>
+			</include>
+			
+			<include content="BackgroundOverlay">
                 <param name="parentid" value="53"/>
             </include>
             <visible>Control.IsVisible(53)</visible>
@@ -36,7 +41,11 @@
                     <param name="viewid">53</param>
                 </include>
 
-                <include content="PosterLayout">
+                <include content="RecordingsLayout">
+                    <param name="viewid">53</param>
+                </include>
+				
+				<include content="PosterLayout">
                     <param name="viewid">53</param>
                 </include>
 
@@ -196,6 +205,18 @@
                 <visible>Control.IsVisible(53)</visible>
                 <visible>Skin.HasSetting(Show.JumpToLetter) + !Skin.HasSetting(Show.EHJumpToLetter) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557])]</visible>
             </control>
+			
+			<include content="PVRRecordingSpaceUsage">
+			    <param name="posx">35</param>
+				<param name="posy">990</param>
+				<param name="width">385</param>
+			</include>
+			
+			<include content="PVRChannelProgress">
+			    <param name="posx">35</param>
+				<param name="posy">990</param>
+				<param name="width">385</param>
+			</include>
             
 			<include condition="Skin.HasSetting(Enable.TouchSupport)" content="TouchButtons">
 			    <param name="ButtonsTop">935</param>

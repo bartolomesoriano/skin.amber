@@ -401,6 +401,7 @@
 		<control type="multiimage">
 			<visible>![Player.HasVideo + [Skin.HasSetting(Show_VideoBackground) | Skin.HasSetting(AutoPlayTrailer)]]</visible>
 			<visible>[!Control.IsVisible(56) | [Control.IsVisible(56) + ![$EXP[56_FanartViewNetflix]]]]</visible>
+			<visible>![Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</visible>
 			<width>100%</width>
 			<height>100%</height>
 			<timeperimage>8000</timeperimage>
@@ -414,6 +415,7 @@
 		<control type="multiimage">
 			<visible>![Player.HasVideo + [Skin.HasSetting(Show_VideoBackground) | Skin.HasSetting(AutoPlayTrailer)]]</visible>
 			<visible>Control.IsVisible(56) + $EXP[56_FanartViewNetflix]</visible>
+			<visible>![Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</visible>
 			<left>250</left>
 			<width>1896</width>
 			<height>864</height>
@@ -434,6 +436,30 @@
 			<include>Dimensions_Fullscreen</include>
 		</control>
 	</include>
+	
+	<include name="PVRBackground">
+	    <param name="viewid">50</param>
+		<definition>
+		    <control type="image">
+			    <posx>0</posx>
+				<posy>0</posy>
+				<width>100%</width>
+			    <height>100%</height>
+			    <texture background="true">$INFO[Container(4400$PARAM[viewid]).ListItem.Art(fanart)]</texture>
+			    <aspectratio>scale</aspectratio>
+				<visible>[Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder] + !Control.HasFocus(501)</visible>
+		    </control>
+			<control type="image">
+			    <posx>0</posx>
+				<posy>0</posy>
+				<width>100%</width>
+			    <height>100%</height>
+			    <texture background="true">$INFO[Container(440$PARAM[viewid]).ListItem.Art(fanart)]</texture>
+			    <aspectratio>scale</aspectratio>
+				<visible>[Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder] + Control.HasFocus(501)</visible>
+		    </control>
+		</definition>
+	</include>	
 
 	<!-- Movie/TV Show Logo for Home Window -->
 	<include name="HomeClearLogo">
