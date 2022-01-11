@@ -1869,42 +1869,9 @@
 	</include>
 	<!-- Default Track panel items -->
 	<include name="DefaultTrackListContent">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<include content="DefaultTrackItem">
 			<param name="TrackListItemID">0</param>
-
-
-
-
-
-
-
-
-
 		</include>
-
-
-
-
-
-
 		<include content="DefaultTrackItem">
 			<param name="TrackListItemID">1</param>
 		</include>
@@ -2031,9 +1998,6 @@
 		<include content="DefaultTrackItem">
 			<param name="TrackListItemID">42</param>
 		</include>
-
-
-
 		<include content="DefaultTrackItem">
 			<param name="TrackListItemID">43</param>
 		</include>
@@ -2066,48 +2030,7 @@
 		</include>
 		<include content="DefaultTrackItem">
 			<param name="TrackListItemID">53</param>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		</include>		
-
-
 	</include>
 
 	<!-- Track Panel: Always use a Custom Track panel to have control over actions -->
@@ -2332,13 +2255,7 @@
 				<height>44</height>
 				<visible>Integer.IsGreater(Container($PARAM[id]).NumItems,$PARAM[minnumitems]) | Container($PARAM[id]).IsUpdating</visible>
 				<visible>$PARAM[visibility1]</visible>
-
-
-
-
-
-
-				<control type="group">
+                <control type="group">
 					<top>44</top>
 					<height>410</height>
 					<visible>Container($PARAM[id]).IsUpdating</visible>
@@ -2613,9 +2530,6 @@
 			<content limit="1">plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[ListItem.DBID]&amp;type=tvshow&amp;idtype=episode</content>
 		</control>
 	</include>
-
-
-	<!-- Begin Matrix change -->
 
 	<!-- Includes for Music Info Dialog -->
 	<include name="MusicInfoArtistInfo">
@@ -2905,39 +2819,6 @@
 	<!-- End Matrix change -->
 
 	<include name="VideoInfoPersonItems">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<item>
 			<label>$LOCALIZE[32082]:</label>
 			<label2>$VAR[TMDbPersonBirthday]</label2>
@@ -2970,31 +2851,7 @@
 			<onclick>SetProperty(TextViewerContent,$ESCVAR[TMDbPersonAliases],Home)</onclick>
 			<onclick>ActivateWindow(1124)</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(aliases)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Aliases))]</visible>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		</item>
-
-
-
-
-
-
 		<item>
 			<label>$LOCALIZE[32136]:</label>
 			<label2>$VAR[TMDbPersonKnownFor]</label2>
@@ -3069,12 +2926,6 @@
 			<onclick condition="Skin.HasSetting(Enable.TMDbHelper)">Skin.SetString(SingleSearchHeader,$LOCALIZE[32200])</onclick>
 			<onclick condition="Skin.HasSetting(Enable.TMDbHelper)">ActivateWindow(1131)</onclick>
 			<visible>[!String.IsEmpty(ListItem.Property(NumItems.TMDB.TvShows.Cast)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.NumItems.TMDB.TvShows.Cast))]</visible>
-
-
-
-
-
-
 		</item>
 		<item>
 			<label>$LOCALIZE[32192]:</label>
@@ -3527,6 +3378,18 @@
 			<label2>$INFO[ListItem.Premiered]</label2>
 			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(ListItem.Premiered)</visible>
+		</item>
+		<item>
+			<label>$LOCALIZE[570]:</label>
+			<label2>$INFO[ListItem.DateAdded]</label2>
+			<onclick>noop</onclick>
+			<visible>!String.IsEmpty(ListItem.DateAdded)</visible>
+		</item>
+		<item>
+			<label>$LOCALIZE[568]:</label>
+			<label2>$INFO[ListItem.LastPlayed]</label2>
+			<onclick>noop</onclick>
+			<visible>!String.IsEmpty(ListItem.LastPlayed)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[33054]:</label>
