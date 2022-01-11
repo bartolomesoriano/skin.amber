@@ -259,7 +259,7 @@
 					<param name="lowpanel">true</param>
 					<param name="top">610</param>
 					<param name="left">355</param>
-					<param name="height">280</param>
+					<param name="height">310</param>
 					<param name="width">850</param>
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
@@ -278,7 +278,7 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
-					<param name="plotheight">200</param>
+					<param name="plotheight">199</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">990</param>
 					<param name="showfooter">false</param>
@@ -358,7 +358,7 @@
 					<param name="lowpanel">true</param>
 					<param name="top">610</param>
 					<param name="left">1030</param>
-					<param name="height">280</param>
+					<param name="height">310</param>
 					<param name="width">850</param>
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
@@ -377,7 +377,7 @@
 					<param name="heading">$VAR[panelheading]</param>
 					<param name="subheading">$VAR[panelsubheading]</param>
 					<param name="plot">$VAR[Plots]</param>
-					<param name="plotheight">200</param>
+					<param name="plotheight">198</param>
 					<param name="footer">$VAR[panelfooter]</param>
 					<param name="footertop">990</param>
 					<param name="showfooter">false</param>
