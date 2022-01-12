@@ -10,10 +10,10 @@
 	<controls>
 	
 	    <!-- Hidden List to Show Video Info Dialog on info button, uses service.library.data.provider -->
-		<include condition="Skin.HasSetting(InfoOpensVideoInfo) + [VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.IsEmpty(VideoPlayer.DBID)">VideoOSDInfoButtonList</include>
+		<include condition="Skin.HasSetting(InfoOpensVideoInfo) + [VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.IsEmpty(VideoPlayer.DBID) + System.AddonIsEnabled(service.library.data.provider)">VideoOSDInfoButtonList</include>
 		
 		<!-- Hidden List to get tv show id needed for episodes list button, uses script.embuary.helper -->
-		<include condition="VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID)">EHTVShowDetailsList</include>
+		<include condition="VideoPlayer.Content(episodes) + !String.IsEmpty(VideoPlayer.DBID) + System.AddonIsEnabled(script.embuary.helper)">EHTVShowDetailsList</include>
 		
 		
 		<control type="button" id="99220">

@@ -46,6 +46,7 @@
 					<onright>9</onright>
 					<onup>26</onup>
 					<ondown>10</ondown>
+					<focusedcolor>$VAR[LabelTextColor]</focusedcolor>
 					<texturefocus border="21,0,21,0">dialogs/EditFrame.png</texturefocus>
 					<texturenofocus border="21,0,21,0">dialogs/EditFrameNF.png</texturenofocus>
 				</control>

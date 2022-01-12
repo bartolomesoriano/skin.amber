@@ -230,24 +230,23 @@
 		<value condition="Window.IsVisible(MyMusicNav.xml) + Container.Content(genres) + !String.IsEmpty(Skin.String(musicgenrefanartresource.path)) + String.IsEqual(Skin.String(musicgenrefanartresource.ext),.png)">$INFO[Skin.String(musicgenrefanartresource.path)]$INFO[ListItem.Label,,.png]</value>
 		<value condition="Window.IsVisible(MyMusicNav.xml) + Container.Content(genres) + !String.IsEmpty(Skin.String(musicgenrefanartresource.path)) + String.IsEqual(Skin.String(musicgenrefanartresource.ext),.jpg)">$INFO[Skin.String(musicgenrefanartresource.path)]$INFO[ListItem.Label,,.jpg]</value>
 		<value condition="Window.IsVisible(MyMusicNav.xml) + Container.Content(genres) + !String.IsEmpty(Skin.String(CustomMusicGenreFanartPath))">$INFO[Skin.String(CustomMusicGenreFanartPath)]$INFO[ListItem.Label]$VAR[MusicGenreFanartExt]</value>
+		
 		<value>$VAR[Fanart.Art]</value>
 	</variable>
 
 	<variable name="SubDefaultBackground">
 		<value condition="Skin.HasSetting(Sub_DefaultBG) + !String.IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
 		<value condition="Skin.HasSetting(Sub_DefaultBG)">special://skin/backgrounds/Default.jpg</value>
-		<value condition="!Skin.HasSetting(Sub_DefaultBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Movie.Fanart) + !String.IsEmpty(Container(12341).ListItem.Art(fanart))">$INFO[Container(12341).ListItem.Art(fanart)]</value>
-		<value condition="!Skin.HasSetting(Sub_DefaultBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.TV.Fanart) + !String.IsEmpty(Container(12342).ListItem.Art(fanart))">$INFO[Container(12342).ListItem.Art(fanart)]</value>
-		<value condition="!Skin.HasSetting(Sub_DefaultBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Video.Fanart) + !String.IsEmpty(Container(12346).ListItem.Art(fanart))">$INFO[Container(12346).ListItem.Art(fanart)]</value>
-		<value condition="!Skin.HasSetting(Sub_DefaultBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Music.Fanart) + !String.IsEmpty(Container(12345).ListItem.Art(fanart))">$INFO[Container(12345).ListItem.Art(fanart)]</value>
-		<value condition="!Skin.HasSetting(Sub_DefaultBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Global.Fanart) + !String.IsEmpty(Container(12347).ListItem.Art(fanart))">$INFO[Container(12347).ListItem.Art(fanart)]</value>
-		<value condition="!Skin.HasSetting(Sub_DefaultBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),Weather.Fanart)">$INFO[Skin.String(weatherfanartResource.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherBackgroundExt]</value>
-		<value condition="!Skin.HasSetting(Sub_DefaultBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),nodeBackground) + !String.IsEmpty(Container(9990).ListItem.Art(fanart))">$INFO[Container(9990).ListItem.Art(fanart)]</value>
-		<value condition="!Skin.HasSetting(Sub_DefaultBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + !String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist)) + [!String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)] + !String.IsEmpty(Container(9988).ListItem.Art(fanart))">$INFO[Container(9988).ListItem.Art(fanart)]</value>
-		<value condition="!Skin.HasSetting(Sub_DefaultBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + !String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist)) + [!String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) | !Skin.HasSetting(Enable.EmbuaryHelper)] + String.IsEmpty(Container(9988).ListItem.Art(fanart))">$INFO[Skin.String(FocusedMenu.Background)]</value>
-		<value condition="!Skin.HasSetting(Sub_DefaultBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + !String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist)) + [String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)] + !String.IsEmpty(Container(9989).ListItem.Art(fanart))">$INFO[Container(9989).ListItem.Art(fanart)]</value>
-		<value condition="!Skin.HasSetting(Sub_DefaultBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + !String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist)) + [String.IsEqual(Container(300).ListItem.Property(EHPlaylistFanart),true) + Skin.HasSetting(Enable.EmbuaryHelper)] + String.IsEmpty(Container(9989).ListItem.Art(fanart))">$INFO[Skin.String(FocusedMenu.Background)]</value>
-		<value condition="!Skin.HasSetting(Sub_DefaultBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist)) + 
+		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Movie.Fanart) + !String.IsEmpty(Container(112341).ListItem.Art(fanart))">$INFO[Container(112341).ListItem.Art(fanart)]</value>
+		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.TV.Fanart) + !String.IsEmpty(Container(112342).ListItem.Art(fanart))">$INFO[Container(112342).ListItem.Art(fanart)]</value>
+		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Video.Fanart) + !String.IsEmpty(Container(112346).ListItem.Art(fanart))">$INFO[Container(112346).ListItem.Art(fanart)]</value>
+		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Music.Fanart) + !String.IsEmpty(Container(112345).ListItem.Art(fanart))">$INFO[Container(112345).ListItem.Art(fanart)]</value>
+		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Global.Fanart) + !String.IsEmpty(Container(112347).ListItem.Art(fanart))">$INFO[Container(112347).ListItem.Art(fanart)]</value>
+		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),Weather.Fanart)">$INFO[Skin.String(weatherfanartResource.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherBackgroundExt]</value>
+		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEqual(Skin.String(FocusedMenu.Background),nodeBackground) + !String.IsEmpty(Container(19990).ListItem.Art(fanart))">$INFO[Container(19990).ListItem.Art(fanart)]</value>
+		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + !String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist)) + !String.IsEmpty(Container(19988).ListItem.Art(fanart))">$INFO[Container(19988).ListItem.Art(fanart)]</value>
+		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + !String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist)) + String.IsEmpty(Container(19988).ListItem.Art(fanart))">$INFO[Skin.String(FocusedMenu.Background)]</value>
+		<value condition="Skin.HasSetting(Sub_MainMenuBG) + !String.IsEmpty(Skin.String(FocusedMenu.Background)) + String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist)) + 
 		                  ![String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Movie.Fanart) | String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.TV.Fanart) | 
 						    String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Video.Fanart) | String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Music.Fanart) | 
 							String.IsEqual(Skin.String(FocusedMenu.Background),Kodi.Global.Fanart)]">$INFO[Skin.String(FocusedMenu.Background)]</value>
@@ -403,6 +402,7 @@
 		<control type="multiimage">
 			<visible>![Player.HasVideo + [Skin.HasSetting(Show_VideoBackground) | Skin.HasSetting(AutoPlayTrailer)]]</visible>
 			<visible>[!Control.IsVisible(56) | [Control.IsVisible(56) + ![$EXP[56_FanartViewNetflix]]]]</visible>
+			<visible>![Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</visible>
 			<width>100%</width>
 			<height>100%</height>
 			<timeperimage>8000</timeperimage>
@@ -416,6 +416,7 @@
 		<control type="multiimage">
 			<visible>![Player.HasVideo + [Skin.HasSetting(Show_VideoBackground) | Skin.HasSetting(AutoPlayTrailer)]]</visible>
 			<visible>Control.IsVisible(56) + $EXP[56_FanartViewNetflix]</visible>
+			<visible>![Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</visible>
 			<left>250</left>
 			<width>1896</width>
 			<height>864</height>
@@ -436,6 +437,30 @@
 			<include>Dimensions_Fullscreen</include>
 		</control>
 	</include>
+	
+	<include name="PVRBackground">
+	    <param name="viewid">50</param>
+		<definition>
+		    <control type="image">
+			    <posx>0</posx>
+				<posy>0</posy>
+				<width>100%</width>
+			    <height>100%</height>
+			    <texture background="true">$INFO[Container(4400$PARAM[viewid]).ListItem.Art(fanart)]</texture>
+			    <aspectratio>scale</aspectratio>
+				<visible>[Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder] + !Control.HasFocus(501)</visible>
+		    </control>
+			<control type="image">
+			    <posx>0</posx>
+				<posy>0</posy>
+				<width>100%</width>
+			    <height>100%</height>
+			    <texture background="true">$INFO[Container(440$PARAM[viewid]).ListItem.Art(fanart)]</texture>
+			    <aspectratio>scale</aspectratio>
+				<visible>[Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder] + Control.HasFocus(501)</visible>
+		    </control>
+		</definition>
+	</include>	
 
 	<!-- Movie/TV Show Logo for Home Window -->
 	<include name="HomeClearLogo">
@@ -1171,6 +1196,126 @@
 			<label>$INFO[ListItem.Art(tvshow.fanart18)]</label>
 			<label>$INFO[ListItem.Art(tvshow.fanart19)]</label>
 			<label>$INFO[ListItem.Art(tvshow.fanart20)]</label>
+		</control>
+	</include>
+	
+	<include name="SubBackgroundLists">
+		<!-- Hidden list for playlist fanart background -->
+		<control type="wraplist" id="19988">
+			<description>hidden container for playlist background</description>
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+			<include>AutoscrollTime</include>
+			<itemlayout />
+			<focusedlayout />
+			<content sortby="random" limit="$INFO[Container(300).ListItem.Property(playlistFanartLimit)]">$INFO[Container(300).ListItem.Property(backgroundPlaylist)]</content>
+			<visible>!String.IsEmpty(Container(300).ListItem.Property(backgroundPlaylist))</visible>
+		</control>
+		<!-- Hidden list for node fanart background -->
+		<control type="list" id="19990">
+			<description>hidden container for node background</description>
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+			<include>AutoscrollTime</include>
+			<itemlayout />
+			<focusedlayout />
+			<content sortby="random" limit="$INFO[Container(300).ListItem.Property(playlistFanartLimit)]">$INFO[Container(300).ListItem.Property(list)]</content>
+			<visible>String.IsEqual(Container(300).ListItem.Property(background),nodeBackground)</visible>
+		</control>
+		<!-- Hidden list for movies fanart background -->
+		<control type="list" id="112341">
+			<content sortby="random" limit="25">videodb://movies/titles/</content>
+			<include>AutoscrollTime</include>
+			<itemlayout />
+			<focusedlayout />
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+		</control>
+		<!-- Hidden list for tv shows fanart background -->
+		<control type="list" id="112342">
+			<content sortby="random" limit="25">videodb://tvshows/titles/</content>
+			<include>AutoscrollTime</include>
+			<itemlayout />
+			<focusedlayout />
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+		</control>
+		<!-- Hidden list for sets fanart background -->
+		<control type="list" id="112343">
+			<content sortby="random" limit="25">videodb://movies/sets/</content>
+			<include>AutoscrollTime</include>
+			<itemlayout />
+			<focusedlayout />
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+		</control>
+		<!-- Hidden list for music videos fanart background -->
+		<control type="list" id="112344">
+			<content sortby="random" limit="25">videodb://musicvideos/titles/</content>
+			<include>AutoscrollTime</include>
+			<itemlayout />
+			<focusedlayout />
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+		</control>
+		<!-- Hidden list for music fanart background -->
+		<control type="list" id="112345">
+			<content sortby="random" limit="25">musicdb://artists/?albumartistsonly=true</content>
+			<include>AutoscrollTime</include>
+			<itemlayout />
+			<focusedlayout />
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+		</control>        
+		<!-- Hidden list for video fanart background -->
+		<control type="list" id="112346">
+			<content sortby="random" limit="5">videodb://movies/titles/</content>
+			<content sortby="random" limit="5">videodb://tvshows/titles/</content>
+			<content sortby="random" limit="5">videodb://movies/sets/</content>
+			<content sortby="random" limit="5">videodb://movies/titles/</content>
+			<content sortby="random" limit="5">videodb://movies/sets/</content>
+			<content sortby="random" limit="5">videodb://tvshows/titles/</content>
+			<include>AutoscrollTime</include>
+			<itemlayout />
+			<focusedlayout />
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
+		</control>
+		<!-- Hidden list for global fanart background -->
+		<control type="list" id="112347">
+			<content sortby="random" limit="5">videodb://movies/titles/</content>
+			<content sortby="random" limit="5">videodb://musicvideos/titles/</content>
+			<content sortby="random" limit="5">videodb://tvshows/titles/</content>
+			<content sortby="random" limit="5">videodb://movies/sets/</content>
+			<content sortby="random" limit="5">musicdb://artists/?albumartistsonly=true</content>
+			<content sortby="random" limit="5">videodb://movies/titles/</content>
+			<content sortby="random" limit="5">videodb://musicvideos/titles/</content>
+			<content sortby="random" limit="5">videodb://movies/sets/</content>
+			<content sortby="random" limit="5">videodb://tvshows/titles/</content>
+			<content sortby="random" limit="5">musicdb://artists/?albumartistsonly=true</content>
+			<include>AutoscrollTime</include>
+			<itemlayout />
+			<focusedlayout />
+			<posx>-20</posx>
+			<posy>-20</posy>
+			<width>1</width>
+			<height>1</height>
 		</control>
 	</include>
 

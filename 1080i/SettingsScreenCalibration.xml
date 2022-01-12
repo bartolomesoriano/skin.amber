@@ -2,7 +2,8 @@
 <window>
   <defaultcontrol always="true">8</defaultcontrol>
   <controls>
-    <include>DefaultBackground</include>
+    <include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
+	<include>DefaultBackground</include>
     <control type="mover" id="8">
       <description>top left mover</description>
       <width>256</width>

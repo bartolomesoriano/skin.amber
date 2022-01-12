@@ -381,6 +381,16 @@
             <filename>UbuntuCondensed.ttf</filename>
             <size>28</size>
         </font>
+		<font>
+            <name>ListDetailsSmall</name>
+            <filename>UbuntuCondensed.ttf</filename>
+            <size>20</size>
+        </font>
+        <font>
+            <name>ListDetailsExtraSmall</name>
+            <filename>UbuntuCondensed.ttf</filename>
+            <size>18</size>
+        </font>        
         <font>
             <name>Details</name>
             <filename>UbuntuCondensed.ttf</filename>
@@ -635,6 +645,13 @@
             <aspect>0.80</aspect>
             <style>uppercase</style>
         </font>
+		<font>
+            <name>ListDetailsExtraSmall</name>
+            <filename>arial.ttf</filename>
+            <size>18</size>
+            <aspect>0.80</aspect>
+            <style>uppercase</style>
+        </font>
         <font>
             <name>Details</name>
             <filename>arial.ttf</filename>
@@ -885,6 +902,12 @@
             <size>20</size>
             <aspect>1.0</aspect>
         </font>
+		<font>
+            <name>ListDetailsExtraSmall</name>
+            <filename>arial.ttf</filename>
+            <size>18</size>
+            <aspect>1.0</aspect>
+        </font>
         <font>
             <name>Details</name>
             <filename>arial.ttf</filename>
@@ -1104,6 +1127,11 @@
             <name>ListDetailsSmall</name>
             <filename>NotoSans-Regular.ttf</filename>
             <size>20</size>
+        </font>
+		<font>
+            <name>ListDetailsExtraSmall</name>
+            <filename>NotoSans-Regular.ttf</filename>
+            <size>18</size>
         </font>
         <font>
             <name>Details</name>

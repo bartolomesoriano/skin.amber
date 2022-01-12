@@ -13,7 +13,8 @@
 				<width>1849</width>
 				<height>1010</height>
 				<texture flipx="true">dialogs/SettingsBG.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+				<colordiffuse>dfcebe9e</colordiffuse>
+<!--				<colordiffuse>$VAR[DialogBGColor]</colordiffuse> -->
 			</control>
 			<control type="label">
 				<posx>711</posx>
@@ -24,6 +25,29 @@
 				<textcolor>$VAR[HighlightColor]</textcolor>
 			</control>
 			<control type="group">
+				<!-- Album header and Artist footer for music playlists -->
+				<control type="label">
+					<top>160</top>
+					<left>150</left>
+					<width>500</width>
+					<height>60</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<wrapmultiline>true</wrapmultiline>
+					<label>$VAR[listmediaheader]</label>
+					<textcolor>$VAR[HighlightColor]</textcolor>
+				</control>
+				<control type="label">
+					<top>860</top>
+					<left>150</left>
+					<width>500</width>
+					<height>30</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$VAR[listmediafooter]</label>
+					<textcolor>$VAR[HighlightColor]</textcolor>
+				</control>
+				<!-- Thumb image for items that do not have poster -->
 				<include content="ShadowedImage">
 					<param name="top">27</param>
 					<param name="left">150</param>
@@ -31,7 +55,19 @@
 					<param name="height">1010</param>
 					<param name="shadowoffset">16</param>
 					<param name="texture">$INFO[ListItem.thumb]</param>
+					<param name="visibility">String.IsEmpty(ListItem.Art(poster)</param>
 				</include>
+				<!-- Poster -->
+				<include content="ShadowedImage">
+					<param name="top">27</param>
+					<param name="left">150</param>
+					<param name="width">500</param>
+					<param name="height">1010</param>
+					<param name="shadowoffset">16</param>
+					<param name="texture">$INFO[ListItem.Art(poster)]</param>
+					<param name="visibility">!String.IsEmpty(ListItem.Art(poster)</param>
+				</include>
+				
 				<control type="group" description="List">
 					<control type="panel" id="50" description="No Thumbs">
 						<viewtype label="$LOCALIZE[535]">list</viewtype>
@@ -52,8 +88,8 @@
 								<texture flipy="true" border="3">list/ListNF.png</texture>
 							</control>
 							<control type="label">
-								<posx>30</posx>
-								<width>740</width>
+								<posx>10</posx>
+								<width>680</width>
 								<height>60</height>
 								<aligny>center</aligny>
 								<textcolor>$VAR[LabelTextColor]</textcolor>
@@ -61,8 +97,8 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>800</posx>
-								<width>795</width>
+								<posx>710</posx>
+								<width>100</width>
 								<height>60</height>
 								<textcolor>$VAR[LabelTextColor]</textcolor>
 								<aligny>center</aligny>
@@ -78,8 +114,8 @@
 								<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
 							</control>
 							<control type="label">
-								<posx>30</posx>
-								<width>740</width>
+								<posx>10</posx>
+								<width>680</width>
 								<height>60</height>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
 								<shadowcolor></shadowcolor>
@@ -87,8 +123,8 @@
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="label">
-								<posx>800</posx>
-								<width>795</width>
+								<posx>710</posx>
+								<width>100</width>
 								<height>60</height>
 								<textcolor>$VAR[FocusedTextColor]</textcolor>
 								<shadowcolor></shadowcolor>

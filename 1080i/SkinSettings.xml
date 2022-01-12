@@ -4,6 +4,7 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<backgroundcolor>0</backgroundcolor>
 	<controls>
+		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 		<include>DefaultBackground</include>
 		<include>Time</include>
 		<control type="group" description="Content">
@@ -241,52 +242,58 @@
 						</include>
                         <include content="YesNoSettingItem">
 							<param name="itemid" value="13"/>
-							<param name="itemlabel" value="$LOCALIZE[32124]"/>
+							<param name="itemlabel" value="[B]$LOCALIZE[32124][/B]"/>
 							<param name="skinsetting" value="Enable.HourMinutes"/>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="14"/>
+							<param name="itemlabel" value="      $LOCALIZE[32479]"/>
+							<param name="skinsetting" value="Enable.Seconds"/>
+							<param name="itemvisibility" value="Skin.HasSetting(Enable.HourMinutes)"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="15"/>
 							<param name="itemlabel" value="$LOCALIZE[32349]"/>
 							<param name="skinsetting" value="Show.SmallerFavourites"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="15"/>
+							<param name="itemid" value="16"/>
 							<param name="itemlabel" value="      $LOCALIZE[32350]"/>
 							<param name="skinsetting" value="Show.3RowFavourites"/>
 							<param name="itemvisibility" value="Skin.HasSetting(Show.SmallerFavourites) + !Skin.HasSetting(Show.4RowFavourites)"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="16"/>
+							<param name="itemid" value="17"/>
 							<param name="itemlabel" value="      $LOCALIZE[32351]"/>
 							<param name="skinsetting" value="Show.4RowFavourites"/>
 							<param name="itemvisibility" value="Skin.HasSetting(Show.SmallerFavourites) + !Skin.HasSetting(Show.3RowFavourites)"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="17"/>
+							<param name="itemid" value="18"/>
 							<param name="itemlabel" value="$LOCALIZE[32369]"/>
 							<param name="skinsetting" value="Favourites.AlternateLayout"/>
 						</include>
-						<item id="18">
+						<item id="19">
                             <visible>Skin.HasSetting(Enable.TMDbHelper) + System.HasAddon(plugin.video.themoviedb.helper)</visible>
                             <label>$LOCALIZE[32352]</label>
                             <label2>$LOCALIZE[107]</label2>
                             <onclick>Skin.ToggleSetting(Enable.TMDbHelper)</onclick>
                         </item>
-                        <item id="18">
+                        <item id="19">
                             <visible>!Skin.HasSetting(Enable.TMDbHelper) | !System.HasAddon(plugin.video.themoviedb.helper)</visible>
                             <label>$LOCALIZE[32352]</label>
                             <label2>$LOCALIZE[106]</label2>
 							<onclick condition="!System.HasAddon(plugin.video.themoviedb.helper)">InstallAddon(plugin.video.themoviedb.helper)</onclick>
                             <onclick condition="System.HasAddon(plugin.video.themoviedb.helper)">Skin.ToggleSetting(Enable.TMDbHelper)</onclick>
                         </item>
-						<item id="19">
+						<item id="20">
                             <visible>Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</visible>
                             <label>$LOCALIZE[32353]</label>
                             <label2>$LOCALIZE[107]</label2>
                             <onclick>Skin.ToggleSetting(Enable.EmbuaryHelper)</onclick>
 							<onclick>Skin.Reset(Show.EHJumpToLetter)</onclick>
                         </item>
-                        <item id="19">
+                        <item id="20">
                             <visible>!Skin.HasSetting(Enable.EmbuaryHelper) | !System.HasAddon(script.embuary.helper)</visible>
                             <label>$LOCALIZE[32353]</label>
                             <label2>$LOCALIZE[106]</label2>
@@ -294,22 +301,22 @@
                             <onclick condition="System.HasAddon(script.embuary.helper)">Skin.ToggleSetting(Enable.EmbuaryHelper)</onclick>
                         </item>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="20"/>
+							<param name="itemid" value="21"/>
 							<param name="itemlabel" value="$LOCALIZE[32378]"/>
 							<param name="skinsetting" value="coloredflags"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="21"/>
+							<param name="itemid" value="22"/>
 							<param name="itemlabel" value="$LOCALIZE[32427]"/>
 							<param name="skinsetting" value="HidePVRPreview"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="22"/>
+							<param name="itemid" value="23"/>
 							<param name="itemlabel" value="$LOCALIZE[32454]"/>
 							<param name="skinsetting" value="UseTVShowPoster"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="23"/>
+							<param name="itemid" value="24"/>
 							<param name="itemlabel" value="$LOCALIZE[31996]"/>
 							<param name="skinsetting" value="holiday"/>
 						</include>
@@ -424,12 +431,17 @@
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="13"/>
+							<param name="itemlabel" value="$LOCALIZE[32466]"/>
+							<param name="skinsetting" value="FadeUnfocusedMenu"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="14"/>
 							<param name="itemlabel" value="$LOCALIZE[32379]"/>
 							<param name="skinsetting" value="FadeSubmenu"/>
 							<param name="itemvisibility" value="!Skin.HasSetting(VerticalHome)"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="14"/>
+							<param name="itemid" value="15"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[31637][/B]"/>
 							<param name="skinsetting" value="Enable.BottomShortcuts"/>
 							<param name="customonclickNo">true</param>
@@ -437,18 +449,18 @@
 							<param name="itemvisibility" value="!Skin.HasSetting(VerticalHome)"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="15"/>
+							<param name="itemid" value="16"/>
 							<param name="itemlabel" value="      $LOCALIZE[32374]"/>
 							<param name="skinsetting" value="UseBackgroundBottomShortcuts"/>
 							<param name="itemvisibility" value="Skin.HasSetting(Enable.BottomShortcuts)"/>
 						</include>
-						<item id="16">
+						<item id="17">
                             <visible>Skin.HasSetting(Enable.DefaultMenu)</visible>
                             <label>$LOCALIZE[31647]</label>
                             <label2>$LOCALIZE[107]</label2>
                             <onclick>Skin.ToggleSetting(Enable.DefaultMenu)</onclick>
                         </item>
-                        <item id="16">
+                        <item id="18">
                             <visible>!Skin.HasSetting(Enable.DefaultMenu)</visible>
                             <label>$LOCALIZE[31647]</label>
                             <label2>$LOCALIZE[106]</label2>
@@ -457,30 +469,30 @@
 							<onclick>Skin.SetBool(Enable.EmbuaryHelper)</onclick>
                         </item>
                         <include content="YesNoSettingItem">
-							<param name="itemid" value="17"/>
+							<param name="itemid" value="19"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[32249][/B]"/>
 							<param name="skinsetting" value="ShowInfoLine"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="18"/>
+							<param name="itemid" value="20"/>
 							<param name="itemlabel" value="      $LOCALIZE[32250]"/>
 							<param name="skinsetting" value="ShowInfoLineShelf"/>
 							<param name="itemvisibility" value="Skin.HasSetting(ShowInfoLine)"/>
 						</include>
                         <include content="YesNoSettingItem">
-							<param name="itemid" value="19"/>
+							<param name="itemid" value="21"/>
 							<param name="itemlabel" value="      $LOCALIZE[32261]"/>
 							<param name="skinsetting" value="UseEHInfoLine"/>
 							<param name="itemvisibility" value="Skin.HasSetting(ShowInfoLine) + Skin.HasSetting(Enable.EmbuaryHelper)"/>
 						</include>
                         <include content="YesNoSettingItem">
-							<param name="itemid" value="20"/>
+							<param name="itemid" value="22"/>
 							<param name="itemlabel" value="$LOCALIZE[32358]"/>
 							<param name="skinsetting" value="Shelf.PlayAlbum"/>
 							<param name="itemvisibility" value="System.HasAddon(script.playalbum)"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="21"/>
+							<param name="itemid" value="23"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[32424][/B]"/>
 							<param name="skinsetting" value="Shelf.PlayTrailers"/>
 							<param name="customonclickYes">True</param>
@@ -489,7 +501,7 @@
 							<param name="onclick2No">Skin.SetString(ShelfTrailerDelay,00:05)</param>
 						</include>
                         <include content="CustomDialogSettingItem">
-                            <param name="itemid">22</param>
+                            <param name="itemid">24</param>
                             <param name="itemlabel">      $LOCALIZE[32425]</param>
 		                    <param name="itemlabel2">$VAR[ShelfTrailerDelayLabelVar]</param>
                             <param name="CustomProperty">CustomSelectShelfTrailerDelay</param>
@@ -497,7 +509,7 @@
 							<param name="itemvisibility" value="Skin.HasSetting(Shelf.PlayTrailers)"/>
 						</include>
                         <include content="CustomDialogSettingItem">
-                            <param name="itemid">23</param>
+                            <param name="itemid">25</param>
                             <param name="itemlabel">$LOCALIZE[32062]</param>
 		                    <param name="itemlabel2"></param>
                             <param name="CustomProperty">CustomSelectFavouriteAddons</param>
@@ -519,65 +531,71 @@
 					<include>SettingsListCommons</include>
 					<content>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="7"/>
+							<param name="itemid" value="1"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[32048][/B]"/>
 							<param name="skinsetting" value="Enable.FanartTitle"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="12"/>
+							<param name="itemid" value="2"/>
 							<param name="itemlabel" value="      $LOCALIZE[32070]"/>
 							<param name="skinsetting" value="FanartTitle.InTopBar"/>
 							<param name="itemvisibility" value="Skin.HasSetting(Enable.FanartTitle)"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="18"/>
+							<param name="itemid" value="3"/>
 							<param name="itemlabel" value="      $LOCALIZE[32417]"/>
 							<param name="skinsetting" value="FanartTitle.OpensInfo"/>
 							<param name="itemvisibility" value="Skin.HasSetting(Enable.FanartTitle) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">8</param>
+                            <param name="itemid">4</param>
                             <param name="itemlabel">$LOCALIZE[32049]</param>
 		                    <param name="itemlabel2">$VAR[FanartTimePerImageLabel]</param>
                             <param name="CustomProperty">CustomSelectFanartTimePerImage</param>
 		                    <param name="CustomDialog">1121</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="14"/>
+							<param name="itemid" value="5"/>
 							<param name="itemlabel" value="$LOCALIZE[32220]"/>
 							<param name="skinsetting" value="ShowHomeLogo"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="15"/>
+							<param name="itemid" value="6"/>
 							<param name="itemlabel" value="$LOCALIZE[32262]"/>
 							<param name="skinsetting" value="UseEHBackgrounds"/>
 							<param name="itemvisibility" value="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">11</param>
+                            <param name="itemid">7</param>
                             <param name="itemlabel">$LOCALIZE[32061]</param>
 		                    <param name="itemlabel2"></param>
                             <param name="CustomProperty">CustomSelectDefaultBackground</param>
 		                    <param name="CustomDialog">1121</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="1"/>
+							<param name="itemid" value="8"/>
 							<param name="itemlabel" value="$LOCALIZE[31986]"/>
 							<param name="skinsetting" value="HomeDefaultBG"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="2"/>
+							<param name="itemid" value="9"/>
 							<param name="itemlabel" value="$LOCALIZE[31951]"/>
 							<param name="skinsetting" value="Sub_DefaultBG"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="4"/>
+							<param name="itemid" value="10"/>
 							<param name="itemlabel" value="$LOCALIZE[31953]"/>
 							<param name="skinsetting" value="Sub_FanArtBG"/>
 							<param name="itemvisibility" value="!Skin.HasSetting(Sub_DefaultBG)"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="5"/>
+							<param name="itemid" value="11"/>
+							<param name="itemlabel" value="$LOCALIZE[32471]"/>
+							<param name="skinsetting" value="Sub_MainMenuBG"/>
+							<param name="itemvisibility" value="!Skin.HasSetting(Sub_DefaultBG)"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="12"/>
 							<param name="itemlabel" value="$LOCALIZE[31952]"/>
 							<param name="skinsetting" value="MusicPlayingFanart"/>
 						</include>
@@ -587,17 +605,17 @@
 							<param name="skinsetting" value="ShowLogoMusicViz"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="6"/>
+							<param name="itemid" value="14"/>
 							<param name="itemlabel" value="$LOCALIZE[31949]"/>
 							<param name="skinsetting" value="SkinHelper.EnableExtraFanart"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="16"/>
+							<param name="itemid" value="15"/>
 							<param name="itemlabel" value="$LOCALIZE[32344]"/>
 							<param name="skinsetting" value="Use.ParentFolderFanart"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="17"/>
+							<param name="itemid" value="16"/>
 							<param name="itemlabel" value="$LOCALIZE[32360]"/>
 							<param name="skinsetting" value="Use.KenBurnsEffect"/>
 						</include>
@@ -914,25 +932,25 @@
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="2"/>
-							<param name="itemlabel" value="$LOCALIZE[32290]"/>
-							<param name="skinsetting" value="enable.bottomseekbar"/>
-						</include>
-						<include content="YesNoSettingItem">
-							<param name="itemid" value="3"/>
 							<param name="itemlabel" value="$LOCALIZE[32224]"/>
 							<param name="skinsetting" value="SubtitleOpensSettings"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="4"/>
+							<param name="itemid" value="3"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[32371][/B]"/>
 							<param name="skinsetting" value="InfoOpensVideoInfo"/>
 							<param name="itemvisibility" value="System.HasAddon(service.library.data.provider)"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="5"/>
+							<param name="itemid" value="4"/>
 							<param name="itemlabel" value="      $LOCALIZE[32372]"/>
 							<param name="skinsetting" value="PauseOnVideoInfo"/>
 							<param name="itemvisibility" value="Skin.HasSetting(InfoOpensVideoInfo)"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="5"/>
+							<param name="itemlabel" value="$LOCALIZE[32472]"/>
+							<param name="skinsetting" value="TeletextOpensEPG"/>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="6"/>
@@ -942,19 +960,19 @@
 							<param name="onclick2No">Skin.Reset(UseUltraCompactOSD)</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="61"/>
+							<param name="itemid" value="7"/>
 							<param name="itemlabel" value="$LOCALIZE[32411]"/>
 							<param name="skinsetting" value="USeUltraCompactOSD"/>
 							<param name="customonclickNo">true</param>
 							<param name="onclick2No">Skin.Reset(UseCompactOSD)</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="62"/>
+							<param name="itemid" value="8"/>
 							<param name="itemlabel" value="$LOCALIZE[32412]"/>
 							<param name="skinsetting" value="AlternateOSDHighlight"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="7"/>
+							<param name="itemid" value="9"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[32342][/B]"/>
 							<param name="skinsetting" value="AutoClose.VideoOSD"/>
 							<param name="customonclickYes">true</param>
@@ -963,13 +981,13 @@
 							<param name="onclick4Yes">Skin.Reset(OSDTimeout)</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="8"/>
+							<param name="itemid" value="10"/>
 							<param name="itemlabel" value="   [B]$LOCALIZE[32341][/B]"/>
 							<param name="skinsetting" value="AutoClose.withInfoService"/>
 							<param name="itemvisibility" value="System.HasAddon(script.skin.info.service) + Skin.HasSetting(AutoClose.VideoOSD)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">9</param>
+                            <param name="itemid">11</param>
                             <param name="itemlabel">      $LOCALIZE[32337]</param>
 		                    <param name="itemlabel2">$VAR[OSDTimeout2LabelVar]</param>
                             <param name="CustomProperty">CustomSelectOSDTimeout2</param>
@@ -977,7 +995,7 @@
 							<param name="itemvisibility">Skin.HasSetting(AutoClose.VideoOSD) + System.HasAddon(script.skin.info.service) + Skin.HasSetting(AutoClose.withInfoService)</param>
 						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">9</param>
+                            <param name="itemid">12</param>
                             <param name="itemlabel">   $LOCALIZE[32337]</param>
 		                    <param name="itemlabel2">$VAR[OSDTimeoutLabelVar]</param>
                             <param name="CustomProperty">CustomSelectOSDTimeout</param>
@@ -985,27 +1003,32 @@
 							<param name="itemvisibility">Skin.HasSetting(AutoClose.VideoOSD) + ![System.HasAddon(script.skin.info.service) + Skin.HasSetting(AutoClose.withInfoService)]</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="10"/>
+							<param name="itemid" value="13"/>
+							<param name="itemlabel" value="$LOCALIZE[32290]"/>
+							<param name="skinsetting" value="enable.bottomseekbar"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="14"/>
 							<param name="itemlabel" value="$LOCALIZE[32354]"/>
 							<param name="skinsetting" value="Hide.SeekBarWhenPaused"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="11"/>
+							<param name="itemid" value="15"/>
 							<param name="itemlabel" value="$LOCALIZE[32385]"/>
 							<param name="skinsetting" value="Hide.SeekBarRF"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="12"/>
+							<param name="itemid" value="16"/>
 							<param name="itemlabel" value="$LOCALIZE[32363]"/>
 							<param name="skinsetting" value="ShowInfoWithSeekBar"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="13"/>
+							<param name="itemid" value="17"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[32364][/B]"/>
 							<param name="skinsetting" value="ShowSeekBarOnPlayback"/>
 						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">14</param>
+                            <param name="itemid">18</param>
                             <param name="itemlabel">      $LOCALIZE[32365]</param>
 		                    <param name="itemlabel2">$VAR[SeekBarInitLabelVar]</param>
                             <param name="CustomProperty">CustomSelectSeekBarInit</param>
@@ -1013,31 +1036,31 @@
 							<param name="itemvisibility">Skin.HasSetting(ShowSeekBarOnPlayback)</param>
 						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">15</param>
+                            <param name="itemid">19</param>
                             <param name="itemlabel">[B]$LOCALIZE[32403][/B]</param>
 		                    <param name="itemlabel2">$VAR[OSDExtraArtLabelVar]</param>
                             <param name="CustomProperty">CustomSelectOSDArt</param>
 		                    <param name="CustomDialog">1121</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="16"/>
+							<param name="itemid" value="20"/>
 							<param name="itemlabel" value="$LOCALIZE[32367]"/>
 							<param name="skinsetting" value="NoFallbackThumbOSD"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="17"/>
+							<param name="itemid" value="21"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[32457][/B]"/>
 							<param name="skinsetting" value="ShowEpisodeList"/>
-							<param name="itemvisibility">Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</param>
+							<param name="itemvisibility">Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper) + System.AddonIsEnabled(script.embuary.helper)</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="18"/>
+							<param name="itemid" value="22"/>
 							<param name="itemlabel" value="      $LOCALIZE[32458]"/>
 							<param name="skinsetting" value="SeasonsEpisodeList"/>
 							<param name="itemvisibility">Skin.HasSetting(ShowEpisodeList)</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="19"/>
+							<param name="itemid" value="23"/>
 							<param name="itemlabel" value="$LOCALIZE[32460]"/>
 							<param name="skinsetting" value="DirectSeekInInfo"/>
 						</include>
@@ -1114,12 +1137,23 @@
                             <param name="CustomProperty">CustomSelectRatings</param>
 		                    <param name="CustomDialog">1138</param>
 						</include>
-                        <item id="11" description="Embuary Info Config">
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="11"/>
+							<param name="itemlabel" value="$LOCALIZE[32463]"/>
+							<param name="skinsetting" value="Trailer.WindowVideoInfo"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="12"/>
+							<param name="itemlabel" value="$LOCALIZE[32465]"/>
+							<param name="skinsetting" value="Trailer.SearchIMDb"/>
+							<param name="itemvisibility">System.AddonIsEnabled(plugin.video.imdb.trailers)</param>
+						</include>
+                        <item id="13" description="Embuary Info Config">
 							<label>$LOCALIZE[32128]</label>
 							<onclick condition="System.HasAddon(script.embuary.info)">Addon.OpenSettings(script.embuary.info)</onclick>
                             <onclick condition="!System.HasAddon(script.embuary.info)">InstallAddon(script.embuary.info)</onclick>
                         </item>
-                        <item id="12" description="TMDb Helper Config">
+                        <item id="14" description="TMDb Helper Config">
 							<label>$LOCALIZE[32155]</label>
 							<onclick condition="System.HasAddon(plugin.video.themoviedb.helper)">Addon.OpenSettings(plugin.video.themoviedb.helper)</onclick>
                             <onclick condition="!System.HasAddon(plugin.video.themoviedb.helper)">InstallAddon(plugin.video.themoviedb.helper)</onclick>
@@ -1323,7 +1357,19 @@
 							<param name="ColorString">$VAR[ViewsBGColor]</param>
 						</include>
 					</control>
-                    <control type="button" id="910912">
+					<control type="radiobutton" id="910912">
+						<label>$LOCALIZE[32470]</label>
+						<font>ListDetails</font>
+						<onclick>Skin.SetString(SelectColorLabel,$LOCALIZE[32470])</onclick>
+<!--						<onclick>SetProperty(colorpick,ViewsBGColor,Home)</onclick>
+                        <onclick>ActivateWindow(1117)</onclick> -->
+						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
+						<onclick condition="System.HasAddon(script.skin.helper.colorpicker)">RunScript(script.skin.helper.colorpicker,skinstring=TimeshiftBufferColorStr,palette=rainbow)</onclick>
+						<include content="ColorButton">
+							<param name="ColorString">$VAR[TimeshiftBufferColor]</param>
+						</include>
+					</control>
+                    <control type="button" id="910913">
 					    <width>1350</width>
 					    <height>60</height>
 					    <texturenofocus />
@@ -1354,8 +1400,18 @@
 							<param name="itemlabel" value="$LOCALIZE[32228]"/>
 							<param name="skinsetting" value="OnlyLocalSearches"/>
 						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="3"/>
+							<param name="itemlabel" value="$LOCALIZE[32476]"/>
+							<param name="skinsetting" value="DoCustomVideoSearch"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="4"/>
+							<param name="itemlabel" value="$LOCALIZE[32477]"/>
+							<param name="skinsetting" value="DoCustomMusicSearch"/>
+						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">3</param>
+                            <param name="itemid">5</param>
                             <param name="itemlabel">$LOCALIZE[32168]</param>
                             <param name="CustomProperty">CustomSelectSearchOptions</param>
 		                    <param name="CustomDialog">1133</param>
@@ -1476,6 +1532,14 @@
                             <param name="CustomProperty">CustomSelectStartupBackground</param>
 		                    <param name="CustomDialog">1121</param>
 						</include>
+						<include content="CustomDialogSettingItem">
+                            <param name="itemid">18</param>
+                            <param name="itemlabel">      [B]$LOCALIZE[32469][/B]</param>
+		                    <param name="itemlabel2">$VAR[StartupVideoDurationLabelVar]</param>
+                            <param name="CustomProperty">CustomSelectStartupVideoDuration</param>
+		                    <param name="CustomDialog">1121</param>
+							<param name="itemvisibility" value="!String.IsEmpty(Skin.String(StartupPlaylist))"/>
+						</include>
 					</content>
 				</control>
 				<!-- 9000 12 - Backup/Restore -->
@@ -1492,20 +1556,20 @@
 							<label>$LOCALIZE[32065]</label>
 							<onclick condition="System.HasAddon(script.xmbcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.xbmcbackup,mode=backup)</onclick>
 							<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup,action=backup)</onclick>
-                            <onclick condition="!System.HasAddon(script.xbmcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.xbmcbackup)</onclick>
+                            <onclick condition="!System.HasAddon(script.xbmcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
 						</item>
 						<item id="2" description="Restore Skin Settings Backup">
 							<label>$LOCALIZE[32066]</label>
 							<onclick condition="System.HasAddon(script.xmbcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.xbmcbackup,mode=restore)</onclick>
 							<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup,action=restore)</onclick>
-                            <onclick condition="!System.HasAddon(script.xbmcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.xbmcbackup)</onclick>
+                            <onclick condition="!System.HasAddon(script.xbmcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
 							<onclick>ReloadSkin()</onclick>
 						</item>
 						<item id="3" description="Backup/Restore Config">
 							<label>$LOCALIZE[32067]</label>
 							<onclick condition="System.HasAddon(script.xmbcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">Addon.OpenSettings(script.xbmcbackup)</onclick>
 							<onclick condition="System.HasAddon(script.skin.helper.skinbackup)">Addon.OpenSettings(script.skin.helper.skinbackup)</onclick>
-							<onclick condition="!System.HasAddon(script.xbmcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.xbmcbackup)</onclick>
+							<onclick condition="!System.HasAddon(script.xbmcbackup) + !System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
 							
 						</item>
 						<item id="4" description="Reset all settings to default">

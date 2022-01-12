@@ -6,6 +6,7 @@
 	<onload>SetFocus(50)</onload>
 	<menucontrol>9000</menucontrol>
 	<controls>
+		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 		<include>DefaultBackground</include>
 		<include content="View_50_List" condition="!Skin.HasSetting(ListCenterFocus)">
 		    <param name="ListType">list</param>

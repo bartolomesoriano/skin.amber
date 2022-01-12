@@ -26,6 +26,16 @@
 		<value>99+</value>
 	</variable>
 	
+	<variable name="TripleMiddlePath">
+	    <value condition="String.IsEmpty(Container.PluginName)">$INFO[Container(600).ListItem.FolderPath]</value>
+		<value></value>
+	</variable>
+	
+	<variable name="TripleRightPath">
+	    <value condition="String.IsEmpty(Container.PluginName)">$INFO[Container(6001).ListItem.FolderPath]</value>
+		<value></value>
+	</variable>
+	
 	<include name="TripleTopRightOverlay">
 	    <control type="group">
 		    <!-- Totally watched overlay -->
@@ -152,7 +162,8 @@
 
     <include name="View_600_Triple">
         <control type="group" description="Triple view">
-            <include content="BackgroundOverlay">
+            <visible>Container.Content(tvshows) | Container.Content(artists)</visible>
+			<include content="BackgroundOverlay">
                 <param name="parentid" value="600"/>
             </include>
             <visible>Control.IsVisible(600)</visible>
@@ -543,7 +554,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="video" sortby="seasonnumber" sortorder="ascending">$INFO[Container(600).ListItem.FolderPath]</content>
+					<content target="video" sortby="seasonnumber" sortorder="ascending">$VAR[TripleMiddlePath]</content>
 				</control>
 			</control>
 			
@@ -682,7 +693,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="music" sortby="year" sortorder="ascending">$INFO[Container(600).ListItem.FolderPath]</content>
+					<content target="music" sortby="year" sortorder="ascending">$VAR[TripleMiddlePath]</content>
 				</control>
 			</control>
 			
@@ -828,7 +839,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<content target="video" sortby="episode" sortorder="ascending">$INFO[Container(6001).ListItem.FolderPath]</content>
+					<content target="video" sortby="episode" sortorder="ascending">$VAR[TripleRightPath]</content>
 				</control>
 			</control>
 			
@@ -894,7 +905,7 @@
 							<shadowcolor></shadowcolor>
 						</control>
 					</focusedlayout>
-					<content target="music" sortby="track" sortorder="ascending">$INFO[Container(6003).ListItem.FolderPath]</content>
+					<content target="music" sortby="track" sortorder="ascending">$VAR[TripleRightPath]</content>
 				</control>
 			</control>
 			

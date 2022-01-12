@@ -9,8 +9,12 @@
 	    <param name="listtype">fixedlist</param>
 		<definition>
 		    <control type="$PARAM[listtype]" id="300" description="Main Bar">
-				<animation effect="slide" start="0,0" end="0,40" time="250" tween="sine" easing="in" condition="!Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,320" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,40" time="250" tween="sine" easing="in" condition="!Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,320" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,280" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + 
+				                                                                                                 [String.IsEqual(Container(300).ListItem.Property(widgetTwoShelves),true) | 
+																												  String.IsEqual(Container(300).ListItem.Property(showShelvesInfo),true)] + 
+																												  ControlGroup(700).HasFocus">Conditional</animation>
 				<animation effect="fade" time="200" start="100" end="25" reversible="true" condition="!Control.HasFocus(300)">Conditional</animation>
 				<posx>-338</posx>
 				<posy>689</posy>
@@ -27,6 +31,7 @@
 				<orientation>horizontal</orientation>
 				<itemlayout height="70" width="519">
 					<control type="label">
+						<animation effect="fade" time="0" start="100" end="20" condition="Skin.HasSetting(FadeUnfocusedMenu)">Conditional</animation>
 						<width>519</width>
 						<textcolor>$VAR[LabelTextColor]</textcolor>
 						<shadowcolor>ShadowDark</shadowcolor>
@@ -109,8 +114,12 @@
 			
 			<!-- Main menu bar textures -->
 			<control type="group" description="Furniture">
-				<animation effect="slide" start="0,0" end="0,40" time="250" tween="sine" easing="in" condition="!Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
-				<animation effect="slide" start="0,0" end="0,320" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,40" time="250" tween="sine" easing="in" condition="!Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,320" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + !String.IsEmpty(Window(Home).Property(ShelfTrailerPlaying)) + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,280" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + 
+				                                                                                                 [String.IsEqual(Container(300).ListItem.Property(widgetTwoShelves),true) | 
+																												  String.IsEqual(Container(300).ListItem.Property(showShelvesInfo),true)] + 
+																												  ControlGroup(700).HasFocus">Conditional</animation>
 				<control type="image" description="Top glass border">
 					<animation effect="zoom" start="100,100" end="100,50" time="100" condition="true">Conditional</animation>
 					<posy>651</posy>
@@ -152,6 +161,10 @@
 				<animation effect="slide" start="0,0" end="-128,0" time="0" condition="String.IsEqual(Container(9001).NumItems,2) | String.IsEqual(Container(9001).NumItems,4) | String.IsEqual(Container(9001).NumItems,6)">conditional</animation>
 				<animation effect="slide" start="0,0" end="0,100" time="250" tween="sine" easing="in" condition="!Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,350" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,280" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + 
+				                                                                                                 [String.IsEqual(Container(300).ListItem.Property(widgetTwoShelves),true) | 
+																												  String.IsEqual(Container(300).ListItem.Property(showShelvesInfo),true)] + 
+																												  ControlGroup(700).HasFocus">Conditional</animation>
 <!--				<include>VisibleFadeEffect</include> -->
 				<posx>64</posx>
 				<posy>782</posy>
@@ -237,6 +250,10 @@
 		<!-- Bottom Shortcuts -->
 		<control type="group" id="800">
 		    <animation effect="slide" start="0,0" end="0,300" time="250" tween="sine" easing="in" condition="Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,300" time="250" tween="sine" easing="in" condition="Skin.HasSetting(Enable.BottomShortcuts) + 
+				                                                                                             [String.IsEqual(Container(300).ListItem.Property(widgetTwoShelves),true) | 
+																											  String.IsEqual(Container(300).ListItem.Property(showShelvesInfo),true)] + 
+																											 ControlGroup(700).HasFocus">Conditional</animation>
 			<include condition="Skin.HasSetting(Enable.BottomShortcuts)">skinshortcuts-template-BottomShortcuts</include>
 		</control>
 		

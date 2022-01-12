@@ -478,7 +478,7 @@
 	</variable>
 	<variable name="RightListSubheadingLabel">
 		<value condition="String.Contains(Container.FolderPath,videodb://recentlyaddedepisodes/) + !String.Contains(ListItem.Episode,S)">$INFO[ListItem.TVShowTitle]$INFO[ListItem.Season, • $LOCALIZE[20373] ]</value>
-		<value condition="Container.Content(movies)">$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[12391]]$INFO[ListItem.Rating, • ]</value>
+		<value condition="Container.Content(movies)">$INFO[ListItem.Year]$INFO[ListItem.Duration, • ,]$INFO[ListItem.Rating, • ]</value>
 		<value>$INFO[ListItem.Date]$INFO[ListItem.Rating, • ]</value>
 	</variable>
 	
@@ -491,17 +491,17 @@
 	</variable>
 	
 	<variable name="RightListPopupDetails">
-	    <value condition="!String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.Top250) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating] / [COLOR=$VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[ListItem.Top250]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[32456]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration(mins),, $LOCALIZE[12391]]</value>
+	    <value condition="!String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.Top250) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating] / [COLOR=$VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[ListItem.Top250]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[32456]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</value>
 		<value condition="!String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.Top250) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating] / [COLOR=$VAR[HighlightColor]]$LOCALIZE[13409] # [/COLOR]$INFO[ListItem.Top250]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[32456]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
-		<value condition="!String.IsEqual(ListItem.DBType,set) + String.IsEmpty(ListItem.Top250) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[32456]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration(mins),, $LOCALIZE[12391]]</value>
+		<value condition="!String.IsEqual(ListItem.DBType,set) + String.IsEmpty(ListItem.Top250) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[32456]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</value>
 		<value condition="!String.IsEqual(ListItem.DBType,set) + String.IsEmpty(ListItem.Top250) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[32456]: [/COLOR]$INFO[ListItem.MPAA]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
-		<value condition="String.IsEqual(ListItem.DBType,set)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Years)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime),, $LOCALIZE[12391]]</value>
+		<value condition="String.IsEqual(ListItem.DBType,set)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[345]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Years)]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime),,]</value>
 	</variable>
 	
 	<variable name="RightListPopupDetailsEpisodes">
-	    <value condition="!String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration(mins),, $LOCALIZE[12391]]</value>
+	    <value condition="!String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</value>
 		<value condition="!String.IsEmpty(ListItem.Rating) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[31037]: [/COLOR]$INFO[ListItem.Rating]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
-		<value condition="String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration(mins),, $LOCALIZE[12391]]</value>
+		<value condition="String.IsEmpty(ListItem.Rating) + !Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</value>
 		<value condition="String.IsEmpty(ListItem.Rating) + Skin.HasSetting(Enable.HourMinutes)">[COLOR=$VAR[HighlightColor]]$LOCALIZE[20416]: [/COLOR]$INFO[ListItem.Premiered]  [COLOR=$VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$VAR[ItemDurationVar,,]</value>
 	</variable>
 	
@@ -2411,6 +2411,18 @@
 					<label>$VAR[Plots]</label>
 					<font>InfoPlot</font>
 					<autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>!String.IsEqual(Skin.Font,Default no caps)</visible>
+				</control>
+				<control type="textbox">
+					<left>99</left>
+					<top>124</top>
+					<width>740</width>
+					<height>102</height>
+					<align>right</align>
+					<label>$VAR[Plots]</label>
+					<font>InfoPlot</font>
+					<autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>String.IsEqual(Skin.Font,Default no caps)</visible>
 				</control>
 			</control>
 		</focusedlayout>
@@ -2524,6 +2536,18 @@
 					    <font>InfoPlot</font>
 					    <label>$VAR[Plots]</label>
 					    <autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<visible>!String.IsEqual(Skin.Font,Default no caps)</visible>
+				    </control>
+					<control type="textbox">
+					    <left>199</left>
+					    <top>122</top>
+					    <width>640</width>
+					    <height>100</height>
+					    <align>right</align>
+					    <font>InfoPlot</font>
+					    <label>$VAR[Plots]</label>
+					    <autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<visible>String.IsEqual(Skin.Font,Default no caps)</visible>
 				    </control>
 				</control>
 				<control type="group">
@@ -2560,6 +2584,18 @@
 					    <font>InfoPlot</font>
 					    <label>$VAR[Plots]</label>
 					    <autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<visible>!String.IsEqual(Skin.Font,Default no caps)</visible>
+				    </control>
+					<control type="textbox">
+					    <left>199</left>
+					    <top>122</top>
+					    <width>640</width>
+					    <height>100</height>
+					    <align>right</align>
+					    <font>InfoPlot</font>
+					    <label>$VAR[Plots]</label>
+					    <autoscroll time="2000" delay="6000" repeat="6000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<visible>String.IsEqual(Skin.Font,Default no caps)</visible>
 				    </control>
 				</control>
 			</control>

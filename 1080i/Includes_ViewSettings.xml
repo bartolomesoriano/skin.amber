@@ -399,14 +399,14 @@
                     <include>9000SysButtons</include>
                     <label>$LOCALIZE[20445]</label>
                     <onclick>Container.SetViewMode(56)</onclick>
-                    <visible>!Skin.HasSetting(hide.fanartview)</visible>
+                    <visible>!Skin.HasSetting(hide.fanartview) + !Window.IsActive(MyPVRRecordings.xml)</visible>
                 </control>
 				<control type="button" id="96057">
                     <description>Set View 57</description>
                     <include>9000SysButtons</include>
                     <label>$LOCALIZE[31632]</label>
                     <onclick>Container.SetViewMode(57)</onclick>
-                    <visible>!Skin.HasSetting(hide.simplelistview)</visible>
+                    <visible>!Skin.HasSetting(hide.simplelistview) + !Window.IsActive(MyPVRRecordings.xml)</visible>
                 </control>
 				<control type="button" id="96600">
                     <description>Set View 600</description>
@@ -1120,7 +1120,8 @@
 
     <variable name="ViewModeSwitch">
         <value condition="!String.IsEmpty(Container.Content)">$INFO[Container.Content]</value>
-        <value condition="Window.IsVisible(MyPVRRecordings.xml)">pvr-recordings</value>
+        <value condition="Window.IsVisible(MyPVRChannels.xml)">pvr-channels</value>
+		<value condition="Window.IsVisible(MyPVRRecordings.xml)">pvr-recordings</value>
         <value condition="Window.IsVisible(MyPVRTimers.xml)">pvr-timers</value>
         <value condition="Window.IsVisible(MyPVRSearch.xml)">pvr-search</value>
         <value>none</value>
@@ -1247,19 +1248,21 @@
         <control type="button" id="60581">
             <include>9000SysButtons</include>
             <label>$LOCALIZE[137]</label>
-			<onclick>Skin.Reset(CustomSearchTerm)</onclick>
-		    <onclick>Skin.SetString(CustomSearchTerm)</onclick>
-		    <onclick>SetProperty(DoVideoSearch,true,Home)</onclick>
-			<onclick>ActivateWindow(1122)</onclick>
+			<onclick condition="Skin.HasSetting(DoCustomVideoSearch)">Skin.Reset(CustomSearchTerm)</onclick>
+		    <onclick condition="Skin.HasSetting(DoCustomVideoSearch)">Skin.SetString(CustomSearchTerm)</onclick>
+		    <onclick condition="Skin.HasSetting(DoCustomVideoSearch)">SetProperty(DoVideoSearch,true,Home)</onclick>
+			<onclick condition="Skin.HasSetting(DoCustomVideoSearch)">ActivateWindow(1122)</onclick>
+			<onclick condition="!Skin.HasSetting(DoCustomVideoSearch)">SendClick(videos,8)</onclick>
             <visible>Window.IsVisible(Videos)</visible>
         </control>
 		<control type="button" id="60582">
             <include>9000SysButtons</include>
             <label>$LOCALIZE[137]</label>
-			<onclick>Skin.Reset(CustomSearchTerm)</onclick>
-		    <onclick>Skin.SetString(CustomSearchTerm)</onclick>
-		    <onclick>SetProperty(DoMusicSearch,true,Home)</onclick>
-			<onclick>ActivateWindow(1122)</onclick>
+			<onclick condition="Skin.HasSetting(DoCustomMusicSearch)">Skin.Reset(CustomSearchTerm)</onclick>
+		    <onclick condition="Skin.HasSetting(DoCustomMusicSearch)">Skin.SetString(CustomSearchTerm)</onclick>
+		    <onclick condition="Skin.HasSetting(DoCustomMusicSearch)">SetProperty(DoMusicSearch,true,Home)</onclick>
+			<onclick condition="Skin.HasSetting(DoCustomMusicSearch)">ActivateWindow(1122)</onclick>
+			<onclick condition="!Skin.HasSetting(DoCustomMusicSearch)">SendClick(music,8)</onclick>
             <visible>Window.IsVisible(Music)</visible>
         </control>
 		<control type="edit" id="19">
@@ -1276,6 +1279,94 @@
             <label>$LOCALIZE[587]</label>
             <onclick>right</onclick>
             <onclick>Filter</onclick>
+        </control>
+    </include>
+	
+	<include name="9000PVRGrouplistParameters">
+        <posx>-491</posx>
+        <posy>60</posy>
+        <width>500</width>
+        <height>1120</height>
+        <onleft>9001</onleft>
+        <onright>ClearProperty(MediaMenu,Home)</onright>
+		<onright condition="Control.IsVisible(52)">52</onright>
+		<onright condition="Control.IsVisible(50)">50</onright>
+		<onright condition="Control.IsVisible(54)">54</onright>
+		<onright condition="Control.IsVisible(51)">51</onright>
+		<onright condition="Control.IsVisible(511)">511</onright>
+		<onright condition="Control.IsVisible(55)">55</onright>
+		<onright condition="Control.IsVisible(551)">551</onright>
+		<onright condition="Control.IsVisible(501)">501</onright>
+		<onright condition="Control.IsVisible(53)">53</onright>
+        <onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
+		<onup condition="!Skin.HasSetting(Enable.TouchSupport)">9000</onup>
+        <ondown>9000</ondown>
+	    <onback>ClearProperty(MediaMenu,Home)</onback>
+		<onback condition="Control.IsVisible(52)">52</onback>
+		<onback condition="Control.IsVisible(50)">50</onback>
+		<onback condition="Control.IsVisible(54)">54</onback>
+		<onback condition="Control.IsVisible(51)">51</onback>
+		<onback condition="Control.IsVisible(511)">511</onback>
+		<onback condition="Control.IsVisible(55)">55</onback>
+		<onback condition="Control.IsVisible(551)">551</onback>
+		<onback condition="Control.IsVisible(501)">501</onback>
+		<onback condition="Control.IsVisible(53)">53</onback>
+        <scrolltime>200</scrolltime>
+        <orientation>vertical</orientation>
+        <animation effect="fade" time="200" start="100" end="20" reversible="true" condition="[!ControlGroup(9000).HasFocus() + !Control.HasFocus(909090)]">Conditional</animation>
+        <control type="label" id="9140">
+            <textcolor>$VAR[HighlightColor]</textcolor>
+            <textoffsetx>10</textoffsetx>
+            <align>left</align>
+            <include>9000ViewButtons</include>
+            <label>$LOCALIZE[582]</label>
+        </control>
+        <control type="button" id="6051">
+            <include>9000SysButtons</include>
+            <label>$LOCALIZE[31023]</label>
+            <label2>$INFO[Container.Viewmode]</label2>
+            <enable>Integer.IsGreater(Container(9600).NumItems,1)</enable>
+            <onclick condition="!Skin.HasSetting(Enable.NewViewSelector) + !Window.IsVisible(MyPVRGuide.xml)">Control.SetFocus(9600)</onclick>
+			<onclick condition="Skin.HasSetting(Enable.NewViewSelector) + !Window.IsVisible(MyPVRGuide.xml)">Runscript(script.skinvariables,action=buildviews,contentid=$VAR[ViewModeSwitch],pluginname=$INFO[Container.PluginName])</onclick>
+        </control>
+
+		<include content="IconViewSwitches">
+            <param name="viewid">53</param>
+        </include>
+
+        <include content="IconViewSwitches">
+            <param name="viewid">55</param>
+        </include>
+        
+		<include content="IconViewSwitches">
+            <param name="viewid">551</param>
+        </include>
+		
+        <include content="IconViewSwitches">
+            <param name="viewid">51</param>
+        </include>
+		
+		<include content="IconViewSwitches">
+            <param name="viewid">511</param>
+        </include>
+		
+		<include>IconViewTitleSwitch</include>
+		
+		<include>SimpleListViewSwitch</include>
+
+        <control type="button" id="6053">
+            <include>9000SysButtons</include>
+            <label>$LOCALIZE[31024]</label>
+            <label2>$INFO[Container.SortMethod]</label2>
+            <visible>Control.IsEnabled(3)</visible>
+            <onclick>SendClick(3)</onclick>
+        </control>
+        <control type="button" id="6052">
+            <include>9000SysButtons</include>
+            <label>$LOCALIZE[31027]</label>
+            <label2>$INFO[Container.SortOrder]</label2>
+            <visible>Control.IsEnabled(4)</visible>
+            <onclick>SendClick(4)</onclick>
         </control>
     </include>
 

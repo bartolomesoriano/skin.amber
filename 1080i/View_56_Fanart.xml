@@ -1285,14 +1285,14 @@
 								<width>1000</width>
 								<height>45</height>
 								<font>font20_title</font>
-								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$INFO[ListItem.Duration(mins),,$LOCALIZE[31297]]$INFO[ListItem.EndTime, ($LOCALIZE[32294]: ,)]</label>
+								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$INFO[ListItem.Duration]$INFO[ListItem.EndTime, ($LOCALIZE[32294]: ,)]</label>
 								<visible>!Skin.HasSetting(Enable.HourMinutes)</visible>
 							</control>
 							<control type="label">
 								<width>1000</width>
 								<height>45</height>
 								<font>font20_title</font>
-								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$VAR[ItemDurationHrMins]$INFO[ListItem.EndTime, ($LOCALIZE[32294]: ,)]</label>
+								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$VAR[ItemDurationVar]$INFO[ListItem.EndTime, ($LOCALIZE[32294]: ,)]</label>
 								<visible>Skin.HasSetting(Enable.HourMinutes)</visible>
 							</control>
 						</control>
@@ -1329,7 +1329,7 @@
 								<width>1000</width>
 								<height>45</height>
 								<font>font20_title</font>
-								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Years),, • ]$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),, • ]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime),, $LOCALIZE[12391]]</label>
+								<label>[COLOR $VAR[HighlightColor]]$INFO[ListItem.RatingAndVotes,, • ][/COLOR]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Years),, • ]$INFO[Window(Home).Property(SkinInfo.Set.Movie.1.MPAA),, • ]$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime)]</label>
 								<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Years))</visible>
 							</control>
 						</control>
@@ -1394,7 +1394,7 @@
 							<height>45</height>
 							<width>650</width>
 							<font>font20_title</font>
-							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration(mins),, $LOCALIZE[12391]]</label>
+							<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]</label>
 							<visible>!String.IsEmpty(ListItem.Duration)</visible>
 						</control>
 						<control type="label">
@@ -1427,7 +1427,7 @@
 							    <height>45</height>
 							    <width>650</width>
 							    <font>font20_title</font>
-							    <label>[COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration(mins),,$LOCALIZE[31297]]$INFO[ListItem.EndTime, ($LOCALIZE[32294]: ,)]</label>
+							    <label>[COLOR $VAR[HighlightColor]]$LOCALIZE[2050]: [/COLOR]$INFO[ListItem.Duration]$INFO[ListItem.EndTime, ($LOCALIZE[32294]: ,)]</label>
 							    <visible>!String.IsEmpty(ListItem.Duration)</visible>
 						    </control>
 							<control type="label">

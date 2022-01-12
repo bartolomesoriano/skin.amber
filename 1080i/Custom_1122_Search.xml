@@ -193,21 +193,21 @@
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesPlot) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="121"/>
 				<param name="labelid" value="1211"/>
-                <param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32380] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(121).NumItems, (,)]"/>
+                <param name="headline" value="$LOCALIZE[32380] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(121).NumItems, (,)]"/>
 				<param name="content" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22plot%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D"/>
 			</include>
             <!-- TV Shows with Plot containing -->
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchTVShows) + !Skin.HasSetting(DisableSearchTVShowsPlot) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="122"/>
 				<param name="labelid" value="1221"/>
-                <param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32381] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(122).NumItems, (,)]"/>
+                <param name="headline" value="$LOCALIZE[32381] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(122).NumItems, (,)]"/>
 				<param name="content" value="videodb://tvshows/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22plot%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22tvshows%22%7D"/>
 			</include>
             <!-- Episodes with Plot containing -->
 			<include content="SearchWideList" condition="!Skin.HasSetting(DisableSearchEpisodes) + !Skin.HasSetting(DisableSearchEpisodesPlot) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="123"/>
 				<param name="labelid" value="1231"/>
-                <param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32382] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(123).NumItems, (,)]"/>
+                <param name="headline" value="$LOCALIZE[32382] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(123).NumItems, (,)]"/>
 				<param name="content" value="videodb://tvshows/titles/-1/-1/-1/-1/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22plot%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22episodes%22%7D"/>
 			</include>
 			
@@ -215,7 +215,7 @@
 			<include content="SearchPosterList" condition="!Skin.HasSetting(DisableSearchMovies) + !Skin.HasSetting(DisableSearchMoviesTags) + String.IsEmpty(Window(Home).Property(DoMusicSearch))">
 				<param name="id" value="124"/>
 				<param name="labelid" value="1241"/>
-                <param name="headline" value="$INFO[Skin.String(CustomSearchTerm),$LOCALIZE[32451] &quot;[CAPITALIZE],[/CAPITALIZE]&quot;]$INFO[Container(124).NumItems, (,)]"/>
+                <param name="headline" value="$LOCALIZE[32451] &quot;$INFO[Skin.String(CustomSearchTerm),[CAPITALIZE],[/CAPITALIZE]]&quot;$INFO[Container(124).NumItems, (,)]"/>
 				<param name="content" value="videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22tag%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(CustomSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D"/>
 			</include>
 			

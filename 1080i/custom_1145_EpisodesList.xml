@@ -94,8 +94,10 @@
 			        <top>90</top>
 			        <left>51</left>
 			        <orientation>horizontal</orientation>
-			        <onup>6002</onup>
-			        <ondown>6002</ondown>
+			        <onup condition="Control.IsVisible(6002)">6002</onup>
+			        <ondown condition="Control.IsVisible(6002)">6002</ondown>
+					<onup condition="Control.IsVisible(6004)">6004</onup>
+			        <ondown condition="Control.IsVisible(6004)">6004</ondown>
 			        <onleft>6001</onleft>
 			        <onright>6001</onright>
 			        <viewtype label="SeasonList">list</viewtype>
@@ -141,7 +143,7 @@
 			
 			<!-- Episodes list with seasons -->
             <control type="list" id="6002">
-				<visible>Skin.HasSetting(SeasonsEpisodeList)</visible>
+				<visible>Skin.HasSetting(SeasonsEpisodeList) + String.IsEqual(Container(6001).ListItem.DBType,season)</visible>
 				<animation effect="fade" start="100" end="70" condition="!Control.HasFocus(6002)">Conditional</animation>
 				<width>980</width>
 				<left>40</left>
@@ -384,6 +386,130 @@
 					</control>
 				</focusedlayout>
 				<content target="video" sortby="episode" sortorder="ascending">videodb://tvshows/titles/$INFO[Window(Home).Property(PlayerTVShowID)]/$INFO[VideoPlayer.Season]/?tvshowid=$INFO[Window(Home).Property(PlayerTVShowID)]</content>
+			</control>
+			
+			<!-- Movie info if linked movie to tv series -->
+            <control type="grouplist" id="6004">
+				<visible>Skin.HasSetting(SeasonsEpisodeList) + String.IsEqual(Container(6001).ListItem.DBType,movie)</visible>
+				<width>980</width>
+				<left>40</left>
+				<height>670</height>
+		        <top>100</top>
+		        <onup>6004</onup>
+		        <ondown>6004</ondown>
+				<onright>61</onright>
+				<pagecontrol>61</pagecontrol>
+				<orientation>vertical</orientation>
+				<usecontrolcoords>true</usecontrolcoords>
+				<control type="group" id="60041">
+					<top>19</top>
+					<left>30</left>
+					<include content="ShadowedImage">
+			            <param name="top">43</param>
+			            <param name="left">-8</param>
+			            <param name="width">306</param>
+			            <param name="height">474</param>
+			            <param name="texture">$INFO[Container(6001).ListItem.Art(poster)]</param>
+			            <param name="aspect">stretch</param>
+		            </include>
+					<control type="group">
+					    <visible>!Skin.HasSetting(ShowTopRightOverlays)</visible>
+					    <control type="image" description="Watched Overlay">
+					        <left>265</left>
+					        <top>480</top>
+					        <width>30</width>
+					        <height>30</height>
+					        <texture>$VAR[EpisodesListOverlay]</texture>
+    				        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
+					        <aspectratio>keep</aspectratio>
+				        </control>
+					</control>	
+					<control type="group">
+					    <visible>Skin.HasSetting(ShowTopRightOverlays)</visible>
+						<control type="group">
+				            <visible>!Container(6001).ListItem.IsResumable</visible>
+			                <control type="image">
+				                <texture background="true">$VAR[EpisodesListTopRightOverlay]</texture>
+				                <posx>220</posx>
+				                <posy>44</posy>
+				                <height>82</height>
+				                <width>82</width>
+				                <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
+				                <aspectratio>keep</aspectratio>
+			                </control>
+						</control>	
+						<!-- In-Progress overlay -->
+				        <control type="group">
+				            <visible>Integer.IsGreater(Container(6001).ListItem.PercentPlayed,0) + !Skin.HasSetting(Hide_InProgress_Marks)</visible>
+				            <control type="image">
+				                <texture background="true" colordiffuse="$VAR[MediaWidgetsHighlightColor]">$VAR[EpisodesListTopRightInProgress]</texture>
+				                <posx>92r</posx>
+				                <posy>12</posy>
+				                <height>72</height>
+				                <width>72</width>
+			                </control>
+			            </control>
+				    </control>
+					<control type="group">
+					    <visible>Skin.HasSetting(ShowRatingOverlays)</visible>
+				        <control type="image">
+				            <texture background="true" flipx="true">overlays/toprightempty2.png</texture>
+				            <posx>-8</posx>
+				            <posy>44</posy>
+				            <height>90</height>
+				            <width>90</width>
+					        <colordiffuse>$VAR[HighlightColor]</colordiffuse>
+			            </control>
+				        <control type="label" description="l2">
+					        <posx>2</posx>
+				            <posy>52</posy>
+					        <height>35</height>
+					        <width>35</width>
+					        <font>ListDetailsExtraSmall</font>
+					        <align>center</align>
+					        <shadowcolor></shadowcolor>
+					        <label>$VAR[EpisodesListRatingOverlayVar]</label>
+					        <textcolor>$VAR[HighlightColor]</textcolor>
+					        <colordiffuse>$VAR[HighlightColor]</colordiffuse>
+				        </control>
+					</control>
+					<control type="label">
+						<left>317</left>
+						<top>43</top>
+						<height>58</height>
+						<width>830</width>
+						<align>left</align>
+						<scroll>true</scroll>
+						<label>[B]$INFO[Container(6001).ListItem.Label][/B]  ($INFO[Container(6001).ListItem.Premiered])</label>
+						<textcolor>$VAR[HighlightColor]</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="label">
+						<top>110</top>
+						<left>317</left>
+						<height>58</height>
+						<width>785</width>
+						<align>left</align>
+						<font>ListDetails</font>
+						<scroll>true</scroll>
+						<label>[B][CAPITALIZE][COLOR=$VAR[HighlightColor]][LOWERCASE]$LOCALIZE[19081]:[/LOWERCASE][/CAPITALIZE][/COLOR][/B] $INFO[Container(6001).ListItem.EndTime]</label>
+						<textcolor>white</textcolor>
+						<selectedcolor>white</selectedcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+					<control type="textbox">
+						<left>317</left>
+						<top>171</top>
+						<width>578</width>
+						<height>360</height>
+						<align>justify</align>
+						<aligny>top</aligny>
+						<textcolor>white</textcolor>
+						<selectedcolor>black</selectedcolor>
+						<label>$INFO[Container(6001).ListItem.Plot]</label>
+					</control>
+				</control>
 			</control>
 			
 			<control type="scrollbar" id="61">

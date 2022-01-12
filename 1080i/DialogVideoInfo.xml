@@ -16,9 +16,10 @@
     
 	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">Dialog.Close(VideoOSD,true)</onload>
 	
-	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo)">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(poster)]"',prop=EHBlur,radius=3)</onload>
-	
-	
+	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + !String.IsEmpty(ListItem.Art(poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(poster)]"',prop=EHBlur,radius=3)</onload>
+	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + String.IsEmpty(ListItem.Art(poster)) + !String.IsEmpty(ListItem.Art(season.poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(season.poster)]"',prop=EHBlur,radius=3)</onload>
+	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(season.poster)) + !String.IsEmpty(ListItem.Art(tvshow.poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(tvshow.poster)]"',prop=EHBlur,radius=3)</onload>
+	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo) + !Skin.HasSetting(Blur.UsePoster) | [String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(season.poster)) + String.IsEmpty(ListItem.Art(tvshow.poster))]">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(fanart)]"',prop=EHBlur,radius=3)</onload>
 	
 	<!-- Close custom search dialogs if they are open so that we can perform searches from here without issue -->
 	<onload condition="Window.IsVisible(Custom_1122_Search.xml)">Dialog.Close(1122,force)</onload>
@@ -117,11 +118,11 @@
 				<visible>!String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEqual(ListItem.Title,Player.Title)</visible>
             </control>
             
-			<include condition="Skin.HasSetting(Enable.BlurredVideoInfo)" content="BackgroundOverlayVideoInfo">
+			<include condition="Skin.HasSetting(Enable.BlurredVideoInfo) + String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))" content="BackgroundOverlayVideoInfo">
                 <param name="parentid" value="9000"/>
 				<param name="colordiffuse">9FFFFFFF</param>
             </include>
-			<include condition="!Skin.HasSetting(Enable.BlurredVideoInfo)" content="BackgroundOverlayVideoInfo">
+			<include condition="!Skin.HasSetting(Enable.BlurredVideoInfo) | !String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))" content="BackgroundOverlayVideoInfo">
                 <param name="parentid" value="9000"/>
             </include>
 			
@@ -138,15 +139,26 @@
 			<visible>String.Contains(ListItem.FolderPath,type=person)</visible>
         </control>
 		<!-- Poster -->
-        <include content="ShadowedImage">
-            <param name="top">24</param>
-            <param name="left">24</param>
-            <param name="width">619</param>
-            <param name="height">960</param>
-            <param name="shadowoffset">16</param>
-            <param name="texture">$VAR[DialogVideoInfoPoster]</param>
-            <param name="visibility">[!String.IsEqual(ListItem.DBType,episode) | !Skin.HasSetting(Show.EpisodeThumbInfo)]</param>
-        </include>
+        <control type="group">
+		    <include content="ShadowedImage">
+                <param name="top">24</param>
+                <param name="left">24</param>
+                <param name="width">619</param>
+                <param name="height">960</param>
+                <param name="shadowoffset">16</param>
+                <param name="texture">$VAR[DialogVideoInfoPoster]</param>
+                <param name="visibility">[!String.IsEqual(ListItem.DBType,episode) | !Skin.HasSetting(Show.EpisodeThumbInfo)] + ![Skin.HasSetting(Trailer.WindowVideoInfo) + Player.HasVideo]</param>
+            </include>
+			<include content="ShadowedImage">
+                <param name="top">24</param>
+                <param name="left">174</param>
+                <param name="width">350</param>
+                <param name="height">490</param>
+                <param name="shadowoffset">16</param>
+                <param name="texture">$VAR[DialogVideoInfoPoster]</param>
+                <param name="visibility">[!String.IsEqual(ListItem.DBType,episode) | !Skin.HasSetting(Show.EpisodeThumbInfo)] + [Skin.HasSetting(Trailer.WindowVideoInfo) + Player.HasVideo]</param>
+            </include>
+		</control>	
 		<!-- Episode images -->
         <control type="group" description="episode images, regular info dialog">
             <visible>String.IsEqual(ListItem.DBType,episode) + Skin.HasSetting(Show.EpisodeThumbInfo)</visible>
@@ -166,7 +178,7 @@
                 <param name="height">348</param>
                 <param name="shadowoffset">16</param>
                 <param name="texture">$VAR[DialogVideoInfoThumb]</param>
-                <param name="visibility">[[String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) | !String.IsEqual(ListItem.Title,Player.Title)] + !String.IsEmpty(ListItem.Art(tvshow.banner))] | [[!String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEqual(ListItem.Title,Player.Title)] + !String.IsEmpty(Player.Art(tvshow.banner))]</param>
+                <param name="visibility">![Skin.HasSetting(Trailer.WindowVideoInfo) + Player.HasVideo] + [[String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) | !String.IsEqual(ListItem.Title,Player.Title)] + !String.IsEmpty(ListItem.Art(tvshow.banner))] | [[!String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEqual(ListItem.Title,Player.Title)] + !String.IsEmpty(Player.Art(tvshow.banner))]</param>
             </include>
             <include content="ShadowedImage">
                 <param name="top">340</param>
@@ -175,7 +187,7 @@
                 <param name="height">348</param>
                 <param name="shadowoffset">16</param>
                 <param name="texture">$VAR[DialogVideoInfoThumb]</param>
-                <param name="visibility">[[String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) | !String.IsEqual(ListItem.Title,Player.Title)] + String.IsEmpty(ListItem.Art(tvshow.banner))] | [[!String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEqual(ListItem.Title,Player.Title)] + String.IsEmpty(Player.Art(tvshow.banner))]</param>
+                <param name="visibility">![Skin.HasSetting(Trailer.WindowVideoInfo) + Player.HasVideo] + [[String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) | !String.IsEqual(ListItem.Title,Player.Title)] + String.IsEmpty(ListItem.Art(tvshow.banner))] | [[!String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive)) + String.IsEqual(ListItem.Title,Player.Title)] + String.IsEmpty(Player.Art(tvshow.banner))]</param>
             </include>            
         </control>
 		<!-- TV Show banner if there is no cast and seasons list is disabled -->
@@ -1002,11 +1014,45 @@
                 <font>Details</font>
                 <align>center</align>
                 <label>$LOCALIZE[20410]</label>
-				<onclick condition="Skin.HasSetting(Enable.TMDbHelper)">RunScript(plugin.video.themoviedb.helper,close_dialog=1134,playmedia=$INFO[ListItem.Trailer])</onclick>
-				<onclick condition="!Skin.HasSetting(Enable.TMDbHelper)">SendClick(11)</onclick>
-				<onclick condition="!Skin.HasSetting(Enable.TMDbHelper)">Dialog.Close(all)</onclick>
+                <onclick condition="!Skin.HasSetting(Trailer.WindowVideoInfo)">PlayMedia($INFO[ListItem.Trailer])</onclick>
+				<onclick condition="!Skin.HasSetting(Trailer.WindowVideoInfo)">Dialog.Close(all)</onclick>
+				<onclick condition="Skin.HasSetting(Trailer.WindowVideoInfo)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
                 <visible>!String.IsEmpty(ListItem.Trailer) + !ListItem.IsCollection + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]</visible>
+				<visible>String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))</visible>
             </control>
+			<control type="button" id="8004" description="TMDb Helper Trailer">
+                <height>90</height>
+                <width min="210">auto</width>
+                <font>Details</font>
+                <align>center</align>
+                <label>$LOCALIZE[20410]</label>
+                <onclick condition="!Skin.HasSetting(Trailer.WindowVideoInfo)">PlayMedia($INFO[Window(Home).Property(TMDbHelper.ListItem.Trailer)])</onclick>
+				<onclick condition="!Skin.HasSetting(Trailer.WindowVideoInfo)">Dialog.Close(all)</onclick>
+				<onclick condition="Skin.HasSetting(Trailer.WindowVideoInfo)">PlayMedia($INFO[Window(Home).Property(TMDbHelper.ListItem.Trailer)],1)</onclick>
+                <visible>Skin.HasSetting(Enable.TMDbHelper) + String.IsEmpty(ListItem.Trailer) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Trailer)) + !ListItem.IsCollection + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]</visible>
+				<visible>String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))</visible>
+            </control>
+			<control type="button" id="8005">
+				<description>Search Trailer</description>
+				<height>90</height>
+                <width min="210">auto</width>
+                <font>Details</font>
+                <align>center</align>
+                <label>$LOCALIZE[32464]</label>
+				<!-- Search with imdb trailers addon -->
+				<onclick condition="Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.imdb.trailers)">Dialog.Close(movieinformation)</onclick>
+				<onclick condition="Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.imdb.trailers) + !String.IsEmpty(ListItem.uniqueid(imdb))">PlayMedia(plugin://plugin.video.imdb.trailers/?action=play_id&amp;imdb=$INFO[ListItem.uniqueid(imdb)])</onclick>
+				<onclick condition="Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.imdb.trailers) + String.IsEmpty(ListItem.uniqueid(imdb)) + ![String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,season) | [String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.TVShowTitle,ListItem.Label)]]">ActivateWindow(videos,"plugin://plugin.video.imdb.trailers/?action=search_word&amp;keyword=$INFO[ListItem.Label]",return)</onclick>
+				<onclick condition="Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.imdb.trailers) + String.IsEmpty(ListItem.uniqueid(imdb)) + [String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,season) | [String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.TVShowTitle,ListItem.Label)]]">ActivateWindow(videos,"plugin://plugin.video.imdb.trailers/?action=search_word&amp;keyword=$INFO[ListItem.TVShowTitle] $INFO[ListItem.Label]",return)</onclick>
+				<!-- Search with YouTube addon -->
+				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.youtube)">Dialog.Close(movieinformation)</onclick>
+				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.youtube) + ![String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,season) | [String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.TVShowTitle,ListItem.Label)]]">ActivateWindow(videos,"plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[ListItem.Label] trailer/",return)</onclick>
+				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.youtube) + [String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,season) | [String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.TVShowTitle,ListItem.Label)]]">ActivateWindow(videos,"plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[ListItem.TVShowTitle] $INFO[ListItem.Label] trailer/",return)</onclick>
+				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + !System.HasAddon(plugin.video.youtube)">InstallAddon(plugin.video.youtube)</onclick>
+				<onclick condition="1Skin.HasSetting(Trailer.SearchIMDb) + System.HasAddon(plugin.video.youtube) + !System.AddonIsEnabled(plugin.video.youtube)">EnableAddon(plugin.video.youtube)</onclick>
+				<visible>!String.Contains(ListItem.FolderPath,type=person) + String.IsEmpty(ListItem.Trailer) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Trailer)) + !ListItem.IsCollection + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]</visible>
+				<visible>String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))</visible>
+			</control>
             <control type="button" id="6" description="Refresh">
                 <height>90</height>
                 <width min="210">auto</width>
@@ -1023,12 +1069,13 @@
                 <align>center</align>
                 <font>Details</font>
                 <label>$LOCALIZE[32127]</label>
-				<onclick condition="String.IsEqual(ListItem.DBTYPE,movie) + !String.IsEmpty(ListItem.IMDBNumber)">RunScript(script.embuary.info,call=movie,external_id=$INFO[ListItem.IMDBNumber])</onclick>
-				<onclick condition="String.IsEqual(ListItem.DBTYPE,movie) + String.IsEmpty(ListItem.IMDBNumber)">RunScript(script.embuary.info,call=movie,query='"$INFO[ListItem.Title]"',year=$INFO[ListItem.Year])</onclick>
+				<onclick condition="String.IsEqual(ListItem.DBTYPE,movie) + !String.IsEmpty(ListItem.uniqueid(tmdb))">RunScript(script.embuary.info,call=movie,tmdb_id=$INFO[ListItem.uniqueid(tmdb)])</onclick>
+				<onclick condition="String.IsEqual(ListItem.DBTYPE,movie) + String.IsEmpty(ListItem.uniqueid(tmdb)) + !String.IsEmpty(ListItem.IMDBNumber)">RunScript(script.embuary.info,call=movie,external_id=$INFO[ListItem.IMDBNumber])</onclick>
+				<onclick condition="String.IsEqual(ListItem.DBTYPE,movie) + String.IsEmpty(ListItem.uniqueid(tmdb)) + String.IsEmpty(ListItem.IMDBNumber)">RunScript(script.embuary.info,call=movie,query='"$INFO[ListItem.Title]"',year=$INFO[ListItem.Year])</onclick>
 				<onclick condition="String.IsEqual(ListItem.DBTYPE,tvshow)">RunScript(script.embuary.info,call=tv,query='"$INFO[ListItem.Title]"',year=$INFO[ListItem.Year])</onclick>
                 <onclick condition="String.IsEqual(ListItem.DBTYPE,episode)">RunScript(script.embuary.info,call=tv,query=$INFO[ListItem.TVShowTitle])</onclick>
-				<visible>[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie)] + system.hasaddon(script.embuary.info)</visible>
-                <visible>!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))</visible>
+				<visible>[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie)] + System.AddonIsEnabled(script.embuary.info)</visible>
+                <visible>!String.IsEmpty(Listitem.DBID)</visible>
             </control>
             <control type="button" id="296" description="Special Features">
                 <height>90</height>
@@ -1398,6 +1445,26 @@
             <animation effect="fade" start="100" end="0" time="300">Hidden</animation>
             <animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
             <visible>Control.HasFocus(90050) + System.HasAddon(resource.images.actorart)</visible>
+        </control>
+		
+		<control type="group">
+		    <visible>Skin.HasSetting(Trailer.WindowVideoInfo) + Player.HasVideo + String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))</visible>
+            <left>10</left>
+			<top>500</top>
+			<width>670</width>
+			<height>500</height>
+			<control type="image" description="BG">
+			    <posx>0</posx>
+			    <posy>62</posy>
+			    <width>670</width>
+			    <height>392</height>
+			    <texture border="8">img/WhiteRoundedST2.png</texture>
+				<colordiffuse>Black</colordiffuse>
+			    <aspectratio>stretch</aspectratio>
+			</control>
+            <control type="videowindow">
+			    <top>14</top>
+            </control>
         </control>
 
     </controls>

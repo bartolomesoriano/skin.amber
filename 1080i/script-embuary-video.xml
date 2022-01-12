@@ -316,7 +316,7 @@
                         </item>
                         <item>
                             <label>$LOCALIZE[2050]:</label>
-                            <label2>$INFO[Container(10051).ListItem.Duration] $LOCALIZE[12391]</label2>
+                            <label2>$INFO[Container(10051).ListItem.Duration]</label2>
                             <onclick>noop</onclick>
                             <visible>!String.IsEmpty(Container(10051).ListItem.Duration) + !Skin.HasSetting(Enable.HourMinutes)</visible>
                         </item>

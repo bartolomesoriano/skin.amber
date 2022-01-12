@@ -3731,3 +3731,71 @@ msgstr ""
 msgctxt "#32462"
 msgid "Hide Disc over Set Poster"
 msgstr ""
+
+msgctxt "#32463"
+msgid "Play trailer in a window"
+msgstr ""
+
+msgctxt "#32464"
+msgid "Search Trailer"
+msgstr ""
+
+msgctxt "#32465"
+msgid "Search for Trailers with IMDb Trailers Addon"
+msgstr ""
+
+msgctxt "#32466"
+msgid "Fade out Non-focused Menu Items"
+msgstr ""
+
+msgctxt "#32467"
+msgid "Cloudiness"
+msgstr ""
+
+msgctxt "#32468"
+msgid "Probability of Precipitation"
+msgstr ""
+
+msgctxt "#32469"
+msgid "Intro Video Duration"
+msgstr ""
+
+msgctxt "#32470"
+msgid "PVR Timeshift Buffer Color"
+msgstr ""
+
+msgctxt "#32471"
+msgid "Use Main Menu item Background for Sub Windows"
+msgstr ""
+
+msgctxt "#32472"
+msgid "Teletext Button Opens EPG"
+msgstr ""
+
+msgctxt "#32473"
+msgid "EPG Icon"
+msgstr ""
+
+msgctxt "#32474"
+msgid "Channel Logo"
+msgstr ""
+
+msgctxt "#32475"
+msgid "Always Show Information Panel"
+msgstr ""
+
+msgctxt "#32476"
+msgid "Use Custom Search for Video Library"
+msgstr ""
+
+msgctxt "#32477"
+msgid "Use Custom Search for Music Library"
+msgstr ""
+
+msgctxt "#32478"
+msgid "Current Programme Progress:"
+msgstr ""
+
+msgctxt "#32479"
+msgid "Also Show Seconds"
+msgstr ""

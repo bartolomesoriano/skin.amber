@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-10-08 03:23+0000\n"
+"PO-Revision-Date: 2022-01-12 19:11+0000\n"
 "Last-Translator: rimasx <riks_12@hot.ee>\n"
 "Language-Team: Estonian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/et_ee/>\n"
 "Language: et_ee\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.10.1\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -1041,7 +1041,7 @@ msgstr "Soovitatud episoodid"
 
 msgctxt "#31493"
 msgid "Unwatched TV Shows"
-msgstr "Vaatamata episoodid"
+msgstr "Vaatamata sarjad"
 
 msgctxt "#31494"
 msgid "Recently Released Albums"
@@ -3631,19 +3631,19 @@ msgstr ""
 
 msgctxt "#32456"
 msgid "Cert"
-msgstr ""
+msgstr "Sert"
 
 msgctxt "#32457"
 msgid "Show Episodes List button"
-msgstr ""
+msgstr "Kuva episoodiloendi nupp"
 
 msgctxt "#32458"
 msgid "Include Seasons in Episodes List popup"
-msgstr ""
+msgstr "Kaasa hooajad episoodiloendisse"
 
 msgctxt "#32459"
 msgid "Next Aired"
-msgstr ""
+msgstr "Järgmine esitus"
 
 msgctxt "#32460"
 msgid "Enable Direct Seeking in Full Screen Info"
@@ -3655,6 +3655,74 @@ msgstr ""
 
 msgctxt "#32462"
 msgid "Hide Disc over Set Poster"
+msgstr ""
+
+msgctxt "#32463"
+msgid "Play trailer in a window"
+msgstr "Kuva treiler aknas"
+
+msgctxt "#32464"
+msgid "Search Trailer"
+msgstr "Otsi treilerit"
+
+msgctxt "#32465"
+msgid "Search for Trailers with IMDb Trailers Addon"
+msgstr "Otsi treilereid IMDb Trailers lisamooduliga"
+
+msgctxt "#32466"
+msgid "Fade out Non-focused Menu Items"
+msgstr ""
+
+msgctxt "#32467"
+msgid "Cloudiness"
+msgstr ""
+
+msgctxt "#32468"
+msgid "Probability of Precipitation"
+msgstr ""
+
+msgctxt "#32469"
+msgid "Intro Video Duration"
+msgstr ""
+
+msgctxt "#32470"
+msgid "PVR Timeshift Buffer Color"
+msgstr ""
+
+msgctxt "#32471"
+msgid "Use Main Menu item Background for Sub Windows"
+msgstr "Kasuta alamakendel peamenüü üksuse taustapilti"
+
+msgctxt "#32472"
+msgid "Teletext Button Opens EPG"
+msgstr ""
+
+msgctxt "#32473"
+msgid "EPG Icon"
+msgstr "EPG ikoon"
+
+msgctxt "#32474"
+msgid "Channel Logo"
+msgstr "Kanalilogo"
+
+msgctxt "#32475"
+msgid "Always Show Information Panel"
+msgstr "Kuva alati infopaneel"
+
+msgctxt "#32476"
+msgid "Use Custom Search for Video Library"
+msgstr "Kasuta videokogu jaoks kohandatud otsingut"
+
+msgctxt "#32477"
+msgid "Use Custom Search for Music Library"
+msgstr "Kasuta muusikakogu jaoks kohandatud otsingut"
+
+msgctxt "#32478"
+msgid "Current Programme Progress:"
+msgstr "Saate praegune edenemine:"
+
+msgctxt "#32479"
+msgid "Also Show Seconds"
 msgstr ""
 
 #~ msgctxt "#31650"

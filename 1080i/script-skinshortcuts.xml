@@ -376,9 +376,9 @@
 				<control type="radiobutton" id="807">
 					<label>$LOCALIZE[32258]</label>
 					<description>Use Embuary Helper for Playlist/Node Fanart</description>
-					<onclick condition="!String.IsEmpty(Container(211).ListItem.Property(EHPlaylistFanart))">SetProperty(customProperty,EHPlaylistFanart)</onclick>
-					<onclick condition="String.IsEqual(Container(211).ListItem.Property(EHPlaylistFanart),true)">SetProperty(customProperty,EHPlaylistFanart)</onclick>
-					<onclick condition="String.IsEqual(Container(211).ListItem.Property(EHPlaylistFanart),false)">SetProperty(customValue,true)</onclick>
+					<onclick>SetProperty(customProperty,EHPlaylistFanart)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(EHPlaylistFanart),true)">SetProperty(customValue,false)</onclick>
+					<onclick condition="String.IsEqual(Container(211).ListItem.Property(EHPlaylistFanart),false) | String.IsEmpty(Container(211).ListItem.Property(EHPlaylistFanart))">SetProperty(customValue,true)</onclick>
 					<onclick>SendClick(404)</onclick>
 					<selected>String.IsEqual(Container(211).ListItem.Property(EHPlaylistFanart),true)</selected>
 					<height>60</height>
@@ -482,7 +482,7 @@
 					<include>Disable3ShelvesLarge</include>
 				</control>
 				<control type="radiobutton" id="813">
-					<visible>!Skin.HasSetting(Hide.AllShelves)</visible>
+					<visible>!Skin.HasSetting(Hide.AllShelves) + String.IsEqual(Window.Property(groupname),mainmenu)</visible>
 					<label>$LOCALIZE[31654]</label>
 					<onclick condition="!String.IsEmpty(Container(211).ListItem.Property(showShelvesInfo))">SetProperty(customProperty,showShelvesInfo)</onclick>
 					<onclick condition="String.IsEqual(Container(211).ListItem.Property(showShelvesInfo),true)">SetProperty(customProperty,showShelvesInfo)</onclick>

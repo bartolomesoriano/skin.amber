@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-09-26 16:48+0000\n"
+"PO-Revision-Date: 2021-12-08 19:19+0000\n"
 "Last-Translator: Edson Armando <edsonarmando78@outlook.com>\n"
 "Language-Team: Spanish (Mexico) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/es_mx/>\n"
 "Language: es_mx\n"
@@ -15,15 +15,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.9.1\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
-msgstr ""
+msgstr "Nada de bloatware, solo tu multimedia con una interfaz fácil de navegar"
 
 msgctxt "Addon Description"
 msgid "No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins."
-msgstr ""
+msgstr "Nada de bloatware, solo tu multimedia con una interfaz fácil de navegar.[CR]Utiliza algunas texturas de las máscaras Mediastream y Aeon."
 
 msgctxt "#31000"
 msgid "Picture Channels"
@@ -167,7 +167,7 @@ msgstr "Ocultar info meteorológica en la barra de título"
 
 msgctxt "#31035"
 msgid "Media Flags"
-msgstr ""
+msgstr "Indicadores de medios"
 
 msgctxt "#31036"
 msgid "Next tracks"
@@ -195,11 +195,11 @@ msgstr "Repositorio"
 
 msgctxt "#31045"
 msgid "Show Triple Row Shelf"
-msgstr "Mostrar Widget de Tres Filas"
+msgstr "Mostrar widget de tres filas"
 
 msgctxt "#31046"
 msgid "Show Double Row Shelf"
-msgstr "Mostrar Widget de Dos Filas"
+msgstr "Mostrar widget de dos filas"
 
 msgctxt "#31047"
 msgid "Select your Kodi user profile to login and continue"
@@ -387,7 +387,7 @@ msgstr "Ocultar series de TV en progreso"
 
 msgctxt "#31107"
 msgid "Shelf style"
-msgstr "Estilo Widget"
+msgstr "Estilo de widget"
 
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
@@ -983,7 +983,7 @@ msgstr "Orden de Clasificación"
 
 msgctxt "#31482"
 msgid "Shelf Limit"
-msgstr "Límite de Widget"
+msgstr "Límite de widget"
 
 msgctxt "#31483"
 msgid "Hide Shelves when not Focused"
@@ -995,11 +995,11 @@ msgstr "Desactivar Fanart de Widgets"
 
 msgctxt "#31485"
 msgid "Enable PVR TV Recording Shelf"
-msgstr "Activar Widget de Grabaciones de TV"
+msgstr "Activar widget de grabaciones de TV"
 
 msgctxt "#31486"
 msgid "Enable PVR Radio Recording Shelf"
-msgstr "Activar Widget de Grabaciones de Radio"
+msgstr "Activar widget de grabaciones de radio"
 
 msgctxt "#31487"
 msgid "Favourite Addons"
@@ -1463,7 +1463,7 @@ msgstr "Límite de Fanarts como Fondo para Listas/Nodos"
 
 msgctxt "#31605"
 msgid "Custom Shelf"
-msgstr "Widget Personalizado"
+msgstr "Widget personalizado"
 
 msgctxt "#31606"
 msgid "Tall List"
@@ -1503,19 +1503,19 @@ msgstr "Baja"
 
 msgctxt "#31615"
 msgid "Label on Shelf Item"
-msgstr "Etiqueta en ítem de Widget"
+msgstr "Etiqueta en elemento de widget"
 
 msgctxt "#31616"
 msgid "Shelf Sort Method"
-msgstr "Método de Clasificación"
+msgstr "Método de clasificación"
 
 msgctxt "#31617"
 msgid "Shelf Sort Direction"
-msgstr "Orden de Clasificación"
+msgstr "Orden de clasificación"
 
 msgctxt "#31618"
 msgid "Shelf Item Limit"
-msgstr "Límite de Widget"
+msgstr "Límite de widget"
 
 msgctxt "#31619"
 msgid "Thumb"
@@ -1599,11 +1599,11 @@ msgstr "Mostrar atajos inferiores en este elemento de menú"
 
 msgctxt "#31639"
 msgid "Short Daily Weather"
-msgstr ""
+msgstr "Clima diario resumido"
 
 msgctxt "#31640"
 msgid "Short Hourly Weather"
-msgstr ""
+msgstr "Clima por hora resumido"
 
 msgctxt "#31641"
 msgid "Surprise Me"
@@ -1623,43 +1623,43 @@ msgstr "Sorpréndeme (Videoclip)"
 
 msgctxt "#31645"
 msgid "Make Default Menu Item"
-msgstr ""
+msgstr "Hacer elemento de menú predeterminado"
 
 msgctxt "#31646"
 msgid "Current Default Menu Item"
-msgstr ""
+msgstr "Elemento de menú predeterminado actual"
 
 msgctxt "#31647"
 msgid "Enable Choosing Default Menu Item"
-msgstr ""
+msgstr "Activar elemento de menú predeterminado"
 
 msgctxt "#31648"
 msgid "Right List"
-msgstr ""
+msgstr "Lista a la derecha"
 
 msgctxt "#31649"
 msgid "Decades"
-msgstr ""
+msgstr "Décadas"
 
 msgctxt "#31650"
 msgid "Show Information Popup"
-msgstr ""
+msgstr "Mostrar ventana de información"
 
 msgctxt "#31651"
 msgid "Center shelf items on screen"
-msgstr ""
+msgstr "Centrar elementos de widget en pantalla"
 
 msgctxt "#31652"
 msgid "Select Information Popup Delay (in seconds)"
-msgstr ""
+msgstr "Seleccionar retraso de ventana de información (en segundos)"
 
 msgctxt "#31653"
 msgid "Information Popup Delay"
-msgstr ""
+msgstr "Retraso de ventana de información"
 
 msgctxt "#31654"
 msgid "Show Information for Shelves"
-msgstr ""
+msgstr "Mostrar más información en widgets"
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
@@ -1800,7 +1800,7 @@ msgstr "Recomendado"
 
 msgctxt "#31967"
 msgid "Enable Home shelf"
-msgstr "Habilitar widget en la Ventana Inicial"
+msgstr "Habilitar widget de la ventana principal"
 
 msgctxt "#31968"
 msgid "Show info"
@@ -1837,7 +1837,7 @@ msgstr "Canales"
 
 msgctxt "#31976"
 msgid "Home shelf"
-msgstr "Widget en la Ventana Inicial"
+msgstr "Widget en ventana principal"
 
 msgctxt "#31977"
 msgid "Fast start"
@@ -1861,7 +1861,7 @@ msgstr "Ocultar Indicadores de visto"
 
 msgctxt "#31982"
 msgid "Shelf items populate more slowly on some systems. By default, skin waits for them to be ready and presents Home screen afterwards.[CR][CR]This option skips this step and presents Home page immediately. Shelf items will appear with a delay, depending on a speed of your system."
-msgstr "Los elementos de widgets se llenan con mayor lentitud en algunos sistemas. Por defecto, la skin espera a que estén listos para mostrar la pantalla principal.[CR][CR]Esta opción se salta este paso y muestra la pantalla principal de inmediato. Los elementos del widget aparecerán más tarde, dependiendo de la velocidad de tu sistema."
+msgstr "Los elementos de widgets se llenan con mayor lentitud en algunos sistemas. Por defecto, la máscara espera a que estén listos para mostrar la pantalla principal.[CR][CR]Esta opción se salta este paso y muestra la pantalla principal de inmediato. Los elementos del widget aparecerán más tarde, dependiendo de la velocidad de tu sistema."
 
 msgctxt "#31983"
 msgid "Choose from menu"
@@ -2133,7 +2133,7 @@ msgstr "Utilizar Font Agrandado"
 
 msgctxt "#32055"
 msgid "Use Wraparound Navigation"
-msgstr ""
+msgstr "Utilizar navegación continua"
 
 msgctxt "#32056"
 msgid "Show more items on List Views"
@@ -2161,7 +2161,7 @@ msgstr "Establecer Fondo Predeterminado"
 
 msgctxt "#32062"
 msgid "Set Favourite Addons for Shelf"
-msgstr "Establecer Complementos Favoritos para Widget"
+msgstr "Establecer complementos favoritos para el widget"
 
 msgctxt "#32063"
 msgid "Select Favourite Addons"
@@ -2773,7 +2773,7 @@ msgstr "Activar Deslizamiento de Etiquetas en Vistas de Lista"
 
 msgctxt "#32223"
 msgid "Audio and Subtitle Info"
-msgstr ""
+msgstr "Información de audio y subtítulo"
 
 msgctxt "#32224"
 msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
@@ -2809,7 +2809,7 @@ msgstr "Valoración de Usuario"
 
 msgctxt "#32232"
 msgid "Ratings"
-msgstr ""
+msgstr "Calificaciones"
 
 msgctxt "#32235"
 msgid "Certification"
@@ -2873,7 +2873,7 @@ msgstr "Activar Línea de Estadísticas"
 
 msgctxt "#32250"
 msgid "Show Statistics line on Shelf"
-msgstr "Mostrar Línea de Estadísticas en Widget"
+msgstr "Mostrar línea de estadísticas en widget"
 
 msgctxt "#32251"
 msgid "Show Marks on Top Right"
@@ -2889,7 +2889,7 @@ msgstr "Películas en Colección"
 
 msgctxt "#32254"
 msgid "IMDb Top 250"
-msgstr ""
+msgstr "Top 250 IMDb"
 
 msgctxt "#32255"
 msgid "Missing Add-on"
@@ -2925,7 +2925,7 @@ msgstr "Utilizar Embuary Helper para Fondos"
 
 msgctxt "#32263"
 msgid "Movie Collection Count"
-msgstr ""
+msgstr "Recuento de colección de películas"
 
 msgctxt "#32264"
 msgid "Show Fanart for Special Content"
@@ -2933,7 +2933,7 @@ msgstr "Mostrar Fanart para Contenido Especial"
 
 msgctxt "#32265"
 msgid "Media Play Count"
-msgstr ""
+msgstr "Recuento de reproducción de medios"
 
 msgctxt "#32266"
 msgid "Color Options"
@@ -2949,7 +2949,7 @@ msgstr "Mostrar Tres Widgets Juntos"
 
 msgctxt "#32269"
 msgid "Configure Custom Shelf"
-msgstr "Configurar Widget Personalizado"
+msgstr "Configurar widget personalizado"
 
 msgctxt "#32270"
 msgid "Shift Fanart View Focus to the Right"
@@ -3033,7 +3033,7 @@ msgstr "Mostrar Barra de Búsqueda Debajo"
 
 msgctxt "#32291"
 msgid "HDR/SDR and Bit Depth Flags"
-msgstr ""
+msgstr "Indicadores de HDR/SDR y profundidad de bit"
 
 msgctxt "#32292"
 msgid "File Name Instead of Title"
@@ -3361,7 +3361,7 @@ msgstr "Pausar medios mientras el diálogo de información esté abierto"
 
 msgctxt "#32373"
 msgid "End Time"
-msgstr ""
+msgstr "Tiempo de finalización"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
@@ -3381,7 +3381,7 @@ msgstr "Activar letras"
 
 msgctxt "#32378"
 msgid "Use Color Flags"
-msgstr ""
+msgstr "Utilizar indicadores con colores"
 
 msgctxt "#32379"
 msgid "Show Submenu Only when Focused"
@@ -3413,223 +3413,295 @@ msgstr "Ocultar barra de búsqueda al adelantar o rebobinar"
 
 msgctxt "#32386"
 msgid "Enable Touchscreen Devices Support"
-msgstr ""
+msgstr "Activar soporte para dispostivos táctiles"
 
 msgctxt "#32387"
 msgid "Show Rating Overlay"
-msgstr ""
+msgstr "Mostrar capa de calificación"
 
 msgctxt "#32388"
 msgid "Use User Rating for Overlay"
-msgstr ""
+msgstr "Utilizar calificación de usuario para capa"
 
 msgctxt "#32390"
 msgid "Select Items to Show in Views"
-msgstr ""
+msgstr "Seleccionar elementos a mostrar en vistas"
 
 msgctxt "#32391"
 msgid "Items to Show in Views"
-msgstr ""
+msgstr "Elementos a mostrar en vistas"
 
 msgctxt "#32392"
 msgid "Play Random"
-msgstr ""
+msgstr "Reproducir al azar"
 
 msgctxt "#32393"
 msgid "List Views Options"
-msgstr ""
+msgstr "Opciones de vistas de lista"
 
 msgctxt "#32394"
 msgid "Marks and Overlays"
-msgstr ""
+msgstr "Marcas y capas"
 
 msgctxt "#32395"
 msgid "Select View Types to Enable"
-msgstr ""
+msgstr "Seleccionar tipos de vista a activar"
 
 msgctxt "#32396"
 msgid "View Types to Enable"
-msgstr ""
+msgstr "Tipos de vista a activar"
 
 msgctxt "#32398"
 msgid "Show Poster"
-msgstr ""
+msgstr "Mostrar ṕoster"
 
 msgctxt "#32399"
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "#32401"
 msgid "List Item Type"
-msgstr ""
+msgstr "Tipo de elemento de lista"
 
 msgctxt "#32402"
 msgid "Poster/Thumb"
-msgstr ""
+msgstr "Póster/Miniatura"
 
 msgctxt "#32403"
 msgid "OSD/Full Screen Art"
-msgstr ""
+msgstr "OSD/Arte de pantalla completa"
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "N/D"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
-msgstr ""
+msgstr "Mostra ventana de información"
 
 msgctxt "#32406"
 msgid "Popup Delay"
-msgstr ""
+msgstr "Retraso de ventana"
 
 msgctxt "#32407"
 msgid "Show Floor"
-msgstr ""
+msgstr "Mostrar piso"
 
 msgctxt "#32408"
 msgid "Fixed List"
-msgstr ""
+msgstr "Lista fija"
 
 msgctxt "#32409"
 msgid "Centered Static Menu (less than 8 items)"
-msgstr ""
+msgstr "Menú estático centrado"
 
 msgctxt "#32410"
 msgid "Compact OSD"
-msgstr ""
+msgstr "OSD compacto"
 
 msgctxt "#32411"
 msgid "Ultra Compact OSD"
-msgstr ""
+msgstr "OSD ultra compacto"
 
 msgctxt "#32412"
 msgid "Alternate OSD Button Highlighting"
-msgstr ""
+msgstr "Alternar resaltado de botón OSD"
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "Activado"
 
 msgctxt "#32414"
 msgid "Disabled"
-msgstr ""
+msgstr "Desactivado"
 
 msgctxt "#32415"
 msgid "Auto Play Trailer (Local Trailer Only)"
-msgstr ""
+msgstr "Reproducir avance automáticamente (avance local únicamente)"
 
 msgctxt "#32416"
 msgid "Auto Play Trailer Delay"
-msgstr ""
+msgstr "Retraso de reproducción automática de avance"
 
 msgctxt "#32417"
 msgid "Fanart Title Button Opens Info Dialog"
-msgstr ""
+msgstr "Abrir el diálogo de información con el botón de título de fanart"
 
 msgctxt "#32418"
 msgid "Single Image"
-msgstr ""
+msgstr "Imagen única"
 
 msgctxt "#32419"
 msgid "Multiple Images"
-msgstr ""
+msgstr "Imágenes múltiples"
 
 msgctxt "#32420"
 msgid "Video/Playlist"
-msgstr ""
+msgstr "Video/Lista de reproducción"
 
 msgctxt "#32421"
 msgid "Startup Background"
-msgstr ""
+msgstr "Fondo de inicio"
 
 msgctxt "#32422"
 msgid "Hide Menu when Shelves are Focused"
-msgstr ""
+msgstr "Ocultar menú al seleccionar widgets"
 
 msgctxt "#32423"
 msgid "Use Disc Art instead of Cover"
-msgstr ""
+msgstr "Utilizar Disc Art en lugar de Cover"
 
 msgctxt "#32424"
 msgid "Auto Play Trailer from Shelf Items"
-msgstr ""
+msgstr "Reproducir automáticamente avance desde widgets"
 
 msgctxt "#32425"
 msgid "Shelf Trailer Delay"
-msgstr ""
+msgstr "Retraso de reproducción automática desde widget"
 
 msgctxt "#32426"
 msgid "Slide Out Media Items While Trailer Playing"
-msgstr ""
+msgstr "Deslizar elementos multimedia mientras se reproduce el avance"
 
 msgctxt "#32427"
 msgid "Hide PVR Channel Preview"
-msgstr ""
+msgstr "Ocultar vista previa de canal PVR"
 
 msgctxt "#32428"
 msgid "Art Downloader: Select Artwork"
-msgstr ""
+msgstr "Art Downloader: Seleccionar arte"
 
 msgctxt "#32429"
 msgid "Art Downloader: All Artwork"
-msgstr ""
+msgstr "Art Downloader: Todo el arte"
 
 msgctxt "#32450"
 msgid "Show Artwork Downloader items in Context Menu"
-msgstr ""
+msgstr "Mostrar elementos de Art Downloader en el menú contextual"
 
 msgctxt "#32451"
 msgid "Movies with Tag"
-msgstr ""
+msgstr "Películas con etiqueta"
 
 msgctxt "#32452"
 msgid "Select a Tag"
-msgstr ""
+msgstr "Selecciona una etiqueta"
 
 msgctxt "#32453"
 msgid "With Tag"
-msgstr ""
+msgstr "Con etiqueta"
 
 msgctxt "#32454"
 msgid "Always Use TV Show Poster for Episodes"
-msgstr ""
+msgstr "Siempre usar póster de serie para episodios"
 
 msgctxt "#32455"
 msgid "Open ExtendedInfo for Info Dialogs"
-msgstr ""
+msgstr "Abrir ExtendedInfo para diálogos de información"
 
 msgctxt "#32456"
 msgid "Cert"
-msgstr ""
+msgstr "Cert"
 
 msgctxt "#32457"
 msgid "Show Episodes List button"
-msgstr ""
+msgstr "Mostrar botón de lista de episodios"
 
 msgctxt "#32458"
 msgid "Include Seasons in Episodes List popup"
-msgstr ""
+msgstr "Incluir temporadas en ventana de lista de episodios"
 
 msgctxt "#32459"
 msgid "Next Aired"
-msgstr ""
+msgstr "Siguiente emisión"
 
 msgctxt "#32460"
 msgid "Enable Direct Seeking in Full Screen Info"
-msgstr ""
+msgstr "Activar búsqueda directa en información a pantalla completa"
 
 msgctxt "#32461"
 msgid "Show Disc above Poster"
-msgstr ""
+msgstr "Mostrar disco sobre póster"
 
 msgctxt "#32462"
 msgid "Hide Disc over Set Poster"
+msgstr "Ocultar disco sobre set póster"
+
+msgctxt "#32463"
+msgid "Play trailer in a window"
+msgstr "Repreoducir avance en una ventana"
+
+msgctxt "#32464"
+msgid "Search Trailer"
+msgstr "Buscar avance"
+
+msgctxt "#32465"
+msgid "Search for Trailers with IMDb Trailers Addon"
+msgstr "Buscar avances con el complemento de avances de IMDb"
+
+msgctxt "#32466"
+msgid "Fade out Non-focused Menu Items"
+msgstr "Desvanecer elementos de menú no seleccionados"
+
+msgctxt "#32467"
+msgid "Cloudiness"
+msgstr "Nubosidad"
+
+msgctxt "#32468"
+msgid "Probability of Precipitation"
+msgstr "Probabilidad de precipitación"
+
+msgctxt "#32469"
+msgid "Intro Video Duration"
+msgstr "Duración de video de introducción"
+
+msgctxt "#32470"
+msgid "PVR Timeshift Buffer Color"
+msgstr "Color de búfer de Timeshift de PVR"
+
+msgctxt "#32471"
+msgid "Use Main Menu item Background for Sub Windows"
+msgstr "Utilizar fondo de elemento de menú principal para subventanas"
+
+msgctxt "#32472"
+msgid "Teletext Button Opens EPG"
+msgstr "Abrir la guía con el botón de teletexto"
+
+msgctxt "#32473"
+msgid "EPG Icon"
 msgstr ""
+
+msgctxt "#32474"
+msgid "Channel Logo"
+msgstr ""
+
+msgctxt "#32475"
+msgid "Always Show Information Panel"
+msgstr ""
+
+msgctxt "#32476"
+msgid "Use Custom Search for Video Library"
+msgstr ""
+
+msgctxt "#32477"
+msgid "Use Custom Search for Music Library"
+msgstr ""
+
+msgctxt "#32478"
+msgid "Current Programme Progress:"
+msgstr ""
+
+msgctxt "#32479"
+msgid "Also Show Seconds"
+msgstr ""
+
+#~ msgctxt "#32473"
+#~ msgid "EPG Icon/Channel Logo"
+#~ msgstr "Ícono de guía/Logo de canal"
 
 #~ msgctxt "#32232"
 #~ msgid "Main Rating"

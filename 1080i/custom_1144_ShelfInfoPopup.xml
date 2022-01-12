@@ -376,7 +376,7 @@
 							<width>860</width>
 							<height>47.5</height>
 							<font>font20_title</font>
-							<label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[180]: [/COLOR]$INFO[Window(Home).Property(WidgetItemDurationMins)] $LOCALIZE[12391]</label>
+							<label>[COLOR=$VAR[HighlightColor]]$LOCALIZE[180]: [/COLOR]$VAR[WidgetItemDurationVar]</label>
 							<visible>!String.IsEmpty(Window(Home).Property(WidgetItemDurationMins))</visible>
 							<scroll>true</scroll>
 						</control>
@@ -496,7 +496,6 @@
 		                <include content="PopupMediaFlagItems">
 			                <param name="itemwidth">100</param>
 		                    <param name="itemheight">90</param>
-			                <param name="diffuse">$VAR[LabelTextColor]</param>
 		                </include>
 		            </control>
 				    <control type="grouplist">
@@ -509,7 +508,6 @@
 		                <include content="PopupMediaFlagItems">
 			                <param name="itemwidth">100</param>
 		                    <param name="itemheight">90</param>
-			                <param name="diffuse">$VAR[LabelTextColor]</param>
 		                </include>
 		            </control>
 		        </control>

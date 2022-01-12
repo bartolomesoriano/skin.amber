@@ -2,6 +2,7 @@
 <window id="3033">
 	<defaultcontrol always="true">1000</defaultcontrol>
 	<controls>
+		<include condition="Skin.HasSetting(Sub_MainMenuBG)">SubBackgroundLists</include>
 		<include>DefaultBackground</include>
         <include>Time</include>
 		<control type="group">
