@@ -4,30 +4,57 @@
     <controls>
         <control type="group">
             <visible>!Window.IsVisible(numericinput)</visible>
-            <left>181</left>
+			<left>181</left>
             <top>50</top>
-            <control type="image">
+		    <control type="image">
                 <width>1557</width>
                 <height>906</height>
                 <texture border="45">dialogs/TinyDialog.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+    		    <colordiffuse>$VAR[DialogBGColor]</colordiffuse>
                 <visible>Skin.HasSetting(Enable.Autocompletion)</visible>
+				<visible>!Control.IsVisible(310)</visible>
+            </control>
+			<control type="image">
+                <width>1557</width>
+                <height>1000</height>
+                <texture border="45">dialogs/TinyDialog.png</texture>
+			    <colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+                <visible>Skin.HasSetting(Enable.Autocompletion)</visible>
+				<visible>Control.IsVisible(310)</visible>
             </control>
             <control type="image">
                 <width>1557</width>
                 <height>706</height>
                 <texture border="45">dialogs/TinyDialog.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+			    <colordiffuse>$VAR[DialogBGColor]</colordiffuse>
                 <visible>!Skin.HasSetting(Enable.Autocompletion)</visible>
+				<visible>!Control.IsVisible(310)</visible>
+            </control>
+			<control type="image">
+                <width>1557</width>
+                <height>800</height>
+                <texture border="45">dialogs/TinyDialog.png</texture>
+			    <colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+                <visible>!Skin.HasSetting(Enable.Autocompletion)</visible>
+				<visible>Control.IsVisible(310)</visible>
             </control>
             <control type="image">
                 <visible>Control.IsVisible(313)</visible>
-                <width>1557</width>
+                <visible>!Control.IsVisible(310)</visible>
+				<width>1557</width>
                 <height>830</height>
                 <texture border="45">dialogs/TinyDialog.png</texture>
-				<colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+			    <colordiffuse>$VAR[DialogBGColor]</colordiffuse>
             </control>
-            <control type="label" id="311" description="Heading">
+			<control type="image">
+                <visible>Control.IsVisible(313)</visible>
+                <visible>Control.IsVisible(310)</visible>
+				<width>1557</width>
+                <height>924</height>
+                <texture border="45">dialogs/TinyDialog.png</texture>
+			    <colordiffuse>$VAR[DialogBGColor]</colordiffuse>
+            </control>
+			<control type="label" id="311" description="Heading">
                 <left>64</left>
                 <top>24</top>
                 <width>1429</width>
@@ -55,19 +82,104 @@
             <control type="group">
                 <left>64</left>
                 <top>196</top>
-                <control type="grouplist">
-                    <description>1st Row</description>
+				<control type="grouplist">
+                    <description>left button column</description>
                     <itemgap>14</itemgap>
-                    <orientation>horizontal</orientation>
-                    <control type="button" id="309">
-                        <description>Layout button</description>
+                    <orientation>vertical</orientation>
+					<control type="button" id="310">
+                        <description>Show/Hide password button</description>
                         <width>300</width>
                         <label></label>
                         <onup>300</onup>
-                        <ondown>304</ondown>
+                        <ondown>309</ondown>
+						<onright>10001</onright>
                         <font>ListDetails</font>
                         <include>KeyboardButtons</include>
                     </control>
+					<control type="button" id="309">
+                        <description>Layout button</description>
+                        <width>300</width>
+                        <label></label>
+                        <onup condition="Control.IsVisible(310)">310</onup>
+						<onup condition="!Control.IsVisible(310)">300</onup>
+                        <ondown>30400</ondown>
+						<onright condition="!Control.IsVisible(310)">10001</onright>
+						<onright condition="Control.IsVisible(310)">12001</onright>
+                        <font>ListDetails</font>
+                        <include>KeyboardButtons</include>
+                    </control>
+					<control type="grouplist" id="30400">
+					    <itemgap>14</itemgap>
+						<orientation>horizontal</orientation>
+						<height>80</height>
+						<onup>309</onup>
+						<ondown>303</ondown>
+						<onright condition="!Control.IsVisible(310)">12001</onright>
+						<onright condition="Control.IsVisible(310)">14001</onright>
+					    <control type="togglebutton" id="304">
+                            <description>Symbols button</description>
+                            <width>143</width>
+                            <label>@#!*</label>
+                            <altlabel>[COLOR=$VAR[HighlightColor]][UPPERCASE]@ ? , # ; ) ![/UPPERCASE][/COLOR]</altlabel>
+                            <onup>309</onup>
+                            <ondown>303</ondown>
+                            <font>ListDetails</font>
+                            <include>KeyboardButtons</include>
+                        </control>
+                        <control type="button" id="307">
+                            <description>IP Input button</description>
+                            <width>143</width>
+                            <label>IP</label>
+                            <onup>309</onup>
+                            <ondown>303</ondown>
+                            <font>ListDetails</font>
+                            <include>KeyboardButtons</include>
+                        </control>
+					</control>
+                    <control type="togglebutton" id="303">
+                        <description>CAPS LOCK button</description>
+                        <width>300</width>
+                        <onup>307</onup>
+                        <ondown>302</ondown>
+						<onright condition="!Control.IsVisible(310)">14001</onright>
+						<onright condition="Control.IsVisible(310)">16001</onright>
+                        <font>ListDetails</font>
+                        <label>$LOCALIZE[20179]</label>
+                        <altlabel>[COLOR=$VAR[HighlightColor]][UPPERCASE]$LOCALIZE[20179][/UPPERCASE][/COLOR]</altlabel>
+                        <include>KeyboardButtons</include>
+                    </control>
+                    <control type="togglebutton" id="302" description="Shift">
+                        <width>300</width>
+                        <onup>303</onup>
+                        <ondown>300</ondown>
+						<onright condition="!Control.IsVisible(310)">16001</onright>
+						<onright condition="Control.IsVisible(310)">8001</onright>
+                        <font>ListDetails</font>
+                        <label>$LOCALIZE[20178]</label>
+                        <altlabel>[COLOR=$VAR[HighlightColor]][UPPERCASE]$LOCALIZE[20178][/UPPERCASE][/COLOR]</altlabel>
+                        <include>KeyboardButtons</include>
+                    </control>
+                    <control type="button" id="300" description="DONE button">
+                        <width>300</width>
+                        <label>[UPPERCASE]$LOCALIZE[20177][/UPPERCASE]</label>
+                        <onup>302</onup>
+                        <ondown>8000</ondown>
+						<onright condition="!Control.IsVisible(310)">8001</onright>
+						<onright condition="Control.IsVisible(310)">noop</onright>
+                        <textcolor>FF4fe805</textcolor>
+                        <font>ListDetails</font>
+                        <include>KeyboardButtons</include>
+                    </control>					
+				</control>
+    				
+                <control type="grouplist" id="10001">
+                    <left>314</left>
+					<top>0</top>
+					<description>1st Row</description>
+                    <itemgap>14</itemgap>
+                    <orientation>horizontal</orientation>
+					<onleft condition="Control.IsVisible(310)">310</onleft>
+					<onleft condition="!Control.IsVisible(310)">309</onleft>
                     <control type="button" id="100">
                         <description>(0,0) key button</description>
                         <label>&gt;</label>
@@ -142,30 +254,14 @@
                         <include>KeyboardButtons</include>
                     </control>
                 </control>
-                <control type="grouplist">
+                <control type="grouplist" id="12001">
                     <description>2nd Row</description>
                     <itemgap>14</itemgap>
                     <orientation>horizontal</orientation>
-                    <top>94</top>
-                    <control type="togglebutton" id="304">
-                        <description>Symbols button</description>
-                        <width>143</width>
-                        <label>@#!*</label>
-                        <altlabel>[COLOR=$VAR[HighlightColor]][UPPERCASE]@ ? , # ; ) ![/UPPERCASE][/COLOR]</altlabel>
-                        <onup>309</onup>
-                        <ondown>303</ondown>
-                        <font>ListDetails</font>
-                        <include>KeyboardButtons</include>
-                    </control>
-                    <control type="button" id="307">
-                        <description>IP Input button</description>
-                        <width>143</width>
-                        <label>IP</label>
-                        <onup>309</onup>
-                        <ondown>303</ondown>
-                        <font>ListDetails</font>
-                        <include>KeyboardButtons</include>
-                    </control>
+                    <left>314</left>
+					<top>94</top>
+                    <onleft condition="Control.IsVisible(310)">309</onleft>
+					<onleft condition="!Control.IsVisible(310)">30400</onleft>
                     <control type="button" id="120">
                         <description>(1,0) button</description>
                         <onup>100</onup>
@@ -239,21 +335,14 @@
                         <include>KeyboardButtons</include>
                     </control>
                 </control>
-                <control type="grouplist">
+                <control type="grouplist" id="14001">
                     <description>3rd Row</description>
                     <itemgap>14</itemgap>
                     <orientation>horizontal</orientation>
-                    <top>188</top>
-                    <control type="togglebutton" id="303">
-                        <description>CAPS LOCK button</description>
-                        <width>300</width>
-                        <onup>307</onup>
-                        <ondown>302</ondown>
-                        <font>ListDetails</font>
-                        <label>$LOCALIZE[20179]</label>
-                        <altlabel>[COLOR=$VAR[HighlightColor]][UPPERCASE]$LOCALIZE[20179][/UPPERCASE][/COLOR]</altlabel>
-                        <include>KeyboardButtons</include>
-                    </control>
+                    <left>314</left>
+					<top>188</top>
+                    <onleft condition="Control.IsVisible(310)">30400</onleft>
+					<onleft condition="!Control.IsVisible(310)">303</onleft>
                     <control type="button" id="140">
                         <description>(2,0) button</description>
                         <onup>120</onup>
@@ -327,20 +416,14 @@
                         <include>KeyboardButtons</include>
                     </control>
                 </control>
-                <control type="grouplist">
+                <control type="grouplist" id="16001">
                     <description>4th Row</description>
                     <itemgap>14</itemgap>
                     <orientation>horizontal</orientation>
-                    <top>282</top>
-                    <control type="togglebutton" id="302" description="Shift">
-                        <width>300</width>
-                        <onup>303</onup>
-                        <ondown>300</ondown>
-                        <font>ListDetails</font>
-                        <label>$LOCALIZE[20178]</label>
-                        <altlabel>[COLOR=$VAR[HighlightColor]][UPPERCASE]$LOCALIZE[20178][/UPPERCASE][/COLOR]</altlabel>
-                        <include>KeyboardButtons</include>
-                    </control>
+                    <left>314</left>
+					<top>282</top>
+                    <onleft condition="Control.IsVisible(310)">303</onleft>
+					<onleft condition="!Control.IsVisible(310)">302</onleft>
                     <control type="button" id="160">
                         <description>(3,0) button</description>
                         <onup>140</onup>
@@ -418,16 +501,10 @@
                     <description>5th Row</description>
                     <itemgap>14</itemgap>
                     <orientation>horizontal</orientation>
-                    <posy>376</posy>
-                    <control type="button" id="300" description="DONE button">
-                        <width>300</width>
-                        <label>[UPPERCASE]$LOCALIZE[20177][/UPPERCASE]</label>
-                        <onup>302</onup>
-                        <ondown>8000</ondown>
-                        <textcolor>FF4fe805</textcolor>
-                        <font>ListDetails</font>
-                        <include>KeyboardButtons</include>
-                    </control>
+                    <left>314</left>
+					<posy>376</posy>
+                    <onleft condition="Control.IsVisible(310)">302</onleft>
+					<onleft condition="!Control.IsVisible(310)">300</onleft>
                     <control type="button" id="32">
                         <description>SPACE button</description>
                         <width>550</width>
@@ -437,7 +514,7 @@
                         <font>ListDetails</font>
                         <include>KeyboardButtons</include>
                     </control>
-                    <control type="button" id="305">+32
+                    <control type="button" id="305">
                         <description>previous button</description>
                         <label>&lt;</label>
                         <onup>168</onup>
