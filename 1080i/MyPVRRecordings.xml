@@ -197,7 +197,7 @@
 							<height>40</height>
 							<width>860</width>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$VAR[ItemDurationHrMins]</label>
+							<label>$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$VAR[ItemDurationVar]</label>
 							<font>ListDetails</font>
 							<scrollspeed>25</scrollspeed>
 							<visible>Skin.HasSetting(Enable.HourMinutes)</visible>

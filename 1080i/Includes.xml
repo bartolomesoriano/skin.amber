@@ -1431,7 +1431,7 @@
                         <param name="viewid">$PARAM[viewid]</param>
 						<param name="list_id">4300</param>
 						<param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
-					    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins,  (,)]</param>
+					    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationVar,  (,)]</param>
 						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,album) + String.IsEmpty(ListItem.Property(Album_Description))]</param>
 		                <param name="subcontent_image_visible">false</param>
 						<param name="subcontent_sortby" value="track" />
@@ -1443,7 +1443,7 @@
                         <param name="viewid">$PARAM[viewid]</param>
 						<param name="list_id">4400</param>
 						<param name="subcontent_label1">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Duration]</param>
-					    <param name="subcontent_label2">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$VAR[ItemDurationHrMins]</param>
+					    <param name="subcontent_label2">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$VAR[ItemDurationVar]</param>
 						<param name="subcontent_visible">Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder</param>
 		                <param name="subcontent_image_visible">false</param>
 						<param name="subcontent_sortby" value="date" />
@@ -1593,6 +1593,7 @@
 			</control>	
         </definition>
     </include>
+	
     <!-- Panel Template for Tall List -->
     <include name="PanelTemplateTall">
 		<param name="viewid">501</param>
@@ -1740,7 +1741,7 @@
                         <param name="viewid">$PARAM[viewid]</param>
 						<param name="list_id">430</param>
 						<param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
-					    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins,  (,)]</param>
+					    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationVar,  (,)]</param>
 						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,album) + String.IsEmpty(ListItem.Property(Album_Description))]</param>
 		                <param name="subcontent_image_visible">false</param>
 						<param name="subcontent_sortby" value="track" />
@@ -1752,7 +1753,7 @@
                         <param name="viewid">$PARAM[viewid]</param>
 						<param name="list_id">440</param>
 						<param name="subcontent_label1">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Duration]</param>
-					    <param name="subcontent_label2">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$VAR[ItemDurationHrMins]</param>
+					    <param name="subcontent_label2">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$VAR[ItemDurationVar]</param>
 						<param name="subcontent_visible">Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder</param>
 		                <param name="subcontent_image_visible">false</param>
 						<param name="subcontent_sortby" value="date" />
@@ -1820,6 +1821,7 @@
                     <wrapmultiline>true</wrapmultiline>
                     <label>$PARAM[heading]</label>
                 </control>
+				
 				<control type="group">
 		            <visible>$EXP[PVRChannelPlaying]</visible>
                     <left>67</left>
@@ -1971,7 +1973,7 @@
                         <param name="viewid">$PARAM[viewid]</param>
 						<param name="list_id">4300</param>
 						<param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
-					    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationHrMins,  (,)]</param>
+					    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationVar,  (,)]</param>
 						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,album) + String.IsEmpty(ListItem.Property(Album_Description))]</param>
 		                <param name="subcontent_image_visible">false</param>
 						<param name="subcontent_sortby" value="track" />
@@ -1983,7 +1985,7 @@
                         <param name="viewid">$PARAM[viewid]</param>
 						<param name="list_id">4400</param>
 						<param name="subcontent_label1">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Duration]</param>
-					    <param name="subcontent_label2">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$VAR[ItemDurationHrMins]</param>
+					    <param name="subcontent_label2">$INFO[ListItem.Label][COLOR=$VAR[HighlightColor]] • [/COLOR]$INFO[ListItem.Date][COLOR=$VAR[HighlightColor]] • [/COLOR]$VAR[ItemDurationVar]</param>
 						<param name="subcontent_visible">Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder</param>
 		                <param name="subcontent_image_visible">false</param>
 						<param name="subcontent_sortby" value="date" />

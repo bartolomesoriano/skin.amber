@@ -3697,6 +3697,10 @@ msgctxt "#32478"
 msgid "Current Programme Progress:"
 msgstr ""
 
+msgctxt "#32479"
+msgid "Also Show Seconds"
+msgstr ""
+
 #~ msgctxt "#31650"
 #~ msgid "Show Information Popup (after 3 seconds)"
 #~ msgstr "Informations-Popup anzeigen (nach 3 Sekunden)"

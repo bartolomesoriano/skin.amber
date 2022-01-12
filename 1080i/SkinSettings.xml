@@ -202,13 +202,13 @@
 							<param name="itemid" value="7"/>
 							<param name="itemlabel" value="$LOCALIZE[32122]"/>
 							<param name="skinsetting" value="ShowABinContextMenu"/>
-							<param name="itemvisibility" value="System.HasAddon(script.artwork.beef)"/>
+							<param name="itemvisibility" value="System.HasAddon(script.artwork.beef) + System.AddonisEnabled(script.artwork.beef)"/>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="71"/>
 							<param name="itemlabel" value="$LOCALIZE[32450]"/>
 							<param name="skinsetting" value="ShowADinContextMenu"/>
-							<param name="itemvisibility" value="System.HasAddon(script.artwork.downloader)"/>
+							<param name="itemvisibility" value="System.HasAddon(script.artwork.downloader) + System.AddonisEnabled(script.artwork.downloader)"/>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="8"/>
@@ -242,52 +242,58 @@
 						</include>
                         <include content="YesNoSettingItem">
 							<param name="itemid" value="13"/>
-							<param name="itemlabel" value="$LOCALIZE[32124]"/>
+							<param name="itemlabel" value="[B]$LOCALIZE[32124][/B]"/>
 							<param name="skinsetting" value="Enable.HourMinutes"/>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="14"/>
+							<param name="itemlabel" value="      $LOCALIZE[32479]"/>
+							<param name="skinsetting" value="Enable.Seconds"/>
+							<param name="itemvisibility" value="Skin.HasSetting(Enable.HourMinutes)"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="15"/>
 							<param name="itemlabel" value="$LOCALIZE[32349]"/>
 							<param name="skinsetting" value="Show.SmallerFavourites"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="15"/>
+							<param name="itemid" value="16"/>
 							<param name="itemlabel" value="      $LOCALIZE[32350]"/>
 							<param name="skinsetting" value="Show.3RowFavourites"/>
 							<param name="itemvisibility" value="Skin.HasSetting(Show.SmallerFavourites) + !Skin.HasSetting(Show.4RowFavourites)"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="16"/>
+							<param name="itemid" value="17"/>
 							<param name="itemlabel" value="      $LOCALIZE[32351]"/>
 							<param name="skinsetting" value="Show.4RowFavourites"/>
 							<param name="itemvisibility" value="Skin.HasSetting(Show.SmallerFavourites) + !Skin.HasSetting(Show.3RowFavourites)"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="17"/>
+							<param name="itemid" value="18"/>
 							<param name="itemlabel" value="$LOCALIZE[32369]"/>
 							<param name="skinsetting" value="Favourites.AlternateLayout"/>
 						</include>
-						<item id="18">
+						<item id="19">
                             <visible>Skin.HasSetting(Enable.TMDbHelper) + System.HasAddon(plugin.video.themoviedb.helper)</visible>
                             <label>$LOCALIZE[32352]</label>
                             <label2>$LOCALIZE[107]</label2>
                             <onclick>Skin.ToggleSetting(Enable.TMDbHelper)</onclick>
                         </item>
-                        <item id="18">
+                        <item id="19">
                             <visible>!Skin.HasSetting(Enable.TMDbHelper) | !System.HasAddon(plugin.video.themoviedb.helper)</visible>
                             <label>$LOCALIZE[32352]</label>
                             <label2>$LOCALIZE[106]</label2>
 							<onclick condition="!System.HasAddon(plugin.video.themoviedb.helper)">InstallAddon(plugin.video.themoviedb.helper)</onclick>
                             <onclick condition="System.HasAddon(plugin.video.themoviedb.helper)">Skin.ToggleSetting(Enable.TMDbHelper)</onclick>
                         </item>
-						<item id="19">
+						<item id="20">
                             <visible>Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</visible>
                             <label>$LOCALIZE[32353]</label>
                             <label2>$LOCALIZE[107]</label2>
                             <onclick>Skin.ToggleSetting(Enable.EmbuaryHelper)</onclick>
 							<onclick>Skin.Reset(Show.EHJumpToLetter)</onclick>
                         </item>
-                        <item id="19">
+                        <item id="20">
                             <visible>!Skin.HasSetting(Enable.EmbuaryHelper) | !System.HasAddon(script.embuary.helper)</visible>
                             <label>$LOCALIZE[32353]</label>
                             <label2>$LOCALIZE[106]</label2>
@@ -295,22 +301,22 @@
                             <onclick condition="System.HasAddon(script.embuary.helper)">Skin.ToggleSetting(Enable.EmbuaryHelper)</onclick>
                         </item>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="20"/>
+							<param name="itemid" value="21"/>
 							<param name="itemlabel" value="$LOCALIZE[32378]"/>
 							<param name="skinsetting" value="coloredflags"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="21"/>
+							<param name="itemid" value="22"/>
 							<param name="itemlabel" value="$LOCALIZE[32427]"/>
 							<param name="skinsetting" value="HidePVRPreview"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="22"/>
+							<param name="itemid" value="23"/>
 							<param name="itemlabel" value="$LOCALIZE[32454]"/>
 							<param name="skinsetting" value="UseTVShowPoster"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="23"/>
+							<param name="itemid" value="24"/>
 							<param name="itemlabel" value="$LOCALIZE[31996]"/>
 							<param name="skinsetting" value="holiday"/>
 						</include>
@@ -539,7 +545,7 @@
 							<param name="itemid" value="3"/>
 							<param name="itemlabel" value="      $LOCALIZE[32417]"/>
 							<param name="skinsetting" value="FanartTitle.OpensInfo"/>
-							<param name="itemvisibility" value="Skin.HasSetting(Enable.FanartTitle) + System.HasAddon(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper)"/>
+							<param name="itemvisibility" value="Skin.HasSetting(Enable.FanartTitle) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">4</param>
@@ -557,7 +563,7 @@
 							<param name="itemid" value="6"/>
 							<param name="itemlabel" value="$LOCALIZE[32262]"/>
 							<param name="skinsetting" value="UseEHBackgrounds"/>
-							<param name="itemvisibility" value="System.HasAddon(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">7</param>
@@ -1045,7 +1051,7 @@
 							<param name="itemid" value="21"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[32457][/B]"/>
 							<param name="skinsetting" value="ShowEpisodeList"/>
-							<param name="itemvisibility">Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper)</param>
+							<param name="itemvisibility">Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper) + System.AddonIsEnabled(script.embuary.helper)</param>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="22"/>
@@ -1140,7 +1146,7 @@
 							<param name="itemid" value="12"/>
 							<param name="itemlabel" value="$LOCALIZE[32465]"/>
 							<param name="skinsetting" value="Trailer.SearchIMDb"/>
-							<param name="itemvisibility">System.HasAddon(plugin.video.imdb.trailers)</param>
+							<param name="itemvisibility">System.AddonIsEnabled(plugin.video.imdb.trailers)</param>
 						</include>
                         <item id="13" description="Embuary Info Config">
 							<label>$LOCALIZE[32128]</label>

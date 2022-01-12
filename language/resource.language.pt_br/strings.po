@@ -3698,6 +3698,10 @@ msgctxt "#32478"
 msgid "Current Programme Progress:"
 msgstr ""
 
+msgctxt "#32479"
+msgid "Also Show Seconds"
+msgstr ""
+
 #~ msgctxt "#32055"
 #~ msgid "Use Wraparaound Navigation"
 #~ msgstr "Usar Rolagem Infinita"

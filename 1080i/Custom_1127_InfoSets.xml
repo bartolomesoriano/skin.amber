@@ -275,7 +275,7 @@
 						</item>                        
 						<item>
 							<label>$LOCALIZE[20161] $LOCALIZE[2050]:</label>
-							<label2>$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime)] $LOCALIZE[12391]</label2>
+							<label2>$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime)]</label2>
 							<onclick>noop</onclick>
 							<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Runtime))</visible>
 						</item>

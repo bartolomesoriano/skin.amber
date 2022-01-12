@@ -3224,7 +3224,7 @@
 		</item>                        
 		<item>
 			<label>$LOCALIZE[2050]:</label>
-			<label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
+			<label2>$INFO[ListItem.Duration]</label2>
 			<onclick>noop</onclick>
 			<visible>!Skin.HasSetting(Enable.HourMinutes) + !String.IsEqual(ListItem.DBType,set) + !String.IsEmpty(ListItem.Duration)</visible>
 		</item>
@@ -3236,7 +3236,7 @@
 		</item>
 		<item>
 			<label>$LOCALIZE[2050]:</label>
-			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Duration)] $LOCALIZE[12391]</label2>
+			<label2>$INFO[Window(Home).Property(TMDbHelper.ListItem.Duration)]</label2>
 			<onclick>noop</onclick>
 			<visible>!Skin.HasSetting(Disable.OnlineTMDbInfo) + String.IsEmpty(ListItem.Duration) + !Skin.HasSetting(Enable.HourMinutes) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Duration)) + !String.IsEqual(Window(Home).Property(TMDbHelper.ListItem.Duration),0)</visible>
 		</item>
@@ -3248,7 +3248,7 @@
 		</item>                        
 		<item>
 			<label>$LOCALIZE[20161] $LOCALIZE[2050]:</label>
-			<label2>$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime)] $LOCALIZE[12391]</label2>
+			<label2>$INFO[Window(Home).Property(SkinInfo.Set.Movies.Runtime)]</label2>
 			<onclick>noop</onclick>
 			<visible>!String.IsEmpty(Window(Home).Property(SkinInfo.Set.Movies.Runtime)) + !Skin.HasSetting(Enable.HourMinutes) + String.IsEqual(ListItem.DBType,set)</visible>
 		</item>

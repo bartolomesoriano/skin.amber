@@ -3695,6 +3695,10 @@ msgctxt "#32478"
 msgid "Current Programme Progress:"
 msgstr ""
 
+msgctxt "#32479"
+msgid "Also Show Seconds"
+msgstr ""
+
 #~ msgctxt "#32232"
 #~ msgid "Main Rating"
 #~ msgstr "Valoración Principal"

@@ -3710,6 +3710,10 @@ msgctxt "#32478"
 msgid "Current Programme Progress:"
 msgstr ""
 
+msgctxt "#32479"
+msgid "Also Show Seconds"
+msgstr ""
+
 #~ msgctxt "#31309"
 #~ msgid "Memory Used:"
 #~ msgstr "Memória Usada:"
