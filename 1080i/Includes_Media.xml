@@ -5733,14 +5733,14 @@
 		<param name="viewid"/>
 		<definition>
 		
-		    <itemlayout condition="Window.IsActive(MyPVRChannels.xml) + !Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="400" width="310">
+		    <itemlayout condition="Window.IsActive(MyPVRChannels.xml) + !Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="400" width="310" infoupdate="5000">
 				<include content="GenericThumbIconBig">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">false</param>
 					<param name="belowtextbox">$INFO[ListItem.ChannelNumberLabel] - $INFO[ListItem.ChannelName]</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + !Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="400" width="310">
+			<focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + !Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="400" width="310" infoupdate="5000">
 				<include content="GenericThumbIconBig">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">false</param>
@@ -5748,14 +5748,14 @@
 				</include>
 			</focusedlayout>
 			
-			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="320" width="232.5">
+			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="320" width="232.5" infoupdate="5000">
 				<include content="GenericThumbIconSmall">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">true</param>
 					<param name="belowtextbox">$INFO[ListItem.ChannelNumberLabel] - $INFO[ListItem.ChannelName]</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="320" width="232.5">
+			<focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="320" width="232.5" infoupdate="5000">
 				<include content="GenericThumbIconSmall">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">true</param>

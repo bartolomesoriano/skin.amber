@@ -2626,6 +2626,12 @@
 			<visible>!String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.ReleaseDate) + String.IsEmpty(ListItem.OriginalDate)</visible>
 		</item>
 		<item>
+			<label>$LOCALIZE[570]:</label>
+			<label2>$INFO[ListItem.DateAdded]</label2>
+			<onclick>noop</onclick>
+			<visible>!String.IsEmpty(ListItem.DateAdded)</visible>
+		</item>
+		<item>
 			<label>$LOCALIZE[180]:</label>
 			<label2>$INFO[ListItem.Property(album_duration)]</label2>
 			<visible>!String.IsEmpty(ListItem.Property(Album_Duration))</visible>
@@ -2727,6 +2733,12 @@
 			<label>$LOCALIZE[562]:</label>
 			<label2>$INFO[ListItem.Year]</label2>
 			<visible>!String.IsEmpty(ListItem.Year) + String.IsEmpty(ListItem.ReleaseDate) + String.IsEmpty(ListItem.OriginalDate)</visible>
+		</item>
+		<item>
+			<label>$LOCALIZE[570]:</label>
+			<label2>$INFO[ListItem.DateAdded]</label2>
+			<onclick>noop</onclick>
+			<visible>!String.IsEmpty(ListItem.DateAdded)</visible>
 		</item>
 		<item>
 			<label>$LOCALIZE[554]:</label>

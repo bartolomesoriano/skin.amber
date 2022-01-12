@@ -66,7 +66,7 @@
 					    </include>
 				    </focusedlayout>
 					
-					<itemlayout height="104" width="1070" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + ![$EXP[BigListPanelIsSwapped]] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
+					<itemlayout height="104" width="1070"  infoupdate="5000" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + ![$EXP[BigListPanelIsSwapped]] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
 					    <include content="52_layout">
 						    <param name="left">850</param>
 							<param name="thumbleft">855</param>
@@ -76,7 +76,7 @@
 			    			<param name="isfocused">false</param>
 					    </include>
 				    </itemlayout>
-				    <focusedlayout height="104" width="1070" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + ![$EXP[BigListPanelIsSwapped]] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
+				    <focusedlayout height="104" width="1070"  infoupdate="5000" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + ![$EXP[BigListPanelIsSwapped]] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
 					    <include content="52_layout">
 						    <param name="left">850</param>
 							<param name="thumbleft">855</param>
@@ -113,7 +113,7 @@
 					    </include>
 				    </focusedlayout>
 					
-					<itemlayout height="104" width="1070" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + $EXP[BigListPanelIsSwapped] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
+					<itemlayout height="104" width="1070"  infoupdate="5000" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + $EXP[BigListPanelIsSwapped] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
 					    <include content="52_layout">
 						    <param name="left">0</param>
 							<param name="thumbleft">5</param>
@@ -125,7 +125,7 @@
 			    			<param name="isfocused">false</param>
 					    </include>
 				    </itemlayout>
-				    <focusedlayout height="104" width="1070" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + $EXP[BigListPanelIsSwapped] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
+				    <focusedlayout height="104" width="1070"  infoupdate="5000" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + $EXP[BigListPanelIsSwapped] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
 					    <include content="52_layout">
 						    <param name="left">0</param>
 							<param name="thumbleft">5</param>
