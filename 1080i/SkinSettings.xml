@@ -550,7 +550,7 @@
 							<param name="itemid" value="3"/>
 							<param name="itemlabel" value="      $LOCALIZE[32417]"/>
 							<param name="skinsetting" value="FanartTitle.OpensInfo"/>
-							<param name="itemvisibility" value="Skin.HasSetting(Enable.FanartTitle) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper)"/>
+							<param name="itemvisibility" value="Skin.HasSetting(Enable.FanartTitle) + System.HasAddon(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">4</param>
@@ -568,7 +568,7 @@
 							<param name="itemid" value="6"/>
 							<param name="itemlabel" value="$LOCALIZE[32262]"/>
 							<param name="skinsetting" value="UseEHBackgrounds"/>
-							<param name="itemvisibility" value="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)"/>
+							<param name="itemvisibility" value="System.HasAddon(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">7</param>
@@ -1056,7 +1056,7 @@
 							<param name="itemid" value="23"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[32457][/B]"/>
 							<param name="skinsetting" value="ShowEpisodeList"/>
-							<param name="itemvisibility">Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper) + System.AddonIsEnabled(script.embuary.helper)</param>
+							<param name="itemvisibility">Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper) + System.HasAddon(script.embuary.helper)</param>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="24"/>
@@ -1151,7 +1151,7 @@
 							<param name="itemid" value="12"/>
 							<param name="itemlabel" value="$LOCALIZE[32465]"/>
 							<param name="skinsetting" value="Trailer.SearchIMDb"/>
-							<param name="itemvisibility">System.AddonIsEnabled(plugin.video.imdb.trailers)</param>
+							<param name="itemvisibility">System.HasAddon(plugin.video.imdb.trailers)</param>
 						</include>
                         <item id="13" description="Embuary Info Config">
 							<label>$LOCALIZE[32128]</label>
