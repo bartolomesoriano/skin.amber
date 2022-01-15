@@ -317,6 +317,11 @@
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="24"/>
+							<param name="itemlabel" value="$LOCALIZE[32481]"/>
+							<param name="skinsetting" value="RememberHomeControl"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="25"/>
 							<param name="itemlabel" value="$LOCALIZE[31996]"/>
 							<param name="skinsetting" value="holiday"/>
 						</include>
@@ -1036,31 +1041,31 @@
 							<param name="itemvisibility">Skin.HasSetting(ShowSeekBarOnPlayback)</param>
 						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">19</param>
+                            <param name="itemid">21</param>
                             <param name="itemlabel">[B]$LOCALIZE[32403][/B]</param>
 		                    <param name="itemlabel2">$VAR[OSDExtraArtLabelVar]</param>
                             <param name="CustomProperty">CustomSelectOSDArt</param>
 		                    <param name="CustomDialog">1121</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="20"/>
+							<param name="itemid" value="22"/>
 							<param name="itemlabel" value="$LOCALIZE[32367]"/>
 							<param name="skinsetting" value="NoFallbackThumbOSD"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="21"/>
+							<param name="itemid" value="23"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[32457][/B]"/>
 							<param name="skinsetting" value="ShowEpisodeList"/>
 							<param name="itemvisibility">Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper) + System.AddonIsEnabled(script.embuary.helper)</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="22"/>
+							<param name="itemid" value="24"/>
 							<param name="itemlabel" value="      $LOCALIZE[32458]"/>
 							<param name="skinsetting" value="SeasonsEpisodeList"/>
 							<param name="itemvisibility">Skin.HasSetting(ShowEpisodeList)</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="23"/>
+							<param name="itemid" value="25"/>
 							<param name="itemlabel" value="$LOCALIZE[32460]"/>
 							<param name="skinsetting" value="DirectSeekInInfo"/>
 						</include>

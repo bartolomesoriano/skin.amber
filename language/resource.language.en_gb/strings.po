@@ -3799,3 +3799,11 @@ msgstr ""
 msgctxt "#32479"
 msgid "Also Show Seconds"
 msgstr ""
+
+msgctxt "#32480"
+msgid "kbps"
+msgstr ""
+
+msgctxt "#32481"
+msgid "Remember Focused Control in Home Window"
+msgstr ""
