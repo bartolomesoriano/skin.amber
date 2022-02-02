@@ -630,6 +630,9 @@
         <value condition="ListItem.HasTimer | ListItem.HasTimerSchedule">img/PVR-HasTimer(focused).png</value>
     </variable>
 	
+									 
+																								   
+																								 
     <variable name="ListItem.ratingbadge">
         <value condition="!String.IsEmpty(ListItem.UserRating)">$INFO[ListItem.UserRating,badges/ratings/rating,.png]</value>
         <value condition="String.IsEmpty(ListItem.UserRating) + !String.IsEmpty(ListItem.dbtype)">badges/ratings/ratingNR.png</value>
@@ -880,7 +883,7 @@
 	</variable>
 	
 	<variable name="ContainerPanelSubHeading">
-        <value condition="[String.IsEqual(Container.ListItem.DBType,movie) + !Skin.HasSetting(Hide.Label2.Lists)] + Skin.HasSetting(ShowRatingMain) + Skin.HasSetting(ShowMPAA)">$INFO[Container.ListItem.Duration]]$INFO[Container.ListItem.RatingAndVotes, • ]$INFO[ListItem.MPAA, • ]</value>
+        <value condition="[String.IsEqual(Container.ListItem.DBType,movie) + !Skin.HasSetting(Hide.Label2.Lists)] + Skin.HasSetting(ShowRatingMain) + Skin.HasSetting(ShowMPAA)">$INFO[Container.ListItem.Duration]$INFO[Container.ListItem.RatingAndVotes, • ]$INFO[ListItem.MPAA, • ]</value>
 		<value condition="[String.IsEqual(Container.ListItem.DBType,movie) + !Skin.HasSetting(Hide.Label2.Lists)] + Skin.HasSetting(ShowRatingMain) + !Skin.HasSetting(ShowMPAA)">$INFO[Container.ListItem.Duration]$INFO[Container.ListItem.RatingAndVotes, • ]</value>
 		<value condition="[String.IsEqual(Container.ListItem.DBType,movie) + !Skin.HasSetting(Hide.Label2.Lists)] + !Skin.HasSetting(ShowRatingMain) + Skin.HasSetting(ShowMPAA)">$INFO[Container.ListItem.Duration]$INFO[ListItem.MPAA, • ]</value>
 		<value condition="[String.IsEqual(Container.ListItem.DBType,movie) + !Skin.HasSetting(Hide.Label2.Lists)] + !Skin.HasSetting(ShowRatingMain) + !Skin.HasSetting(ShowMPAA)">$INFO[Container.ListItem.Duration]</value>
