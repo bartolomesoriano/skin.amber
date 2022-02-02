@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-01-12 19:11+0000\n"
-"Last-Translator: G0mez82 <jalehto_99@hotmail.com>\n"
+"PO-Revision-Date: 2022-01-22 09:13+0000\n"
+"Last-Translator: Oskari Lavinto <olavinto@protonmail.com>\n"
 "Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/fi_fi/>\n"
 "Language: fi_fi\n"
 "MIME-Version: 1.0\n"
@@ -1734,8 +1734,8 @@ msgid "Use default background for sub windows"
 msgstr "Käytä oletustaustakuvaa alavalikoissa"
 
 msgctxt "#31952"
-msgid "Show Fanart background with music visualisation"
-msgstr "Näytä fanitaide musiikin visualisoinnin kanssa"
+msgid "Show Artist Fanart background with Music Visualisation"
+msgstr ""
 
 msgctxt "#31953"
 msgid "Show Fanart background on sub windows"
@@ -1807,8 +1807,8 @@ msgid "Show info"
 msgstr "Näytä tiedot"
 
 msgctxt "#31969"
-msgid "Use Artist Slideshow for fanart"
-msgstr "Käytä Artist Slideshow -lisäosan fanitaidetta"
+msgid "Use Artist Slideshow Addon Fanart with Music Visualisation"
+msgstr ""
 
 msgctxt "#31970"
 msgid "Push down for Gallery"
@@ -3700,7 +3700,39 @@ msgstr "Ohjelman tämänhetkinen edistyminen:"
 
 msgctxt "#32479"
 msgid "Also Show Seconds"
+msgstr "Näytä myös sekunnit"
+
+msgctxt "#32480"
+msgid "kbps"
+msgstr "kbps"
+
+msgctxt "#32481"
+msgid "Remember Focused Control in Home Window"
+msgstr "Muista kohdistettu ohjaus koti-ikkunassa"
+
+msgctxt "#32482"
+msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
 msgstr ""
+
+msgctxt "#32483"
+msgid "Allow Changing View Types in PVR Channels Window"
+msgstr ""
+
+msgctxt "#32484"
+msgid "Update Library"
+msgstr ""
+
+msgctxt "#32485"
+msgid "Stop Scanning"
+msgstr ""
+
+#~ msgctxt "#31952"
+#~ msgid "Show Fanart background with music visualisation"
+#~ msgstr "Näytä fanitaide musiikin visualisoinnin kanssa"
+
+#~ msgctxt "#31969"
+#~ msgid "Use Artist Slideshow for fanart"
+#~ msgstr "Käytä Artist Slideshow -lisäosan fanitaidetta"
 
 #~ msgctxt "#32473"
 #~ msgid "EPG Icon/Channel Logo"

@@ -833,6 +833,17 @@
 				<onright condition="Control.IsVisible(3)">3</onright>
 				<onleft condition="Control.IsVisible(6)">6</onleft>
 				<onright condition="Control.IsVisible(6)">6</onright>
+				<control type="button" id="98">
+					<description>Get More button</description>
+					<width>254</width>
+					<label>$INFO[Control.GetLabel(8)]</label>
+					<align>right</align>
+					<height>60</height>
+					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+					<onclick>SendClick(8)</onclick>
+					<ondown>95</ondown>
+					<visible>Control.IsEnabled(8) + !String.IsEmpty(Control.GetLabel(8))</visible>
+				</control>
 				<control type="button" id="95">
 					<description>Manual button</description>
 					<width>254</width>
@@ -840,8 +851,8 @@
 					<align>right</align>
 					<height>60</height>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
-					<label></label>
 					<onclick>SendClick(5)</onclick>
+					<onup>98</onup>
 					<ondown>7</ondown>
 					<ondown>9000</ondown>
 					<visible>Control.IsEnabled(5) + !String.IsEmpty(Control.GetLabel(5))</visible>
@@ -863,6 +874,17 @@
 				<onright condition="Control.IsVisible(3)">3</onright>
 				<onleft condition="Control.IsVisible(6)">6</onleft>
 				<onright condition="Control.IsVisible(6)">6</onright>
+				<control type="button" id="98">
+					<description>Get More button</description>
+					<width>254</width>
+					<label>$INFO[Control.GetLabel(8)]</label>
+					<align>right</align>
+					<height>60</height>
+					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+					<onclick>SendClick(8)</onclick>
+					<ondown>95</ondown>
+					<visible>Control.IsEnabled(8) + !String.IsEmpty(Control.GetLabel(8))</visible>
+				</control>
 				<control type="button" id="95">
 					<description>Manual button</description>
 					<width>254</width>
@@ -870,8 +892,8 @@
 					<align>right</align>
 					<height>60</height>
 					<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
-					<label></label>
 					<onclick>SendClick(5)</onclick>
+					<onup>98</onup>
 					<ondown>7</ondown>
 					<ondown>9000</ondown>
 					<visible>Control.IsEnabled(5) + !String.IsEmpty(Control.GetLabel(5))</visible>
@@ -888,6 +910,12 @@
 			</control>
 			<control type="button" id="5" description="Get more button">
 				<include>HiddenButton</include>
+				<onfocus>SetFocus(95)</onfocus>
+			</control>
+			<control type="button" id="8">
+				<description>Add/Get More... button</description>
+				<include>HiddenButton</include>
+				<onfocus>SetFocus(98)</onfocus>
 			</control>
 		</control>
 	</include>

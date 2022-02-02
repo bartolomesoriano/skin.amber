@@ -1164,14 +1164,14 @@
 		<param name="list_id">4100</param>
 		<param name="width">500</param>
 		<param name="labelwidth">500</param>
-		<param name="height">430</param>
+		<param name="subinfoheight">430</param>
 	    <definition>
 		    <!-- Panel to show set info or artist discography info or album track info -->
             <control type="panel" id="$PARAM[list_id]$PARAM[viewid]">
                 <visible>$PARAM[subcontent_visible]</visible>
                 <visible>!ListItem.IsParentFolder</visible>
                 <orientation>vertical</orientation>
-				<height>$PARAM[height]</height>
+				<height>$PARAM[subinfoheight]</height>
                 <focusedlayout height="40" width="$PARAM[width]">
                 </focusedlayout>
                 <itemlayout height="40" width="$PARAM[width]">
@@ -1271,6 +1271,7 @@
                 <width>$PARAM[width]</width>
 				<height>$PARAM[groupheight]</height>
                 <orientation>vertical</orientation>
+				<usecontrolcoords>true</usecontrolcoords>
 				<itemgap>10</itemgap>
                 <control type="label" description="Title Label">
                     <visible>!$PARAM[lowpanel]</visible>
@@ -1411,33 +1412,33 @@
 					</control>	
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
-						<param name="subcontent_visible">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)]</param>
+						<param name="subcontent_visible">ListItem.IsCollection + String.IsEmpty(ListItem.Plot)</param>
 		                <param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
-						<param name="height">$PARAM[subinfoheight]</param>
+						<param name="subinfoheight">$PARAM[subinfoheight]</param>
 					</include>
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
 						<param name="list_id">4200</param>
 						<param name="subcontent_label1">$INFO[ListItem.Label]$INFO[ListItem.Year,  (,)]</param>
 						<param name="subcontent_order">descending</param>
-						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,artist) + String.IsEmpty(ListItem.Property(Artist_Description))]</param>
+						<param name="subcontent_visible">String.IsEqual(ListItem.DBType,artist) + String.IsEmpty(ListItem.Property(Artist_Description))</param>
 		                <param name="subcontent_image_visible">false</param>
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
-						<param name="height">$PARAM[subinfoheight]</param>
+						<param name="subinfoheight">$PARAM[subinfoheight]</param>
 					</include>	
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
 						<param name="list_id">4300</param>
 						<param name="subcontent_label1">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$INFO[ListItem.Duration,  (,)]</param>
 					    <param name="subcontent_label2">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Label]$VAR[ItemDurationVar,  (,)]</param>
-						<param name="subcontent_visible">[String.IsEqual(ListItem.DBType,album) + String.IsEmpty(ListItem.Property(Album_Description))]</param>
+						<param name="subcontent_visible">String.IsEqual(ListItem.DBType,album) + String.IsEmpty(ListItem.Property(Album_Description))</param>
 		                <param name="subcontent_image_visible">false</param>
 						<param name="subcontent_sortby" value="track" />
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
-						<param name="height">$PARAM[subinfoheight]</param>
+						<param name="subinfoheight">$PARAM[subinfoheight]</param>
 					</include>
                     <include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
@@ -1449,7 +1450,7 @@
 						<param name="subcontent_sortby" value="date" />
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
-						<param name="height">$PARAM[subinfoheight]</param>
+						<param name="subinfoheight">$PARAM[subinfoheight]</param>
 					</include>					
                 </control>
 			</control>
@@ -1457,6 +1458,7 @@
             <control type="grouplist">
                 <visible>$PARAM[visibility]</visible>
                 <visible>[!String.IsEmpty(Listitem.Duration) | !String.IsEmpty(Listitem.Genre) | !String.IsEmpty(Listitem.Year) | !String.IsEmpty(ListItem.Episode)] | 
+				          [!String.IsEmpty(ListItem.Property(Artist_Genre)) | !String.IsEmpty(ListItem.Property(Artist_YearsActive))] | 
 				         [Container.Content(seasons) + String.IsEqual(ListItem.Label,$LOCALIZE[20366]) + !String.IsEmpty(ListItem.Episode)]</visible>
                 <posx>$PARAM[left]</posx>
                 <posy>$PARAM[footertop]</posy>
@@ -1479,7 +1481,7 @@
                     <font>ListDetails</font>
                     <label>$PARAM[footer]</label>
 				    <aligny>top</aligny>
-					<visible>![Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(albums) | Container.Content(songs)]</visible>
+					<visible>![Container.Content(episodes) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)]</visible>
                 </control>
 				<control type="label" description="Footer">
                     <visible>$PARAM[showfooter]</visible>
@@ -1498,7 +1500,7 @@
                     <font>ListDetails</font>
                     <label>$PARAM[footer]</label>
 				    <aligny>top</aligny>
-					<visible>[Container.Content(albums) | Container.Content(songs)]</visible>
+					<visible>[Container.Content(albums) | Container.Content(artists) | Container.Content(songs)]</visible>
                 </control>
 				<control type="label" description="Footer">
                     <visible>$PARAM[showfooter]</visible>
@@ -1633,7 +1635,6 @@
                 <width>$PARAM[width]</width>
 				<height>$PARAM[groupheight]</height>
                 <orientation>vertical</orientation>
-				<itemgap>10</itemgap>
                 <control type="label" description="Title Label">
                     <top>-8</top>
                     <width>$PARAM[width]</width>
@@ -1724,7 +1725,7 @@
 						<param name="subcontent_visible">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)]</param>
 		                <param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
-						<param name="height">$PARAM[subinfoheight]</param>
+						<param name="subinfoheight">$PARAM[subinfoheight]</param>
 					</include>
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
@@ -1735,7 +1736,7 @@
 		                <param name="subcontent_image_visible">false</param>
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
-						<param name="height">$PARAM[subinfoheight]</param>
+						<param name="subinfoheight">$PARAM[subinfoheight]</param>
 					</include>	
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
@@ -1747,7 +1748,7 @@
 						<param name="subcontent_sortby" value="track" />
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
-						<param name="height">$PARAM[subinfoheight]</param>
+						<param name="subinfoheight">$PARAM[subinfoheight]</param>
 					</include>
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
@@ -1759,7 +1760,7 @@
 						<param name="subcontent_sortby" value="date" />
 						<param name="width">$PARAM[width]</param>
 						<param name="labelwidth">$PARAM[width]</param>
-						<param name="height">$PARAM[subinfoheight]</param>
+						<param name="subinfoheight">$PARAM[subinfoheight]</param>
 					</include>					
                 </control>                
                 <control type="label" description="Footer 2">
@@ -1956,7 +1957,7 @@
 						<param name="subcontent_visible">[ListItem.IsCollection + String.IsEmpty(ListItem.Plot)]</param>
 		                <param name="width">800</param>
 						<param name="labelwidth">$PARAM[labelwidth]</param>
-						<param name="height">$PARAM[subinfoheight]</param>
+						<param name="subinfoheight">$PARAM[subinfoheight]</param>
 					</include>
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
@@ -1967,7 +1968,7 @@
 		                <param name="subcontent_image_visible">false</param>
 						<param name="width">800</param>
 						<param name="labelwidth">$PARAM[labelwidth]</param>
-						<param name="height">$PARAM[subinfoheight]</param>
+						<param name="subinfoheight">$PARAM[subinfoheight]</param>
 					</include>	
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
@@ -1979,7 +1980,7 @@
 						<param name="subcontent_sortby" value="track" />
 						<param name="width">800</param>
 						<param name="labelwidth">$PARAM[labelwidth]</param>
-						<param name="height">$PARAM[subinfoheight]</param>
+						<param name="subinfoheight">$PARAM[subinfoheight]</param>
 					</include>
 					<include content="SubcontentInfoList">
                         <param name="viewid">$PARAM[viewid]</param>
@@ -1990,8 +1991,8 @@
 		                <param name="subcontent_image_visible">false</param>
 						<param name="subcontent_sortby" value="date" />
 						<param name="width">$PARAM[width]</param>
-						<param name="labelwidth">$PARAM[width]</param>
-						<param name="height">$PARAM[subinfoheight]</param>
+						<param name="labelwidth">$PARAM[labelwidth]</param>
+						<param name="subinfoheight">$PARAM[subinfoheight]</param>
 					</include>					
                 </control>
 		        <control type="grouplist" description="Flags">

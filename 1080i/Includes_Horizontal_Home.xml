@@ -165,7 +165,6 @@
 				                                                                                                 [String.IsEqual(Container(300).ListItem.Property(widgetTwoShelves),true) | 
 																												  String.IsEqual(Container(300).ListItem.Property(showShelvesInfo),true)] + 
 																												  ControlGroup(700).HasFocus">Conditional</animation>
-<!--				<include>VisibleFadeEffect</include> -->
 				<posx>64</posx>
 				<posy>782</posy>
 				<height>50</height>

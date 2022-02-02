@@ -154,13 +154,27 @@
 				<param name="viewid">511</param>
 				<param name="top">345</param>
 				<param name="left">1000</param>
-				<param name="height">400</param>
+				<param name="height">395</param>
+				<param name="subinfoheight">395</param>
                 <param name="width">860</param>
 				<param name="heading">$VAR[panelheading]</param>
 				<param name="subheading">$VAR[panelsubheading]</param>
 				<param name="plot">$VAR[Plots]</param>
 				<param name="footer">$VAR[panelfooter]</param>
-				<param name="visibility">Container.Content(artists) | Container.Content(albums)</param>
+				<param name="visibility">!String.IsEqual(Skin.Font,Default no caps) + [Container.Content(artists) | Container.Content(albums)]</param>
+			</include>
+			<include content="PanelTemplate">
+				<param name="viewid">511</param>
+				<param name="top">345</param>
+				<param name="left">1000</param>
+				<param name="height">420</param>
+				<param name="subinfoheight">400</param>
+                <param name="width">860</param>
+				<param name="heading">$VAR[panelheading]</param>
+				<param name="subheading">$VAR[panelsubheading]</param>
+				<param name="plot">$VAR[Plots]</param>
+				<param name="footer">$VAR[panelfooter]</param>
+				<param name="visibility">String.IsEqual(Skin.Font,Default no caps) + [Container.Content(artists) | Container.Content(albums)]</param>
 			</include>
 
 			<control type="scrollbar" id="611">

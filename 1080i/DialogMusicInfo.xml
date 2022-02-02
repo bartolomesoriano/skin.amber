@@ -3,6 +3,10 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<animation effect="fade" time="200">WindowOpen</animation>
 	<animation effect="fade" time="150">WindowClose</animation>
+	
+	<onload>SetProperty(ResetScroll," ",home)</onload>
+    <onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,home),00:01,silent)</onload>
+	
 	<controls>
 		
 		<include>HiddenCast</include>
@@ -66,7 +70,7 @@
 					<height>435</height>
 					<align>justify</align>
 					<font>InfoPlot</font>
-					<label fallback="19055">$VAR[Plots]</label>
+					<label fallback="19055">$VAR[Plots]$INFO[Window(home).Property(ResetScroll)]</label>
 				</control>
                 <control type="radiobutton" id="90003">
                     <posy>525</posy>
@@ -105,140 +109,15 @@
                     <onup>9009</onup>
                     <ondown>9009</ondown>
                     <onleft>90003</onleft>
+					
+					<!-- Begin Matrix change -->
 					<content>
-						<item>
-							<label>$LOCALIZE[557]:</label>
-							<label2>$INFO[ListItem.Artist]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Artist) + !Container.Content(artists)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[558]:</label>
-							<label2>$INFO[ListItem.Album]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Album)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[562]:</label>
-							<label2>$INFO[ListItem.Year]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Year)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[38018]:</label>
-							<label2>$INFO[ListItem.UserRating]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.UserRating)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[563]:</label>
-							<label2>$INFO[ListItem.RatingAndVotes]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.RatingAndVotes)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[175]:</label>
-							<label2>$INFO[ListItem.Property(Album_Mood)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(Album_Mood))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[176]:</label>
-							<label2>$INFO[ListItem.Property(Album_Style)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(Album_Style))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[21895]:</label>
-							<label2>$INFO[ListItem.Property(Album_Theme)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(Album_Theme))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[146]:</label>
-							<label2>$INFO[ListItem.Property(Album_Type)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(Album_Type))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[21899]:</label>
-							<label2>$INFO[ListItem.Property(Album_Label)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(Album_Label))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[21893]:</label>
-							<label2>$INFO[ListItem.Property(Artist_Born)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(Artist_Born))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[21894]:</label>
-							<label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(Artist_Formed))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[515]:</label>
-							<label2>$INFO[ListItem.Genre]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Genre)</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[175]:</label>
-							<label2>$INFO[ListItem.Property(Artist_Mood)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(Artist_Mood))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[176]:</label>
-							<label2>$INFO[ListItem.Property(Artist_Style)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(Artist_Style))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[21892]:</label>
-							<label2>$INFO[ListItem.Property(Artist_Instrument)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(Artist_Instrument))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[21897]:</label>
-							<label2>$INFO[ListItem.Property(Artist_Died)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(Artist_Died))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[21896]:</label>
-							<label2>$INFO[ListItem.Property(Artist_Disbanded)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[21898]:</label>
-							<label2>$INFO[ListItem.Property(Artist_YearsActive)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(Artist_YearsActive))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[562]:</label>
-							<label2>$INFO[ListItem.Property(ListItem.Year)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(ListItem.Year))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[554]:</label>
-							<label2>$INFO[ListItem.Property(ListItem.TrackNumber)]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Property(ListItem.TrackNumber))</visible>
-						</item>
-						<item>
-							<label>$LOCALIZE[573]:</label>
-							<label2>$INFO[ListItem.Path]</label2>
-							<onclick>noop</onclick>
-							<visible>!String.IsEmpty(ListItem.Path)</visible>
-						</item>
+						<include condition="String.IsEqual(ListItem.DBTYPE,artist)">MusicInfoArtistInfo</include>
+						<include condition="String.IsEqual(ListItem.DBTYPE,album)">MusicInfoAlbumInfo</include>
+						<include condition="String.IsEqual(ListItem.DBTYPE,song)">MusicInfoSongInfo</include>
 					</content>
+					<!-- End Matrix change -->
+					
 				</control>
 			</control>
 		</control>
@@ -265,7 +144,8 @@
                 <onclick condition="System.HasAddon(script.playalbum) + String.IsEqual(ListItem.DBType,album)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
                 <onclick condition="System.HasAddon(script.playalbum) + String.IsEqual(ListItem.DBType,song)">RunScript(script.playalbum,songid=$INFO[ListItem.DBID])</onclick>
                 <onclick condition="System.HasAddon(script.playalbum)">Action(close)</onclick>
-                <onclick condition="!System.HasAddon(script.playalbum) + !String.IsEmpty(ListItem.DBID)">InstallAddon(script.playalbum)</onclick>
+                <onclick condition="System.HasAddon(script.playalbum) + !System.HasAddon(script.playalbum) + !String.IsEmpty(ListItem.DBID)">EnableAddon(script.playalbum)</onclick>
+				<onclick condition="!System.HasAddon(script.playalbum) + !String.IsEmpty(ListItem.DBID)">InstallAddon(script.playalbum)</onclick>
 			</control>
 			<control type="button" id="6" description="Refresh">
 				<height>90</height>
@@ -302,26 +182,26 @@
                 <onclick>SetProperty(InfoExtrasDBType,$INFO[ListItem.DBType],Home)</onclick>
 				<onclick>SetProperty(InfoExtrasArtist,$INFO[ListItem.Artist],Home)</onclick>
                 <onclick>SetProperty(fanart,$ESCINFO[ListItem.Art(fanart)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart1,$ESCINFO[ListItem.Art(fanart1)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart2,$ESCINFO[ListItem.Art(fanart2)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart3,$ESCINFO[ListItem.Art(fanart3)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart4,$ESCINFO[ListItem.Art(fanart4)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart5,$ESCINFO[ListItem.Art(fanart5)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart6,$ESCINFO[ListItem.Art(fanart6)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart7,$ESCINFO[ListItem.Art(fanart7)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart8,$ESCINFO[ListItem.Art(fanart8)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart9,$ESCINFO[ListItem.Art(fanart9)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart10,$ESCINFO[ListItem.Art(fanart10)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart11,$ESCINFO[ListItem.Art(fanart11)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart12,$ESCINFO[ListItem.Art(fanart12)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart13,$ESCINFO[ListItem.Art(fanart13)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart14,$ESCINFO[ListItem.Art(fanart14)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart15,$ESCINFO[ListItem.Art(fanart15)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart16,$ESCINFO[ListItem.Art(fanart16)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart17,$ESCINFO[ListItem.Art(fanart17)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart18,$ESCINFO[ListItem.Art(fanart18)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart19,$ESCINFO[ListItem.Art(fanart19)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart20,$ESCINFO[ListItem.Art(fanart20)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart1,$ESCINFO[ListItem.Art(fanart1)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart2,$ESCINFO[ListItem.Art(fanart2)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart3,$ESCINFO[ListItem.Art(fanart3)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart4,$ESCINFO[ListItem.Art(fanart4)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart5,$ESCINFO[ListItem.Art(fanart5)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart6,$ESCINFO[ListItem.Art(fanart6)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart7,$ESCINFO[ListItem.Art(fanart7)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart8,$ESCINFO[ListItem.Art(fanart8)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart9,$ESCINFO[ListItem.Art(fanart9)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart10,$ESCINFO[ListItem.Art(fanart10)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart11,$ESCINFO[ListItem.Art(fanart11)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart12,$ESCINFO[ListItem.Art(fanart12)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart13,$ESCINFO[ListItem.Art(fanart13)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart14,$ESCINFO[ListItem.Art(fanart14)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart15,$ESCINFO[ListItem.Art(fanart15)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart16,$ESCINFO[ListItem.Art(fanart16)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart17,$ESCINFO[ListItem.Art(fanart17)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart18,$ESCINFO[ListItem.Art(fanart18)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart19,$ESCINFO[ListItem.Art(fanart19)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart20,$ESCINFO[ListItem.Art(fanart20)],home)</onclick>
                 <onclick>ActivateWindow(1121)</onclick>
                 <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
                 <visible>!String.IsEmpty(Listitem.DBID)</visible>

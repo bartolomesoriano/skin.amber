@@ -19,7 +19,7 @@
             <onclick condition="[String.IsEqual(ListItem.DBType,set) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),set)]">RunScript(script.artwork.beef, mode=gui, mediatype=set, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.beef, mode=gui, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.HasAddon(script.artwork.beef) + System.HasAddon(script.artwork.beef) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
+            <visible>System.HasAddon(script.artwork.beef) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
                      [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
             </visible>
 		</item>
@@ -32,7 +32,7 @@
             <onclick condition="[String.IsEqual(ListItem.DBType,set) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),set)]">RunScript(script.artwork.beef, mode=auto, mediatype=set, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.beef, mode=auto, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.HasAddon(script.artwork.beef) + System.HasAddon(script.artwork.beef) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
+            <visible>System.HasAddon(script.artwork.beef) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
                      [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
             </visible>
 		</item>
@@ -43,7 +43,7 @@
             <onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.HasAddon(script.artwork.downloader) + System.HasAddon(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
+            <visible>System.HasAddon(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
                      [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
             </visible>
 		</item>
@@ -54,7 +54,7 @@
             <onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.downloader, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.HasAddon(script.artwork.downloader) + System.HasAddon(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
+            <visible>System.HasAddon(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
                      [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
             </visible>
 		</item>
@@ -105,7 +105,7 @@
             <onclick condition="[String.IsEqual(ListItem.DBType,album) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),album)]">RunScript(script.artwork.beef, mode=gui, mediatype=album, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <onclick condition="[String.IsEqual(ListItem.DBType,song) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),song)]">RunScript(script.artwork.beef, mode=gui, mediatype=song, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.HasAddon(script.artwork.beef) + System.HasAddon(script.artwork.beef) + [!String.IsEmpty(Listitem.DBID) | 
+            <visible>System.HasAddon(script.artwork.beef) + [!String.IsEmpty(Listitem.DBID) | 
                      [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
             </visible>
 		</item>
@@ -116,7 +116,7 @@
             <onclick condition="[String.IsEqual(ListItem.DBType,album) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),album)]">RunScript(script.artwork.beef, mode=auto, mediatype=album, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <onclick condition="[String.IsEqual(ListItem.DBType,song) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),song)]">RunScript(script.artwork.beef, mode=auto, mediatype=song, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
             <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.HasAddon(script.artwork.beef) + System.HasAddon(script.artwork.beef) + [!String.IsEmpty(Listitem.DBID) | 
+            <visible>System.HasAddon(script.artwork.beef) + [!String.IsEmpty(Listitem.DBID) | 
                      [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
             </visible>
 		</item>
@@ -1331,7 +1331,7 @@
             <label>$LOCALIZE[32252]</label>
             <radioposx>605</radioposx>
             <onclick>Skin.ToggleSetting(Hide_Episode_Marks)</onclick>
-		    <selected>Skin.HasSetting(Hide_Episode_Marks_Marks)</selected>
+		    <selected>Skin.HasSetting(Hide_Episode_Marks)</selected>
         </control>
 	</include>
 	

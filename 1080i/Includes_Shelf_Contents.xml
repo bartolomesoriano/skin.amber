@@ -83,7 +83,7 @@
 		<param name="visible"></param>
 		<param name="ShowLargeLogo">false</param>
 		<param name="ShowLarge2Logo">false</param>
-		<param name="ShowMediumLogo"></param>
+		<param name="ShowMediumLogo">false</param>
 		<param name="ShowMedium2Logo">false</param>
 		<param name="ShowLargeLogoUnfocused">false</param>
 		<param name="twoShelvesTogether">false</param>

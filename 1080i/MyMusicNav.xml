@@ -15,7 +15,7 @@
 			<scrollspeed>20</scrollspeed>
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
-			<visible>Skin.HasSetting(SkinHelper.EnableExtraFanart)</visible>
+			<visible>Skin.HasSetting(EnableExtraFanart)</visible>
 			<include>FadeLabelTime</include>
 			<label>$INFO[ListItem.Art(fanart)]</label>
 			<label>$INFO[ListItem.Art(fanart1)]</label>
@@ -86,7 +86,7 @@
 			<scrollspeed>20</scrollspeed>
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
-			<visible>Skin.HasSetting(SkinHelper.EnableExtraFanart)</visible>
+			<visible>Skin.HasSetting(EnableExtraFanart)</visible>
 			<include>FadeLabelTime</include>
 			<label>$INFO[Container.ListItem.Art(fanart)]</label>
 			<label>$INFO[Container.ListItem.Art(fanart1)]</label>
@@ -205,10 +205,11 @@
 			        <param name="Action">SetFocus(50)</param>
 				    <param name="ondown">9000</param>
 			    </include>
-			    <animation effect="fade" time="200" start="100" end="20" reversible="true" condition="!ControlGroup(9000).HasFocus() + !Control.HasFocus(909090)">Conditional</animation>
+			    <animation effect="fade" time="200" start="100" end="20" reversible="true" condition="!ControlGroup(9000).HasFocus + !Control.HasFocus(909090)">Conditional</animation>
 		    </control>
 			<control type="grouplist" id="9000">
 				<include>9000GrouplistParameters</include>
+				<usecontrolcoords>true</usecontrolcoords>
 				<control type="label" id="9180" description="Spacer">
 					<height>36</height>
 					<textcolor>$VAR[HighlightColor]</textcolor>
@@ -254,12 +255,23 @@
 					<onclick>Addon.OpenSettings($INFO[Container.PluginName])</onclick>
 					<visible>!String.IsEmpty(Container.PluginName)</visible>
 				</control>
-				<control type="button" id="699" description="Playing">
+				<control type="label" id="9182">
+					<top>30</top>
+					<textcolor>$VAR[HighlightColor]</textcolor>
+					<align>left</align>
+					<textoffsetx>10</textoffsetx>
+					<include>9000ViewButtons</include>
+					<label>$LOCALIZE[32300]</label>
+					<visible>Player.HasAudio</visible>
+				</control>
+				<include content="SidebladeNowPlaying">
+				</include>
+<!--				<control type="button" id="699" description="Playing">
 					<enable>Player.HasMedia</enable>
 					<include>9000SysButtons</include>
 					<label>$LOCALIZE[16003]</label>
 					<onclick>fullscreen</onclick>
-				</control>
+				</control> -->
 			</control>
 		</control>
 		<include condition="Skin.HasSetting(Show.EHJumpToLetter)">ScriptJumpToLetter</include>

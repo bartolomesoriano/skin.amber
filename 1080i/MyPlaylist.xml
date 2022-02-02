@@ -47,6 +47,25 @@
 					<label>$VAR[listmediafooter]</label>
 					<textcolor>$VAR[HighlightColor]</textcolor>
 				</control>
+				<control type="grouplist" description="Song Media Flags">
+			        <visible>Window.IsActive(MusicPlaylist)</visible>
+					<left>150</left>
+			        <top>910</top>
+			        <width>500</width>
+			        <height>80</height>
+			        <itemgap>20</itemgap>
+			        <orientation>horizontal</orientation>
+			        <align>center</align>
+				    <usecontrolcoords>true</usecontrolcoords>
+			        <include content="MediaFlagItems">
+				        <param name="showvideobadge">false</param>
+				        <param name="showaudiobadge">true</param>
+				        <param name="showratingbadge">false</param>
+					    <param name="itemwidth">95</param>
+					    <param name="itemheight">75</param>
+				        <param name="diffuse">$VAR[LabelTextColor]</param>
+			        </include>
+		        </control>
 				<!-- Thumb image for items that do not have poster -->
 				<include content="ShadowedImage">
 					<param name="top">27</param>
@@ -144,6 +163,7 @@
 						<onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
 		                <onup condition="!Skin.HasSetting(Enable.TouchSupport)">9000</onup>
 						<scrolltime>200</scrolltime>
+						<usecontrolcoords>true</usecontrolcoords>
 						<control type="radiobutton" id="20" description="shuffle">
 							<width>330</width>
 							<label>$LOCALIZE[191]</label>
@@ -165,6 +185,15 @@
 							<label>$LOCALIZE[486]</label>
 							<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 						</control>
+						<include content="SidebladeNowPlaying">
+	                        <param name="left">12</param>
+		                    <param name="top">10</param>
+		                    <param name="height">50</param>
+		                    <param name="itemsize">50</param>
+		                    <param name="width">292</param>
+		                    <param name="itemgap">3</param>
+		                    <param name="onleft">9000</param>
+						</include>	
 					</control>
 					<control type="group">
 			            <posx>1793</posx>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <onunload>ClearProperty(BringDownSeekBar,Home)</onunload>
+	
    <visible>[!Player.Paused + !String.IsEmpty(Window(home).Property(ShowOSD))] | 
 	         [[!Skin.HasSetting(UseUltraCompactOSD) | [Skin.HasSetting(UseUltraCompactOSD) + ![Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]]] + 
 			  [[Player.Paused + Skin.HasSetting(Hide.SeekBarWhenPaused) + !System.IdleTime(5)] | [Player.Paused + !Skin.HasSetting(Hide.SeekBarWhenPaused)]]] | 
