@@ -36,28 +36,6 @@
                      [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
             </visible>
 		</item>
-		<item>
-			<label>$LOCALIZE[32428]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),tvshow)]">RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.HasAddon(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
-            </visible>
-		</item>
-		<item>
-			<label>$LOCALIZE[32429]</label>
-            <onclick>Dialog.Close(1121)</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),tvshow)]">RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),movie)]">RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <onclick condition="[String.IsEqual(ListItem.DBType,musicvideo) | String.IsEqual(Window(Home).Property(InfoExtrasDBType),musicvideo)]">RunScript(script.artwork.downloader, mediatype=musicvideo, dbid=$INFO[Window(Home).Property(InfoExtrasDBID)])</onclick>
-            <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
-            <visible>System.HasAddon(script.artwork.downloader) + [[!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))] | 
-                     [!String.IsEmpty(Window(Home).Property(InfoExtrasDBID)) + !String.IsEmpty(Window(Home).Property(InfoExtrasDBType))]] 
-            </visible>
-		</item>
         <item>
 			<label>$LOCALIZE[32068]</label>
             <onclick>Dialog.Close(1121)</onclick>

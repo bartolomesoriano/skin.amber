@@ -205,12 +205,6 @@
 							<param name="itemvisibility" value="System.HasAddon(script.artwork.beef)"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="71"/>
-							<param name="itemlabel" value="$LOCALIZE[32450]"/>
-							<param name="skinsetting" value="ShowADinContextMenu"/>
-							<param name="itemvisibility" value="System.HasAddon(script.artwork.downloader)"/>
-						</include>
-						<include content="YesNoSettingItem">
 							<param name="itemid" value="8"/>
 							<param name="itemlabel" value="$LOCALIZE[32386]"/>
 							<param name="skinsetting" value="Enable.TouchSupport"/>
@@ -1764,13 +1758,6 @@
 						<onclick condition="System.HasAddon(script.artwork.beef)">Addon.OpenSettings(script.artwork.beef)</onclick>
 						<onclick condition="!System.HasAddon(script.artwork.beef)">InstallAddon(script.artwork.beef)</onclick>
 						<selected>System.HasAddon(script.artwork.beef)</selected>
-					</control>
-					<control type="radiobutton" id="911230">
-						<label>script.artwork.downloader</label>
-						<label2>$INFO[System.AddonVersion(script.artwork.downloader)]            </label2>
-						<onclick condition="System.HasAddon(script.artwork.downloader)">Addon.OpenSettings(script.artwork.downloader)</onclick>
-						<onclick condition="!System.HasAddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
-						<selected>System.HasAddon(script.artwork.downloader)</selected>
 					</control>
 				</control>
 			</control>
