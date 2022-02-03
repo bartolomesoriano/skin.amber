@@ -54,6 +54,24 @@
 		<bordersize>4</bordersize>
 		<pulseonselect>false</pulseonselect>
 	</default>
+	<default type="colorbutton">
+		<width>390</width>
+		<height>65</height>
+		<colorwidth>170</colorwidth>
+		<colorheight>65</colorheight>
+		<texturecolormask>buttons/color-button-box.png</texturecolormask>
+		<texturecolordisabledmask colordiffuse="disabled">buttons/color-button-box.png</texturecolordisabledmask>
+		<font>font16</font>
+		<textcolor>$VAR[LabelTextColor]</textcolor>
+		<focusedcolor>$VAR[FocusedTextColor]</focusedcolor>
+		<disabledcolor>Disabled</disabledcolor>
+		<textoffsetx>7</textoffsetx>
+		<align>left</align>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
+		<texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
+		<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
+	</default>
 	<default type="edit">
 		<width>390</width>
 		<height>60</height>
