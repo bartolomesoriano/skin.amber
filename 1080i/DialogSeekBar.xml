@@ -401,7 +401,7 @@
 				
 				<!-- Begin Matrix changes -->
 					
-					<!-- Cutlist and Chapters -->
+					<!-- Editlist and Chapters -->
 					<control type="ranges">
 				        <left>30</left>
 				        <top>1</top>
@@ -411,7 +411,7 @@
 				        <lefttexture>colors/white.png</lefttexture>
 				        <midtexture colordiffuse="FFFF0000">colors/white.png</midtexture>
 				        <righttexture>colors/white.png</righttexture>
-				        <info>Player.Cutlist</info>
+				        <info>Player.Editlist</info>
 			        </control>
 			        <control type="ranges">
 				        <left>30</left>
@@ -763,7 +763,7 @@
 				
 				<!-- Begin Matrix changes -->
 					
-					<!-- Cutlist and Chapters -->
+					<!-- Editlist and Chapters -->
 					<control type="ranges">
 				        <left>30</left>
 				        <top>1</top>
@@ -773,7 +773,7 @@
 				        <lefttexture>colors/white.png</lefttexture>
 				        <midtexture colordiffuse="FFFF0000">colors/white.png</midtexture>
 				        <righttexture>colors/white.png</righttexture>
-				        <info>Player.Cutlist</info>
+				        <info>Player.Editlist</info>
 			        </control>
 			        <control type="ranges">
 				        <left>30</left>
