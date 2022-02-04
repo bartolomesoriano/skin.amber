@@ -399,7 +399,7 @@
 					<shadowcolor>Black</shadowcolor>
 				</control>
 				
-				<!-- Begin Matrix changes -->
+				<!-- Begin Nexus changes -->
 					
 					<!-- Editlist and Chapters -->
 					<control type="ranges">
@@ -413,6 +413,24 @@
 				        <righttexture>colors/white.png</righttexture>
 				        <info>Player.Editlist</info>
 			        </control>
+					<control type="ranges">
+				        <left>30</left>
+				        <top>14</top>
+				        <width>1570</width>
+				        <height>8</height>
+				        <texturebg border="3" colordiffuse="00FFFFFF">colors/red50.png</texturebg>
+				        <righttexture>colors/red.png</righttexture>
+				        <info>Player.Cuts</info>
+			        </control>
+					<control type="ranges">
+				        <left>30</left>
+				        <top>14</top>
+				        <width>1570</width>
+				        <height>4</height>
+				        <texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
+				        <righttexture>colors/white.png</righttexture>
+				        <info>Player.SceneMarkers</info>
+			        </control>
 			        <control type="ranges">
 				        <left>30</left>
 				        <top>14</top>
@@ -423,7 +441,7 @@
 				        <info>Player.Chapters</info>
 			        </control>
 					
-					<!-- End Matrix changes -->
+					<!-- End Nexus changes -->
 				                
 			</control>
 		</control>
@@ -761,7 +779,7 @@
 					<shadowcolor>Black</shadowcolor>
 				</control>
 				
-				<!-- Begin Matrix changes -->
+				<!-- Begin Nexus changes -->
 					
 					<!-- Editlist and Chapters -->
 					<control type="ranges">
@@ -775,6 +793,24 @@
 				        <righttexture>colors/white.png</righttexture>
 				        <info>Player.Editlist</info>
 			        </control>
+					<control type="ranges">
+				        <left>30</left>
+				        <top>14</top>
+				        <width>1570</width>
+				        <height>8</height>
+				        <texturebg border="3" colordiffuse="00FFFFFF">colors/red50.png</texturebg>
+				        <righttexture>colors/red.png</righttexture>
+				        <info>Player.Cuts</info>
+			        </control>
+					<control type="ranges">
+				        <left>30</left>
+				        <top>14</top>
+				        <width>1570</width>
+				        <height>4</height>
+				        <texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
+				        <righttexture>colors/white.png</righttexture>
+				        <info>Player.SceneMarkers</info>
+			        </control>
 			        <control type="ranges">
 				        <left>30</left>
 				        <top>14</top>
@@ -785,7 +821,7 @@
 				        <info>Player.Chapters</info>
 			        </control>
 					
-					<!-- End Matrix changes -->
+					<!-- End Nexus changes -->
 				                
 			</control>
 		</control>
