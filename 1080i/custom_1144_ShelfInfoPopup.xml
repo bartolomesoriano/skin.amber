@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="1144" type="dialog">
+<window id="1144" type="dialog" modality="modal">
 
 	<defaultcontrol always="true">64</defaultcontrol>
     
@@ -28,17 +28,18 @@
 	<controls>
         
 		<control type="button" id="64">
+			<onfocus condition="Control.IsVisible(4490)">SetFocus(4490)</onfocus>
 			<oninfo>ClearProperty(ShowWidgetPopup,Home)</oninfo>
-			<oninfo>Dialog.Close(1144)</oninfo>
 			<onclick>Dialog.Close(1144)</onclick>
-			<onleft>Dialog.Close(1144)</onleft>
-			<onright>Dialog.Close(1144)</onright>
+			<onleft condition="!Control.IsVisible(4490)">Dialog.Close(1144)</onleft>
+			<onright condition="!Control.IsVisible(4490)">Dialog.Close(1144)</onright>
             <onback>ClearProperty(ShowWidgetPopup,Home)</onback>
 			<onback>Dialog.Close(1144)</onback>
 			<onup>ClearProperty(ShowWidgetPopup,Home)</onup>
 			<onup>Dialog.Close(1144)</onup>
-			<ondown>ClearProperty(ShowWidgetPopup,Home)</ondown>
-			<ondown>Dialog.Close(1144)</ondown>
+			<ondown condition="!Control.IsVisible(4490)">ClearProperty(ShowWidgetPopup,Home)</ondown>
+			<ondown condition="Control.IsVisible(4490)">Dialog.Close(1144)</ondown>
+			<ondown condition="Control.IsVisible(4490)">4490</ondown>
 			<include>HiddenButton</include>
 		</control>
 		<control type="group" id="14000">
@@ -53,7 +54,7 @@
 				<top>2</top>
 				<left>22</left>
 				<width>1303</width>
-				<height>598</height>
+				<height>698</height>
 				<texture border="40">dialogs/DialogBG.png</texture>
 			</control>
 			<!-- Logo -->
@@ -468,8 +469,7 @@
 				<left>420</left>
 				<visible>String.IsEqual(Window.Property(DBType),movie) | String.IsEqual(Window.Property(DBType),episode) | String.IsEqual(Window.Property(DBType),musicvideo) | String.IsEqual(Window.Property(DBType),song)</visible>
 			    <control type="group">
-		               <visible>!Skin.HasSetting(coloredflags)</visible>
-		            <include>ContentFade</include>
+		            <visible>!Skin.HasSetting(coloredflags)</visible>
 		            <control type="grouplist">
 		                <width>930</width>
 		                <height>90</height>
@@ -485,24 +485,10 @@
 		        </control>
 		        <control type="group">
 		            <visible>Skin.HasSetting(coloredflags)</visible>
-		            <include>ContentFade</include>
 		            <control type="grouplist">
-		                <visible>![String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
 		                <width>930</width>
 		                <height>90</height>
 		                <itemgap>20</itemgap>
-		                <orientation>horizontal</orientation>
-		                <align>left</align>
-		                <include content="PopupMediaFlagItems">
-			                <param name="itemwidth">100</param>
-		                    <param name="itemheight">90</param>
-		                </include>
-		            </control>
-				    <control type="grouplist">
-		                <visible>[String.Contains(Container.ListItem.Filename,hdr) | String.Contains(Container.ListItem.Filename,sdr)]</visible>
-		                <width>930</width>
-		                <height>90</height>
-		                <itemgap>10</itemgap>
 		                <orientation>horizontal</orientation>
 		                <align>left</align>
 		                <include content="PopupMediaFlagItems">
@@ -622,6 +608,44 @@
 					</control>
 				</control>
 			</control>
+			<control type="grouplist" id="4490">
+                <top>587</top>
+				<left>420</left>
+				<width>889</width>
+				<height>60</height>
+				<onright>4490</onright>
+				<onleft>4490</onleft>
+				<onback>Dialog.Close(1144)</onback>
+				<onup>Dialog.Close(1144)</onup>
+				<ondown>Dialog.Close(1144)</ondown>
+				<itemgap>20</itemgap>
+				<orientation>horizontal</orientation>
+				<usecontrolcoords>true</usecontrolcoords>
+				<visible>!String.IsEmpty(Window.Property(DBID)) + [String.IsEqual(Window.Property(DBType),movie) | String.IsEqual(Window.Property(DBType),tvshow) | String.IsEqual(Window.Property(DBType),episode) | String.IsEqual(Window.Property(DBType),musicvideo)]</visible>
+                <control type="button" id="44908" description="Play/Browse">
+				    <height>60</height>
+                    <width min="210">auto</width>
+                    <align>center</align>
+                    <font>ListDetails</font>
+                    <label>$VAR[ShelfPopupPlayLabel]</label>
+				    <!-- Movie, Episode or Music Video -->
+				    <onclick condition="!String.IsEqual(Window.Property(DBType),tvshow)">Dialog.Close(all)</onclick>
+					<onclick condition="!String.IsEqual(Window.Property(DBType),tvshow)">PlayMedia($ESCINFO[Window.Property(FileNameAndPath)])</onclick>
+				    <!-- Browse TV Show, embuary helper not active -->
+				    <onclick condition="String.IsEqual(Window.Property(DBType),tvshow)">Dialog.Close(all)</onclick>
+					<onclick condition="String.IsEqual(Window.Property(DBType),tvshow)">ActivateWindow(Videos,videodb://tvshows/titles/$INFO[Window.Property(DBID)]/-1/?tvshowid=$INFO[Window.Property(DBID)])</onclick>
+                </control>
+				<control type="button" id="449011" description="Trailer">
+                    <height>60</height>
+                    <width min="210">auto</width>
+                    <font>ListDetails</font>
+                    <align>center</align>
+                    <label>$LOCALIZE[20410]</label>
+                    <onclick>PlayMedia($INFO[Window.Property(Trailer)])</onclick>
+				    <onclick>Dialog.Close(all)</onclick>
+                    <visible>!String.IsEmpty(Window.Property(Trailer))</visible>
+                </control>
+			</control>	
 			<include content="ShadowedImage">
 				<param name="top">36</param>
 				<param name="left">54</param>

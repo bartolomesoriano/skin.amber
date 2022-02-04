@@ -146,6 +146,13 @@
 		<value></value>
 	</variable>
 	
+	<variable name="ShelfPopupPlayLabel">
+		<value condition="String.IsEmpty(Window(1144).Property(DBID)) + !Skin.HasSetting(Enable.TMDbHelper)">$LOCALIZE[15067]</value>
+		<value condition="String.IsEqual(Window(1144).Property(DBType),tvshow)">$LOCALIZE[1024]</value>
+		<value condition="Window(1144).Property(IsResumable)">$LOCALIZE[13404]</value>
+		<value>$LOCALIZE[208]</value>
+	</variable>
+	
 	<include name="PopupLeftHorizontal">
 	    <left>277</left>
 	</include>
@@ -232,28 +239,14 @@
 				<texture>badges/3D.png</texture>
 			</control> 
             <control type="image">
-				<visible>!String.IsEmpty(Window(1144).Property(VideoResolution))</visible>
-				<visible>Skin.HasSetting(Show.ColorRangeFlags) + [String.Contains(Window(1144).Property(FileNameAndPath),hdr) | String.Contains(Window(1144).Property(FileNameAndPath),sdr)]</visible>
+				<visible>!String.IsEmpty(Window(1144).Property(HdrType))</visible>
 				<height>$PARAM[itemheight]</height>
 				<width>$PARAM[itemwidth]</width>
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
-				<texture>$VAR[PopupHDRFlagVar]</texture>
+				<texture>badges/videohdr/$INFO[Window(1144).Property(HdrType),,.png]</texture>
 			</control>
-			<control type="image">
-				<visible>!String.IsEmpty(Window(1144).Property(VideoResolution))</visible>
-				<visible>Skin.HasSetting(Show.ColorRangeFlags) + 
-				         [[String.Contains(Window(1144).Property(FileNameAndPath),8bit) | String.Contains(Window(1144).Property(FileNameAndPath),8-bit)] | 
-						  [String.Contains(Window(1144).Property(FileNameAndPath),10bit) | String.Contains(Window(1144).Property(FileNameAndPath),10-bit)] | 
-						  [String.Contains(Window(1144).Property(FileNameAndPath),12bit) | String.Contains(Window(1144).Property(FileNameAndPath),12-bit)]]</visible>
-				<height>$PARAM[itemheight]</height>
-				<width>$PARAM[itemwidth]</width>
-				<bordersize>3</bordersize>
-				<aspectratio>keep</aspectratio>
-				<colordiffuse>$PARAM[diffuse]</colordiffuse>
-				<texture>$VAR[PopupBitDepthFlagVar]</texture>
-			</control>		
 			<control type="image">
 				<visible>!String.IsEmpty(Window(1144).Property(AudioCodec))</visible>
 				<height>$PARAM[itemheight]</height>
@@ -357,6 +350,11 @@
 		<onfocus>ClearProperty(Album_Style,1144)</onfocus>
 		<onfocus>ClearProperty(Album_Mood,1144)</onfocus>
 		<onfocus>ClearProperty(ShelfDelay,1144)</onfocus>
+		<onfocus>ClearProperty(HdrType,1144)</onfocus>
+		<onfocus>ClearProperty(DBID,1144)</onfocus>
+		<onfocus>ClearProperty(Trailer,1144)</onfocus>
+		<onfocus>ClearProperty(IsResumable,1144)</onfocus>
+		<onfocus>ClearProperty(FolderPath,1144)</onfocus>
 	</include>
 	
 	<include name="SetShelfPopupProps">
@@ -419,6 +417,11 @@
 				<onfocus>SetProperty(Album_Mood,"$INFO[ListItem.Property(Album_Mood)]",1144)</onfocus>
 			    <onfocus condition="$PARAM[EnableProp]">SetProperty(ShowWidgetPopup,True,Home)</onfocus>
 				<onfocus>SetProperty(ShelfPopupDelay,"$PARAM[ShelfDelay]",1144)</onfocus>
+				<onfocus>SetProperty(HdrType,"$INFO[ListItem.HdrType]",1144)</onfocus>
+				<onfocus>SetProperty(DBID,"$INFO[ListItem.DBID]",1144)</onfocus>
+				<onfocus>SetProperty(Trailer,"$INFO[ListItem.Trailer]",1144)</onfocus>
+				<onfocus>SetProperty(FolderPath,"$INFO[ListItem.FolderPath]",1144)</onfocus>
+				<onfocus condition="ListItem.IsResumable">SetProperty(IsResumable,True,1144)</onfocus>
 		    </control>
 		</definition>	
 	</include>

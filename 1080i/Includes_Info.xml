@@ -876,10 +876,6 @@
 		<value condition="Window.IsActive(script-embuary-video.xml) + String.IsEqual(Container(10051).ListItem.DBType,movie)">with_companies</value>
 	</variable>
 
-
-
-
-
 	<variable name="TMDbFanart">
 		<value condition="[String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)] + !Skin.HasSetting(Disable.OnlineTMDbInfo) + Skin.HasSetting(Enable.TMDbHelper)">plugin://plugin.video.themoviedb.helper/?info=fanart&amp;type=$VAR[TMDbMediaType]&amp;$VAR[TMDbParam]&amp;nextpage=false</value>
 	</variable>
@@ -1026,8 +1022,6 @@
 		<value condition="String.IsEqual(Window(Home).Property(SingleSearchType),LocalMovieTags)">videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22tag%22%2C%22operator%22%3A%22contains%22%2C%22value%22%3A%5B%22$INFO[Skin.String(SingleSearchTerm)]%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D</value>
 	</variable>
 
-
-
 	<!-- Embuary Info Crew for movies/tv shows, guest stars for seasons -->
 	<variable name="EmbuaryInfoCrewLabel">
 		<value condition="String.IsEqual(Container(10051).ListItem.DBType,season)">$LOCALIZE[32129]</value>
@@ -1063,10 +1057,6 @@
 		<value condition="[!String.IsEmpty(Container(10051).ListItem.Property(Age)) + !String.IsEmpty(Container(10051).ListItem.Property(Deathday))]">$LOCALIZE[32153]</value>
 		<value condition="[!String.IsEmpty(ListItem.Property(Age)) + !String.IsEmpty(ListItem.Property(Deathday))]">$LOCALIZE[32153]</value>
 		<value condition="[!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Age)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Deathday))]">$LOCALIZE[32153]</value>
-
-
-
-
 	</variable>
 	<variable name="TMDbPersonBio">
 		<value condition="!String.IsEmpty(ListItem.Property(Biography))">$INFO[ListItem.Property(Biography)]</value>
