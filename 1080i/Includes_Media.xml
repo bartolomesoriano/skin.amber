@@ -4272,7 +4272,7 @@
 				    <fadetime>1</fadetime>
 				    <randomize>false</randomize>
                     <aspectratio>$PARAM[aspect]</aspectratio>
-					<bordertexture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
+					<bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
 					<bordersize>$PARAM[bordersizeLT],$PARAM[bordersizeLT],$PARAM[bordersizeRB],$PARAM[bordersizeRB]</bordersize>
 					<aspectratio>$PARAM[aspect]</aspectratio>
 				</control>
@@ -4375,7 +4375,7 @@
 				<control type="image">
 					<visible>$PARAM[isFocused]</visible>
 					<texture background="true" fallback="$PARAM[fallbackicon]">$PARAM[iconimage]</texture>
-					<bordertexture colordiffuse="$VAR[MediaWidgetsHighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
+					<bordertexture colordiffuse="$VAR[MediaWidgetsHighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
 					<bordersize>$PARAM[bordersizeLT],$PARAM[bordersizeLT],$PARAM[bordersizeRB],$PARAM[bordersizeRB]</bordersize>
 					<aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspect]</aspectratio>
 				</control>

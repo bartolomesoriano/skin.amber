@@ -985,7 +985,7 @@
 						<control type="image">
 							<width>444</width>
 							<height>250</height>
-                            <texture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</texture>
+                            <texture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</texture>
 							<visible>Control.HasFocus(11)</visible>
 						</control>
 					</control>

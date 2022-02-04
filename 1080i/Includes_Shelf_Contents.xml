@@ -1771,7 +1771,7 @@
 					<visible>$PARAM[showLabelFallback]</visible>
 					<control type="image">
 						<texture background="true">thumbs/labelback.png</texture>
-						<bordertexture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
+						<bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
 						<bordersize>$PARAM[bordersizeLT],$PARAM[bordersizeLT],$PARAM[bordersizeRB],$PARAM[bordersizeRB]</bordersize>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<height>$PARAM[artworkheightsmall]</height>
@@ -1969,7 +1969,7 @@
 					<visible>$PARAM[showLabelFallback]</visible>
 					<control type="image">
 						<texture background="true">thumbs/labelback.png</texture>
-						<bordertexture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
+						<bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
 						<bordersize>$PARAM[bordersizeLT],$PARAM[bordersizeLT],$PARAM[bordersizeRB],$PARAM[bordersizeRB]</bordersize>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<height>$PARAM[artworkheightmed]</height>
@@ -2169,7 +2169,7 @@
 					<visible>$PARAM[showLabelFallback]</visible>
 					<control type="image">
 						<texture background="true">thumbs/labelback.png</texture>
-						<bordertexture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
+						<bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
 						<bordersize>$PARAM[bordersizeLT],$PARAM[bordersizeLT],$PARAM[bordersizeRB],$PARAM[bordersizeRB]</bordersize>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<height>$PARAM[artworkheightbig]</height>
@@ -2338,7 +2338,7 @@
 					<visible>$PARAM[showLabelFallback]</visible>
 					<control type="image">
 						<texture background="true">thumbs/labelback.png</texture>
-						<bordertexture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
+						<bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
 						<bordersize>$PARAM[bordersizeLT],$PARAM[bordersizeLT],$PARAM[bordersizeRB],$PARAM[bordersizeRB]</bordersize>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<height>$PARAM[artworkheightsmall]</height>
@@ -2471,7 +2471,7 @@
 					<visible>$PARAM[showLabelFallback]</visible>
 					<control type="image">
 						<texture background="true">thumbs/labelback.png</texture>
-						<bordertexture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
+						<bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
 						<bordersize>$PARAM[bordersizeLT],$PARAM[bordersizeLT],$PARAM[bordersizeRB],$PARAM[bordersizeRB]</bordersize>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<height>$PARAM[artworkheightmed]</height>
@@ -2604,7 +2604,7 @@
 					<visible>$PARAM[showLabelFallback]</visible>
 					<control type="image">
 						<texture background="true" fallback="$PARAM[fallbackicon]">thumbs/labelback.png</texture>
-						<bordertexture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
+						<bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
 						<bordersize>$PARAM[bordersizeLT],$PARAM[bordersizeLT],$PARAM[bordersizeRB],$PARAM[bordersizeRB]</bordersize>
 						<aspectratio align="center" aligny="center">stretch</aspectratio>
 						<height>$PARAM[artworkheightbig]</height>

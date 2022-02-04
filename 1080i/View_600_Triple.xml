@@ -326,7 +326,7 @@
 				    <focusedlayout height="255">
 					    <control type="image">
 					        <texture background="true">thumbs/labelback.png</texture>
-					        <bordertexture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
+					        <bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
 					        <bordersize>12,12,20,20</bordersize>
 					        <aspectratio align="center" aligny="center">stretch</aspectratio>
 						    <height>255</height>
@@ -521,7 +521,7 @@
 						<control type="group">
 							<control type="image">
 					            <texture background="true">thumbs/labelback.png</texture>
-					            <bordertexture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
+					            <bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
 					            <bordersize>12,12,20,20</bordersize>
 					            <aspectratio align="center" aligny="center">stretch</aspectratio>
 						        <height>255</height>
@@ -651,7 +651,7 @@
 						<control type="group">
 							<control type="image">
 					            <texture background="true">thumbs/labelback.png</texture>
-					            <bordertexture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
+					            <bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
 					            <bordersize>12,12,20,20</bordersize>
 					            <aspectratio align="center" aligny="center">stretch</aspectratio>
 						        <height>255</height>
@@ -784,7 +784,7 @@
 								<width>950</width>
 								<height>269.5</height>
 								<texture background="true">thumbs/labelback.png</texture>
-					            <bordertexture colordiffuse="$VAR[HighlightColor]" border="8">thumbs/IconBorder_FO.png</bordertexture>
+					            <bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
 					            <bordersize>12,12,20,20</bordersize>
 					            <aspectratio align="center" aligny="center">stretch</aspectratio>
 							</control>
