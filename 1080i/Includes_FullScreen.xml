@@ -515,6 +515,7 @@
 		    </include>
 			<onclick>PlayerControl(Previous)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<visible>Player.HasSceneMarkers | Player.ChapterCount | Integer.IsGreater(Playlist.Length(video),1) | [Player.SeekEnabled + VideoPlayer.Content(livetv)]</visible>
 		</control>
 		<!-- Rewind -->
 		<control type="radiobutton" id="601">
@@ -524,6 +525,7 @@
 		    <enable>Player.SeekEnabled</enable>
 			<onclick>PlayerControl(Rewind)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<visible>[Player.SeekEnabled + !VideoPlayer.Content(livetv)] + !Player.Paused</visible>
 		</control>
 		<!-- Play/Pause -->
 		<control type="radiobutton" id="602">
@@ -561,6 +563,7 @@
 		    <enable>Player.SeekEnabled</enable>
 			<onclick>PlayerControl(Forward)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<visible>[Player.SeekEnabled + !VideoPlayer.Content(livetv)] + !Player.Paused</visible>
 		</control>
 		<!-- Next -->
 		<control type="radiobutton" id="605">
@@ -572,6 +575,7 @@
 		    </include>
 		    <onclick>PlayerControl(Next)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<visible>Player.HasSceneMarkers | Player.ChapterCount | Integer.IsGreater(Playlist.Length(video),1) | PVR.IsTimeShift</visible>
 		</control>
 		<!-- Video Menu -->
 		<control type="radiobutton" id="661">
@@ -666,6 +670,7 @@
             <texturenofocus flipx="true">OSD/compact/next.png</texturenofocus>
 		    <onclick>PlayerControl(Previous)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<visible>Player.HasSceneMarkers | Player.ChapterCount | Integer.IsGreater(Playlist.Length(video),1) | [Player.SeekEnabled + VideoPlayer.Content(livetv)]</visible>
 		</control>
 		<!-- Rewind -->
 		<control type="button" id="601">
@@ -677,6 +682,7 @@
             <texturenofocus flipx="true">OSD/compact/ff.png</texturenofocus>
 		    <onclick>PlayerControl(Rewind)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<visible>[Player.SeekEnabled + !VideoPlayer.Content(livetv)] + !Player.Paused</visible>
 		</control>
 		<!-- Play/Pause -->
 		<control type="togglebutton" id="602">
@@ -716,6 +722,7 @@
             <texturenofocus>OSD/compact/ff.png</texturenofocus>
 		    <onclick>PlayerControl(Forward)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<visible>[Player.SeekEnabled + !VideoPlayer.Content(livetv)] + !Player.Paused</visible>
 		</control>
 		<!-- Next -->
 		<control type="button" id="605">
@@ -727,6 +734,7 @@
             <texturenofocus>OSD/compact/next.png</texturenofocus>
 		    <onclick>PlayerControl(Next)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<visible>Player.HasSceneMarkers | Player.ChapterCount | Integer.IsGreater(Playlist.Length(video),1) | PVR.IsTimeShift</visible>
 		</control>
 		<!-- Video Menu -->
 		<control type="button" id="661">

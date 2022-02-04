@@ -149,7 +149,7 @@
 					<width>1600</width>
 					<height>50</height>
 					<aligny>bottom</aligny>
-					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[38031]:[/COLOR] $INFO[Player.Process(videowidth),,x]$INFO[Player.Process(videoheight),, px]$INFO[Player.Process(videodar),$COMMA , AR]$INFO[Player.Process(videofps),$COMMA , FPS]</label>
+					<label>[COLOR $VAR[HighlightColor]]$LOCALIZE[38031]:[/COLOR] $INFO[Player.Process(videowidth),,x]$INFO[Player.Process(videoheight)]$INFO[Player.Process(videoscantype)]$INFO[Player.Process(videodar),$COMMA , AR]$INFO[Player.Process(videofps),$COMMA , FPS]</label>
 					<shadowcolor>black</shadowcolor>
 					<visible>Player.HasVideo</visible>          
 				</control>
