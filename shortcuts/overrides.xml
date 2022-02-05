@@ -245,12 +245,12 @@
 	<propertySettings property="widgetAutoScroll" buttonID="3010" title="$LOCALIZE[31630]" templateonly="true"/>
 	
 	<!-- Widget 1 Popup Delay -->
-	<property property="widgetPopupDelay" label="1 ">$NUMBER[1]</property>
-	<property property="widgetPopupDelay" label="2 ">$NUMBER[2]</property>
-	<property property="widgetPopupDelay" label="3 ">$NUMBER[3]</property>
-	<property property="widgetPopupDelay" label="4 ">$NUMBER[4]</property>
-	<property property="widgetPopupDelay" label="5 ">$NUMBER[5]</property>
-	<property property="widgetPopupDelay" label="6 ">$NUMBER[6]</property>
+	<property property="widgetPopupDelay" label="1 ">00:00:01</property>
+	<property property="widgetPopupDelay" label="2 ">00:00:02</property>
+	<property property="widgetPopupDelay" label="3 ">00:00:03</property>
+	<property property="widgetPopupDelay" label="4 ">00:00:04</property>
+	<property property="widgetPopupDelay" label="5 ">00:00:05</property>
+	<property property="widgetPopupDelay" label="6 ">00:00:06</property>
 	<propertySettings property="widgetPopupDelay" buttonID="3012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
 	
 	<!-- Widget 2 Artwork -->
@@ -335,12 +335,12 @@
 	<propertySettings property="widgetAutoScroll.2" buttonID="4010" title="$LOCALIZE[31630]" templateonly="true"/>
 	
 	<!-- Widget 2 Popup Delay -->
-	<property property="widgetPopupDelay.2" label="1 ">$NUMBER[1]</property>
-	<property property="widgetPopupDelay.2" label="2 ">$NUMBER[2]</property>
-	<property property="widgetPopupDelay.2" label="3 ">$NUMBER[3]</property>
-	<property property="widgetPopupDelay.2" label="4 ">$NUMBER[4]</property>
-	<property property="widgetPopupDelay.2" label="5 ">$NUMBER[5]</property>
-	<property property="widgetPopupDelay.2" label="6 ">$NUMBER[6]</property>
+	<property property="widgetPopupDelay.2" label="1 ">00:00:01</property>
+	<property property="widgetPopupDelay.2" label="2 ">00:00:02</property>
+	<property property="widgetPopupDelay.2" label="3 ">00:00:03</property>
+	<property property="widgetPopupDelay.2" label="4 ">00:00:04</property>
+	<property property="widgetPopupDelay.2" label="5 ">00:00:05</property>
+	<property property="widgetPopupDelay.2" label="6 ">00:00:06</property>
 	<propertySettings property="widgetPopupDelay.2" buttonID="4012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
 	
 	<!-- Widget 3 Artwork -->
@@ -425,12 +425,12 @@
 	<propertySettings property="widgetAutoScroll.3" buttonID="5010" title="$LOCALIZE[31630]" templateonly="true"/>
 	
 	<!-- Widget 3 Popup Delay -->
-	<property property="widgetPopupDelay.3" label="1 ">$NUMBER[1]</property>
-	<property property="widgetPopupDelay.3" label="2 ">$NUMBER[2]</property>
-	<property property="widgetPopupDelay.3" label="3 ">$NUMBER[3]</property>
-	<property property="widgetPopupDelay.3" label="4 ">$NUMBER[4]</property>
-	<property property="widgetPopupDelay.3" label="5 ">$NUMBER[5]</property>
-	<property property="widgetPopupDelay.3" label="6 ">$NUMBER[6]</property>
+	<property property="widgetPopupDelay.3" label="1 ">00:00:01</property>
+	<property property="widgetPopupDelay.3" label="2 ">00:00:02</property>
+	<property property="widgetPopupDelay.3" label="3 ">00:00:03</property>
+	<property property="widgetPopupDelay.3" label="4 ">00:00:04</property>
+	<property property="widgetPopupDelay.3" label="5 ">00:00:05</property>
+	<property property="widgetPopupDelay.3" label="6 ">00:00:06</property>
 	<propertySettings property="widgetPopupDelay.3" buttonID="5012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
 
 	<!-- Widget 4 Artwork -->
@@ -515,12 +515,12 @@
 	<propertySettings property="widgetAutoScroll.4" buttonID="6010" title="$LOCALIZE[31630]" templateonly="true"/>
 	
 	<!-- Widget 4 Popup Delay -->
-	<property property="widgetPopupDelay.4" label="1 ">$NUMBER[1]</property>
-	<property property="widgetPopupDelay.4" label="2 ">$NUMBER[2]</property>
-	<property property="widgetPopupDelay.4" label="3 ">$NUMBER[3]</property>
-	<property property="widgetPopupDelay.4" label="4 ">$NUMBER[4]</property>
-	<property property="widgetPopupDelay.4" label="5 ">$NUMBER[5]</property>
-	<property property="widgetPopupDelay.4" label="6 ">$NUMBER[6]</property>
+	<property property="widgetPopupDelay.4" label="1 ">00:00:01</property>
+	<property property="widgetPopupDelay.4" label="2 ">00:00:02</property>
+	<property property="widgetPopupDelay.4" label="3 ">00:00:03</property>
+	<property property="widgetPopupDelay.4" label="4 ">00:00:04</property>
+	<property property="widgetPopupDelay.4" label="5 ">00:00:05</property>
+	<property property="widgetPopupDelay.4" label="6 ">00:00:06</property>
 	<propertySettings property="widgetPopupDelay.4" buttonID="6012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
 
 	<!-- Widget 5 Artwork -->
@@ -605,12 +605,12 @@
 	<propertySettings property="widgetAutoScroll.5" buttonID="7010" title="$LOCALIZE[31630]" templateonly="true"/>
 	
 	<!-- Widget 5 Popup Delay -->
-	<property property="widgetPopupDelay.5" label="1 ">$NUMBER[1]</property>
-	<property property="widgetPopupDelay.5" label="2 ">$NUMBER[2]</property>
-	<property property="widgetPopupDelay.5" label="3 ">$NUMBER[3]</property>
-	<property property="widgetPopupDelay.5" label="4 ">$NUMBER[4]</property>
-	<property property="widgetPopupDelay.5" label="5 ">$NUMBER[5]</property>
-	<property property="widgetPopupDelay.5" label="6 ">$NUMBER[6]</property>
+	<property property="widgetPopupDelay.5" label="1 ">00:00:01</property>
+	<property property="widgetPopupDelay.5" label="2 ">00:00:02</property>
+	<property property="widgetPopupDelay.5" label="3 ">00:00:03</property>
+	<property property="widgetPopupDelay.5" label="4 ">00:00:04</property>
+	<property property="widgetPopupDelay.5" label="5 ">00:00:05</property>
+	<property property="widgetPopupDelay.5" label="6 ">00:00:06</property>
 	<propertySettings property="widgetPopupDelay.5" buttonID="7012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
 
 	<!-- Widget 6 Artwork -->
@@ -695,12 +695,12 @@
 	<propertySettings property="widgetAutoScroll.6" buttonID="8010" title="$LOCALIZE[31630]" templateonly="true"/>
 	
 	<!-- Widget 6 Popup Delay -->
-	<property property="widgetPopupDelay.6" label="1 ">$NUMBER[1]</property>
-	<property property="widgetPopupDelay.6" label="2 ">$NUMBER[2]</property>
-	<property property="widgetPopupDelay.6" label="3 ">$NUMBER[3]</property>
-	<property property="widgetPopupDelay.6" label="4 ">$NUMBER[4]</property>
-	<property property="widgetPopupDelay.6" label="5 ">$NUMBER[5]</property>
-	<property property="widgetPopupDelay.6" label="6 ">$NUMBER[6]</property>
+	<property property="widgetPopupDelay.6" label="1 ">00:00:01</property>
+	<property property="widgetPopupDelay.6" label="2 ">00:00:02</property>
+	<property property="widgetPopupDelay.6" label="3 ">00:00:03</property>
+	<property property="widgetPopupDelay.6" label="4 ">00:00:04</property>
+	<property property="widgetPopupDelay.6" label="5 ">00:00:05</property>
+	<property property="widgetPopupDelay.6" label="6 ">00:00:06</property>
 	<propertySettings property="widgetPopupDelay.6" buttonID="8012" title="$LOCALIZE[31652]" templateonly="true" showNone="false"/>
 
 

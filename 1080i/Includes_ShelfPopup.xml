@@ -422,6 +422,7 @@
 				<onfocus>SetProperty(Trailer,"$INFO[ListItem.Trailer]",1144)</onfocus>
 				<onfocus>SetProperty(FolderPath,"$INFO[ListItem.FolderPath]",1144)</onfocus>
 				<onfocus condition="ListItem.IsResumable">SetProperty(IsResumable,True,1144)</onfocus>
+				<onfocus condition="$PARAM[EnableProp]">AlarmClock(shelfpoputimer1,ActivateWindow(1144),$PARAM[ShelfDelay],silent,false)</onfocus>
 		    </control>
 		</definition>	
 	</include>
