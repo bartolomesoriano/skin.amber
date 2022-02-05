@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-01-12 19:11+0000\n"
+"PO-Revision-Date: 2022-01-22 09:13+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Russian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/ru_ru/>\n"
 "Language: ru_ru\n"
@@ -23,15 +23,15 @@ msgstr "No bloatware, just your media with an easy to navigate interface"
 
 msgctxt "Addon Description"
 msgid "No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins."
-msgstr ""
+msgstr "Никаких вредоносных программ, только ваши носители с удобным интерфейсом навигации.[CR] Использует некоторые текстуры из скинов Mediastream и Aeon."
 
 msgctxt "#31000"
 msgid "Picture Channels"
-msgstr ""
+msgstr "Каналы изображения"
 
 msgctxt "#31001"
 msgid "Video Channels"
-msgstr ""
+msgstr "Видеоканалы"
 
 msgctxt "#31002"
 msgid "Music Channels"
@@ -39,91 +39,91 @@ msgstr ""
 
 msgctxt "#31003"
 msgid "Channels Directory"
-msgstr ""
+msgstr "Каталог каналов"
 
 msgctxt "#31004"
 msgid "Shift"
-msgstr ""
+msgstr "Сдвиг"
 
 msgctxt "#31005"
 msgid "Cinema"
-msgstr ""
+msgstr "Кинотеатр"
 
 msgctxt "#31006"
 msgid "Shared"
-msgstr ""
+msgstr "Общий"
 
 msgctxt "#31007"
 msgid "PleXBMC settings"
-msgstr ""
+msgstr "Настройки PleXBMC"
 
 msgctxt "#31008"
 msgid "Go Plex"
-msgstr ""
+msgstr "Идти в Plex"
 
 msgctxt "#31009"
 msgid "Go Kodi"
-msgstr ""
+msgstr "Вход в Kodi"
 
 msgctxt "#31010"
 msgid "Queue"
-msgstr ""
+msgstr "Очередь"
 
 msgctxt "#31011"
 msgid "Recently Viewed"
-msgstr ""
+msgstr "Недавно просмотренный"
 
 msgctxt "#31012"
 msgid "Recently Released"
-msgstr ""
+msgstr "Недавно выпущенный"
 
 msgctxt "#31013"
 msgid "Recently Aired"
-msgstr ""
+msgstr "Недавно Вышедший В Эфир"
 
 msgctxt "#31014"
 msgid "On Deck"
-msgstr ""
+msgstr "На палубе"
 
 msgctxt "#31015"
 msgid "Sign In"
-msgstr ""
+msgstr "войти в систему"
 
 msgctxt "#31016"
 msgid "Sign Out"
-msgstr ""
+msgstr "выход из системы"
 
 msgctxt "#31017"
 msgid "Switch User"
-msgstr ""
+msgstr "Переключить пользователя"
 
 msgctxt "#31018"
 msgid "4-day view"
-msgstr ""
+msgstr "4-дневный обзор"
 
 msgctxt "#31019"
 msgid "8-day view"
-msgstr ""
+msgstr "8-дневный обзор"
 
 msgctxt "#31020"
 msgid "Recently Added"
-msgstr ""
+msgstr "Недавно Добавленный"
 
 msgctxt "#31021"
 msgid "Recently Played"
-msgstr ""
+msgstr "Недавно проигранный"
 
 msgctxt "#31022"
 msgid "Kodi"
-msgstr ""
+msgstr "Коди"
 
 msgctxt "#31023"
 msgid "Viewtype"
-msgstr ""
+msgstr "Тип представления"
 
 msgctxt "#31024"
 msgid "Sort by"
-msgstr ""
+msgstr "Сортировать по"
 
 msgctxt "#31025"
 msgid "Items"
@@ -135,84 +135,84 @@ msgstr "Другие параметры"
 
 msgctxt "#31027"
 msgid "Order"
-msgstr ""
+msgstr "Заказ"
 
 msgctxt "#31028"
 msgid "Amber Settings"
-msgstr ""
+msgstr "Настройки Amber"
 
 msgctxt "#31029"
 msgid "Remaining"
-msgstr ""
+msgstr "Оставшийся"
 
 msgctxt "#31030"
 msgid "Settings entry point"
-msgstr ""
+msgstr "Точка входа в настройки"
 
 msgctxt "#31031"
 msgid "Home menu and Quit menu"
-msgstr ""
+msgstr "Главное меню и меню выхода"
 
 msgctxt "#31032"
 msgid "Home menu Only"
-msgstr ""
+msgstr "Только Главное меню"
 
 msgctxt "#31033"
 msgid "Quit menu Only"
-msgstr ""
+msgstr "Только выход из меню"
 
 msgctxt "#31034"
 msgid "Hide weather info in title bar"
-msgstr ""
+msgstr "Скрыть информацию о погоде в строке заголовка"
 
 msgctxt "#31035"
 msgid "Media Flags"
-msgstr ""
+msgstr "Флаги СМИ"
 
 msgctxt "#31036"
 msgid "Next tracks"
-msgstr ""
+msgstr "Следующие треки"
 
 msgctxt "#31037"
 msgid "Rated"
-msgstr ""
+msgstr "Номинальный"
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
-msgstr ""
+msgstr "Сбросьте ВСЕ настройки скина до значений по умолчанию"
 
 msgctxt "#31039"
 msgid "Hide title bar on sub windows"
-msgstr ""
+msgstr "Скрыть строку заголовка во вложенных окнах"
 
 msgctxt "#31040"
 msgid "Hide PVR recording status in title bar"
-msgstr ""
+msgstr "Скрыть статус записи PVR в строке заголовка"
 
 msgctxt "#31041"
 msgid "Repository"
-msgstr ""
+msgstr "Хранилище"
 
 # empty strings from id 31042 to 31044
 msgctxt "#31045"
 msgid "Show Triple Row Shelf"
-msgstr ""
+msgstr "Показать Трехрядную Полку"
 
 msgctxt "#31046"
 msgid "Show Double Row Shelf"
-msgstr ""
+msgstr "Показать Двухрядную Полку"
 
 msgctxt "#31047"
 msgid "Select your Kodi user profile to login and continue"
-msgstr ""
+msgstr "Выберите свой профиль пользователя Kodi для входа и продолжения"
 
 msgctxt "#31048"
 msgid "Visualization Presets"
-msgstr ""
+msgstr "Настройки визуализации"
 
 msgctxt "#31049"
 msgid "Settings Level"
-msgstr ""
+msgstr "Уровень настроек"
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
@@ -224,28 +224,28 @@ msgstr "По убыванию"
 
 msgctxt "#31052"
 msgid "Sections"
-msgstr ""
+msgstr "Разделы"
 
 msgctxt "#31053"
 msgid "Media Views"
-msgstr ""
+msgstr "Просмотры медиа"
 
 msgctxt "#31054"
 msgid "Media sources"
-msgstr ""
+msgstr "Выбор медиа"
 
 # empty strings from id 31055 to 31068
 msgctxt "#31069"
 msgid "Random episodes"
-msgstr ""
+msgstr "Случайные эпизоды"
 
 msgctxt "#31070"
 msgid "Random movies"
-msgstr ""
+msgstr "Случайные фильмы"
 
 msgctxt "#31071"
 msgid "In progress movies"
-msgstr ""
+msgstr "Незавершенные фильмы"
 
 msgctxt "#31072"
 msgid "Unwatched TV shows"
@@ -1753,7 +1753,7 @@ msgid "Use default background for sub windows"
 msgstr ""
 
 msgctxt "#31952"
-msgid "Show Fanart background with music visualisation"
+msgid "Show Artist Fanart background with Music Visualisation"
 msgstr ""
 
 msgctxt "#31953"
@@ -1826,7 +1826,7 @@ msgid "Show info"
 msgstr ""
 
 msgctxt "#31969"
-msgid "Use Artist Slideshow for fanart"
+msgid "Use Artist Slideshow Addon Fanart with Music Visualisation"
 msgstr ""
 
 msgctxt "#31970"
@@ -3721,4 +3721,28 @@ msgstr ""
 
 msgctxt "#32479"
 msgid "Also Show Seconds"
+msgstr ""
+
+msgctxt "#32480"
+msgid "kbps"
+msgstr ""
+
+msgctxt "#32481"
+msgid "Remember Focused Control in Home Window"
+msgstr ""
+
+msgctxt "#32482"
+msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
+msgstr ""
+
+msgctxt "#32483"
+msgid "Allow Changing View Types in PVR Channels Window"
+msgstr ""
+
+msgctxt "#32484"
+msgid "Update Library"
+msgstr ""
+
+msgctxt "#32485"
+msgid "Stop Scanning"
 msgstr ""

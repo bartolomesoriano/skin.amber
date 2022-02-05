@@ -22,6 +22,9 @@
 			<top>254</top>
 			<include condition="!Skin.HasSetting(VerticalHome)">PopupLeftHorizontal</include>
 			<include condition="Skin.HasSetting(VerticalHome)">PopupLeftVertical</include>
+			
+			<include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)">PopupInfoButtonList</include>
+			
 			<control type="image">
 				<top>2</top>
 				<left>22</left>
@@ -617,6 +620,16 @@
                     <onclick>PlayMedia($INFO[Window(1144).Property(Trailer)])</onclick>
 				    <onclick>Dialog.Close(all)</onclick>
                     <visible>!String.IsEmpty(Window(1144).Property(Trailer))</visible>
+                </control>
+				<control type="button" id="449012" description="More Info">
+                    <height>60</height>
+                    <width min="210">auto</width>
+                    <font>ListDetails</font>
+                    <align>center</align>
+                    <label>$LOCALIZE[32486]</label>
+                    <onclick>SetFocus(114401)</onclick>
+				    <onclick>Action(Info)</onclick>
+                    <visible>System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)</visible>
                 </control>
 			</control>	
 			<include content="ShadowedImage">

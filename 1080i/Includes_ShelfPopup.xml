@@ -427,4 +427,22 @@
 		</definition>	
 	</include>
 	
+	<include name="PopupInfoButtonList">
+		<control type="list" id="114401">
+			<onleft>4490</onleft>
+			<onright>4490</onright>
+			<onup>4490</onup>
+			<ondown>4490</ondown>
+			<onback>4490</onback>
+			<onunfocus>SetFocus(4490)</onunfocus>
+			<left>-2000</left>
+			<top>-2000</top>
+			<width>1</width>
+			<height>1</height>
+			<itemlayout/>
+			<focusedlayout/>
+			<content>plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[Window(1144).Property(DBID)]&amp;type=$INFO[Window(1144).Property(DBType)]</content>
+		</control>
+	</include>
+	
 </includes>	

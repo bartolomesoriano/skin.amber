@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-11-01 21:44+0000\n"
-"Last-Translator: bsoriano <bsoriano@gmail.com>\n"
+"PO-Revision-Date: 2022-01-28 19:12+0000\n"
+"Last-Translator: Alfonso Cachero <alfonso.cachero@gmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/es_es/>\n"
 "Language: es_es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8.1\n"
+"X-Generator: Weblate 4.10.1\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -671,7 +671,7 @@ msgstr "Fanart Aleatorio"
 
 msgctxt "#31404"
 msgid "Conditional weather"
-msgstr "Basado en Condiciones del Clima"
+msgstr "Basado en condiciones meteorológicas"
 
 msgctxt "#31405"
 msgid "Movie Library Statistics"
@@ -955,11 +955,11 @@ msgstr "Videoclips No Vistos"
 
 msgctxt "#31475"
 msgid "Daily Weather Forecast"
-msgstr "Prónostico del Clima Diario"
+msgstr "Prónostico Meteorológico Diario"
 
 msgctxt "#31476"
 msgid "Hourly Weather Forecast"
-msgstr "Prónostico del Clima por Hora"
+msgstr "Prónostico de Meteorológico por Hora"
 
 msgctxt "#31477"
 msgid "Memory Used"
@@ -1351,7 +1351,7 @@ msgstr "Fondo Predeterminado de Fotos"
 
 msgctxt "#31577"
 msgid "Default Weather Background"
-msgstr "Fondo Predeterminado de Clima"
+msgstr "Fondo Predeterminado de Meteorología"
 
 msgctxt "#31578"
 msgid "Default Games Background"
@@ -1487,11 +1487,11 @@ msgstr "Tipo de Arte"
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr "Póster"
+msgstr "Cartel"
 
 msgctxt "#31612"
 msgid "Square"
-msgstr "Ícono Cuadrado"
+msgstr "Cuadrado"
 
 msgctxt "#31613"
 msgid "Standard"
@@ -1599,11 +1599,11 @@ msgstr "Mostrar Atajos Inferiores para este ítem de Menú"
 
 msgctxt "#31639"
 msgid "Short Daily Weather"
-msgstr "Clima Diario Corto"
+msgstr "Meteorología Diaria Corta"
 
 msgctxt "#31640"
 msgid "Short Hourly Weather"
-msgstr "Clima Horario Corto"
+msgstr "Meteorología Horaria Corta"
 
 msgctxt "#31641"
 msgid "Surprise Me"
@@ -1699,7 +1699,7 @@ msgstr "Personalizar iconos"
 
 msgctxt "#31940"
 msgid "Weather icons"
-msgstr "Iconos de Clima"
+msgstr "Iconos Meteorológicos"
 
 msgctxt "#31941"
 msgid "Video Genre icons"
@@ -1734,8 +1734,8 @@ msgid "Use default background for sub windows"
 msgstr "Utilizar fondo predeterminado para sub ventanas"
 
 msgctxt "#31952"
-msgid "Show Fanart background with music visualisation"
-msgstr "Utilizar fondo de Fanart con la visualización de música"
+msgid "Show Artist Fanart background with Music Visualisation"
+msgstr ""
 
 msgctxt "#31953"
 msgid "Show Fanart background on sub windows"
@@ -1807,8 +1807,8 @@ msgid "Show info"
 msgstr "Mostrar info"
 
 msgctxt "#31969"
-msgid "Use Artist Slideshow for fanart"
-msgstr "Utilizar presentación de intérpretes como fanart"
+msgid "Use Artist Slideshow Addon Fanart with Music Visualisation"
+msgstr ""
 
 msgctxt "#31970"
 msgid "Push down for Gallery"
@@ -2097,7 +2097,7 @@ msgstr "Widgets"
 
 msgctxt "#32046"
 msgid "Weather fanart"
-msgstr "Fanart de Clima"
+msgstr "Fanart de meteorología"
 
 msgctxt "#32047"
 msgid "Seconds"
@@ -3585,15 +3585,15 @@ msgstr "Mostrar ítems de Artwork Downloader en el menú contextual"
 
 msgctxt "#32451"
 msgid "Movies with Tag"
-msgstr "Películas con Tag"
+msgstr "Películas con Etiqueta"
 
 msgctxt "#32452"
 msgid "Select a Tag"
-msgstr "Seleccione un Tag"
+msgstr "Seleccione una Etiqueta"
 
 msgctxt "#32453"
 msgid "With Tag"
-msgstr "Con Tag"
+msgstr "Con Etiqueta"
 
 msgctxt "#32454"
 msgid "Always Use TV Show Poster for Episodes"
@@ -3621,83 +3621,115 @@ msgstr "Próximo a estrenarse"
 
 msgctxt "#32460"
 msgid "Enable Direct Seeking in Full Screen Info"
-msgstr ""
+msgstr "Activar Búsqueda Directa en Info Pantalla Completa"
 
 msgctxt "#32461"
 msgid "Show Disc above Poster"
-msgstr ""
+msgstr "Mostrar Disco sobre Cartel"
 
 msgctxt "#32462"
 msgid "Hide Disc over Set Poster"
-msgstr ""
+msgstr "Ocultar Disco al Activar Cartel"
 
 msgctxt "#32463"
 msgid "Play trailer in a window"
-msgstr ""
+msgstr "Reproducir tráiler en una ventana"
 
 msgctxt "#32464"
 msgid "Search Trailer"
-msgstr ""
+msgstr "Buscar Tráiler"
 
 msgctxt "#32465"
 msgid "Search for Trailers with IMDb Trailers Addon"
-msgstr ""
+msgstr "Buscar Tráilers con IMDb Trailers Addon"
 
 msgctxt "#32466"
 msgid "Fade out Non-focused Menu Items"
-msgstr ""
+msgstr "Desvanecer Elementos de Menú No Activos"
 
 msgctxt "#32467"
 msgid "Cloudiness"
-msgstr ""
+msgstr "Muy Nublado"
 
 msgctxt "#32468"
 msgid "Probability of Precipitation"
-msgstr ""
+msgstr "Probabilidad de Precipitación"
 
 msgctxt "#32469"
 msgid "Intro Video Duration"
-msgstr ""
+msgstr "Duración Vídeo Intro"
 
 msgctxt "#32470"
 msgid "PVR Timeshift Buffer Color"
-msgstr ""
+msgstr "Color Buffer PVR Timeshift"
 
 msgctxt "#32471"
 msgid "Use Main Menu item Background for Sub Windows"
-msgstr ""
+msgstr "Usar Fondo del Menú Prinicpal para las Sub Ventanas"
 
 msgctxt "#32472"
 msgid "Teletext Button Opens EPG"
-msgstr ""
+msgstr "Botón de Teletexto Abre EPG"
 
 msgctxt "#32473"
 msgid "EPG Icon"
-msgstr ""
+msgstr "Icono EPG"
 
 msgctxt "#32474"
 msgid "Channel Logo"
-msgstr ""
+msgstr "Logo de Canal"
 
 msgctxt "#32475"
 msgid "Always Show Information Panel"
-msgstr ""
+msgstr "Mostrar Siempre el Panel de Información"
 
 msgctxt "#32476"
 msgid "Use Custom Search for Video Library"
-msgstr ""
+msgstr "Usar Búsqueda Personalizada para Colección de Vídeo"
 
 msgctxt "#32477"
 msgid "Use Custom Search for Music Library"
-msgstr ""
+msgstr "Usar Búsqueda Personalizada para Colección de Música"
 
 msgctxt "#32478"
 msgid "Current Programme Progress:"
-msgstr ""
+msgstr "Progreso Programa Actual:"
 
 msgctxt "#32479"
 msgid "Also Show Seconds"
+msgstr "Mostrar También Segundos"
+
+msgctxt "#32480"
+msgid "kbps"
+msgstr "kbps"
+
+msgctxt "#32481"
+msgid "Remember Focused Control in Home Window"
+msgstr "Recordar Control Seleccionado en Ventana de Inicio"
+
+msgctxt "#32482"
+msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
+msgstr "Usar Miniatura de Elemento y no Fanart del Addon para las Estanterias de YouTube"
+
+msgctxt "#32483"
+msgid "Allow Changing View Types in PVR Channels Window"
+msgstr "Permitir Cambiar Tipos de Vista en la Ventana de Canales PVR"
+
+msgctxt "#32484"
+msgid "Update Library"
 msgstr ""
+
+msgctxt "#32485"
+msgid "Stop Scanning"
+msgstr ""
+
+#~ msgctxt "#31952"
+#~ msgid "Show Fanart background with music visualisation"
+#~ msgstr "Utilizar fondo de Fanart con la visualización de música"
+
+#~ msgctxt "#31969"
+#~ msgid "Use Artist Slideshow for fanart"
+#~ msgstr "Utilizar presentación de intérpretes como fanart"
 
 #~ msgctxt "#31650"
 #~ msgid "Show Information Popup (after 3 seconds)"

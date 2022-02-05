@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-01-12 19:11+0000\n"
+"PO-Revision-Date: 2022-01-22 09:13+0000\n"
 "Last-Translator: rimasx <riks_12@hot.ee>\n"
 "Language-Team: Estonian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/et_ee/>\n"
 "Language: et_ee\n"
@@ -1503,7 +1503,7 @@ msgstr "Pildi tüüp"
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr "Plakat"
+msgstr "Poster"
 
 msgctxt "#31612"
 msgid "Square"
@@ -1753,8 +1753,8 @@ msgid "Use default background for sub windows"
 msgstr "Kuva alammenüüdes vaiketaust"
 
 msgctxt "#31952"
-msgid "Show Fanart background with music visualisation"
-msgstr "Kuva muusika fännipildid visuaalidega"
+msgid "Show Artist Fanart background with Music Visualisation"
+msgstr ""
 
 msgctxt "#31953"
 msgid "Show Fanart background on sub windows"
@@ -1826,8 +1826,8 @@ msgid "Show info"
 msgstr "Kuva teave"
 
 msgctxt "#31969"
-msgid "Use Artist Slideshow for fanart"
-msgstr "Kasuta taustaks esitaja pildiseanssi"
+msgid "Use Artist Slideshow Addon Fanart with Music Visualisation"
+msgstr ""
 
 msgctxt "#31970"
 msgid "Push down for Gallery"
@@ -2456,7 +2456,7 @@ msgstr "Külalisnäitlejad"
 
 msgctxt "#32130"
 msgid "Posters"
-msgstr "Posterid"
+msgstr "Postrid"
 
 msgctxt "#32131"
 msgid "YouTube"
@@ -2565,7 +2565,7 @@ msgstr "Hägusta taust"
 # Empty strings from 32157 to 32164
 msgctxt "#32165"
 msgid "Use Poster for Blur"
-msgstr "Kasuta hägustamiseks posterit"
+msgstr "Kasuta hägustamiseks postrit"
 
 msgctxt "#32166"
 msgid "Customize Power Menu"
@@ -3049,7 +3049,7 @@ msgstr "Luba mitu pilti žanri kohta"
 
 msgctxt "#32289"
 msgid "Match Poster Colors"
-msgstr "Sobita posteri värvidega"
+msgstr "Sobita postri värvidega"
 
 msgctxt "#32290"
 msgid "Show Seek Bar at Bottom"
@@ -3623,7 +3623,7 @@ msgstr "Sildiga"
 
 msgctxt "#32454"
 msgid "Always Use TV Show Poster for Episodes"
-msgstr "Kasuta episoodide jaoks alati seriaali posterit"
+msgstr "Kasuta episoodide jaoks alati seriaali postrit"
 
 msgctxt "#32455"
 msgid "Open ExtendedInfo for Info Dialogs"
@@ -3647,15 +3647,15 @@ msgstr "Järgmine esitus"
 
 msgctxt "#32460"
 msgid "Enable Direct Seeking in Full Screen Info"
-msgstr ""
+msgstr "Luba otseotsing täisekraani teabes"
 
 msgctxt "#32461"
 msgid "Show Disc above Poster"
-msgstr ""
+msgstr "Kuva plaat postri kohal"
 
 msgctxt "#32462"
 msgid "Hide Disc over Set Poster"
-msgstr ""
+msgstr "Varja plaat kogumiku postri peal"
 
 msgctxt "#32463"
 msgid "Play trailer in a window"
@@ -3671,23 +3671,23 @@ msgstr "Otsi treilereid IMDb Trailers lisamooduliga"
 
 msgctxt "#32466"
 msgid "Fade out Non-focused Menu Items"
-msgstr ""
+msgstr "Hajuta fookusest välja jäävad menüüelemendid"
 
 msgctxt "#32467"
 msgid "Cloudiness"
-msgstr ""
+msgstr "Pilvisus"
 
 msgctxt "#32468"
 msgid "Probability of Precipitation"
-msgstr ""
+msgstr "Sademete tõenäosus"
 
 msgctxt "#32469"
 msgid "Intro Video Duration"
-msgstr ""
+msgstr "Käivitusvideo kestus"
 
 msgctxt "#32470"
 msgid "PVR Timeshift Buffer Color"
-msgstr ""
+msgstr "PVR ajanihke puhvri värv"
 
 msgctxt "#32471"
 msgid "Use Main Menu item Background for Sub Windows"
@@ -3695,7 +3695,7 @@ msgstr "Kasuta alamakendel peamenüü üksuse taustapilti"
 
 msgctxt "#32472"
 msgid "Teletext Button Opens EPG"
-msgstr ""
+msgstr "Teleteksti nupp avab telekava"
 
 msgctxt "#32473"
 msgid "EPG Icon"
@@ -3723,7 +3723,39 @@ msgstr "Saate praegune edenemine:"
 
 msgctxt "#32479"
 msgid "Also Show Seconds"
+msgstr "Kuva ka sekundid"
+
+msgctxt "#32480"
+msgid "kbps"
+msgstr "kbps"
+
+msgctxt "#32481"
+msgid "Remember Focused Control in Home Window"
 msgstr ""
+
+msgctxt "#32482"
+msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
+msgstr ""
+
+msgctxt "#32483"
+msgid "Allow Changing View Types in PVR Channels Window"
+msgstr ""
+
+msgctxt "#32484"
+msgid "Update Library"
+msgstr ""
+
+msgctxt "#32485"
+msgid "Stop Scanning"
+msgstr ""
+
+#~ msgctxt "#31952"
+#~ msgid "Show Fanart background with music visualisation"
+#~ msgstr "Kuva muusika fännipildid visuaalidega"
+
+#~ msgctxt "#31969"
+#~ msgid "Use Artist Slideshow for fanart"
+#~ msgstr "Kasuta taustaks esitaja pildiseanssi"
 
 #~ msgctxt "#31650"
 #~ msgid "Show Information Popup (after 3 seconds)"
