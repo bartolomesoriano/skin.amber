@@ -217,8 +217,8 @@
 		<!-- Default background for sub windows -->
 		<value condition="!Skin.HasSetting(Sub_FanArtBG)">$VAR[SubDefaultBackground]</value>
 		<!-- Extra fanart -->
-		<value condition="!String.IsEmpty(Control.GetLabel(4411)) + Skin.HasSetting(SkinHelper.EnableExtraFanart)">$INFO[Control.GetLabel(4411)]</value>
-		<value condition="!String.IsEmpty(Control.GetLabel(4410)) + Skin.HasSetting(SkinHelper.EnableExtraFanart)">$INFO[Control.GetLabel(4410)]</value>
+		<value condition="!String.IsEmpty(Control.GetLabel(4411)) + Skin.HasSetting(EnableExtraFanart)">$INFO[Control.GetLabel(4411)]</value>
+		<value condition="!String.IsEmpty(Control.GetLabel(4410)) + Skin.HasSetting(EnableExtraFanart)">$INFO[Control.GetLabel(4410)]</value>
 		<!-- Content-specific fanart for special video content -->
 		<value condition="Window.IsVisible(MyVideoNav.xml) + Skin.HasSetting(ShowSpecialFanart) + [Container.Content(actors) | Container.Content(directors) | Container.Content(years) | Container.Content(countries) | 
 		                                                      Container.Content(tags) | Container.Content(genres) | Container.Content(studios)] + !String.IsEmpty(Container(4451).ListItem.Art(fanart))">$INFO[Container(4451).ListItem.Art(fanart)]</value>
@@ -401,7 +401,7 @@
 	<include name="DefaultBackground">
 		<control type="multiimage">
 			<visible>![Player.HasVideo + [Skin.HasSetting(Show_VideoBackground) | Skin.HasSetting(AutoPlayTrailer)]]</visible>
-			<visible>[!Control.IsVisible(56) | [Control.IsVisible(56) + ![$EXP[56_FanartViewNetflix]]]]</visible>
+			<visible>[!Control.IsVisible(56) | [Control.IsVisible(56) + !$EXP[56_FanartViewNetflix]]]</visible>
 			<visible>![Window.IsActive(MyPVRRecordings.xml) + ListItem.IsFolder + !ListItem.IsParentFolder]</visible>
 			<width>100%</width>
 			<height>100%</height>
@@ -466,7 +466,7 @@
 	<include name="HomeClearLogo">
 		<control type="group">
 
-			<visible>![Skin.HasSetting(HomeDefaultBG)] + [[!Player.HasMedia + [Control.HasFocus(300) | ControlGroup(700).HasFocus]] | 
+			<visible>!Skin.HasSetting(HomeDefaultBG) + [[!Player.HasMedia + [Control.HasFocus(300) | ControlGroup(700).HasFocus]] | 
 			         [[Player.HasMedia + !Skin.HasSetting(Hide.NowPlaying) + ![Control.IsVisible(70101) | Control.IsVisible(70102)]] + ![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]] | 
 					 [Skin.HasSetting(Hide.NowPlaying) + ![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]]]</visible>
 			<!-- Logo for vert. menu, no widgets -->
@@ -479,7 +479,7 @@
 				<aspectratio>keep</aspectratio>
 				<align>center</align>
 				<aligny>center</aligny>
-				<visible>![$EXP[widgetsAreShowing]] + Skin.HasSetting(VerticalHome)</visible>
+				<visible>!$EXP[widgetsAreShowing] + Skin.HasSetting(VerticalHome)</visible>
 			</control>
 			<!-- Logo for horiz. menu, no widgets -->
 			<control type="image">
@@ -491,7 +491,7 @@
 				<aspectratio>keep</aspectratio>
 				<align>center</align>
 				<aligny>center</aligny>
-				<visible>![$EXP[widgetsAreShowing]] + !Skin.HasSetting(VerticalHome)</visible>
+				<visible>!$EXP[widgetsAreShowing] + !Skin.HasSetting(VerticalHome)</visible>
 			</control>
 		</control>
 	</include>		
@@ -868,7 +868,7 @@
 		</control>
 		<!-- Extra fanart for Now Playing: Movie, not in extrafanart folder -->
 		<control type="fadelabel" id="4441">
-			<visible>Player.HasVideo + VideoPlayer.Content(movies) + !Skin.HasSetting(Hide.NowPlaying) + Skin.HasSetting(SkinHelper.EnableExtraFanart)</visible>
+			<visible>Player.HasVideo + VideoPlayer.Content(movies) + !Skin.HasSetting(Hide.NowPlaying) + Skin.HasSetting(EnableExtraFanart)</visible>
 			<scrollspeed>20</scrollspeed>
 			<randomize>true</randomize>
 			<include>FadeLabelTime</include>
@@ -902,7 +902,7 @@
 		</control>
 		<!-- Extra fanart for Now Playing: Episode, not in extrafanart folder -->
 		<control type="fadelabel" id="4442">
-			<visible>Player.HasVideo + VideoPlayer.Content(episodes) + !Skin.HasSetting(Hide.NowPlaying) + Skin.HasSetting(SkinHelper.EnableExtraFanart)</visible>
+			<visible>Player.HasVideo + VideoPlayer.Content(episodes) + !Skin.HasSetting(Hide.NowPlaying) + Skin.HasSetting(EnableExtraFanart)</visible>
 			<scrollspeed>20</scrollspeed>
 			<randomize>true</randomize>
 			<include>FadeLabelTime</include>
@@ -935,7 +935,7 @@
 		</control>
 		<!-- Extra fanart for Now Playing: Songs, not in extrafanart folder -->
 		<control type="fadelabel" id="4443">
-			<visible>Player.HasAudio + MusicPlayer.Content(songs) + !Skin.HasSetting(Hide.NowPlaying) + Skin.HasSetting(SkinHelper.EnableExtraFanart)</visible>
+			<visible>Player.HasAudio + MusicPlayer.Content(songs) + !Skin.HasSetting(Hide.NowPlaying) + Skin.HasSetting(EnableExtraFanart)</visible>
 			<scrollspeed>20</scrollspeed>
 			<randomize>true</randomize>
 			<include>FadeLabelTime</include>
@@ -1153,7 +1153,7 @@
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
 			<resetonlabelchange>true</resetonlabelchange>
-			<visible>Skin.HasSetting(SkinHelper.EnableExtraFanart)</visible>
+			<visible>Skin.HasSetting(EnableExtraFanart)</visible>
 			<include>FadeLabelTime</include>
 			<label>$INFO[ListItem.Art(fanart)]</label>
 			<label>$INFO[ListItem.Art(fanart1)]</label>
@@ -1465,12 +1465,12 @@
 				<onleft>9001</onleft>
 				<onright>9001</onright>
 				<onback>9001</onback>            
-				<onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo) + !System.HasAddon(plugin.video.youtube)">SetProperty(CustomSearch,2,home)</onclick>
+				<onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo) + !System.AddonIsEnabled(plugin.video.youtube)">SetProperty(CustomSearch,2,home)</onclick>
 				<onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo)">Skin.Reset(CustomSearchTerm)</onclick>
 				<onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo)">Skin.SetString(CustomSearchTerm,$ESCVAR[FanartTitleVar])</onclick>
 				<onclick condition="!Skin.HasSetting(FanartTitle.OpensInfo)">ActivateWindow(1122)</onclick>
-				<onclick condition="Skin.HasSetting(FanartTitle.OpensInfo) + !String.IsEmpty(Control.GetLabel(1200102)) + String.IsEqual(Control.GetLabel(1200102),movie)">RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Control.GetLabel(1200101),videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D],call_auto=1134)</onclick>
-				<onclick condition="Skin.HasSetting(FanartTitle.OpensInfo) + !String.IsEmpty(Control.GetLabel(1200102)) + String.IsEqual(Control.GetLabel(1200102),tvshow)">RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Control.GetLabel(1200101),videodb://tvshows/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22tvshows%22%7D],call_auto=1134)</onclick>
+				<onclick condition="Skin.HasSetting(FanartTitle.OpensInfo) + !String.IsEmpty(Control.GetLabel(1200102)) + String.IsEqual(Control.GetLabel(1200102),movie) + System.AddonIsEnabled(plugin.video.themoviedb.helper)">RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Control.GetLabel(1200101),videodb://movies/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22movies%22%7D],call_auto=1134)</onclick>
+				<onclick condition="Skin.HasSetting(FanartTitle.OpensInfo) + !String.IsEmpty(Control.GetLabel(1200102)) + String.IsEqual(Control.GetLabel(1200102),tvshow) + System.AddonIsEnabled(plugin.video.themoviedb.helper)">RunScript(plugin.video.themoviedb.helper,add_path=$INFO[Control.GetLabel(1200101),videodb://tvshows/titles/?xsp=%7B%22order%22%3A%7B%22direction%22%3A%22ascending%22%2C%22ignorefolders%22%3A0%2C%22method%22%3A%22sorttitle%22%7D%2C%22rules%22%3A%7B%22and%22%3A%5B%7B%22field%22%3A%22title%22%2C%22operator%22%3A%22is%22%2C%22value%22%3A%5B%22,%22%5D%7D%5D%7D%2C%22type%22%3A%22tvshows%22%7D],call_auto=1134)</onclick>
 			</control>
 		</control>
 	</include>

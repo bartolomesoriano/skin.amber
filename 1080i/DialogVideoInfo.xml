@@ -4,15 +4,17 @@
     <animation effect="fade" time="200">WindowOpen</animation>
     <animation effect="fade" time="150">WindowClose</animation>
     
+	<onload>SetProperty(ResetScroll," ",home)</onload>
+    <onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,home),00:01,silent)</onload>
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo)">Dialog.Close(all)</onload>
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,movie)">RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],imdb_id=$INFO[ListItem.IMDBNumber],name=$INFO[Listitem.Title])</onload>
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,tvshow)">RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],id=$INFO[ListItem.UniqueID(tmdb)],tvdb_id=$INFO[ListItem.UniqueID(tvdb)],name=$INFO[Listitem.Title])</onload>
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,season)">RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season])</onload>
 	<onload condition="System.AddonIsEnabled(script.extendedinfo) + Skin.HasSetting(AutoExtendedInfo) + String.IsEqual(ListItem.DBType,episode)">RunScript(script.extendedinfo,info=extendedepisodeinfo,tvshow=$INFO[Listitem.TVShowTitle],season=$INFO[ListItem.Season],episode=$INFO[ListItem.Episode])</onload>
 	
-	<onload condition="[String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,tvshow)] + System.HasAddon(script.embuary.helper)">RunScript(script.embuary.helper,action=encode,string='"$INFO[ListItem.TVShowTitle]"',prop=EncodeddTitle)</onload>
-    <onload condition="String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(script.embuary.helper)">RunScript(script.embuary.helper,action=encode,string='"$INFO[ListItem.Title]"',prop=EncodedTitle)</onload>
-    <onload condition="System.HasAddon(script.embuary.helper)">RunScript(script.embuary.helper,action=resetposition,container=9000||90050||9009||91001||910001||91002||91003||91004||91005||91006||91007||91008||91009||910010)</onload>
+<!--	<onload condition="[String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,tvshow)] + System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=encode,string='"$INFO[ListItem.TVShowTitle]"',prop=EncodeddTitle)</onload>
+    <onload condition="String.IsEqual(ListItem.DBTYPE,movie) + System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=encode,string='"$INFO[ListItem.Title]"',prop=EncodedTitle)</onload> 
+    <onload condition="System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=resetposition,container=9000||90050||9009||91001||910001||91002||91003||91004||91005||91006||91007||91008||91009||910010)</onload> -->
     
 	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">Dialog.Close(VideoOSD,true)</onload>
 	
@@ -20,10 +22,10 @@
 	<onload condition="!String.IsEmpty(Window(home).Property(ShowWidgetPopup))">Dialog.Close(1144,true)</onload>
 	<!-- End Nexus change -->
 	
-	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + !String.IsEmpty(ListItem.Art(poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(poster)]"',prop=EHBlur,radius=3)</onload>
-	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + String.IsEmpty(ListItem.Art(poster)) + !String.IsEmpty(ListItem.Art(season.poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(season.poster)]"',prop=EHBlur,radius=3)</onload>
-	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(season.poster)) + !String.IsEmpty(ListItem.Art(tvshow.poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(tvshow.poster)]"',prop=EHBlur,radius=3)</onload>
-	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo) + !Skin.HasSetting(Blur.UsePoster) | [String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(season.poster)) + String.IsEmpty(ListItem.Art(tvshow.poster))]">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(fanart)]"',prop=EHBlur,radius=3)</onload>
+	<onload condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + !String.IsEmpty(ListItem.Art(poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(poster)]"',prop=EHBlur,radius=3)</onload>
+	<onload condition="SSystem.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + String.IsEmpty(ListItem.Art(poster)) + !String.IsEmpty(ListItem.Art(season.poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(season.poster)]"',prop=EHBlur,radius=3)</onload>
+	<onload condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(season.poster)) + !String.IsEmpty(ListItem.Art(tvshow.poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(tvshow.poster)]"',prop=EHBlur,radius=3)</onload>
+	<onload condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.BlurredVideoInfo) + !Skin.HasSetting(Blur.UsePoster) | [String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(season.poster)) + String.IsEmpty(ListItem.Art(tvshow.poster))]">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(fanart)]"',prop=EHBlur,radius=3)</onload>
 	
 	<!-- Close custom search dialogs if they are open so that we can perform searches from here without issue -->
 	<onload condition="Window.IsVisible(Custom_1122_Search.xml)">Dialog.Close(1122,force)</onload>
@@ -32,13 +34,20 @@
 	<onunload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,home)</onunload>
 	<onunload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + Skin.HasSetting(PauseOnVideoInfo) + Player.Paused">Play</onunload>
 	
-	<onunload condition="System.HasAddon(script.embuary.helper)">ClearProperty(EncodedTitle,home)</onunload>
+<!--	<onunload condition="System.AddonIsEnabled(script.embuary.helper)">ClearProperty(EncodedTitle,home)</onunload> -->
 	<onunload condition="!String.IsEmpty(Window(Home).Property(KodiDefaultCastSearch))">ClearProperty(KodiDefaultCastSearch,Home)</onunload>
+	
+	
+	<onunload condition="String.IsEqual(Window(Home).Property(GeneralSearchCalledInfo),yes) + String.IsEmpty(Window(Home).Property(SingleSearchCalledInfo)) + String.IsEmpty(Window(Home).Property(InfoCalledSingleSearch)) + !String.IsEmpty(Skin.String(CustomSearchTerm)) + !Player.HasVideo + String.IsEmpty(Window(Home).Property(InfoPlayingMedia))">ActivateWindow(1122)</onunload>
+	<onunload condition="String.IsEqual(Window(Home).Property(GeneralSearchCalledInfo),yes)">ClearProperty(GeneralSearchCalledInfo,Home)</onunload>
+	<onunload condition="String.IsEqual(Window(Home).Property(SingleSearchCalledInfo),yes) + String.IsEmpty(Window(Home).Property(GeneralSearchCalledInfo)) + String.IsEmpty(Window(Home).Property(InfoCalledGeneralSearch)) + !String.IsEmpty(Skin.String(SingleSearchTerm)) + !Player.HasVideo + String.IsEmpty(Window(Home).Property(InfoPlayingMedia))">ActivateWindow(1131)</onunload>
+	<onunload condition="String.IsEqual(Window(Home).Property(SingleSearchCalledInfo),yes)">ClearProperty(SingleSearchCalledInfo,Home)</onunload>
+	
 	
     <controls>
 
         <!-- Get additional TV Show details from Embuary Helper script to be able to jump to season from an episode info - Container 5200 -->
-        <include condition="Skin.HasSetting(Enable.EmbuaryHelper) + String.IsEqual(ListItem.DBType,episode) + 
+        <include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + String.IsEqual(ListItem.DBType,episode) + 
                             !String.IsEmpty(ListItem.DBID)">EmbuaryHelperTVShowDetails</include>
 							
 
@@ -285,24 +294,6 @@
                     <label>$INFO[ListItem.Rating(imdb)]$INFO[ListItem.Votes(imdb), (, $LOCALIZE[205])]</label>
                     <visible>!String.IsEmpty(ListItem.Rating(imdb)) + Skin.HasSetting(ShowRatingIMDb)</visible>
                 </control>
-<!--                <control type="label" description="Main Rating and Votes">
-                    <width>auto</width>
-                    <height>40</height>
-                    <font>ListDetails</font>
-                    <textcolor>$VAR[HighlightColor]</textcolor>
-                    <align>left</align>
-                    <label>$INFO[ListItem.Rating]$INFO[ListItem.Votes, (, $LOCALIZE[205])]</label>
-                    <visible>String.IsEmpty(ListItem.Rating(imdb)) + !String.IsEmpty(ListItem.Rating) + !String.IsEmpty(ListItem.Votes) + !String.IsEqual(ListItem.Votes,0) + Skin.HasSetting(ShowRatingMainVideoInfo)</visible>
-                </control>
-                <control type="label" description="Main Rating No Votes">
-                    <width>auto</width>
-                    <height>40</height>
-                    <font>ListDetails</font>
-                    <textcolor>$VAR[HighlightColor]</textcolor>
-                    <align>left</align>
-                    <label>$INFO[ListItem.Rating]</label>
-                    <visible>String.IsEmpty(ListItem.Rating(imdb)) + !String.IsEmpty(ListItem.Rating) + [String.IsEmpty(ListItem.Votes) | String.IsEqual(ListItem.Votes,0)] + Skin.HasSetting(ShowRatingMainVideoInfo)</visible>
-                </control>  -->              
             </control>
             <control type="grouplist" description="IMDb Top 250 rank">
                 <width>100</width>
@@ -900,7 +891,7 @@
                     <font>InfoPlot</font>
                     <textcolor>$VAR[InfoPlotTextColor]</textcolor>
                     <shadowcolor>LiteShadow</shadowcolor>
-                    <label fallback="19055">$VAR[Plots]</label>
+                    <label fallback="19055">$VAR[Plots]$INFO[Window(home).Property(ResetScroll)]</label>
                 </control>
                 <control type="radiobutton" id="90003">
                     <posy>447</posy>
@@ -974,19 +965,19 @@
                 <!-- Called from OSD -->
 				<onclick condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">Dialog.Close(all)</onclick>
 				<!-- Browse TV Show, embuary helper active -->
-				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + Skin.HasSetting(Enable.EmbuaryHelper) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.DBID)">RunScript(script.embuary.helper,action=goto,path='"videodb://tvshows/titles/$INFO[ListItem.DBID]/"',target=videos)</onclick>
+				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.DBID)">RunScript(script.embuary.helper,action=goto,path='"videodb://tvshows/titles/$INFO[ListItem.DBID]/"',target=videos)</onclick>
 				<!-- PKC On Deck: No FileName or FolderPath -->
 				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)] + String.IsEmpty(ListItem.FileNameAndPath) + String.IsEmpty(ListItem.FolderPath)">SendClick(8)</onclick>
 				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + [String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)] + String.IsEmpty(ListItem.FileNameAndPath) + String.IsEmpty(ListItem.FolderPath)">Dialog.Close(all)</onclick>
 				<!-- Online item, tmdb helper not active, or Person Info dialog -->
 				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + String.IsEmpty(ListItem.DBID) + [!Skin.HasSetting(Enable.TMDbHelper) | String.Contains(ListItem.FolderPath,type=person)]">Action(Close)</onclick>
                 <!-- Local item -->
-				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + !String.IsEmpty(ListItem.DBID)">SendClick(8)</onclick>
 				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + !String.IsEmpty(ListItem.DBID)">Dialog.Close(all)</onclick>
+				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + !String.IsEmpty(ListItem.DBID)">SendClick(8)</onclick>
 				<!-- tmdb helper active, path is not empty -->
-				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + String.IsEmpty(ListItem.DBID) + Skin.HasSetting(Enable.TMDbHelper) + !String.Contains(ListItem.FolderPath,type=person) + !String.IsEmpty(ListItem.FileNameAndPath)">RunScript(plugin.video.themoviedb.helper,close_dialog=1134,playmedia='$ESCINFO[ListItem.FileNameAndPath]')</onclick>
+				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + String.IsEmpty(ListItem.DBID) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + !String.Contains(ListItem.FolderPath,type=person) + !String.IsEmpty(ListItem.FileNameAndPath)">RunScript(plugin.video.themoviedb.helper,close_dialog=1134,playmedia='$ESCINFO[ListItem.FileNameAndPath]')</onclick>
                 <!-- tmdb helper active, path is empty -->
-				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + String.IsEmpty(ListItem.DBID) + Skin.HasSetting(Enable.TMDbHelper) + !String.Contains(ListItem.FolderPath,type=person) + String.IsEmpty(ListItem.FileNameAndPath) + !String.IsEmpty(ListItem.FolderPath)">RunScript(plugin.video.themoviedb.helper,close_dialog=1134,playmedia='$ESCINFO[ListItem.FolderPath]')</onclick>
+				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + String.IsEmpty(ListItem.DBID) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + !String.Contains(ListItem.FolderPath,type=person) + String.IsEmpty(ListItem.FileNameAndPath) + !String.IsEmpty(ListItem.FolderPath)">RunScript(plugin.video.themoviedb.helper,close_dialog=1134,playmedia='$ESCINFO[ListItem.FolderPath]')</onclick>
 				<!-- Browse TV Show, embuary helper not active -->
 				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + !Skin.HasSetting(Enable.EmbuaryHelper) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.DBID)">SendClick(8)</onclick>
 				<onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive)) + !Skin.HasSetting(Enable.EmbuaryHelper) + [String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)] + !String.IsEmpty(ListItem.DBID)">Dialog.Close(all)</onclick>
@@ -999,7 +990,7 @@
                 <font>Details</font>
                 <label>$LOCALIZE[32154]</label>
 				<onclick condition="Skin.HasSetting(Enable.EmbuaryHelper)">RunScript(script.embuary.helper,action=goto,path='"videodb://movies/sets/$INFO[ListItem.SetId]/?setid=$INFO[ListItem.SetId]"',target=videos)</onclick>
-                <visible>System.HasAddon(script.embuary.helper) + !String.IsEmpty(ListItem.SetId) + !String.IsEmpty(ListItem.DBID)</visible>
+                <visible>System.AddonIsEnabled(script.embuary.helper) + !String.IsEmpty(ListItem.SetId) + !String.IsEmpty(ListItem.DBID)</visible>
             </control>
             <control type="button" id="8002" description="Search">
                 <height>90</height>
@@ -1033,7 +1024,7 @@
                 <onclick condition="!Skin.HasSetting(Trailer.WindowVideoInfo)">PlayMedia($INFO[Window(Home).Property(TMDbHelper.ListItem.Trailer)])</onclick>
 				<onclick condition="!Skin.HasSetting(Trailer.WindowVideoInfo)">Dialog.Close(all)</onclick>
 				<onclick condition="Skin.HasSetting(Trailer.WindowVideoInfo)">PlayMedia($INFO[Window(Home).Property(TMDbHelper.ListItem.Trailer)],1)</onclick>
-                <visible>Skin.HasSetting(Enable.TMDbHelper) + String.IsEmpty(ListItem.Trailer) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Trailer)) + !ListItem.IsCollection + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]</visible>
+                <visible>System.AddonIsEnabled(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + String.IsEmpty(ListItem.Trailer) + !String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Trailer)) + !ListItem.IsCollection + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]</visible>
 				<visible>String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))</visible>
             </control>
 			<control type="button" id="8005">
@@ -1052,8 +1043,8 @@
 				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.youtube)">Dialog.Close(movieinformation)</onclick>
 				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.youtube) + ![String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,season) | [String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.TVShowTitle,ListItem.Label)]]">ActivateWindow(videos,"plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[ListItem.Label] trailer/",return)</onclick>
 				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.youtube) + [String.IsEqual(ListItem.DBTYPE,episode) | String.IsEqual(ListItem.DBTYPE,season) | [String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.TVShowTitle,ListItem.Label)]]">ActivateWindow(videos,"plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[ListItem.TVShowTitle] $INFO[ListItem.Label] trailer/",return)</onclick>
-				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + !System.HasAddon(plugin.video.youtube)">InstallAddon(plugin.video.youtube)</onclick>
-				<onclick condition="1Skin.HasSetting(Trailer.SearchIMDb) + System.HasAddon(plugin.video.youtube) + !System.AddonIsEnabled(plugin.video.youtube)">EnableAddon(plugin.video.youtube)</onclick>
+				<onclick condition="!Skin.HasSetting(Trailer.SearchIMDb) + !System.AddonIsEnabled(plugin.video.youtube)">InstallAddon(plugin.video.youtube)</onclick>
+				<onclick condition="1Skin.HasSetting(Trailer.SearchIMDb) + System.AddonIsEnabled(plugin.video.youtube) + !System.AddonIsEnabled(plugin.video.youtube)">EnableAddon(plugin.video.youtube)</onclick>
 				<visible>!String.Contains(ListItem.FolderPath,type=person) + String.IsEmpty(ListItem.Trailer) + String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Trailer)) + !ListItem.IsCollection + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]</visible>
 				<visible>String.IsEmpty(Window(Home).Property(OSDinfodialogButtonActive))</visible>
 			</control>
@@ -1105,26 +1096,26 @@
 				<onclick condition="String.IsEqual(ListItem.DBType,episode)">SetProperty(InfoExtrasTitle,$INFO[ListItem.TVShowTitle],Home)</onclick>
                 <onclick condition="String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">SetProperty(fanart,$ESCINFO[ListItem.Art(fanart)],home)</onclick>
 				<onclick condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">SetProperty(fanart,$ESCINFO[Player.Art(fanart)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart1,$ESCINFO[ListItem.Art(fanart1)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart2,$ESCINFO[ListItem.Art(fanart2)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart3,$ESCINFO[ListItem.Art(fanart3)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart4,$ESCINFO[ListItem.Art(fanart4)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart5,$ESCINFO[ListItem.Art(fanart5)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart6,$ESCINFO[ListItem.Art(fanart6)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart7,$ESCINFO[ListItem.Art(fanart7)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart8,$ESCINFO[ListItem.Art(fanart8)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart9,$ESCINFO[ListItem.Art(fanart9)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart10,$ESCINFO[ListItem.Art(fanart10)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart11,$ESCINFO[ListItem.Art(fanart11)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart12,$ESCINFO[ListItem.Art(fanart12)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart13,$ESCINFO[ListItem.Art(fanart13)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart14,$ESCINFO[ListItem.Art(fanart14)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart15,$ESCINFO[ListItem.Art(fanart15)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart16,$ESCINFO[ListItem.Art(fanart16)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart17,$ESCINFO[ListItem.Art(fanart17)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart18,$ESCINFO[ListItem.Art(fanart18)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart19,$ESCINFO[ListItem.Art(fanart19)],home)</onclick>
-                <onclick condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">SetProperty(fanart20,$ESCINFO[ListItem.Art(fanart20)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart1,$ESCINFO[ListItem.Art(fanart1)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart2,$ESCINFO[ListItem.Art(fanart2)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart3,$ESCINFO[ListItem.Art(fanart3)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart4,$ESCINFO[ListItem.Art(fanart4)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart5,$ESCINFO[ListItem.Art(fanart5)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart6,$ESCINFO[ListItem.Art(fanart6)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart7,$ESCINFO[ListItem.Art(fanart7)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart8,$ESCINFO[ListItem.Art(fanart8)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart9,$ESCINFO[ListItem.Art(fanart9)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart10,$ESCINFO[ListItem.Art(fanart10)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart11,$ESCINFO[ListItem.Art(fanart11)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart12,$ESCINFO[ListItem.Art(fanart12)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart13,$ESCINFO[ListItem.Art(fanart13)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart14,$ESCINFO[ListItem.Art(fanart14)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart15,$ESCINFO[ListItem.Art(fanart15)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart16,$ESCINFO[ListItem.Art(fanart16)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart17,$ESCINFO[ListItem.Art(fanart17)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart18,$ESCINFO[ListItem.Art(fanart18)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart19,$ESCINFO[ListItem.Art(fanart19)],home)</onclick>
+                <onclick condition="Skin.HasSetting(EnableExtraFanart)">SetProperty(fanart20,$ESCINFO[ListItem.Art(fanart20)],home)</onclick>
                 <onclick>ActivateWindow(1121)</onclick>
                 <visible>!Skin.HasSetting(KioskMode.Enabled)</visible>
                 <visible>!String.IsEmpty(Listitem.DBID) + String.IsEmpty(ListItem.Property(tmdb_id))</visible>
@@ -1448,7 +1439,7 @@
             <animation effect="fade" start="0" end="100" time="300">Visible</animation>
             <animation effect="fade" start="100" end="0" time="300">Hidden</animation>
             <animation effect="fade" start="100" end="0" time="0">WindowClose</animation>
-            <visible>Control.HasFocus(90050) + System.HasAddon(resource.images.actorart)</visible>
+            <visible>Control.HasFocus(90050) + System.AddonIsEnabled(resource.images.actorart)</visible>
         </control>
 		
 		<control type="group">

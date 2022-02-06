@@ -159,7 +159,7 @@
 				</include>
 			</focusedlayout>
 		    
-		    <itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [$EXP[PanelShouldShow] | $EXP[isPVRRecordingsGroups]] + ![$EXP[ListPanelIsDisabled]] + ![$EXP[ListPanelIsSwapped]] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
+		    <itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>670</posx>
@@ -238,7 +238,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
                 </include>
 		    </itemlayout>
-		    <focusedlayout condition="!Window.IsActive(MyPVRChannels.xml) + [$EXP[PanelShouldShow] | $EXP[isPVRRecordingsGroups]] + ![$EXP[ListPanelIsDisabled]] + ![$EXP[ListPanelIsSwapped]] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
+		    <focusedlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[ListPanelIsDisabled] + !$EXP[ListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posx>679</posx>
 					<posy>0</posy>
@@ -336,8 +336,113 @@
 				</include>
 			</focusedlayout>
 			
+			
+			<itemlayout condition="![$EXP[ListPanelIsSwapped]] + !Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)]" height="$PARAM[itemheight]" width="1210">
+			    <control type="image" description="BG">
+    				<posy>0</posy>
+				    <posx>670</posx>
+				    <width>680</width>
+				    <height>$PARAM[itemheight]</height>
+				    <texture flipy="true" border="3">list/ListNF.png</texture>
+			    </control>
+                <control type="label" description="Main Label">
+    				<posx>679</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>610</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+                    <font>$PARAM[ListLabelFont]</font>
+				    <label>$VAR[MediaListLabel]</label>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+			    <control type="label" description="Main Label">
+    				<posx>679</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>465</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+                    <font>$PARAM[ListLabelFont]</font>
+				    <label>$VAR[MediaListLabel]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+				<control type="label">
+    				<posx>1115</posx>
+				    <posy>0</posy>
+				    <width>180</width>
+				    <height>$PARAM[itemheight]</height>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+					<font>$PARAM[ListLabel2Font]</font>
+				    <textcolor>Grey</textcolor>
+				    <align>right</align>
+				    <label>$VAR[MediaListLabel2]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+			    </control>
+			    <include content="ListWatchedOverlay">
+                    <param name="itemheight">$PARAM[itemheight]</param>
+                    <param name="BGposy">$PARAM[BGposy]</param>
+                </include>
+		    </itemlayout>
+		    <focusedlayout condition="![$EXP[ListPanelIsSwapped]] + !Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)]" height="$PARAM[itemheight]" width="1210">
+			    <control type="image" description="BG">
+    				<posx>679</posx>
+					<posy>0</posy>
+					<height>$PARAM[itemheight]</height>
+                    <width>680</width>
+					<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
+				    <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus($PARAM[id])">Conditional</animation>
+			    </control>
+                <control type="label" description="Main Label">
+    				<posx>679</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>610</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+                    <font>$PARAM[ListLabelFont]</font>
+					<label>$VAR[MediaListLabel]</label>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+				<control type="label" description="Main Label">
+    				<posx>679</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>465</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+                    <font>$PARAM[ListLabelFont]</font>
+					<label>$VAR[MediaListLabel]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+				<control type="label">
+	    			<posx>1115</posx>
+				    <posy>0</posy>
+				    <width>180</width>
+				    <height>$PARAM[itemheight]</height>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<font>$PARAM[ListLabel2Font]</font>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+					<align>right</align>
+					<label>$VAR[MediaListLabel2]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+			    </control>
+				<include content ="ListWatchedOverlay">
+					<param name="isFocused">true</param>
+                    <param name="itemheight">$PARAM[itemheight]</param>
+                    <param name="BGposy">$PARAM[BGposy]</param>
+				</include>
+			</focusedlayout>
+			
+			<!-- PVR Channels -->
 			<!-- Begin Nexus change -->
-			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[ListPanelIsSwapped]]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[ListPanelIsSwapped]]" infoupdate="5000" height="$PARAM[itemheight]" width="1210">
 			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -359,9 +464,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
 				</include>
 		    </itemlayout>
-			<!-- Begin Nexus change -->
-		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[ListPanelIsSwapped]]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
-			<!-- End Nexus change -->
+			<!-- Begin Nexus change -->				  
+		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[ListPanelIsSwapped]]" infoupdate="5000" height="$PARAM[itemheight]" width="1210">
+			<!-- End Nexus change -->				
 			    <control type="image" description="BG">
     				<posx>679</posx>
 					<posy>0</posy>
@@ -493,7 +598,7 @@
 				</include>
 			</focusedlayout>
 		    
-			<itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [$EXP[PanelShouldShow] | $EXP[isPVRRecordingsGroups]] + ![$EXP[ListPanelIsDisabled]] + $EXP[ListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
+			<itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>0</posx>
@@ -572,7 +677,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
                 </include>
 		    </itemlayout>
-		    <focusedlayout condition="!Window.IsActive(MyPVRChannels.xml) + [$EXP[PanelShouldShow] | $EXP[isPVRRecordingsGroups]] + ![$EXP[ListPanelIsDisabled]] + $EXP[ListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
+		    <focusedlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[ListPanelIsDisabled] + $EXP[ListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posx>-20</posx>
 					<posy>0</posy>
@@ -670,8 +775,113 @@
 				</include>
 			</focusedlayout>
 			
+			<!-- PVR Recordings or Timers -->
+			<itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[ListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
+			    <control type="image" description="BG">
+    				<posy>0</posy>
+				    <posx>0</posx>
+				    <width>680</width>
+				    <height>$PARAM[itemheight]</height>
+				    <texture flipy="true" border="3">list/ListNF.png</texture>
+			    </control>
+                <control type="label" description="Main Label">
+    				<posx>0</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>600</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+                    <font>$PARAM[ListLabelFont]</font>
+				    <label>$VAR[MediaListLabel]</label>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+			    <control type="label" description="Main Label">
+    				<posx>0</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>465</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+                    <font>$PARAM[ListLabelFont]</font>
+				    <label>$VAR[MediaListLabel]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+			    <control type="label">
+    				<posx>435</posx>
+				    <posy>0</posy>
+				    <width>180</width>
+				    <height>$PARAM[itemheight]</height>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+					<font>$PARAM[ListLabel2Font]</font>
+				    <textcolor>Grey</textcolor>
+				    <align>right</align>
+				    <label>$VAR[MediaListLabel2]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+			    </control>
+			    <include content="ListWatchedOverlay">
+                    <param name="itemheight">$PARAM[itemheight]</param>
+                    <param name="BGposy">$PARAM[BGposy]</param>
+                </include>
+		    </itemlayout>
+		    <focusedlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[ListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
+			    <control type="image" description="BG">
+    				<posx>-20</posx>
+					<posy>0</posy>
+					<height>$PARAM[itemheight]</height>
+                    <width>680</width>
+					<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
+				    <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus($PARAM[id])">Conditional</animation>
+			    </control>
+                <control type="label" description="Main Label">
+    				<posx>0</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>600</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+                    <font>$PARAM[ListLabelFont]</font>
+					<label>$VAR[MediaListLabel]</label>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+			    <control type="label" description="Main Label">
+    				<posx>0</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>465</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+                    <font>$PARAM[ListLabelFont]</font>
+					<label>$VAR[MediaListLabel]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+    			<control type="label">
+	    			<posx>435</posx>
+		    		<posy>0</posy>
+			    	<width>180</width>
+				    <height>$PARAM[itemheight]</height>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<font>$PARAM[ListLabel2Font]</font>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+					<align>right</align>
+					<label>$VAR[MediaListLabel2]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+			    </control>
+				<include content ="ListWatchedOverlay">
+					<param name="isFocused">true</param>
+                    <param name="itemheight">$PARAM[itemheight]</param>
+                    <param name="BGposy">$PARAM[BGposy]</param>
+				</include>
+			</focusedlayout>
+			
+			<!-- PVR Channels -->
 			<!-- Begin Nexus change -->
-			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[ListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[ListPanelIsSwapped]" infoupdate="5000" height="$PARAM[itemheight]" width="1210">
 			<!-- End Nexus change -->
 			     <control type="image" description="BG">
     				<posy>0</posy>
@@ -694,9 +904,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
 				</include>
 		    </itemlayout>
-			<!-- Begin Nexus change -->
-		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[ListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
-			<!-- End Nexus change -->
+			<!-- Begin Nexus change -->				  
+		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[ListPanelIsSwapped]" infoupdate="5000" height="$PARAM[itemheight]" width="1210">
+			<!-- End Nexus change -->				
 			    <control type="image" description="BG">
     				<posx>-20</posx>
 					<posy>0</posy>
@@ -726,7 +936,7 @@
 			
 			<!-- No info panel should show or it is disabled and not images -->
 			
-			<itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [![$EXP[PanelShouldShow]] | $EXP[ListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1340">
+			<itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + [!$EXP[PanelShouldShow] | $EXP[ListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1340">
 			    <control type="image">
 				    <posx>20</posx>
 				    <posy>0</posy>
@@ -811,7 +1021,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
                 </include>
 		    </itemlayout>
-		    <focusedlayout condition="!Window.IsActive(MyPVRChannels.xml) + [![$EXP[PanelShouldShow]] | $EXP[ListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1340">
+		    <focusedlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + [!$EXP[PanelShouldShow] | $EXP[ListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1340">
 			    <control type="image">
     				<posx>20</posx>
 				    <posy>1</posy>
@@ -1276,7 +1486,7 @@
 				</include>
 			</focusedlayout>
 		    
-		    <itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [$EXP[PanelShouldShow] | $EXP[isPVRRecordingsGroups]] + ![$EXP[LowListPanelIsDisabled]] + ![$EXP[LowListPanelIsSwapped]] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
+		    <itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>870</posx>
@@ -1355,7 +1565,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
                 </include>
 		    </itemlayout>
-		    <focusedlayout condition="!Window.IsActive(MyPVRChannels.xml) + [$EXP[PanelShouldShow] | $EXP[isPVRRecordingsGroups]] + ![$EXP[LowListPanelIsDisabled]] + ![$EXP[LowListPanelIsSwapped]] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
+		    <focusedlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[LowListPanelIsDisabled] + !$EXP[LowListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posx>879</posx>
 					<posy>0</posy>
@@ -1452,8 +1662,114 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
+			
+			<!-- PVR Recordings or Timers -->
+			<itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + !$EXP[LowListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
+			    <control type="image" description="BG">
+    				<posy>0</posy>
+				    <posx>870</posx>
+				    <width>680</width>
+				    <height>$PARAM[itemheight]</height>
+				    <texture flipy="true" border="3">list/ListNF.png</texture>
+			    </control>
+                <control type="label" description="Main Label">
+    				<posx>879</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>610</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+                    <font>$PARAM[ListLabelFont]</font>
+				    <label>$VAR[MediaListLabel]</label>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+			    <control type="label" description="Main Label">
+    				<posx>879</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>465</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+                    <font>$PARAM[ListLabelFont]</font>
+				    <label>$VAR[MediaListLabel]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+				<control type="label">
+    				<posx>1315</posx>
+				    <posy>0</posy>
+				    <width>180</width>
+				    <height>$PARAM[itemheight]</height>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+					<font>$PARAM[ListLabel2Font]</font>
+				    <textcolor>Grey</textcolor>
+				    <align>right</align>
+				    <label>$VAR[MediaListLabel2]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+			    </control>
+			    <include content="LowListWatchedOverlay">
+                    <param name="itemheight">$PARAM[itemheight]</param>
+                    <param name="BGposy">$PARAM[BGposy]</param>
+                </include>
+		    </itemlayout>
+		    <focusedlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + ![$EXP[LowListPanelIsSwapped]]" height="$PARAM[itemheight]" width="1210">
+			    <control type="image" description="BG">
+    				<posx>879</posx>
+					<posy>0</posy>
+					<height>$PARAM[itemheight]</height>
+                    <width>680</width>
+					<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
+				    <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus($PARAM[id])">Conditional</animation>
+			    </control>
+                <control type="label" description="Main Label">
+    				<posx>879</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>610</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+                    <font>$PARAM[ListLabelFont]</font>
+					<label>$VAR[MediaListLabel]</label>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+			    <control type="label" description="Main Label">
+    				<posx>879</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>465</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+                    <font>$PARAM[ListLabelFont]</font>
+					<label>$VAR[MediaListLabel]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+				<control type="label">
+	    			<posx>1315</posx>
+				    <posy>0</posy>
+				    <width>180</width>
+				    <height>$PARAM[itemheight]</height>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<font>$PARAM[ListLabel2Font]</font>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+					<align>right</align>
+					<label>$VAR[MediaListLabel2]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+			    </control>
+				<include content ="LowListWatchedOverlay">
+					<param name="isFocused">true</param>
+                    <param name="itemheight">$PARAM[itemheight]</param>
+                    <param name="BGposy">$PARAM[BGposy]</param>
+				</include>
+			</focusedlayout>
+			
+			<!-- PVR Channels -->
 			<!-- Begin Nexus change -->
-			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[LowListPanelIsSwapped]]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + !$EXP[LowListPanelIsSwapped]" infoupdate="5000" height="$PARAM[itemheight]" width="1210">
 			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -1476,9 +1792,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
                 </include>
 		    </itemlayout>
-			<!-- Begin Nexus change -->
-		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[LowListPanelIsSwapped]]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
-			<!-- End Nexus change -->
+			<!-- Begin Nexus change -->				  
+		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + !$EXP[LowListPanelIsSwapped]" infoupdate="5000" height="$PARAM[itemheight]" width="1210">
+			<!-- End Nexus change -->				
 			    <control type="image" description="BG">
     				<posx>879</posx>
 					<posy>0</posy>
@@ -1508,7 +1824,7 @@
 			
 			<!-- Itemlayout/FocusedLayout when the panel is enabled and swapped -->
 			
-			<itemlayout condition="![$EXP[LowListPanelIsDisabled]] + $EXP[LowListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
+			<itemlayout condition="!$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>0</posx>
@@ -1554,7 +1870,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
                 </include>
 		    </itemlayout>
-		    <focusedlayout condition="![$EXP[LowListPanelIsDisabled]] + $EXP[LowListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
+		    <focusedlayout condition="!$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posx>10</posx>
 					<posy>0</posy>
@@ -1611,7 +1927,7 @@
 				</include>
 			</focusedlayout>
 		    
-			<itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + $EXP[PanelShouldShow] + ![$EXP[LowListPanelIsDisabled]] + $EXP[LowListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
+			<itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>0</posx>
@@ -1670,7 +1986,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
                 </include>
 		    </itemlayout>
-		    <focusedlayout condition="!Window.IsActive(MyPVRChannels.xml) + $EXP[PanelShouldShow] + ![$EXP[LowListPanelIsDisabled]] + $EXP[LowListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
+		    <focusedlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[LowListPanelIsDisabled] + $EXP[LowListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posx>-20</posx>
 					<posy>0</posy>
@@ -1741,8 +2057,115 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
+			
+			<!-- PVR Recordings or Timers -->
+			<itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[LowListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
+							
+			    <control type="image" description="BG">
+    				<posy>0</posy>
+				    <posx>0</posx>
+				    <width>680</width>
+				    <height>$PARAM[itemheight]</height>
+				    <texture flipy="true" border="3">list/ListNF.png</texture>
+			    </control>
+                <control type="label" description="Main Label">
+    				<posx>0</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>600</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+                    <font>$PARAM[ListLabelFont]</font>
+				    <label>$VAR[MediaListLabel]</label>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+			    <control type="label" description="Main Label">
+    				<posx>0</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>465</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+                    <font>$PARAM[ListLabelFont]</font>
+				    <label>$VAR[MediaListLabel]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+			    <control type="label">
+    				<posx>435</posx>
+				    <posy>0</posy>
+				    <width>180</width>
+				    <height>$PARAM[itemheight]</height>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+					<font>$PARAM[ListLabel2Font]</font>
+				    <textcolor>Grey</textcolor>
+				    <align>right</align>
+				    <label>$VAR[MediaListLabel2]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+			    </control>
+			    <include content="LowListWatchedOverlay">
+                    <param name="itemheight">$PARAM[itemheight]</param>
+                    <param name="BGposy">$PARAM[BGposy]</param>
+                </include>
+		    </itemlayout>
+		    <focusedlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[LowListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
+			    <control type="image" description="BG">
+    				<posx>-20</posx>
+					<posy>0</posy>
+					<height>$PARAM[itemheight]</height>
+                    <width>680</width>
+					<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
+				    <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus($PARAM[id])">Conditional</animation>
+			    </control>
+                <control type="label" description="Main Label">
+    				<posx>0</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>600</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+                    <font>$PARAM[ListLabelFont]</font>
+					<label>$VAR[MediaListLabel]</label>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+			    <control type="label" description="Main Label">
+    				<posx>0</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>465</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+                    <font>$PARAM[ListLabelFont]</font>
+					<label>$VAR[MediaListLabel]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+    			<control type="label">
+	    			<posx>435</posx>
+				    <posy>0</posy>
+				    <width>180</width>
+				    <height>$PARAM[itemheight]</height>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<font>$PARAM[ListLabel2Font]</font>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+					<align>right</align>
+					<label>$VAR[MediaListLabel2]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+			    </control>
+				<include content ="LowListWatchedOverlay">
+					<param name="isFocused">true</param>
+                    <param name="itemheight">$PARAM[itemheight]</param>
+                    <param name="BGposy">$PARAM[BGposy]</param>
+				</include>
+			</focusedlayout>
+			
+			<!-- PVR Channels -->
 			<!-- Begin Nexus change -->
-			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[LowListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[LowListPanelIsSwapped]" infoupdate="5000" height="$PARAM[itemheight]" width="1210">
 			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -1765,9 +2188,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
                 </include>
 		    </itemlayout>
-			<!-- Begin Nexus change -->
-		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[LowListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
-			<!-- End Nexus change -->
+			<!-- Begin Nexus change -->				  
+		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[LowListPanelIsSwapped]" infoupdate="5000" height="$PARAM[itemheight]" width="1210">
+			<!-- End Nexus change -->				
 			    <control type="image" description="BG">
     				<posx>-20</posx>
 					<posy>0</posy>
@@ -1797,7 +2220,7 @@
 			
 			<!-- No info panel should show or it is disabled -->
 			
-			<itemlayout condition="[![$EXP[PanelShouldShow]] | $EXP[LowListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1540">
+			<itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + [!$EXP[PanelShouldShow] | $EXP[LowListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1540">
 			    <control type="image">
 				    <posx>20</posx>
 				    <posy>0</posy>
@@ -1882,7 +2305,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
                 </include>
 		    </itemlayout>
-		    <focusedlayout condition="[![$EXP[PanelShouldShow]] | $EXP[LowListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1540">
+		    <focusedlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + [!$EXP[PanelShouldShow] | $EXP[LowListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1540">
 			    <control type="image">
     				<posx>20</posx>
 				    <posy>1</posy>
@@ -2213,7 +2636,7 @@
 		    
 			<!-- Itemlayouts/Focusedlayouts when panel is enabled  and not swapped -->
 		    
-		    <itemlayout condition="![$EXP[TallListPanelIsDisabled]] + ![$EXP[TallListPanelIsSwapped]] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
+		    <itemlayout condition="!$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>670</posx>
@@ -2272,7 +2695,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
                 </include>
 		    </itemlayout>
-		    <focusedlayout condition="![$EXP[TallListPanelIsDisabled]] + ![$EXP[TallListPanelIsSwapped]] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
+		    <focusedlayout condition="!$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posx>679</posx>
 					<posy>0</posy>
@@ -2344,7 +2767,7 @@
 				</include>
 			</focusedlayout>
 		    
-		    <itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + $EXP[PanelShouldShow] + ![$EXP[TallListPanelIsDisabled]] + ![$EXP[TallListPanelIsSwapped]] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
+		    <itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>670</posx>
@@ -2423,7 +2846,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
                 </include>
 		    </itemlayout>
-		    <focusedlayout condition="!Window.IsActive(MyPVRChannels.xml) + $EXP[PanelShouldShow] + ![$EXP[TallListPanelIsDisabled]] + ![$EXP[TallListPanelIsSwapped]] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
+		    <focusedlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[TallListPanelIsDisabled] + !$EXP[TallListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posx>679</posx>
 					<posy>0</posy>
@@ -2520,8 +2943,115 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
+			
+			<!-- PVR Recordings or Timers -->
+			<itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + !$EXP[TallListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
+							
+			    <control type="image" description="BG">
+    				<posy>0</posy>
+				    <posx>670</posx>
+				    <width>680</width>
+				    <height>$PARAM[itemheight]</height>
+				    <texture flipy="true" border="3">list/ListNF.png</texture>
+			    </control>
+                <control type="label" description="Main Label">
+    				<posx>679</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>610</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+                    <font>$PARAM[ListLabelFont]</font>
+				    <label>$VAR[MediaListLabel]</label>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+			    <control type="label" description="Main Label">
+    				<posx>679</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>465</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+                    <font>$PARAM[ListLabelFont]</font>
+				    <label>$VAR[MediaListLabel]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+				<control type="label">
+    				<posx>1115</posx>
+				    <posy>0</posy>
+				    <width>180</width>
+				    <height>$PARAM[itemheight]</height>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+					<font>$PARAM[ListLabel2Font]</font>
+				    <textcolor>Grey</textcolor>
+				    <align>right</align>
+				    <label>$VAR[MediaListLabel2]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+			    </control>
+			    <include content="TallListWatchedOverlay">
+                    <param name="itemheight">$PARAM[itemheight]</param>
+                    <param name="BGposy">$PARAM[BGposy]</param>
+                </include>
+		    </itemlayout>
+		    <focusedlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + !$EXP[TallListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
+			    <control type="image" description="BG">
+    				<posx>679</posx>
+					<posy>0</posy>
+					<height>$PARAM[itemheight]</height>
+                    <width>680</width>
+					<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
+				    <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus($PARAM[id])">Conditional</animation>
+			    </control>
+                <control type="label" description="Main Label">
+    				<posx>679</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>610</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+                    <font>$PARAM[ListLabelFont]</font>
+					<label>$VAR[MediaListLabel]</label>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+				<control type="label" description="Main Label">
+    				<posx>679</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>465</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+                    <font>$PARAM[ListLabelFont]</font>
+					<label>$VAR[MediaListLabel]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+				<control type="label">
+	    			<posx>1115</posx>
+				    <posy>0</posy>
+				    <width>180</width>
+				    <height>$PARAM[itemheight]</height>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<font>$PARAM[ListLabel2Font]</font>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+					<align>right</align>
+					<label>$VAR[MediaListLabel2]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+			    </control>
+				<include content ="TallListWatchedOverlay">
+					<param name="isFocused">true</param>
+                    <param name="itemheight">$PARAM[itemheight]</param>
+                    <param name="BGposy">$PARAM[BGposy]</param>
+				</include>
+			</focusedlayout>
+			
+			<!-- PVR Channels -->
 			<!-- Begin Nexus change -->
-			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[TallListPanelIsSwapped]]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[TallListPanelIsSwapped]]" infoupdate="5000" height="$PARAM[itemheight]" width="1210">
 			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -2544,9 +3074,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
                 </include>
 		    </itemlayout>
-			<!-- Begin Nexus change -->
-		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[TallListPanelIsSwapped]]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
-			<!-- End Nexus change -->
+			<!-- Begin Nexus change -->				  
+		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[TallListPanelIsSwapped]]" infoupdate="5000" height="$PARAM[itemheight]" width="1210">
+			<!-- End Nexus change -->				
 			    <control type="image" description="BG">
     				<posx>679</posx>
 					<posy>0</posy>
@@ -2576,7 +3106,7 @@
 			
 			<!-- Itemlayout/FocusedLayout when the panel is enabled and swapped -->
 			
-			<itemlayout condition="![$EXP[TallListPanelIsDisabled]] + $EXP[TallListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
+			<itemlayout condition="!$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>80</posx>
@@ -2635,7 +3165,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
                 </include>
 		    </itemlayout>
-		    <focusedlayout condition="![$EXP[TallListPanelIsDisabled]] + $EXP[TallListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
+		    <focusedlayout condition="!$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [Container.Content(sets) | Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(images) | Container.Content(games)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posx>80</posx>
 					<posy>0</posy>
@@ -2707,7 +3237,7 @@
 				</include>
 			</focusedlayout>
 		    
-			<itemlayout condition="!Window.IsActive(MYPVRChannels.xml) + $EXP[PanelShouldShow] + ![$EXP[TallListPanelIsDisabled]] + $EXP[TallListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
+			<itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>80</posx>
@@ -2786,7 +3316,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
                 </include>
 		    </itemlayout>
-		    <focusedlayout condition="!Window.IsActive(MYPVRChannels.xml) + $EXP[PanelShouldShow] + ![$EXP[TallListPanelIsDisabled]] + $EXP[TallListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
+		    <focusedlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[PanelShouldShow] + !$EXP[TallListPanelIsDisabled] + $EXP[TallListPanelIsSwapped] + [$EXP[isSpecialContent] | Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(musicvideos) | Container.Content(seasons)]" height="$PARAM[itemheight]" width="1210">
 			    <control type="image" description="BG">
     				<posx>80</posx>
 					<posy>0</posy>
@@ -2883,8 +3413,114 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
+			
+			<!-- PVR Recordings or Timers -->
+			<itemlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[TallListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
+			    <control type="image" description="BG">
+    				<posy>0</posy>
+				    <posx>80</posx>
+				    <width>640</width>
+				    <height>$PARAM[itemheight]</height>
+				    <texture flipy="true" border="3">list/ListNF.png</texture>
+			    </control>
+                <control type="label" description="Main Label">
+    				<posx>85</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>580</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+                    <font>$PARAM[ListLabelFont]</font>
+				    <label>$VAR[MediaListLabel]</label>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+			    <control type="label" description="Main Label">
+    				<posx>85</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>465</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+                    <font>$PARAM[ListLabelFont]</font>
+				    <label>$VAR[MediaListLabel]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+			    <control type="label">
+    				<posx>495</posx>
+				    <posy>0</posy>
+				    <width>180</width>
+				    <height>$PARAM[itemheight]</height>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+				    <textoffsetx>16</textoffsetx>
+					<font>$PARAM[ListLabel2Font]</font>
+				    <textcolor>Grey</textcolor>
+				    <align>right</align>
+				    <label>$VAR[MediaListLabel2]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+			    </control>
+			    <include content="TallListWatchedOverlay">
+                    <param name="itemheight">$PARAM[itemheight]</param>
+                    <param name="BGposy">$PARAM[BGposy]</param>
+                </include>
+		    </itemlayout>
+		    <focusedlayout condition="!Window.IsActive(MyPVRChannels.xml) + [Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + $EXP[TallListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210">
+			    <control type="image" description="BG">
+    				<posx>80</posx>
+					<posy>0</posy>
+					<height>$PARAM[itemheight]</height>
+                    <width>640</width>
+					<texture border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texture>
+				    <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus($PARAM[id])">Conditional</animation>
+			    </control>
+                <control type="label" description="Main Label">
+    				<posx>85</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>580</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+                    <font>$PARAM[ListLabelFont]</font>
+					<label>$VAR[MediaListLabel]</label>
+                    <visible>Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+			    <control type="label" description="Main Label">
+    				<posx>85</posx>
+				    <height>$PARAM[itemheight]</height>
+				    <width>465</width>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+                    <font>$PARAM[ListLabelFont]</font>
+					<label>$VAR[MediaListLabel]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+				</control>
+    			<control type="label">
+	    			<posx>495</posx>
+		    		<posy>0</posy>
+			    	<width>180</width>
+				    <height>$PARAM[itemheight]</height>
+				    <scroll>$VAR[LongLabelScroll]</scroll>
+					<textoffsetx>16</textoffsetx>
+					<font>$PARAM[ListLabel2Font]</font>
+					<textcolor>$VAR[FocusedTextColor]</textcolor>
+					<selectedcolor>$VAR[FocusedTextColor]</selectedcolor>
+					<shadowcolor></shadowcolor>
+					<align>right</align>
+					<label>$VAR[MediaListLabel2]</label>
+                    <visible>!Skin.HasSetting(Hide.Label2.Lists)</visible>
+			    </control>
+				<include content ="TallListWatchedOverlay">
+					<param name="isFocused">true</param>
+                    <param name="itemheight">$PARAM[itemheight]</param>
+                    <param name="BGposy">$PARAM[BGposy]</param>
+				</include>
+			</focusedlayout>
+			
+			<!-- PVR Channels -->
 			<!-- Begin Nexus change -->
-			<itemlayout condition="Window.IsActive(MYPVRChannels.xml) + $EXP[TallListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<itemlayout condition="Window.IsActive(MYPVRChannels.xml) + $EXP[TallListPanelIsSwapped]" infoupdate="5000" height="$PARAM[itemheight]" width="1210">
 			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posy>0</posy>
@@ -2907,9 +3543,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
                 </include>
 		    </itemlayout>
-			<!-- Begin Nexus change -->
-		    <focusedlayout condition="Window.IsActive(MYPVRChannels.xml) + $EXP[TallListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
-			<!-- End Nexus change -->
+			<!-- Begin Nexus change -->				  
+		    <focusedlayout condition="Window.IsActive(MYPVRChannels.xml) + $EXP[TallListPanelIsSwapped]" infoupdate="5000" height="$PARAM[itemheight]" width="1210">
+			<!-- End Nexus change -->				
 			    <control type="image" description="BG">
     				<posx>80</posx>
 					<posy>0</posy>
@@ -2939,7 +3575,7 @@
 			
 			<!-- No info panel should show or it is disabled and not images -->
 			
-			<itemlayout condition="[![$EXP[PanelShouldShow]] | $EXP[TallListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1340">
+			<itemlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + [!$EXP[PanelShouldShow] | $EXP[TallListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1340">
 			    <control type="image">
 				    <posx>80</posx>
 				    <posy>0</posy>
@@ -3024,7 +3660,7 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
                 </include>
 		    </itemlayout>
-		    <focusedlayout condition="[![$EXP[PanelShouldShow]] | $EXP[TallListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1340">
+		    <focusedlayout condition="![Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRTimers.xml)] + [!$EXP[PanelShouldShow] | $EXP[TallListPanelIsDisabled]] + !Container.Content(images)" height="$PARAM[itemheight]" width="1340">
 			    <control type="image">
     				<posx>80</posx>
 				    <posy>1</posy>

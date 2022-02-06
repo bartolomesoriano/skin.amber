@@ -116,7 +116,7 @@
                     <label>$LOCALIZE[31294]</label>
                     <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
                     <onclick>RunScript(service.osmc.settings)</onclick>
-                    <visible>System.HasAddon(service.osmc.settings)</visible>
+                    <visible>System.AddonIsEnabled(service.osmc.settings)</visible>
                 </control>
                 <control type="button" id="507" description="Launch OpenELEC settings">
                     <include condition="Skin.HasSetting(Smaller.Fonts)">SmallerFonts</include>
@@ -126,7 +126,7 @@
                     <label>$LOCALIZE[31295]</label>
                     <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
                     <onclick>RunScript(service.openelec.settings)</onclick>
-                    <visible>System.HasAddon(service.openelec.settings)</visible>
+                    <visible>System.AddonIsEnabled(service.openelec.settings)</visible>
                 </control>
                 <control type="button" id="508" description="Launch CoreELEC settings">
                     <include condition="Skin.HasSetting(Smaller.Fonts)">SmallerFonts</include>
@@ -136,7 +136,7 @@
                     <label>$LOCALIZE[31300]</label>
                     <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
                     <onclick>RunScript(service.coreelec.settings)</onclick>
-                    <visible>System.HasAddon(service.coreelec.settings)</visible>
+                    <visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
                 </control>                
                 <control type="button" id="509" description="Launch LibreELEC settings">
                     <include condition="Skin.HasSetting(Smaller.Fonts)">SmallerFonts</include>
@@ -146,7 +146,7 @@
                     <label>$LOCALIZE[31296]</label>
                     <texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
                     <onclick>RunScript(service.libreelec.settings)</onclick>
-                    <visible>System.HasAddon(service.libreelec.settings)</visible>
+                    <visible>System.AddonIsEnabled(service.libreelec.settings)</visible>
                 </control>
             </control>
             <control type="panel" id="9001">

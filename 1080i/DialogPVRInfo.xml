@@ -3,6 +3,10 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<animation effect="fade" time="200">WindowOpen</animation>
 	<animation effect="fade" time="150">WindowClose</animation>
+	
+	<onload>SetProperty(ResetScroll," ",home)</onload>
+    <onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,home),00:01,silent)</onload>
+	
 	<controls>
 		<control type="image">
 			<width>1920</width>
@@ -56,7 +60,7 @@
 					<height>400</height>
 					<align>justify</align>
 					<font>InfoPlot</font>
-					<label>$INFO[ListItem.Season, S]$INFO[ListItem.Episode, E,: ]$VAR[Plots]</label>
+					<label>$INFO[ListItem.Season, S]$INFO[ListItem.Episode, E,: ]$VAR[Plots]$INFO[Window(home).Property(ResetScroll)]</label>
 				</control>
 				<control type="radiobutton" id="90003">
 					<posy>438</posy>
@@ -161,7 +165,7 @@
 				<label>$LOCALIZE[32050]</label>
                 <onclick>Action(close)</onclick>
                 <onclick>RunScript(plugin.video.iptv.recorder,$ESCINFO[ListItem.ChannelName],$ESCINFO[ListItem.Title],$ESCINFO[ListItem.Date],$ESCINFO[ListItem.Duration],$ESCINFO[ListItem.Plot])</onclick>
-				<visible>System.HasAddon(plugin.video.iptv.recorder) + Window.IsActive(PVRGuideInfo)</visible>
+				<visible>System.AddonIsEnabled(plugin.video.iptv.recorder) + Window.IsActive(PVRGuideInfo)</visible>
 			</control>
 			<control type="button" id="801" description="IPTV Recorder Recordings">
 				<height>90</height>
@@ -171,7 +175,7 @@
 				<label>$LOCALIZE[32051]</label>
                 <onclick>Action(close)</onclick>
                 <onclick>ActivateWindow(10025,&quot;plugin://plugin.video.iptv.recorder/recordings&quot;,return)</onclick>
-				<visible>System.HasAddon(plugin.video.iptv.recorder) + Window.IsActive(PVRGuideInfo)</visible>
+				<visible>System.AddonIsEnabled(plugin.video.iptv.recorder) + Window.IsActive(PVRGuideInfo)</visible>
             </control>    
 			<control type="button" id="5" description="switch">
 				<height>90</height>

@@ -369,7 +369,7 @@
 				    <posy>15</posy>
 				    <height>72</height>
 				    <width>72</width>
-					<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--					<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 			    </control>
 			    <control type="image">
 				    <visible>$PARAM[isFocused] + !$PARAM[isLandscape] + !$PARAM[isSquare]</visible>
@@ -390,7 +390,7 @@
 				    <posy>54</posy>
 				    <height>72</height>
 				    <width>72</width>
-					<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--					<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 			    </control>
 			    <control type="image">
 				    <visible>$PARAM[isFocused] + $PARAM[isLandscape]</visible>
@@ -411,7 +411,7 @@
 				    <posy>0</posy>
 				    <height>72</height>
 				    <width>72</width>
-					<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--					<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 			    </control>
 			    <control type="image">
 				    <visible>$PARAM[isFocused] + $PARAM[isSquare]</visible>
@@ -435,7 +435,7 @@
 				        <posy>15</posy>
 				        <height>82</height>
 				        <width>82</width>
-						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 			        </control>
 				    <control type="image">
 				        <visible>$PARAM[isFocused] + !$PARAM[isLandscape]</visible>
@@ -469,7 +469,7 @@
 					    <align>center</align>
 					    <label>$VAR[UnwatchedEpisodes]</label>
 					    <textcolor>White2</textcolor>
-						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 				    </control>
 				    <control type="label" description="l2">
 					    <visible>!$PARAM[isFocused] + !Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99) + !$PARAM[isLandscape]</visible>
@@ -481,7 +481,7 @@
 					    <align>center</align>
 					    <label>$VAR[UnwatchedEpisodes]</label>
 					    <textcolor>White2</textcolor>
-						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 				    </control>
 				    <control type="label" description="l2">
 					    <visible>$PARAM[isFocused] + !Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99) + !$PARAM[isLandscape]</visible>
@@ -504,7 +504,7 @@
 				        <posy>54</posy>
 				        <height>82</height>
 				        <width>82</width>
-						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 			        </control>
 				    <control type="image">
 				        <visible>$PARAM[isFocused] + $PARAM[isLandscape]</visible>
@@ -538,7 +538,7 @@
 					    <align>center</align>
 					    <label>$VAR[UnwatchedEpisodes]</label>
 					    <textcolor>White2</textcolor>
-						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 				    </control>
 				    <control type="label" description="l2">
 					    <visible>!$PARAM[isFocused] + !Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99) + $PARAM[isLandscape]</visible>
@@ -550,7 +550,7 @@
 					    <align>center</align>
 					    <label>$VAR[UnwatchedEpisodes]</label>
 					    <textcolor>White2</textcolor>
-						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 				    </control>
 				    <control type="label" description="l2">
 					    <visible>$PARAM[isFocused] + !Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),99) + $PARAM[isLandscape]</visible>
@@ -577,7 +577,7 @@
 				        <posy>15</posy>
 				        <height>72</height>
 				        <width>72</width>
-						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 			        </control>
 				    <control type="image">
 				        <visible>$PARAM[isFocused] + !$PARAM[isLandscape] + !$PARAM[isSquare]</visible>
@@ -595,7 +595,7 @@
 				        <posy>54</posy>
 				        <height>72</height>
 				        <width>72</width>
-						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 			        </control>
 				    <control type="image">
 				        <visible>$PARAM[isFocused] + $PARAM[isLandscape]</visible>
@@ -613,7 +613,7 @@
 				        <posy>0</posy>
 				        <height>72</height>
 				        <width>72</width>
-						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--						<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 			        </control>
 				    <control type="image">
 				        <visible>$PARAM[isFocused] + $PARAM[isSquare]</visible>
@@ -714,7 +714,7 @@
 				            <posy>15</posy>
 				            <height>82</height>
 				            <width>82</width>
-							<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--							<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 			            </control>
 				        <control type="image">
 				            <visible>$PARAM[isFocused]</visible>
@@ -747,7 +747,7 @@
 					        <align>center</align>
 					        <label>$VAR[ContainerRatingOverlayVar]</label>
 					        <textcolor>White2</textcolor>
-							<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--							<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 				        </control>
 					</control>
 				</control>
@@ -762,7 +762,7 @@
 				            <posy>54</posy>
 				            <height>82</height>
 				            <width>82</width>
-							<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--							<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 			            </control>
 				        <control type="image">
 				            <visible>$PARAM[isFocused]</visible>
@@ -795,7 +795,7 @@
 					        <align>center</align>
 					        <label>$VAR[ContainerRatingOverlayVar]</label>
 					        <textcolor>White2</textcolor>
-							<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--							<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>  -->
 				        </control>
 					</control>
 				</control>
@@ -810,7 +810,7 @@
 				            <posy>0</posy>
 				            <height>82</height>
 				            <width>82</width>
-							<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--							<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 			            </control>
 				        <control type="image">
 				            <visible>$PARAM[isFocused]</visible>
@@ -843,7 +843,7 @@
 					        <align>center</align>
 					        <label>$VAR[ContainerRatingOverlayVar]</label>
 					        <textcolor>White2</textcolor>
-							<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse>
+<!--							<colordiffuse>$VAR[AmberFlixDimLevelVar]</colordiffuse> -->
 				        </control>
 					</control>
 				</control>

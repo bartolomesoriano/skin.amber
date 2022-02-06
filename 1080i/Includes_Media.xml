@@ -1020,6 +1020,17 @@
 				<aspectratio>keep</aspectratio>
 				<texture>$VAR[AudioCodecFlagVar]</texture>
 			</control>
+			<control type="label" id="89000">
+                <height>$PARAM[itemheight]</height>
+				<width>110</width>
+                <font>ListDetails</font>
+                <align>left</align>
+                <textcolor>$VAR[HighlightColor]</textcolor>
+                <label>$INFO[Container.ListItem.BitRate] $LOCALIZE[32480]</label>
+			    <visible>$PARAM[showaudiobadge]</visible>
+				<visible>String.IsEqual(Container.ListItem.DBType,song)</visible>
+				<visible>!String.IsEmpty(Container.ListItem.BitRate)</visible>
+            </control>
 			<control type="image" id="89008">
 				<visible>!String.IsEmpty(Container.ListItem.FileExtension) + !Skin.HasSetting(coloredflags)</visible>
 				<visible>String.IsEqual(Container.ListItem.DBType,song)</visible>
@@ -1554,6 +1565,74 @@
 					<visible>String.IsEmpty(VideoPlayer.UserRating)</visible>
                 </control>
             </control>
+		</definition>
+	</include>	
+	
+	<include name="PlayerAudioFlagItems">
+		<param name="itemwidth" default="90"/>
+		<param name="itemheight" default="80"/>
+		<param name="diffuse">Silver</param>
+		<definition>
+			<control type="label" id="89000">
+                <height>$PARAM[itemheight]</height>
+				<width>120</width>
+                <font>ListDetails</font>
+                <align>left</align>
+                <textcolor>$VAR[HighlightColor]</textcolor>
+                <label>$INFO[MusicPlayer.BitRate] $LOCALIZE[32480]</label>
+			    <visible>!String.IsEmpty(MusicPlayer.BitRate)</visible>
+            </control>
+			<control type="image" id="89001">
+				<visible>!String.IsEmpty(MusicPlayer.Codec) + !Skin.HasSetting(coloredflags)</visible>
+				<height>$PARAM[itemheight]</height>
+				<width>$PARAM[itemwidth]</width>
+				<bordersize>3</bordersize>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>$PARAM[diffuse]</colordiffuse>
+				<texture>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[MusicPlayer.Codec,,.png]</texture>
+			</control>
+			<control type="image" id="89001">
+				<visible>!String.IsEmpty(MusicPlayer.Codec) + Skin.HasSetting(coloredflags)</visible>
+				<height>$PARAM[itemheight]</height>
+				<width>$PARAM[itemwidth]</width>
+				<bordersize>3</bordersize>
+				<aspectratio>keep</aspectratio>
+				<texture>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[MusicPlayer.Codec,,.png]</texture>
+			</control>
+			<control type="image" id="89005">
+				<visible>!String.IsEmpty(ListItem.FileExtension) + !Skin.HasSetting(coloredflags)</visible>
+				<height>$PARAM[itemheight]</height>
+				<width>$PARAM[itemwidth]</width>
+				<bordersize>3</bordersize>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>$PARAM[diffuse]</colordiffuse>
+				<texture>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[ListItem.FileExtension,,.png]</texture>
+			</control>
+			<control type="image" id="89005">
+				<visible>!String.IsEmpty(ListItem.FileExtension) + Skin.HasSetting(coloredflags)</visible>
+				<height>$PARAM[itemheight]</height>
+				<width>$PARAM[itemwidth]</width>
+				<bordersize>3</bordersize>
+				<aspectratio>keep</aspectratio>
+				<texture>$VAR[MediaFlagsPathVar]/audiocodec/$INFO[ListItem.FileExtension,,.png]</texture>
+			</control>
+			<control type="image" id="89006">
+				<visible>!String.IsEmpty(MusicPlayer.Channels) + !Skin.HasSetting(coloredflags)</visible>
+				<height>$PARAM[itemheight]</height>
+				<width>$PARAM[itemwidth]</width>
+				<bordersize>3</bordersize>
+				<aspectratio>keep</aspectratio>
+				<colordiffuse>$PARAM[diffuse]</colordiffuse>
+				<texture>$VAR[MediaFlagsPathVar]/audiochannels/channels$INFO[MusicPlayer.Channels,,.png]</texture>
+			</control>
+			<control type="image" id="89006">
+				<visible>!String.IsEmpty(MusicPlayer.Channels) + Skin.HasSetting(coloredflags)</visible>
+				<height>$PARAM[itemheight]</height>
+				<width>$PARAM[itemwidth]</width>
+				<bordersize>3</bordersize>
+				<aspectratio>keep</aspectratio>
+				<texture>$VAR[MediaFlagsPathVar]/audiochannels/channels$INFO[MusicPlayer.Channels,,.png]</texture>
+			</control>
 		</definition>
 	</include>	
 	
@@ -4229,6 +4308,107 @@
 		</definition>
 	</include>
 
+
+    <include name="EmbuaryInfoListsOverlays">
+	    <control type="group">
+		    <visible>!Skin.HasSetting(ShowTopRightOverlays)</visible>
+			<control type="image" description="Watched Overlay">
+		        <visible>!$PARAM[isFocused]</visible>
+		        <left>60r</left>
+		        <top>60r</top>
+		        <width>30</width>
+		        <height>30</height>
+		        <texture>$VAR[Overlay]</texture>
+		        <aspectratio>keep</aspectratio>
+		    </control>
+		    <control type="image" description="Watched Overlay">
+		        <visible>$PARAM[isFocused]</visible>
+		        <left>60r</left>
+				<top>60r</top>
+				<width>30</width>
+				<height>30</height>
+				<texture>$VAR[Overlay]</texture>
+    			<colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
+				<aspectratio>keep</aspectratio>
+			</control>
+		</control>
+		<control type="group">
+		    <visible>Skin.HasSetting(ShowTopRightOverlays)</visible>
+		    <!-- Watched and Library overlays -->
+			<control type="group">
+			    <visible>!Integer.IsGreater(Container.ListItem.Property(UnwatchedEpisodes),0)</visible>
+			    <control type="image">
+		            <visible>!$PARAM[isFocused]</visible>
+		            <texture background="true">$VAR[TopRightOverlay]</texture>
+		            <posx>98r</posx>
+		            <posy>12</posy>
+		            <height>82</height>
+		            <width>82</width>
+		            <aspectratio>keep</aspectratio>
+		        </control>
+			    <control type="image">
+			        <visible>$PARAM[isFocused]</visible>
+			        <texture background="true">$VAR[TopRightOverlay]</texture>
+			        <posx>98r</posx>
+			        <posy>12</posy>
+			        <height>82</height>
+			        <width>82</width>
+			        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
+			        <aspectratio>keep</aspectratio>
+			    </control>
+			</control>
+            <!-- Unwatched episodes overlay -->
+			<control type="group">
+			    <visible>Integer.IsGreater(Container.ListItem.Property(UnwatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
+			    <control type="group">
+				    <control type="image">
+			            <visible>!$PARAM[isFocused]</visible>
+			            <texture background="true">overlays/toprightempty2.png</texture>
+			            <posx>101r</posx>
+			            <posy>12</posy>
+			            <height>82</height>
+			            <width>82</width>
+			        </control>
+			        <control type="image">
+			            <visible>$PARAM[isFocused]</visible>
+			            <texture background="true" colordiffuse="$VAR[MediaWidgetsHighlightColor]">overlays/toprightempty2.png</texture>
+			            <posx>101r</posx>
+			            <posy>12</posy>
+			            <height>82</height>
+			            <width>82</width>
+			        </control>
+				</control>
+				<control type="group">
+				    <control type="label" description="l2">
+				        <visible>$PARAM[isFocused]</visible>
+				        <posx>94r</posx>
+			            <posy>-255</posy>
+				        <height>$PARAM[itemheight]</height>
+				        <width>100</width>
+				        <font>ListDetailsSmall</font>
+				        <align>center</align>
+				        <shadowcolor></shadowcolor>
+				        <label>$VAR[VideoInfoUnwatchedEpisodes]</label>
+				        <textcolor>$VAR[MediaWidgetsHighlightColor]</textcolor>
+				        <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
+			        </control>
+			        <control type="label" description="l2">
+				        <visible>!$PARAM[isFocused]</visible>
+				        <posx>94r</posx>
+			            <posy>-255</posy>
+				        <height>$PARAM[itemheight]</height>
+				        <width>100</width>
+				        <font>ListDetailsSmall</font>
+				        <align>center</align>
+				        <label>$VAR[VideoInfoUnwatchedEpisodes]</label>
+				        <textcolor>White2</textcolor>
+			        </control>
+				</control>
+			</control>			
+		</control>
+	</include>
+
+
 	<include name="GenericThumbIconTemplate">
 		<param name="isFocused">false</param>
 		<param name="isSmallIcon">false</param>
@@ -4392,25 +4572,32 @@
 					<param name="textboxheight">$PARAM[belowtextboxheight]</param>
 					<param name="backgroundheight">$PARAM[belowtextboxbackheight]</param>
 				</include>
-				<control type="image" description="Watched Overlay">
-					<visible>!$PARAM[isFocused] + $PARAM[showOverlay] + [!Skin.HasSetting(ShowTopRightOverlays) | [Skin.HasSetting(ShowTopRightOverlays) + [![$EXP[IsIconView]] | ListItem.IsRecording | String.StartsWith(ListItem.FolderPath,pvr)]]]</visible>
-					<left>60r</left>
-					<top>60r</top>
-					<width>30</width>
-					<height>30</height>
-					<texture>$VAR[Overlay]</texture>
-					<aspectratio>keep</aspectratio>
-				</control>
-				<control type="image" description="Watched Overlay">
-					<visible>$PARAM[isFocused] + $PARAM[showOverlay] + [!Skin.HasSetting(ShowTopRightOverlays) | [Skin.HasSetting(ShowTopRightOverlays) + [![$EXP[IsIconView]] | ListItem.IsRecording | String.StartsWith(ListItem.FolderPath,pvr)]]]</visible>
-					<left>60r</left>
-					<top>60r</top>
-					<width>30</width>
-					<height>30</height>
-					<texture>$VAR[Overlay]</texture>
-    				<colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
-					<aspectratio>keep</aspectratio>
-				</control>
+				<control type="group">
+				    <visible>![Window.IsActive(script-embuary-video.xml) | Window.IsActive(script-embuary-person.xml)]</visible>
+					<control type="image" description="Watched Overlay">
+					    <visible>!$PARAM[isFocused] + $PARAM[showOverlay] + [!Skin.HasSetting(ShowTopRightOverlays) | [Skin.HasSetting(ShowTopRightOverlays) + [![$EXP[IsIconView]] | ListItem.IsRecording | String.StartsWith(ListItem.FolderPath,pvr)]]]</visible>
+					    <left>60r</left>
+					    <top>60r</top>
+					    <width>30</width>
+					    <height>30</height>
+					    <texture>$VAR[Overlay]</texture>
+					    <aspectratio>keep</aspectratio>
+				    </control>
+				    <control type="image" description="Watched Overlay">
+					    <visible>$PARAM[isFocused] + $PARAM[showOverlay] + [!Skin.HasSetting(ShowTopRightOverlays) | [Skin.HasSetting(ShowTopRightOverlays) + [![$EXP[IsIconView]] | ListItem.IsRecording | String.StartsWith(ListItem.FolderPath,pvr)]]]</visible>
+					    <left>60r</left>
+					    <top>60r</top>
+					    <width>30</width>
+					    <height>30</height>
+					    <texture>$VAR[Overlay]</texture>
+    				    <colordiffuse>$VAR[MediaWidgetsHighlightColor]</colordiffuse>
+					    <aspectratio>keep</aspectratio>
+				    </control>
+				</control>	
+				<control type="group">
+				    <visible>[Window.IsActive(script-embuary-video.xml) | Window.IsActive(script-embuary-person.xml)]</visible>
+					<include>EmbuaryInfoListsOverlays</include>
+				</control>	
 			</control>
 		</definition>
 	</include>	
@@ -4979,7 +5166,7 @@
 				<param name="shadowoffset">8</param>
 				<param name="bordersizeLT">12</param>
 				<param name="bordersizeRB">20</param>
-				<param name="aspect">stretch</param>
+				<param name="aspect">keep</param>
 			</include>
 		</definition>
 	</include>
@@ -5001,7 +5188,7 @@
 				<param name="shadowoffset">8</param>
 				<param name="bordersizeLT">16</param>
 				<param name="bordersizeRB">24</param>
-				<param name="aspect">stretch</param>
+				<param name="aspect">keep</param>
 			</include>
 		</definition>
 	</include>
@@ -5733,7 +5920,7 @@
 			<posx>$PARAM[left]</posx>
 			<width>$PARAM[width]</width>
 			<control type="label" description="Title shadow">
-				<animation effect="slide" start="0,0" end="0,27" time="0" condition="Control.IsVisible(56) + [$EXP[56_FanartViewInfo] | $EXP[56_NetflixShowTitleInFooter]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,27" time="0" condition="Control.IsVisible(56) + [$EXP[56_FanartViewInfo] | [$EXP[56_FanartViewNetflix] + $EXP[56_NetflixShowTitleInFooter]]]">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,22" time="0" condition="Control.IsVisible(56) + [[Container.Content(albums) | Container.Content(songs)] + Skin.HasSetting(56_Use_Disc)]">Conditional</animation>
 				<left>4</left>
 				<top>4</top>
@@ -5745,10 +5932,10 @@
 				<font>InfoTitle</font>
 				<scroll>false</scroll>
 				<label>$VAR[panelheading]</label>
-				<visible>!Control.IsVisible(56) | [Control.IsVisible(56) + [![$EXP[56_FanartViewNetflix]] | $EXP[56_NetflixShowTitleInFooter]]]</visible>
+				<visible>!Control.IsVisible(56) | [Control.IsVisible(56) + [![$EXP[56_FanartViewNetflix]] | [$EXP[56_FanartViewNetflix] + $EXP[56_NetflixShowTitleInFooter]]]]</visible>
 			</control>
 			<control type="label" description="Title Label">
-				<animation effect="slide" start="0,0" end="0,27" time="0" condition="Control.IsVisible(56) + [$EXP[56_FanartViewInfo] | $EXP[56_NetflixShowTitleInFooter]]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,27" time="0" condition="Control.IsVisible(56) + [$EXP[56_FanartViewInfo] | [$EXP[56_FanartViewNetflix] + $EXP[56_NetflixShowTitleInFooter]]]">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,22" time="0" condition="Control.IsVisible(56) + [[Container.Content(albums) | Container.Content(songs)] + Skin.HasSetting(56_Use_Disc)]">Conditional</animation>
 				<width>$PARAM[width]</width>
 				<height>50</height>
@@ -5758,7 +5945,7 @@
 				<font>InfoTitle</font>
 				<scroll>false</scroll>
 				<label>$VAR[panelheading]</label>
-				<visible>!Control.IsVisible(56) | [Control.IsVisible(56) + [![$EXP[56_FanartViewNetflix]] | $EXP[56_NetflixShowTitleInFooter]]]</visible>
+				<visible>!Control.IsVisible(56) | [Control.IsVisible(56) + [![$EXP[56_FanartViewNetflix]] | [$EXP[56_FanartViewNetflix] + $EXP[56_NetflixShowTitleInFooter]]]]</visible>
 			</control>
 			<control type="label" description="Details">
 				<animation effect="slide" start="0,0" end="0,12" time="0" condition="Control.IsVisible(56) + [[[Container.Content(albums) | Container.Content(songs)] + Skin.HasSetting(56_Use_Disc)] + [[Control.HasFocus(66) + Control.IsVisible(66561)] | Control.HasFocus(616)]]">Conditional</animation>
@@ -5864,9 +6051,9 @@
 			    </include>
 		    </control>
 		    <control type="grouplist" description="Right Flags">
-			    <left>1600</left>
+			    <left>1380</left>
 			    <top>1010</top>
-			    <width>300</width>
+			    <width>520</width>
 			    <height>80</height>
 			    <itemgap>20</itemgap>
 			    <orientation>horizontal</orientation>

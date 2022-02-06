@@ -3,9 +3,13 @@
     <defaultcontrol always="true">9000</defaultcontrol>
     <animation effect="fade" time="200">WindowOpen</animation>
     <animation effect="fade" time="150">WindowClose</animation>
-    <conload condition="System.HasAddon(script.embuary.helper)">RunScript(script.embuary.helper,action=resetposition,container=9000||9009||10052||10053||10054||10055||10056||10057||10058||10059)</conload>
+    <conload condition="System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=resetposition,container=9000||9009||10052||10053||10054||10055||10056||10057||10058||10059)</conload>
     <onload>SetProperty(onclose,SetFocus(9000))</onload>
-    <controls>
+    
+	<onload>SetProperty(ResetScroll," ",home)</onload>
+    <onload>AlarmClock(ClearValue,ClearProperty(ResetScroll,home),00:01,silent)</onload>
+	
+	<controls>
 
         <!-- Hide Details list for video -->
 		<control type="list" id="10051">
@@ -34,10 +38,6 @@
             <include content="BackgroundOverlayVideoInfo">
                 <param name="parentid" value="9000"/>
             </include>
-<!--            <include condition="Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster)" content="BackgroundOverlay">
-                <param name="parentid" value="9000"/>
-                <param name="colordiffuse" value="9FC8C8C8"/>
-            </include> -->
         </control>
         
         <include content="ShadowedImage">
@@ -48,9 +48,74 @@
             <param name="shadowoffset">16</param>
             <param name="texture">$INFO[Container(10051).ListItem.Art(thumb)]</param>
         </include>
+   		<control type="group">
+		    <visible>!Skin.HasSetting(ShowTopRightOverlays)</visible>
+	        <control type="image" description="Watched Overlay">
+		        <left>570</left>
+		        <top>900</top>
+		        <width>50</width>
+		        <height>50</height>
+		        <texture>OverlayWatched.png</texture>
+		        <aspectratio>keep</aspectratio>
+				<visible>Integer.IsGreater(Container(10051).ListItem.Playcount,0)</visible>
+	        </control>
+			<control type="image" description="Library Overlay">
+		        <left>570</left>
+		        <top>900</top>
+		        <width>50</width>
+		        <height>50</height>
+		        <texture>library.png</texture>
+		        <aspectratio>keep</aspectratio>
+				<visible>!Integer.IsGreater(Container(10051).ListItem.Playcount,0) + !String.IsEmpty(Container(10051).ListItem.DBID)</visible>
+	        </control>
+		</control>
+		<control type="group">
+            <visible>Skin.HasSetting(ShowTopRightOverlays)</visible>
+            <control type="group">
+			    <visible>!Integer.IsGreater(Container(10051).ListItem.Property(UnWatchedEpisodes),0)</visible>
+			    <control type="image">
+	                <texture background="true">overlays/toprightwatched.png</texture>
+	                <posx>521</posx>
+	                <posy>40</posy>
+	                <height>122</height>
+	                <width>122</width>
+	                <aspectratio>keep</aspectratio>
+				    <visible>Integer.IsGreater(Container(10051).ListItem.Playcount,0)</visible>
+                </control>
+			    <control type="image">
+	                <texture background="true">overlays/toprightlibrary.png</texture>
+	                <posx>521</posx>
+	                <posy>40</posy>
+	                <height>122</height>
+	                <width>122</width>
+	                <aspectratio>keep</aspectratio>
+				    <visible>!Integer.IsGreater(Container(10051).ListItem.Playcount,0) + !String.IsEmpty(Container(10051).ListItem.DBID)</visible>
+                </control>
+			</control>
+            <control type="group">
+			    <visible>Integer.IsGreater(Container(10051).ListItem.Property(UnwatchedEpisodes),0) + !Skin.HasSetting(Hide_Episode_Marks)</visible>
+				<control type="image">
+			        <texture background="true">overlays/toprightempty2.png</texture>
+			        <posx>521</posx>
+			        <posy>40</posy>
+			        <height>122</height>
+			        <width>122</width>
+			    </control>
+			    <control type="label">
+				    <posx>586</posx>
+			        <posy>60</posy>
+				    <height>30</height>
+				    <width>40</width>
+				    <font>ListDetails</font>
+				    <align>center</align>
+				    <label>$INFO[Container(10051).ListItem.Property(UnwatchedEpisodes)]</label>
+				    <textcolor>White2</textcolor>
+			    </control>
+			</control>			
+        </control>
         <!-- Powered by TMDb image -->
         <control type="image" description="Powered by TMDb">
-            <posy>980</posy>
+            <posy>990</posy>
             <left>250</left>
             <height>70</height>
             <width>177</width>
@@ -243,7 +308,7 @@
                     <font>InfoPlot</font>
                     <textcolor>$VAR[InfoPlotTextColor]</textcolor>
                     <shadowcolor>LiteShadow</shadowcolor>
-                    <label fallback="19055">$VAR[Plots]</label>
+                    <label fallback="19055">$VAR[Plots]$INFO[Window(home).Property(ResetScroll)]</label>
                 </control>
                 <control type="radiobutton" id="90003">
                     <posy>447</posy>
@@ -471,7 +536,7 @@
                 <align>center</align>
                 <label>$LOCALIZE[20410]</label>
                 <onclick>RunScript(script.embuary.helper,action=goto,path='"plugin://plugin.video.youtube/kodion/search/query/?q=$INFO[Container(10051).ListItem.Title]&amp;search_type=videos"',target=videos)</onclick>
-				<visible>System.HasAddon(plugin.video.youtube) + System.HasAddon(script.embuary.helper)</visible>
+				<visible>System.AddonIsEnabled(plugin.video.youtube) + System.AddonIsEnabled(script.embuary.helper)</visible>
             </control>
             <control type="button" id="296" description="Show Fanart">
                 <height>90</height>

@@ -3,7 +3,7 @@
     <defaultcontrol always="true">9000</defaultcontrol>
     <animation effect="fade" time="200">WindowOpen</animation>
     <animation effect="fade" time="150">WindowClose</animation>
-    <conload condition="System.HasAddon(script.embuary.helper)">RunScript(script.embuary.helper,action=resetposition,container=9000||9009||10052||10053||10054)</conload>
+    <conload condition="System.AddonIsEnabled(script.embuary.helper)">RunScript(script.embuary.helper,action=resetposition,container=9000||9009||10052||10053||10054)</conload>
     <onload>SetProperty(onclose,SetFocus(9000))</onload>
     <controls>
 

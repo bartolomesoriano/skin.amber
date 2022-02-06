@@ -582,7 +582,7 @@
 					<ondown>6003</ondown>
 					<viewtype label="Triple">list</viewtype>
 					<visible>Container.Content(artists)</visible>
-					<onclick condition="System.HasAddon(script.playalbum)">RunScript(script.playalbum,albumid=$INFO[Container(6003).ListItem.DBID])</onclick>
+					<onclick condition="System.AddonIsEnabled(script.playalbum)">RunScript(script.playalbum,albumid=$INFO[Container(6003).ListItem.DBID])</onclick>
 					<itemlayout height="255">
 						<control type="image">
 							<left>-80</left>

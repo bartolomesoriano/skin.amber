@@ -3,11 +3,23 @@
 	
 	<include>ViewIDs</include>
 	
+	<onload>ClearProperty(GeneralSearchCalledInfo)</onload>
+	<onload>ClearProperty(SingleSearchCalledInfo)</onload>
+	<onload>ClearProperty(InfoCalledGeneralSearch)</onload>
+	<onload>ClearProperty(InfoCalledSingleSearch)</onload>
+	<onload>Skin.Reset(CustomSearchTerm)</onload>
+	<onload>Skin.Reset(SingleSearchTerm)</onload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onload>ClearProperty(gallery)</onload>
-    <onload condition="System.HasAddon(script.skin.info.service) + String.IsEmpty(Window(home).Property(skininfos_daemon_running))">RunScript(script.skin.info.service)</onload>
-	<onload condition="System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
+    <onload condition="System.AddonIsEnabled(script.skin.info.service) + String.IsEmpty(Window(home).Property(skininfos_daemon_running))">RunScript(script.skin.info.service)</onload>
+	<onload condition="System.AddonIsEnabled(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,home)</onload>
+	<onunload>ClearProperty(GeneralSearchCalledInfo)</onunload>
+	<onunload>ClearProperty(SingleSearchCalledInfo)</onunload>
+	<onunload>ClearProperty(InfoCalledGeneralSearch)</onunload>
+	<onunload>ClearProperty(InfoCalledSingleSearch)</onunload>
+	<onunload>Skin.Reset(CustomSearchTerm)</onunload>
+	<onunload>Skin.Reset(SingleSearchTerm)</onunload>
 	<onunload>ClearProperty(gallery)</onunload>
 	<menucontrol>9000</menucontrol>
 	<controls>
@@ -21,7 +33,7 @@
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
 			<resetonlabelchange>true</resetonlabelchange>
-			<visible>Skin.HasSetting(SkinHelper.EnableExtraFanart) | [Control.IsVisible(56) + $EXP[ShowExtraFanartOnInfo]]</visible>
+			<visible>Skin.HasSetting(EnableExtraFanart) | [Control.IsVisible(56) + $EXP[ShowExtraFanartOnInfo]]</visible>
 			<include>FadeLabelTime</include>
 			<label>$INFO[ListItem.Art(fanart)]</label>
 			<label>$INFO[ListItem.Art(fanart1)]</label>
@@ -73,7 +85,7 @@
 			<scrollspeed>20</scrollspeed>
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
-			<visible>Skin.HasSetting(SkinHelper.EnableExtraFanart) | [Control.IsVisible(56) + $EXP[ShowExtraFanartOnInfo]]</visible>
+			<visible>Skin.HasSetting(EnableExtraFanart) | [Control.IsVisible(56) + $EXP[ShowExtraFanartOnInfo]]</visible>
 			<resetonlabelchange>true</resetonlabelchange>
 			<include>FadeLabelTime</include>
 			<label>$INFO[Container.ListItem.Art(fanart)]</label>
@@ -314,7 +326,7 @@
 					<include>9000SysButtons</include>
 					<label>$LOCALIZE[32392]</label>
 					<onclick>RunScript(script.playrandomvideos, "$INFO[Container.FolderPath]", "label=$INFO[Container.FolderName]")</onclick>
-					<visible>System.HasAddon(script.playrandomvideos)</visible>
+					<visible>System.AddonIsEnabled(script.playrandomvideos)</visible>
 					<visible>!String.Contains(Container.FolderPath,plugin) + !String.Contains(Container.FolderPath,addons) + !String.Contains(Container.FolderPath,sources)</visible>
 				</control>
 				<control type="radiobutton" id="16">

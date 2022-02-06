@@ -76,7 +76,7 @@
 	</shortcut>
 	<shortcut>
 		<defaultID>updatelibrarytvshows</defaultID>
-		<label>$VAR[ScanningLabel]</label>
+		<label>$VAR[VideoScanLabelVar]</label>
 		<label2 />
 		<icon>update.png</icon>
 		<thumb />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <animation effect="fade" time="200">WindowClose</animation>
-    <onload condition="Skin.HasSetting(Use_Artist_Slideshow) + system.hasaddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
+    <onload condition="Skin.HasSetting(Use_Artist_Slideshow) + System.AddonIsEnabled(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
     <defaultcontrol></defaultcontrol>
     <controls>
         <!-- Fadelabel for extra fanart -->
@@ -12,7 +12,7 @@
 			<scrollspeed>20</scrollspeed>
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
-			<visible>Skin.HasSetting(SkinHelper.EnableExtraFanart)</visible>
+			<visible>Skin.HasSetting(EnableExtraFanart)</visible>
 			<include>FadeLabelTime</include>
 			<label>$INFO[Player.Art(artist.fanart)]</label>
 			<label>$INFO[Player.Art(artist.fanart1)]</label>
@@ -45,7 +45,7 @@
 			<scrollspeed>20</scrollspeed>
 			<scrollout>false</scrollout>
 			<randomize>true</randomize>
-			<visible>Skin.HasSetting(SkinHelper.EnableExtraFanart)</visible>
+			<visible>Skin.HasSetting(EnableExtraFanart)</visible>
 			<include>FadeLabelTime</include>
 			<label>$INFO[Player.Art(albumartist.fanart)]</label>
 			<label>$INFO[Player.Art(albumartist.fanart1)]</label>
@@ -94,7 +94,7 @@
         </control>
 		<!-- Single Artist Fanart -->
         <control type="image" description="Fanart only">
-            <visible>Skin.HasSetting(MusicPlayingFanart) + !Skin.HasSetting(SkinHelper.EnableExtraFanart) + [!Skin.HasSetting(Use_Artist_Slideshow) | String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))]</visible>
+            <visible>Skin.HasSetting(MusicPlayingFanart) + !Skin.HasSetting(EnableExtraFanart) + [!Skin.HasSetting(Use_Artist_Slideshow) | String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))]</visible>
             <include>Dimensions_Fullscreen</include>
             <fadetime>400</fadetime>
             <aspectratio>scale</aspectratio>
@@ -110,7 +110,7 @@
         </control>
 		<!-- Artist Extra Fanart -->
 		<control type="multiimage" description="Artist Extra Fanart">
-		    <visible>Skin.HasSetting(MusicPlayingFanart) + Skin.HasSetting(SkinHelper.EnableExtraFanart) + [!Skin.HasSetting(Use_Artist_Slideshow) | String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))]</visible>
+		    <visible>Skin.HasSetting(MusicPlayingFanart) + Skin.HasSetting(EnableExtraFanart) + [!Skin.HasSetting(Use_Artist_Slideshow) | String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow.Image))]</visible>
             <include>Dimensions_Fullscreen</include>
             <aspectratio aligny="top">scale</aspectratio>
 			<timeperimage>8000</timeperimage>
@@ -138,7 +138,7 @@
 			<aspectratio>keep</aspectratio>
             <visible>!String.IsEmpty(Player.Art(artist.clearlogo)) + Skin.HasSetting(ShowLogoMusicViz) + !Window.IsVisible(script-cu-lrclyrics-main.xml)</visible>
 			<visible>!String.IsEqual(Skin.String(OSDExtraArt),logo) </visible>
-			<animation effect="fade" start="100" end="0" time="100" condition="[Window.IsVisible(DialogSeekBar.xml) + !Skin.HasSetting(enable.bottomseekbar)]">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="100" condition="Window.IsVisible(DialogSeekBar.xml) + !Skin.HasSetting(enable.bottomseekbar)">Conditional</animation>
         </control>
 		
 		<!-- Background image to dim lyrics -->
@@ -154,7 +154,7 @@
 		<!-- Track Info -->
         <control type="group">
 			<visible>[Player.ShowInfo | Window.IsActive(musicosd)] + !Window.IsActive(playerprocessinfo)</visible>
-			<visible>![$EXP[showCompactSeekBar]] + !Skin.HasSetting(UseUltraCompactOSD)</visible>
+			<visible>!$EXP[showCompactSeekBar] + !Skin.HasSetting(UseUltraCompactOSD)</visible>
 
 			<include condition="Skin.HasSetting(enable.bottomseekbar)">LowerMusicFullScreenInfo</include>
 			<include condition="!Skin.HasSetting(enable.bottomseekbar)">RegularMusicFullScreenInfo</include>
@@ -228,7 +228,7 @@
             <control type="label">
                 <posx>30</posx>
                 <posy>50</posy>
-                <width>900</width>
+                <width>800</width>
                 <height>40</height>
                 <align>left</align>
                 <label>$INFO[MusicPlayer.Artist]</label>
@@ -238,30 +238,15 @@
 			
 			<!-- Media flags -->
             <control type="grouplist">
-                <top>50</top>
+                <top>40</top>
                 <posx>708</posx>
-                <height>35</height>
+                <height>80</height>
                 <width>605</width>
                 <orientation>horizontal</orientation>
                 <itemgap>15</itemgap>
                 <align>right</align>
-                <control type="image">
-                    <description>Audio Codec Image</description>
-                    <width>85</width>
-                    <aspectratio align="center">keep</aspectratio>
-                    <texture>$INFO[MusicPlayer.Codec,badges/audiocodec/,.png]</texture>
-                    <colordiffuse>silver</colordiffuse>
-                    <visible>!Player.ChannelPreviewActive</visible>
-                </control>
-                <control type="image">
-                    <description>Audio Channels Image</description>
-                    <width>85</width>
-                    <aspectratio align="center">keep</aspectratio>
-                    <texture>$INFO[MusicPlayer.Channels,badges/audiochannels/channels,.png]</texture>
-                    <colordiffuse>silver</colordiffuse>
-                    <visible>!Player.ChannelPreviewActive</visible>
-                </control>
-            </control>
+				<include>PlayerAudioFlagItems</include>	
+			</control>	
 			
 			<!-- Track number and title; recording indicator -->
             <control type="grouplist">

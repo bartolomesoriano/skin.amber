@@ -185,13 +185,13 @@
 							<param name="itemid" value="4"/>
 							<param name="itemlabel" value="$LOCALIZE[32357]"/>
 							<param name="skinsetting" value="Enable.VideoLyrics"/>
-							<param name="itemvisibility" value="!Skin.HasSetting(Disable.Lyrics) + System.HasAddon(script.cu.lrclyrics)"/>
+							<param name="itemvisibility" value="!Skin.HasSetting(Disable.Lyrics) + System.AddonIsEnabled(script.cu.lrclyrics)"/>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="5"/>
 							<param name="itemlabel" value="$LOCALIZE[32368]"/>
 							<param name="skinsetting" value="Music.DimWithLyrics"/>
-							<param name="itemvisibility" value="!Skin.HasSetting(Disable.Lyrics) + System.HasAddon(script.cu.lrclyrics)"/>
+							<param name="itemvisibility" value="!Skin.HasSetting(Disable.Lyrics) + System.AddonIsEnabled(script.cu.lrclyrics)"/>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="6"/>
@@ -202,13 +202,13 @@
 							<param name="itemid" value="7"/>
 							<param name="itemlabel" value="$LOCALIZE[32122]"/>
 							<param name="skinsetting" value="ShowABinContextMenu"/>
-							<param name="itemvisibility" value="System.HasAddon(script.artwork.beef) + System.AddonisEnabled(script.artwork.beef)"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(script.artwork.beef)"/>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="71"/>
 							<param name="itemlabel" value="$LOCALIZE[32450]"/>
 							<param name="skinsetting" value="ShowADinContextMenu"/>
-							<param name="itemvisibility" value="System.HasAddon(script.artwork.downloader) + System.AddonisEnabled(script.artwork.downloader)"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(script.artwork.downloader)"/>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="8"/>
@@ -238,7 +238,7 @@
 							<param name="itemid" value="12"/>
 							<param name="itemlabel" value="$LOCALIZE[32072]"/>
 							<param name="skinsetting" value="Enable.Autocompletion"/>
-							<param name="itemvisibility" value="System.HasAddon(plugin.program.autocompletion)"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(plugin.program.autocompletion)"/>
 						</include>
                         <include content="YesNoSettingItem">
 							<param name="itemid" value="13"/>
@@ -317,6 +317,16 @@
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="24"/>
+							<param name="itemlabel" value="$LOCALIZE[32481]"/>
+							<param name="skinsetting" value="RememberHomeControl"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="25"/>
+							<param name="itemlabel" value="$LOCALIZE[32483]"/>
+							<param name="skinsetting" value="UseMultiViewsForChannels"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="26"/>
 							<param name="itemlabel" value="$LOCALIZE[31996]"/>
 							<param name="skinsetting" value="holiday"/>
 						</include>
@@ -489,10 +499,16 @@
 							<param name="itemid" value="22"/>
 							<param name="itemlabel" value="$LOCALIZE[32358]"/>
 							<param name="skinsetting" value="Shelf.PlayAlbum"/>
-							<param name="itemvisibility" value="System.HasAddon(script.playalbum)"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(script.playalbum)"/>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="23"/>
+							<param name="itemlabel" value="$LOCALIZE[32482]"/>
+							<param name="skinsetting" value="UseThumbForYT"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(plugin.video.youtube)"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="24"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[32424][/B]"/>
 							<param name="skinsetting" value="Shelf.PlayTrailers"/>
 							<param name="customonclickYes">True</param>
@@ -501,7 +517,7 @@
 							<param name="onclick2No">Skin.SetString(ShelfTrailerDelay,00:05)</param>
 						</include>
                         <include content="CustomDialogSettingItem">
-                            <param name="itemid">24</param>
+                            <param name="itemid">25</param>
                             <param name="itemlabel">      $LOCALIZE[32425]</param>
 		                    <param name="itemlabel2">$VAR[ShelfTrailerDelayLabelVar]</param>
                             <param name="CustomProperty">CustomSelectShelfTrailerDelay</param>
@@ -509,7 +525,7 @@
 							<param name="itemvisibility" value="Skin.HasSetting(Shelf.PlayTrailers)"/>
 						</include>
                         <include content="CustomDialogSettingItem">
-                            <param name="itemid">25</param>
+                            <param name="itemid">26</param>
                             <param name="itemlabel">$LOCALIZE[32062]</param>
 		                    <param name="itemlabel2"></param>
                             <param name="CustomProperty">CustomSelectFavouriteAddons</param>
@@ -560,10 +576,9 @@
 							<param name="skinsetting" value="ShowHomeLogo"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="6"/>
-							<param name="itemlabel" value="$LOCALIZE[32262]"/>
-							<param name="skinsetting" value="UseEHBackgrounds"/>
-							<param name="itemvisibility" value="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)"/>
+							<param name="itemid" value="14"/>
+							<param name="itemlabel" value="$LOCALIZE[31949]"/>
+							<param name="skinsetting" value="EnableExtraFanart"/>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">7</param>
@@ -599,15 +614,22 @@
 							<param name="itemlabel" value="$LOCALIZE[31952]"/>
 							<param name="skinsetting" value="MusicPlayingFanart"/>
 						</include>
+						<include content="YesNoSettingItemAddon">
+							<param name="itemid" value="2"/>
+							<param name="itemlabel" value="$LOCALIZE[31969]"/>
+							<param name="skinsetting" value="Use_Artist_Slideshow"/>
+							<param name="addonpath" value="script.artistslideshow"/>
+						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="13"/>
 							<param name="itemlabel" value="$LOCALIZE[32218]"/>
 							<param name="skinsetting" value="ShowLogoMusicViz"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="14"/>
-							<param name="itemlabel" value="$LOCALIZE[31949]"/>
-							<param name="skinsetting" value="SkinHelper.EnableExtraFanart"/>
+							<param name="itemid" value="6"/>
+							<param name="itemlabel" value="$LOCALIZE[32262]"/>
+							<param name="skinsetting" value="UseEHBackgrounds"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)"/>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="15"/>
@@ -826,7 +848,7 @@
 							<param name="itemid" value="6"/>
 							<param name="itemlabel" value="$LOCALIZE[32375]"/>
 							<param name="skinsetting" value="NowPlaying.ArtistSlideshow"/>
-							<param name="itemvisibility" value="System.HasAddon(script.artistslideshow)"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(script.artistslideshow)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid" value="7"/>
@@ -939,7 +961,7 @@
 							<param name="itemid" value="3"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[32371][/B]"/>
 							<param name="skinsetting" value="InfoOpensVideoInfo"/>
-							<param name="itemvisibility" value="System.HasAddon(service.library.data.provider)"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(service.library.data.provider)"/>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="4"/>
@@ -984,7 +1006,7 @@
 							<param name="itemid" value="10"/>
 							<param name="itemlabel" value="   [B]$LOCALIZE[32341][/B]"/>
 							<param name="skinsetting" value="AutoClose.withInfoService"/>
-							<param name="itemvisibility" value="System.HasAddon(script.skin.info.service) + Skin.HasSetting(AutoClose.VideoOSD)"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(script.skin.info.service) + Skin.HasSetting(AutoClose.VideoOSD)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">11</param>
@@ -992,7 +1014,7 @@
 		                    <param name="itemlabel2">$VAR[OSDTimeout2LabelVar]</param>
                             <param name="CustomProperty">CustomSelectOSDTimeout2</param>
 		                    <param name="CustomDialog">1121</param>
-							<param name="itemvisibility">Skin.HasSetting(AutoClose.VideoOSD) + System.HasAddon(script.skin.info.service) + Skin.HasSetting(AutoClose.withInfoService)</param>
+							<param name="itemvisibility">Skin.HasSetting(AutoClose.VideoOSD) + System.AddonIsEnabled(script.skin.info.service) + Skin.HasSetting(AutoClose.withInfoService)</param>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">12</param>
@@ -1000,7 +1022,7 @@
 		                    <param name="itemlabel2">$VAR[OSDTimeoutLabelVar]</param>
                             <param name="CustomProperty">CustomSelectOSDTimeout</param>
 		                    <param name="CustomDialog">1121</param>
-							<param name="itemvisibility">Skin.HasSetting(AutoClose.VideoOSD) + ![System.HasAddon(script.skin.info.service) + Skin.HasSetting(AutoClose.withInfoService)]</param>
+							<param name="itemvisibility">Skin.HasSetting(AutoClose.VideoOSD) + ![System.AddonIsEnabled(script.skin.info.service) + Skin.HasSetting(AutoClose.withInfoService)]</param>
 						</include>
 						<include content="YesNoSettingItem">
 							<param name="itemid" value="13"/>
@@ -1036,31 +1058,31 @@
 							<param name="itemvisibility">Skin.HasSetting(ShowSeekBarOnPlayback)</param>
 						</include>
 						<include content="CustomDialogSettingItem">
-                            <param name="itemid">19</param>
+                            <param name="itemid">21</param>
                             <param name="itemlabel">[B]$LOCALIZE[32403][/B]</param>
 		                    <param name="itemlabel2">$VAR[OSDExtraArtLabelVar]</param>
                             <param name="CustomProperty">CustomSelectOSDArt</param>
 		                    <param name="CustomDialog">1121</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="20"/>
+							<param name="itemid" value="22"/>
 							<param name="itemlabel" value="$LOCALIZE[32367]"/>
 							<param name="skinsetting" value="NoFallbackThumbOSD"/>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="21"/>
+							<param name="itemid" value="23"/>
 							<param name="itemlabel" value="[B]$LOCALIZE[32457][/B]"/>
 							<param name="skinsetting" value="ShowEpisodeList"/>
-							<param name="itemvisibility">Skin.HasSetting(Enable.EmbuaryHelper) + System.HasAddon(script.embuary.helper) + System.AddonIsEnabled(script.embuary.helper)</param>
+							<param name="itemvisibility">Skin.HasSetting(Enable.EmbuaryHelper) + System.AddonIsEnabled(script.embuary.helper)</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="22"/>
+							<param name="itemid" value="24"/>
 							<param name="itemlabel" value="      $LOCALIZE[32458]"/>
 							<param name="skinsetting" value="SeasonsEpisodeList"/>
 							<param name="itemvisibility">Skin.HasSetting(ShowEpisodeList)</param>
 						</include>
 						<include content="YesNoSettingItem">
-							<param name="itemid" value="23"/>
+							<param name="itemid" value="25"/>
 							<param name="itemlabel" value="$LOCALIZE[32460]"/>
 							<param name="skinsetting" value="DirectSeekInInfo"/>
 						</include>
@@ -1094,7 +1116,18 @@
 							<param name="itemlabel" value="$LOCALIZE[32015]"/>
 							<param name="skinsetting" value="Disable.OnlineTMDbInfo"/>
 						</include>
-                        <item id="5" description="Blur Background - TMDbHelper present">
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="5"/>
+							<param name="itemlabel" value="[B]$LOCALIZE[32156][/B]"/>
+							<param name="skinsetting" value="Enable.BlurredVideoInfo"/>
+						</include>
+						<include content="YesNoSettingItem">
+							<param name="itemid" value="7"/>
+							<param name="itemlabel" value="      $LOCALIZE[32165]"/>
+							<param name="skinsetting" value="Blur.UsePoster"/>
+							<param name="itemvisibility">Skin.HasSetting(Enable.BlurredVideoInfo)</param>
+						</include>
+<!--                        <item id="5" description="Blur Background - TMDbHelper present">
                             <visible>Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Enable.TMDbHelper)</visible>
                             <label>[B]$LOCALIZE[32156][/B]</label>
                             <label2>$LOCALIZE[107]</label2>
@@ -1110,8 +1143,8 @@
 							<onclick condition="System.HasAddon(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + !Skin.HasSetting(Enable.BlurredVideoInfo)">Skin.SetBool(TMDbHelper.EnableBlur)</onclick>
                             <onclick condition="System.HasAddon(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + !Skin.HasSetting(Enable.BlurredVideoInfo)">SetProperty(TMDbHelper.Blur.SourceImage,fanart,Home)</onclick>
                             <onclick condition="System.HasAddon(plugin.video.themoviedb.helper) + Skin.HasSetting(Enable.TMDbHelper) + !Skin.HasSetting(Enable.BlurredVideoInfo)">Skin.SetBool(Enable.BlurredVideoInfo)</onclick>
-                        </item>
-                        <item id="7" description="Blur Poster">
+                        </item> -->
+<!--                        <item id="7" description="Blur Poster">
                             <visible>Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster)</visible>
                             <label>      $LOCALIZE[32165]</label>
                             <label2>$LOCALIZE[107]</label2>
@@ -1124,7 +1157,7 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick condition="!Skin.HasSetting(Blur.UsePoster)">SetProperty(TMDbHelper.Blur.SourceImage,poster,Home)</onclick>
                             <onclick condition="!Skin.HasSetting(Blur.UsePoster)">Skin.SetBool(Blur.UsePoster)</onclick>
-                        </item>
+                        </item> -->
                         <include content="CustomDialogSettingItem">
                             <param name="itemid">9</param>
                             <param name="itemlabel">$LOCALIZE[32104]</param>
@@ -1374,9 +1407,9 @@
 					    <height>60</height>
 					    <texturenofocus />
 					    <textoffsetx>30</textoffsetx>
-			            <onclick condition="System.HasAddon(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup,action=colorthemes)</onclick>
+			            <onclick condition="System.AddonIsEnabled(script.skin.helper.skinbackup)">RunScript(script.skin.helper.skinbackup,action=colorthemes)</onclick>
 			            <label>Manage Color Themes</label>
-					    <visible>System.HasAddon(script.skin.helper.skinbackup)</visible>
+					    <visible>System.AddonIsEnabled(script.skin.helper.skinbackup)</visible>
 		            </control>					
 				</control>
 				<!-- 9000 10 Search -->
@@ -1436,18 +1469,6 @@
 							<param name="itemlabel" value="$LOCALIZE[32040]"/>
 							<param name="skinsetting" value="KioskMode.Enabled"/>
 						</include>
-						<include content="YesNoSettingItemAddon">
-							<param name="itemid" value="2"/>
-							<param name="itemlabel" value="$LOCALIZE[31969]"/>
-							<param name="skinsetting" value="Use_Artist_Slideshow"/>
-							<param name="addonpath" value="script.artistslideshow"/>
-						</include>
-						<include content="YesNoSettingItemAddon">
-							<param name="itemid" value="3"/>
-							<param name="itemlabel" value="$LOCALIZE[32008]"/>
-							<param name="skinsetting" value="Enable.SpecialFeatures"/>
-							<param name="addonpath" value="plugin.video.specialfeatures"/>
-						</include>
 						<include content="InstallAddonItem">
 							<param name="itemid" value="4"/>
 							<param name="itemlabel" value="$LOCALIZE[31939]"/>
@@ -1457,27 +1478,27 @@
 							<param name="itemid" value="5"/>
 							<param name="itemlabel">$LOCALIZE[31940]</param>
 							<param name="itemlabel2">$LOCALIZE[15109]</param>
-							<param name="itemvisibility" value="System.HasAddon(script.image.resource.select)"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(script.image.resource.select)"/>
 							<param name="resourcetype" value="weathericons"/>
 						</include>
 						<include content="CustomImageResourceSettingItem">
 							<param name="itemid" value="6"/>
 							<param name="itemlabel">$LOCALIZE[32046]</param>
 							<param name="itemlabel2">$LOCALIZE[15109]</param>
-							<param name="itemvisibility" value="System.HasAddon(script.image.resource.select)"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(script.image.resource.select)"/>
 							<param name="resourcetype" value="weatherfanart"/>
 						</include>
 						<include content="CustomImageResourceSettingItem">
 							<param name="itemid" value="7"/>
 							<param name="itemlabel">$LOCALIZE[31942]</param>
 							<param name="resourcetype" value="studios"/>
-							<param name="itemvisibility" value="System.HasAddon(script.image.resource.select)"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(script.image.resource.select)"/>
 						</include>
 						<include content="CustomImageResourceSettingItem">
 							<param name="itemid" value="8"/>
 							<param name="itemlabel">$LOCALIZE[31945]</param>
 							<param name="resourcetype" value="moviecountryicons"/>
-							<param name="itemvisibility" value="System.HasAddon(script.image.resource.select)"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(script.image.resource.select)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">9</param>
@@ -1523,7 +1544,7 @@
 							<param name="itemid" value="16"/>
 							<param name="itemlabel">$LOCALIZE[31943]</param>
 							<param name="resourcetype" value="recordlabels"/>
-							<param name="itemvisibility" value="System.HasAddon(script.image.resource.select)"/>
+							<param name="itemvisibility" value="System.AddonIsEnabled(script.image.resource.select)"/>
 						</include>
 						<include content="CustomDialogSettingItem">
                             <param name="itemid">17</param>
@@ -1578,7 +1599,7 @@
 							<onclick>Skin.ResetSettings</onclick>
 							<onclick>RunScript(script.skin.helper.skinbackup,action=reset)</onclick>
 							<onclick>ReloadSkin()</onclick>
-							<visible>System.HasAddon(script.skin.helper.skinbackup)</visible>
+							<visible>System.AddonIsEnabled(script.skin.helper.skinbackup)</visible>
 						</item>
 					</content>
 				</control>                
@@ -1594,160 +1615,185 @@
 					<onup condition="Skin.HasSetting(Enable.TouchSupport)">909090</onup>
 		            <onup condition="!Skin.HasSetting(Enable.TouchSupport)">9113</onup>
 					<ondown>9113</ondown>                    
-					<control type="radiobutton" id="91121">
+					<control type="radiobutton" id="911201">
 						<label>script.favourites</label>
 						<label2>$INFO[System.AddonVersion(script.favourites)]             </label2>
+						<onclick condition="System.HasAddon(script.favourites) + !System.AddonIsEnabled(script.favourites)">EnableAddon(script.favourites)</onclick>
 						<onclick condition="!System.HasAddon(script.favourites)">InstallAddon(script.favourites)</onclick>
-						<selected>System.HasAddon(script.favourites)</selected>
+						<selected>System.AddonIsEnabled(script.favourites)</selected>
 					</control>
-					<control type="radiobutton" id="91123">
+					<control type="radiobutton" id="911203">
 						<label>resource.uisounds.amber</label>
 						<label2>$INFO[System.AddonVersion(resource.uisounds.amber)]             </label2>
+						<onclick condition="System.HasAddon(resource.uisounds.amber) + !System.AddonIsEnabled(resource.uisounds.amber)">EnableAddon(resource.uisounds.amber)</onclick>
 						<onclick condition="!System.HasAddon(resource.uisounds.amber)">InstallAddon(resource.uisounds.amber)</onclick>
-						<selected>System.HasAddon(resource.uisounds.amber)</selected>
+						<selected>System.AddonIsEnabled(resource.uisounds.amber)</selected>
 					</control>
-					<control type="radiobutton" id="91124">
+					<control type="radiobutton" id="911204">
 						<label>script.skinshortcuts</label>
 						<label2>$INFO[System.AddonVersion(script.skinshortcuts)]             </label2>
-						<onclick>Addon.OpenSettings(script.skinshortcuts)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.skinshortcuts)">Addon.OpenSettings(script.skinshortcuts)</onclick>
+						<onclick condition="System.HasAddon(script.skinshortcuts) + !System.AddonIsEnabled(script.skinshortcuts)">EnableAddon(script.skinshortcuts)</onclick>
 						<onclick condition="!System.HasAddon(script.skinshortcuts)">InstallAddon(script.skinshortcuts)</onclick>
-						<selected>System.HasAddon(script.skinshortcuts)</selected>
+						<selected>System.AddonIsEnabled(script.skinshortcuts)</selected>
 					</control>
-					<control type="radiobutton" id="91125">
+					<control type="radiobutton" id="911205">
 						<label>script.globalsearch</label>
 						<label2>$INFO[System.AddonVersion(script.globalsearch)]             </label2>
-						<onclick>Addon.OpenSettings(script.globalsearch)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.globalsearch)">Addon.OpenSettings(script.globalsearch)</onclick>
+						<onclick condition="System.HasAddon(script.globalsearch) + !System.AddonIsEnabled(script.globalsearch)">EnableAddon(script.globalsearch)</onclick>
 						<onclick condition="!System.HasAddon(script.globalsearch)">InstallAddon(script.globalsearch)</onclick>
-						<selected>System.HasAddon(script.globalsearch)</selected>
+						<selected>System.AddonIsEnabled(script.globalsearch)</selected>
 					</control>
 					<control type="radiobutton" id="911211">
 						<label>script.cu.lrclyrics</label>
 						<label2>$INFO[System.AddonVersion(script.cu.lrclyrics)]             </label2>
-						<onclick>Addon.OpenSettings(script.cu.lrclyrics)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.cu.lrclyrics)">Addon.OpenSettings(script.cu.lrclyrics)</onclick>
+						<onclick condition="System.HasAddon(script.cu.lrclyrics) + !System.AddonIsEnabled(script.cu.lrclyrics)">EnableAddon(script.cu.lrclyrics)</onclick>
 						<onclick condition="!System.HasAddon(script.cu.lrclyrics)">InstallAddon(script.cu.lrclyrics)</onclick>
-						<selected>System.HasAddon(script.cu.lrclyrics)</selected>
+						<selected>System.AddonIsEnabled(script.cu.lrclyrics)</selected>
 					</control>
 					<control type="radiobutton" id="911212">
 						<label>script.artistslideshow</label>
 						<label2>$INFO[System.AddonVersion(script.artistslideshow)]             </label2>
-						<onclick>Addon.OpenSettings(script.artistslideshow)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.artistslideshow)">Addon.OpenSettings(script.artistslideshow)</onclick>
+						<onclick condition="System.HasAddon(script.artistslideshow) + !System.AddonIsEnabled(script.artistslideshow)">EnableAddon(script.artistslideshow)</onclick>
 						<onclick condition="!System.HasAddon(script.artistslideshow)">InstallAddon(script.artistslideshow)</onclick>
-						<selected>System.HasAddon(script.artistslideshow)</selected>
+						<selected>System.AddonIsEnabled(script.artistslideshow)</selected>
 					</control>
-<!--					<control type="radiobutton" id="911213">
-						<label>plugin.video.specialfeatures</label>
-						<label2>$INFO[System.AddonVersion(plugin.video.specialfeatures)]             </label2>
-						<onclick>Addon.OpenSettings(plugin.video.specialfeatures)</onclick>
-						<onclick condition="!System.HasAddon(plugin.video.specialfeatures)">InstallAddon(plugin.video.specialfeatures)</onclick>
-						<selected>System.HasAddon(plugin.video.specialfeatures)</selected>
-					</control> -->
 					<control type="radiobutton" id="911214">
 						<label>service.upnext</label>
 						<label2>$INFO[System.AddonVersion(service.upnext)]             </label2>
-						<onclick>Addon.OpenSettings(service.upnext)</onclick>
+						<onclick condition="System.AddonIsEnabled(service.upnext)">Addon.OpenSettings(service.upnext)</onclick>
+						<onclick condition="System.HasAddon(service.upnext) + !System.AddonIsEnabled(service.upnext)">EnableAddon(service.upnext)</onclick>
 						<onclick condition="!System.HasAddon(service.upnext)">InstallAddon(service.upnext)</onclick>
-						<selected>System.HasAddon(service.upnext)</selected>
+						<selected>System.AddonIsEnabled(service.upnext)</selected>
 					</control>
 					<control type="radiobutton" id="911216">
 						<label>service.library.data.provider</label>
 						<label2>$INFO[System.AddonVersion(service.library.data.provider)]             </label2>
-						<onclick>Addon.OpenSettings(service.library.data.provider)</onclick>
+						<onclick condition="System.AddonIsEnabled(service.library.data.provider)">Addon.OpenSettings(service.library.data.provider)</onclick>
+						<onclick condition="System.HasAddon(service.library.data.provider) + !System.AddonIsEnabled(service.library.data.provider)">EnableAddon(service.library.data.provider)</onclick>
 						<onclick condition="!System.HasAddon(service.library.data.provider)">InstallAddon(service.library.data.provider)</onclick>
-						<selected>System.HasAddon(service.library.data.provider)</selected>
+						<selected>System.AddonIsEnabled(service.library.data.provider)</selected>
 					</control>
 					<control type="radiobutton" id="911217">
 						<label>script.xbmcbackup</label>
 						<label2>$INFO[System.AddonVersion(script.xbmcbackup)]             </label2>
-						<onclick>Addon.OpenSettings(script.xbmcbackup)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.xbmcbackup)">Addon.OpenSettings(script.xbmcbackup)</onclick>
+						<onclick condition="System.HasAddon(script.xbmcbackup) + !System.AddonIsEnabled(script.xbmcbackup)">EnableAddon(script.xbmcbackup)</onclick>
 						<onclick condition="!System.HasAddon(script.xbmcbackup)">InstallAddon(script.xbmcbackup)</onclick>
-						<selected>System.HasAddon(script.xbmcbackup)</selected>
+						<selected>System.AddonIsEnabled(script.xbmcbackup)</selected>
 					</control>
 					<control type="radiobutton" id="911219">
 						<label>script.skin.info.service</label>
 						<label2>$INFO[System.AddonVersion(script.skin.info.service)]             </label2>
-						<onclick>Addon.OpenSettings(script.skin.info.service)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.skin.info.service)">Addon.OpenSettings(script.skin.info.service)</onclick>
+						<onclick condition="System.HasAddon(script.skin.info.service) + !System.AddonIsEnabled(script.skin.info.service)">EnableAddon(script.skin.info.service)</onclick>
 						<onclick condition="!System.HasAddon(script.skin.info.service)">InstallAddon(script.skin.info.service)</onclick>
-						<selected>System.HasAddon(script.skin.info.service)</selected>
+						<selected>System.AddonIsEnabled(script.skin.info.service)</selected>
 					</control>
 					<control type="radiobutton" id="911220">
 						<label>plugin.program.autocompletion</label>
 						<label2>$INFO[System.AddonVersion(plugin.program.autocompletion)]             </label2>
-						<onclick>Addon.OpenSettings(plugin.program.autocompletion)</onclick>
+						<onclick condition="System.AddonIsEnabled(plugin.program.autocompletion)">Addon.OpenSettings(plugin.program.autocompletion)</onclick>
+						<onclick condition="System.HasAddon(plugin.program.autocompletion) + !System.AddonIsEnabled(plugin.program.autocompletion)">EnableAddon(plugin.program.autocompletion)</onclick>
 						<onclick condition="!System.HasAddon(plugin.program.autocompletion)">InstallAddon(plugin.program.autocompletion)</onclick>
-						<selected>System.HasAddon(plugin.program.autocompletion)</selected>
+						<selected>System.AddonIsEnabled(plugin.program.autocompletion)</selected>
 					</control>
 					<control type="radiobutton" id="911221">
 						<label>script.metadata.editor</label>
 						<label2>$INFO[System.AddonVersion(script.metadata.editor)]             </label2>
-						<onclick>Addon.OpenSettings(script.metadata.editor)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.metadata.editor)">Addon.OpenSettings(script.metadata.editor)</onclick>
+						<onclick condition="System.HasAddon(script.metadata.editor) + !System.AddonIsEnabled(script.metadata.editor)">EnableAddon(script.metadata.editor)</onclick>
 						<onclick condition="!System.HasAddon(script.metadata.editor)">InstallAddon(script.metadata.editor)</onclick>
-						<selected>System.HasAddon(script.metadata.editor)</selected>
+						<selected>System.AddonIsEnabled(script.metadata.editor)</selected>
 					</control>
 					<control type="radiobutton" id="911222">
 						<label>script.embuary.helper</label>
 						<label2>$INFO[System.AddonVersion(script.embuary.helper)]             </label2>
-						<onclick>Addon.OpenSettings(script.embuary.helper)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.embuary.helper)">Addon.OpenSettings(script.embuary.helper)</onclick>
+						<onclick condition="System.HasAddon(script.embuary.helper) + !System.AddonIsEnabled(script.embuary.helper)">EnableAddon(script.embuary.helper)</onclick>
 						<onclick condition="!System.HasAddon(script.embuary.helper)">InstallAddon(script.embuary.helper)</onclick>
-						<selected>System.HasAddon(script.embuary.helper)</selected>
+						<selected>System.AddonIsEnabled(script.embuary.helper)</selected>
 					</control>
 					<control type="radiobutton" id="911223">
 						<label>script.embuary.info</label>
 						<label2>$INFO[System.AddonVersion(script.embuary.info)]             </label2>
-						<onclick>Addon.OpenSettings(script.embuary.info)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.embuary.info)">Addon.OpenSettings(script.embuary.info)</onclick>
+						<onclick condition="System.HasAddon(script.embuary.info) + !System.AddonIsEnabled(script.embuary.info)">EnableAddon(script.embuary.info)</onclick>
 						<onclick condition="!System.HasAddon(script.embuary.info)">InstallAddon(script.embuary.info)</onclick>
-						<selected>System.HasAddon(script.embuary.info)</selected>
+						<selected>System.AddonIsEnabled(script.embuary.info)</selected>
 					</control>
 					<control type="radiobutton" id="911224">
 						<label>plugin.video.themoviedb.helper</label>
 						<label2>$INFO[System.AddonVersion(plugin.video.themoviedb.helper)]             </label2>
-						<onclick>Addon.OpenSettings(plugin.video.themoviedb.helper)</onclick>
+						<onclick condition="System.AddonIsEnabled(plugin.video.themoviedb.helper)">Addon.OpenSettings(plugin.video.themoviedb.helper)</onclick>
+						<onclick condition="System.HasAddon(plugin.video.themoviedb.helper) + !System.AddonIsEnabled(plugin.video.themoviedb.helper)">EnableAddon(plugin.video.themoviedb.helper)</onclick>
 						<onclick condition="!System.HasAddon(plugin.video.themoviedb.helper)">InstallAddon(plugin.video.themoviedb.helper)</onclick>
-						<selected>System.HasAddon(plugin.video.themoviedb.helper)</selected>
+						<selected>System.AddonIsEnabled(plugin.video.themoviedb.helper)</selected>
 					</control>
 					<control type="radiobutton" id="911225">
 						<label>script.skinvariables</label>
 						<label2>$INFO[System.AddonVersion(script.skinvariables)]             </label2>
+						<onclick condition="System.HasAddon(script.skinvariables) + !System.AddonIsEnabled(script.skinvariables)">EnableAddon(script.skinvariables)</onclick>
 						<onclick condition="!System.HasAddon(script.skinvariables)">InstallAddon(script.skinvariables)</onclick>
-						<selected>System.HasAddon(script.skinvariables)</selected>
+						<selected>System.AddonIsEnabled(script.skinvariables)</selected>
 					</control>
 					<control type="radiobutton" id="911226">
 						<label>script.playrandomvideos</label>
 						<label2>$INFO[System.AddonVersion(script.playrandomvideos)]             </label2>
-						<onclick>Addon.OpenSettings(script.playrandomvideos)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.playrandomvideos)">Addon.OpenSettings(script.playrandomvideos)</onclick>
+						<onclick condition="System.HasAddon(script.playrandomvideos) + !System.AddonIsEnabled(script.playrandomvideos)">EnableAddon(script.playrandomvideos)</onclick>
 						<onclick condition="!System.HasAddon(script.playrandomvideos)">InstallAddon(script.playrandomvideos)</onclick>
-						<selected>System.HasAddon(script.playrandomvideos)</selected>
+						<selected>System.AddonIsEnabled(script.playrandomvideos)</selected>
 					</control>
 					<control type="radiobutton" id="91126">
 						<label>script.tv.show.next.aired</label>
 						<label2>$INFO[System.AddonVersion(script.tv.show.next.aired)]             </label2>
-						<onclick>Addon.OpenSettings(script.tv.show.next.aired)</onclick>
+						<onclick condition="System.AddonIsEnabled(script.tv.show.next.aired)">Addon.OpenSettings(script.tv.show.next.aired)</onclick>
+						<onclick condition="System.HasAddon(script.tv.show.next.aired) + !System.AddonIsEnabled(script.tv.show.next.aired)">EnableAddon(script.tv.show.next.aired)</onclick>
 						<onclick condition="!System.HasAddon(script.tv.show.next.aired)">InstallAddon(script.tv.show.next.aired)</onclick>
-						<selected>System.HasAddon(script.tv.show.next.aired)</selected>
+						<selected>System.AddonIsEnabled(script.tv.show.next.aired)</selected>
 					</control>
 					<control type="radiobutton" id="91128">
 						<label>script.skin.helper.widgets</label>
 						<label2>$INFO[System.AddonVersion(script.skin.helper.widgets)]             </label2>
-						<onclick>Addon.OpenSettings(script.skin.helper.widgets)</onclick>
+						<onclick condition="System.AddonIsEnabled(service.skin.widgets)">Addon.OpenSettings(script.skin.helper.widgets)</onclick>
+						<onclick condition="System.HasAddon(script.skin.helper.widgets) + !System.AddonIsEnabled(script.skin.helper.widgets)">EnableAddon(script.skin.helper.widgets)</onclick>
 						<onclick condition="!System.HasAddon(service.skin.widgets)">InstallAddon(script.skin.helper.widgets)</onclick>
-						<selected>System.HasAddon(script.skin.helper.widgets)</selected>
+						<selected>System.AddonIsEnabled(script.skin.helper.widgets)</selected>
 					</control>
 					<control type="radiobutton" id="911227">
 						<label>script.skin.helper.colorpicker</label>
 						<label2>$INFO[System.AddonVersion(script.skin.helper.colorpicker)]            </label2>
+						<onclick condition="System.HasAddon(script.skin.helper.colorpicker) + !System.AddonIsEnabled(script.skin.helper.colorpicker)">EnableAddon(script.skin.helper.colorpicker)</onclick>
 						<onclick condition="!System.HasAddon(script.skin.helper.colorpicker)">InstallAddon(script.skin.helper.colorpicker)</onclick>
-						<selected>System.HasAddon(script.skin.helper.colorpicker)</selected>
+						<selected>System.AddonIsEnabled(script.skin.helper.colorpicker)</selected>
 					</control>
 					<control type="radiobutton" id="911228">
 						<label>script.skin.helper.skinbackup</label>
 						<label2>$INFO[System.AddonVersion(script.skin.helper.skinbackup)]            </label2>
+						<onclick condition="System.AddonIsEnabled(script.skin.helper.skinbackup)">Addon.OpenSettings(script.skin.helper.skinbackup)</onclick>
+						<onclick condition="System.HasAddon(script.skin.helper.skinbackup) + !System.AddonIsEnabled(script.skin.helper.skinbackup)">EnableAddon(script.skin.helper.skinbackup)</onclick>
 						<onclick condition="!System.HasAddon(script.skin.helper.skinbackup)">InstallAddon(script.skin.helper.skinbackup)</onclick>
-						<selected>System.HasAddon(script.skin.helper.skinbackup)</selected>
+						<selected>System.AddonIsEnabled(script.skin.helper.skinbackup)</selected>
 					</control>
 					<control type="radiobutton" id="911229">
 						<label>script.artwork.beef</label>
 						<label2>$INFO[System.AddonVersion(script.artwork.beef)]            </label2>
+						<onclick condition="System.AddonIsEnabled(script.artwork.beef)">Addon.OpenSettings(script.artwork.beef)</onclick>
+						<onclick condition="System.HasAddon(script.artwork.beef) + !System.AddonIsEnabled(script.artwork.beef)">EnableAddon(script.artwork.beef)</onclick>
 						<onclick condition="!System.HasAddon(script.artwork.beef)">InstallAddon(script.artwork.beef)</onclick>
-						<selected>System.HasAddon(script.artwork.beef)</selected>
+						<selected>System.AddonIsEnabled(script.artwork.beef)</selected>
+					</control>
+					<control type="radiobutton" id="911230">
+						<label>script.artwork.downloader</label>
+						<label2>$INFO[System.AddonVersion(script.artwork.downloader)]            </label2>
+						<onclick condition="System.AddonIsEnabled(script.artwork.downloader)">Addon.OpenSettings(script.artwork.downloader)</onclick>
+						<onclick condition="System.HasAddon(script.artwork.downloader) + !System.AddonIsEnabled(script.artwork.downloader)">EnableAddon(script.artwork.downloader)</onclick>
+						<onclick condition="!System.HasAddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
+						<selected>System.AddonIsEnabled(script.artwork.downloader)</selected>
 					</control>
 				</control>
 			</control>

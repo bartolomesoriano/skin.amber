@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <!-- Load favourites -->
-	<onload condition="System.HasAddon(script.favourites)">RunScript(script.favourites)</onload>
+	<onload condition="System.AddonIsEnabled(script.favourites)">RunScript(script.favourites)</onload>
 	<!-- Build menu/submenus/custom shelves -->
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=300&amp;group=mainmenu|powermenu&amp;levels=5)</onload>
     <!-- Start skin.info.service, used for set info -->
@@ -12,32 +12,49 @@
 	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">ClearProperty(OSDinfodialogButtonActive,home)</onload>
 	<!-- Reset what the focused menu item playlist is -->
 	<onload condition="!String.IsEmpty(Skin.String(FocusedMenu.BackgroundPlaylist))">Skin.Reset(FocusedMenu.BackgroundPlaylist)</onload>
+	
+	<!-- Set focus to last focused control -->
+	<onload condition="Skin.HasSetting(RememberHomeControl) + !String.IsEmpty(Skin.String(FocusedHomeControl))">SetFocus($INFO[Skin.String(FocusedHomeControl)])</onload>
+	<onload condition="!Skin.HasSetting(RememberHomeControl)">SetFocus(300)</onload>
+	
 	<!-- Move menu to default menu item -->
 	<onload condition="[Window.Previous(Startup) | Window.Previous(Home)] + Skin.HasSetting(Enable.DefaultMenu)">Control.SetFocus(300,$INFO[Skin.String(InitPos)],absolute)</onload>
+	
 	<!-- Stop trailer if was playing automatically in media view -->
 	<onload condition="Skin.HasSetting(AutoPlayTrailer) + !String.IsEmpty(Window(Home).Property(MovieTrailerPlaying)) + Window.Previous(videos)">Stop</onload>
 	<onload condition="Skin.HasSetting(AutoPlayTrailer) + !String.IsEmpty(Window(Home).Property(MovieTrailerPlaying)) + Window.Previous(videos)">ClearProperty(MovieTrailerPlaying)</onload>
+	
+	<onload>ClearProperty(GeneralSearchCalledInfo)</onload>
+	<onload>ClearProperty(SingleSearchCalledInfo)</onload>
+	<onload>ClearProperty(InfoCalledGeneralSearch)</onload>
+	<onload>ClearProperty(InfoCalledSingleSearch)</onload>
+	<onload>Skin.Reset(CustomSearchTerm)</onload>
+	<onload>Skin.Reset(SingleSearchTerm)</onload>
+	
 	<!-- Remember what the focused menu item background is -->
 	<onunload condition="!String.IsEmpty(Container(300).ListItem.Property(Background))">Skin.SetString(FocusedMenu.Background,$INFO[Container(300).ListItem.Property(Background)])</onunload>
     <onunload condition="!String.IsEmpty(Container(300).ListItem.Property(backgroundPlaylist))">Skin.SetString(FocusedMenu.BackgroundPlaylist,$INFO[Container(300).ListItem.Property(backgroundPlaylist)])</onunload>
+	
 	<!-- Clear TMDbHelper widgetcontainer id -->
 	<onunload condition="Skin.HasSetting(Enable.TMDbHelper)">ClearProperty(TMDbHelper.WidgetContainer,home)</onunload>
 	
-	<defaultcontrol always="true">300</defaultcontrol>
+	<!-- Remember what the focused control is -->
+	<onunload condition="Skin.HasSetting(RememberHomeControl)">Skin.SetString(FocusedHomeControl,$INFO[System.CurrentControlID])</onunload>
+	
+	<defaultcontrol>300</defaultcontrol>
 	<controls>
 		<!-- Hidden lists used for random fanart backgrounds -->
 		<include>HomeBackgroundLists</include>
 		<!-- Hidden lists used for statistics line -->
-		<include condition="Skin.HasSetting(ShowInfoLine)">HomeInfoLineLists</include>
+    	<include condition="Skin.HasSetting(ShowInfoLine)">HomeInfoLineLists</include>
 		<!-- Hidden lists if using script.embuary.helper for random fanart backgrounds and statistics lines -->
 		<include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(UseEHBackgrounds)">HomeEHBackgroundLists</include>
 		<include condition="System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper) + Skin.HasSetting(UseEHInfoLine)">HomeEHInfoLineLists</include>
 		<!-- Hidden fadelabel for widget extra fanart -->
-		<include condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">HomeWidgetExtraFanart</include>
+		<include condition="Skin.HasSetting(EnableExtraFanart)">HomeWidgetExtraFanart</include>
 		<!-- Background --> 
 		<control type="multiimage">
-			<visible>![Player.HasVideo + Skin.HasSetting(Show_VideoBackground)]</visible>
-			<visible>![Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus]</visible>
+			<visible>![Player.HasVideo + [Skin.HasSetting(Show_VideoBackground) | [Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus]]]</visible>
 			<include>Dimensions_Fullscreen</include>
 			<fadetime>400</fadetime>
             <randomize>true</randomize>
@@ -54,7 +71,7 @@
 		</control>
 		<!-- Now Playing peview video -->
 		<control type="videowindow" id="350">
-			<visible>[Player.HasVideo + Skin.HasSetting(Show_VideoBackground)] | [Player.HasVideo + Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus]</visible>
+			<visible>Player.HasVideo + [Skin.HasSetting(Show_VideoBackground) | [Skin.HasSetting(Shelf.PlayTrailers) + ControlGroup(700).HasFocus]]</visible>
 			<include>Dimensions_Fullscreen</include>
 		</control>
 		<!-- Menu/Submenu/Widgets -->

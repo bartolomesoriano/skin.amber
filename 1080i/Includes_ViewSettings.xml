@@ -297,7 +297,7 @@
 				<visible>Skin.HasSetting(Enable.TouchSupport)</visible>
 		    </control>            
             <control type="grouplist" id="9600">
-                <posx>26</posx>
+				<posx>26</posx>
                 <include condition="Skin.HasSetting(Enable.TouchSupport)">PopoutTopTouch</include>
 				<include condition="!Skin.HasSetting(Enable.TouchSupport)">PopoutTopStandard</include>
                 <width>248</width>
@@ -399,14 +399,14 @@
                     <include>9000SysButtons</include>
                     <label>$LOCALIZE[20445]</label>
                     <onclick>Container.SetViewMode(56)</onclick>
-                    <visible>!Skin.HasSetting(hide.fanartview) + !Window.IsActive(MyPVRRecordings.xml)</visible>
+                    <visible>!Skin.HasSetting(hide.fanartview) + ![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRChannels.xml)]</visible>
                 </control>
 				<control type="button" id="96057">
                     <description>Set View 57</description>
                     <include>9000SysButtons</include>
                     <label>$LOCALIZE[31632]</label>
                     <onclick>Container.SetViewMode(57)</onclick>
-                    <visible>!Skin.HasSetting(hide.simplelistview) + !Window.IsActive(MyPVRRecordings.xml)</visible>
+                    <visible>!Skin.HasSetting(hide.simplelistview) + ![Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRChannels.xml)]</visible>
                 </control>
 				<control type="button" id="96600">
                     <description>Set View 600</description>
@@ -1328,6 +1328,7 @@
             <enable>Integer.IsGreater(Container(9600).NumItems,1)</enable>
             <onclick condition="!Skin.HasSetting(Enable.NewViewSelector) + !Window.IsVisible(MyPVRGuide.xml)">Control.SetFocus(9600)</onclick>
 			<onclick condition="Skin.HasSetting(Enable.NewViewSelector) + !Window.IsVisible(MyPVRGuide.xml)">Runscript(script.skinvariables,action=buildviews,contentid=$VAR[ViewModeSwitch],pluginname=$INFO[Container.PluginName])</onclick>
+			<visible>![Window.IsActive(MyPVRChannels.xml) + !Skin.HasSetting(UseMultiViewsForChannels)]</visible>
         </control>
 
 		<include content="IconViewSwitches">
