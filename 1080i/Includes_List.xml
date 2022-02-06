@@ -336,7 +336,9 @@
 				</include>
 			</focusedlayout>
 			
+			<!-- Begin Nexus change -->
 			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[ListPanelIsSwapped]]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>670</posx>
@@ -357,7 +359,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
 				</include>
 		    </itemlayout>
+			<!-- Begin Nexus change -->
 		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[ListPanelIsSwapped]]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posx>679</posx>
 					<posy>0</posy>
@@ -666,7 +670,9 @@
 				</include>
 			</focusedlayout>
 			
+			<!-- Begin Nexus change -->
 			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[ListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<!-- End Nexus change -->
 			     <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>0</posx>
@@ -688,7 +694,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
 				</include>
 		    </itemlayout>
+			<!-- Begin Nexus change -->
 		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[ListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posx>-20</posx>
 					<posy>0</posy>
@@ -1444,8 +1452,9 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+			<!-- Begin Nexus change -->
 			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[LowListPanelIsSwapped]]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>870</posx>
@@ -1467,7 +1476,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
                 </include>
 		    </itemlayout>
+			<!-- Begin Nexus change -->
 		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[LowListPanelIsSwapped]]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posx>879</posx>
 					<posy>0</posy>
@@ -1730,8 +1741,9 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+			<!-- Begin Nexus change -->
 			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[LowListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>0</posx>
@@ -1753,7 +1765,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
                 </include>
 		    </itemlayout>
+			<!-- Begin Nexus change -->
 		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + $EXP[LowListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posx>-20</posx>
 					<posy>0</posy>
@@ -2506,8 +2520,9 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+			<!-- Begin Nexus change -->
 			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[TallListPanelIsSwapped]]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>670</posx>
@@ -2529,7 +2544,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
                 </include>
 		    </itemlayout>
+			<!-- Begin Nexus change -->
 		    <focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + ![$EXP[TallListPanelIsSwapped]]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posx>679</posx>
 					<posy>0</posy>
@@ -2866,8 +2883,9 @@
                     <param name="BGposy">$PARAM[BGposy]</param>
 				</include>
 			</focusedlayout>
-			
+			<!-- Begin Nexus change -->
 			<itemlayout condition="Window.IsActive(MYPVRChannels.xml) + $EXP[TallListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posy>0</posy>
 				    <posx>80</posx>
@@ -2889,7 +2907,9 @@
 					<param name="itemheight">$PARAM[itemheight]</param>
                 </include>
 		    </itemlayout>
+			<!-- Begin Nexus change -->
 		    <focusedlayout condition="Window.IsActive(MYPVRChannels.xml) + $EXP[TallListPanelIsSwapped]" height="$PARAM[itemheight]" width="1210" infoupdate="5000">
+			<!-- End Nexus change -->
 			    <control type="image" description="BG">
     				<posx>80</posx>
 					<posy>0</posy>

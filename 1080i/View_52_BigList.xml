@@ -65,8 +65,9 @@
 						    <param name="isfocused">true</param>
 					    </include>
 				    </focusedlayout>
-					
+					<!-- Begin Nexus change -->
 					<itemlayout height="104" width="1070"  infoupdate="5000" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + ![$EXP[BigListPanelIsSwapped]] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
+					<!-- End Nexus change -->
 					    <include content="52_layout">
 						    <param name="left">850</param>
 							<param name="thumbleft">855</param>
@@ -76,7 +77,9 @@
 			    			<param name="isfocused">false</param>
 					    </include>
 				    </itemlayout>
+					<!-- Begin Nexus change -->
 				    <focusedlayout height="104" width="1070"  infoupdate="5000" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + ![$EXP[BigListPanelIsSwapped]] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
+					<!-- End Nexus change -->
 					    <include content="52_layout">
 						    <param name="left">850</param>
 							<param name="thumbleft">855</param>
@@ -112,8 +115,9 @@
 						    <param name="isfocused">true</param>
 					    </include>
 				    </focusedlayout>
-					
+					<!-- Begin Nexus change -->
 					<itemlayout height="104" width="1070"  infoupdate="5000" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + $EXP[BigListPanelIsSwapped] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
+					<!-- End Nexus change -->
 					    <include content="52_layout">
 						    <param name="left">0</param>
 							<param name="thumbleft">5</param>
@@ -125,7 +129,9 @@
 			    			<param name="isfocused">false</param>
 					    </include>
 				    </itemlayout>
+					<!-- Begin Nexus change -->
 				    <focusedlayout height="104" width="1070"  infoupdate="5000" condition="![$EXP[isPVRRecordingsGroups] | $EXP[isPVRTimerRules] | $EXP[isPVRTimer]] + $EXP[BigListPanelIsSwapped] + [Container.Content() | Container.Content(videos) | Container.Content(files) | Container.Content(playlists) | Container.Content(Tags) | Container.Content(Actors) | Container.Content(Directors) | Container.Content(Years) | Container.Content(Countries) | Container.Content(roles) | Container.Content(genres) | Container.Content(studios)]">
+					<!-- End Nexus change -->
 					    <include content="52_layout">
 						    <param name="left">0</param>
 							<param name="thumbleft">5</param>

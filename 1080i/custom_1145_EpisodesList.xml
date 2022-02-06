@@ -222,7 +222,9 @@
 							<width>950</width>
 							<height>269.5</height>
 							<texture background="true">thumbs/labelback.png</texture>
-				            <bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
+				            <!-- Begin Nexus change -->
+							<bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
+							<!-- End Nexus change -->
 				            <bordersize>12,12,20,20</bordersize>
 				            <aspectratio align="center" aligny="center">stretch</aspectratio>
 						</control>
@@ -331,7 +333,9 @@
 							<width>950</width>
 							<height>269.5</height>
 							<texture background="true">thumbs/labelback.png</texture>
-				            <bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
+				            <!-- Begin Nexus change -->
+							<bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
+							<!-- End Nexus change -->
 				            <bordersize>12,12,20,20</bordersize>
 				            <aspectratio align="center" aligny="center">stretch</aspectratio>
 						</control>

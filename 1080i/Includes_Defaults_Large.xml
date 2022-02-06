@@ -54,6 +54,7 @@
 		<bordersize>4</bordersize>
 		<pulseonselect>false</pulseonselect>
 	</default>
+	<!-- Begin Nexus change -->
 	<default type="colorbutton">
 		<width>390</width>
 		<height>65</height>
@@ -72,6 +73,7 @@
 		<texturefocus border="4" colordiffuse="$VAR[HighlightColor]">img/WhiteRoundedST2.png</texturefocus>
 		<texturenofocus border="3">buttons/ButtonNF.png</texturenofocus>
 	</default>
+	<!-- End Nexus change -->
 	<default type="edit">
 		<width>390</width>
 		<height>60</height>

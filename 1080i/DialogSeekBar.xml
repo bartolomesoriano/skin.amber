@@ -399,7 +399,7 @@
 					<shadowcolor>Black</shadowcolor>
 				</control>
 				
-				<!-- Begin Nexus changes -->
+				    <!-- Begin Nexus changes -->
 					
 					<!-- Editlist and Chapters -->
 					<control type="ranges">

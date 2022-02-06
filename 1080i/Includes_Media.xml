@@ -978,6 +978,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>badges/3D.png</texture>
 			</control> 
+			<!-- Begin Nexus change -->
 			<control type="image" id="89005">
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + !Skin.HasSetting(coloredflags) + !String.IsEmpty(Container.ListItem.HdrType)</visible>
 				<visible>$PARAM[showvideobadge]</visible>
@@ -997,6 +998,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>badges/videohdr/$INFO[Container.ListItem.HdrType,,.png]</texture>
 			</control>
+			<!-- End Nexus change -->
 			<control type="image" id="89007">
 				<visible>!String.IsEmpty(Container.ListItem.AudioCodec) + !Skin.HasSetting(coloredflags)</visible>
 				<visible>$PARAM[showaudiobadge]</visible>
@@ -1244,7 +1246,8 @@
 				<bordersize>3</bordersize>
 				<aspectratio>keep</aspectratio>
 				<texture>badges/3D.png</texture>
-			</control>			
+			</control>	
+            <!-- Begin Nexus change -->			
             <control type="image" id="89005">
 				<visible>!Skin.HasSetting(coloredflags) + !String.IsEmpty(ListItem.HdrType)</visible>
 				<visible>$PARAM[showvideobadge]</visible>
@@ -1264,6 +1267,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>badges/videohdr/$INFO[ListItem.HdrType,,.png]</texture>
 			</control>
+			<!-- End Nexus change -->
 			<control type="image" id="89007">
 				<visible>!String.IsEmpty(ListItem.AudioCodec) + !Skin.HasSetting(coloredflags)</visible>
 				<visible>$PARAM[showaudiobadge]</visible>
@@ -1424,6 +1428,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>badges/3D.png</texture>
 			</control>
+			<!-- Begin Nexus change -->
             <control type="image" id="89007">
 				<visible>!Skin.HasSetting(Hide.MediaFlagsVideo) + !Skin.HasSetting(coloredflags) + !String.IsEmpty(VideoPlayer.HdrType)</visible>
 				<visible>$PARAM[showvideobadge]</visible>
@@ -1443,6 +1448,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>badges/videohdr/$INFO[VideoPlayer.HdrType,,.png]</texture>
 			</control>
+			<!-- End Nexus change -->
 			<control type="image" id="89004">
 				<visible>!String.IsEmpty(VideoPlayer.AudioCodec) + !Skin.HasSetting(coloredflags)</visible>
 				<visible>$PARAM[showaudiobadge]</visible>
@@ -4189,7 +4195,9 @@
 				    <fadetime>1</fadetime>
 				    <randomize>false</randomize>
                     <aspectratio>$PARAM[aspect]</aspectratio>
+					<!-- Begin Nexus change -->
 					<bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
+					<!-- End Nexus change -->
 					<bordersize>$PARAM[bordersizeLT],$PARAM[bordersizeLT],$PARAM[bordersizeRB],$PARAM[bordersizeRB]</bordersize>
 					<aspectratio>$PARAM[aspect]</aspectratio>
 				</control>
@@ -4292,7 +4300,9 @@
 				<control type="image">
 					<visible>$PARAM[isFocused]</visible>
 					<texture background="true" fallback="$PARAM[fallbackicon]">$PARAM[iconimage]</texture>
+					<!-- Begin Nexus change -->
 					<bordertexture colordiffuse="$VAR[MediaWidgetsHighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
+					<!-- End Nexus change -->
 					<bordersize>$PARAM[bordersizeLT],$PARAM[bordersizeLT],$PARAM[bordersizeRB],$PARAM[bordersizeRB]</bordersize>
 					<aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspect]</aspectratio>
 				</control>
@@ -5649,30 +5659,36 @@
 	<include name="GenericLayout">
 		<param name="viewid"/>
 		<definition>
-		
+		    <!-- Begin Nexus change -->
 		    <itemlayout condition="Window.IsActive(MyPVRChannels.xml) + !Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="400" width="310" infoupdate="5000">
+			<!-- End Nexus change -->
 				<include content="GenericThumbIconBig">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">false</param>
 					<param name="belowtextbox">$INFO[ListItem.ChannelNumberLabel] - $INFO[ListItem.ChannelName]</param>
 				</include>
 			</itemlayout>
+			<!-- Begin Nexus change -->
 			<focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + !Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="400" width="310" infoupdate="5000">
+			<!-- End Nexus change -->
 				<include content="GenericThumbIconBig">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">false</param>
 					<param name="belowtextbox">$INFO[ListItem.ChannelNumberLabel] - $INFO[ListItem.ChannelName]</param>
 				</include>
 			</focusedlayout>
-			
+			<!-- Begin Nexus change -->
 			<itemlayout condition="Window.IsActive(MyPVRChannels.xml) + Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="320" width="232.5" infoupdate="5000">
+			<!-- End Nexus change -->
 				<include content="GenericThumbIconSmall">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">true</param>
 					<param name="belowtextbox">$INFO[ListItem.ChannelNumberLabel] - $INFO[ListItem.ChannelName]</param>
 				</include>
 			</itemlayout>
+			<!-- Begin Nexus change -->
 			<focusedlayout condition="Window.IsActive(MyPVRChannels.xml) + Skin.HasSetting($PARAM[viewid]_SmallIcons)" height="320" width="232.5" infoupdate="5000">
+			<!-- End Nexus change -->
 				<include content="GenericThumbIconSmall">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">true</param>

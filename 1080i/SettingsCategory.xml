@@ -106,11 +106,13 @@
                 <textcolor>$VAR[HighlightColor]</textcolor>
                 <font>Details</font>
             </control>
+			<!-- Begin Nexus change -->
 			<control type="colorbutton" id="15">
 			    <description>Default ColorButton</description>
 				<width>1437</width>
                 <textoffsetx>42</textoffsetx>
 		    </control>
+			<!-- End Nexus change -->
             <control type="label" description="Settings level label">
                 <posx>31</posx>
                 <posy>900</posy>

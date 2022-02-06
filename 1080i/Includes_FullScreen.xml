@@ -515,7 +515,9 @@
 		    </include>
 			<onclick>PlayerControl(Previous)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<!-- Begin Nexus change -->
 			<visible>Player.HasSceneMarkers | Player.ChapterCount | Integer.IsGreater(Playlist.Length(video),1) | [Player.SeekEnabled + VideoPlayer.Content(livetv)]</visible>
+			<!-- End Nexus change -->
 		</control>
 		<!-- Rewind -->
 		<control type="radiobutton" id="601">
@@ -575,7 +577,9 @@
 		    </include>
 		    <onclick>PlayerControl(Next)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<!-- Begin Nexus change -->
 			<visible>Player.HasSceneMarkers | Player.ChapterCount | Integer.IsGreater(Playlist.Length(video),1) | PVR.IsTimeShift</visible>
+			<!-- End Nexus change -->
 		</control>
 		<!-- Video Menu -->
 		<control type="radiobutton" id="661">
@@ -670,7 +674,9 @@
             <texturenofocus flipx="true">OSD/compact/next.png</texturenofocus>
 		    <onclick>PlayerControl(Previous)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<!-- Begin Nexus change -->
 			<visible>Player.HasSceneMarkers | Player.ChapterCount | Integer.IsGreater(Playlist.Length(video),1) | [Player.SeekEnabled + VideoPlayer.Content(livetv)]</visible>
+			<!-- End Nexus change -->
 		</control>
 		<!-- Rewind -->
 		<control type="button" id="601">
@@ -734,7 +740,9 @@
             <texturenofocus>OSD/compact/next.png</texturenofocus>
 		    <onclick>PlayerControl(Next)</onclick>
 		    <oninfo>Skin.ToggleSetting(OSDInfo)</oninfo>
+			<!-- Begin Nexus change -->
 			<visible>Player.HasSceneMarkers | Player.ChapterCount | Integer.IsGreater(Playlist.Length(video),1) | PVR.IsTimeShift</visible>
+			<!-- End Nexus change -->
 		</control>
 		<!-- Video Menu -->
 		<control type="button" id="661">

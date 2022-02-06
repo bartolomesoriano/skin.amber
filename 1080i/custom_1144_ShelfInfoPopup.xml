@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1144" type="dialog">
 
+	<!-- Bewgin Nexus change -->
 	<onload condition="String.IsEmpty(Window(Home).Property(ShowWidgetPopup))">Action(Close)</onload>
 	<onunload>ClearProperty(ShowWidgetPopup,Home)</onunload>
 	<defaultcontrol always="true">4490</defaultcontrol>
@@ -18,7 +19,9 @@
 			         String.IsEqual(Window(1144).Property(DBType),episode) | String.IsEqual(Window(1144).Property(DBType),musicvideo) | 
 			         String.IsEqual(Window(1144).Property(DBType),artist) | String.IsEqual(Window(1144).Property(DBType),album) | 
 			         String.IsEqual(Window(1144).Property(DBType),song)]</visible>
-					 
+	
+    <!-- End Nexus change -->
+	
 			<top>254</top>
 			<include condition="!Skin.HasSetting(VerticalHome)">PopupLeftHorizontal</include>
 			<include condition="Skin.HasSetting(VerticalHome)">PopupLeftVertical</include>
@@ -583,6 +586,8 @@
 					</control>
 				</control>
 			</control>
+			<!-- Begin Nexus change -->
+			<!-- Buttons -->
 			<control type="grouplist" id="4490">
                 <top>587</top>
 				<left>420</left>
@@ -631,7 +636,8 @@
 				    <onclick>Action(Info)</onclick>
                     <visible>System.AddonIsEnabled(script.embuary.helper) + Skin.HasSetting(Enable.EmbuaryHelper)</visible>
                 </control>
-			</control>	
+			</control>
+            <!-- End Nexus change -->			
 			<include content="ShadowedImage">
 				<param name="top">36</param>
 				<param name="left">54</param>

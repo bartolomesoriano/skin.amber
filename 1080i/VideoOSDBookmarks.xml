@@ -104,7 +104,9 @@
 						<height>200</height>
 						<aspectratio>scale</aspectratio>
 						<texture background="true" fallback="DefaultEpisode.png">$INFO[ListItem.Icon]</texture>
+						<!-- Begin Nexus change -->
 						<bordertexture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</bordertexture>
+						<!-- End Nexus change -->
 						<bordersize>16</bordersize>
 					</control>
 					<control type="image">

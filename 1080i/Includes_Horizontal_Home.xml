@@ -23,7 +23,9 @@
 				<onleft>300</onleft>
 				<onright>300</onright>
 				<onfocus>ClearProperty(ShowWidgetPopup,Home)</onfocus>
+				<!-- Begin Nexus change -->
 				<onfocus condition="Window.IsVisible(1144)">Dialog.Close(1144,force)</onfocus>
+				<!-- End Nexus change -->
 				<ondown condition="Integer.IsGreater(Container(9001).NumItems,0)">9001</ondown>
 				<ondown condition="!Integer.IsGreater(Container(9001).NumItems,0) + Skin.HasSetting(Enable.BottomShortcuts)">800</ondown>
                 <include condition="!Skin.HasSetting(Hide.AllShelves)">skinshortcuts-template-ShelfOnUpMainMenu</include>
@@ -178,7 +180,9 @@
 				<focusposition>3</focusposition>
 				<movement>3</movement>
 				<onfocus>ClearProperty(ShowWidgetPopup,Home)</onfocus>
+				<!-- Begin Nexus change -->
 				<onfocus condition="Window.IsVisible(1144)">Dialog.Close(1144,force)</onfocus>
+				<!-- End Nexus change -->
 				<onup>300</onup>
 				<onback>SetFocus(300)</onback>
                 <ondown condition="Skin.HasSetting(Enable.BottomShortcuts)">800</ondown>

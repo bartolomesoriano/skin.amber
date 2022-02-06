@@ -238,6 +238,7 @@
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>badges/3D.png</texture>
 			</control> 
+			<!-- Begin Nexus change -->
             <control type="image">
 				<visible>!String.IsEmpty(Window(1144).Property(HdrType))</visible>
 				<height>$PARAM[itemheight]</height>
@@ -247,6 +248,7 @@
 				<colordiffuse>$PARAM[diffuse]</colordiffuse>
 				<texture>badges/videohdr/$INFO[Window(1144).Property(HdrType),,.png]</texture>
 			</control>
+			<!-- End Nexus change -->
 			<control type="image">
 				<visible>!String.IsEmpty(Window(1144).Property(AudioCodec))</visible>
 				<height>$PARAM[itemheight]</height>
@@ -422,11 +424,14 @@
 				<onfocus>SetProperty(Trailer,"$INFO[ListItem.Trailer]",1144)</onfocus>
 				<onfocus>SetProperty(FolderPath,"$INFO[ListItem.FolderPath]",1144)</onfocus>
 				<onfocus condition="ListItem.IsResumable">SetProperty(IsResumable,True,1144)</onfocus>
+				<!-- Begin Nexus change -->
 				<onfocus condition="$PARAM[EnableProp]">AlarmClock(shelfpoputimer1,ActivateWindow(1144),$PARAM[ShelfDelay],silent,false)</onfocus>
+				<!-- End Nexus change -->
 		    </control>
 		</definition>	
 	</include>
 	
+	<!-- Begin Nexus change -->
 	<include name="PopupInfoButtonList">
 		<control type="list" id="114401">
 			<onleft>4490</onleft>
@@ -444,5 +449,6 @@
 			<content>plugin://script.embuary.helper/?info=getbydbid&amp;dbid=$INFO[Window(1144).Property(DBID)]&amp;type=$INFO[Window(1144).Property(DBType)]</content>
 		</control>
 	</include>
+	<!-- End Nexus change -->
 	
 </includes>	

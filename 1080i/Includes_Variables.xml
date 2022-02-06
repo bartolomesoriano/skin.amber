@@ -1862,6 +1862,7 @@
 		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetAutoScroll.6),$NUMBER[60000])">60 $LOCALIZE[32047]</value>
 	</variable>
 	
+	<!-- Begin Nexus change -->
 	<variable name="Widget1PopupDelayLabelVar">
 		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),00:00:01)">1 $LOCALIZE[32340]</value>
 		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay),00:00:02)">2 $LOCALIZE[32047]</value>
@@ -1915,6 +1916,7 @@
 		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),00:00:05)">5 $LOCALIZE[32047]</value>
 		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),00:00:06)">6 $LOCALIZE[32047]</value>
 	</variable>
+	<!-- End Nexus change -->
 	
 	<!-- Begin Matrix change -->
 	<variable name="InfoDiscVar">

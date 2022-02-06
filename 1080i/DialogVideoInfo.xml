@@ -16,7 +16,9 @@
     
 	<onload condition="!String.IsEmpty(Window(home).Property(OSDinfodialogButtonActive))">Dialog.Close(VideoOSD,true)</onload>
 	
+	<!-- Begin Nexus change -->
 	<onload condition="!String.IsEmpty(Window(home).Property(ShowWidgetPopup))">Dialog.Close(1144,true)</onload>
+	<!-- End Nexus change -->
 	
 	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + !String.IsEmpty(ListItem.Art(poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(poster)]"',prop=EHBlur,radius=3)</onload>
 	<onload condition="Skin.HasSetting(Enable.BlurredVideoInfo) + Skin.HasSetting(Blur.UsePoster) + String.IsEmpty(ListItem.Art(poster)) + !String.IsEmpty(ListItem.Art(season.poster))">RunScript(script.embuary.helper,action=blurimg,file='"$INFO[ListItem.Art(season.poster)]"',prop=EHBlur,radius=3)</onload>

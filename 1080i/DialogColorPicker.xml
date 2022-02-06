@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
+	<!-- This dialog is new for Nexus -->
 	<defaultcontrol always="true">6</defaultcontrol>
 	<include>DialogOpenClose</include>
 	<controls>

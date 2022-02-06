@@ -121,7 +121,8 @@
 				<aspectratio>keep</aspectratio>
 				<texture>badges/3D.png</texture>
 			</control>
-           <control type="image" id="89007">
+			<!-- Begin Nexus change -->
+            <control type="image" id="89007">
 				<visible>!String.IsEmpty(Container(6).ListItem.VideoResolution) + !Skin.HasSetting(Hide.MediaFlagsVideo) + !Skin.HasSetting(coloredflags) + !String.IsEmpty(Container(6).ListItem.HdrType)</visible>
 				<visible>$PARAM[showvideobadge]</visible>
 				<height>$PARAM[itemheight]</height>
@@ -140,6 +141,7 @@
 				<aspectratio>keep</aspectratio>
 				<texture>badges/videohdr/$INFO[Container(6).ListItem.HdrType,,.png]</texture>
 			</control>
+			<!-- End Nexus change -->
 			<control type="image" id="89004">
 				<visible>!String.IsEmpty(Container(6).ListItem.AudioCodec) + !Skin.HasSetting(coloredflags)</visible>
 				<visible>$PARAM[showaudiobadge]</visible>
@@ -956,7 +958,9 @@
 						<control type="image">
 							<width>444</width>
 							<height>250</height>
-                            <texture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</texture>
+                            <!-- Begin Nexus change -->
+							<texture colordiffuse="$VAR[HighlightColor]" border="8" infill="false">thumbs/IconBorder_FO.png</texture>
+							<!-- End Nexus change -->
 							<visible>Control.HasFocus(11)</visible>
 						</control>
 					</control>
