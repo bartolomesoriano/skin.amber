@@ -3036,7 +3036,7 @@
 		<control type="list" id="4451">
 	        <left>-100</left>
 		    <top>-100</top>
-			<content limit="20" sortby="random">$VAR[myPathVar]</content>
+			<content limit="20" sortby="random">$VAR[SubcontentPathVar]</content>
 	        <autoscroll time="8000">true</autoscroll>
 	        <itemlayout />
 	        <focusedlayout />
