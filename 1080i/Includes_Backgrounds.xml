@@ -258,7 +258,7 @@
 		<value condition="!Skin.HasSetting(HomeDefaultBG) + Player.HasVideo + !Skin.HasSetting(Hide.NowPlaying) + Control.IsVisible(70101) + !ControlGroup(700).HasFocus + !Skin.HasSetting(DisableNowPlayingFanart)">$VAR[NowPlayingVideoFanartVar]</value>
 		<value condition="!Skin.HasSetting(HomeDefaultBG) + Player.HasAudio + !Skin.HasSetting(Hide.NowPlaying) + Control.IsVisible(70102) + !ControlGroup(700).HasFocus + !Skin.HasSetting(DisableNowPlayingFanart)">$VAR[NowPlayingAudioFanartVar]</value>
 		<!-- Widget extra fanart -->
-		<value condition="!Skin.HasSetting(HomeDefaultBG) + [ControlGroup(700).HasFocus + !String.IsEmpty(Container(300).ListItem.Property(WidgetType)) + [!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(ListItem.Art(tvshow.fanart1))] + !String.IsEmpty(Control.GetLabel(4415)) + $EXP[WidgetFanartVisible]]">$INFO[Control.GetLabel(4415)]</value>
+		<value condition="!Skin.HasSetting(HomeDefaultBG) + [ControlGroup(700).HasFocus + !String.IsEmpty(Container(300).ListItem.Property(WidgetType)) + [!String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(ListItem.Art(tvshow.fanart1)) | !String.IsEmpty(ListItem.Art(artist.fanart1))] + !String.IsEmpty(Control.GetLabel(4415)) + $EXP[WidgetFanartVisible]]">$INFO[Control.GetLabel(4415)]</value>
 		<!-- Widget fanart, dynamic or static widgets -->
 		<value condition="!Skin.HasSetting(HomeDefaultBG) + [ControlGroup(700).HasFocus + [!String.IsEmpty(Container(300).ListItem.Property(WidgetType)) + String.IsEmpty(ListItem.Property(recommendedtvshowtitle)) + String.IsEmpty(ListItem.Property(nextairedtvshowtitle))] + !String.IsEmpty(Container.ListItem.Art(fanart)) + $EXP[WidgetFanartVisible]]">$INFO[Container.ListItem.Art(fanart)]</value>
 		<value condition="!Skin.HasSetting(HomeDefaultBG) + [ControlGroup(700).HasFocus + !String.IsEmpty(ListItem.Property(nextairedtvshowtitle)) + !String.IsEmpty(ListItem.Property(nextairedfanart)) + $EXP[WidgetFanartVisible]]">$INFO[ListItem.Property(nextairedfanart)]</value>
@@ -1196,6 +1196,26 @@
 			<label>$INFO[ListItem.Art(tvshow.fanart18)]</label>
 			<label>$INFO[ListItem.Art(tvshow.fanart19)]</label>
 			<label>$INFO[ListItem.Art(tvshow.fanart20)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart1)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart2)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart3)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart4)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart5)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart6)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart7)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart8)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart9)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart10)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart11)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart12)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart13)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart14)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart15)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart16)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart17)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart18)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart19)]</label>
+			<label>$INFO[ListItem.Art(artist.fanart20)]</label>
 		</control>
 	</include>
 	
