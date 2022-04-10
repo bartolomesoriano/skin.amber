@@ -73,7 +73,7 @@
 										   [[container.content(artists) | container.content(albums)] + Skin.HasSetting(56_Music_Netflix_TitleInFooter)]]</expression>
 
     <expression name="56_NetflixTrailerWindow">Control.IsVisible(56) + [[container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix_TrailerWindow)] | 
-										       [[container.content(movies) | container.content(tvshows)] + Skin.HasSetting(56_Posters_Netflix_TrailerWindow]]</expression>										   
+										       [[container.content(movies) | container.content(tvshows)] + Skin.HasSetting(56_Posters_Netflix_TrailerWindow)]]</expression>										   
 
 	
 	<include name="FocusSquare">
