@@ -155,7 +155,7 @@
 		<definition>
 		    
 			<control type="group">
-			    <visible>[Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
+			    <visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 			    <!-- Overlay image when panel is in original position -->
 			    <control type="image">
 				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
@@ -353,7 +353,7 @@
 		<definition>
 		    
 			<control type="group">
-			    <visible>[Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
+			    <visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 			    <!-- Overlay image when panel is in original position -->
 			    <control type="image">
 				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
@@ -550,7 +550,7 @@
         <param name="BGposy">15</param>
 		<definition>
 		    <control type="group">
-			    <visible>[Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
+			    <visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 			    <!-- Overlay image when panel is in original position -->
 			    <control type="image">
 				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
@@ -751,7 +751,7 @@
 		<definition>
 		    
 			<control type="group">
-			    <visible>[Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
+			    <visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 			    <!-- Overlay image when panel is in original position -->
 			    <control type="image">
 				    <visible>[![Container.Content(tvshows) | container.content(seasons) | Container.Content(addons)] | 
@@ -825,7 +825,7 @@
 		<param name="posy">5</param>
 		<definition>
 			<control type="group">
-				<visible>[Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
+				<visible>Window.IsActive(MyPVRRecordings.xml) | [Container.Content(files) | Container.Content(videos) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(addons)]</visible>
 			    <posy>$PARAM[posy]</posy>
 				<control type="image">
 				    <visible>!Container.Content(addons)</visible>
@@ -5642,28 +5642,28 @@
 	<include name="RecordingsLayout">
 		<param name="viewid"/>
 		<definition>
-			<itemlayout condition="[!Skin.HasSetting($PARAM[viewid]_SmallIcons) + Window.IsActive(MyPVRRecordings.xml)]" height="437" width="310">
+			<itemlayout condition="!Skin.HasSetting($PARAM[viewid]_SmallIcons) + Window.IsActive(MyPVRRecordings.xml)" height="437" width="310">
 				<include content="GenericRecordingIconBig">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">false</param>
 					<param name="viewid">$PARAM[viewid]</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="[!Skin.HasSetting($PARAM[viewid]_SmallIcons) + Window.IsActive(MyPVRRecordings.xml)]" height="437" width="310">
+			<focusedlayout condition="!Skin.HasSetting($PARAM[viewid]_SmallIcons) + Window.IsActive(MyPVRRecordings.xml)" height="437" width="310">
 				<include content="GenericRecordingIconBig">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">false</param>
 					<param name="viewid">$PARAM[viewid]</param>
 				</include>
 			</focusedlayout>
-			<itemlayout condition="[Skin.HasSetting($PARAM[viewid]_SmallIcons) + Window.IsActive(MyPVRRecordings.xml)]" height="326" width="232.5">
+			<itemlayout condition="Skin.HasSetting($PARAM[viewid]_SmallIcons) + Window.IsActive(MyPVRRecordings.xml)" height="326" width="232.5">
 				<include content="GenericRecordingIconSmall">
 					<param name="isFocused">false</param>
 					<param name="isSmallIcon">true</param>
 					<param name="viewid">$PARAM[viewid]</param>
 				</include>
 			</itemlayout>
-			<focusedlayout condition="[Skin.HasSetting($PARAM[viewid]_SmallIcons) + Window.IsActive(MyPVRRecordings.xml)]" height="326" width="232.5">
+			<focusedlayout condition="Skin.HasSetting($PARAM[viewid]_SmallIcons) + Window.IsActive(MyPVRRecordings.xml)" height="326" width="232.5">
 				<include content="GenericRecordingIconSmall">
 					<param name="isFocused">true</param>
 					<param name="isSmallIcon">true</param>

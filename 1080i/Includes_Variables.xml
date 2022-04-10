@@ -119,9 +119,10 @@
     <variable name="Overlay" description="Overlay image">
 		<value condition="[Window.IsActive(script-embuary-video.xml) | Window.IsActive(script-embuary-person.xml)] + !Skin.HasSetting(Hide_Watched_Marks) + Integer.IsGreater(Container.ListItem.Playcount,0)">OverlayWatched.png</value>
 		<value condition="[Window.IsActive(script-embuary-video.xml) | Window.IsActive(script-embuary-person.xml)] + !String.IsEmpty(Container.ListItem.DBID)">library.png</value>
+		<value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.Overlay]</value>
 		<value condition="!String.IsEmpty(ListItem.Property(Container.Info)) + !String.IsEmpty(ListItem.DBID)">library.png</value>
 		<value condition="!Skin.HasSetting(Hide_Collection_Marks) + ListItem.IsCollection + !String.IsEqual(ListItem.Overlay,OverlayWatched.png)">Collection.png</value>
-        <value condition="ListItem.IsRecording">img/PVR-IsRecording.png</value>
+        <value condition="!Window.IsActive(MyPVRRecordings.xml) + ListItem.IsRecording">img/PVR-IsRecording.png</value>
         <value condition="!Skin.HasSetting(Hide_InProgress_Marks) + !String.IsEmpty(ListItem.Overlay) + ListItem.IsResumable">$VAR[SoloInProgress]</value>
         <value condition="Skin.HasSetting(Hide_InProgress_Marks) + !String.IsEmpty(ListItem.Overlay) + ListItem.IsResumable"></value>
         <value condition="!Skin.HasSetting(Hide_Watched_Marks) + !String.IsEmpty(ListItem.Overlay) + String.IsEqual(ListItem.Overlay,OverlayWatched.png)">$INFO[ListItem.Overlay]</value>
@@ -1893,7 +1894,7 @@
 		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),$NUMBER[5])">5 $LOCALIZE[32047]</value>
 		<value condition="String.IsEqual(Container(211).ListItem.Property(widgetPopupDelay.6),$NUMBER[6])">6 $LOCALIZE[32047]</value>
 	</variable>
-	<variable name="DefaultFontLabel">
+    <variable name="DefaultFontLabel">
 	    <value condition="Skin.HasSetting(Smaller.Fonts)">$LOCALIZE[31118]</value>
 		<value condition="Skin.HasSetting(Regular.Fonts)">$LOCALIZE[31119]</value>
 		<value condition="Skin.HasSetting(Large.Fonts)">$LOCALIZE[31120]</value>
