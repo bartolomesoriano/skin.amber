@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-05-25 10:09+0000\n"
+"PO-Revision-Date: 2022-03-03 15:37+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: English (New Zealand) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/en_nz/>\n"
 "Language: en_nz\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -43,11 +43,11 @@ msgstr ""
 
 msgctxt "#31004"
 msgid "Shift"
-msgstr ""
+msgstr "Shift"
 
 msgctxt "#31005"
 msgid "Cinema"
-msgstr ""
+msgstr "Cinema"
 
 msgctxt "#31006"
 msgid "Shared"
@@ -107,7 +107,7 @@ msgstr ""
 
 msgctxt "#31020"
 msgid "Recently Added"
-msgstr ""
+msgstr "Recently Added"
 
 msgctxt "#31021"
 msgid "Recently Played"
@@ -115,27 +115,27 @@ msgstr ""
 
 msgctxt "#31022"
 msgid "Kodi"
-msgstr ""
+msgstr "Kodi"
 
 msgctxt "#31023"
 msgid "Viewtype"
-msgstr ""
+msgstr "Viewtype"
 
 msgctxt "#31024"
 msgid "Sort by"
-msgstr ""
+msgstr "Sort by"
 
 msgctxt "#31025"
 msgid "Items"
-msgstr ""
+msgstr "Items"
 
 msgctxt "#31026"
 msgid "Misc options"
-msgstr ""
+msgstr "Misc options"
 
 msgctxt "#31027"
 msgid "Order"
-msgstr ""
+msgstr "Order"
 
 msgctxt "#31028"
 msgid "Amber Settings"
@@ -143,7 +143,7 @@ msgstr ""
 
 msgctxt "#31029"
 msgid "Remaining"
-msgstr ""
+msgstr "Remaining"
 
 msgctxt "#31030"
 msgid "Settings entry point"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "#31037"
 msgid "Rated"
-msgstr ""
+msgstr "Rated"
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
@@ -208,7 +208,7 @@ msgstr ""
 
 msgctxt "#31048"
 msgid "Visualization Presets"
-msgstr ""
+msgstr "Visualization Presets"
 
 msgctxt "#31049"
 msgid "Settings Level"
@@ -216,15 +216,15 @@ msgstr ""
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
-msgstr ""
+msgstr "Sort: Ascending"
 
 msgctxt "#31051"
 msgid "Sort: Descending"
-msgstr ""
+msgstr "Sort: Descending"
 
 msgctxt "#31052"
 msgid "Sections"
-msgstr ""
+msgstr "Sections"
 
 msgctxt "#31053"
 msgid "Media Views"
@@ -237,15 +237,15 @@ msgstr ""
 # empty strings from id 31055 to 31068
 msgctxt "#31069"
 msgid "Random episodes"
-msgstr ""
+msgstr "Random episodes"
 
 msgctxt "#31070"
 msgid "Random movies"
-msgstr ""
+msgstr "Random movies"
 
 msgctxt "#31071"
 msgid "In progress movies"
-msgstr ""
+msgstr "In progress movies"
 
 msgctxt "#31072"
 msgid "Unwatched TV shows"
@@ -253,11 +253,11 @@ msgstr ""
 
 msgctxt "#31073"
 msgid "In progress episodes"
-msgstr ""
+msgstr "In progress episodes"
 
 msgctxt "#31074"
 msgid "Most played albums"
-msgstr ""
+msgstr "Most played albums"
 
 msgctxt "#31075"
 msgid "Random Albums"
@@ -269,11 +269,11 @@ msgstr ""
 
 msgctxt "#31077"
 msgid "Random artists"
-msgstr ""
+msgstr "Random artists"
 
 msgctxt "#31078"
 msgid "Random music videos"
-msgstr ""
+msgstr "Random music videos"
 
 msgctxt "#31079"
 msgid "Unwatched videos"
@@ -285,7 +285,7 @@ msgstr ""
 
 msgctxt "#31081"
 msgid "Recent recordings"
-msgstr ""
+msgstr "Recent recordings"
 
 msgctxt "#31082"
 msgid "No content found"
@@ -297,7 +297,7 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Hide Recently Added"
-msgstr ""
+msgstr "Hide Recently Added"
 
 msgctxt "#31085"
 msgid "Hide Random"
@@ -341,11 +341,11 @@ msgstr ""
 
 msgctxt "#31095"
 msgid "Hide Recordings"
-msgstr ""
+msgstr "Hide Recordings"
 
 msgctxt "#31096"
 msgid "Hide Videos"
-msgstr ""
+msgstr "Hide Videos"
 
 msgctxt "#31097"
 msgid "Hide Music"
@@ -361,7 +361,7 @@ msgstr ""
 
 msgctxt "#31100"
 msgid "Hide Favourites"
-msgstr ""
+msgstr "Hide Favourites"
 
 msgctxt "#31101"
 msgid "Hide random episodes"
@@ -419,7 +419,7 @@ msgstr ""
 
 msgctxt "#31118"
 msgid "Small"
-msgstr ""
+msgstr "Small"
 
 msgctxt "#31119"
 msgid "Regular"
@@ -427,7 +427,7 @@ msgstr ""
 
 msgctxt "#31120"
 msgid "Large"
-msgstr ""
+msgstr "Large"
 
 msgctxt "#31121"
 msgid "Apply Changes"
@@ -436,7 +436,7 @@ msgstr ""
 # empty strings from id 31122 to 31128
 msgctxt "#31129"
 msgid "Same director"
-msgstr ""
+msgstr "Same director"
 
 msgctxt "#31130"
 msgid "Hourly"
@@ -444,15 +444,15 @@ msgstr ""
 
 msgctxt "#31131"
 msgid "Forecast"
-msgstr ""
+msgstr "Forecast"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
-msgstr ""
+msgstr "Lyrics Add-on"
 
 msgctxt "#31133"
 msgid "Toggle audio stream"
-msgstr ""
+msgstr "Toggle audio stream"
 
 msgctxt "#31134"
 msgid "Toggle language"
@@ -460,11 +460,11 @@ msgstr ""
 
 msgctxt "#31135"
 msgid "Change mode"
-msgstr ""
+msgstr "Change mode"
 
 msgctxt "#31136"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "Watch as 2D"
 
 msgctxt "#31137"
 msgid "PVR Info"
@@ -472,7 +472,7 @@ msgstr ""
 
 msgctxt "#31138"
 msgid "Player info"
-msgstr ""
+msgstr "Player info"
 
 msgctxt "#31139"
 msgid "Video decoder"
@@ -484,7 +484,7 @@ msgstr "Pixel format"
 
 msgctxt "#31141"
 msgid "Play speed"
-msgstr ""
+msgstr "Play speed"
 
 # empty strings from id 31142 to 31149
 msgctxt "#31150"
@@ -525,7 +525,7 @@ msgstr ""
 
 msgctxt "#31159"
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 msgctxt "#31160"
 msgid "Disable Logo view"
@@ -547,15 +547,15 @@ msgstr ""
 
 msgctxt "#31295"
 msgid "OpenELEC Settings"
-msgstr ""
+msgstr "OpenELEC Settings"
 
 msgctxt "#31296"
 msgid "LibreELEC Settings"
-msgstr ""
+msgstr "LibreELEC Settings"
 
 msgctxt "#31297"
 msgid "min"
-msgstr ""
+msgstr "min"
 
 msgctxt "#31298"
 msgid "Starting in"
@@ -572,55 +572,55 @@ msgstr ""
 # empty strings from id 31301 to 31308
 msgctxt "#31309"
 msgid "Memory Used"
-msgstr ""
+msgstr "Memory Used"
 
 # empty strings from id 31310 to 31321
 msgctxt "#31322"
 msgid "Aired"
-msgstr ""
+msgstr "Aired"
 
 # empty strings from id 31323 to 31350
 msgctxt "#31351"
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 msgctxt "#31352"
 msgid "Stop"
-msgstr ""
+msgstr "Stop"
 
 msgctxt "#31353"
 msgid "Fast Forward"
-msgstr ""
+msgstr "Fast Forward"
 
 msgctxt "#31354"
 msgid "Rewind"
-msgstr ""
+msgstr "Rewind"
 
 msgctxt "#31355"
 msgid "Movie menu"
-msgstr ""
+msgstr "Movie menu"
 
 msgctxt "#31356"
 msgid "Download Subtitles"
-msgstr ""
+msgstr "Download Subtitles"
 
 msgctxt "#31357"
 msgid "Local subtitle available"
-msgstr ""
+msgstr "Local subtitle available"
 
 # empty strings from id 31358 to 31359
 # Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "Watch as 2D"
 
 msgctxt "#31361"
 msgid "Change mode"
-msgstr ""
+msgstr "Change mode"
 
 msgctxt "#31362"
 msgid "Enabled"
-msgstr ""
+msgstr "Enabled"
 
 msgctxt "#31363"
 msgid "Static"
@@ -681,11 +681,11 @@ msgstr ""
 
 msgctxt "#31403"
 msgid "Random fanart"
-msgstr ""
+msgstr "Random fanart"
 
 msgctxt "#31404"
 msgid "Conditional weather"
-msgstr ""
+msgstr "Conditional weather"
 
 msgctxt "#31405"
 msgid "Movie Library Statistics"
@@ -733,7 +733,7 @@ msgstr ""
 
 msgctxt "#31416"
 msgid "CPU usage"
-msgstr ""
+msgstr "CPU usage"
 
 msgctxt "#31417"
 msgid "Statistics Line"
@@ -757,7 +757,7 @@ msgstr ""
 
 msgctxt "#31422"
 msgid "Recently Added Movies"
-msgstr ""
+msgstr "Recently Added Movies"
 
 msgctxt "#31423"
 msgid "Recently Played Movies"
@@ -765,19 +765,19 @@ msgstr ""
 
 msgctxt "#31424"
 msgid "Random Movies"
-msgstr ""
+msgstr "Random Movies"
 
 msgctxt "#31425"
 msgid "In Progress Movies"
-msgstr ""
+msgstr "In Progress Movies"
 
 msgctxt "#31426"
 msgid "Unwatched Movies"
-msgstr ""
+msgstr "Unwatched Movies"
 
 msgctxt "#31427"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "Top Rated Movies"
 
 msgctxt "#31428"
 msgid "Movie Genres"
@@ -797,11 +797,11 @@ msgstr ""
 
 msgctxt "#31432"
 msgid "TV Shows"
-msgstr ""
+msgstr "TV Shows"
 
 msgctxt "#31433"
 msgid "Recently Added TV Shows"
-msgstr ""
+msgstr "Recently Added TV Shows"
 
 msgctxt "#31434"
 msgid "Recently Played TV Shows"
@@ -809,7 +809,7 @@ msgstr ""
 
 msgctxt "#31435"
 msgid "Random TV Shows"
-msgstr ""
+msgstr "Random TV Shows"
 
 msgctxt "#31436"
 msgid "In Progress TV Shows"
@@ -817,11 +817,11 @@ msgstr ""
 
 msgctxt "#31437"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "Unwatched TV Shows"
 
 msgctxt "#31438"
 msgid "Top Rated TV Shows"
-msgstr ""
+msgstr "Top Rated TV Shows"
 
 msgctxt "#31439"
 msgid "TV Show Genres"
@@ -849,7 +849,7 @@ msgstr ""
 
 msgctxt "#31445"
 msgid "Unwatched Episodes"
-msgstr ""
+msgstr "Unwatched Episodes"
 
 msgctxt "#31446"
 msgid "Top Rated Episodes"
@@ -857,7 +857,7 @@ msgstr ""
 
 msgctxt "#31447"
 msgid "Recently Added Albums"
-msgstr ""
+msgstr "Recently Added Albums"
 
 msgctxt "#31448"
 msgid "Recently Played Albums"
@@ -977,19 +977,19 @@ msgstr ""
 
 msgctxt "#31477"
 msgid "Memory Used"
-msgstr ""
+msgstr "Memory Used"
 
 msgctxt "#31478"
 msgid "Remaining"
-msgstr ""
+msgstr "Remaining"
 
 msgctxt "#31479"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31480"
 msgid "Sort By"
-msgstr ""
+msgstr "Sort By"
 
 msgctxt "#31481"
 msgid "Sort Order"
@@ -1041,7 +1041,7 @@ msgstr ""
 
 msgctxt "#31493"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "Unwatched TV Shows"
 
 msgctxt "#31494"
 msgid "Recently Released Albums"
@@ -1069,11 +1069,11 @@ msgstr ""
 
 msgctxt "#31500"
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
-msgstr ""
+msgstr "Scheduled Time"
 
 msgctxt "#31502"
 msgid "All Movies"
@@ -1081,19 +1081,19 @@ msgstr ""
 
 msgctxt "#31503"
 msgid "Add Group"
-msgstr ""
+msgstr "Add Group"
 
 msgctxt "#31504"
 msgid "Rename Group"
-msgstr ""
+msgstr "Rename Group"
 
 msgctxt "#31505"
 msgid "Delete Group"
-msgstr ""
+msgstr "Delete Group"
 
 msgctxt "#31506"
 msgid "Available[CR]Groups"
-msgstr ""
+msgstr "Available[CR]Groups"
 
 msgctxt "#31507"
 msgid "Opens"
@@ -1106,7 +1106,7 @@ msgstr ""
 
 msgctxt "#31510"
 msgid "Timer Set"
-msgstr ""
+msgstr "Timer Set"
 
 msgctxt "#31511"
 msgid "Reminder Set"
@@ -1131,7 +1131,7 @@ msgstr ""
 
 msgctxt "#31518"
 msgid "Popular Movies"
-msgstr ""
+msgstr "Popular Movies"
 
 msgctxt "#31519"
 msgid "TMDb Top Rated Movies"
@@ -1139,7 +1139,7 @@ msgstr ""
 
 msgctxt "#31520"
 msgid "Upcoming Movies"
-msgstr ""
+msgstr "Upcoming Movies"
 
 msgctxt "#31521"
 msgid "In-Theater Movies"
@@ -1147,7 +1147,7 @@ msgstr ""
 
 msgctxt "#31522"
 msgid "Popular TV Shows"
-msgstr ""
+msgstr "Popular TV Shows"
 
 msgctxt "#31523"
 msgid "TMDb Top Rated TV Shows"
@@ -1163,7 +1163,7 @@ msgstr ""
 
 msgctxt "#31526"
 msgid "Next Up Episodes"
-msgstr ""
+msgstr "Next Up Episodes"
 
 msgctxt "#31527"
 msgid "Reboot to Android"
@@ -1175,7 +1175,7 @@ msgstr ""
 
 msgctxt "#31529"
 msgid "Popular People"
-msgstr ""
+msgstr "Popular People"
 
 msgctxt "#31530"
 msgid "Trending Today"
@@ -1195,7 +1195,7 @@ msgstr ""
 
 msgctxt "#31534"
 msgid "People"
-msgstr ""
+msgstr "People"
 
 msgctxt "#31535"
 msgid "People Trending Today"
@@ -1503,11 +1503,11 @@ msgstr ""
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr ""
+msgstr "Poster"
 
 msgctxt "#31612"
 msgid "Square"
-msgstr ""
+msgstr "Square"
 
 msgctxt "#31613"
 msgid "Standard"
@@ -1535,19 +1535,19 @@ msgstr ""
 
 msgctxt "#31619"
 msgid "Thumb"
-msgstr ""
+msgstr "Thumb"
 
 msgctxt "#31620"
 msgid "Landscape"
-msgstr ""
+msgstr "Landscape"
 
 msgctxt "#31621"
 msgid "Clear Logo"
-msgstr ""
+msgstr "Clear Logo"
 
 msgctxt "#31622"
 msgid "Clear Art"
-msgstr ""
+msgstr "Clear Art"
 
 msgctxt "#31623"
 msgid "Disc Art"
@@ -1603,7 +1603,7 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "Shortcuts"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
@@ -1679,19 +1679,19 @@ msgstr ""
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
-msgstr ""
+msgstr "36 Hour Forecast"
 
 msgctxt "#31902"
 msgid "Hourly Forecast"
-msgstr ""
+msgstr "Hourly Forecast"
 
 msgctxt "#31903"
 msgid "Weekend Forecast"
-msgstr ""
+msgstr "Weekend Forecast"
 
 msgctxt "#31904"
 msgid "10 Day Forecast"
-msgstr ""
+msgstr "10 Day Forecast"
 
 # empty strings from id 31905 to 31919
 msgctxt "#31920"
@@ -1767,7 +1767,7 @@ msgstr ""
 
 msgctxt "#31955"
 msgid "Hide"
-msgstr ""
+msgstr "Hide"
 
 msgctxt "#31956"
 msgid "Get theme"
@@ -1792,7 +1792,7 @@ msgstr ""
 
 msgctxt "#31961"
 msgid "Recently added"
-msgstr ""
+msgstr "Recently added"
 
 #. view label
 msgctxt "#31962"
@@ -1802,7 +1802,7 @@ msgstr ""
 #. view label
 msgctxt "#31963"
 msgid "Panel"
-msgstr ""
+msgstr "Panel"
 
 msgctxt "#31964"
 msgid "Configure shelf items"
@@ -1811,11 +1811,11 @@ msgstr ""
 #. view label
 msgctxt "#31965"
 msgid "Banner List"
-msgstr ""
+msgstr "Banner List"
 
 msgctxt "#31966"
 msgid "Recommended"
-msgstr ""
+msgstr "Recommended"
 
 msgctxt "#31967"
 msgid "Enable Home shelf"
@@ -1848,7 +1848,7 @@ msgstr ""
 
 msgctxt "#31974"
 msgid "Home menu"
-msgstr ""
+msgstr "Home menu"
 
 msgctxt "#31975"
 msgid "Channels"
@@ -1945,7 +1945,7 @@ msgstr ""
 
 msgctxt "#31999"
 msgid "BigList"
-msgstr ""
+msgstr "BigList"
 
 msgctxt "#32000"
 msgid "Hide icons"
@@ -1954,11 +1954,11 @@ msgstr ""
 # empty string with id 32001
 msgctxt "#32002"
 msgid "Hide Games"
-msgstr ""
+msgstr "Hide Games"
 
 msgctxt "#32003"
 msgid "Game Settings"
-msgstr ""
+msgstr "Game Settings"
 
 msgctxt "#32004"
 msgid "Toggle Subtitle"
@@ -1982,15 +1982,15 @@ msgstr ""
 
 msgctxt "#32009"
 msgid "Next Episode"
-msgstr ""
+msgstr "Next Episode"
 
 msgctxt "#32010"
 msgid "Latest Episode"
-msgstr ""
+msgstr "Latest Episode"
 
 msgctxt "#32011"
 msgid "Airs"
-msgstr ""
+msgstr "Airs"
 
 # empty string with id 32012
 msgctxt "#32013"
@@ -2095,11 +2095,11 @@ msgstr ""
 
 msgctxt "#32039"
 msgid "Timeshift"
-msgstr ""
+msgstr "Timeshift"
 
 msgctxt "#32040"
 msgid "Enable Kiosk Mode"
-msgstr ""
+msgstr "Enable Kiosk Mode"
 
 # empty string with id 32041
 msgctxt "#32042"
@@ -2112,7 +2112,7 @@ msgstr ""
 
 msgctxt "#32044"
 msgid "Submenu"
-msgstr ""
+msgstr "Submenu"
 
 msgctxt "#32045"
 msgid "Shelves"
@@ -2124,7 +2124,7 @@ msgstr ""
 
 msgctxt "#32047"
 msgid "Seconds"
-msgstr ""
+msgstr "Seconds"
 
 msgctxt "#32048"
 msgid "Show background name in Home window"
@@ -2200,7 +2200,7 @@ msgstr ""
 
 msgctxt "#32066"
 msgid "Restore"
-msgstr ""
+msgstr "Restore"
 
 msgctxt "#32067"
 msgid "Configure Backup addon"
@@ -2212,7 +2212,7 @@ msgstr ""
 
 msgctxt "#32069"
 msgid "Files"
-msgstr ""
+msgstr "Files"
 
 msgctxt "#32070"
 msgid "Place Background Name in Top Bar"
@@ -2228,15 +2228,15 @@ msgstr ""
 
 msgctxt "#32073"
 msgid "Budget"
-msgstr ""
+msgstr "Budget"
 
 msgctxt "#32074"
 msgid "Revenue"
-msgstr ""
+msgstr "Revenue"
 
 msgctxt "#32075"
 msgid "Awards"
-msgstr ""
+msgstr "Awards"
 
 msgctxt "#32076"
 msgid "Show Watched Items in Recent Shelves"
@@ -2364,7 +2364,7 @@ msgstr ""
 
 msgctxt "#32107"
 msgid "Video Info"
-msgstr ""
+msgstr "Video Info"
 
 msgctxt "#32108"
 msgid "Select a Genre"
@@ -2436,11 +2436,11 @@ msgstr ""
 
 msgctxt "#32125"
 msgid "Hour"
-msgstr ""
+msgstr "Hour"
 
 msgctxt "#32126"
 msgid "Minute"
-msgstr ""
+msgstr "Minute"
 
 msgctxt "#32127"
 msgid "Online TMDb Info"
@@ -2456,11 +2456,11 @@ msgstr ""
 
 msgctxt "#32130"
 msgid "Posters"
-msgstr ""
+msgstr "Posters"
 
 msgctxt "#32131"
 msgid "YouTube"
-msgstr ""
+msgstr "YouTube"
 
 msgctxt "#32132"
 msgid "Search for Trailer"
@@ -2476,7 +2476,7 @@ msgstr ""
 
 msgctxt "#32135"
 msgid "Extras"
-msgstr ""
+msgstr "Extras"
 
 msgctxt "#32136"
 msgid "Known for"
@@ -2492,7 +2492,7 @@ msgstr ""
 
 msgctxt "#32139"
 msgid "Ended"
-msgstr ""
+msgstr "Ended"
 
 msgctxt "#32140"
 msgid "Rumored"
@@ -2544,7 +2544,7 @@ msgstr ""
 
 msgctxt "#32152"
 msgid "Creator"
-msgstr ""
+msgstr "Creator"
 
 msgctxt "#32153"
 msgid "Died at Age"
@@ -2829,7 +2829,7 @@ msgstr ""
 
 msgctxt "#32231"
 msgid "User Rating"
-msgstr ""
+msgstr "User Rating"
 
 msgctxt "#32232"
 msgid "Ratings"
@@ -2913,7 +2913,7 @@ msgstr ""
 
 msgctxt "#32254"
 msgid "IMDb Top 250"
-msgstr ""
+msgstr "IMDb Top 250"
 
 msgctxt "#32255"
 msgid "Missing Add-on"
@@ -2933,11 +2933,11 @@ msgstr ""
 
 msgctxt "#32259"
 msgid "Backgrounds"
-msgstr ""
+msgstr "Backgrounds"
 
 msgctxt "#32260"
 msgid "Unwatched"
-msgstr ""
+msgstr "Unwatched"
 
 msgctxt "#32261"
 msgid "Use Embuary Helper for Statistics Line"
@@ -3069,7 +3069,7 @@ msgstr ""
 
 msgctxt "#32294"
 msgid "Ends at"
-msgstr ""
+msgstr "Ends at"
 
 msgctxt "#32295"
 msgid "Netflix style"
@@ -3093,7 +3093,7 @@ msgstr ""
 
 msgctxt "#32300"
 msgid "Now Playing"
-msgstr ""
+msgstr "Now Playing"
 
 msgctxt "#32301"
 msgid "Hide Title Bar Now Playing"
@@ -3125,7 +3125,7 @@ msgstr ""
 
 msgctxt "#32308"
 msgid "Blue"
-msgstr ""
+msgstr "Blue"
 
 msgctxt "#32309"
 msgid "Golden"
@@ -3133,11 +3133,11 @@ msgstr ""
 
 msgctxt "#32310"
 msgid "Green"
-msgstr ""
+msgstr "Green"
 
 msgctxt "#32311"
 msgid "Grey"
-msgstr ""
+msgstr "Grey"
 
 msgctxt "#32312"
 msgid "Orange"
@@ -3145,11 +3145,11 @@ msgstr ""
 
 msgctxt "#32313"
 msgid "Purple"
-msgstr ""
+msgstr "Purple"
 
 msgctxt "#32314"
 msgid "Red"
-msgstr ""
+msgstr "Red"
 
 msgctxt "#32315"
 msgid "Select Now Playing Info for Movies/Episodes"
@@ -3321,7 +3321,7 @@ msgstr ""
 
 msgctxt "#32357"
 msgid "Enable Video Lyrics"
-msgstr ""
+msgstr "Enable Video Lyrics"
 
 msgctxt "#32358"
 msgid "Play Whole Albums from Shelves"
@@ -3385,7 +3385,7 @@ msgstr ""
 
 msgctxt "#32373"
 msgid "End Time"
-msgstr ""
+msgstr "End Time"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
@@ -3485,7 +3485,7 @@ msgstr ""
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "#32401"
 msgid "List Item Type"
@@ -3501,7 +3501,7 @@ msgstr ""
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
@@ -3537,7 +3537,7 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "Enabled"
 
 msgctxt "#32414"
 msgid "Disabled"
@@ -3557,7 +3557,7 @@ msgstr ""
 
 msgctxt "#32418"
 msgid "Single Image"
-msgstr ""
+msgstr "Single Image"
 
 msgctxt "#32419"
 msgid "Multiple Images"
@@ -3641,7 +3641,7 @@ msgstr ""
 
 msgctxt "#32459"
 msgid "Next Aired"
-msgstr ""
+msgstr "Next Aired"
 
 msgctxt "#32460"
 msgid "Enable Direct Seeking in Full Screen Info"
@@ -3661,7 +3661,7 @@ msgstr ""
 
 msgctxt "#32464"
 msgid "Search Trailer"
-msgstr ""
+msgstr "Search Trailer"
 
 msgctxt "#32465"
 msgid "Search for Trailers with IMDb Trailers Addon"
@@ -3745,4 +3745,12 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""

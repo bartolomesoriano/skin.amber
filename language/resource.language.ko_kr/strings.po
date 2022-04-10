@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-09-18 02:04+0000\n"
+"PO-Revision-Date: 2022-03-27 01:18+0000\n"
 "Last-Translator: Minho Park <parkmino@gmail.com>\n"
 "Language-Team: Korean <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/ko_kr/>\n"
 "Language: ko_kr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -43,11 +43,11 @@ msgstr ""
 
 msgctxt "#31004"
 msgid "Shift"
-msgstr ""
+msgstr "이동"
 
 msgctxt "#31005"
 msgid "Cinema"
-msgstr ""
+msgstr "시네마"
 
 msgctxt "#31006"
 msgid "Shared"
@@ -107,7 +107,7 @@ msgstr ""
 
 msgctxt "#31020"
 msgid "Recently Added"
-msgstr ""
+msgstr "최근 추가"
 
 msgctxt "#31021"
 msgid "Recently Played"
@@ -115,7 +115,7 @@ msgstr ""
 
 msgctxt "#31022"
 msgid "Kodi"
-msgstr ""
+msgstr "Kodi"
 
 msgctxt "#31023"
 msgid "Viewtype"
@@ -123,7 +123,7 @@ msgstr "보기 형식"
 
 msgctxt "#31024"
 msgid "Sort by"
-msgstr ""
+msgstr "정렬 기준"
 
 msgctxt "#31025"
 msgid "Items"
@@ -135,7 +135,7 @@ msgstr "기타 옵션"
 
 msgctxt "#31027"
 msgid "Order"
-msgstr ""
+msgstr "순서"
 
 msgctxt "#31028"
 msgid "Amber Settings"
@@ -143,7 +143,7 @@ msgstr ""
 
 msgctxt "#31029"
 msgid "Remaining"
-msgstr ""
+msgstr "남음"
 
 msgctxt "#31030"
 msgid "Settings entry point"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "#31037"
 msgid "Rated"
-msgstr ""
+msgstr "평점"
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
@@ -208,7 +208,7 @@ msgstr ""
 
 msgctxt "#31048"
 msgid "Visualization Presets"
-msgstr ""
+msgstr "시각화 사전설정"
 
 msgctxt "#31049"
 msgid "Settings Level"
@@ -224,7 +224,7 @@ msgstr "정렬: 내림차순"
 
 msgctxt "#31052"
 msgid "Sections"
-msgstr ""
+msgstr "섹션"
 
 msgctxt "#31053"
 msgid "Media Views"
@@ -237,19 +237,19 @@ msgstr ""
 # empty strings from id 31055 to 31068
 msgctxt "#31069"
 msgid "Random episodes"
-msgstr ""
+msgstr "무작위 에피소드"
 
 msgctxt "#31070"
 msgid "Random movies"
-msgstr ""
+msgstr "무작위 영화"
 
 msgctxt "#31071"
 msgid "In progress movies"
-msgstr ""
+msgstr "감상 중인 영화"
 
 msgctxt "#31072"
 msgid "Unwatched TV shows"
-msgstr ""
+msgstr "미시청 TV 프로그램"
 
 msgctxt "#31073"
 msgid "In progress episodes"
@@ -257,11 +257,11 @@ msgstr ""
 
 msgctxt "#31074"
 msgid "Most played albums"
-msgstr ""
+msgstr "많이 재생한 앨범"
 
 msgctxt "#31075"
 msgid "Random Albums"
-msgstr ""
+msgstr "무작위 앨범"
 
 msgctxt "#31076"
 msgid "Most played songs"
@@ -269,11 +269,11 @@ msgstr ""
 
 msgctxt "#31077"
 msgid "Random artists"
-msgstr ""
+msgstr "무작위 아티스트"
 
 msgctxt "#31078"
 msgid "Random music videos"
-msgstr ""
+msgstr "무작위 뮤직 비디오"
 
 msgctxt "#31079"
 msgid "Unwatched videos"
@@ -285,7 +285,7 @@ msgstr ""
 
 msgctxt "#31081"
 msgid "Recent recordings"
-msgstr ""
+msgstr "최근 녹화"
 
 msgctxt "#31082"
 msgid "No content found"
@@ -297,7 +297,7 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Hide Recently Added"
-msgstr ""
+msgstr "최근 추가 숨김"
 
 msgctxt "#31085"
 msgid "Hide Random"
@@ -341,11 +341,11 @@ msgstr ""
 
 msgctxt "#31095"
 msgid "Hide Recordings"
-msgstr ""
+msgstr "녹화 숨김"
 
 msgctxt "#31096"
 msgid "Hide Videos"
-msgstr ""
+msgstr "비디오 숨김"
 
 msgctxt "#31097"
 msgid "Hide Music"
@@ -361,7 +361,7 @@ msgstr ""
 
 msgctxt "#31100"
 msgid "Hide Favourites"
-msgstr ""
+msgstr "즐겨찾기 숨김"
 
 msgctxt "#31101"
 msgid "Hide random episodes"
@@ -419,7 +419,7 @@ msgstr ""
 
 msgctxt "#31118"
 msgid "Small"
-msgstr ""
+msgstr "작게"
 
 msgctxt "#31119"
 msgid "Regular"
@@ -427,7 +427,7 @@ msgstr ""
 
 msgctxt "#31120"
 msgid "Large"
-msgstr ""
+msgstr "크게"
 
 msgctxt "#31121"
 msgid "Apply Changes"
@@ -436,7 +436,7 @@ msgstr ""
 # empty strings from id 31122 to 31128
 msgctxt "#31129"
 msgid "Same director"
-msgstr ""
+msgstr "같은 감독"
 
 msgctxt "#31130"
 msgid "Hourly"
@@ -444,7 +444,7 @@ msgstr ""
 
 msgctxt "#31131"
 msgid "Forecast"
-msgstr ""
+msgstr "예보"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
@@ -452,7 +452,7 @@ msgstr "가사 애드온"
 
 msgctxt "#31133"
 msgid "Toggle audio stream"
-msgstr ""
+msgstr "오디오 스트림 전환"
 
 msgctxt "#31134"
 msgid "Toggle language"
@@ -460,11 +460,11 @@ msgstr ""
 
 msgctxt "#31135"
 msgid "Change mode"
-msgstr ""
+msgstr "모드 변경"
 
 msgctxt "#31136"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "2D로 시청"
 
 msgctxt "#31137"
 msgid "PVR Info"
@@ -472,7 +472,7 @@ msgstr ""
 
 msgctxt "#31138"
 msgid "Player info"
-msgstr ""
+msgstr "재생 정보"
 
 msgctxt "#31139"
 msgid "Video decoder"
@@ -484,7 +484,7 @@ msgstr "픽셀 형식"
 
 msgctxt "#31141"
 msgid "Play speed"
-msgstr ""
+msgstr "재생 속도"
 
 # empty strings from id 31142 to 31149
 msgctxt "#31150"
@@ -525,7 +525,7 @@ msgstr ""
 
 msgctxt "#31159"
 msgid "Logo"
-msgstr ""
+msgstr "로고"
 
 msgctxt "#31160"
 msgid "Disable Logo view"
@@ -547,15 +547,15 @@ msgstr ""
 
 msgctxt "#31295"
 msgid "OpenELEC Settings"
-msgstr ""
+msgstr "OpenELEC 설정"
 
 msgctxt "#31296"
 msgid "LibreELEC Settings"
-msgstr ""
+msgstr "LibreELEC 설정"
 
 msgctxt "#31297"
 msgid "min"
-msgstr ""
+msgstr "분"
 
 msgctxt "#31298"
 msgid "Starting in"
@@ -567,7 +567,7 @@ msgstr ""
 
 msgctxt "#31300"
 msgid "CoreELEC Settings"
-msgstr ""
+msgstr "CoreELEC 설정"
 
 # empty strings from id 31301 to 31308
 msgctxt "#31309"
@@ -606,7 +606,7 @@ msgstr "자막 다운로드"
 
 msgctxt "#31357"
 msgid "Local subtitle available"
-msgstr ""
+msgstr "로컬 자막 있음"
 
 # empty strings from id 31358 to 31359
 # Stereoscopic labels
@@ -649,11 +649,11 @@ msgstr ""
 
 msgctxt "#31395"
 msgid "Delete/Disable Settings Menu Item?"
-msgstr ""
+msgstr "설정 메뉴 항목을 삭제 / 비활성화 하시겠습니까?"
 
 msgctxt "#31396"
 msgid "Are you sure you want to remove the Settings menu item?[CR]Please ensure that you have an alternative method of accessing Settings before you remove this menu item."
-msgstr ""
+msgstr "설정 메뉴 항목을 제거 하시겠습니까?[CR]이 메뉴 항목을 제거하기 전에 설정에 액세스하는 다른 방법이 있는지 확인하십시오."
 
 msgctxt "#31397"
 msgid "Delete/Disable Search Menu Item?"
@@ -681,11 +681,11 @@ msgstr ""
 
 msgctxt "#31403"
 msgid "Random fanart"
-msgstr ""
+msgstr "무작위 팬아트"
 
 msgctxt "#31404"
 msgid "Conditional weather"
-msgstr ""
+msgstr "현재 날씨 상태"
 
 msgctxt "#31405"
 msgid "Movie Library Statistics"
@@ -729,7 +729,7 @@ msgstr ""
 
 msgctxt "#31415"
 msgid "Memory usage"
-msgstr ""
+msgstr "메모리 사용량"
 
 msgctxt "#31416"
 msgid "CPU usage"
@@ -761,23 +761,23 @@ msgstr ""
 
 msgctxt "#31423"
 msgid "Recently Played Movies"
-msgstr ""
+msgstr "최근 재생 영화"
 
 msgctxt "#31424"
 msgid "Random Movies"
-msgstr ""
+msgstr "무작위 영화"
 
 msgctxt "#31425"
 msgid "In Progress Movies"
-msgstr ""
+msgstr "시청 중인 영화"
 
 msgctxt "#31426"
 msgid "Unwatched Movies"
-msgstr ""
+msgstr "미시청 영화"
 
 msgctxt "#31427"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "최고 평점 영화"
 
 msgctxt "#31428"
 msgid "Movie Genres"
@@ -785,7 +785,7 @@ msgstr ""
 
 msgctxt "#31429"
 msgid "Movie Sets"
-msgstr ""
+msgstr "영화 세트"
 
 msgctxt "#31430"
 msgid "Movie Nodes"
@@ -797,7 +797,7 @@ msgstr ""
 
 msgctxt "#31432"
 msgid "TV Shows"
-msgstr ""
+msgstr "TV 프로그램"
 
 msgctxt "#31433"
 msgid "Recently Added TV Shows"
@@ -817,7 +817,7 @@ msgstr ""
 
 msgctxt "#31437"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "미시청 TV 프로그램"
 
 msgctxt "#31438"
 msgid "Top Rated TV Shows"
@@ -837,23 +837,23 @@ msgstr ""
 
 msgctxt "#31442"
 msgid "Recently Played Episodes"
-msgstr ""
+msgstr "최근 재생 에피소드"
 
 msgctxt "#31443"
 msgid "Random Episodes"
-msgstr ""
+msgstr "무작위 에피소드"
 
 msgctxt "#31444"
 msgid "In Progress Episodes"
-msgstr ""
+msgstr "재생 중인 에피소드"
 
 msgctxt "#31445"
 msgid "Unwatched Episodes"
-msgstr ""
+msgstr "미시청 에피소드"
 
 msgctxt "#31446"
 msgid "Top Rated Episodes"
-msgstr ""
+msgstr "최고 평점 에피소드"
 
 msgctxt "#31447"
 msgid "Recently Added Albums"
@@ -861,11 +861,11 @@ msgstr ""
 
 msgctxt "#31448"
 msgid "Recently Played Albums"
-msgstr ""
+msgstr "최근 재생 앨범"
 
 msgctxt "#31449"
 msgid "Random Albums"
-msgstr ""
+msgstr "무작위 앨범"
 
 msgctxt "#31450"
 msgid "Top 100 Albums"
@@ -873,7 +873,7 @@ msgstr ""
 
 msgctxt "#31451"
 msgid "Random Artists"
-msgstr ""
+msgstr "무작위 아티스트"
 
 msgctxt "#31452"
 msgid "Music Nodes"
@@ -881,7 +881,7 @@ msgstr ""
 
 msgctxt "#31453"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31454"
 msgid "Last Played TV Channels"
@@ -949,7 +949,7 @@ msgstr ""
 
 msgctxt "#31470"
 msgid "Random Songs"
-msgstr ""
+msgstr "무작위 곡"
 
 msgctxt "#31471"
 msgid "Recently Added Music Videos"
@@ -977,19 +977,19 @@ msgstr ""
 
 msgctxt "#31477"
 msgid "Memory Used"
-msgstr ""
+msgstr "메모리 사용량"
 
 msgctxt "#31478"
 msgid "Remaining"
-msgstr ""
+msgstr "남음"
 
 msgctxt "#31479"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31480"
 msgid "Sort By"
-msgstr ""
+msgstr "정렬 기준"
 
 msgctxt "#31481"
 msgid "Sort Order"
@@ -1021,7 +1021,7 @@ msgstr ""
 
 msgctxt "#31488"
 msgid "Next Aired Episodes"
-msgstr ""
+msgstr "다음 방송 에피소드"
 
 msgctxt "#31489"
 msgid "Next Episodes"
@@ -1041,7 +1041,7 @@ msgstr ""
 
 msgctxt "#31493"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "미시청 TV 프로그램"
 
 msgctxt "#31494"
 msgid "Recently Released Albums"
@@ -1069,7 +1069,7 @@ msgstr ""
 
 msgctxt "#31500"
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
@@ -1139,7 +1139,7 @@ msgstr ""
 
 msgctxt "#31520"
 msgid "Upcoming Movies"
-msgstr ""
+msgstr "개봉예정 영화"
 
 msgctxt "#31521"
 msgid "In-Theater Movies"
@@ -1171,7 +1171,7 @@ msgstr ""
 
 msgctxt "#31528"
 msgid "Power Menu"
-msgstr ""
+msgstr "전원 메뉴"
 
 msgctxt "#31529"
 msgid "Popular People"
@@ -1195,7 +1195,7 @@ msgstr ""
 
 msgctxt "#31534"
 msgid "People"
-msgstr ""
+msgstr "인물"
 
 msgctxt "#31535"
 msgid "People Trending Today"
@@ -1503,11 +1503,11 @@ msgstr ""
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr ""
+msgstr "포스터"
 
 msgctxt "#31612"
 msgid "Square"
-msgstr ""
+msgstr "스퀘어"
 
 msgctxt "#31613"
 msgid "Standard"
@@ -1539,15 +1539,15 @@ msgstr ""
 
 msgctxt "#31620"
 msgid "Landscape"
-msgstr ""
+msgstr "가로"
 
 msgctxt "#31621"
 msgid "Clear Logo"
-msgstr ""
+msgstr "투명한 로고"
 
 msgctxt "#31622"
 msgid "Clear Art"
-msgstr ""
+msgstr "투명한 아트워크"
 
 msgctxt "#31623"
 msgid "Disc Art"
@@ -1603,7 +1603,7 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "바로가기"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
@@ -1767,7 +1767,7 @@ msgstr ""
 
 msgctxt "#31955"
 msgid "Hide"
-msgstr ""
+msgstr "숨김"
 
 msgctxt "#31956"
 msgid "Get theme"
@@ -1792,7 +1792,7 @@ msgstr ""
 
 msgctxt "#31961"
 msgid "Recently added"
-msgstr ""
+msgstr "최근 추가"
 
 #. view label
 msgctxt "#31962"
@@ -1802,7 +1802,7 @@ msgstr ""
 #. view label
 msgctxt "#31963"
 msgid "Panel"
-msgstr ""
+msgstr "패널"
 
 msgctxt "#31964"
 msgid "Configure shelf items"
@@ -1815,7 +1815,7 @@ msgstr ""
 
 msgctxt "#31966"
 msgid "Recommended"
-msgstr ""
+msgstr "추천"
 
 msgctxt "#31967"
 msgid "Enable Home shelf"
@@ -1848,7 +1848,7 @@ msgstr ""
 
 msgctxt "#31974"
 msgid "Home menu"
-msgstr ""
+msgstr "홈 메뉴"
 
 msgctxt "#31975"
 msgid "Channels"
@@ -1945,7 +1945,7 @@ msgstr ""
 
 msgctxt "#31999"
 msgid "BigList"
-msgstr ""
+msgstr "큰 목록"
 
 msgctxt "#32000"
 msgid "Hide icons"
@@ -1974,7 +1974,7 @@ msgstr ""
 
 msgctxt "#32007"
 msgid "Special Features"
-msgstr ""
+msgstr "특징"
 
 msgctxt "#32008"
 msgid "Enable Special Features"
@@ -1982,7 +1982,7 @@ msgstr ""
 
 msgctxt "#32009"
 msgid "Next Episode"
-msgstr ""
+msgstr "다음 에피소드"
 
 msgctxt "#32010"
 msgid "Latest Episode"
@@ -1990,7 +1990,7 @@ msgstr ""
 
 msgctxt "#32011"
 msgid "Airs"
-msgstr ""
+msgstr "방송"
 
 # empty string with id 32012
 msgctxt "#32013"
@@ -2007,7 +2007,7 @@ msgstr ""
 
 msgctxt "#32016"
 msgid "Extended Info"
-msgstr ""
+msgstr "확장 정보"
 
 msgctxt "#32017"
 msgid "Search in Local Library"
@@ -2095,11 +2095,11 @@ msgstr ""
 
 msgctxt "#32039"
 msgid "Timeshift"
-msgstr ""
+msgstr "시간 이동"
 
 msgctxt "#32040"
 msgid "Enable Kiosk Mode"
-msgstr ""
+msgstr "전시모드 사용"
 
 # empty string with id 32041
 msgctxt "#32042"
@@ -2112,7 +2112,7 @@ msgstr ""
 
 msgctxt "#32044"
 msgid "Submenu"
-msgstr ""
+msgstr "하위 메뉴"
 
 msgctxt "#32045"
 msgid "Shelves"
@@ -2124,7 +2124,7 @@ msgstr ""
 
 msgctxt "#32047"
 msgid "Seconds"
-msgstr ""
+msgstr "초"
 
 msgctxt "#32048"
 msgid "Show background name in Home window"
@@ -2136,7 +2136,7 @@ msgstr ""
 
 msgctxt "#32050"
 msgid "IPTV Recorder"
-msgstr ""
+msgstr "IPTV 녹화"
 
 msgctxt "#32051"
 msgid "IPTV Recorder Recordings"
@@ -2212,7 +2212,7 @@ msgstr ""
 
 msgctxt "#32069"
 msgid "Files"
-msgstr ""
+msgstr "파일"
 
 msgctxt "#32070"
 msgid "Place Background Name in Top Bar"
@@ -2228,15 +2228,15 @@ msgstr ""
 
 msgctxt "#32073"
 msgid "Budget"
-msgstr ""
+msgstr "예산"
 
 msgctxt "#32074"
 msgid "Revenue"
-msgstr ""
+msgstr "수익"
 
 msgctxt "#32075"
 msgid "Awards"
-msgstr ""
+msgstr "수상"
 
 msgctxt "#32076"
 msgid "Show Watched Items in Recent Shelves"
@@ -2272,7 +2272,7 @@ msgstr ""
 
 msgctxt "#32084"
 msgid "Age"
-msgstr ""
+msgstr "나이"
 
 msgctxt "#32085"
 msgid "Died"
@@ -2332,7 +2332,7 @@ msgstr ""
 
 msgctxt "#32099"
 msgid "Crew"
-msgstr ""
+msgstr "크루"
 
 msgctxt "#32100"
 msgid "More from"
@@ -2344,7 +2344,7 @@ msgstr ""
 
 msgctxt "#32102"
 msgid "Similar to"
-msgstr ""
+msgstr "유사한 작품"
 
 msgctxt "#32103"
 msgid "Cast Members also appear in"
@@ -2356,7 +2356,7 @@ msgstr ""
 
 msgctxt "#32105"
 msgid "Similar"
-msgstr ""
+msgstr "유사"
 
 msgctxt "#32106"
 msgid "Featuring Cast Members"
@@ -2364,7 +2364,7 @@ msgstr ""
 
 msgctxt "#32107"
 msgid "Video Info"
-msgstr ""
+msgstr "비디오 정보"
 
 msgctxt "#32108"
 msgid "Select a Genre"
@@ -2436,11 +2436,11 @@ msgstr ""
 
 msgctxt "#32125"
 msgid "Hour"
-msgstr ""
+msgstr "시간"
 
 msgctxt "#32126"
 msgid "Minute"
-msgstr ""
+msgstr "분"
 
 msgctxt "#32127"
 msgid "Online TMDb Info"
@@ -2456,11 +2456,11 @@ msgstr ""
 
 msgctxt "#32130"
 msgid "Posters"
-msgstr ""
+msgstr "포스터"
 
 msgctxt "#32131"
 msgid "YouTube"
-msgstr ""
+msgstr "유튜브"
 
 msgctxt "#32132"
 msgid "Search for Trailer"
@@ -2476,7 +2476,7 @@ msgstr ""
 
 msgctxt "#32135"
 msgid "Extras"
-msgstr ""
+msgstr "기타"
 
 msgctxt "#32136"
 msgid "Known for"
@@ -2492,7 +2492,7 @@ msgstr ""
 
 msgctxt "#32139"
 msgid "Ended"
-msgstr ""
+msgstr "종료됨"
 
 msgctxt "#32140"
 msgid "Rumored"
@@ -2544,7 +2544,7 @@ msgstr ""
 
 msgctxt "#32152"
 msgid "Creator"
-msgstr ""
+msgstr "만든이"
 
 msgctxt "#32153"
 msgid "Died at Age"
@@ -2829,7 +2829,7 @@ msgstr ""
 
 msgctxt "#32231"
 msgid "User Rating"
-msgstr ""
+msgstr "사용자 평점"
 
 msgctxt "#32232"
 msgid "Ratings"
@@ -2913,7 +2913,7 @@ msgstr ""
 
 msgctxt "#32254"
 msgid "IMDb Top 250"
-msgstr ""
+msgstr "IMDb 상위 250위"
 
 msgctxt "#32255"
 msgid "Missing Add-on"
@@ -2933,11 +2933,11 @@ msgstr ""
 
 msgctxt "#32259"
 msgid "Backgrounds"
-msgstr ""
+msgstr "배경"
 
 msgctxt "#32260"
 msgid "Unwatched"
-msgstr ""
+msgstr "미시청"
 
 msgctxt "#32261"
 msgid "Use Embuary Helper for Statistics Line"
@@ -3069,7 +3069,7 @@ msgstr ""
 
 msgctxt "#32294"
 msgid "Ends at"
-msgstr ""
+msgstr "종료 시간"
 
 msgctxt "#32295"
 msgid "Netflix style"
@@ -3093,7 +3093,7 @@ msgstr ""
 
 msgctxt "#32300"
 msgid "Now Playing"
-msgstr ""
+msgstr "지금 재생 중"
 
 msgctxt "#32301"
 msgid "Hide Title Bar Now Playing"
@@ -3113,7 +3113,7 @@ msgstr ""
 
 msgctxt "#32305"
 msgid "Vinyl"
-msgstr ""
+msgstr "비닐"
 
 msgctxt "#32306"
 msgid "None"
@@ -3209,7 +3209,7 @@ msgstr ""
 
 msgctxt "#32329"
 msgid "Special"
-msgstr ""
+msgstr "특별"
 
 msgctxt "#32330"
 msgid "Next Tracks"
@@ -3245,7 +3245,7 @@ msgstr ""
 
 msgctxt "#32338"
 msgid "Current Color"
-msgstr ""
+msgstr "현재 색상"
 
 msgctxt "#32339"
 msgid "Value"
@@ -3385,7 +3385,7 @@ msgstr ""
 
 msgctxt "#32373"
 msgid "End Time"
-msgstr ""
+msgstr "종료 시간"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
@@ -3485,7 +3485,7 @@ msgstr ""
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "배너"
 
 msgctxt "#32401"
 msgid "List Item Type"
@@ -3501,7 +3501,7 @@ msgstr ""
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "해당 없음"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
@@ -3537,7 +3537,7 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "사용함"
 
 msgctxt "#32414"
 msgid "Disabled"
@@ -3557,7 +3557,7 @@ msgstr ""
 
 msgctxt "#32418"
 msgid "Single Image"
-msgstr ""
+msgstr "단일 이미지"
 
 msgctxt "#32419"
 msgid "Multiple Images"
@@ -3641,7 +3641,7 @@ msgstr ""
 
 msgctxt "#32459"
 msgid "Next Aired"
-msgstr ""
+msgstr "다음 방송"
 
 msgctxt "#32460"
 msgid "Enable Direct Seeking in Full Screen Info"
@@ -3745,4 +3745,12 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""

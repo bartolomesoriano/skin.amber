@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-05-25 10:09+0000\n"
+"PO-Revision-Date: 2022-03-27 01:18+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Japanese <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/ja_jp/>\n"
 "Language: ja_jp\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -43,11 +43,11 @@ msgstr ""
 
 msgctxt "#31004"
 msgid "Shift"
-msgstr ""
+msgstr "シフト"
 
 msgctxt "#31005"
 msgid "Cinema"
-msgstr ""
+msgstr "シネマ"
 
 msgctxt "#31006"
 msgid "Shared"
@@ -107,7 +107,7 @@ msgstr ""
 
 msgctxt "#31020"
 msgid "Recently Added"
-msgstr ""
+msgstr "最近追加"
 
 msgctxt "#31021"
 msgid "Recently Played"
@@ -115,27 +115,27 @@ msgstr ""
 
 msgctxt "#31022"
 msgid "Kodi"
-msgstr ""
+msgstr "Kodi"
 
 msgctxt "#31023"
 msgid "Viewtype"
-msgstr ""
+msgstr "表示タイプ"
 
 msgctxt "#31024"
 msgid "Sort by"
-msgstr ""
+msgstr "ソート"
 
 msgctxt "#31025"
 msgid "Items"
-msgstr ""
+msgstr "アイテム"
 
 msgctxt "#31026"
 msgid "Misc options"
-msgstr ""
+msgstr "その他オプション"
 
 msgctxt "#31027"
 msgid "Order"
-msgstr ""
+msgstr "並べ替え"
 
 msgctxt "#31028"
 msgid "Amber Settings"
@@ -143,7 +143,7 @@ msgstr ""
 
 msgctxt "#31029"
 msgid "Remaining"
-msgstr ""
+msgstr "残り"
 
 msgctxt "#31030"
 msgid "Settings entry point"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "#31037"
 msgid "Rated"
-msgstr ""
+msgstr "評価済み"
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
@@ -208,7 +208,7 @@ msgstr ""
 
 msgctxt "#31048"
 msgid "Visualization Presets"
-msgstr ""
+msgstr "ビジュアライザプリセット"
 
 msgctxt "#31049"
 msgid "Settings Level"
@@ -216,15 +216,15 @@ msgstr ""
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
-msgstr ""
+msgstr "ソート: 昇順"
 
 msgctxt "#31051"
 msgid "Sort: Descending"
-msgstr ""
+msgstr "ソート: 降順"
 
 msgctxt "#31052"
 msgid "Sections"
-msgstr ""
+msgstr "セクション"
 
 msgctxt "#31053"
 msgid "Media Views"
@@ -237,15 +237,15 @@ msgstr ""
 # empty strings from id 31055 to 31068
 msgctxt "#31069"
 msgid "Random episodes"
-msgstr ""
+msgstr "ランダムなエピソード"
 
 msgctxt "#31070"
 msgid "Random movies"
-msgstr ""
+msgstr "ランダムなムービー"
 
 msgctxt "#31071"
 msgid "In progress movies"
-msgstr ""
+msgstr "進行中のムービー"
 
 msgctxt "#31072"
 msgid "Unwatched TV shows"
@@ -257,7 +257,7 @@ msgstr ""
 
 msgctxt "#31074"
 msgid "Most played albums"
-msgstr ""
+msgstr "最も再生したアルバム"
 
 msgctxt "#31075"
 msgid "Random Albums"
@@ -269,11 +269,11 @@ msgstr ""
 
 msgctxt "#31077"
 msgid "Random artists"
-msgstr ""
+msgstr "ランダムアーティスト"
 
 msgctxt "#31078"
 msgid "Random music videos"
-msgstr ""
+msgstr "ランダムミュージックビデオ"
 
 msgctxt "#31079"
 msgid "Unwatched videos"
@@ -285,7 +285,7 @@ msgstr ""
 
 msgctxt "#31081"
 msgid "Recent recordings"
-msgstr ""
+msgstr "最近の録画"
 
 msgctxt "#31082"
 msgid "No content found"
@@ -297,7 +297,7 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Hide Recently Added"
-msgstr ""
+msgstr "最近追加したを隠す"
 
 msgctxt "#31085"
 msgid "Hide Random"
@@ -341,11 +341,11 @@ msgstr ""
 
 msgctxt "#31095"
 msgid "Hide Recordings"
-msgstr ""
+msgstr "録画を隠す"
 
 msgctxt "#31096"
 msgid "Hide Videos"
-msgstr ""
+msgstr "ビデオを隠す"
 
 msgctxt "#31097"
 msgid "Hide Music"
@@ -361,7 +361,7 @@ msgstr ""
 
 msgctxt "#31100"
 msgid "Hide Favourites"
-msgstr ""
+msgstr "お気に入りを隠す"
 
 msgctxt "#31101"
 msgid "Hide random episodes"
@@ -419,7 +419,7 @@ msgstr ""
 
 msgctxt "#31118"
 msgid "Small"
-msgstr ""
+msgstr "小さく"
 
 msgctxt "#31119"
 msgid "Regular"
@@ -427,7 +427,7 @@ msgstr ""
 
 msgctxt "#31120"
 msgid "Large"
-msgstr ""
+msgstr "大きい"
 
 msgctxt "#31121"
 msgid "Apply Changes"
@@ -436,7 +436,7 @@ msgstr ""
 # empty strings from id 31122 to 31128
 msgctxt "#31129"
 msgid "Same director"
-msgstr ""
+msgstr "同じ監督"
 
 msgctxt "#31130"
 msgid "Hourly"
@@ -444,15 +444,15 @@ msgstr ""
 
 msgctxt "#31131"
 msgid "Forecast"
-msgstr ""
+msgstr "予報"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
-msgstr ""
+msgstr "歌詞アドオン"
 
 msgctxt "#31133"
 msgid "Toggle audio stream"
-msgstr ""
+msgstr "オーディオストリームをトグル"
 
 msgctxt "#31134"
 msgid "Toggle language"
@@ -460,11 +460,11 @@ msgstr ""
 
 msgctxt "#31135"
 msgid "Change mode"
-msgstr ""
+msgstr "モードを変更"
 
 msgctxt "#31136"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "2D で観る"
 
 msgctxt "#31137"
 msgid "PVR Info"
@@ -472,7 +472,7 @@ msgstr ""
 
 msgctxt "#31138"
 msgid "Player info"
-msgstr ""
+msgstr "プレイヤー詳細"
 
 msgctxt "#31139"
 msgid "Video decoder"
@@ -484,7 +484,7 @@ msgstr "ピクセル形式"
 
 msgctxt "#31141"
 msgid "Play speed"
-msgstr ""
+msgstr "再生速度"
 
 # empty strings from id 31142 to 31149
 msgctxt "#31150"
@@ -525,7 +525,7 @@ msgstr ""
 
 msgctxt "#31159"
 msgid "Logo"
-msgstr ""
+msgstr "ロゴ"
 
 msgctxt "#31160"
 msgid "Disable Logo view"
@@ -547,15 +547,15 @@ msgstr ""
 
 msgctxt "#31295"
 msgid "OpenELEC Settings"
-msgstr ""
+msgstr "OpenELECの設定"
 
 msgctxt "#31296"
 msgid "LibreELEC Settings"
-msgstr ""
+msgstr "LibreELECの設定"
 
 msgctxt "#31297"
 msgid "min"
-msgstr ""
+msgstr "分"
 
 msgctxt "#31298"
 msgid "Starting in"
@@ -567,60 +567,60 @@ msgstr ""
 
 msgctxt "#31300"
 msgid "CoreELEC Settings"
-msgstr ""
+msgstr "CoreELECの設定"
 
 # empty strings from id 31301 to 31308
 msgctxt "#31309"
 msgid "Memory Used"
-msgstr ""
+msgstr "メモリ使用量"
 
 # empty strings from id 31310 to 31321
 msgctxt "#31322"
 msgid "Aired"
-msgstr ""
+msgstr "放映日"
 
 # empty strings from id 31323 to 31350
 msgctxt "#31351"
 msgid "Pause"
-msgstr ""
+msgstr "一時停止"
 
 msgctxt "#31352"
 msgid "Stop"
-msgstr ""
+msgstr "停止"
 
 msgctxt "#31353"
 msgid "Fast Forward"
-msgstr ""
+msgstr "早送り"
 
 msgctxt "#31354"
 msgid "Rewind"
-msgstr ""
+msgstr "巻き戻し"
 
 msgctxt "#31355"
 msgid "Movie menu"
-msgstr ""
+msgstr "ムービーメニュー"
 
 msgctxt "#31356"
 msgid "Download Subtitles"
-msgstr ""
+msgstr "字幕をダウンロード"
 
 msgctxt "#31357"
 msgid "Local subtitle available"
-msgstr ""
+msgstr "ローカルの字幕を利用できます"
 
 # empty strings from id 31358 to 31359
 # Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "2D で観る"
 
 msgctxt "#31361"
 msgid "Change mode"
-msgstr ""
+msgstr "モードを変更"
 
 msgctxt "#31362"
 msgid "Enabled"
-msgstr ""
+msgstr "LCD有効"
 
 msgctxt "#31363"
 msgid "Static"
@@ -681,11 +681,11 @@ msgstr ""
 
 msgctxt "#31403"
 msgid "Random fanart"
-msgstr ""
+msgstr "ランダムなファンアート"
 
 msgctxt "#31404"
 msgid "Conditional weather"
-msgstr ""
+msgstr "条件付きの天気"
 
 msgctxt "#31405"
 msgid "Movie Library Statistics"
@@ -757,7 +757,7 @@ msgstr ""
 
 msgctxt "#31422"
 msgid "Recently Added Movies"
-msgstr ""
+msgstr "最近追加したムービー"
 
 msgctxt "#31423"
 msgid "Recently Played Movies"
@@ -769,7 +769,7 @@ msgstr ""
 
 msgctxt "#31425"
 msgid "In Progress Movies"
-msgstr ""
+msgstr "進行中のムービー"
 
 msgctxt "#31426"
 msgid "Unwatched Movies"
@@ -777,7 +777,7 @@ msgstr ""
 
 msgctxt "#31427"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "評価の高いムービー"
 
 msgctxt "#31428"
 msgid "Movie Genres"
@@ -813,15 +813,15 @@ msgstr ""
 
 msgctxt "#31436"
 msgid "In Progress TV Shows"
-msgstr ""
+msgstr "進行中のテレビ番組"
 
 msgctxt "#31437"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "未視聴のTV番組"
 
 msgctxt "#31438"
 msgid "Top Rated TV Shows"
-msgstr ""
+msgstr "評価の高いTV番組"
 
 msgctxt "#31439"
 msgid "TV Show Genres"
@@ -857,11 +857,11 @@ msgstr ""
 
 msgctxt "#31447"
 msgid "Recently Added Albums"
-msgstr ""
+msgstr "最近追加されたアルバム"
 
 msgctxt "#31448"
 msgid "Recently Played Albums"
-msgstr ""
+msgstr "最近再生されたアルバム"
 
 msgctxt "#31449"
 msgid "Random Albums"
@@ -881,7 +881,7 @@ msgstr ""
 
 msgctxt "#31453"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31454"
 msgid "Last Played TV Channels"
@@ -977,19 +977,19 @@ msgstr ""
 
 msgctxt "#31477"
 msgid "Memory Used"
-msgstr ""
+msgstr "メモリ使用量"
 
 msgctxt "#31478"
 msgid "Remaining"
-msgstr ""
+msgstr "残り"
 
 msgctxt "#31479"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31480"
 msgid "Sort By"
-msgstr ""
+msgstr "ソート順"
 
 msgctxt "#31481"
 msgid "Sort Order"
@@ -1041,7 +1041,7 @@ msgstr ""
 
 msgctxt "#31493"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "未視聴のTV番組"
 
 msgctxt "#31494"
 msgid "Recently Released Albums"
@@ -1069,11 +1069,11 @@ msgstr ""
 
 msgctxt "#31500"
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
-msgstr ""
+msgstr "タイマー予約時間"
 
 msgctxt "#31502"
 msgid "All Movies"
@@ -1081,19 +1081,19 @@ msgstr ""
 
 msgctxt "#31503"
 msgid "Add Group"
-msgstr ""
+msgstr "グループの追加"
 
 msgctxt "#31504"
 msgid "Rename Group"
-msgstr ""
+msgstr "グループ名の変更"
 
 msgctxt "#31505"
 msgid "Delete Group"
-msgstr ""
+msgstr "グループの削除"
 
 msgctxt "#31506"
 msgid "Available[CR]Groups"
-msgstr ""
+msgstr "利用可能な[CR]グループ"
 
 msgctxt "#31507"
 msgid "Opens"
@@ -1106,7 +1106,7 @@ msgstr ""
 
 msgctxt "#31510"
 msgid "Timer Set"
-msgstr ""
+msgstr "タイマーセット完了"
 
 msgctxt "#31511"
 msgid "Reminder Set"
@@ -1119,7 +1119,7 @@ msgstr ""
 
 msgctxt "#31515"
 msgid "Recently Updated TV Shows"
-msgstr ""
+msgstr "最近アップデートされたTV番組"
 
 msgctxt "#31516"
 msgid "Similar TV Shows based on Watched"
@@ -1139,7 +1139,7 @@ msgstr ""
 
 msgctxt "#31520"
 msgid "Upcoming Movies"
-msgstr ""
+msgstr "今後のムービー"
 
 msgctxt "#31521"
 msgid "In-Theater Movies"
@@ -1163,7 +1163,7 @@ msgstr ""
 
 msgctxt "#31526"
 msgid "Next Up Episodes"
-msgstr ""
+msgstr "次に開始するエピソード"
 
 msgctxt "#31527"
 msgid "Reboot to Android"
@@ -1503,11 +1503,11 @@ msgstr ""
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr ""
+msgstr "ポスター"
 
 msgctxt "#31612"
 msgid "Square"
-msgstr ""
+msgstr "正方形"
 
 msgctxt "#31613"
 msgid "Standard"
@@ -1539,15 +1539,15 @@ msgstr ""
 
 msgctxt "#31620"
 msgid "Landscape"
-msgstr ""
+msgstr "ランドスケープ"
 
 msgctxt "#31621"
 msgid "Clear Logo"
-msgstr ""
+msgstr "ロゴのクリア"
 
 msgctxt "#31622"
 msgid "Clear Art"
-msgstr ""
+msgstr "アートのクリア"
 
 msgctxt "#31623"
 msgid "Disc Art"
@@ -1603,7 +1603,7 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "ショートカット"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
@@ -1679,19 +1679,19 @@ msgstr ""
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
-msgstr ""
+msgstr "36時間予報"
 
 msgctxt "#31902"
 msgid "Hourly Forecast"
-msgstr ""
+msgstr "1時間ごとの予報"
 
 msgctxt "#31903"
 msgid "Weekend Forecast"
-msgstr ""
+msgstr "週末の予報"
 
 msgctxt "#31904"
 msgid "10 Day Forecast"
-msgstr ""
+msgstr "10日予報"
 
 # empty strings from id 31905 to 31919
 msgctxt "#31920"
@@ -1767,7 +1767,7 @@ msgstr ""
 
 msgctxt "#31955"
 msgid "Hide"
-msgstr ""
+msgstr "隠す"
 
 msgctxt "#31956"
 msgid "Get theme"
@@ -1792,7 +1792,7 @@ msgstr ""
 
 msgctxt "#31961"
 msgid "Recently added"
-msgstr ""
+msgstr "最近追加"
 
 #. view label
 msgctxt "#31962"
@@ -1815,7 +1815,7 @@ msgstr ""
 
 msgctxt "#31966"
 msgid "Recommended"
-msgstr ""
+msgstr "推奨"
 
 msgctxt "#31967"
 msgid "Enable Home shelf"
@@ -1848,7 +1848,7 @@ msgstr ""
 
 msgctxt "#31974"
 msgid "Home menu"
-msgstr ""
+msgstr "ホームメニュー"
 
 msgctxt "#31975"
 msgid "Channels"
@@ -1954,11 +1954,11 @@ msgstr ""
 # empty string with id 32001
 msgctxt "#32002"
 msgid "Hide Games"
-msgstr ""
+msgstr "ゲームを隠す"
 
 msgctxt "#32003"
 msgid "Game Settings"
-msgstr ""
+msgstr "ゲームの設定"
 
 msgctxt "#32004"
 msgid "Toggle Subtitle"
@@ -1990,7 +1990,7 @@ msgstr ""
 
 msgctxt "#32011"
 msgid "Airs"
-msgstr ""
+msgstr "放送"
 
 # empty string with id 32012
 msgctxt "#32013"
@@ -2095,11 +2095,11 @@ msgstr ""
 
 msgctxt "#32039"
 msgid "Timeshift"
-msgstr ""
+msgstr "タイムシフト"
 
 msgctxt "#32040"
 msgid "Enable Kiosk Mode"
-msgstr ""
+msgstr "キオスクモードを有効にする"
 
 # empty string with id 32041
 msgctxt "#32042"
@@ -2124,7 +2124,7 @@ msgstr ""
 
 msgctxt "#32047"
 msgid "Seconds"
-msgstr ""
+msgstr "秒"
 
 msgctxt "#32048"
 msgid "Show background name in Home window"
@@ -2212,7 +2212,7 @@ msgstr ""
 
 msgctxt "#32069"
 msgid "Files"
-msgstr ""
+msgstr "ファイル"
 
 msgctxt "#32070"
 msgid "Place Background Name in Top Bar"
@@ -2436,11 +2436,11 @@ msgstr ""
 
 msgctxt "#32125"
 msgid "Hour"
-msgstr ""
+msgstr "時間"
 
 msgctxt "#32126"
 msgid "Minute"
-msgstr ""
+msgstr "分"
 
 msgctxt "#32127"
 msgid "Online TMDb Info"
@@ -2460,7 +2460,7 @@ msgstr ""
 
 msgctxt "#32131"
 msgid "YouTube"
-msgstr ""
+msgstr "YouTube"
 
 msgctxt "#32132"
 msgid "Search for Trailer"
@@ -2476,7 +2476,7 @@ msgstr ""
 
 msgctxt "#32135"
 msgid "Extras"
-msgstr ""
+msgstr "エクストラ"
 
 msgctxt "#32136"
 msgid "Known for"
@@ -2544,7 +2544,7 @@ msgstr ""
 
 msgctxt "#32152"
 msgid "Creator"
-msgstr ""
+msgstr "クリエイター"
 
 msgctxt "#32153"
 msgid "Died at Age"
@@ -2829,7 +2829,7 @@ msgstr ""
 
 msgctxt "#32231"
 msgid "User Rating"
-msgstr ""
+msgstr "ユーザーの評価"
 
 msgctxt "#32232"
 msgid "Ratings"
@@ -2913,7 +2913,7 @@ msgstr ""
 
 msgctxt "#32254"
 msgid "IMDb Top 250"
-msgstr ""
+msgstr "IMDb Top 250"
 
 msgctxt "#32255"
 msgid "Missing Add-on"
@@ -2933,7 +2933,7 @@ msgstr ""
 
 msgctxt "#32259"
 msgid "Backgrounds"
-msgstr ""
+msgstr "バックグラウンド"
 
 msgctxt "#32260"
 msgid "Unwatched"
@@ -3069,7 +3069,7 @@ msgstr ""
 
 msgctxt "#32294"
 msgid "Ends at"
-msgstr ""
+msgstr "終了時間"
 
 msgctxt "#32295"
 msgid "Netflix style"
@@ -3093,7 +3093,7 @@ msgstr ""
 
 msgctxt "#32300"
 msgid "Now Playing"
-msgstr ""
+msgstr "現在再生中"
 
 msgctxt "#32301"
 msgid "Hide Title Bar Now Playing"
@@ -3209,7 +3209,7 @@ msgstr ""
 
 msgctxt "#32329"
 msgid "Special"
-msgstr ""
+msgstr "スペシャル"
 
 msgctxt "#32330"
 msgid "Next Tracks"
@@ -3321,7 +3321,7 @@ msgstr ""
 
 msgctxt "#32357"
 msgid "Enable Video Lyrics"
-msgstr ""
+msgstr "ビデオの歌詞表示を有効にする"
 
 msgctxt "#32358"
 msgid "Play Whole Albums from Shelves"
@@ -3385,7 +3385,7 @@ msgstr ""
 
 msgctxt "#32373"
 msgid "End Time"
-msgstr ""
+msgstr "終了時間"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
@@ -3485,7 +3485,7 @@ msgstr ""
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "バナー"
 
 msgctxt "#32401"
 msgid "List Item Type"
@@ -3501,7 +3501,7 @@ msgstr ""
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
@@ -3537,7 +3537,7 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "LCD有効"
 
 msgctxt "#32414"
 msgid "Disabled"
@@ -3557,7 +3557,7 @@ msgstr ""
 
 msgctxt "#32418"
 msgid "Single Image"
-msgstr ""
+msgstr "単一画像"
 
 msgctxt "#32419"
 msgid "Multiple Images"
@@ -3661,7 +3661,7 @@ msgstr ""
 
 msgctxt "#32464"
 msgid "Search Trailer"
-msgstr ""
+msgstr "トレーラーの検索"
 
 msgctxt "#32465"
 msgid "Search for Trailers with IMDb Trailers Addon"
@@ -3741,8 +3741,16 @@ msgstr ""
 
 msgctxt "#32484"
 msgid "Update Library"
-msgstr ""
+msgstr "アップデート ライブラリ"
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""

@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2019-10-13 09:32-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-03-27 01:18+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Latvian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/lv_lv/>\n"
 "Language: lv_lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= 19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -43,11 +43,11 @@ msgstr ""
 
 msgctxt "#31004"
 msgid "Shift"
-msgstr ""
+msgstr "Shift"
 
 msgctxt "#31005"
 msgid "Cinema"
-msgstr ""
+msgstr "Kino"
 
 msgctxt "#31006"
 msgid "Shared"
@@ -107,7 +107,7 @@ msgstr ""
 
 msgctxt "#31020"
 msgid "Recently Added"
-msgstr ""
+msgstr "Nesen Pievienotās"
 
 msgctxt "#31021"
 msgid "Recently Played"
@@ -119,23 +119,23 @@ msgstr ""
 
 msgctxt "#31023"
 msgid "Viewtype"
-msgstr ""
+msgstr "Skata veids"
 
 msgctxt "#31024"
 msgid "Sort by"
-msgstr ""
+msgstr "Kārtot pēc"
 
 msgctxt "#31025"
 msgid "Items"
-msgstr ""
+msgstr "Vienumi"
 
 msgctxt "#31026"
 msgid "Misc options"
-msgstr ""
+msgstr "Dažādas opcijas"
 
 msgctxt "#31027"
 msgid "Order"
-msgstr ""
+msgstr "Kārtība"
 
 msgctxt "#31028"
 msgid "Amber Settings"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "#31037"
 msgid "Rated"
-msgstr ""
+msgstr "Novērtēts"
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
@@ -208,7 +208,7 @@ msgstr ""
 
 msgctxt "#31048"
 msgid "Visualization Presets"
-msgstr ""
+msgstr "Vizualizācijas sagataves"
 
 msgctxt "#31049"
 msgid "Settings Level"
@@ -216,11 +216,11 @@ msgstr ""
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
-msgstr ""
+msgstr "Kārtot: Augošā secībā"
 
 msgctxt "#31051"
 msgid "Sort: Descending"
-msgstr ""
+msgstr "Kārtot: Dilstošā secībā"
 
 msgctxt "#31052"
 msgid "Sections"
@@ -241,11 +241,11 @@ msgstr ""
 
 msgctxt "#31070"
 msgid "Random movies"
-msgstr ""
+msgstr "Nejaušas filmas"
 
 msgctxt "#31071"
 msgid "In progress movies"
-msgstr ""
+msgstr "Notiek filmas"
 
 msgctxt "#31072"
 msgid "Unwatched TV shows"
@@ -257,7 +257,7 @@ msgstr ""
 
 msgctxt "#31074"
 msgid "Most played albums"
-msgstr ""
+msgstr "Visvairāk atskaņotie albumi"
 
 msgctxt "#31075"
 msgid "Random Albums"
@@ -269,7 +269,7 @@ msgstr ""
 
 msgctxt "#31077"
 msgid "Random artists"
-msgstr ""
+msgstr "Nejauši izpildītāji"
 
 msgctxt "#31078"
 msgid "Random music videos"
@@ -285,7 +285,7 @@ msgstr ""
 
 msgctxt "#31081"
 msgid "Recent recordings"
-msgstr ""
+msgstr "Nesenie ieraksti"
 
 msgctxt "#31082"
 msgid "No content found"
@@ -419,7 +419,7 @@ msgstr ""
 
 msgctxt "#31118"
 msgid "Small"
-msgstr ""
+msgstr "Mazs"
 
 msgctxt "#31119"
 msgid "Regular"
@@ -444,11 +444,11 @@ msgstr ""
 
 msgctxt "#31131"
 msgid "Forecast"
-msgstr ""
+msgstr "Prognoze"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
-msgstr ""
+msgstr "Dziesmu vārdu pielikums"
 
 msgctxt "#31133"
 msgid "Toggle audio stream"
@@ -460,11 +460,11 @@ msgstr ""
 
 msgctxt "#31135"
 msgid "Change mode"
-msgstr ""
+msgstr "Mainīt režīmu"
 
 msgctxt "#31136"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "Skatīties 2D"
 
 msgctxt "#31137"
 msgid "PVR Info"
@@ -476,15 +476,15 @@ msgstr ""
 
 msgctxt "#31139"
 msgid "Video decoder"
-msgstr ""
+msgstr "Video dekoders"
 
 msgctxt "#31140"
 msgid "Pixel format"
-msgstr ""
+msgstr "Pikseļu formāts"
 
 msgctxt "#31141"
 msgid "Play speed"
-msgstr ""
+msgstr "Atskaņošanas ātrums"
 
 # empty strings from id 31142 to 31149
 msgctxt "#31150"
@@ -577,50 +577,50 @@ msgstr ""
 # empty strings from id 31310 to 31321
 msgctxt "#31322"
 msgid "Aired"
-msgstr ""
+msgstr "Ēterā"
 
 # empty strings from id 31323 to 31350
 msgctxt "#31351"
 msgid "Pause"
-msgstr ""
+msgstr "Pauze"
 
 msgctxt "#31352"
 msgid "Stop"
-msgstr ""
+msgstr "Apturēt"
 
 msgctxt "#31353"
 msgid "Fast Forward"
-msgstr ""
+msgstr "Patīt uz priekšu"
 
 msgctxt "#31354"
 msgid "Rewind"
-msgstr ""
+msgstr "Attīt atpakaļ"
 
 msgctxt "#31355"
 msgid "Movie menu"
-msgstr ""
+msgstr "Filmas izvēlne"
 
 msgctxt "#31356"
 msgid "Download Subtitles"
-msgstr ""
+msgstr "Lejupielādēt subtitrus"
 
 msgctxt "#31357"
 msgid "Local subtitle available"
-msgstr ""
+msgstr "Pieejami lokālie subtitri"
 
 # empty strings from id 31358 to 31359
 # Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "Skatīties 2D"
 
 msgctxt "#31361"
 msgid "Change mode"
-msgstr ""
+msgstr "Mainīt režīmu"
 
 msgctxt "#31362"
 msgid "Enabled"
-msgstr ""
+msgstr "Ieslēgts"
 
 msgctxt "#31363"
 msgid "Static"
@@ -797,7 +797,7 @@ msgstr ""
 
 msgctxt "#31432"
 msgid "TV Shows"
-msgstr ""
+msgstr "TV Šovi"
 
 msgctxt "#31433"
 msgid "Recently Added TV Shows"
@@ -1069,11 +1069,11 @@ msgstr ""
 
 msgctxt "#31500"
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
-msgstr ""
+msgstr "Ieplānotais laiks"
 
 msgctxt "#31502"
 msgid "All Movies"
@@ -1081,19 +1081,19 @@ msgstr ""
 
 msgctxt "#31503"
 msgid "Add Group"
-msgstr ""
+msgstr "Pievienot grupu"
 
 msgctxt "#31504"
 msgid "Rename Group"
-msgstr ""
+msgstr "Pārsaukt grupu"
 
 msgctxt "#31505"
 msgid "Delete Group"
-msgstr ""
+msgstr "Dzēst grupu"
 
 msgctxt "#31506"
 msgid "Available[CR]Groups"
-msgstr ""
+msgstr "Pieejamās[CR]grupas"
 
 msgctxt "#31507"
 msgid "Opens"
@@ -1106,7 +1106,7 @@ msgstr ""
 
 msgctxt "#31510"
 msgid "Timer Set"
-msgstr ""
+msgstr "Taimeris iestatīts"
 
 msgctxt "#31511"
 msgid "Reminder Set"
@@ -1503,7 +1503,7 @@ msgstr ""
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr ""
+msgstr "Plakāts"
 
 msgctxt "#31612"
 msgid "Square"
@@ -1603,7 +1603,7 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "Saīsnes"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
@@ -1679,19 +1679,19 @@ msgstr ""
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
-msgstr ""
+msgstr "36 stundu prognoze"
 
 msgctxt "#31902"
 msgid "Hourly Forecast"
-msgstr ""
+msgstr "Prognoze ik stundu"
 
 msgctxt "#31903"
 msgid "Weekend Forecast"
-msgstr ""
+msgstr "Prognoze nedēļas nogalei"
 
 msgctxt "#31904"
 msgid "10 Day Forecast"
-msgstr ""
+msgstr "Prognoze 10 dienām"
 
 # empty strings from id 31905 to 31919
 msgctxt "#31920"
@@ -1767,7 +1767,7 @@ msgstr ""
 
 msgctxt "#31955"
 msgid "Hide"
-msgstr ""
+msgstr "Slēpt"
 
 msgctxt "#31956"
 msgid "Get theme"
@@ -1792,7 +1792,7 @@ msgstr ""
 
 msgctxt "#31961"
 msgid "Recently added"
-msgstr ""
+msgstr "Nesen pievienots"
 
 #. view label
 msgctxt "#31962"
@@ -1802,7 +1802,7 @@ msgstr ""
 #. view label
 msgctxt "#31963"
 msgid "Panel"
-msgstr ""
+msgstr "Panelis"
 
 msgctxt "#31964"
 msgid "Configure shelf items"
@@ -2212,7 +2212,7 @@ msgstr ""
 
 msgctxt "#32069"
 msgid "Files"
-msgstr ""
+msgstr "Faili"
 
 msgctxt "#32070"
 msgid "Place Background Name in Top Bar"
@@ -2456,7 +2456,7 @@ msgstr ""
 
 msgctxt "#32130"
 msgid "Posters"
-msgstr ""
+msgstr "Plakāts"
 
 msgctxt "#32131"
 msgid "YouTube"
@@ -2933,7 +2933,7 @@ msgstr ""
 
 msgctxt "#32259"
 msgid "Backgrounds"
-msgstr ""
+msgstr "Foni"
 
 msgctxt "#32260"
 msgid "Unwatched"
@@ -3093,7 +3093,7 @@ msgstr ""
 
 msgctxt "#32300"
 msgid "Now Playing"
-msgstr ""
+msgstr "Pašlaik atskaņo"
 
 msgctxt "#32301"
 msgid "Hide Title Bar Now Playing"
@@ -3385,7 +3385,7 @@ msgstr ""
 
 msgctxt "#32373"
 msgid "End Time"
-msgstr ""
+msgstr "Beigu laiks"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
@@ -3485,7 +3485,7 @@ msgstr ""
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "Plakātu-karuselis"
 
 msgctxt "#32401"
 msgid "List Item Type"
@@ -3501,7 +3501,7 @@ msgstr ""
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
@@ -3537,7 +3537,7 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "Ieslēgts"
 
 msgctxt "#32414"
 msgid "Disabled"
@@ -3745,4 +3745,12 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""

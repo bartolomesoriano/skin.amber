@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-11-20 16:47+0000\n"
-"Last-Translator: bsoriano <bsoriano@gmail.com>\n"
+"PO-Revision-Date: 2022-03-03 15:37+0000\n"
+"Last-Translator: Kai Sommerfeld <kai.sommerfeld@gmx.com>\n"
 "Language-Team: German <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/de_de/>\n"
 "Language: de_de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -667,7 +667,7 @@ msgstr "Zufälliges Musik Fanart"
 
 msgctxt "#31403"
 msgid "Random fanart"
-msgstr ""
+msgstr "Zufällige Fanart"
 
 msgctxt "#31404"
 msgid "Conditional weather"
@@ -867,7 +867,7 @@ msgstr ""
 
 msgctxt "#31453"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31454"
 msgid "Last Played TV Channels"
@@ -899,7 +899,7 @@ msgstr "Bild-Quellen"
 
 msgctxt "#31461"
 msgid "Last Played Radio Channels"
-msgstr ""
+msgstr "Zuletzt gehörte Radiokanäle"
 
 msgctxt "#31462"
 msgid "Active Radio Recordings"
@@ -1155,11 +1155,11 @@ msgstr ""
 
 msgctxt "#31528"
 msgid "Power Menu"
-msgstr ""
+msgstr "Power-Menü"
 
 msgctxt "#31529"
 msgid "Popular People"
-msgstr ""
+msgstr "Beliebte Personen"
 
 msgctxt "#31530"
 msgid "Trending Today"
@@ -1179,7 +1179,7 @@ msgstr ""
 
 msgctxt "#31534"
 msgid "People"
-msgstr ""
+msgstr "Personen"
 
 msgctxt "#31535"
 msgid "People Trending Today"
@@ -1191,7 +1191,7 @@ msgstr ""
 
 msgctxt "#31537"
 msgid "Trakt"
-msgstr ""
+msgstr "Trakt"
 
 msgctxt "#31538"
 msgid "Trakt - Watchlist"
@@ -1491,7 +1491,7 @@ msgstr "Poster"
 
 msgctxt "#31612"
 msgid "Square"
-msgstr ""
+msgstr "Quadratisch"
 
 msgctxt "#31613"
 msgid "Standard"
@@ -1523,11 +1523,11 @@ msgstr "Vorschaubild"
 
 msgctxt "#31620"
 msgid "Landscape"
-msgstr ""
+msgstr "Querformat"
 
 msgctxt "#31621"
 msgid "Clear Logo"
-msgstr ""
+msgstr "Clear Logo"
 
 msgctxt "#31622"
 msgid "Clear Art"
@@ -1955,7 +1955,7 @@ msgstr "AB: Alle Artworks"
 
 msgctxt "#32007"
 msgid "Special Features"
-msgstr ""
+msgstr "Besondere Features"
 
 msgctxt "#32008"
 msgid "Enable Special Features"
@@ -2075,7 +2075,7 @@ msgstr "Maus Buttons aktivieren"
 
 msgctxt "#32039"
 msgid "Timeshift"
-msgstr ""
+msgstr "Timeshift"
 
 msgctxt "#32040"
 msgid "Enable Kiosk Mode"
@@ -2207,7 +2207,7 @@ msgstr "Auto-Vervollständigung für virtuelle Tastatur aktivieren"
 
 msgctxt "#32073"
 msgid "Budget"
-msgstr ""
+msgstr "Budget"
 
 msgctxt "#32074"
 msgid "Revenue"
@@ -2311,7 +2311,7 @@ msgstr ""
 
 msgctxt "#32099"
 msgid "Crew"
-msgstr ""
+msgstr "Crew"
 
 msgctxt "#32100"
 msgid "More from"
@@ -2475,7 +2475,7 @@ msgstr "Beended"
 
 msgctxt "#32140"
 msgid "Rumored"
-msgstr ""
+msgstr "Gerücht"
 
 msgctxt "#32141"
 msgid "Planned"
@@ -2523,7 +2523,7 @@ msgstr ""
 
 msgctxt "#32152"
 msgid "Creator"
-msgstr ""
+msgstr "Ersteller"
 
 msgctxt "#32153"
 msgid "Died at Age"
@@ -2891,7 +2891,7 @@ msgstr "Filme in der Bibliothek"
 
 msgctxt "#32254"
 msgid "IMDb Top 250"
-msgstr ""
+msgstr "IMDb Top 250"
 
 msgctxt "#32255"
 msgid "Missing Add-on"
@@ -3091,11 +3091,11 @@ msgstr ""
 
 msgctxt "#32305"
 msgid "Vinyl"
-msgstr ""
+msgstr "Vinyl"
 
 msgctxt "#32306"
 msgid "None"
-msgstr ""
+msgstr "Keine"
 
 msgctxt "#32307"
 msgid "White"
@@ -3187,7 +3187,7 @@ msgstr ""
 
 msgctxt "#32329"
 msgid "Special"
-msgstr ""
+msgstr "Special"
 
 msgctxt "#32330"
 msgid "Next Tracks"
@@ -3299,7 +3299,7 @@ msgstr ""
 
 msgctxt "#32357"
 msgid "Enable Video Lyrics"
-msgstr ""
+msgstr "Videotexte aktivieren"
 
 msgctxt "#32358"
 msgid "Play Whole Albums from Shelves"
@@ -3363,7 +3363,7 @@ msgstr ""
 
 msgctxt "#32373"
 msgid "End Time"
-msgstr ""
+msgstr "Endet um"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
@@ -3479,7 +3479,7 @@ msgstr ""
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "N/V"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
@@ -3535,7 +3535,7 @@ msgstr ""
 
 msgctxt "#32418"
 msgid "Single Image"
-msgstr ""
+msgstr "Einzelbild"
 
 msgctxt "#32419"
 msgid "Multiple Images"
@@ -3619,7 +3619,7 @@ msgstr ""
 
 msgctxt "#32459"
 msgid "Next Aired"
-msgstr ""
+msgstr "Demnächst ausgestrahlt"
 
 msgctxt "#32460"
 msgid "Enable Direct Seeking in Full Screen Info"
@@ -3639,7 +3639,7 @@ msgstr ""
 
 msgctxt "#32464"
 msgid "Search Trailer"
-msgstr ""
+msgstr "Trailer suchen"
 
 msgctxt "#32465"
 msgid "Search for Trailers with IMDb Trailers Addon"
@@ -3719,10 +3719,18 @@ msgstr ""
 
 msgctxt "#32484"
 msgid "Update Library"
-msgstr ""
+msgstr "Bibliothek aktualisieren"
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""
 
 #~ msgctxt "#31952"

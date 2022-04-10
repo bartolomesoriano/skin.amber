@@ -3738,6 +3738,14 @@ msgctxt "#32485"
 msgid "Stop Scanning"
 msgstr ""
 
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
+msgstr ""
+
 #~ msgctxt "#31309"
 #~ msgid "Memory Used:"
 #~ msgstr "Memória Usada:"

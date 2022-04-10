@@ -433,8 +433,22 @@
 			<include>Dimensions_Fullscreen</include>
 		</control>
 		<control type="videowindow">
-			<visible>Player.HasVideo + [Skin.HasSetting(Show_VideoBackground) | Skin.HasSetting(AutoPlayTrailer)]</visible>
+			<visible>Player.HasVideo + [Skin.HasSetting(Show_VideoBackground) | [Skin.HasSetting(AutoPlayTrailer) + !$EXP[56_NetflixTrailerWindow]]]</visible>
 			<include>Dimensions_Fullscreen</include>
+		</control>
+		<control type="group">
+		    <visible>Player.HasVideo + Skin.HasSetting(AutoPlayTrailer) + $EXP[56_NetflixTrailerWindow]</visible>
+			<control type="videowindow">
+			    <width>1280</width>
+                <height>720</height>
+                <right>0</right>
+                <top>0</top>
+		    </control>
+			<control type="image" description="Background">
+                <top>0</top>
+                <include>Dimensions_Fullscreen</include>
+                <texture colordiffuse="Background">img/trailerwindow.png</texture>
+            </control>
 		</control>
 	</include>
 	

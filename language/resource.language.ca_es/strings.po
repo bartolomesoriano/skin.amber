@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-07-29 22:06+0000\n"
+"PO-Revision-Date: 2022-03-03 15:37+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Catalan (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/ca_es/>\n"
 "Language: ca_es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7.2\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "#31037"
 msgid "Rated"
-msgstr ""
+msgstr "Valoració"
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
@@ -208,7 +208,7 @@ msgstr ""
 
 msgctxt "#31048"
 msgid "Visualization Presets"
-msgstr ""
+msgstr "Visualitzacions predefinides"
 
 msgctxt "#31049"
 msgid "Settings Level"
@@ -216,15 +216,15 @@ msgstr ""
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
-msgstr ""
+msgstr "Ordena: Ascendent"
 
 msgctxt "#31051"
 msgid "Sort: Descending"
-msgstr ""
+msgstr "Ordena: Descendent"
 
 msgctxt "#31052"
 msgid "Sections"
-msgstr ""
+msgstr "Seccions"
 
 msgctxt "#31053"
 msgid "Media Views"
@@ -237,15 +237,15 @@ msgstr ""
 # empty strings from id 31055 to 31068
 msgctxt "#31069"
 msgid "Random episodes"
-msgstr ""
+msgstr "Episodis a l'atzar"
 
 msgctxt "#31070"
 msgid "Random movies"
-msgstr ""
+msgstr "Pel·lícules a l'atzar"
 
 msgctxt "#31071"
 msgid "In progress movies"
-msgstr ""
+msgstr "Pel·lícules en curs"
 
 msgctxt "#31072"
 msgid "Unwatched TV shows"
@@ -257,11 +257,11 @@ msgstr ""
 
 msgctxt "#31074"
 msgid "Most played albums"
-msgstr ""
+msgstr "Àlbums més reproduïts"
 
 msgctxt "#31075"
 msgid "Random Albums"
-msgstr ""
+msgstr "Àlbums aleatoris"
 
 msgctxt "#31076"
 msgid "Most played songs"
@@ -269,11 +269,11 @@ msgstr ""
 
 msgctxt "#31077"
 msgid "Random artists"
-msgstr ""
+msgstr "Artistes aleatoris"
 
 msgctxt "#31078"
 msgid "Random music videos"
-msgstr ""
+msgstr "Vídeos musicals aleatoris"
 
 msgctxt "#31079"
 msgid "Unwatched videos"
@@ -285,7 +285,7 @@ msgstr ""
 
 msgctxt "#31081"
 msgid "Recent recordings"
-msgstr ""
+msgstr "Enregistraments recents"
 
 msgctxt "#31082"
 msgid "No content found"
@@ -341,7 +341,7 @@ msgstr ""
 
 msgctxt "#31095"
 msgid "Hide Recordings"
-msgstr ""
+msgstr "Oculta els enregistraments"
 
 msgctxt "#31096"
 msgid "Hide Videos"
@@ -419,7 +419,7 @@ msgstr ""
 
 msgctxt "#31118"
 msgid "Small"
-msgstr ""
+msgstr "Petita"
 
 msgctxt "#31119"
 msgid "Regular"
@@ -436,7 +436,7 @@ msgstr ""
 # empty strings from id 31122 to 31128
 msgctxt "#31129"
 msgid "Same director"
-msgstr ""
+msgstr "Mateix director"
 
 msgctxt "#31130"
 msgid "Hourly"
@@ -444,15 +444,15 @@ msgstr ""
 
 msgctxt "#31131"
 msgid "Forecast"
-msgstr ""
+msgstr "Predicció"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
-msgstr ""
+msgstr "Complement de lletres"
 
 msgctxt "#31133"
 msgid "Toggle audio stream"
-msgstr ""
+msgstr "Commuta la transmissió de l'àudio"
 
 msgctxt "#31134"
 msgid "Toggle language"
@@ -460,11 +460,11 @@ msgstr ""
 
 msgctxt "#31135"
 msgid "Change mode"
-msgstr ""
+msgstr "Canvia el mode"
 
 msgctxt "#31136"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "Veure en 2D"
 
 msgctxt "#31137"
 msgid "PVR Info"
@@ -472,7 +472,7 @@ msgstr ""
 
 msgctxt "#31138"
 msgid "Player info"
-msgstr ""
+msgstr "Informació del reproductor"
 
 msgctxt "#31139"
 msgid "Video decoder"
@@ -484,7 +484,7 @@ msgstr "Format del píxel"
 
 msgctxt "#31141"
 msgid "Play speed"
-msgstr ""
+msgstr "Velocitat de reproducció"
 
 # empty strings from id 31142 to 31149
 msgctxt "#31150"
@@ -525,7 +525,7 @@ msgstr ""
 
 msgctxt "#31159"
 msgid "Logo"
-msgstr ""
+msgstr "Logotip"
 
 msgctxt "#31160"
 msgid "Disable Logo view"
@@ -547,15 +547,15 @@ msgstr ""
 
 msgctxt "#31295"
 msgid "OpenELEC Settings"
-msgstr ""
+msgstr "Ajusts d'OpenELEC"
 
 msgctxt "#31296"
 msgid "LibreELEC Settings"
-msgstr ""
+msgstr "Ajusts de LibreELEC"
 
 msgctxt "#31297"
 msgid "min"
-msgstr ""
+msgstr "min"
 
 msgctxt "#31298"
 msgid "Starting in"
@@ -567,60 +567,60 @@ msgstr ""
 
 msgctxt "#31300"
 msgid "CoreELEC Settings"
-msgstr ""
+msgstr "Ajusts de CoreELEC"
 
 # empty strings from id 31301 to 31308
 msgctxt "#31309"
 msgid "Memory Used"
-msgstr ""
+msgstr "Memòria utilitzada"
 
 # empty strings from id 31310 to 31321
 msgctxt "#31322"
 msgid "Aired"
-msgstr ""
+msgstr "Emès"
 
 # empty strings from id 31323 to 31350
 msgctxt "#31351"
 msgid "Pause"
-msgstr ""
+msgstr "Pausa"
 
 msgctxt "#31352"
 msgid "Stop"
-msgstr ""
+msgstr "Atura"
 
 msgctxt "#31353"
 msgid "Fast Forward"
-msgstr ""
+msgstr "Avanç ràpid"
 
 msgctxt "#31354"
 msgid "Rewind"
-msgstr ""
+msgstr "Rebobina"
 
 msgctxt "#31355"
 msgid "Movie menu"
-msgstr ""
+msgstr "Menú de la pel·lícula"
 
 msgctxt "#31356"
 msgid "Download Subtitles"
-msgstr ""
+msgstr "Baixar-se els subtítols"
 
 msgctxt "#31357"
 msgid "Local subtitle available"
-msgstr ""
+msgstr "Subtítol local disponible"
 
 # empty strings from id 31358 to 31359
 # Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "Veure en 2D"
 
 msgctxt "#31361"
 msgid "Change mode"
-msgstr ""
+msgstr "Canvia el mode"
 
 msgctxt "#31362"
 msgid "Enabled"
-msgstr ""
+msgstr "Habilitat"
 
 msgctxt "#31363"
 msgid "Static"
@@ -685,7 +685,7 @@ msgstr ""
 
 msgctxt "#31404"
 msgid "Conditional weather"
-msgstr ""
+msgstr "Temps condicional"
 
 msgctxt "#31405"
 msgid "Movie Library Statistics"
@@ -797,7 +797,7 @@ msgstr ""
 
 msgctxt "#31432"
 msgid "TV Shows"
-msgstr ""
+msgstr "Sèries"
 
 msgctxt "#31433"
 msgid "Recently Added TV Shows"
@@ -817,7 +817,7 @@ msgstr ""
 
 msgctxt "#31437"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "Programes de TV no vists"
 
 msgctxt "#31438"
 msgid "Top Rated TV Shows"
@@ -865,7 +865,7 @@ msgstr ""
 
 msgctxt "#31449"
 msgid "Random Albums"
-msgstr ""
+msgstr "Àlbums aleatoris"
 
 msgctxt "#31450"
 msgid "Top 100 Albums"
@@ -881,7 +881,7 @@ msgstr ""
 
 msgctxt "#31453"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31454"
 msgid "Last Played TV Channels"
@@ -977,19 +977,19 @@ msgstr ""
 
 msgctxt "#31477"
 msgid "Memory Used"
-msgstr ""
+msgstr "Memòria utilitzada"
 
 msgctxt "#31478"
 msgid "Remaining"
-msgstr ""
+msgstr "Restant"
 
 msgctxt "#31479"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31480"
 msgid "Sort By"
-msgstr ""
+msgstr "Ordena per"
 
 msgctxt "#31481"
 msgid "Sort Order"
@@ -1041,7 +1041,7 @@ msgstr ""
 
 msgctxt "#31493"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "Programes de TV no vists"
 
 msgctxt "#31494"
 msgid "Recently Released Albums"
@@ -1065,35 +1065,35 @@ msgstr ""
 
 msgctxt "#31499"
 msgid "All TV Shows"
-msgstr ""
+msgstr "Tots els programes de televisió"
 
 msgctxt "#31500"
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
-msgstr ""
+msgstr "Horari programat"
 
 msgctxt "#31502"
 msgid "All Movies"
-msgstr ""
+msgstr "Totes les pel·lícules"
 
 msgctxt "#31503"
 msgid "Add Group"
-msgstr ""
+msgstr "Afegeix un grup"
 
 msgctxt "#31504"
 msgid "Rename Group"
-msgstr ""
+msgstr "Canvia el nom del grup"
 
 msgctxt "#31505"
 msgid "Delete Group"
-msgstr ""
+msgstr "Elimina el grup"
 
 msgctxt "#31506"
 msgid "Available[CR]Groups"
-msgstr ""
+msgstr "Grups[CR]disponibles"
 
 msgctxt "#31507"
 msgid "Opens"
@@ -1102,11 +1102,11 @@ msgstr ""
 # empty string with id 31508
 msgctxt "#31509"
 msgid "Radio"
-msgstr ""
+msgstr "Ràdio"
 
 msgctxt "#31510"
 msgid "Timer Set"
-msgstr ""
+msgstr "Temporitzador establert"
 
 msgctxt "#31511"
 msgid "Reminder Set"
@@ -1503,7 +1503,7 @@ msgstr ""
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr ""
+msgstr "Cartell"
 
 msgctxt "#31612"
 msgid "Square"
@@ -1539,7 +1539,7 @@ msgstr ""
 
 msgctxt "#31620"
 msgid "Landscape"
-msgstr ""
+msgstr "Apaïsat"
 
 msgctxt "#31621"
 msgid "Clear Logo"
@@ -1603,7 +1603,7 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "Dreceres de teclat"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
@@ -1679,19 +1679,19 @@ msgstr ""
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
-msgstr ""
+msgstr "Predicció a 36 hores"
 
 msgctxt "#31902"
 msgid "Hourly Forecast"
-msgstr ""
+msgstr "Predicció per hores"
 
 msgctxt "#31903"
 msgid "Weekend Forecast"
-msgstr ""
+msgstr "Predicció del cap de setmana"
 
 msgctxt "#31904"
 msgid "10 Day Forecast"
-msgstr ""
+msgstr "Predicció a 10 dies"
 
 # empty strings from id 31905 to 31919
 msgctxt "#31920"
@@ -1767,7 +1767,7 @@ msgstr ""
 
 msgctxt "#31955"
 msgid "Hide"
-msgstr ""
+msgstr "Amaga"
 
 msgctxt "#31956"
 msgid "Get theme"
@@ -1792,7 +1792,7 @@ msgstr ""
 
 msgctxt "#31961"
 msgid "Recently added"
-msgstr ""
+msgstr "Afegit recentment"
 
 #. view label
 msgctxt "#31962"
@@ -1802,7 +1802,7 @@ msgstr ""
 #. view label
 msgctxt "#31963"
 msgid "Panel"
-msgstr ""
+msgstr "Plafó"
 
 msgctxt "#31964"
 msgid "Configure shelf items"
@@ -1815,7 +1815,7 @@ msgstr ""
 
 msgctxt "#31966"
 msgid "Recommended"
-msgstr ""
+msgstr "Recomanat"
 
 msgctxt "#31967"
 msgid "Enable Home shelf"
@@ -1848,7 +1848,7 @@ msgstr ""
 
 msgctxt "#31974"
 msgid "Home menu"
-msgstr ""
+msgstr "Menú d'inici"
 
 msgctxt "#31975"
 msgid "Channels"
@@ -1958,7 +1958,7 @@ msgstr ""
 
 msgctxt "#32003"
 msgid "Game Settings"
-msgstr ""
+msgstr "Configuració del joc"
 
 msgctxt "#32004"
 msgid "Toggle Subtitle"
@@ -1982,7 +1982,7 @@ msgstr ""
 
 msgctxt "#32009"
 msgid "Next Episode"
-msgstr ""
+msgstr "Episodi Següent"
 
 msgctxt "#32010"
 msgid "Latest Episode"
@@ -1990,7 +1990,7 @@ msgstr ""
 
 msgctxt "#32011"
 msgid "Airs"
-msgstr ""
+msgstr "Emetrà"
 
 # empty string with id 32012
 msgctxt "#32013"
@@ -2095,11 +2095,11 @@ msgstr ""
 
 msgctxt "#32039"
 msgid "Timeshift"
-msgstr ""
+msgstr "Salts en el temps"
 
 msgctxt "#32040"
 msgid "Enable Kiosk Mode"
-msgstr ""
+msgstr "Activa el mode quiosc"
 
 # empty string with id 32041
 msgctxt "#32042"
@@ -2212,7 +2212,7 @@ msgstr ""
 
 msgctxt "#32069"
 msgid "Files"
-msgstr ""
+msgstr "Fitxers"
 
 msgctxt "#32070"
 msgid "Place Background Name in Top Bar"
@@ -2272,7 +2272,7 @@ msgstr ""
 
 msgctxt "#32084"
 msgid "Age"
-msgstr ""
+msgstr "Edat"
 
 msgctxt "#32085"
 msgid "Died"
@@ -2440,7 +2440,7 @@ msgstr ""
 
 msgctxt "#32126"
 msgid "Minute"
-msgstr ""
+msgstr "Minut"
 
 msgctxt "#32127"
 msgid "Online TMDb Info"
@@ -2456,11 +2456,11 @@ msgstr ""
 
 msgctxt "#32130"
 msgid "Posters"
-msgstr ""
+msgstr "Cartells"
 
 msgctxt "#32131"
 msgid "YouTube"
-msgstr ""
+msgstr "YouTube"
 
 msgctxt "#32132"
 msgid "Search for Trailer"
@@ -2476,7 +2476,7 @@ msgstr ""
 
 msgctxt "#32135"
 msgid "Extras"
-msgstr ""
+msgstr "Extres"
 
 msgctxt "#32136"
 msgid "Known for"
@@ -2492,7 +2492,7 @@ msgstr ""
 
 msgctxt "#32139"
 msgid "Ended"
-msgstr ""
+msgstr "Finalitzat"
 
 msgctxt "#32140"
 msgid "Rumored"
@@ -2512,7 +2512,7 @@ msgstr ""
 
 msgctxt "#32144"
 msgid "Released"
-msgstr ""
+msgstr "Publicat"
 
 msgctxt "#32145"
 msgid "Canceled"
@@ -2933,7 +2933,7 @@ msgstr ""
 
 msgctxt "#32259"
 msgid "Backgrounds"
-msgstr ""
+msgstr "Fons"
 
 msgctxt "#32260"
 msgid "Unwatched"
@@ -3069,7 +3069,7 @@ msgstr ""
 
 msgctxt "#32294"
 msgid "Ends at"
-msgstr ""
+msgstr "Acaba a les"
 
 msgctxt "#32295"
 msgid "Netflix style"
@@ -3093,7 +3093,7 @@ msgstr ""
 
 msgctxt "#32300"
 msgid "Now Playing"
-msgstr ""
+msgstr "S'està reproduint"
 
 msgctxt "#32301"
 msgid "Hide Title Bar Now Playing"
@@ -3125,7 +3125,7 @@ msgstr ""
 
 msgctxt "#32308"
 msgid "Blue"
-msgstr ""
+msgstr "Blau"
 
 msgctxt "#32309"
 msgid "Golden"
@@ -3133,23 +3133,23 @@ msgstr ""
 
 msgctxt "#32310"
 msgid "Green"
-msgstr ""
+msgstr "Verd"
 
 msgctxt "#32311"
 msgid "Grey"
-msgstr ""
+msgstr "Gris"
 
 msgctxt "#32312"
 msgid "Orange"
-msgstr ""
+msgstr "Taronja"
 
 msgctxt "#32313"
 msgid "Purple"
-msgstr ""
+msgstr "Porpra"
 
 msgctxt "#32314"
 msgid "Red"
-msgstr ""
+msgstr "Vermell"
 
 msgctxt "#32315"
 msgid "Select Now Playing Info for Movies/Episodes"
@@ -3385,7 +3385,7 @@ msgstr ""
 
 msgctxt "#32373"
 msgid "End Time"
-msgstr ""
+msgstr "Hora de finalització"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
@@ -3457,7 +3457,7 @@ msgstr ""
 
 msgctxt "#32392"
 msgid "Play Random"
-msgstr ""
+msgstr "Reprodueix a l’atzar"
 
 msgctxt "#32393"
 msgid "List Views Options"
@@ -3485,7 +3485,7 @@ msgstr ""
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "#32401"
 msgid "List Item Type"
@@ -3501,7 +3501,7 @@ msgstr ""
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
@@ -3537,7 +3537,7 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "Habilitat"
 
 msgctxt "#32414"
 msgid "Disabled"
@@ -3557,7 +3557,7 @@ msgstr ""
 
 msgctxt "#32418"
 msgid "Single Image"
-msgstr ""
+msgstr "Imatge única"
 
 msgctxt "#32419"
 msgid "Multiple Images"
@@ -3745,4 +3745,12 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""

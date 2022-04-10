@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-09-18 02:04+0000\n"
-"Last-Translator: Klojum <klojum@kodi.tv>\n"
+"PO-Revision-Date: 2022-03-27 01:18+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Dutch <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/nl_nl/>\n"
 "Language: nl_nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -416,7 +416,7 @@ msgstr ""
 
 msgctxt "#31118"
 msgid "Small"
-msgstr ""
+msgstr "Klein"
 
 msgctxt "#31119"
 msgid "Regular"
@@ -424,7 +424,7 @@ msgstr ""
 
 msgctxt "#31120"
 msgid "Large"
-msgstr ""
+msgstr "Groot"
 
 msgctxt "#31121"
 msgid "Apply Changes"
@@ -520,7 +520,7 @@ msgstr ""
 
 msgctxt "#31159"
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 msgctxt "#31160"
 msgid "Disable Logo view"
@@ -560,12 +560,12 @@ msgstr "Stoppen over"
 
 msgctxt "#31300"
 msgid "CoreELEC Settings"
-msgstr ""
+msgstr "CoreELEC instellingen"
 
 # empty strings from id 31301 to 31308
 msgctxt "#31309"
 msgid "Memory Used"
-msgstr ""
+msgstr "Geheugen in gebruik"
 
 msgctxt "#31322"
 msgid "Aired"
@@ -669,11 +669,11 @@ msgstr ""
 
 msgctxt "#31403"
 msgid "Random fanart"
-msgstr ""
+msgstr "Willekeurige fanart"
 
 msgctxt "#31404"
 msgid "Conditional weather"
-msgstr ""
+msgstr "Op weer gebaseerd"
 
 msgctxt "#31405"
 msgid "Movie Library Statistics"
@@ -717,7 +717,7 @@ msgstr ""
 
 msgctxt "#31415"
 msgid "Memory usage"
-msgstr ""
+msgstr "Geheugengebruik"
 
 msgctxt "#31416"
 msgid "CPU usage"
@@ -745,7 +745,7 @@ msgstr ""
 
 msgctxt "#31422"
 msgid "Recently Added Movies"
-msgstr ""
+msgstr "recent toegevoegde films"
 
 msgctxt "#31423"
 msgid "Recently Played Movies"
@@ -757,7 +757,7 @@ msgstr ""
 
 msgctxt "#31425"
 msgid "In Progress Movies"
-msgstr ""
+msgstr "Afspelende films"
 
 msgctxt "#31426"
 msgid "Unwatched Movies"
@@ -765,7 +765,7 @@ msgstr ""
 
 msgctxt "#31427"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "Top Gewaardeerde Films"
 
 msgctxt "#31428"
 msgid "Movie Genres"
@@ -805,7 +805,7 @@ msgstr ""
 
 msgctxt "#31437"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "Niet-bekeken TV-series"
 
 msgctxt "#31438"
 msgid "Top Rated TV Shows"
@@ -845,7 +845,7 @@ msgstr ""
 
 msgctxt "#31447"
 msgid "Recently Added Albums"
-msgstr ""
+msgstr "Recent toegevoegde films"
 
 msgctxt "#31448"
 msgid "Recently Played Albums"
@@ -853,7 +853,7 @@ msgstr ""
 
 msgctxt "#31449"
 msgid "Random Albums"
-msgstr ""
+msgstr "Willekeurige albums"
 
 msgctxt "#31450"
 msgid "Top 100 Albums"
@@ -869,7 +869,7 @@ msgstr ""
 
 msgctxt "#31453"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31454"
 msgid "Last Played TV Channels"
@@ -965,19 +965,19 @@ msgstr ""
 
 msgctxt "#31477"
 msgid "Memory Used"
-msgstr ""
+msgstr "Geheugen in gebruik"
 
 msgctxt "#31478"
 msgid "Remaining"
-msgstr ""
+msgstr "Resterend"
 
 msgctxt "#31479"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31480"
 msgid "Sort By"
-msgstr ""
+msgstr "Sorteren op"
 
 msgctxt "#31481"
 msgid "Sort Order"
@@ -1029,7 +1029,7 @@ msgstr ""
 
 msgctxt "#31493"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "Niet-bekeken TV-series"
 
 msgctxt "#31494"
 msgid "Recently Released Albums"
@@ -1117,7 +1117,7 @@ msgstr ""
 
 msgctxt "#31518"
 msgid "Popular Movies"
-msgstr ""
+msgstr "Populaire films"
 
 msgctxt "#31519"
 msgid "TMDb Top Rated Movies"
@@ -1125,7 +1125,7 @@ msgstr ""
 
 msgctxt "#31520"
 msgid "Upcoming Movies"
-msgstr ""
+msgstr "Aankomende films"
 
 msgctxt "#31521"
 msgid "In-Theater Movies"
@@ -1149,7 +1149,7 @@ msgstr ""
 
 msgctxt "#31526"
 msgid "Next Up Episodes"
-msgstr ""
+msgstr "Hiernakomede episodes"
 
 msgctxt "#31527"
 msgid "Reboot to Android"
@@ -1489,11 +1489,11 @@ msgstr ""
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr ""
+msgstr "Poster"
 
 msgctxt "#31612"
 msgid "Square"
-msgstr ""
+msgstr "Vierkant"
 
 msgctxt "#31613"
 msgid "Standard"
@@ -1525,15 +1525,15 @@ msgstr ""
 
 msgctxt "#31620"
 msgid "Landscape"
-msgstr ""
+msgstr "Panorama"
 
 msgctxt "#31621"
 msgid "Clear Logo"
-msgstr ""
+msgstr "Leeg logo"
 
 msgctxt "#31622"
 msgid "Clear Art"
-msgstr ""
+msgstr "Lege Afbeelding"
 
 msgctxt "#31623"
 msgid "Disc Art"
@@ -1589,7 +1589,7 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "Snelkoppelingen"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
@@ -1936,11 +1936,11 @@ msgstr "Verberg iconen"
 # empty string with id 32001
 msgctxt "#32002"
 msgid "Hide Games"
-msgstr ""
+msgstr "Verberg spellen"
 
 msgctxt "#32003"
 msgid "Game Settings"
-msgstr ""
+msgstr "Spelinstellingen"
 
 msgctxt "#32004"
 msgid "Toggle Subtitle"
@@ -1964,7 +1964,7 @@ msgstr ""
 
 msgctxt "#32009"
 msgid "Next Episode"
-msgstr ""
+msgstr "Volgende aflevering"
 
 msgctxt "#32010"
 msgid "Latest Episode"
@@ -1972,7 +1972,7 @@ msgstr ""
 
 msgctxt "#32011"
 msgid "Airs"
-msgstr ""
+msgstr "Wordt uitgezonden op"
 
 # empty string with id 32012
 msgctxt "#32013"
@@ -2077,11 +2077,11 @@ msgstr ""
 
 msgctxt "#32039"
 msgid "Timeshift"
-msgstr ""
+msgstr "Timeshift"
 
 msgctxt "#32040"
 msgid "Enable Kiosk Mode"
-msgstr ""
+msgstr "Kioskmodus activeren (geen zij menu's)"
 
 # empty string with id 32041
 msgctxt "#32042"
@@ -2094,7 +2094,7 @@ msgstr ""
 
 msgctxt "#32044"
 msgid "Submenu"
-msgstr ""
+msgstr "Submenu"
 
 msgctxt "#32045"
 msgid "Shelves"
@@ -2106,7 +2106,7 @@ msgstr ""
 
 msgctxt "#32047"
 msgid "Seconds"
-msgstr ""
+msgstr "Seconden"
 
 msgctxt "#32048"
 msgid "Show background name in Home window"
@@ -2194,7 +2194,7 @@ msgstr ""
 
 msgctxt "#32069"
 msgid "Files"
-msgstr ""
+msgstr "BESTANDEN"
 
 msgctxt "#32070"
 msgid "Place Background Name in Top Bar"
@@ -2210,15 +2210,15 @@ msgstr ""
 
 msgctxt "#32073"
 msgid "Budget"
-msgstr ""
+msgstr "Budget"
 
 msgctxt "#32074"
 msgid "Revenue"
-msgstr ""
+msgstr "Opbrengst"
 
 msgctxt "#32075"
 msgid "Awards"
-msgstr ""
+msgstr "Prijzen"
 
 msgctxt "#32076"
 msgid "Show Watched Items in Recent Shelves"
@@ -2254,7 +2254,7 @@ msgstr ""
 
 msgctxt "#32084"
 msgid "Age"
-msgstr ""
+msgstr "Leeftijd"
 
 msgctxt "#32085"
 msgid "Died"
@@ -2314,7 +2314,7 @@ msgstr ""
 
 msgctxt "#32099"
 msgid "Crew"
-msgstr ""
+msgstr "Crew"
 
 msgctxt "#32100"
 msgid "More from"
@@ -2326,7 +2326,7 @@ msgstr ""
 
 msgctxt "#32102"
 msgid "Similar to"
-msgstr ""
+msgstr "Vergelijkbaar met"
 
 msgctxt "#32103"
 msgid "Cast Members also appear in"
@@ -2418,11 +2418,11 @@ msgstr ""
 
 msgctxt "#32125"
 msgid "Hour"
-msgstr ""
+msgstr "Uur"
 
 msgctxt "#32126"
 msgid "Minute"
-msgstr ""
+msgstr "Minuut"
 
 msgctxt "#32127"
 msgid "Online TMDb Info"
@@ -2438,11 +2438,11 @@ msgstr ""
 
 msgctxt "#32130"
 msgid "Posters"
-msgstr ""
+msgstr "Posters"
 
 msgctxt "#32131"
 msgid "YouTube"
-msgstr ""
+msgstr "YouTube"
 
 msgctxt "#32132"
 msgid "Search for Trailer"
@@ -2450,7 +2450,7 @@ msgstr ""
 
 msgctxt "#32133"
 msgid "item in database"
-msgstr ""
+msgstr "item in database"
 
 msgctxt "#32134"
 msgid "Items in Database"
@@ -2458,11 +2458,11 @@ msgstr ""
 
 msgctxt "#32135"
 msgid "Extras"
-msgstr ""
+msgstr "Extra's"
 
 msgctxt "#32136"
 msgid "Known for"
-msgstr ""
+msgstr "Gekend van"
 
 msgctxt "#32137"
 msgid "Retail Release"
@@ -2474,15 +2474,15 @@ msgstr ""
 
 msgctxt "#32139"
 msgid "Ended"
-msgstr ""
+msgstr "Beëindigd"
 
 msgctxt "#32140"
 msgid "Rumored"
-msgstr ""
+msgstr "Geruchten"
 
 msgctxt "#32141"
 msgid "Planned"
-msgstr ""
+msgstr "Gepland"
 
 msgctxt "#32142"
 msgid "In Production"
@@ -2494,11 +2494,11 @@ msgstr ""
 
 msgctxt "#32144"
 msgid "Released"
-msgstr ""
+msgstr "Uitgebracht"
 
 msgctxt "#32145"
 msgid "Canceled"
-msgstr ""
+msgstr "Geannuleerd"
 
 msgctxt "#32146"
 msgid "Returning Series"
@@ -2526,7 +2526,7 @@ msgstr ""
 
 msgctxt "#32152"
 msgid "Creator"
-msgstr ""
+msgstr "Maker"
 
 msgctxt "#32153"
 msgid "Died at Age"
@@ -2811,7 +2811,7 @@ msgstr ""
 
 msgctxt "#32231"
 msgid "User Rating"
-msgstr ""
+msgstr "Gebruikerswaardering"
 
 msgctxt "#32232"
 msgid "Ratings"
@@ -2895,7 +2895,7 @@ msgstr ""
 
 msgctxt "#32254"
 msgid "IMDb Top 250"
-msgstr ""
+msgstr "IMDb Top 250"
 
 msgctxt "#32255"
 msgid "Missing Add-on"
@@ -2915,11 +2915,11 @@ msgstr ""
 
 msgctxt "#32259"
 msgid "Backgrounds"
-msgstr ""
+msgstr "Achtergronden"
 
 msgctxt "#32260"
 msgid "Unwatched"
-msgstr ""
+msgstr "Onbekeken"
 
 msgctxt "#32261"
 msgid "Use Embuary Helper for Statistics Line"
@@ -3051,7 +3051,7 @@ msgstr ""
 
 msgctxt "#32294"
 msgid "Ends at"
-msgstr ""
+msgstr "Eindigt om"
 
 msgctxt "#32295"
 msgid "Netflix style"
@@ -3075,7 +3075,7 @@ msgstr ""
 
 msgctxt "#32300"
 msgid "Now Playing"
-msgstr ""
+msgstr "Huidige Onderdeel"
 
 msgctxt "#32301"
 msgid "Hide Title Bar Now Playing"
@@ -3115,7 +3115,7 @@ msgstr ""
 
 msgctxt "#32310"
 msgid "Green"
-msgstr ""
+msgstr "Groen"
 
 msgctxt "#32311"
 msgid "Grey"
@@ -3191,7 +3191,7 @@ msgstr ""
 
 msgctxt "#32329"
 msgid "Special"
-msgstr ""
+msgstr "Special"
 
 msgctxt "#32330"
 msgid "Next Tracks"
@@ -3227,7 +3227,7 @@ msgstr ""
 
 msgctxt "#32338"
 msgid "Current Color"
-msgstr ""
+msgstr "Huidige Kleur"
 
 msgctxt "#32339"
 msgid "Value"
@@ -3303,7 +3303,7 @@ msgstr ""
 
 msgctxt "#32357"
 msgid "Enable Video Lyrics"
-msgstr ""
+msgstr "Activeer video songteksten"
 
 msgctxt "#32358"
 msgid "Play Whole Albums from Shelves"
@@ -3367,7 +3367,7 @@ msgstr ""
 
 msgctxt "#32373"
 msgid "End Time"
-msgstr ""
+msgstr "Eindtijd"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
@@ -3439,7 +3439,7 @@ msgstr ""
 
 msgctxt "#32392"
 msgid "Play Random"
-msgstr ""
+msgstr "Willekeurig afspelen"
 
 msgctxt "#32393"
 msgid "List Views Options"
@@ -3467,7 +3467,7 @@ msgstr ""
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "#32401"
 msgid "List Item Type"
@@ -3483,7 +3483,7 @@ msgstr ""
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "Niet beschikbaar."
 
 msgctxt "#32405"
 msgid "Show Info Popup"
@@ -3519,7 +3519,7 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "Geactiveerd"
 
 msgctxt "#32414"
 msgid "Disabled"
@@ -3539,7 +3539,7 @@ msgstr ""
 
 msgctxt "#32418"
 msgid "Single Image"
-msgstr ""
+msgstr "Enkele afbeelding"
 
 msgctxt "#32419"
 msgid "Multiple Images"
@@ -3623,7 +3623,7 @@ msgstr ""
 
 msgctxt "#32459"
 msgid "Next Aired"
-msgstr ""
+msgstr "Volgende Afl."
 
 msgctxt "#32460"
 msgid "Enable Direct Seeking in Full Screen Info"
@@ -3643,7 +3643,7 @@ msgstr ""
 
 msgctxt "#32464"
 msgid "Search Trailer"
-msgstr ""
+msgstr "Zoek Trailer"
 
 msgctxt "#32465"
 msgid "Search for Trailers with IMDb Trailers Addon"
@@ -3727,6 +3727,14 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""
 
 #~ msgctxt "#31952"

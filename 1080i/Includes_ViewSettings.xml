@@ -831,6 +831,14 @@
             <selected>Skin.HasSetting(56_Posters_Netflix_TitleInFooter)</selected>
             <label>   -- $LOCALIZE[32384]</label>
         </control>
+		<control type="radiobutton" id="915604" description="Fanart View: Netflix Show Trailer in window for Posters">
+            <visible>Control.IsVisible(56) + [container.content(movies) | container.content(tvshows)] + Skin.HasSetting(56_Posters_Netflix)</visible>
+            <font>ListDetails</font>
+            <include>9000SysButtons</include>
+            <onclick>Skin.ToggleSetting(56_Posters_Netflix_TrailerWindow)</onclick>
+            <selected>Skin.HasSetting(56_Posters_Netflix_TrailerWindow)</selected>
+            <label>   -- $LOCALIZE[32487]</label>
+        </control>
 		<control type="radiobutton" id="91561" description="Fanart View: Netflix for Episodes">
             <visible>Control.IsVisible(56) + container.content(episodes) + !Skin.HasSetting(56_Episodes_Info)</visible>
             <font>ListDetails</font>
@@ -854,6 +862,14 @@
             <onclick>Skin.ToggleSetting(56_Episodes_Netflix_TitleInFooter)</onclick>
             <selected>Skin.HasSetting(56_Episodes_Netflix_TitleInFooter)</selected>
             <label>   -- $LOCALIZE[32384]</label>
+        </control>
+		<control type="radiobutton" id="915613" description="Fanart View: Netflix Play Trailer Windowed for Episodes">
+            <visible>Control.IsVisible(56) + container.content(episodes) + Skin.HasSetting(56_Episodes_Netflix)</visible>
+            <font>ListDetails</font>
+            <include>9000SysButtons</include>
+            <onclick>Skin.ToggleSetting(56_Episodes_Netflix_TrailerWindow)</onclick>
+            <selected>Skin.HasSetting(56_Episodes_Netflix_TrailerWindow)</selected>
+            <label>   -- $LOCALIZE[32487]</label>
         </control>
 		<control type="radiobutton" id="91562" description="Fanart View: Netflix for Music">
             <visible>Control.IsVisible(56) + [container.content(albums) | Container.Content(artists)] + !Skin.HasSetting(56_Music_Info)</visible>

@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-11-04 18:47+0000\n"
+"PO-Revision-Date: 2022-03-03 15:37+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Danish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/da_dk/>\n"
 "Language: da_dk\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8.1\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -107,7 +107,7 @@ msgstr ""
 
 msgctxt "#31020"
 msgid "Recently Added"
-msgstr ""
+msgstr "Senest tilføjede"
 
 msgctxt "#31021"
 msgid "Recently Played"
@@ -123,7 +123,7 @@ msgstr "Visningstype"
 
 msgctxt "#31024"
 msgid "Sort by"
-msgstr ""
+msgstr "Sorter efter"
 
 msgctxt "#31025"
 msgid "Items"
@@ -135,7 +135,7 @@ msgstr "Andre indstillinger"
 
 msgctxt "#31027"
 msgid "Order"
-msgstr ""
+msgstr "Rækkefølge"
 
 msgctxt "#31028"
 msgid "Amber Settings"
@@ -143,7 +143,7 @@ msgstr ""
 
 msgctxt "#31029"
 msgid "Remaining"
-msgstr ""
+msgstr "Tilbage"
 
 msgctxt "#31030"
 msgid "Settings entry point"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "#31037"
 msgid "Rated"
-msgstr ""
+msgstr "Vurderet"
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
@@ -208,7 +208,7 @@ msgstr ""
 
 msgctxt "#31048"
 msgid "Visualization Presets"
-msgstr ""
+msgstr "Forudindstillinger til visualisering"
 
 msgctxt "#31049"
 msgid "Settings Level"
@@ -224,7 +224,7 @@ msgstr "Sorter: Faldende"
 
 msgctxt "#31052"
 msgid "Sections"
-msgstr ""
+msgstr "Sektioner"
 
 msgctxt "#31053"
 msgid "Media Views"
@@ -237,19 +237,19 @@ msgstr ""
 # empty strings from id 31055 to 31068
 msgctxt "#31069"
 msgid "Random episodes"
-msgstr ""
+msgstr "Tilfældige afsnit"
 
 msgctxt "#31070"
 msgid "Random movies"
-msgstr ""
+msgstr "Tilfældige film"
 
 msgctxt "#31071"
 msgid "In progress movies"
-msgstr ""
+msgstr "Igangværende film"
 
 msgctxt "#31072"
 msgid "Unwatched TV shows"
-msgstr ""
+msgstr "Ikke sete tv-serier"
 
 msgctxt "#31073"
 msgid "In progress episodes"
@@ -257,11 +257,11 @@ msgstr ""
 
 msgctxt "#31074"
 msgid "Most played albums"
-msgstr ""
+msgstr "Mest afspillede albummer"
 
 msgctxt "#31075"
 msgid "Random Albums"
-msgstr ""
+msgstr "Tilfældige albummer"
 
 msgctxt "#31076"
 msgid "Most played songs"
@@ -269,11 +269,11 @@ msgstr ""
 
 msgctxt "#31077"
 msgid "Random artists"
-msgstr ""
+msgstr "Tilfældige kunstnere"
 
 msgctxt "#31078"
 msgid "Random music videos"
-msgstr ""
+msgstr "Tilfældige musikvideoer"
 
 msgctxt "#31079"
 msgid "Unwatched videos"
@@ -285,7 +285,7 @@ msgstr ""
 
 msgctxt "#31081"
 msgid "Recent recordings"
-msgstr ""
+msgstr "Nylige optagelser"
 
 msgctxt "#31082"
 msgid "No content found"
@@ -297,7 +297,7 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Hide Recently Added"
-msgstr ""
+msgstr "Skjul senest tilføjede"
 
 msgctxt "#31085"
 msgid "Hide Random"
@@ -341,11 +341,11 @@ msgstr ""
 
 msgctxt "#31095"
 msgid "Hide Recordings"
-msgstr ""
+msgstr "Skjul optagelser"
 
 msgctxt "#31096"
 msgid "Hide Videos"
-msgstr ""
+msgstr "Skjul videoer"
 
 msgctxt "#31097"
 msgid "Hide Music"
@@ -1499,15 +1499,15 @@ msgstr ""
 
 msgctxt "#31610"
 msgid "Artwork Type"
-msgstr ""
+msgstr "Illustrationstype"
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr ""
+msgstr "Plakat"
 
 msgctxt "#31612"
 msgid "Square"
-msgstr ""
+msgstr "Kvadrat"
 
 msgctxt "#31613"
 msgid "Standard"
@@ -3745,4 +3745,12 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""

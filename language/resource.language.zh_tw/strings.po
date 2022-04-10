@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2019-10-13 09:32-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-03-03 15:38+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Chinese (Taiwan) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/zh_tw/>\n"
 "Language: zh_tw\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -43,11 +43,11 @@ msgstr ""
 
 msgctxt "#31004"
 msgid "Shift"
-msgstr ""
+msgstr "轉換"
 
 msgctxt "#31005"
 msgid "Cinema"
-msgstr ""
+msgstr "電影院"
 
 msgctxt "#31006"
 msgid "Shared"
@@ -107,7 +107,7 @@ msgstr ""
 
 msgctxt "#31020"
 msgid "Recently Added"
-msgstr ""
+msgstr "最近新增"
 
 msgctxt "#31021"
 msgid "Recently Played"
@@ -119,23 +119,23 @@ msgstr ""
 
 msgctxt "#31023"
 msgid "Viewtype"
-msgstr ""
+msgstr "展示類型"
 
 msgctxt "#31024"
 msgid "Sort by"
-msgstr ""
+msgstr "排序以"
 
 msgctxt "#31025"
 msgid "Items"
-msgstr ""
+msgstr "個項目"
 
 msgctxt "#31026"
 msgid "Misc options"
-msgstr ""
+msgstr "其他選項"
 
 msgctxt "#31027"
 msgid "Order"
-msgstr ""
+msgstr "排序"
 
 msgctxt "#31028"
 msgid "Amber Settings"
@@ -143,7 +143,7 @@ msgstr ""
 
 msgctxt "#31029"
 msgid "Remaining"
-msgstr ""
+msgstr "後結束"
 
 msgctxt "#31030"
 msgid "Settings entry point"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "#31037"
 msgid "Rated"
-msgstr ""
+msgstr "已評等"
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
@@ -208,7 +208,7 @@ msgstr ""
 
 msgctxt "#31048"
 msgid "Visualization Presets"
-msgstr ""
+msgstr "視覺效果預設"
 
 msgctxt "#31049"
 msgid "Settings Level"
@@ -216,15 +216,15 @@ msgstr ""
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
-msgstr ""
+msgstr "排序：遞增"
 
 msgctxt "#31051"
 msgid "Sort: Descending"
-msgstr ""
+msgstr "排序：遞減"
 
 msgctxt "#31052"
 msgid "Sections"
-msgstr ""
+msgstr "區"
 
 msgctxt "#31053"
 msgid "Media Views"
@@ -237,15 +237,15 @@ msgstr ""
 # empty strings from id 31055 to 31068
 msgctxt "#31069"
 msgid "Random episodes"
-msgstr ""
+msgstr "隨機劇集"
 
 msgctxt "#31070"
 msgid "Random movies"
-msgstr ""
+msgstr "隨機電影"
 
 msgctxt "#31071"
 msgid "In progress movies"
-msgstr ""
+msgstr "攝製中的電影"
 
 msgctxt "#31072"
 msgid "Unwatched TV shows"
@@ -253,11 +253,11 @@ msgstr ""
 
 msgctxt "#31073"
 msgid "In progress episodes"
-msgstr ""
+msgstr "攝製中的影集"
 
 msgctxt "#31074"
 msgid "Most played albums"
-msgstr ""
+msgstr "最常播放的專輯"
 
 msgctxt "#31075"
 msgid "Random Albums"
@@ -269,11 +269,11 @@ msgstr ""
 
 msgctxt "#31077"
 msgid "Random artists"
-msgstr ""
+msgstr "隨機選擇演出者"
 
 msgctxt "#31078"
 msgid "Random music videos"
-msgstr ""
+msgstr "隨機音樂影片"
 
 msgctxt "#31079"
 msgid "Unwatched videos"
@@ -285,7 +285,7 @@ msgstr ""
 
 msgctxt "#31081"
 msgid "Recent recordings"
-msgstr ""
+msgstr "最近的錄影"
 
 msgctxt "#31082"
 msgid "No content found"
@@ -297,7 +297,7 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Hide Recently Added"
-msgstr ""
+msgstr "隱藏最近加入"
 
 msgctxt "#31085"
 msgid "Hide Random"
@@ -341,11 +341,11 @@ msgstr ""
 
 msgctxt "#31095"
 msgid "Hide Recordings"
-msgstr ""
+msgstr "隱藏錄影檔"
 
 msgctxt "#31096"
 msgid "Hide Videos"
-msgstr ""
+msgstr "隱藏影片"
 
 msgctxt "#31097"
 msgid "Hide Music"
@@ -361,7 +361,7 @@ msgstr ""
 
 msgctxt "#31100"
 msgid "Hide Favourites"
-msgstr ""
+msgstr "隱藏最愛項目"
 
 msgctxt "#31101"
 msgid "Hide random episodes"
@@ -419,7 +419,7 @@ msgstr ""
 
 msgctxt "#31118"
 msgid "Small"
-msgstr ""
+msgstr "小"
 
 msgctxt "#31119"
 msgid "Regular"
@@ -427,7 +427,7 @@ msgstr ""
 
 msgctxt "#31120"
 msgid "Large"
-msgstr ""
+msgstr "大"
 
 msgctxt "#31121"
 msgid "Apply Changes"
@@ -436,7 +436,7 @@ msgstr ""
 # empty strings from id 31122 to 31128
 msgctxt "#31129"
 msgid "Same director"
-msgstr ""
+msgstr "同一位導演的作品"
 
 msgctxt "#31130"
 msgid "Hourly"
@@ -444,15 +444,15 @@ msgstr ""
 
 msgctxt "#31131"
 msgid "Forecast"
-msgstr ""
+msgstr "預報"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
-msgstr ""
+msgstr "歌詞附加元件"
 
 msgctxt "#31133"
 msgid "Toggle audio stream"
-msgstr ""
+msgstr "切換聲道"
 
 msgctxt "#31134"
 msgid "Toggle language"
@@ -460,11 +460,11 @@ msgstr ""
 
 msgctxt "#31135"
 msgid "Change mode"
-msgstr ""
+msgstr "更改設定"
 
 msgctxt "#31136"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "以 2D 模式觀賞"
 
 msgctxt "#31137"
 msgid "PVR Info"
@@ -472,19 +472,19 @@ msgstr ""
 
 msgctxt "#31138"
 msgid "Player info"
-msgstr ""
+msgstr "播放器資訊"
 
 msgctxt "#31139"
 msgid "Video decoder"
-msgstr ""
+msgstr "影像解碼器"
 
 msgctxt "#31140"
 msgid "Pixel format"
-msgstr ""
+msgstr "畫面格式"
 
 msgctxt "#31141"
 msgid "Play speed"
-msgstr ""
+msgstr "播放速度"
 
 # empty strings from id 31142 to 31149
 msgctxt "#31150"
@@ -525,7 +525,7 @@ msgstr ""
 
 msgctxt "#31159"
 msgid "Logo"
-msgstr ""
+msgstr "標誌"
 
 msgctxt "#31160"
 msgid "Disable Logo view"
@@ -547,15 +547,15 @@ msgstr ""
 
 msgctxt "#31295"
 msgid "OpenELEC Settings"
-msgstr ""
+msgstr "OpenELEC設定"
 
 msgctxt "#31296"
 msgid "LibreELEC Settings"
-msgstr ""
+msgstr "LibreELEC設定"
 
 msgctxt "#31297"
 msgid "min"
-msgstr ""
+msgstr "分"
 
 msgctxt "#31298"
 msgid "Starting in"
@@ -567,60 +567,60 @@ msgstr ""
 
 msgctxt "#31300"
 msgid "CoreELEC Settings"
-msgstr ""
+msgstr "CoreELEC設定"
 
 # empty strings from id 31301 to 31308
 msgctxt "#31309"
 msgid "Memory Used"
-msgstr ""
+msgstr "已使用記憶體"
 
 # empty strings from id 31310 to 31321
 msgctxt "#31322"
 msgid "Aired"
-msgstr ""
+msgstr "首播"
 
 # empty strings from id 31323 to 31350
 msgctxt "#31351"
 msgid "Pause"
-msgstr ""
+msgstr "暫停"
 
 msgctxt "#31352"
 msgid "Stop"
-msgstr ""
+msgstr "停止"
 
 msgctxt "#31353"
 msgid "Fast Forward"
-msgstr ""
+msgstr "快轉"
 
 msgctxt "#31354"
 msgid "Rewind"
-msgstr ""
+msgstr "倒轉"
 
 msgctxt "#31355"
 msgid "Movie menu"
-msgstr ""
+msgstr "電影選單"
 
 msgctxt "#31356"
 msgid "Download Subtitles"
-msgstr ""
+msgstr "下載字幕"
 
 msgctxt "#31357"
 msgid "Local subtitle available"
-msgstr ""
+msgstr "有本地語言的字幕可選用"
 
 # empty strings from id 31358 to 31359
 # Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "以 2D 模式觀賞"
 
 msgctxt "#31361"
 msgid "Change mode"
-msgstr ""
+msgstr "更改設定"
 
 msgctxt "#31362"
 msgid "Enabled"
-msgstr ""
+msgstr "啟用"
 
 msgctxt "#31363"
 msgid "Static"
@@ -681,11 +681,11 @@ msgstr ""
 
 msgctxt "#31403"
 msgid "Random fanart"
-msgstr ""
+msgstr "隨機的相關圖片"
 
 msgctxt "#31404"
 msgid "Conditional weather"
-msgstr ""
+msgstr "天氣情況"
 
 msgctxt "#31405"
 msgid "Movie Library Statistics"
@@ -777,7 +777,7 @@ msgstr ""
 
 msgctxt "#31427"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "最受好評電影"
 
 msgctxt "#31428"
 msgid "Movie Genres"
@@ -797,7 +797,7 @@ msgstr ""
 
 msgctxt "#31432"
 msgid "TV Shows"
-msgstr ""
+msgstr "電視劇"
 
 msgctxt "#31433"
 msgid "Recently Added TV Shows"
@@ -817,7 +817,7 @@ msgstr ""
 
 msgctxt "#31437"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "還沒看過的電視劇集"
 
 msgctxt "#31438"
 msgid "Top Rated TV Shows"
@@ -977,19 +977,19 @@ msgstr ""
 
 msgctxt "#31477"
 msgid "Memory Used"
-msgstr ""
+msgstr "已使用記憶體"
 
 msgctxt "#31478"
 msgid "Remaining"
-msgstr ""
+msgstr "後結束"
 
 msgctxt "#31479"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31480"
 msgid "Sort By"
-msgstr ""
+msgstr "排序以"
 
 msgctxt "#31481"
 msgid "Sort Order"
@@ -1041,7 +1041,7 @@ msgstr ""
 
 msgctxt "#31493"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "還沒看過的電視劇集"
 
 msgctxt "#31494"
 msgid "Recently Released Albums"
@@ -1069,11 +1069,11 @@ msgstr ""
 
 msgctxt "#31500"
 msgid "TV"
-msgstr ""
+msgstr "電視"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
-msgstr ""
+msgstr "已排程的時間"
 
 msgctxt "#31502"
 msgid "All Movies"
@@ -1081,19 +1081,19 @@ msgstr ""
 
 msgctxt "#31503"
 msgid "Add Group"
-msgstr ""
+msgstr "新增群組"
 
 msgctxt "#31504"
 msgid "Rename Group"
-msgstr ""
+msgstr "重新命名群組"
 
 msgctxt "#31505"
 msgid "Delete Group"
-msgstr ""
+msgstr "刪除群組"
 
 msgctxt "#31506"
 msgid "Available[CR]Groups"
-msgstr ""
+msgstr "可用的[CR]群組"
 
 msgctxt "#31507"
 msgid "Opens"
@@ -1106,7 +1106,7 @@ msgstr ""
 
 msgctxt "#31510"
 msgid "Timer Set"
-msgstr ""
+msgstr "計時器設定"
 
 msgctxt "#31511"
 msgid "Reminder Set"
@@ -1131,7 +1131,7 @@ msgstr ""
 
 msgctxt "#31518"
 msgid "Popular Movies"
-msgstr ""
+msgstr "熱門電影"
 
 msgctxt "#31519"
 msgid "TMDb Top Rated Movies"
@@ -1139,7 +1139,7 @@ msgstr ""
 
 msgctxt "#31520"
 msgid "Upcoming Movies"
-msgstr ""
+msgstr "即將上映的電影"
 
 msgctxt "#31521"
 msgid "In-Theater Movies"
@@ -1163,7 +1163,7 @@ msgstr ""
 
 msgctxt "#31526"
 msgid "Next Up Episodes"
-msgstr ""
+msgstr "下集播映"
 
 msgctxt "#31527"
 msgid "Reboot to Android"
@@ -1503,11 +1503,11 @@ msgstr ""
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr ""
+msgstr "海報"
 
 msgctxt "#31612"
 msgid "Square"
-msgstr ""
+msgstr "方形"
 
 msgctxt "#31613"
 msgid "Standard"
@@ -1535,19 +1535,19 @@ msgstr ""
 
 msgctxt "#31619"
 msgid "Thumb"
-msgstr ""
+msgstr "縮圖"
 
 msgctxt "#31620"
 msgid "Landscape"
-msgstr ""
+msgstr "橫向"
 
 msgctxt "#31621"
 msgid "Clear Logo"
-msgstr ""
+msgstr "通透式標題圖"
 
 msgctxt "#31622"
 msgid "Clear Art"
-msgstr ""
+msgstr "通透式美術圖"
 
 msgctxt "#31623"
 msgid "Disc Art"
@@ -1603,7 +1603,7 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "捷徑"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
@@ -1679,19 +1679,19 @@ msgstr ""
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
-msgstr ""
+msgstr "36小時預報"
 
 msgctxt "#31902"
 msgid "Hourly Forecast"
-msgstr ""
+msgstr "每小時預報"
 
 msgctxt "#31903"
 msgid "Weekend Forecast"
-msgstr ""
+msgstr "一週預報"
 
 msgctxt "#31904"
 msgid "10 Day Forecast"
-msgstr ""
+msgstr "10天預報"
 
 # empty strings from id 31905 to 31919
 msgctxt "#31920"
@@ -1767,7 +1767,7 @@ msgstr ""
 
 msgctxt "#31955"
 msgid "Hide"
-msgstr ""
+msgstr "隱藏"
 
 msgctxt "#31956"
 msgid "Get theme"
@@ -1792,7 +1792,7 @@ msgstr ""
 
 msgctxt "#31961"
 msgid "Recently added"
-msgstr ""
+msgstr "最近加入的"
 
 #. view label
 msgctxt "#31962"
@@ -1802,7 +1802,7 @@ msgstr ""
 #. view label
 msgctxt "#31963"
 msgid "Panel"
-msgstr ""
+msgstr "面板"
 
 msgctxt "#31964"
 msgid "Configure shelf items"
@@ -1815,7 +1815,7 @@ msgstr ""
 
 msgctxt "#31966"
 msgid "Recommended"
-msgstr ""
+msgstr "推薦"
 
 msgctxt "#31967"
 msgid "Enable Home shelf"
@@ -1848,7 +1848,7 @@ msgstr ""
 
 msgctxt "#31974"
 msgid "Home menu"
-msgstr ""
+msgstr "首頁選單"
 
 msgctxt "#31975"
 msgid "Channels"
@@ -1945,7 +1945,7 @@ msgstr ""
 
 msgctxt "#31999"
 msgid "BigList"
-msgstr ""
+msgstr "大型列表"
 
 msgctxt "#32000"
 msgid "Hide icons"
@@ -1954,11 +1954,11 @@ msgstr ""
 # empty string with id 32001
 msgctxt "#32002"
 msgid "Hide Games"
-msgstr ""
+msgstr "隱藏遊戲"
 
 msgctxt "#32003"
 msgid "Game Settings"
-msgstr ""
+msgstr "遊戲設定"
 
 msgctxt "#32004"
 msgid "Toggle Subtitle"
@@ -1982,7 +1982,7 @@ msgstr ""
 
 msgctxt "#32009"
 msgid "Next Episode"
-msgstr ""
+msgstr "下一集"
 
 msgctxt "#32010"
 msgid "Latest Episode"
@@ -1990,7 +1990,7 @@ msgstr ""
 
 msgctxt "#32011"
 msgid "Airs"
-msgstr ""
+msgstr "播映"
 
 # empty string with id 32012
 msgctxt "#32013"
@@ -2095,11 +2095,11 @@ msgstr ""
 
 msgctxt "#32039"
 msgid "Timeshift"
-msgstr ""
+msgstr "時間平移"
 
 msgctxt "#32040"
 msgid "Enable Kiosk Mode"
-msgstr ""
+msgstr "啟用Kiosk模式"
 
 # empty string with id 32041
 msgctxt "#32042"
@@ -2124,7 +2124,7 @@ msgstr ""
 
 msgctxt "#32047"
 msgid "Seconds"
-msgstr ""
+msgstr "秒"
 
 msgctxt "#32048"
 msgid "Show background name in Home window"
@@ -2200,7 +2200,7 @@ msgstr ""
 
 msgctxt "#32066"
 msgid "Restore"
-msgstr ""
+msgstr "回復"
 
 msgctxt "#32067"
 msgid "Configure Backup addon"
@@ -2212,7 +2212,7 @@ msgstr ""
 
 msgctxt "#32069"
 msgid "Files"
-msgstr ""
+msgstr "檔案"
 
 msgctxt "#32070"
 msgid "Place Background Name in Top Bar"
@@ -2228,15 +2228,15 @@ msgstr ""
 
 msgctxt "#32073"
 msgid "Budget"
-msgstr ""
+msgstr "預算"
 
 msgctxt "#32074"
 msgid "Revenue"
-msgstr ""
+msgstr "營收"
 
 msgctxt "#32075"
 msgid "Awards"
-msgstr ""
+msgstr "獎項"
 
 msgctxt "#32076"
 msgid "Show Watched Items in Recent Shelves"
@@ -2436,11 +2436,11 @@ msgstr ""
 
 msgctxt "#32125"
 msgid "Hour"
-msgstr ""
+msgstr "小時"
 
 msgctxt "#32126"
 msgid "Minute"
-msgstr ""
+msgstr "分"
 
 msgctxt "#32127"
 msgid "Online TMDb Info"
@@ -2456,11 +2456,11 @@ msgstr ""
 
 msgctxt "#32130"
 msgid "Posters"
-msgstr ""
+msgstr "海報圖"
 
 msgctxt "#32131"
 msgid "YouTube"
-msgstr ""
+msgstr "YouTube"
 
 msgctxt "#32132"
 msgid "Search for Trailer"
@@ -2476,7 +2476,7 @@ msgstr ""
 
 msgctxt "#32135"
 msgid "Extras"
-msgstr ""
+msgstr "額外資訊"
 
 msgctxt "#32136"
 msgid "Known for"
@@ -2492,7 +2492,7 @@ msgstr ""
 
 msgctxt "#32139"
 msgid "Ended"
-msgstr ""
+msgstr "結束"
 
 msgctxt "#32140"
 msgid "Rumored"
@@ -2829,7 +2829,7 @@ msgstr ""
 
 msgctxt "#32231"
 msgid "User Rating"
-msgstr ""
+msgstr "使用者評等"
 
 msgctxt "#32232"
 msgid "Ratings"
@@ -2913,7 +2913,7 @@ msgstr ""
 
 msgctxt "#32254"
 msgid "IMDb Top 250"
-msgstr ""
+msgstr "IMDB最佳影片排行250部"
 
 msgctxt "#32255"
 msgid "Missing Add-on"
@@ -2933,7 +2933,7 @@ msgstr ""
 
 msgctxt "#32259"
 msgid "Backgrounds"
-msgstr ""
+msgstr "桌面背景集"
 
 msgctxt "#32260"
 msgid "Unwatched"
@@ -3069,7 +3069,7 @@ msgstr ""
 
 msgctxt "#32294"
 msgid "Ends at"
-msgstr ""
+msgstr "結束於"
 
 msgctxt "#32295"
 msgid "Netflix style"
@@ -3093,7 +3093,7 @@ msgstr ""
 
 msgctxt "#32300"
 msgid "Now Playing"
-msgstr ""
+msgstr "正在播放"
 
 msgctxt "#32301"
 msgid "Hide Title Bar Now Playing"
@@ -3209,7 +3209,7 @@ msgstr ""
 
 msgctxt "#32329"
 msgid "Special"
-msgstr ""
+msgstr "特別"
 
 msgctxt "#32330"
 msgid "Next Tracks"
@@ -3321,7 +3321,7 @@ msgstr ""
 
 msgctxt "#32357"
 msgid "Enable Video Lyrics"
-msgstr ""
+msgstr "啟用動態歌詞"
 
 msgctxt "#32358"
 msgid "Play Whole Albums from Shelves"
@@ -3385,7 +3385,7 @@ msgstr ""
 
 msgctxt "#32373"
 msgid "End Time"
-msgstr ""
+msgstr "結束時間"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
@@ -3485,7 +3485,7 @@ msgstr ""
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "旗幟"
 
 msgctxt "#32401"
 msgid "List Item Type"
@@ -3501,7 +3501,7 @@ msgstr ""
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
@@ -3537,7 +3537,7 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "啟用"
 
 msgctxt "#32414"
 msgid "Disabled"
@@ -3557,7 +3557,7 @@ msgstr ""
 
 msgctxt "#32418"
 msgid "Single Image"
-msgstr ""
+msgstr "單一圖片"
 
 msgctxt "#32419"
 msgid "Multiple Images"
@@ -3661,7 +3661,7 @@ msgstr ""
 
 msgctxt "#32464"
 msgid "Search Trailer"
-msgstr ""
+msgstr "搜尋預告片"
 
 msgctxt "#32465"
 msgid "Search for Trailers with IMDb Trailers Addon"
@@ -3745,4 +3745,12 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""

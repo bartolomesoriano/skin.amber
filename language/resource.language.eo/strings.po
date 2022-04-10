@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-05-19 22:45+0000\n"
-"Last-Translator: Jakub Fabijan <animatorzpolski@gmail.com>\n"
+"PO-Revision-Date: 2022-03-03 15:37+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Esperanto <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -43,7 +43,7 @@ msgstr ""
 
 msgctxt "#31004"
 msgid "Shift"
-msgstr ""
+msgstr "Vico"
 
 msgctxt "#31005"
 msgid "Cinema"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "#31037"
 msgid "Rated"
-msgstr ""
+msgstr "Taksita"
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
@@ -237,11 +237,11 @@ msgstr ""
 # empty strings from id 31055 to 31068
 msgctxt "#31069"
 msgid "Random episodes"
-msgstr ""
+msgstr "Hazardaj epizodoj"
 
 msgctxt "#31070"
 msgid "Random movies"
-msgstr ""
+msgstr "Hazardaj filmoj"
 
 msgctxt "#31071"
 msgid "In progress movies"
@@ -620,7 +620,7 @@ msgstr ""
 
 msgctxt "#31362"
 msgid "Enabled"
-msgstr ""
+msgstr "Enabled"
 
 msgctxt "#31363"
 msgid "Static"
@@ -1503,7 +1503,7 @@ msgstr ""
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr ""
+msgstr "Afiŝo"
 
 msgctxt "#31612"
 msgid "Square"
@@ -1539,7 +1539,7 @@ msgstr ""
 
 msgctxt "#31620"
 msgid "Landscape"
-msgstr ""
+msgstr "Horizontala"
 
 msgctxt "#31621"
 msgid "Clear Logo"
@@ -1603,7 +1603,7 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "Bookmarks"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
@@ -1815,7 +1815,7 @@ msgstr ""
 
 msgctxt "#31966"
 msgid "Recommended"
-msgstr ""
+msgstr "Rekomenditaj"
 
 msgctxt "#31967"
 msgid "Enable Home shelf"
@@ -2124,7 +2124,7 @@ msgstr ""
 
 msgctxt "#32047"
 msgid "Seconds"
-msgstr ""
+msgstr "Sekundoj"
 
 msgctxt "#32048"
 msgid "Show background name in Home window"
@@ -2212,7 +2212,7 @@ msgstr ""
 
 msgctxt "#32069"
 msgid "Files"
-msgstr ""
+msgstr "vicos"
 
 msgctxt "#32070"
 msgid "Place Background Name in Top Bar"
@@ -3093,7 +3093,7 @@ msgstr ""
 
 msgctxt "#32300"
 msgid "Now Playing"
-msgstr ""
+msgstr "Nun ludas"
 
 msgctxt "#32301"
 msgid "Hide Title Bar Now Playing"
@@ -3485,7 +3485,7 @@ msgstr ""
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "Standardo"
 
 msgctxt "#32401"
 msgid "List Item Type"
@@ -3501,7 +3501,7 @@ msgstr ""
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "Sen"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
@@ -3537,7 +3537,7 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "Enabled"
 
 msgctxt "#32414"
 msgid "Disabled"
@@ -3745,4 +3745,12 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""

@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-02-03 21:30+0000\n"
+"PO-Revision-Date: 2022-03-30 09:50+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Portuguese (Brazil) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/pt_br/>\n"
 "Language: pt_br\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -416,7 +416,7 @@ msgstr ""
 
 msgctxt "#31118"
 msgid "Small"
-msgstr ""
+msgstr "Pequeno"
 
 msgctxt "#31119"
 msgid "Regular"
@@ -424,7 +424,7 @@ msgstr ""
 
 msgctxt "#31120"
 msgid "Large"
-msgstr ""
+msgstr "Grande"
 
 msgctxt "#31121"
 msgid "Apply Changes"
@@ -520,7 +520,7 @@ msgstr ""
 
 msgctxt "#31159"
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 msgctxt "#31160"
 msgid "Disable Logo view"
@@ -565,7 +565,7 @@ msgstr "CoreELEC"
 # empty strings from id 31301 to 31308
 msgctxt "#31309"
 msgid "Memory Used"
-msgstr ""
+msgstr "Memória usada"
 
 msgctxt "#31322"
 msgid "Aired"
@@ -1133,7 +1133,7 @@ msgstr "Filmes em Exibição nos Cinemas"
 
 msgctxt "#31522"
 msgid "Popular TV Shows"
-msgstr "Seriados Populares"
+msgstr "Seriados populares"
 
 msgctxt "#31523"
 msgid "TMDb Top Rated TV Shows"
@@ -1157,7 +1157,7 @@ msgstr ""
 
 msgctxt "#31528"
 msgid "Power Menu"
-msgstr ""
+msgstr "Menu de Desligamento"
 
 msgctxt "#31529"
 msgid "Popular People"
@@ -1489,11 +1489,11 @@ msgstr ""
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr ""
+msgstr "Pôster"
 
 msgctxt "#31612"
 msgid "Square"
-msgstr ""
+msgstr "Quadrado"
 
 msgctxt "#31613"
 msgid "Standard"
@@ -1521,19 +1521,19 @@ msgstr ""
 
 msgctxt "#31619"
 msgid "Thumb"
-msgstr ""
+msgstr "Miniatura"
 
 msgctxt "#31620"
 msgid "Landscape"
-msgstr ""
+msgstr "Paisagem"
 
 msgctxt "#31621"
 msgid "Clear Logo"
-msgstr ""
+msgstr "ClearLogo"
 
 msgctxt "#31622"
 msgid "Clear Art"
-msgstr ""
+msgstr "Clear Art"
 
 msgctxt "#31623"
 msgid "Disc Art"
@@ -1589,7 +1589,7 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "Atalhos"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
@@ -2808,7 +2808,7 @@ msgstr ""
 
 msgctxt "#32231"
 msgid "User Rating"
-msgstr ""
+msgstr "Avaliação Usuário"
 
 msgctxt "#32232"
 msgid "Ratings"
@@ -2892,7 +2892,7 @@ msgstr ""
 
 msgctxt "#32254"
 msgid "IMDb Top 250"
-msgstr ""
+msgstr "IMDb Top 250"
 
 msgctxt "#32255"
 msgid "Missing Add-on"
@@ -2912,7 +2912,7 @@ msgstr ""
 
 msgctxt "#32259"
 msgid "Backgrounds"
-msgstr ""
+msgstr "Fundos"
 
 msgctxt "#32260"
 msgid "Unwatched"
@@ -3048,7 +3048,7 @@ msgstr ""
 
 msgctxt "#32294"
 msgid "Ends at"
-msgstr ""
+msgstr "Termina às"
 
 msgctxt "#32295"
 msgid "Netflix style"
@@ -3072,7 +3072,7 @@ msgstr ""
 
 msgctxt "#32300"
 msgid "Now Playing"
-msgstr ""
+msgstr "Reproduzindo agora"
 
 msgctxt "#32301"
 msgid "Hide Title Bar Now Playing"
@@ -3112,7 +3112,7 @@ msgstr ""
 
 msgctxt "#32310"
 msgid "Green"
-msgstr ""
+msgstr "Verde"
 
 msgctxt "#32311"
 msgid "Grey"
@@ -3188,7 +3188,7 @@ msgstr ""
 
 msgctxt "#32329"
 msgid "Special"
-msgstr ""
+msgstr "Especial"
 
 msgctxt "#32330"
 msgid "Next Tracks"
@@ -3364,7 +3364,7 @@ msgstr ""
 
 msgctxt "#32373"
 msgid "End Time"
-msgstr ""
+msgstr "Hora Término"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
@@ -3464,7 +3464,7 @@ msgstr ""
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "#32401"
 msgid "List Item Type"
@@ -3480,7 +3480,7 @@ msgstr ""
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "N/D"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
@@ -3516,7 +3516,7 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "Ativado"
 
 msgctxt "#32414"
 msgid "Disabled"
@@ -3536,7 +3536,7 @@ msgstr ""
 
 msgctxt "#32418"
 msgid "Single Image"
-msgstr ""
+msgstr "Imagem única"
 
 msgctxt "#32419"
 msgid "Multiple Images"
@@ -3724,6 +3724,14 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""
 
 #~ msgctxt "#31952"

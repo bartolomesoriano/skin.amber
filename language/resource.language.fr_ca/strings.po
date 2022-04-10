@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-05-03 09:05+0000\n"
+"PO-Revision-Date: 2022-03-19 06:46+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: French (Canada) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/fr_ca/>\n"
 "Language: fr_ca\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.6.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -519,7 +519,7 @@ msgstr "Désactiver la vue Triple"
 
 msgctxt "#31159"
 msgid "Logo"
-msgstr ""
+msgstr "Logo"
 
 msgctxt "#31160"
 msgid "Disable Logo view"
@@ -1587,7 +1587,7 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "Raccourcis"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
@@ -2889,7 +2889,7 @@ msgstr "Nombre de films"
 
 msgctxt "#32254"
 msgid "IMDb Top 250"
-msgstr ""
+msgstr "250 1ers d’IMDb"
 
 msgctxt "#32255"
 msgid "Missing Add-on"
@@ -3297,7 +3297,7 @@ msgstr ""
 
 msgctxt "#32357"
 msgid "Enable Video Lyrics"
-msgstr ""
+msgstr "Activer les paroles des vidéos"
 
 msgctxt "#32358"
 msgid "Play Whole Albums from Shelves"
@@ -3361,7 +3361,7 @@ msgstr ""
 
 msgctxt "#32373"
 msgid "End Time"
-msgstr ""
+msgstr "Heure de fin"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
@@ -3461,7 +3461,7 @@ msgstr ""
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "Bannière"
 
 msgctxt "#32401"
 msgid "List Item Type"
@@ -3477,7 +3477,7 @@ msgstr ""
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "N/D"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
@@ -3513,7 +3513,7 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "Activé"
 
 msgctxt "#32414"
 msgid "Disabled"
@@ -3533,7 +3533,7 @@ msgstr ""
 
 msgctxt "#32418"
 msgid "Single Image"
-msgstr ""
+msgstr "Une seule image"
 
 msgctxt "#32419"
 msgid "Multiple Images"
@@ -3617,7 +3617,7 @@ msgstr ""
 
 msgctxt "#32459"
 msgid "Next Aired"
-msgstr ""
+msgstr "Prochaine diffusion"
 
 msgctxt "#32460"
 msgid "Enable Direct Seeking in Full Screen Info"
@@ -3637,7 +3637,7 @@ msgstr ""
 
 msgctxt "#32464"
 msgid "Search Trailer"
-msgstr ""
+msgstr "Rechercher une bande-annonce"
 
 msgctxt "#32465"
 msgid "Search for Trailers with IMDb Trailers Addon"
@@ -3721,6 +3721,14 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""
 
 #~ msgctxt "#31952"

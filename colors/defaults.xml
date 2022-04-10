@@ -7,6 +7,7 @@
 	<color name="White">FFCCCCCC</color>
 	<color name="White2">FFFFFFFF</color>
 	<color name="Red">FFfe3737</color>
+	<color name="Green">FF45b864</color>
 	<color name="Blue">FF6495ED</color>
 	<color name="Black">FF000000</color>
 	<color name="Silver">FFE2E2E2</color>
@@ -20,4 +21,5 @@
 	<color name="ShadowDark">FF262626</color>
 	<color name="Highlight">FFf6b12b</color>
     <color name="SelectedFocused">FFA0522D</color>
+	<color name="Background">ff181818</color>
 </colors>

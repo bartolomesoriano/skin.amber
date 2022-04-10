@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-01-22 09:13+0000\n"
+"PO-Revision-Date: 2022-03-03 15:38+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Russian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/ru_ru/>\n"
 "Language: ru_ru\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -249,31 +249,31 @@ msgstr "Незавершенные фильмы"
 
 msgctxt "#31072"
 msgid "Unwatched TV shows"
-msgstr ""
+msgstr "Непросмотренные сериалы"
 
 msgctxt "#31073"
 msgid "In progress episodes"
-msgstr ""
+msgstr "Текущие серии"
 
 msgctxt "#31074"
 msgid "Most played albums"
-msgstr ""
+msgstr "Самые проигрываемые альбомы"
 
 msgctxt "#31075"
 msgid "Random Albums"
-msgstr ""
+msgstr "Случайные альбомы"
 
 msgctxt "#31076"
 msgid "Most played songs"
-msgstr ""
+msgstr "Самые популярные песни"
 
 msgctxt "#31077"
 msgid "Random artists"
-msgstr ""
+msgstr "Случайные исполнители"
 
 msgctxt "#31078"
 msgid "Random music videos"
-msgstr ""
+msgstr "Случайные музыкальные клипы"
 
 msgctxt "#31079"
 msgid "Unwatched videos"
@@ -285,7 +285,7 @@ msgstr ""
 
 msgctxt "#31081"
 msgid "Recent recordings"
-msgstr ""
+msgstr "Последние записи"
 
 msgctxt "#31082"
 msgid "No content found"
@@ -297,7 +297,7 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Hide Recently Added"
-msgstr ""
+msgstr "Не использовать виджет \"Недавно добавленные\""
 
 msgctxt "#31085"
 msgid "Hide Random"
@@ -337,15 +337,15 @@ msgstr ""
 
 msgctxt "#31094"
 msgid "Hide Channels"
-msgstr ""
+msgstr "Скрыть каналы"
 
 msgctxt "#31095"
 msgid "Hide Recordings"
-msgstr ""
+msgstr "Скрыть записи"
 
 msgctxt "#31096"
 msgid "Hide Videos"
-msgstr ""
+msgstr "Не показывать виджеты категории \"Видео\""
 
 msgctxt "#31097"
 msgid "Hide Music"
@@ -361,7 +361,7 @@ msgstr ""
 
 msgctxt "#31100"
 msgid "Hide Favourites"
-msgstr ""
+msgstr "Не показывать виджет \"Избранное\""
 
 msgctxt "#31101"
 msgid "Hide random episodes"
@@ -419,7 +419,7 @@ msgstr ""
 
 msgctxt "#31118"
 msgid "Small"
-msgstr ""
+msgstr "Небольшие"
 
 msgctxt "#31119"
 msgid "Regular"
@@ -427,7 +427,7 @@ msgstr ""
 
 msgctxt "#31120"
 msgid "Large"
-msgstr ""
+msgstr "Большие"
 
 msgctxt "#31121"
 msgid "Apply Changes"
@@ -436,7 +436,7 @@ msgstr ""
 # empty strings from id 31122 to 31128
 msgctxt "#31129"
 msgid "Same director"
-msgstr ""
+msgstr "Тот же режиссёр"
 
 msgctxt "#31130"
 msgid "Hourly"
@@ -444,7 +444,7 @@ msgstr ""
 
 msgctxt "#31131"
 msgid "Forecast"
-msgstr ""
+msgstr "Прогноз"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
@@ -452,7 +452,7 @@ msgstr "Тексты песен дополнения"
 
 msgctxt "#31133"
 msgid "Toggle audio stream"
-msgstr ""
+msgstr "Переключить аудиодорожку"
 
 msgctxt "#31134"
 msgid "Toggle language"
@@ -1503,11 +1503,11 @@ msgstr ""
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr ""
+msgstr "Постер"
 
 msgctxt "#31612"
 msgid "Square"
-msgstr ""
+msgstr "Квадрат"
 
 msgctxt "#31613"
 msgid "Standard"
@@ -3745,4 +3745,12 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""

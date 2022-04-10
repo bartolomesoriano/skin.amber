@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2019-10-13 09:32-0400\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-03-27 01:18+0000\n"
+"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"Language-Team: Hebrew (Israel) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/he_il/>\n"
 "Language: he_il\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -43,11 +43,11 @@ msgstr ""
 
 msgctxt "#31004"
 msgid "Shift"
-msgstr ""
+msgstr "הזזה"
 
 msgctxt "#31005"
 msgid "Cinema"
-msgstr ""
+msgstr "קולנוע"
 
 msgctxt "#31006"
 msgid "Shared"
@@ -107,7 +107,7 @@ msgstr ""
 
 msgctxt "#31020"
 msgid "Recently Added"
-msgstr ""
+msgstr "נוסף לאחרונה"
 
 msgctxt "#31021"
 msgid "Recently Played"
@@ -115,27 +115,27 @@ msgstr ""
 
 msgctxt "#31022"
 msgid "Kodi"
-msgstr ""
+msgstr "קודי"
 
 msgctxt "#31023"
 msgid "Viewtype"
-msgstr ""
+msgstr "מצב תצוגה"
 
 msgctxt "#31024"
 msgid "Sort by"
-msgstr ""
+msgstr "מיין לפי"
 
 msgctxt "#31025"
 msgid "Items"
-msgstr ""
+msgstr "פריטים"
 
 msgctxt "#31026"
 msgid "Misc options"
-msgstr ""
+msgstr "אפשרויות שונות"
 
 msgctxt "#31027"
 msgid "Order"
-msgstr ""
+msgstr "הזמנה"
 
 msgctxt "#31028"
 msgid "Amber Settings"
@@ -143,7 +143,7 @@ msgstr ""
 
 msgctxt "#31029"
 msgid "Remaining"
-msgstr ""
+msgstr "נותר"
 
 msgctxt "#31030"
 msgid "Settings entry point"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "#31037"
 msgid "Rated"
-msgstr ""
+msgstr "דירוג"
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
@@ -208,7 +208,7 @@ msgstr ""
 
 msgctxt "#31048"
 msgid "Visualization Presets"
-msgstr ""
+msgstr "קביעוני חיזוי"
 
 msgctxt "#31049"
 msgid "Settings Level"
@@ -216,15 +216,15 @@ msgstr ""
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
-msgstr ""
+msgstr "סדר מיון: עולה"
 
 msgctxt "#31051"
 msgid "Sort: Descending"
-msgstr ""
+msgstr "סדר מיון: יורד"
 
 msgctxt "#31052"
 msgid "Sections"
-msgstr ""
+msgstr "מקטעים"
 
 msgctxt "#31053"
 msgid "Media Views"
@@ -237,15 +237,15 @@ msgstr ""
 # empty strings from id 31055 to 31068
 msgctxt "#31069"
 msgid "Random episodes"
-msgstr ""
+msgstr "פרקים אקראיים"
 
 msgctxt "#31070"
 msgid "Random movies"
-msgstr ""
+msgstr "סרטים אקראיים"
 
 msgctxt "#31071"
 msgid "In progress movies"
-msgstr ""
+msgstr "סרטים בתהליך"
 
 msgctxt "#31072"
 msgid "Unwatched TV shows"
@@ -253,11 +253,11 @@ msgstr ""
 
 msgctxt "#31073"
 msgid "In progress episodes"
-msgstr ""
+msgstr "פרקים בתהליך"
 
 msgctxt "#31074"
 msgid "Most played albums"
-msgstr ""
+msgstr "אלבומים שנוגנו הכי הרבה"
 
 msgctxt "#31075"
 msgid "Random Albums"
@@ -269,11 +269,11 @@ msgstr ""
 
 msgctxt "#31077"
 msgid "Random artists"
-msgstr ""
+msgstr "אמנים אקראיים"
 
 msgctxt "#31078"
 msgid "Random music videos"
-msgstr ""
+msgstr "סרטוני מוזיקה אקראיים"
 
 msgctxt "#31079"
 msgid "Unwatched videos"
@@ -285,7 +285,7 @@ msgstr ""
 
 msgctxt "#31081"
 msgid "Recent recordings"
-msgstr ""
+msgstr "הקלטות אחרונות"
 
 msgctxt "#31082"
 msgid "No content found"
@@ -297,7 +297,7 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Hide Recently Added"
-msgstr ""
+msgstr "הסתר נוספו לאחרונה"
 
 msgctxt "#31085"
 msgid "Hide Random"
@@ -341,11 +341,11 @@ msgstr ""
 
 msgctxt "#31095"
 msgid "Hide Recordings"
-msgstr ""
+msgstr "הסתר הקלטות"
 
 msgctxt "#31096"
 msgid "Hide Videos"
-msgstr ""
+msgstr "הסתר וידאו"
 
 msgctxt "#31097"
 msgid "Hide Music"
@@ -361,7 +361,7 @@ msgstr ""
 
 msgctxt "#31100"
 msgid "Hide Favourites"
-msgstr ""
+msgstr "הסתר מועדפים"
 
 msgctxt "#31101"
 msgid "Hide random episodes"
@@ -419,7 +419,7 @@ msgstr ""
 
 msgctxt "#31118"
 msgid "Small"
-msgstr ""
+msgstr "קטן"
 
 msgctxt "#31119"
 msgid "Regular"
@@ -427,7 +427,7 @@ msgstr ""
 
 msgctxt "#31120"
 msgid "Large"
-msgstr ""
+msgstr "גדול"
 
 msgctxt "#31121"
 msgid "Apply Changes"
@@ -436,7 +436,7 @@ msgstr ""
 # empty strings from id 31122 to 31128
 msgctxt "#31129"
 msgid "Same director"
-msgstr ""
+msgstr "אותו במאי"
 
 msgctxt "#31130"
 msgid "Hourly"
@@ -444,15 +444,15 @@ msgstr ""
 
 msgctxt "#31131"
 msgid "Forecast"
-msgstr ""
+msgstr "תחזית"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
-msgstr ""
+msgstr "הרחבת מילות שירים"
 
 msgctxt "#31133"
 msgid "Toggle audio stream"
-msgstr ""
+msgstr "החלף זרם שמע"
 
 msgctxt "#31134"
 msgid "Toggle language"
@@ -460,11 +460,11 @@ msgstr ""
 
 msgctxt "#31135"
 msgid "Change mode"
-msgstr ""
+msgstr "שינוי מצב"
 
 msgctxt "#31136"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "צפיה כ־2D"
 
 msgctxt "#31137"
 msgid "PVR Info"
@@ -472,19 +472,19 @@ msgstr ""
 
 msgctxt "#31138"
 msgid "Player info"
-msgstr ""
+msgstr "פרטי הנגן"
 
 msgctxt "#31139"
 msgid "Video decoder"
-msgstr ""
+msgstr "מפענח וידאו"
 
 msgctxt "#31140"
 msgid "Pixel format"
-msgstr ""
+msgstr "פורמט פיקסל"
 
 msgctxt "#31141"
 msgid "Play speed"
-msgstr ""
+msgstr "מהירות ניגון"
 
 # empty strings from id 31142 to 31149
 msgctxt "#31150"
@@ -525,7 +525,7 @@ msgstr ""
 
 msgctxt "#31159"
 msgid "Logo"
-msgstr ""
+msgstr "סמל"
 
 msgctxt "#31160"
 msgid "Disable Logo view"
@@ -547,15 +547,15 @@ msgstr ""
 
 msgctxt "#31295"
 msgid "OpenELEC Settings"
-msgstr ""
+msgstr "הגדרות OpenELEC"
 
 msgctxt "#31296"
 msgid "LibreELEC Settings"
-msgstr ""
+msgstr "הגדרות LibreELEC"
 
 msgctxt "#31297"
 msgid "min"
-msgstr ""
+msgstr "דק'"
 
 msgctxt "#31298"
 msgid "Starting in"
@@ -577,50 +577,50 @@ msgstr ""
 # empty strings from id 31310 to 31321
 msgctxt "#31322"
 msgid "Aired"
-msgstr ""
+msgstr "שודר"
 
 # empty strings from id 31323 to 31350
 msgctxt "#31351"
 msgid "Pause"
-msgstr ""
+msgstr "השהיה"
 
 msgctxt "#31352"
 msgid "Stop"
-msgstr ""
+msgstr "עצירה"
 
 msgctxt "#31353"
 msgid "Fast Forward"
-msgstr ""
+msgstr "הרצה קדימה"
 
 msgctxt "#31354"
 msgid "Rewind"
-msgstr ""
+msgstr "הרצה אחורה"
 
 msgctxt "#31355"
 msgid "Movie menu"
-msgstr ""
+msgstr "תפריט סרט"
 
 msgctxt "#31356"
 msgid "Download Subtitles"
-msgstr ""
+msgstr "הורדת כתוביות"
 
 msgctxt "#31357"
 msgid "Local subtitle available"
-msgstr ""
+msgstr "כתובית מקומית זמינה"
 
 # empty strings from id 31358 to 31359
 # Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "צפיה כ־2D"
 
 msgctxt "#31361"
 msgid "Change mode"
-msgstr ""
+msgstr "שינוי מצב"
 
 msgctxt "#31362"
 msgid "Enabled"
-msgstr ""
+msgstr "פעיל"
 
 msgctxt "#31363"
 msgid "Static"
@@ -681,11 +681,11 @@ msgstr ""
 
 msgctxt "#31403"
 msgid "Random fanart"
-msgstr ""
+msgstr "פאנארט אקראי"
 
 msgctxt "#31404"
 msgid "Conditional weather"
-msgstr ""
+msgstr "מזג אוויר מותנה"
 
 msgctxt "#31405"
 msgid "Movie Library Statistics"
@@ -757,7 +757,7 @@ msgstr ""
 
 msgctxt "#31422"
 msgid "Recently Added Movies"
-msgstr ""
+msgstr "סרטים שנוספו לאחרונה"
 
 msgctxt "#31423"
 msgid "Recently Played Movies"
@@ -769,7 +769,7 @@ msgstr ""
 
 msgctxt "#31425"
 msgid "In Progress Movies"
-msgstr ""
+msgstr "סרטים בתהליך"
 
 msgctxt "#31426"
 msgid "Unwatched Movies"
@@ -777,7 +777,7 @@ msgstr ""
 
 msgctxt "#31427"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "סרטים בדירוג גבוה"
 
 msgctxt "#31428"
 msgid "Movie Genres"
@@ -797,7 +797,7 @@ msgstr ""
 
 msgctxt "#31432"
 msgid "TV Shows"
-msgstr ""
+msgstr "סדרות"
 
 msgctxt "#31433"
 msgid "Recently Added TV Shows"
@@ -817,7 +817,7 @@ msgstr ""
 
 msgctxt "#31437"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "סדרות טלוויזיה שלא נצפו"
 
 msgctxt "#31438"
 msgid "Top Rated TV Shows"
@@ -857,7 +857,7 @@ msgstr ""
 
 msgctxt "#31447"
 msgid "Recently Added Albums"
-msgstr ""
+msgstr "אלבומים שנוספו לאחרונה"
 
 msgctxt "#31448"
 msgid "Recently Played Albums"
@@ -881,7 +881,7 @@ msgstr ""
 
 msgctxt "#31453"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31454"
 msgid "Last Played TV Channels"
@@ -981,7 +981,7 @@ msgstr ""
 
 msgctxt "#31478"
 msgid "Remaining"
-msgstr ""
+msgstr "נותר"
 
 msgctxt "#31479"
 msgid "CPU"
@@ -1021,7 +1021,7 @@ msgstr ""
 
 msgctxt "#31488"
 msgid "Next Aired Episodes"
-msgstr ""
+msgstr "פרקים הבאים שישודרו"
 
 msgctxt "#31489"
 msgid "Next Episodes"
@@ -1041,7 +1041,7 @@ msgstr ""
 
 msgctxt "#31493"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "סדרות טלוויזיה שלא נצפו"
 
 msgctxt "#31494"
 msgid "Recently Released Albums"
@@ -1069,11 +1069,11 @@ msgstr ""
 
 msgctxt "#31500"
 msgid "TV"
-msgstr ""
+msgstr "טלוויזיה"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
-msgstr ""
+msgstr "זמן מתוכנן"
 
 msgctxt "#31502"
 msgid "All Movies"
@@ -1081,19 +1081,19 @@ msgstr ""
 
 msgctxt "#31503"
 msgid "Add Group"
-msgstr ""
+msgstr "הוספת קבוצה"
 
 msgctxt "#31504"
 msgid "Rename Group"
-msgstr ""
+msgstr "שינוי שם קבוצה"
 
 msgctxt "#31505"
 msgid "Delete Group"
-msgstr ""
+msgstr "מחיקת קבוצה"
 
 msgctxt "#31506"
 msgid "Available[CR]Groups"
-msgstr ""
+msgstr "קבוצות[CR]זמינות"
 
 msgctxt "#31507"
 msgid "Opens"
@@ -1106,7 +1106,7 @@ msgstr ""
 
 msgctxt "#31510"
 msgid "Timer Set"
-msgstr ""
+msgstr "תזמון נקבע"
 
 msgctxt "#31511"
 msgid "Reminder Set"
@@ -1131,7 +1131,7 @@ msgstr ""
 
 msgctxt "#31518"
 msgid "Popular Movies"
-msgstr ""
+msgstr "סרטים פופולרים"
 
 msgctxt "#31519"
 msgid "TMDb Top Rated Movies"
@@ -1139,7 +1139,7 @@ msgstr ""
 
 msgctxt "#31520"
 msgid "Upcoming Movies"
-msgstr ""
+msgstr "בקרוב בקולנוע"
 
 msgctxt "#31521"
 msgid "In-Theater Movies"
@@ -1171,7 +1171,7 @@ msgstr ""
 
 msgctxt "#31528"
 msgid "Power Menu"
-msgstr ""
+msgstr "תפריט כיבוי"
 
 msgctxt "#31529"
 msgid "Popular People"
@@ -1503,11 +1503,11 @@ msgstr ""
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr ""
+msgstr "פוסטר"
 
 msgctxt "#31612"
 msgid "Square"
-msgstr ""
+msgstr "ריבוע"
 
 msgctxt "#31613"
 msgid "Standard"
@@ -1535,19 +1535,19 @@ msgstr ""
 
 msgctxt "#31619"
 msgid "Thumb"
-msgstr ""
+msgstr "תמונה ממוזערת"
 
 msgctxt "#31620"
 msgid "Landscape"
-msgstr ""
+msgstr "תמונת נוף"
 
 msgctxt "#31621"
 msgid "Clear Logo"
-msgstr ""
+msgstr "סמל שקוף"
 
 msgctxt "#31622"
 msgid "Clear Art"
-msgstr ""
+msgstr "אמנות שקופה"
 
 msgctxt "#31623"
 msgid "Disc Art"
@@ -1603,7 +1603,7 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "קיצורי דרך"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
@@ -1679,19 +1679,19 @@ msgstr ""
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
-msgstr ""
+msgstr "תחזית ל־36 שעות"
 
 msgctxt "#31902"
 msgid "Hourly Forecast"
-msgstr ""
+msgstr "תחזית לפי שעה"
 
 msgctxt "#31903"
 msgid "Weekend Forecast"
-msgstr ""
+msgstr "תחזית לסופ\"ש"
 
 msgctxt "#31904"
 msgid "10 Day Forecast"
-msgstr ""
+msgstr "תחזית ל־10 יום"
 
 # empty strings from id 31905 to 31919
 msgctxt "#31920"
@@ -1767,7 +1767,7 @@ msgstr ""
 
 msgctxt "#31955"
 msgid "Hide"
-msgstr ""
+msgstr "הסתר"
 
 msgctxt "#31956"
 msgid "Get theme"
@@ -1792,7 +1792,7 @@ msgstr ""
 
 msgctxt "#31961"
 msgid "Recently added"
-msgstr ""
+msgstr "נוסף לאחרונה"
 
 #. view label
 msgctxt "#31962"
@@ -1802,7 +1802,7 @@ msgstr ""
 #. view label
 msgctxt "#31963"
 msgid "Panel"
-msgstr ""
+msgstr "לוח"
 
 msgctxt "#31964"
 msgid "Configure shelf items"
@@ -1815,7 +1815,7 @@ msgstr ""
 
 msgctxt "#31966"
 msgid "Recommended"
-msgstr ""
+msgstr "מומלץ"
 
 msgctxt "#31967"
 msgid "Enable Home shelf"
@@ -1848,7 +1848,7 @@ msgstr ""
 
 msgctxt "#31974"
 msgid "Home menu"
-msgstr ""
+msgstr "מסך הבית"
 
 msgctxt "#31975"
 msgid "Channels"
@@ -1945,7 +1945,7 @@ msgstr ""
 
 msgctxt "#31999"
 msgid "BigList"
-msgstr ""
+msgstr "רשימה גדולה"
 
 msgctxt "#32000"
 msgid "Hide icons"
@@ -1982,7 +1982,7 @@ msgstr ""
 
 msgctxt "#32009"
 msgid "Next Episode"
-msgstr ""
+msgstr "פרק הבא"
 
 msgctxt "#32010"
 msgid "Latest Episode"
@@ -1990,7 +1990,7 @@ msgstr ""
 
 msgctxt "#32011"
 msgid "Airs"
-msgstr ""
+msgstr "מועד שידור"
 
 # empty string with id 32012
 msgctxt "#32013"
@@ -2095,11 +2095,11 @@ msgstr ""
 
 msgctxt "#32039"
 msgid "Timeshift"
-msgstr ""
+msgstr "הסט זמן"
 
 msgctxt "#32040"
 msgid "Enable Kiosk Mode"
-msgstr ""
+msgstr "הפעל מצב קיוסק"
 
 # empty string with id 32041
 msgctxt "#32042"
@@ -2124,7 +2124,7 @@ msgstr ""
 
 msgctxt "#32047"
 msgid "Seconds"
-msgstr ""
+msgstr "שניות"
 
 msgctxt "#32048"
 msgid "Show background name in Home window"
@@ -2212,7 +2212,7 @@ msgstr ""
 
 msgctxt "#32069"
 msgid "Files"
-msgstr ""
+msgstr "קבצים"
 
 msgctxt "#32070"
 msgid "Place Background Name in Top Bar"
@@ -2228,11 +2228,11 @@ msgstr ""
 
 msgctxt "#32073"
 msgid "Budget"
-msgstr ""
+msgstr "תקציב"
 
 msgctxt "#32074"
 msgid "Revenue"
-msgstr ""
+msgstr "הכנסה"
 
 msgctxt "#32075"
 msgid "Awards"
@@ -2364,7 +2364,7 @@ msgstr ""
 
 msgctxt "#32107"
 msgid "Video Info"
-msgstr ""
+msgstr "מידע ווידאו"
 
 msgctxt "#32108"
 msgid "Select a Genre"
@@ -2436,11 +2436,11 @@ msgstr ""
 
 msgctxt "#32125"
 msgid "Hour"
-msgstr ""
+msgstr "שעה"
 
 msgctxt "#32126"
 msgid "Minute"
-msgstr ""
+msgstr "דקה"
 
 msgctxt "#32127"
 msgid "Online TMDb Info"
@@ -2456,11 +2456,11 @@ msgstr ""
 
 msgctxt "#32130"
 msgid "Posters"
-msgstr ""
+msgstr "פוסטרים"
 
 msgctxt "#32131"
 msgid "YouTube"
-msgstr ""
+msgstr "יו-טיוב"
 
 msgctxt "#32132"
 msgid "Search for Trailer"
@@ -2476,7 +2476,7 @@ msgstr ""
 
 msgctxt "#32135"
 msgid "Extras"
-msgstr ""
+msgstr "מיוחדים"
 
 msgctxt "#32136"
 msgid "Known for"
@@ -2492,7 +2492,7 @@ msgstr ""
 
 msgctxt "#32139"
 msgid "Ended"
-msgstr ""
+msgstr "הסתיימה"
 
 msgctxt "#32140"
 msgid "Rumored"
@@ -2829,7 +2829,7 @@ msgstr ""
 
 msgctxt "#32231"
 msgid "User Rating"
-msgstr ""
+msgstr "דירוג משתמש"
 
 msgctxt "#32232"
 msgid "Ratings"
@@ -2913,7 +2913,7 @@ msgstr ""
 
 msgctxt "#32254"
 msgid "IMDb Top 250"
-msgstr ""
+msgstr "250 המובילים של IMDb"
 
 msgctxt "#32255"
 msgid "Missing Add-on"
@@ -2933,7 +2933,7 @@ msgstr ""
 
 msgctxt "#32259"
 msgid "Backgrounds"
-msgstr ""
+msgstr "רקעים"
 
 msgctxt "#32260"
 msgid "Unwatched"
@@ -3069,7 +3069,7 @@ msgstr ""
 
 msgctxt "#32294"
 msgid "Ends at"
-msgstr ""
+msgstr "נגמר ב-"
 
 msgctxt "#32295"
 msgid "Netflix style"
@@ -3093,7 +3093,7 @@ msgstr ""
 
 msgctxt "#32300"
 msgid "Now Playing"
-msgstr ""
+msgstr "מנגן כעת"
 
 msgctxt "#32301"
 msgid "Hide Title Bar Now Playing"
@@ -3133,7 +3133,7 @@ msgstr ""
 
 msgctxt "#32310"
 msgid "Green"
-msgstr ""
+msgstr "ירוק"
 
 msgctxt "#32311"
 msgid "Grey"
@@ -3385,7 +3385,7 @@ msgstr ""
 
 msgctxt "#32373"
 msgid "End Time"
-msgstr ""
+msgstr "זמן סיום"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
@@ -3485,7 +3485,7 @@ msgstr ""
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "כרזה"
 
 msgctxt "#32401"
 msgid "List Item Type"
@@ -3501,7 +3501,7 @@ msgstr ""
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "לא זמין"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
@@ -3537,7 +3537,7 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "פעיל"
 
 msgctxt "#32414"
 msgid "Disabled"
@@ -3557,7 +3557,7 @@ msgstr ""
 
 msgctxt "#32418"
 msgid "Single Image"
-msgstr ""
+msgstr "תמונה בודדת"
 
 msgctxt "#32419"
 msgid "Multiple Images"
@@ -3745,4 +3745,12 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""

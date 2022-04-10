@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-01-28 19:12+0000\n"
+"PO-Revision-Date: 2022-03-03 15:37+0000\n"
 "Last-Translator: Alfonso Cachero <alfonso.cachero@gmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/es_es/>\n"
 "Language: es_es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -859,7 +859,7 @@ msgstr "Álbums en el Top 100"
 
 msgctxt "#31451"
 msgid "Random Artists"
-msgstr "Artistas Aleatorios"
+msgstr "Intérpretes Aleatorios"
 
 msgctxt "#31452"
 msgid "Music Nodes"
@@ -919,7 +919,7 @@ msgstr "Álbums Más Reproducidos"
 
 msgctxt "#31466"
 msgid "Recently Added Artists"
-msgstr "Artistas Añadidos Recientemente"
+msgstr "Intérpretes Añadidos Recientemente"
 
 msgctxt "#31467"
 msgid "Recently Added Songs"
@@ -1419,7 +1419,7 @@ msgstr "Estadísticas de Nodo de Videoclips"
 
 msgctxt "#31594"
 msgid "Artist Node Statistics"
-msgstr "Estadísticas de Nodo de Artistas"
+msgstr "Estadísticas de Nodo de Intérprete"
 
 msgctxt "#31595"
 msgid "Album Node Statistics"
@@ -1735,7 +1735,7 @@ msgstr "Utilizar fondo predeterminado para sub ventanas"
 
 msgctxt "#31952"
 msgid "Show Artist Fanart background with Music Visualisation"
-msgstr ""
+msgstr "Mostrar fondo con Fanart de Intérprete con Visualización de Música"
 
 msgctxt "#31953"
 msgid "Show Fanart background on sub windows"
@@ -1808,7 +1808,7 @@ msgstr "Mostrar info"
 
 msgctxt "#31969"
 msgid "Use Artist Slideshow Addon Fanart with Music Visualisation"
-msgstr ""
+msgstr "Usar Addon Diapositivas de Fanart de Interpréte con Visualización de Música"
 
 msgctxt "#31970"
 msgid "Push down for Gallery"
@@ -2061,7 +2061,7 @@ msgstr "Películas del País"
 
 msgctxt "#32036"
 msgid "Music Videos by Artist"
-msgstr "Videoclips del Artista"
+msgstr "Videoclips del Intérprete"
 
 msgctxt "#32037"
 msgid "YouTube videos about"
@@ -2593,7 +2593,7 @@ msgstr "Escrita por"
 
 msgctxt "#32178"
 msgid "Artists by Name"
-msgstr "Artistas por Nombre"
+msgstr "Intérpretes por Nombre"
 
 msgctxt "#32179"
 msgid "Albums by Title"
@@ -2605,7 +2605,7 @@ msgstr "Canciones por Título"
 
 msgctxt "#32181"
 msgid "By Artist"
-msgstr "Del Artista"
+msgstr "Del Intérprete"
 
 msgctxt "#32182"
 msgid "YouTube by Title"
@@ -2753,7 +2753,7 @@ msgstr "Mantener Centrado el Foco en Listas"
 
 msgctxt "#32218"
 msgid "Show Artist Logo In Music Visualization"
-msgstr "Mostrar Logo de Artista en Visualización de Música"
+msgstr "Mostrar Logo del Intérprete en Visualización de Música"
 
 msgctxt "#32219"
 msgid "Show Logo In Media Views"
@@ -3197,7 +3197,7 @@ msgstr "Comentario de Álbum"
 
 msgctxt "#32332"
 msgid "Artist Bio"
-msgstr "Info de Artista"
+msgstr "Biografía del Intérprete"
 
 msgctxt "#32333"
 msgid "Hide Shelves when Now Playing is Visible"
@@ -3389,19 +3389,19 @@ msgstr "Mostrar Submenú solo al enfocarlo"
 
 msgctxt "#32380"
 msgid "Movies with Plot containing"
-msgstr "Películas cuya Trama contenga"
+msgstr "Películas cuyo Argumento contenga"
 
 msgctxt "#32381"
 msgid "TV Shows with Plot containing"
-msgstr "Series de TV cuya Trama contenga"
+msgstr "Series de TV cuyo Argumento contenga"
 
 msgctxt "#32382"
 msgid "Episodes with Plot containing"
-msgstr "Episodios cuya Trama contenga"
+msgstr "Episodios cuyo Argumento contenga"
 
 msgctxt "#32383"
 msgid "With Plot Containing"
-msgstr "Con Trama que Contenga"
+msgstr "Con un Argumento que Contenga"
 
 msgctxt "#32384"
 msgid "Show Title in Footer"
@@ -3717,11 +3717,19 @@ msgstr "Permitir Cambiar Tipos de Vista en la Ventana de Canales PVR"
 
 msgctxt "#32484"
 msgid "Update Library"
-msgstr ""
+msgstr "Actualizar Colección"
 
 msgctxt "#32485"
 msgid "Stop Scanning"
-msgstr ""
+msgstr "Parar Escaneo"
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr "Más info"
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
+msgstr "Reproducir Tráiler en Ventana"
 
 #~ msgctxt "#31952"
 #~ msgid "Show Fanart background with music visualisation"

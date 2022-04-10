@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-04-28 15:50+0000\n"
+"PO-Revision-Date: 2022-03-27 01:18+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Maltese <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/mt_mt/>\n"
 "Language: mt_mt\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==0 || ( n%100>1 && n%100<11) ? 1 : (n%100>10 && n%100<20 ) ? 2 : 3;\n"
-"X-Generator: Weblate 4.6\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -43,7 +43,7 @@ msgstr ""
 
 msgctxt "#31004"
 msgid "Shift"
-msgstr ""
+msgstr "Kbar"
 
 msgctxt "#31005"
 msgid "Cinema"
@@ -131,7 +131,7 @@ msgstr "Affarijiet"
 
 msgctxt "#31026"
 msgid "Misc options"
-msgstr ""
+msgstr "Għażliet mixxelanji"
 
 msgctxt "#31027"
 msgid "Order"
@@ -444,7 +444,7 @@ msgstr ""
 
 msgctxt "#31131"
 msgid "Forecast"
-msgstr ""
+msgstr "Tbassir tat-temp"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
@@ -460,11 +460,11 @@ msgstr ""
 
 msgctxt "#31135"
 msgid "Change mode"
-msgstr ""
+msgstr "Ibdel il-modalita'"
 
 msgctxt "#31136"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "Ara bħala 2D"
 
 msgctxt "#31137"
 msgid "PVR Info"
@@ -1069,7 +1069,7 @@ msgstr ""
 
 msgctxt "#31500"
 msgid "TV"
-msgstr ""
+msgstr "Televixin"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
@@ -1603,7 +1603,7 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "Xortkats"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
@@ -1767,7 +1767,7 @@ msgstr ""
 
 msgctxt "#31955"
 msgid "Hide"
-msgstr ""
+msgstr "Aħbi"
 
 msgctxt "#31956"
 msgid "Get theme"
@@ -1792,7 +1792,7 @@ msgstr ""
 
 msgctxt "#31961"
 msgid "Recently added"
-msgstr ""
+msgstr "Miżjud dan l-aħħar"
 
 #. view label
 msgctxt "#31962"
@@ -2212,7 +2212,7 @@ msgstr ""
 
 msgctxt "#32069"
 msgid "Files"
-msgstr ""
+msgstr "Fajl"
 
 msgctxt "#32070"
 msgid "Place Background Name in Top Bar"
@@ -2933,7 +2933,7 @@ msgstr ""
 
 msgctxt "#32259"
 msgid "Backgrounds"
-msgstr ""
+msgstr "Sfondi"
 
 msgctxt "#32260"
 msgid "Unwatched"
@@ -3537,7 +3537,7 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "Jintuża"
 
 msgctxt "#32414"
 msgid "Disabled"
@@ -3745,4 +3745,12 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""

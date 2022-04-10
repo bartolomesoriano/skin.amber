@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-05-25 10:09+0000\n"
+"PO-Revision-Date: 2022-03-27 01:18+0000\n"
 "Last-Translator: Christian Gade <gade@kodi.tv>\n"
 "Language-Team: Basque (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/eu_es/>\n"
 "Language: eu_es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.11.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -43,11 +43,11 @@ msgstr ""
 
 msgctxt "#31004"
 msgid "Shift"
-msgstr ""
+msgstr "Shift"
 
 msgctxt "#31005"
 msgid "Cinema"
-msgstr ""
+msgstr "Cinema Experience"
 
 msgctxt "#31006"
 msgid "Shared"
@@ -107,7 +107,7 @@ msgstr ""
 
 msgctxt "#31020"
 msgid "Recently Added"
-msgstr ""
+msgstr "Azkenaldiak gehituak"
 
 msgctxt "#31021"
 msgid "Recently Played"
@@ -119,11 +119,11 @@ msgstr ""
 
 msgctxt "#31023"
 msgid "Viewtype"
-msgstr ""
+msgstr "Ikusteko modua"
 
 msgctxt "#31024"
 msgid "Sort by"
-msgstr ""
+msgstr "Ordenatu honen baitan"
 
 msgctxt "#31025"
 msgid "Items"
@@ -131,11 +131,11 @@ msgstr "Elementuak"
 
 msgctxt "#31026"
 msgid "Misc options"
-msgstr ""
+msgstr "Bestelako aukerak"
 
 msgctxt "#31027"
 msgid "Order"
-msgstr ""
+msgstr "Ordenatu"
 
 msgctxt "#31028"
 msgid "Amber Settings"
@@ -143,7 +143,7 @@ msgstr ""
 
 msgctxt "#31029"
 msgid "Remaining"
-msgstr ""
+msgstr "Geratzen dena"
 
 msgctxt "#31030"
 msgid "Settings entry point"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "#31037"
 msgid "Rated"
-msgstr ""
+msgstr "Klasifikatuta"
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
@@ -208,7 +208,7 @@ msgstr ""
 
 msgctxt "#31048"
 msgid "Visualization Presets"
-msgstr ""
+msgstr "Bistaratze aurrezarpenak"
 
 msgctxt "#31049"
 msgid "Settings Level"
@@ -224,7 +224,7 @@ msgstr "Ordenatu: Beheraka"
 
 msgctxt "#31052"
 msgid "Sections"
-msgstr ""
+msgstr "Sekzioak"
 
 msgctxt "#31053"
 msgid "Media Views"
@@ -241,11 +241,11 @@ msgstr ""
 
 msgctxt "#31070"
 msgid "Random movies"
-msgstr ""
+msgstr "Ausazko pelikulak"
 
 msgctxt "#31071"
 msgid "In progress movies"
-msgstr ""
+msgstr "Hasitako pelikulak"
 
 msgctxt "#31072"
 msgid "Unwatched TV shows"
@@ -257,11 +257,11 @@ msgstr ""
 
 msgctxt "#31074"
 msgid "Most played albums"
-msgstr ""
+msgstr "Gehien erreproduzitutako albumak"
 
 msgctxt "#31075"
 msgid "Random Albums"
-msgstr ""
+msgstr "Ausazko albumak"
 
 msgctxt "#31076"
 msgid "Most played songs"
@@ -269,11 +269,11 @@ msgstr ""
 
 msgctxt "#31077"
 msgid "Random artists"
-msgstr ""
+msgstr "Ausazko artistak"
 
 msgctxt "#31078"
 msgid "Random music videos"
-msgstr ""
+msgstr "Ausazko musika bideoak"
 
 msgctxt "#31079"
 msgid "Unwatched videos"
@@ -285,7 +285,7 @@ msgstr ""
 
 msgctxt "#31081"
 msgid "Recent recordings"
-msgstr ""
+msgstr "Grabazio berriak"
 
 msgctxt "#31082"
 msgid "No content found"
@@ -297,7 +297,7 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Hide Recently Added"
-msgstr ""
+msgstr "Ocultar Últimos Añadidos"
 
 msgctxt "#31085"
 msgid "Hide Random"
@@ -345,7 +345,7 @@ msgstr ""
 
 msgctxt "#31096"
 msgid "Hide Videos"
-msgstr ""
+msgstr "Ezkutatu Bideoak"
 
 msgctxt "#31097"
 msgid "Hide Music"
@@ -419,7 +419,7 @@ msgstr ""
 
 msgctxt "#31118"
 msgid "Small"
-msgstr ""
+msgstr "Txikia"
 
 msgctxt "#31119"
 msgid "Regular"
@@ -427,7 +427,7 @@ msgstr ""
 
 msgctxt "#31120"
 msgid "Large"
-msgstr ""
+msgstr "Amplio"
 
 msgctxt "#31121"
 msgid "Apply Changes"
@@ -436,7 +436,7 @@ msgstr ""
 # empty strings from id 31122 to 31128
 msgctxt "#31129"
 msgid "Same director"
-msgstr ""
+msgstr "Zuzendari bera"
 
 msgctxt "#31130"
 msgid "Hourly"
@@ -444,7 +444,7 @@ msgstr ""
 
 msgctxt "#31131"
 msgid "Forecast"
-msgstr ""
+msgstr "Iragarpena"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
@@ -452,7 +452,7 @@ msgstr ""
 
 msgctxt "#31133"
 msgid "Toggle audio stream"
-msgstr ""
+msgstr "Txandakatu audio korrontea"
 
 msgctxt "#31134"
 msgid "Toggle language"
@@ -460,11 +460,11 @@ msgstr ""
 
 msgctxt "#31135"
 msgid "Change mode"
-msgstr ""
+msgstr "Cambiar modalidad"
 
 msgctxt "#31136"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "Ikusi 2D bezala"
 
 msgctxt "#31137"
 msgid "PVR Info"
@@ -484,7 +484,7 @@ msgstr "Pixel formatua"
 
 msgctxt "#31141"
 msgid "Play speed"
-msgstr ""
+msgstr "Erreprodukzio abiadura"
 
 # empty strings from id 31142 to 31149
 msgctxt "#31150"
@@ -547,15 +547,15 @@ msgstr ""
 
 msgctxt "#31295"
 msgid "OpenELEC Settings"
-msgstr ""
+msgstr "Opciones de OpenELEC"
 
 msgctxt "#31296"
 msgid "LibreELEC Settings"
-msgstr ""
+msgstr "LibreELECen Ezarpenak"
 
 msgctxt "#31297"
 msgid "min"
-msgstr ""
+msgstr "min"
 
 msgctxt "#31298"
 msgid "Starting in"
@@ -567,12 +567,12 @@ msgstr ""
 
 msgctxt "#31300"
 msgid "CoreELEC Settings"
-msgstr ""
+msgstr "Opciones de CoreELEC"
 
 # empty strings from id 31301 to 31308
 msgctxt "#31309"
 msgid "Memory Used"
-msgstr ""
+msgstr "Memoria Utilizada"
 
 # empty strings from id 31310 to 31321
 msgctxt "#31322"
@@ -582,45 +582,45 @@ msgstr "Aireratua"
 # empty strings from id 31323 to 31350
 msgctxt "#31351"
 msgid "Pause"
-msgstr ""
+msgstr "Pausatu"
 
 msgctxt "#31352"
 msgid "Stop"
-msgstr ""
+msgstr "Gelditu"
 
 msgctxt "#31353"
 msgid "Fast Forward"
-msgstr ""
+msgstr "Azkar aurrera"
 
 msgctxt "#31354"
 msgid "Rewind"
-msgstr ""
+msgstr "Atzera"
 
 msgctxt "#31355"
 msgid "Movie menu"
-msgstr ""
+msgstr "Pelikula menua"
 
 msgctxt "#31356"
 msgid "Download Subtitles"
-msgstr ""
+msgstr "Deskargatu azpitituluak"
 
 msgctxt "#31357"
 msgid "Local subtitle available"
-msgstr ""
+msgstr "Azpititulu lokala erabilgarri"
 
 # empty strings from id 31358 to 31359
 # Stereoscopic labels
 msgctxt "#31360"
 msgid "Watch as 2D"
-msgstr ""
+msgstr "Ikusi 2D bezala"
 
 msgctxt "#31361"
 msgid "Change mode"
-msgstr ""
+msgstr "Cambiar modalidad"
 
 msgctxt "#31362"
 msgid "Enabled"
-msgstr ""
+msgstr "Gaituta"
 
 msgctxt "#31363"
 msgid "Static"
@@ -681,7 +681,7 @@ msgstr ""
 
 msgctxt "#31403"
 msgid "Random fanart"
-msgstr ""
+msgstr "Fanart aleatorio"
 
 msgctxt "#31404"
 msgid "Conditional weather"
@@ -797,7 +797,7 @@ msgstr ""
 
 msgctxt "#31432"
 msgid "TV Shows"
-msgstr ""
+msgstr "TB saioak"
 
 msgctxt "#31433"
 msgid "Recently Added TV Shows"
@@ -817,7 +817,7 @@ msgstr ""
 
 msgctxt "#31437"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "Ikusi gabeko TB saioak"
 
 msgctxt "#31438"
 msgid "Top Rated TV Shows"
@@ -865,7 +865,7 @@ msgstr ""
 
 msgctxt "#31449"
 msgid "Random Albums"
-msgstr ""
+msgstr "Ausazko albumak"
 
 msgctxt "#31450"
 msgid "Top 100 Albums"
@@ -881,7 +881,7 @@ msgstr ""
 
 msgctxt "#31453"
 msgid "PVR"
-msgstr ""
+msgstr "PVR"
 
 msgctxt "#31454"
 msgid "Last Played TV Channels"
@@ -977,19 +977,19 @@ msgstr ""
 
 msgctxt "#31477"
 msgid "Memory Used"
-msgstr ""
+msgstr "Memoria Utilizada"
 
 msgctxt "#31478"
 msgid "Remaining"
-msgstr ""
+msgstr "Geratzen dena"
 
 msgctxt "#31479"
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgctxt "#31480"
 msgid "Sort By"
-msgstr ""
+msgstr "Ordenatu honen baitan"
 
 msgctxt "#31481"
 msgid "Sort Order"
@@ -1041,7 +1041,7 @@ msgstr ""
 
 msgctxt "#31493"
 msgid "Unwatched TV Shows"
-msgstr ""
+msgstr "Ikusi gabeko TB saioak"
 
 msgctxt "#31494"
 msgid "Recently Released Albums"
@@ -1069,7 +1069,7 @@ msgstr ""
 
 msgctxt "#31500"
 msgid "TV"
-msgstr ""
+msgstr "TB"
 
 msgctxt "#31501"
 msgid "Scheduled Time"
@@ -1081,15 +1081,15 @@ msgstr ""
 
 msgctxt "#31503"
 msgid "Add Group"
-msgstr ""
+msgstr "Gehitu taldea"
 
 msgctxt "#31504"
 msgid "Rename Group"
-msgstr ""
+msgstr "Berrizendatu taldea"
 
 msgctxt "#31505"
 msgid "Delete Group"
-msgstr ""
+msgstr "Ezabatu taldea"
 
 msgctxt "#31506"
 msgid "Available[CR]Groups"
@@ -1102,7 +1102,7 @@ msgstr ""
 # empty string with id 31508
 msgctxt "#31509"
 msgid "Radio"
-msgstr ""
+msgstr "Irratia"
 
 msgctxt "#31510"
 msgid "Timer Set"
@@ -1139,7 +1139,7 @@ msgstr ""
 
 msgctxt "#31520"
 msgid "Upcoming Movies"
-msgstr ""
+msgstr "Próximos estrenos"
 
 msgctxt "#31521"
 msgid "In-Theater Movies"
@@ -1503,7 +1503,7 @@ msgstr ""
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr ""
+msgstr "Poster"
 
 msgctxt "#31612"
 msgid "Square"
@@ -1543,11 +1543,11 @@ msgstr ""
 
 msgctxt "#31621"
 msgid "Clear Logo"
-msgstr ""
+msgstr "Clear Logo"
 
 msgctxt "#31622"
 msgid "Clear Art"
-msgstr ""
+msgstr "Clear Art"
 
 msgctxt "#31623"
 msgid "Disc Art"
@@ -1603,7 +1603,7 @@ msgstr ""
 
 msgctxt "#31636"
 msgid "Shortcuts"
-msgstr ""
+msgstr "Lasterbideak"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
@@ -1679,19 +1679,19 @@ msgstr ""
 
 msgctxt "#31901"
 msgid "36 Hour Forecast"
-msgstr ""
+msgstr "36 orduko iragarpena"
 
 msgctxt "#31902"
 msgid "Hourly Forecast"
-msgstr ""
+msgstr "Orduroko iragarpena"
 
 msgctxt "#31903"
 msgid "Weekend Forecast"
-msgstr ""
+msgstr "Astebukaerako iragarpena"
 
 msgctxt "#31904"
 msgid "10 Day Forecast"
-msgstr ""
+msgstr "10 eguneko iragarpena"
 
 # empty strings from id 31905 to 31919
 msgctxt "#31920"
@@ -1767,7 +1767,7 @@ msgstr ""
 
 msgctxt "#31955"
 msgid "Hide"
-msgstr ""
+msgstr "Ezkutatu"
 
 msgctxt "#31956"
 msgid "Get theme"
@@ -1792,7 +1792,7 @@ msgstr ""
 
 msgctxt "#31961"
 msgid "Recently added"
-msgstr ""
+msgstr "Duela gutxi gehituak"
 
 #. view label
 msgctxt "#31962"
@@ -1815,7 +1815,7 @@ msgstr ""
 
 msgctxt "#31966"
 msgid "Recommended"
-msgstr ""
+msgstr "Recomendado"
 
 msgctxt "#31967"
 msgid "Enable Home shelf"
@@ -1848,7 +1848,7 @@ msgstr ""
 
 msgctxt "#31974"
 msgid "Home menu"
-msgstr ""
+msgstr "Menu nagusia"
 
 msgctxt "#31975"
 msgid "Channels"
@@ -1958,7 +1958,7 @@ msgstr ""
 
 msgctxt "#32003"
 msgid "Game Settings"
-msgstr ""
+msgstr "Jokuen Ezarpenak"
 
 msgctxt "#32004"
 msgid "Toggle Subtitle"
@@ -2095,11 +2095,11 @@ msgstr ""
 
 msgctxt "#32039"
 msgid "Timeshift"
-msgstr ""
+msgstr "Denbora aldaketa"
 
 msgctxt "#32040"
 msgid "Enable Kiosk Mode"
-msgstr ""
+msgstr "Activar Modo Kiosko"
 
 # empty string with id 32041
 msgctxt "#32042"
@@ -2212,7 +2212,7 @@ msgstr ""
 
 msgctxt "#32069"
 msgid "Files"
-msgstr ""
+msgstr "Fitxategiak"
 
 msgctxt "#32070"
 msgid "Place Background Name in Top Bar"
@@ -2436,11 +2436,11 @@ msgstr ""
 
 msgctxt "#32125"
 msgid "Hour"
-msgstr ""
+msgstr "Ordua"
 
 msgctxt "#32126"
 msgid "Minute"
-msgstr ""
+msgstr "Minutua"
 
 msgctxt "#32127"
 msgid "Online TMDb Info"
@@ -2829,7 +2829,7 @@ msgstr ""
 
 msgctxt "#32231"
 msgid "User Rating"
-msgstr ""
+msgstr "Valoración de Usuario"
 
 msgctxt "#32232"
 msgid "Ratings"
@@ -2913,7 +2913,7 @@ msgstr ""
 
 msgctxt "#32254"
 msgid "IMDb Top 250"
-msgstr ""
+msgstr "Top 250 de IMDb"
 
 msgctxt "#32255"
 msgid "Missing Add-on"
@@ -2933,7 +2933,7 @@ msgstr ""
 
 msgctxt "#32259"
 msgid "Backgrounds"
-msgstr ""
+msgstr "Atzeko planoak"
 
 msgctxt "#32260"
 msgid "Unwatched"
@@ -3069,7 +3069,7 @@ msgstr ""
 
 msgctxt "#32294"
 msgid "Ends at"
-msgstr ""
+msgstr "Bukatzen da:"
 
 msgctxt "#32295"
 msgid "Netflix style"
@@ -3093,7 +3093,7 @@ msgstr ""
 
 msgctxt "#32300"
 msgid "Now Playing"
-msgstr ""
+msgstr "Orain erreproduzitzen"
 
 msgctxt "#32301"
 msgid "Hide Title Bar Now Playing"
@@ -3321,7 +3321,7 @@ msgstr ""
 
 msgctxt "#32357"
 msgid "Enable Video Lyrics"
-msgstr ""
+msgstr "Bideoaren Letrak Gaitu"
 
 msgctxt "#32358"
 msgid "Play Whole Albums from Shelves"
@@ -3385,7 +3385,7 @@ msgstr ""
 
 msgctxt "#32373"
 msgid "End Time"
-msgstr ""
+msgstr "Amaiera ordua"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
@@ -3485,7 +3485,7 @@ msgstr ""
 
 msgctxt "#32400"
 msgid "Banner"
-msgstr ""
+msgstr "Coverflow"
 
 msgctxt "#32401"
 msgid "List Item Type"
@@ -3501,7 +3501,7 @@ msgstr ""
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
@@ -3537,7 +3537,7 @@ msgstr ""
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr ""
+msgstr "Gaituta"
 
 msgctxt "#32414"
 msgid "Disabled"
@@ -3557,7 +3557,7 @@ msgstr ""
 
 msgctxt "#32418"
 msgid "Single Image"
-msgstr ""
+msgstr "Imagen Única"
 
 msgctxt "#32419"
 msgid "Multiple Images"
@@ -3661,7 +3661,7 @@ msgstr ""
 
 msgctxt "#32464"
 msgid "Search Trailer"
-msgstr ""
+msgstr "Bilatu Trailerra"
 
 msgctxt "#32465"
 msgid "Search for Trailers with IMDb Trailers Addon"
@@ -3745,4 +3745,12 @@ msgstr ""
 
 msgctxt "#32485"
 msgid "Stop Scanning"
+msgstr ""
+
+msgctxt "#32486"
+msgid "More Info"
+msgstr ""
+
+msgctxt "#32487"
+msgid "Play Trailer Windowed"
 msgstr ""
