@@ -5,17 +5,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
-"Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
+"Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-03-03 15:37+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
+"PO-Revision-Date: 2025-01-08 16:04+0000\n"
+"Last-Translator: Jakub Fabijan <animatorzpolski@gmail.com>\n"
 "Language-Team: Esperanto <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/eo/>\n"
 "Language: eo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11\n"
+"X-Generator: Weblate 5.9.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -261,7 +261,7 @@ msgstr ""
 
 msgctxt "#31075"
 msgid "Random Albums"
-msgstr ""
+msgstr "Hazardaj albumoj"
 
 msgctxt "#31076"
 msgid "Most played songs"
@@ -761,11 +761,11 @@ msgstr ""
 
 msgctxt "#31423"
 msgid "Recently Played Movies"
-msgstr ""
+msgstr "Laste luditaj filmoj"
 
 msgctxt "#31424"
 msgid "Random Movies"
-msgstr ""
+msgstr "Hazardaj filmoj"
 
 msgctxt "#31425"
 msgid "In Progress Movies"
@@ -773,7 +773,7 @@ msgstr ""
 
 msgctxt "#31426"
 msgid "Unwatched Movies"
-msgstr ""
+msgstr "Nespektitaj filmoj"
 
 msgctxt "#31427"
 msgid "Top Rated Movies"
@@ -841,7 +841,7 @@ msgstr ""
 
 msgctxt "#31443"
 msgid "Random Episodes"
-msgstr ""
+msgstr "Hazardaj epizodoj"
 
 msgctxt "#31444"
 msgid "In Progress Episodes"
@@ -849,7 +849,7 @@ msgstr ""
 
 msgctxt "#31445"
 msgid "Unwatched Episodes"
-msgstr ""
+msgstr "Nespektitaj epizodoj"
 
 msgctxt "#31446"
 msgid "Top Rated Episodes"
@@ -861,11 +861,11 @@ msgstr ""
 
 msgctxt "#31448"
 msgid "Recently Played Albums"
-msgstr ""
+msgstr "Laste luditaj albumoj"
 
 msgctxt "#31449"
 msgid "Random Albums"
-msgstr ""
+msgstr "Hazardaj albumoj"
 
 msgctxt "#31450"
 msgid "Top 100 Albums"
@@ -873,7 +873,7 @@ msgstr ""
 
 msgctxt "#31451"
 msgid "Random Artists"
-msgstr ""
+msgstr "Hazardaj artistoj"
 
 msgctxt "#31452"
 msgid "Music Nodes"
@@ -949,7 +949,7 @@ msgstr ""
 
 msgctxt "#31470"
 msgid "Random Songs"
-msgstr ""
+msgstr "Hazardaj kantoj"
 
 msgctxt "#31471"
 msgid "Recently Added Music Videos"
@@ -1195,7 +1195,7 @@ msgstr ""
 
 msgctxt "#31534"
 msgid "People"
-msgstr ""
+msgstr "Homoj"
 
 msgctxt "#31535"
 msgid "People Trending Today"
@@ -1507,7 +1507,7 @@ msgstr "Afiŝo"
 
 msgctxt "#31612"
 msgid "Square"
-msgstr ""
+msgstr "Kvadrata"
 
 msgctxt "#31613"
 msgid "Standard"
@@ -1792,7 +1792,7 @@ msgstr ""
 
 msgctxt "#31961"
 msgid "Recently added"
-msgstr ""
+msgstr "Laste aldonitaj"
 
 #. view label
 msgctxt "#31962"
@@ -2112,7 +2112,7 @@ msgstr ""
 
 msgctxt "#32044"
 msgid "Submenu"
-msgstr ""
+msgstr "Submenuo"
 
 msgctxt "#32045"
 msgid "Shelves"
@@ -2236,7 +2236,7 @@ msgstr ""
 
 msgctxt "#32075"
 msgid "Awards"
-msgstr ""
+msgstr "Premioj"
 
 msgctxt "#32076"
 msgid "Show Watched Items in Recent Shelves"
@@ -2344,7 +2344,7 @@ msgstr ""
 
 msgctxt "#32102"
 msgid "Similar to"
-msgstr ""
+msgstr "Similaj al"
 
 msgctxt "#32103"
 msgid "Cast Members also appear in"
@@ -2356,7 +2356,7 @@ msgstr ""
 
 msgctxt "#32105"
 msgid "Similar"
-msgstr ""
+msgstr "Similaj"
 
 msgctxt "#32106"
 msgid "Featuring Cast Members"
@@ -2937,7 +2937,7 @@ msgstr ""
 
 msgctxt "#32260"
 msgid "Unwatched"
-msgstr ""
+msgstr "Nespektitaj"
 
 msgctxt "#32261"
 msgid "Use Embuary Helper for Statistics Line"
@@ -3113,7 +3113,7 @@ msgstr ""
 
 msgctxt "#32305"
 msgid "Vinyl"
-msgstr ""
+msgstr "Vinildisko"
 
 msgctxt "#32306"
 msgid "None"

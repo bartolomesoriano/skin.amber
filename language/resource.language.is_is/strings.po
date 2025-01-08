@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-03-15 09:38+0000\n"
+"PO-Revision-Date: 2025-01-08 16:04+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/is_is/>\n"
 "Language: is_is\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n % 10 != 1 || n % 100 == 11;\n"
-"X-Generator: Weblate 4.15.2\n"
+"X-Generator: Weblate 5.9.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -649,7 +649,7 @@ msgstr "(5/5) Prófunarútgáfa"
 
 msgctxt "#31395"
 msgid "Delete/Disable Settings Menu Item?"
-msgstr ""
+msgstr "Eyða/Gera óvirka stillingafærslu í valmynd?"
 
 msgctxt "#31396"
 msgid "Are you sure you want to remove the Settings menu item?[CR]Please ensure that you have an alternative method of accessing Settings before you remove this menu item."
@@ -657,7 +657,7 @@ msgstr ""
 
 msgctxt "#31397"
 msgid "Delete/Disable Search Menu Item?"
-msgstr ""
+msgstr "Eyða/Gera óvirka leitarfærslu í valmynd?"
 
 msgctxt "#31398"
 msgid "Are you sure you want to remove the Search menu item?[CR]If you want to create it again, either restore the menu item[CR]Or use the custom action start_search for your desired menu item."
@@ -945,7 +945,7 @@ msgstr ""
 
 msgctxt "#31469"
 msgid "Most Played Songs"
-msgstr ""
+msgstr "Mest spiluðu lögin"
 
 msgctxt "#31470"
 msgid "Random Songs"
@@ -957,7 +957,7 @@ msgstr "Nýlega viðbætt tónlistarmyndbönd"
 
 msgctxt "#31472"
 msgid "In-Progress Music Videos"
-msgstr ""
+msgstr "Tónlistarmyndbönd í vinnslu"
 
 msgctxt "#31473"
 msgid "Random Music Videos"
@@ -1017,7 +1017,7 @@ msgstr ""
 
 msgctxt "#31487"
 msgid "Favourite Addons"
-msgstr ""
+msgstr "Eftirlætisviðbætur"
 
 msgctxt "#31488"
 msgid "Next Aired Episodes"
@@ -1207,91 +1207,91 @@ msgstr "Vinsælt fólk í þessari viku"
 
 msgctxt "#31537"
 msgid "Trakt"
-msgstr ""
+msgstr "Trakt"
 
 msgctxt "#31538"
 msgid "Trakt - Watchlist"
-msgstr ""
+msgstr "Trakt - Vaktlisti"
 
 msgctxt "#31539"
 msgid "Trakt - History"
-msgstr ""
+msgstr "Trakt - Ferill"
 
 msgctxt "#31540"
 msgid "Trakt - Most Watched"
-msgstr ""
+msgstr "Trakt - Mest horft á"
 
 msgctxt "#31541"
 msgid "Trakt - In-Progress"
-msgstr ""
+msgstr "Trakt - Í vinnslu"
 
 msgctxt "#31542"
 msgid "Trakt - Recommended"
-msgstr ""
+msgstr "Trakt - Mælt með"
 
 msgctxt "#31543"
 msgid "Trakt - Trending"
-msgstr ""
+msgstr "Trakt - Á uppleið"
 
 msgctxt "#31544"
 msgid "Trakt - Popular"
-msgstr ""
+msgstr "Trakt - Vinsælt"
 
 msgctxt "#31545"
 msgid "Trakt - Most Played"
-msgstr ""
+msgstr "Trakt - Mest spilað"
 
 msgctxt "#31546"
 msgid "Trakt - Anticipated"
-msgstr ""
+msgstr "Trakt - Beðið eftir"
 
 msgctxt "#31547"
 msgid "Trakt - Top 10 Box Office This Week"
-msgstr ""
+msgstr "Trakt - 10 vinsælustu í þessari viku"
 
 msgctxt "#31548"
 msgid "Trakt - My Shows Airing This Week"
-msgstr ""
+msgstr "Trakt - Þættirnir mínir í þessari viku"
 
 msgctxt "#31549"
 msgid "Trakt - Trending Lists"
-msgstr ""
+msgstr "Trakt - Listar á uppleið"
 
 msgctxt "#31550"
 msgid "Trakt - Popular Lists"
-msgstr ""
+msgstr "Trakt - Vinsælir listar"
 
 msgctxt "#31551"
 msgid "Trakt - Liked Lists"
-msgstr ""
+msgstr "Trakt - Listar sem líkað er við"
 
 msgctxt "#31552"
 msgid "Trakt - Your Lists"
-msgstr ""
+msgstr "Trakt - Listarnir þínir"
 
 msgctxt "#31553"
 msgid "Embuary Info Shelves"
-msgstr ""
+msgstr "Rekkar Embuary-upplýsinga"
 
 msgctxt "#31554"
 msgid "Embuary Info - Popular Movies"
-msgstr ""
+msgstr "Embuary upplýsingar - Vinsælar kvikmyndir"
 
 msgctxt "#31555"
 msgid "Embuary Info - Top Rated Movies"
-msgstr ""
+msgstr "Embuary upplýsingar - Kvikmyndir með hæstu einkunn"
 
 msgctxt "#31556"
 msgid "Embuary Info - Upcoming Movies"
-msgstr ""
+msgstr "Embuary upplýsingar - Væntanlegar kvikmyndir"
 
 msgctxt "#31557"
 msgid "Embuary Info - Now Playing Movies"
-msgstr ""
+msgstr "Embuary upplýsingar - Kvikmyndir í afspilun"
 
 msgctxt "#31558"
 msgid "Embuary Info - Movies Trending This Week"
-msgstr ""
+msgstr "Embuary upplýsingar - Vinsælar kvikmyndir í þessari viku"
 
 msgctxt "#31559"
 msgid "Embuary Info - Popular TV Shows"
@@ -1327,11 +1327,11 @@ msgstr "TMDb-hjálpari - Næst í útsendingu: Í dag"
 
 msgctxt "#31567"
 msgid "Embuary Info - Next Aired: Next 7 Days"
-msgstr ""
+msgstr "Embuary upplýsingar - Næst í útsendingu: Næstu 7 daga"
 
 msgctxt "#31568"
 msgid "Embuary Info - Next Aired: Today"
-msgstr ""
+msgstr "Embuary upplýsingar - Næst í útsendingu: Í dag"
 
 msgctxt "#31569"
 msgid "Default Amber Background"
@@ -1399,7 +1399,7 @@ msgstr "Sjálfgefinn bakgrunnur stillinga"
 
 msgctxt "#31585"
 msgid "Delete Favourites Menu Item?"
-msgstr ""
+msgstr "Eyða eftirlætisfærslu í valmynd?"
 
 msgctxt "#31586"
 msgid "Are you sure you want to remove the Favourites menu item?[CR]If you want to create it again, either restore the menu item[CR]Or use the custom action start_favourites for your desired menu item."
@@ -1415,7 +1415,7 @@ msgstr "Partýhamur (tónlistarmyndbönd)"
 
 msgctxt "#31589"
 msgid "Random Music Videos Fanart"
-msgstr ""
+msgstr "Handahófskennt aðdáendamyndefni tónlistarmyndbanda"
 
 msgctxt "#31590"
 msgid "Random Video or Music Node Fanart"
@@ -1575,15 +1575,15 @@ msgstr ""
 
 msgctxt "#31629"
 msgid "Show Text under artwork"
-msgstr ""
+msgstr "Birta texta undir myndefni"
 
 msgctxt "#31630"
 msgid "Automatic Scroll Time (seconds)"
-msgstr ""
+msgstr "Sjálfvirkur skruntími (sekúndur)"
 
 msgctxt "#31631"
 msgid "Automatic Scroll Time"
-msgstr ""
+msgstr "Sjálfvirkur skruntími"
 
 msgctxt "#31632"
 msgid "Simple List"
@@ -1591,7 +1591,7 @@ msgstr "Einfaldur listi"
 
 msgctxt "#31633"
 msgid "Disable Simple List View"
-msgstr ""
+msgstr "Gera einfalda listasýn óvirka"
 
 msgctxt "#31634"
 msgid "High"
@@ -1599,7 +1599,7 @@ msgstr "Hátt"
 
 msgctxt "#31635"
 msgid "Customize Bottom Shortcuts"
-msgstr ""
+msgstr "Sérsníða flýtileiðir neðst"
 
 msgctxt "#31636"
 msgid "Shortcuts"
@@ -1607,11 +1607,11 @@ msgstr "Flýtileiðir"
 
 msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
-msgstr ""
+msgstr "Virkja flýtileiðir neðst"
 
 msgctxt "#31638"
 msgid "Show Bottom Shortcuts for this Menu Item"
-msgstr ""
+msgstr "Birta flýtileiðir neðst fyrir þessa valmyndarfærslu"
 
 msgctxt "#31639"
 msgid "Short Daily Weather"
@@ -1966,19 +1966,19 @@ msgstr "Víxla skjátexta af/á"
 
 msgctxt "#32005"
 msgid "AB: Select Artwork"
-msgstr ""
+msgstr "AB: Veldu myndefni"
 
 msgctxt "#32006"
 msgid "AB: All Artwork"
-msgstr ""
+msgstr "AB: Allt myndefni"
 
 msgctxt "#32007"
 msgid "Special Features"
-msgstr ""
+msgstr "Sérefni"
 
 msgctxt "#32008"
 msgid "Enable Special Features"
-msgstr ""
+msgstr "Virkja sérefni"
 
 msgctxt "#32009"
 msgid "Next Episode"
@@ -2011,11 +2011,11 @@ msgstr "Ítarlegar upplýsingar"
 
 msgctxt "#32017"
 msgid "Search in Local Library"
-msgstr ""
+msgstr "Leita í safni á tölvu"
 
 msgctxt "#32018"
 msgid "Search online in TMDb"
-msgstr ""
+msgstr "Leita á netinu í TMDb"
 
 msgctxt "#32020"
 msgid "Hide Second Label in List Views"
@@ -2027,7 +2027,7 @@ msgstr "Bætt við:"
 
 msgctxt "#32022"
 msgid "Plays:"
-msgstr ""
+msgstr "Spilar:"
 
 msgctxt "#32023"
 msgid "Last Played:"
@@ -2039,11 +2039,11 @@ msgstr "Ný leit"
 
 msgctxt "#32025"
 msgid "Movies Starring"
-msgstr ""
+msgstr "Kvikmyndir með"
 
 msgctxt "#32026"
 msgid "Movies Directed by"
-msgstr ""
+msgstr "Kvikmyndir leikstýrt af"
 
 msgctxt "#32027"
 msgid "TV Shows Starring"
@@ -2055,7 +2055,7 @@ msgstr "Sjónvarpsþættir leikstýrt af"
 
 msgctxt "#32029"
 msgid "Movies with Genre"
-msgstr ""
+msgstr "Kvikmyndir í stílnum"
 
 msgctxt "#32030"
 msgid "TV Shows with Genre"
@@ -2340,7 +2340,7 @@ msgstr "Meira frá"
 
 msgctxt "#32101"
 msgid "More in"
-msgstr ""
+msgstr "Meira í"
 
 msgctxt "#32102"
 msgid "Similar to"
@@ -2416,15 +2416,15 @@ msgstr "Þættir leikstýrt af"
 
 msgctxt "#32120"
 msgid "AB: Download All Artwork"
-msgstr ""
+msgstr "AB: Sækja allt myndefni"
 
 msgctxt "#32121"
 msgid "AB: Select Artwork"
-msgstr ""
+msgstr "AB: Veldu myndefni"
 
 msgctxt "#32122"
 msgid "Show Artwork Beef items in Context Menu"
-msgstr ""
+msgstr "Sýna atriði Artwork Beef myndefnisniðurhals í samhengisvalmynd"
 
 msgctxt "#32123"
 msgid "Title Bar Options"
@@ -3517,7 +3517,7 @@ msgstr "Sýna gólf"
 
 msgctxt "#32408"
 msgid "Fixed List"
-msgstr ""
+msgstr "Fastur listi"
 
 msgctxt "#32409"
 msgid "Centered Static Menu (less than 8 items)"
@@ -3597,15 +3597,15 @@ msgstr ""
 
 msgctxt "#32428"
 msgid "Art Downloader: Select Artwork"
-msgstr ""
+msgstr "Niðurhal myndefnis: Veldu myndefni"
 
 msgctxt "#32429"
 msgid "Art Downloader: All Artwork"
-msgstr ""
+msgstr "Niðurhal myndefnis: Allt myndefni"
 
 msgctxt "#32450"
 msgid "Show Artwork Downloader items in Context Menu"
-msgstr ""
+msgstr "Sýna atriði myndefnisniðurhals í samhengisvalmynd"
 
 msgctxt "#32451"
 msgid "Movies with Tag"
