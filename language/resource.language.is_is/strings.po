@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-01-08 16:04+0000\n"
+"PO-Revision-Date: 2025-01-11 03:17+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/is_is/>\n"
 "Language: is_is\n"
@@ -1519,7 +1519,7 @@ msgstr "Lágt"
 
 msgctxt "#31615"
 msgid "Label on Shelf Item"
-msgstr "Merking á atriði í rekka"
+msgstr "Skýring á atriði í rekka"
 
 msgctxt "#31616"
 msgid "Shelf Sort Method"
@@ -2360,7 +2360,7 @@ msgstr "Svipað"
 
 msgctxt "#32106"
 msgid "Featuring Cast Members"
-msgstr ""
+msgstr "Meðlimir tökuliðs"
 
 msgctxt "#32107"
 msgid "Video Info"
@@ -2641,7 +2641,7 @@ msgstr "Þekkt/ur fyrir hlutverkið"
 
 msgctxt "#32184"
 msgid "Known for Department"
-msgstr ""
+msgstr "Þekkt/ur fyrir aðild"
 
 msgctxt "#32185"
 msgid "Known for Job"
@@ -2797,7 +2797,7 @@ msgstr ""
 
 msgctxt "#32223"
 msgid "Audio and Subtitle Info"
-msgstr ""
+msgstr "Upplýsingar um hljóð og skjátexta"
 
 msgctxt "#32224"
 msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
@@ -2817,7 +2817,7 @@ msgstr "Embuary upplýsingar - Næstu útsendu þættir"
 
 msgctxt "#32228"
 msgid "Only Search in Local Library"
-msgstr ""
+msgstr "Einungis leita í safni á tölvu"
 
 msgctxt "#32229"
 msgid "Hide Channel Groups"
@@ -2825,7 +2825,7 @@ msgstr "Fela rásahópa"
 
 msgctxt "#32230"
 msgid "Select Displayed Ratings and Certification"
-msgstr ""
+msgstr "Veldu hvaða flokkun og einkunnir eru birtar"
 
 msgctxt "#32231"
 msgid "User Rating"
@@ -2997,7 +2997,7 @@ msgstr ""
 
 msgctxt "#32275"
 msgid "Configure Media Views"
-msgstr ""
+msgstr "Stilla ásýndir myndefnis"
 
 msgctxt "#32277"
 msgid "Three Rows with Larger Icons"
@@ -3173,11 +3173,11 @@ msgstr "Sýna sjónhrif tónlistar í bakgrunni"
 
 msgctxt "#32320"
 msgid "Show Extra Art for Video"
-msgstr ""
+msgstr "Sýna viðbótarmyndefni fyrir myndskeið"
 
 msgctxt "#32321"
 msgid "Show Extra Art for Music"
-msgstr ""
+msgstr "Sýna viðbótarmyndefni fyrir tónlist"
 
 msgctxt "#32322"
 msgid "Show Logo"
@@ -3193,11 +3193,11 @@ msgstr "Sýna myndefni disks"
 
 msgctxt "#32325"
 msgid "Select Disc Art Fallback for Video"
-msgstr ""
+msgstr "Sýna varamyndefni fyrir myndskeið"
 
 msgctxt "#32326"
 msgid "Select Disc Art Fallback for Music"
-msgstr ""
+msgstr "Sýna varamyndefni fyrir tónlist"
 
 msgctxt "#32327"
 msgid "Disable Now Playing"
@@ -3289,7 +3289,7 @@ msgstr "Birta yfirlag"
 
 msgctxt "#32349"
 msgid "Show Smaller Favourite Icons"
-msgstr ""
+msgstr "Birta minni táknmyndir eftirlæta"
 
 msgctxt "#32350"
 msgid "Show Three Rows"
@@ -3317,7 +3317,7 @@ msgstr "Valmynd einungis með táknmyndum"
 
 msgctxt "#32356"
 msgid "Show Menu Item Name"
-msgstr ""
+msgstr "Sýna heiti valmyndarfærslu"
 
 msgctxt "#32357"
 msgid "Enable Video Lyrics"
@@ -3333,7 +3333,7 @@ msgstr ""
 
 msgctxt "#32360"
 msgid "Animate backgrounds using Ken Burns effect"
-msgstr ""
+msgstr "Myndlífga bakgrunna með Ken Burns áhrifum"
 
 msgctxt "#32361"
 msgid "Single Column"
@@ -3353,11 +3353,11 @@ msgstr ""
 
 msgctxt "#32365"
 msgid "Time to Show Seek Bar"
-msgstr ""
+msgstr "Tími sem á að birta leitarstiku"
 
 msgctxt "#32366"
 msgid "Hide Title Bar in Main Window"
-msgstr ""
+msgstr "Fela titilstiku í aðalglugga"
 
 msgctxt "#32367"
 msgid "Hide fallback image if no thumb in OSD"
@@ -3369,11 +3369,11 @@ msgstr "Skyggja bakgrunn og hljómplötuumslag þegar lagatextar eru birtir"
 
 msgctxt "#32369"
 msgid "Use Alternate Favourites Layout"
-msgstr ""
+msgstr "Nota aðra framsetningu eftirlæta"
 
 msgctxt "#32370"
 msgid "Align Menu Item Text to the Left"
-msgstr ""
+msgstr "Jafna texta valmyndarfærslu til vinstri"
 
 msgctxt "#32371"
 msgid "Info Button Opens Video Info Dialog"
@@ -3381,7 +3381,7 @@ msgstr ""
 
 msgctxt "#32372"
 msgid "Pause Media While Info Dialog is Open"
-msgstr ""
+msgstr "Setja efni í bið á meðan upplýsingagluggi er opinn"
 
 msgctxt "#32373"
 msgid "End Time"
@@ -3409,7 +3409,7 @@ msgstr "Nota litaflögg"
 
 msgctxt "#32379"
 msgid "Show Submenu Only when Focused"
-msgstr ""
+msgstr "Birta undirvalmynd aðeins þegar hún er virk"
 
 msgctxt "#32380"
 msgid "Movies with Plot containing"
@@ -3429,7 +3429,7 @@ msgstr "Með söguþræði sem inniheldur"
 
 msgctxt "#32384"
 msgid "Show Title in Footer"
-msgstr ""
+msgstr "Birta titil neðst"
 
 msgctxt "#32385"
 msgid "Hide Seek Bar when Forwarding or Rewinding"
@@ -3449,11 +3449,11 @@ msgstr "Nota einkunn notanda sem yfirlag"
 
 msgctxt "#32390"
 msgid "Select Items to Show in Views"
-msgstr ""
+msgstr "Veldu atriði til að birta í sýnum"
 
 msgctxt "#32391"
 msgid "Items to Show in Views"
-msgstr ""
+msgstr "Atriði sem á að birta í sýnum"
 
 msgctxt "#32392"
 msgid "Play Random"
@@ -3461,7 +3461,7 @@ msgstr "Spila af handahófi"
 
 msgctxt "#32393"
 msgid "List Views Options"
-msgstr ""
+msgstr "Valkostir listasýna"
 
 msgctxt "#32394"
 msgid "Marks and Overlays"
@@ -3505,7 +3505,7 @@ msgstr "Ekki tiltækt"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
-msgstr ""
+msgstr "Birta upplýsingaglugga"
 
 msgctxt "#32406"
 msgid "Popup Delay"
@@ -3521,7 +3521,7 @@ msgstr "Fastur listi"
 
 msgctxt "#32409"
 msgid "Centered Static Menu (less than 8 items)"
-msgstr ""
+msgstr "Miðjuð föst valmynd (minna en 8 atriði)"
 
 msgctxt "#32410"
 msgid "Compact OSD"
@@ -3545,11 +3545,11 @@ msgstr "Óvirkt"
 
 msgctxt "#32415"
 msgid "Auto Play Trailer (Local Trailer Only)"
-msgstr ""
+msgstr "Spila kynningarstiklu sjálfkrafa (einungis ef finnst á tölvu)"
 
 msgctxt "#32416"
 msgid "Auto Play Trailer Delay"
-msgstr ""
+msgstr "Töf við sjálfvirka spilun kynningarstiklu"
 
 msgctxt "#32417"
 msgid "Fanart Title Button Opens Info Dialog"
@@ -3577,7 +3577,7 @@ msgstr "Fela valmynd þegar rekkar eru virkir"
 
 msgctxt "#32423"
 msgid "Use Disc Art instead of Cover"
-msgstr ""
+msgstr "Nota myndefni disks í stað umslagsmyndar"
 
 msgctxt "#32424"
 msgid "Auto Play Trailer from Shelf Items"
@@ -3681,7 +3681,7 @@ msgstr "Líkur á úrkomu"
 
 msgctxt "#32469"
 msgid "Intro Video Duration"
-msgstr ""
+msgstr "Tímalengd kynningarmyndskeiða"
 
 msgctxt "#32470"
 msgid "PVR Timeshift Buffer Color"
@@ -3689,7 +3689,7 @@ msgstr ""
 
 msgctxt "#32471"
 msgid "Use Main Menu item Background for Sub Windows"
-msgstr ""
+msgstr "Nota bakgrunn aðalvalmyndar fyrir undirglugga"
 
 msgctxt "#32472"
 msgid "Teletext Button Opens EPG"
@@ -3717,7 +3717,7 @@ msgstr "Nota sérsniðna leit í tónlistarsafni"
 
 msgctxt "#32478"
 msgid "Current Programme Progress:"
-msgstr ""
+msgstr "Framvinda núverandi dagskrárliðar:"
 
 msgctxt "#32479"
 msgid "Also Show Seconds"
@@ -3765,7 +3765,7 @@ msgstr "Lárétt framsetning táknmynda"
 
 msgctxt "#32490"
 msgid "Show Menu Item Label"
-msgstr ""
+msgstr "Sýna skýringu valmyndarfærslu"
 
 msgctxt "#32491"
 msgid "Always Show Set Movie List"
