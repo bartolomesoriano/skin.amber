@@ -61,6 +61,7 @@
         <summary lang="nl_NL">Geen bloatware, alleen jouw media in een makkelijk te navigeren omgeving</summary>
         <summary lang="pt_BR">Sem bloatware, apenas sua mídia com uma interface fácil de navegar</summary>
         <summary lang="ru_RU">Никакого вредоносного ПО, только ваши медиафайлы с удобным интерфейсом</summary>
+        <summary lang="sv_SE">Ingen bloatware, bara dina medier med ett lättnavigerat gränssnitt</summary>
         <summary lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面</summary>
         <description lang="ca_ES">Sense bloatware, només els fitxers multimèdia amb una interfície fàcil de navegar.[CR]Utilitza algunes textures d&apos;skins Mediastream i Aeon.</description>
         <description lang="de_DE">Keine Bloatware, nur Ihre Medien mit einer einfach zu navigierenden Oberfläche.[CR]Benutzt Texturen aus den Mediastream und Aeon skins.</description>
@@ -80,6 +81,7 @@
         <description lang="pt_BR">Sem excessos, apenas a sua mídia com uma interface fácil de navegar. [CR]Utiliza algumas texturas das skins Mediastream e Aeon.</description>
         <description lang="pt_PT">Um tema sem excessos que apenas mostra a sua média com uma interface de navegação simples.[CR]Utiliza algumas texturas dos temas Mediastream e Aeon.</description>
         <description lang="ru_RU">Никаких вредоносных программ, только ваши носители с удобным интерфейсом навигации.[CR] Использует некоторые текстуры из скинов Mediastream и Aeon.</description>
+        <description lang="sv_SE">Ingen bloatware, bara dina medier med ett lättnavigerat gränssnitt.[CR]Använder vissa texturer från Mediastream och Aeon-skal.</description>
         <description lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面。[CR]使用了 Mediastream 和 Aeon 皮肤的一些纹理。</description>
     </extension>
 </addon>
