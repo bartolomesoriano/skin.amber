@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-07 16:55+0000\n"
+"PO-Revision-Date: 2025-04-10 20:06+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/sv_se/>\n"
 "Language: sv_se\n"
@@ -71,15 +71,15 @@ msgstr "Kö"
 
 msgctxt "#31011"
 msgid "Recently Viewed"
-msgstr ""
+msgstr "Nyligen visade"
 
 msgctxt "#31012"
 msgid "Recently Released"
-msgstr ""
+msgstr "Nyligen släppta"
 
 msgctxt "#31013"
 msgid "Recently Aired"
-msgstr ""
+msgstr "Nyligen sända"
 
 msgctxt "#31014"
 msgid "On Deck"
@@ -111,7 +111,7 @@ msgstr "Nyligen tillagda"
 
 msgctxt "#31021"
 msgid "Recently Played"
-msgstr ""
+msgstr "Nyligen spelade"
 
 msgctxt "#31022"
 msgid "Kodi"
@@ -139,7 +139,7 @@ msgstr "Sortera"
 
 msgctxt "#31028"
 msgid "Amber Settings"
-msgstr ""
+msgstr "Inställningar för Amber"
 
 msgctxt "#31029"
 msgid "Remaining"
@@ -171,7 +171,7 @@ msgstr ""
 
 msgctxt "#31036"
 msgid "Next tracks"
-msgstr ""
+msgstr "Nästa spår"
 
 msgctxt "#31037"
 msgid "Rated"
@@ -191,7 +191,7 @@ msgstr ""
 
 msgctxt "#31041"
 msgid "Repository"
-msgstr ""
+msgstr "Förråd"
 
 # empty strings from id 31042 to 31044
 msgctxt "#31045"
@@ -204,7 +204,7 @@ msgstr ""
 
 msgctxt "#31047"
 msgid "Select your Kodi user profile to login and continue"
-msgstr ""
+msgstr "Välj din Kodi-användarprofil för att logga in och fortsätta"
 
 msgctxt "#31048"
 msgid "Visualization Presets"
@@ -212,7 +212,7 @@ msgstr "Visualiseringsförval"
 
 msgctxt "#31049"
 msgid "Settings Level"
-msgstr ""
+msgstr "Inställningsnivå"
 
 msgctxt "#31050"
 msgid "Sort: Ascending"
@@ -232,7 +232,7 @@ msgstr ""
 
 msgctxt "#31054"
 msgid "Media sources"
-msgstr ""
+msgstr "Mediakällor"
 
 # empty strings from id 31055 to 31068
 msgctxt "#31069"
@@ -277,11 +277,11 @@ msgstr "Slumpvis utvalda musikvideor"
 
 msgctxt "#31079"
 msgid "Unwatched videos"
-msgstr ""
+msgstr "Osedda videor"
 
 msgctxt "#31080"
 msgid "Recent channels"
-msgstr ""
+msgstr "Senaste kanalerna"
 
 msgctxt "#31081"
 msgid "Recent recordings"
@@ -289,7 +289,7 @@ msgstr "Nya inspelningar"
 
 msgctxt "#31082"
 msgid "No content found"
-msgstr ""
+msgstr "Inget innehåll hittades"
 
 msgctxt "#31083"
 msgid "Show double row shelves"
@@ -345,27 +345,27 @@ msgstr "Dölj inspelningar"
 
 msgctxt "#31096"
 msgid "Hide Videos"
-msgstr ""
+msgstr "Dölj videor"
 
 msgctxt "#31097"
 msgid "Hide Music"
-msgstr ""
+msgstr "Dölj musik"
 
 msgctxt "#31098"
 msgid "Hide Pictures"
-msgstr ""
+msgstr "Dölj bilder"
 
 msgctxt "#31099"
 msgid "Hide Programs"
-msgstr ""
+msgstr "Dölj program"
 
 msgctxt "#31100"
 msgid "Hide Favourites"
-msgstr ""
+msgstr "Dölj favoriter"
 
 msgctxt "#31101"
 msgid "Hide random episodes"
-msgstr ""
+msgstr "Dölj slumpmässiga avsnitt"
 
 msgctxt "#31102"
 msgid "Hide now recording widget"
@@ -431,7 +431,7 @@ msgstr "Stor"
 
 msgctxt "#31121"
 msgid "Apply Changes"
-msgstr ""
+msgstr "Tillämpa ändringar"
 
 # empty strings from id 31122 to 31128
 msgctxt "#31129"
@@ -456,7 +456,7 @@ msgstr "Växla ljudström"
 
 msgctxt "#31134"
 msgid "Toggle language"
-msgstr ""
+msgstr "Växla språk"
 
 msgctxt "#31135"
 msgid "Change mode"
@@ -534,7 +534,7 @@ msgstr ""
 # empty strings from id 31161 to 31290
 msgctxt "#31291"
 msgid "Add-on manager"
-msgstr ""
+msgstr "Tilläggshanterare"
 
 # empty string with id 31292
 msgctxt "#31293"
@@ -547,11 +547,11 @@ msgstr ""
 
 msgctxt "#31295"
 msgid "OpenELEC Settings"
-msgstr ""
+msgstr "Inställningar för OpenELEC"
 
 msgctxt "#31296"
 msgid "LibreELEC Settings"
-msgstr ""
+msgstr "Inställningar för LibreELEC"
 
 msgctxt "#31297"
 msgid "min"
@@ -567,7 +567,7 @@ msgstr ""
 
 msgctxt "#31300"
 msgid "CoreELEC Settings"
-msgstr ""
+msgstr "Inställningar för CoreELEC"
 
 # empty strings from id 31301 to 31308
 msgctxt "#31309"
@@ -745,15 +745,15 @@ msgstr ""
 
 msgctxt "#31419"
 msgid "Game Sources"
-msgstr ""
+msgstr "Spelkällor"
 
 msgctxt "#31420"
 msgid "Default Shelves"
-msgstr ""
+msgstr "Standardhyllor"
 
 msgctxt "#31421"
 msgid "Additional Shelves"
-msgstr ""
+msgstr "Ytterligare hyllor"
 
 msgctxt "#31422"
 msgid "Recently Added Movies"
@@ -765,7 +765,7 @@ msgstr ""
 
 msgctxt "#31424"
 msgid "Random Movies"
-msgstr ""
+msgstr "Slumpmässiga filmer"
 
 msgctxt "#31425"
 msgid "In Progress Movies"
@@ -773,7 +773,7 @@ msgstr "Pågående filmer"
 
 msgctxt "#31426"
 msgid "Unwatched Movies"
-msgstr ""
+msgstr "Osedda filmer"
 
 msgctxt "#31427"
 msgid "Top Rated Movies"
@@ -3701,19 +3701,19 @@ msgstr ""
 
 msgctxt "#32474"
 msgid "Channel Logo"
-msgstr ""
+msgstr "Kanallogotyp"
 
 msgctxt "#32475"
 msgid "Always Show Information Panel"
-msgstr ""
+msgstr "Visa alltid informationspanelen"
 
 msgctxt "#32476"
 msgid "Use Custom Search for Video Library"
-msgstr ""
+msgstr "Använd anpassad sökning för videobibliotek"
 
 msgctxt "#32477"
 msgid "Use Custom Search for Music Library"
-msgstr ""
+msgstr "Använd anpassad sökning för musikbibliotek"
 
 msgctxt "#32478"
 msgid "Current Programme Progress:"
@@ -3721,11 +3721,11 @@ msgstr ""
 
 msgctxt "#32479"
 msgid "Also Show Seconds"
-msgstr ""
+msgstr "Visa även sekunder"
 
 msgctxt "#32480"
 msgid "kbps"
-msgstr ""
+msgstr "kbps"
 
 msgctxt "#32481"
 msgid "Remember Focused Control in Home Window"
@@ -3741,15 +3741,15 @@ msgstr ""
 
 msgctxt "#32484"
 msgid "Update Library"
-msgstr ""
+msgstr "Uppdatera biblioteket"
 
 msgctxt "#32485"
 msgid "Stop Scanning"
-msgstr ""
+msgstr "Stoppa genomsökningen"
 
 msgctxt "#32486"
 msgid "More Info"
-msgstr ""
+msgstr "Mer info"
 
 msgctxt "#32487"
 msgid "Play Trailer Windowed"
