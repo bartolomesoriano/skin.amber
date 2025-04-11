@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-11 13:18+0000\n"
+"PO-Revision-Date: 2025-04-11 18:03+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/sv_se/>\n"
 "Language: sv_se\n"
@@ -241,10 +241,9 @@ msgctxt "#31052"
 msgid "Sections"
 msgstr "Sektioner"
 
-#, fuzzy
 msgctxt "#31053"
 msgid "Media Views"
-msgstr "Media visningar"
+msgstr "Mediavisningar"
 
 msgctxt "#31054"
 msgid "Media sources"
@@ -263,10 +262,9 @@ msgctxt "#31071"
 msgid "In progress movies"
 msgstr "Pågående filmer"
 
-#, fuzzy
 msgctxt "#31072"
 msgid "Unwatched TV shows"
-msgstr "Osedda TV-serier:"
+msgstr "Osedda TV-serier"
 
 msgctxt "#31073"
 msgid "In progress episodes"
@@ -276,12 +274,10 @@ msgctxt "#31074"
 msgid "Most played albums"
 msgstr "Mest spelade album"
 
-#, fuzzy
 msgctxt "#31075"
 msgid "Random Albums"
 msgstr "Slumpmässiga album"
 
-#, fuzzy
 msgctxt "#31076"
 msgid "Most played songs"
 msgstr "Mest spelade låtar"
@@ -310,7 +306,6 @@ msgctxt "#31082"
 msgid "No content found"
 msgstr "Inget innehåll hittades"
 
-#, fuzzy
 msgctxt "#31083"
 msgid "Show double row shelves"
 msgstr "Visa hyllor med dubbla rader"
@@ -319,19 +314,17 @@ msgctxt "#31084"
 msgid "Hide Recently Added"
 msgstr "Dölj nyligen tillagda"
 
-#, fuzzy
 msgctxt "#31085"
 msgid "Hide Random"
-msgstr "Dölj slumpmässigt"
+msgstr "Dölj slumpmässiga"
 
 msgctxt "#31086"
 msgid "Hide Random Albums"
 msgstr "Dölj slumpmässiga album"
 
-#, fuzzy
 msgctxt "#31087"
 msgid "Hide Random Artists"
-msgstr "Hide Random Artists"
+msgstr "Dölj slumpmässiga artister"
 
 msgctxt "#31088"
 msgid "Hide In Progress"
@@ -445,7 +438,6 @@ msgctxt "#31115"
 msgid "Menu item disabled"
 msgstr "Menyalternativet inaktiverat"
 
-#, fuzzy
 msgctxt "#31116"
 msgid "Set background image"
 msgstr "Ställ in bakgrundsbild"
@@ -674,36 +666,30 @@ msgctxt "#31362"
 msgid "Enabled"
 msgstr "Aktiverad"
 
-#, fuzzy
 msgctxt "#31363"
 msgid "Static"
 msgstr "Statisk"
 
 # empty strings from id 31364 to 31389
-#, fuzzy
 msgctxt "#31390"
 msgid "(1/5) Skin default"
-msgstr "(1/5) Standard för hud"
+msgstr "(1/5) Skalstandard"
 
-#, fuzzy
 msgctxt "#31391"
 msgid "(2/5) Skin default - no caps"
-msgstr "(2/5) Standard för hud - inga lock"
+msgstr "(2/5) Standard för skal - inga versaler"
 
-#, fuzzy
 msgctxt "#31392"
 msgid "(3/5) Arial based"
 msgstr "(3/5) Arial-baserad"
 
-#, fuzzy
 msgctxt "#31393"
 msgid "(4/5) Arial - no caps"
 msgstr "(4/5) Arial - inga versaler"
 
-#, fuzzy
 msgctxt "#31394"
 msgid "(5/5) Trial"
-msgstr "(5/5) Försök"
+msgstr "(5/5) Test"
 
 #, fuzzy
 msgctxt "#31395"
@@ -792,12 +778,10 @@ msgctxt "#31412"
 msgid "Music Video Playlist Statistics"
 msgstr "Statistik över spellistor för musikvideor"
 
-#, fuzzy
 msgctxt "#31413"
 msgid "Movie and TV Show Statistics"
-msgstr "Statistik för film och TV-program"
+msgstr "Statistik för film och TV-serier"
 
-#, fuzzy
 msgctxt "#31414"
 msgid "Video and Music Addons"
 msgstr "Video- och musiktillägg"
@@ -1008,17 +992,14 @@ msgctxt "#31458"
 msgid "Video Sources"
 msgstr "Videokällor"
 
-#, fuzzy
 msgctxt "#31459"
 msgid "Music Sources"
 msgstr "Musikkällor"
 
-#, fuzzy
 msgctxt "#31460"
 msgid "Picture Sources"
 msgstr "Bildkällor"
 
-#, fuzzy
 msgctxt "#31461"
 msgid "Last Played Radio Channels"
 msgstr "Senast spelade radiokanaler"
@@ -1106,7 +1087,6 @@ msgctxt "#31478"
 msgid "Remaining"
 msgstr "Återstående"
 
-#, fuzzy
 msgctxt "#31479"
 msgid "CPU"
 msgstr "CPU"
@@ -1119,7 +1099,6 @@ msgctxt "#31481"
 msgid "Sort Order"
 msgstr "Sorteringsordning"
 
-#, fuzzy
 msgctxt "#31482"
 msgid "Shelf Limit"
 msgstr "Hyllgräns"
@@ -1215,7 +1194,6 @@ msgctxt "#31501"
 msgid "Scheduled Time"
 msgstr "Schemalagd tid"
 
-#, fuzzy
 msgctxt "#31502"
 msgid "All Movies"
 msgstr "Alla filmer"
@@ -1329,7 +1307,6 @@ msgctxt "#31528"
 msgid "Power Menu"
 msgstr "Power Meny"
 
-#, fuzzy
 msgctxt "#31529"
 msgid "Popular People"
 msgstr "Populära personer"
@@ -1409,7 +1386,6 @@ msgctxt "#31544"
 msgid "Trakt - Popular"
 msgstr "Trakt - Populär"
 
-#, fuzzy
 msgctxt "#31545"
 msgid "Trakt - Most Played"
 msgstr "Trakt - Mest spelade"
@@ -1714,22 +1690,18 @@ msgctxt "#31605"
 msgid "Custom Shelf"
 msgstr "Anpassad hylla"
 
-#, fuzzy
 msgctxt "#31606"
 msgid "Tall List"
 msgstr "Hög lista"
 
-#, fuzzy
 msgctxt "#31607"
 msgid "Panel 2"
 msgstr "Panel 2"
 
-#, fuzzy
 msgctxt "#31608"
 msgid "Big Panel 2"
 msgstr "Stor panel 2"
 
-#, fuzzy
 msgctxt "#31609"
 msgid "Shelves Position"
 msgstr "Hyllornas placering"
@@ -1920,7 +1892,6 @@ msgctxt "#31648"
 msgid "Right List"
 msgstr "Rätt lista"
 
-#, fuzzy
 msgctxt "#31649"
 msgid "Decades"
 msgstr "Decennier"
@@ -2115,12 +2086,10 @@ msgctxt "#31966"
 msgid "Recommended"
 msgstr "Rekommenderad"
 
-#, fuzzy
 msgctxt "#31967"
 msgid "Enable Home shelf"
 msgstr "Aktivera hemhylla"
 
-#, fuzzy
 msgctxt "#31968"
 msgid "Show info"
 msgstr "Visa information"
