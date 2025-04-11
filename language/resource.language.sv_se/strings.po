@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-10 20:06+0000\n"
+"PO-Revision-Date: 2025-04-11 08:45+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/sv_se/>\n"
 "Language: sv_se\n"
@@ -179,7 +179,7 @@ msgstr "Betygsatt"
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
-msgstr ""
+msgstr "Nollställ ALLA skalinställningar till standardvärden"
 
 msgctxt "#31039"
 msgid "Hide title bar on sub windows"
@@ -297,7 +297,7 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Hide Recently Added"
-msgstr ""
+msgstr "Dölj nyligen tillagda"
 
 msgctxt "#31085"
 msgid "Hide Random"
@@ -305,7 +305,7 @@ msgstr ""
 
 msgctxt "#31086"
 msgid "Hide Random Albums"
-msgstr ""
+msgstr "Dölj slumpmässiga album"
 
 msgctxt "#31087"
 msgid "Hide Random Artists"
@@ -313,7 +313,7 @@ msgstr ""
 
 msgctxt "#31088"
 msgid "Hide In Progress"
-msgstr ""
+msgstr "Dölj Pågående"
 
 msgctxt "#31089"
 msgid "Hide In Progress Episodes"
@@ -329,7 +329,7 @@ msgstr ""
 
 msgctxt "#31092"
 msgid "Hide Most Played Songs"
-msgstr ""
+msgstr "Dölj mest spelade låtar"
 
 msgctxt "#31093"
 msgid "Hide Unwatched"
@@ -381,7 +381,7 @@ msgstr ""
 
 msgctxt "#31105"
 msgid "Hide forecast"
-msgstr ""
+msgstr "Dölj prognos"
 
 msgctxt "#31106"
 msgid "Hide in progress TV shows"
@@ -440,7 +440,7 @@ msgstr "Samma regissör"
 
 msgctxt "#31130"
 msgid "Hourly"
-msgstr ""
+msgstr "Per timme"
 
 msgctxt "#31131"
 msgid "Forecast"
@@ -517,7 +517,7 @@ msgstr ""
 
 msgctxt "#31157"
 msgid "Triple"
-msgstr ""
+msgstr "Trippel"
 
 msgctxt "#31158"
 msgid "Disable Triple view"
@@ -559,7 +559,7 @@ msgstr "min"
 
 msgctxt "#31298"
 msgid "Starting in"
-msgstr ""
+msgstr "Börjar om"
 
 msgctxt "#31299"
 msgid "Stopping in"
@@ -709,7 +709,7 @@ msgstr ""
 
 msgctxt "#31410"
 msgid "Movie Playlist Statistics"
-msgstr ""
+msgstr "Statistik för filmspellista"
 
 msgctxt "#31411"
 msgid "TV Show Playlist Statistics"
@@ -733,7 +733,7 @@ msgstr "Minnesanvändning"
 
 msgctxt "#31416"
 msgid "CPU usage"
-msgstr ""
+msgstr "CPU-användning"
 
 msgctxt "#31417"
 msgid "Statistics Line"
