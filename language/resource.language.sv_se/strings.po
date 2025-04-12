@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-11 18:03+0000\n"
+"PO-Revision-Date: 2025-04-12 12:25+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/sv_se/>\n"
 "Language: sv_se\n"
@@ -451,7 +451,6 @@ msgctxt "#31118"
 msgid "Small"
 msgstr "Liten"
 
-#, fuzzy
 msgctxt "#31119"
 msgid "Regular"
 msgstr "Vanlig"
@@ -497,7 +496,6 @@ msgctxt "#31136"
 msgid "Watch as 2D"
 msgstr "Se i 2D"
 
-#, fuzzy
 msgctxt "#31137"
 msgid "PVR Info"
 msgstr "PVR-information"
@@ -519,12 +517,10 @@ msgid "Play speed"
 msgstr "Uppspelningshastighet"
 
 # empty strings from id 31142 to 31149
-#, fuzzy
 msgctxt "#31150"
 msgid "Disable List view"
-msgstr "Avaktivera listvy"
+msgstr "Inaktivera listvy"
 
-#, fuzzy
 msgctxt "#31151"
 msgid "Disable Panel view"
 msgstr "Inaktivera panelvy"
@@ -534,7 +530,6 @@ msgctxt "#31152"
 msgid "Disable BigList view"
 msgstr "Inaktivera BigList-vyn"
 
-#, fuzzy
 msgctxt "#31153"
 msgid "Disable Icons view"
 msgstr "Inaktivera visning av ikoner"
@@ -739,7 +734,6 @@ msgctxt "#31404"
 msgid "Conditional weather"
 msgstr "Väderförhållande"
 
-#, fuzzy
 msgctxt "#31405"
 msgid "Movie Library Statistics"
 msgstr "Statistik för filmbibliotek"
@@ -875,12 +869,10 @@ msgctxt "#31434"
 msgid "Recently Played TV Shows"
 msgstr "Nyligen spelade TV-program"
 
-#, fuzzy
 msgctxt "#31435"
 msgid "Random TV Shows"
 msgstr "Slumpmässiga TV-serier"
 
-#, fuzzy
 msgctxt "#31436"
 msgid "In Progress TV Shows"
 msgstr "Pågående TV-serier"
@@ -889,12 +881,10 @@ msgctxt "#31437"
 msgid "Unwatched TV Shows"
 msgstr "Osedda tv-program"
 
-#, fuzzy
 msgctxt "#31438"
 msgid "Top Rated TV Shows"
 msgstr "TV-serier med högst betyg"
 
-#, fuzzy
 msgctxt "#31439"
 msgid "TV Show Genres"
 msgstr "Genrer inom TV-serier"
@@ -1069,12 +1059,10 @@ msgctxt "#31474"
 msgid "Unwatched Music Videos"
 msgstr "Obevakade musikvideor"
 
-#, fuzzy
 msgctxt "#31475"
 msgid "Daily Weather Forecast"
 msgstr "Daglig väderprognos"
 
-#, fuzzy
 msgctxt "#31476"
 msgid "Hourly Weather Forecast"
 msgstr "Väderprognos per timme"
@@ -1103,10 +1091,9 @@ msgctxt "#31482"
 msgid "Shelf Limit"
 msgstr "Hyllgräns"
 
-#, fuzzy
 msgctxt "#31483"
 msgid "Hide Shelves when not Focused"
-msgstr "Dölj hyllor när du inte är fokuserad"
+msgstr "Dölj hyllor när inte är fokuserad"
 
 #, fuzzy
 msgctxt "#31484"
@@ -1220,7 +1207,6 @@ msgid "Opens"
 msgstr "Öppnar"
 
 # empty string with id 31508
-#, fuzzy
 msgctxt "#31509"
 msgid "Radio"
 msgstr "Radio"
@@ -1321,17 +1307,14 @@ msgctxt "#31531"
 msgid "Trending this Week"
 msgstr "Aktuellt denna vecka"
 
-#, fuzzy
 msgctxt "#31532"
 msgid "Highest Revenue"
 msgstr "Högsta intäkterna"
 
-#, fuzzy
 msgctxt "#31533"
 msgid "Most Voted"
 msgstr "Flest röster"
 
-#, fuzzy
 msgctxt "#31534"
 msgid "People"
 msgstr "Personer"
@@ -1415,12 +1398,10 @@ msgctxt "#31550"
 msgid "Trakt - Popular Lists"
 msgstr "Trakt - Populära listor"
 
-#, fuzzy
 msgctxt "#31551"
 msgid "Trakt - Liked Lists"
 msgstr "Trakt - Listor över gillade"
 
-#, fuzzy
 msgctxt "#31552"
 msgid "Trakt - Your Lists"
 msgstr "Trakt - Dina listor"
@@ -1650,30 +1631,25 @@ msgctxt "#31597"
 msgid "Random Movie fanart (Kodi)"
 msgstr "Slumpmässig film fanart (Kodi)"
 
-#, fuzzy
 msgctxt "#31598"
 msgid "Random TV Show fanart (Kodi)"
-msgstr "Slumpmässig TV-serie fanart (Kodi)"
+msgstr "Slumpmässig fanart för TV-serie (Kodi)"
 
-#, fuzzy
 msgctxt "#31599"
 msgid "Random Video fanart (Kodi)"
-msgstr "Slumpmässig video fanart (Kodi)"
+msgstr "Slumpmässig fanart för video (Kodi)"
 
-#, fuzzy
 msgctxt "#31600"
 msgid "Random Music fanart (Kodi)"
-msgstr "Slumpmässig musik fanart (Kodi)"
+msgstr "Slumpmässig fanart för musik (Kodi)"
 
-#, fuzzy
 msgctxt "#31601"
 msgid "Random fanart (Kodi)"
 msgstr "Slumpmässig fanart (Kodi)"
 
-#, fuzzy
 msgctxt "#31602"
 msgid "Default LibreELEC Background"
-msgstr "Standard LibreELEC Bakgrund"
+msgstr "Standardbakgrund för LibreELEC"
 
 #, fuzzy
 msgctxt "#31603"
@@ -1798,7 +1774,6 @@ msgctxt "#31629"
 msgid "Show Text under artwork"
 msgstr "Visa text under illustrationer"
 
-#, fuzzy
 msgctxt "#31630"
 msgid "Automatic Scroll Time (seconds)"
 msgstr "Tid för automatisk rullning (sekunder)"
@@ -4299,10 +4274,9 @@ msgctxt "#32453"
 msgid "With Tag"
 msgstr "&Skanna NFC-tagg från fil"
 
-#, fuzzy
 msgctxt "#32454"
 msgid "Always Use TV Show Poster for Episodes"
-msgstr "Använd alltid TV-seriens affisch för avsnitt"
+msgstr "Använd alltid TV-seriens poster för avsnitt"
 
 #, fuzzy
 msgctxt "#32455"
