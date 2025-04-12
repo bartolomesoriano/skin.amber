@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-12 12:25+0000\n"
+"PO-Revision-Date: 2025-04-12 20:16+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/sv_se/>\n"
 "Language: sv_se\n"
@@ -57,12 +57,10 @@ msgctxt "#31007"
 msgid "PleXBMC settings"
 msgstr "PleXBMC-inställningar"
 
-#, fuzzy
 msgctxt "#31008"
 msgid "Go Plex"
 msgstr "Gå till Plex"
 
-#, fuzzy
 msgctxt "#31009"
 msgid "Go Kodi"
 msgstr "Gå till Kodi"
@@ -83,10 +81,9 @@ msgctxt "#31013"
 msgid "Recently Aired"
 msgstr "Nyligen sända"
 
-#, fuzzy
 msgctxt "#31014"
 msgid "On Deck"
-msgstr "TV-serier on Deck"
+msgstr "On Deck"
 
 msgctxt "#31015"
 msgid "Sign In"
@@ -175,7 +172,6 @@ msgctxt "#31034"
 msgid "Hide weather info in title bar"
 msgstr "Dölj väderinformation i titelraden"
 
-#, fuzzy
 msgctxt "#31035"
 msgid "Media Flags"
 msgstr "Medieflaggor"
@@ -243,7 +239,7 @@ msgstr "Sektioner"
 
 msgctxt "#31053"
 msgid "Media Views"
-msgstr "Mediavisningar"
+msgstr "Mediavyer"
 
 msgctxt "#31054"
 msgid "Media sources"
@@ -354,7 +350,6 @@ msgctxt "#31093"
 msgid "Hide Unwatched"
 msgstr "Hide Unwatched"
 
-#, fuzzy
 msgctxt "#31094"
 msgid "Hide Channels"
 msgstr "Dölj kanaler"
@@ -411,13 +406,11 @@ msgctxt "#31106"
 msgid "Hide in progress TV shows"
 msgstr "Dölj pågående TV-program"
 
-#, fuzzy
 msgctxt "#31107"
 msgid "Shelf style"
-msgstr "Stil på hyllan"
+msgstr "Hyllstil"
 
 # empty strings from id 31108 to 31109
-#, fuzzy
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
 msgstr "Redigera bakgrund för medietyp"
@@ -428,7 +421,6 @@ msgctxt "#31113"
 msgid "Single"
 msgstr "Singel"
 
-#, fuzzy
 msgctxt "#31114"
 msgid "Multi"
 msgstr "Multi"
@@ -578,7 +570,6 @@ msgctxt "#31293"
 msgid "Can not be customized"
 msgstr "Kan inte kundanpassas"
 
-#, fuzzy
 msgctxt "#31294"
 msgid "My OSMC"
 msgstr "Min OSMC"
@@ -904,7 +895,6 @@ msgctxt "#31442"
 msgid "Recently Played Episodes"
 msgstr "Nyligen spelade avsnitt"
 
-#, fuzzy
 msgctxt "#31443"
 msgid "Random Episodes"
 msgstr "Slumpmässiga avsnitt"
@@ -933,17 +923,14 @@ msgctxt "#31448"
 msgid "Recently Played Albums"
 msgstr "Nyligen spelade album"
 
-#, fuzzy
 msgctxt "#31449"
 msgid "Random Albums"
 msgstr "Slumpmässiga album"
 
-#, fuzzy
 msgctxt "#31450"
 msgid "Top 100 Albums"
-msgstr "Topp 100 album"
+msgstr "Topp 100-album"
 
-#, fuzzy
 msgctxt "#31451"
 msgid "Random Artists"
 msgstr "Slumpmässiga artister"
@@ -962,7 +949,6 @@ msgctxt "#31454"
 msgid "Last Played TV Channels"
 msgstr "Senast spelade TV-kanaler"
 
-#, fuzzy
 msgctxt "#31455"
 msgid "Active TV Recordings"
 msgstr "Aktiva TV-inspelningar"
@@ -1034,7 +1020,6 @@ msgctxt "#31469"
 msgid "Most Played Songs"
 msgstr "Mest spelade låtar"
 
-#, fuzzy
 msgctxt "#31470"
 msgid "Random Songs"
 msgstr "Slumpmässiga låtar"
@@ -1119,7 +1104,6 @@ msgctxt "#31488"
 msgid "Next Aired Episodes"
 msgstr "Uppkommande avsnitt"
 
-#, fuzzy
 msgctxt "#31489"
 msgid "Next Episodes"
 msgstr "Nästa avsnitt"
@@ -1129,7 +1113,6 @@ msgctxt "#31490"
 msgid "Episodes Airing Today"
 msgstr "Avsnitt som sänds idag"
 
-#, fuzzy
 msgctxt "#31491"
 msgid "Shelf"
 msgstr "Hylla"
@@ -1168,7 +1151,6 @@ msgctxt "#31498"
 msgid "Themoviedb Helper Shelves"
 msgstr "Themoviedb Hjälpmedelshyllor"
 
-#, fuzzy
 msgctxt "#31499"
 msgid "All TV Shows"
 msgstr "Alla TV-serier"
@@ -1201,7 +1183,6 @@ msgctxt "#31506"
 msgid "Available[CR]Groups"
 msgstr "Tillgängliga[CR]grupper"
 
-#, fuzzy
 msgctxt "#31507"
 msgid "Opens"
 msgstr "Öppnar"
@@ -1297,15 +1278,13 @@ msgctxt "#31529"
 msgid "Popular People"
 msgstr "Populära personer"
 
-#, fuzzy
 msgctxt "#31530"
 msgid "Trending Today"
-msgstr "Trending idag"
+msgstr "Trendar idag"
 
-#, fuzzy
 msgctxt "#31531"
 msgid "Trending this Week"
-msgstr "Aktuellt denna vecka"
+msgstr "Trendar denna vecka"
 
 msgctxt "#31532"
 msgid "Highest Revenue"
@@ -1329,45 +1308,37 @@ msgctxt "#31536"
 msgid "People Trending this Week"
 msgstr "Människor som trendar den här veckan"
 
-#, fuzzy
 msgctxt "#31537"
 msgid "Trakt"
 msgstr "Trakt"
 
-#, fuzzy
 msgctxt "#31538"
 msgid "Trakt - Watchlist"
-msgstr "Trakt - bevakningslista"
+msgstr "Trakt - Bevakningslista"
 
-#, fuzzy
 msgctxt "#31539"
 msgid "Trakt - History"
 msgstr "Trakt - Historik"
 
-#, fuzzy
 msgctxt "#31540"
 msgid "Trakt - Most Watched"
-msgstr "Trakt - Mest bevakade"
+msgstr "Trakt - Mest sedda"
 
-#, fuzzy
 msgctxt "#31541"
 msgid "Trakt - In-Progress"
-msgstr "Trakt - Pågående arbete"
+msgstr "Trakt - Pågående"
 
-#, fuzzy
 msgctxt "#31542"
 msgid "Trakt - Recommended"
-msgstr "Trakt - Rekommenderas"
+msgstr "Trakt - Rekommenderade"
 
-#, fuzzy
 msgctxt "#31543"
 msgid "Trakt - Trending"
-msgstr "Trakt - Trending"
+msgstr "Trakt - Trendar"
 
-#, fuzzy
 msgctxt "#31544"
 msgid "Trakt - Popular"
-msgstr "Trakt - Populär"
+msgstr "Trakt - Populära"
 
 msgctxt "#31545"
 msgid "Trakt - Most Played"
@@ -1388,12 +1359,10 @@ msgctxt "#31548"
 msgid "Trakt - My Shows Airing This Week"
 msgstr "Trakt - Mina program som sänds den här veckan"
 
-#, fuzzy
 msgctxt "#31549"
 msgid "Trakt - Trending Lists"
 msgstr "Trakt - Trendiga listor"
 
-#, fuzzy
 msgctxt "#31550"
 msgid "Trakt - Popular Lists"
 msgstr "Trakt - Populära listor"
@@ -1661,7 +1630,6 @@ msgctxt "#31604"
 msgid "Playlist/Node Fanart Background Limit"
 msgstr "Playlist/Node Fanart Bakgrundsbegränsning"
 
-#, fuzzy
 msgctxt "#31605"
 msgid "Custom Shelf"
 msgstr "Anpassad hylla"
@@ -1739,20 +1707,18 @@ msgctxt "#31622"
 msgid "Clear Art"
 msgstr "Rensa bilder"
 
-#, fuzzy
 msgctxt "#31623"
 msgid "Disc Art"
-msgstr "Skivkonst"
+msgstr "Skivomslag"
 
 #, fuzzy
 msgctxt "#31624"
 msgid "Character Art"
 msgstr "Karaktärskonst"
 
-#, fuzzy
 msgctxt "#31625"
 msgid "TV Show Status"
-msgstr "Status för TV-program"
+msgstr "Status för TV-serie"
 
 #, fuzzy
 msgctxt "#31626"
@@ -1783,7 +1749,6 @@ msgctxt "#31631"
 msgid "Automatic Scroll Time"
 msgstr "Automatisk skrolltid"
 
-#, fuzzy
 msgctxt "#31632"
 msgid "Simple List"
 msgstr "Enkel lista"
@@ -1793,7 +1758,6 @@ msgctxt "#31633"
 msgid "Disable Simple List View"
 msgstr "Inaktivera enkel listvy"
 
-#, fuzzy
 msgctxt "#31634"
 msgid "High"
 msgstr "Hög"
@@ -1891,7 +1855,6 @@ msgctxt "#31653"
 msgid "Information Popup Delay"
 msgstr "Fördröjning av popup-fönster för information"
 
-#, fuzzy
 msgctxt "#31654"
 msgid "Show Information for Shelves"
 msgstr "Visa information för hyllor"
@@ -1929,17 +1892,14 @@ msgctxt "#31937"
 msgid "Enable Up Next Notifications"
 msgstr "Aktivera meddelanden om nästa steg"
 
-#, fuzzy
 msgctxt "#31938"
 msgid "Enable Global Search"
 msgstr "Aktivera global sökning"
 
-#, fuzzy
 msgctxt "#31939"
 msgid "Customise icons"
 msgstr "Anpassa ikoner"
 
-#, fuzzy
 msgctxt "#31940"
 msgid "Weather icons"
 msgstr "Väderikoner"
@@ -2005,7 +1965,6 @@ msgctxt "#31955"
 msgid "Hide"
 msgstr "Dölj"
 
-#, fuzzy
 msgctxt "#31956"
 msgid "Get theme"
 msgstr "Hämta tema"
@@ -2021,12 +1980,10 @@ msgctxt "#31958"
 msgid "Big Panel"
 msgstr "Stor panel"
 
-#, fuzzy
 msgctxt "#31959"
 msgid "Go fullscreen on music playback"
 msgstr "Gå till helskärm vid musikuppspelning"
 
-#, fuzzy
 msgctxt "#31960"
 msgid "Big List"
 msgstr "Stor lista"
@@ -2036,7 +1993,6 @@ msgid "Recently added"
 msgstr "Nyligen tillagda"
 
 #. view label
-#, fuzzy
 msgctxt "#31962"
 msgid "Low List"
 msgstr "Låg lista"
@@ -2099,17 +2055,14 @@ msgctxt "#31974"
 msgid "Home menu"
 msgstr "Hem meny"
 
-#, fuzzy
 msgctxt "#31975"
 msgid "Channels"
 msgstr "Kanaler"
 
-#, fuzzy
 msgctxt "#31976"
 msgid "Home shelf"
-msgstr "Skal för hemhylla"
+msgstr "Hemhylla"
 
-#, fuzzy
 msgctxt "#31977"
 msgid "Fast start"
 msgstr "Snabb start"
@@ -2119,7 +2072,6 @@ msgctxt "#31978"
 msgid "Show library info on Home"
 msgstr "Visa biblioteksinformation på Home"
 
-#, fuzzy
 msgctxt "#31979"
 msgid "Loading..."
 msgstr "Läser in..."
@@ -2139,15 +2091,13 @@ msgctxt "#31982"
 msgid "Shelf items populate more slowly on some systems. By default, skin waits for them to be ready and presents Home screen afterwards.[CR][CR]This option skips this step and presents Home page immediately. Shelf items will appear with a delay, depending on a speed of your system."
 msgstr "Hyllobjekt fylls på långsammare på vissa system. Som standard väntar skin på att de ska bli klara och visar startsidan efteråt.[CR][CR]Det här alternativet hoppar över det här steget och visar startsidan omedelbart. Hyllobjekten visas med en fördröjning, beroende på systemets hastighet."
 
-#, fuzzy
 msgctxt "#31983"
 msgid "Choose from menu"
 msgstr "Välj från menyn"
 
-#, fuzzy
 msgctxt "#31984"
 msgid "Skip to"
-msgstr "Hoppa över"
+msgstr "Hoppa över till"
 
 #, fuzzy
 msgctxt "#31985"
@@ -2159,12 +2109,10 @@ msgctxt "#31986"
 msgid "Use default background for Home window"
 msgstr "Använd standardbakgrund för fönstret Hem"
 
-#, fuzzy
 msgctxt "#31987"
 msgid "Random"
 msgstr "Slumpmässig"
 
-#, fuzzy
 msgctxt "#31988"
 msgid "Menu"
 msgstr "Meny"
@@ -2190,15 +2138,13 @@ msgctxt "#31993"
 msgid "Not used - click to customize"
 msgstr "Används inte - klicka för att anpassa"
 
-#, fuzzy
 msgctxt "#31994"
 msgid "Use vertical main menu"
 msgstr "Använd vertikal huvudmeny"
 
-#, fuzzy
 msgctxt "#31995"
 msgid "Home layout"
-msgstr "Hemmets layout"
+msgstr "Hemlayout"
 
 #, fuzzy
 msgctxt "#31996"
@@ -2219,26 +2165,22 @@ msgctxt "#31999"
 msgid "BigList"
 msgstr "StorLista"
 
-#, fuzzy
 msgctxt "#32000"
 msgid "Hide icons"
 msgstr "Dölj ikoner"
 
 # empty string with id 32001
-#, fuzzy
 msgctxt "#32002"
 msgid "Hide Games"
 msgstr "Dölj spel"
 
-#, fuzzy
 msgctxt "#32003"
 msgid "Game Settings"
 msgstr "Spelinställningar"
 
-#, fuzzy
 msgctxt "#32004"
 msgid "Toggle Subtitle"
-msgstr "Växla mellan undertexter"
+msgstr "Växla undertext"
 
 #, fuzzy
 msgctxt "#32005"
@@ -2264,7 +2206,6 @@ msgctxt "#32009"
 msgid "Next Episode"
 msgstr "Nästa avsnitt"
 
-#, fuzzy
 msgctxt "#32010"
 msgid "Latest Episode"
 msgstr "Senaste avsnittet"
@@ -2309,22 +2250,18 @@ msgctxt "#32020"
 msgid "Hide Second Label in List Views"
 msgstr "Dölj den andra etiketten i listvyer"
 
-#, fuzzy
 msgctxt "#32021"
 msgid "Added:"
 msgstr "Tillagd:"
 
-#, fuzzy
 msgctxt "#32022"
 msgid "Plays:"
 msgstr "Spelar:"
 
-#, fuzzy
 msgctxt "#32023"
 msgid "Last Played:"
-msgstr "Senast spelade"
+msgstr "Senast spelad:"
 
-#, fuzzy
 msgctxt "#32024"
 msgid "New Search"
 msgstr "Ny sökning"
@@ -2334,7 +2271,6 @@ msgctxt "#32025"
 msgid "Movies Starring"
 msgstr "Filmer med huvudrollerna"
 
-#, fuzzy
 msgctxt "#32026"
 msgid "Movies Directed by"
 msgstr "Filmer regisserade av"
@@ -2349,27 +2285,23 @@ msgctxt "#32028"
 msgid "TV Shows Directed by"
 msgstr "TV-serier regisserade av"
 
-#, fuzzy
 msgctxt "#32029"
 msgid "Movies with Genre"
 msgstr "Filmer med genre"
 
-#, fuzzy
 msgctxt "#32030"
 msgid "TV Shows with Genre"
-msgstr "Upptäck TV-serier efter genre"
+msgstr "TV-serier med genre"
 
-#, fuzzy
 msgctxt "#32031"
 msgid "Movies from Studio"
-msgstr "Filmer från Studio"
+msgstr "Filmer från studio"
 
 #, fuzzy
 msgctxt "#32032"
 msgid "TV Shows from Studio"
 msgstr "TV-program från Studio"
 
-#, fuzzy
 msgctxt "#32033"
 msgid "Movies from Year"
 msgstr "Filmer från år"
@@ -2379,10 +2311,9 @@ msgctxt "#32034"
 msgid "TV Shows from Year"
 msgstr "TV-program från år"
 
-#, fuzzy
 msgctxt "#32035"
 msgid "Movies from Country"
-msgstr "Filmer från landet"
+msgstr "Filmer från land"
 
 #, fuzzy
 msgctxt "#32036"
@@ -2408,7 +2339,6 @@ msgid "Enable Kiosk Mode"
 msgstr "Aktivera kioskläge"
 
 # empty string with id 32041
-#, fuzzy
 msgctxt "#32042"
 msgid "Next Episodes"
 msgstr "Nästa avsnitt"
@@ -2422,7 +2352,6 @@ msgctxt "#32044"
 msgid "Submenu"
 msgstr "Undermeny"
 
-#, fuzzy
 msgctxt "#32045"
 msgid "Shelves"
 msgstr "Hyllor"
@@ -2466,7 +2395,6 @@ msgctxt "#32053"
 msgid "Show Two Shelves Together"
 msgstr "Visa två hyllor tillsammans"
 
-#, fuzzy
 msgctxt "#32054"
 msgid "Use Larger Font"
 msgstr "Använd större typsnitt"
@@ -2496,12 +2424,10 @@ msgctxt "#32059"
 msgid "Disable Tall List View"
 msgstr "Inaktivera visning av hög lista"
 
-#, fuzzy
 msgctxt "#32060"
 msgid "Tall List"
 msgstr "Hög lista"
 
-#, fuzzy
 msgctxt "#32061"
 msgid "Set Default Background"
 msgstr "Ange standardbakgrund"
@@ -2511,17 +2437,14 @@ msgctxt "#32062"
 msgid "Set Favourite Addons for Shelf"
 msgstr "Ange favorittillägg för hyllan"
 
-#, fuzzy
 msgctxt "#32063"
 msgid "Select Favourite Addons"
 msgstr "Välj favorittillägg"
 
-#, fuzzy
 msgctxt "#32064"
 msgid "Backup/Restore"
-msgstr "Säkerhetskopiering/återställning"
+msgstr "Säkerhetskopia/Återställ"
 
-#, fuzzy
 msgctxt "#32065"
 msgid "Backup"
 msgstr "Säkerhetskopia"
@@ -2535,7 +2458,6 @@ msgctxt "#32067"
 msgid "Configure Backup addon"
 msgstr "Konfigurera tillägget Backup"
 
-#, fuzzy
 msgctxt "#32068"
 msgid "Show Fanart"
 msgstr "Visa fanart"
@@ -2601,12 +2523,10 @@ msgctxt "#32081"
 msgid "RT Total User Reviews"
 msgstr "RT Total Användarrecensioner"
 
-#, fuzzy
 msgctxt "#32082"
 msgid "Birthday"
-msgstr "Födelsedatum"
+msgstr "Födelsedag"
 
-#, fuzzy
 msgctxt "#32083"
 msgid "Born"
 msgstr "Född"
@@ -2615,18 +2535,13 @@ msgctxt "#32084"
 msgid "Age"
 msgstr "Ålder"
 
-#, fuzzy
 msgctxt "#32085"
 msgid "Died"
 msgstr "Dog"
 
-#, fuzzy
 msgctxt "#32086"
 msgid "Also Known As"
-msgstr ""
-"Tack för att du testar utvecklingsversionen av Cemu för macOS.\n"
-" \n"
-"macOS-portningen är rent experimentell och ska inte ses som stabil eller redo för användning utan problem. Det finns kända problem med minskad prestanda på grund av användningen av MoltenVk och Rosetta för ARM Macs. Vi uppskattar ditt tålamod under tiden vi förbättrar Cemu för macOS."
+msgstr "Även känd som"
 
 #, fuzzy
 msgctxt "#32087"
@@ -2648,7 +2563,6 @@ msgctxt "#32090"
 msgid "Crew in TV Shows"
 msgstr "Besättning i TV-serier"
 
-#, fuzzy
 msgctxt "#32091"
 msgid "Movies in TMDb"
 msgstr "Filmer i TMDb"
@@ -2658,7 +2572,6 @@ msgctxt "#32092"
 msgid "TV Shows in TMDb"
 msgstr "TV-serier i TMDb"
 
-#, fuzzy
 msgctxt "#32093"
 msgid "Movies in Local DB"
 msgstr "Filmer i lokal DB"
@@ -2678,10 +2591,9 @@ msgctxt "#32096"
 msgid "Episodes Starring"
 msgstr "Episoder med huvudrollsinnehavare"
 
-#, fuzzy
 msgctxt "#32097"
 msgid "Movies in the"
-msgstr "Senaste filmer"
+msgstr "Filmer i"
 
 #, fuzzy
 msgctxt "#32098"
@@ -2693,15 +2605,13 @@ msgctxt "#32099"
 msgid "Crew"
 msgstr "Roller"
 
-#, fuzzy
 msgctxt "#32100"
 msgid "More from"
 msgstr "Mer från"
 
-#, fuzzy
 msgctxt "#32101"
 msgid "More in"
-msgstr "Fler artiklar i"
+msgstr "Mer i"
 
 msgctxt "#32102"
 msgid "Similar to"
@@ -2731,50 +2641,42 @@ msgctxt "#32107"
 msgid "Video Info"
 msgstr "Videoinformation"
 
-#, fuzzy
 msgctxt "#32108"
 msgid "Select a Genre"
 msgstr "Välj en genre"
 
-#, fuzzy
 msgctxt "#32109"
 msgid "Select a Studio"
 msgstr "Välj en studio"
 
-#, fuzzy
 msgctxt "#32110"
 msgid "Select a Director"
-msgstr "Välj en direktör"
+msgstr "Välj en regissör"
 
 #, fuzzy
 msgctxt "#32111"
 msgid "Online TMDb Search"
 msgstr "Online TMDb-sökning"
 
-#, fuzzy
 msgctxt "#32112"
 msgid "Local Search"
-msgstr "Lokala Sökningar"
+msgstr "Lokal sökning"
 
-#, fuzzy
 msgctxt "#32113"
 msgid "Select a Writer"
-msgstr "Välj en skribent"
+msgstr "Välj en författare"
 
-#, fuzzy
 msgctxt "#32114"
 msgid "Movies Written by"
 msgstr "Filmer skrivna av"
 
-#, fuzzy
 msgctxt "#32115"
 msgid "Select a Country"
 msgstr "Välj ett land"
 
-#, fuzzy
 msgctxt "#32116"
 msgid "Episodes from Studio"
-msgstr "Episoder från Studio"
+msgstr "Avsnitt från studio"
 
 #, fuzzy
 msgctxt "#32117"
@@ -2834,7 +2736,6 @@ msgctxt "#32128"
 msgid "Embuary Info Settings"
 msgstr "Inställningar för Embuary Info"
 
-#, fuzzy
 msgctxt "#32129"
 msgid "Guest Stars"
 msgstr "Gäststjärnor"
@@ -2847,10 +2748,9 @@ msgctxt "#32131"
 msgid "YouTube"
 msgstr "YouTube"
 
-#, fuzzy
 msgctxt "#32132"
 msgid "Search for Trailer"
-msgstr "Sök efter Trailer"
+msgstr "Sök efter trailer"
 
 #, fuzzy
 msgctxt "#32133"
@@ -2866,7 +2766,6 @@ msgctxt "#32135"
 msgid "Extras"
 msgstr "Extra"
 
-#, fuzzy
 msgctxt "#32136"
 msgid "Known for"
 msgstr "Känd för"
@@ -2895,10 +2794,9 @@ msgctxt "#32141"
 msgid "Planned"
 msgstr "Planerad"
 
-#, fuzzy
 msgctxt "#32142"
 msgid "In Production"
-msgstr "Under arbete"
+msgstr "Under produktion"
 
 #, fuzzy
 msgctxt "#32143"
@@ -2910,7 +2808,6 @@ msgctxt "#32144"
 msgid "Released"
 msgstr "Lanserat"
 
-#, fuzzy
 msgctxt "#32145"
 msgid "Canceled"
 msgstr "Avbruten"
@@ -2930,17 +2827,14 @@ msgctxt "#32148"
 msgid "Directing"
 msgstr "Styrning"
 
-#, fuzzy
 msgctxt "#32149"
 msgid "Writing"
-msgstr "Skrift"
+msgstr "Skriver"
 
-#, fuzzy
 msgctxt "#32150"
 msgid "Production"
 msgstr "Produktion"
 
-#, fuzzy
 msgctxt "#32151"
 msgid "Sound"
 msgstr "Ljud"
@@ -2949,12 +2843,10 @@ msgctxt "#32152"
 msgid "Creator"
 msgstr "Skapare"
 
-#, fuzzy
 msgctxt "#32153"
 msgid "Died at Age"
-msgstr "Död vid Ålder"
+msgstr "Död vid ålder"
 
-#, fuzzy
 msgctxt "#32154"
 msgid "Collection"
 msgstr "Samling"
@@ -2970,17 +2862,15 @@ msgid "Blur Background"
 msgstr "Suddig bakgrund"
 
 # Empty strings from 32157 to 32164
-#, fuzzy
 msgctxt "#32165"
 msgid "Use Poster for Blur"
-msgstr "Använd affisch för oskärpa"
+msgstr "Använd poster för oskärpa"
 
 #, fuzzy
 msgctxt "#32166"
 msgid "Customize Power Menu"
 msgstr "Anpassa Power Menu"
 
-#, fuzzy
 msgctxt "#32167"
 msgid "Edit Library Data"
 msgstr "Redigera biblioteksdata"
@@ -2995,67 +2885,54 @@ msgctxt "#32169"
 msgid "Select Search Categories to Enable"
 msgstr "Välj sökkategorier som ska aktiveras"
 
-#, fuzzy
 msgctxt "#32170"
 msgid "By Title"
-msgstr "Efter namn"
+msgstr "Efter titel"
 
-#, fuzzy
 msgctxt "#32171"
 msgid "With Genre"
-msgstr "Efter genre"
+msgstr "Med genre"
 
-#, fuzzy
 msgctxt "#32172"
 msgid "From Year"
 msgstr "Från år"
 
-#, fuzzy
 msgctxt "#32173"
 msgid "From Studio"
-msgstr "Från Studio"
+msgstr "Från studio"
 
-#, fuzzy
 msgctxt "#32174"
 msgid "From Country"
 msgstr "Från land"
 
-#, fuzzy
 msgctxt "#32175"
 msgid "With Actor"
 msgstr "Med skådespelare"
 
-#, fuzzy
 msgctxt "#32176"
 msgid "By Director"
-msgstr "regissör"
+msgstr "Efter regissör"
 
-#, fuzzy
 msgctxt "#32177"
 msgid "By Writer"
-msgstr "Författare"
+msgstr "Av författare"
 
-#, fuzzy
 msgctxt "#32178"
 msgid "Artists by Name"
 msgstr "Artister efter namn"
 
-#, fuzzy
 msgctxt "#32179"
 msgid "Albums by Title"
 msgstr "Album efter titel"
 
-#, fuzzy
 msgctxt "#32180"
 msgid "Songs by Title"
 msgstr "Låtar efter titel"
 
-#, fuzzy
 msgctxt "#32181"
 msgid "By Artist"
-msgstr "Albumartist"
+msgstr "Efter artist"
 
-#, fuzzy
 msgctxt "#32182"
 msgid "YouTube by Title"
 msgstr "YouTube efter titel"
@@ -3125,7 +3002,6 @@ msgctxt "#32195"
 msgid "Total Items in Local Database"
 msgstr "Totalt antal objekt i den lokala databasen"
 
-#, fuzzy
 msgctxt "#32196"
 msgid "Movies in Local Database"
 msgstr "Filmer i lokal databas"
@@ -3165,15 +3041,13 @@ msgctxt "#32203"
 msgid "Start at First Menu Item"
 msgstr "Börja vid första menyalternativet"
 
-#, fuzzy
 msgctxt "#32204"
 msgid "Set Default View"
 msgstr "Ange standardvy"
 
-#, fuzzy
 msgctxt "#32205"
 msgid "Highlight Color"
-msgstr "Framhävningsfärg för VODCast"
+msgstr "Framhävningsfärg"
 
 #, fuzzy
 msgctxt "#32206"
@@ -3195,7 +3069,6 @@ msgctxt "#32209"
 msgid "Top Bar Tint"
 msgstr "Top Bar Tint"
 
-#, fuzzy
 msgctxt "#32210"
 msgid "Current Color Theme"
 msgstr "Aktuellt färgtema"
@@ -3240,7 +3113,6 @@ msgctxt "#32218"
 msgid "Show Artist Logo In Music Visualization"
 msgstr "Visa artistlogotyp i musikvisualisering"
 
-#, fuzzy
 msgctxt "#32219"
 msgid "Show Logo In Media Views"
 msgstr "Visa logotyp i medievyer"
@@ -3250,10 +3122,9 @@ msgctxt "#32220"
 msgid "Show Logo In Home Window"
 msgstr "Visa logotyp i hemfönstret"
 
-#, fuzzy
 msgctxt "#32221"
 msgid "Media Views Background Tint"
-msgstr "Media Views Bakgrundsfärg"
+msgstr "Bakgrundsfärg för mediavyer"
 
 #, fuzzy
 msgctxt "#32222"
@@ -3290,7 +3161,6 @@ msgctxt "#32228"
 msgid "Only Search in Local Library"
 msgstr "Sök endast i det lokala biblioteket"
 
-#, fuzzy
 msgctxt "#32229"
 msgid "Hide Channel Groups"
 msgstr "Dölj kanalgrupper"
@@ -3304,30 +3174,26 @@ msgctxt "#32231"
 msgid "User Rating"
 msgstr "Användarbetyg"
 
-#, fuzzy
 msgctxt "#32232"
 msgid "Ratings"
 msgstr "Betyg"
 
-#, fuzzy
 msgctxt "#32235"
 msgid "Certification"
 msgstr "Certifiering"
 
-#, fuzzy
 msgctxt "#32237"
 msgid "Up Next in"
-msgstr "Up Next är aktiverat i inställningarna, men Up Next verkar vara inaktiverat. Vill du aktivera Up Next nu?"
+msgstr "Up Next om"
 
 #, fuzzy
 msgctxt "#32238"
 msgid "Continue Watching in"
 msgstr "Fortsätt titta i"
 
-#, fuzzy
 msgctxt "#32238"
 msgid "Next Episode in"
-msgstr "Nästa avsnitt i"
+msgstr "Nästa avsnitt om"
 
 #, fuzzy
 msgctxt "#32239"
@@ -3354,12 +3220,10 @@ msgctxt "#32243"
 msgid "Alternate List Views Layout"
 msgstr "Alternativ layout för listvyer"
 
-#, fuzzy
 msgctxt "#32244"
 msgid "Albums by"
-msgstr "Bästa albumen"
+msgstr "Album av"
 
-#, fuzzy
 msgctxt "#32245"
 msgid "Panel 2"
 msgstr "Panel 2"
@@ -3379,10 +3243,9 @@ msgctxt "#32248"
 msgid "Disable Big Panel 2 view"
 msgstr "Inaktivera Big Panel 2 vy"
 
-#, fuzzy
 msgctxt "#32249"
 msgid "Enable Statistics Line"
-msgstr "Aktivera statistiklinje"
+msgstr "Aktivera statistikrad"
 
 #, fuzzy
 msgctxt "#32250"
@@ -3399,7 +3262,6 @@ msgctxt "#32252"
 msgid "Hide Unwatched Episodes Marks"
 msgstr "Hide Unwatched Episodes Marks"
 
-#, fuzzy
 msgctxt "#32253"
 msgid "Movies in library"
 msgstr "Filmer i biblioteket"
@@ -3461,12 +3323,10 @@ msgctxt "#32265"
 msgid "Media Play Count"
 msgstr "Media Play Count"
 
-#, fuzzy
 msgctxt "#32266"
 msgid "Color Options"
 msgstr "Färgalternativ"
 
-#, fuzzy
 msgctxt "#32267"
 msgid "Go To"
 msgstr "Gå till"
@@ -3491,10 +3351,9 @@ msgctxt "#32271"
 msgid "Mouse/Touch-Friendly Alphabet Strip"
 msgstr "Mus- och beröringsvänlig alfabetremsa"
 
-#, fuzzy
 msgctxt "#32272"
 msgid "Use New Media Views Selector"
-msgstr "Använd väljaren för nya medievisningar"
+msgstr "Använd nya väljaren för medievyer"
 
 #, fuzzy
 msgctxt "#32273"
@@ -3516,7 +3375,6 @@ msgctxt "#32277"
 msgid "Three Rows with Larger Icons"
 msgstr "Tre rader med större ikoner"
 
-#, fuzzy
 msgctxt "#32278"
 msgid "Oscars Won"
 msgstr "Vunna Oscars"
@@ -3551,7 +3409,6 @@ msgctxt "#32284"
 msgid "Music Genre Fanart"
 msgstr "Musikgenre Fanart"
 
-#, fuzzy
 msgctxt "#32285"
 msgid "Custom Path"
 msgstr "Anpassad sökväg"
@@ -3561,7 +3418,6 @@ msgctxt "#32286"
 msgid "Reset Custom Path"
 msgstr "Återställ anpassad sökväg"
 
-#, fuzzy
 msgctxt "#32287"
 msgid "Image Pack"
 msgstr "Bildpaket"
@@ -3605,15 +3461,13 @@ msgctxt "#32295"
 msgid "Netflix style"
 msgstr "Netflix-stil"
 
-#, fuzzy
 msgctxt "#32296"
 msgid "Show Logo"
 msgstr "Visa logotyp"
 
-#, fuzzy
 msgctxt "#32297"
 msgid "Use Landscape"
-msgstr "Användning Landskap"
+msgstr "Använd liggande"
 
 #, fuzzy
 msgctxt "#32298"
@@ -3644,7 +3498,6 @@ msgctxt "#32303"
 msgid "Select Now Playing Music Disc Art Fallback"
 msgstr "Välj Nu spelas musik Skiva Art Fallback"
 
-#, fuzzy
 msgctxt "#32304"
 msgid "Blu-Ray"
 msgstr "Blu-Ray"
@@ -3654,17 +3507,14 @@ msgctxt "#32305"
 msgid "Vinyl"
 msgstr "Vinyl"
 
-#, fuzzy
 msgctxt "#32306"
 msgid "None"
 msgstr "Ingen"
 
-#, fuzzy
 msgctxt "#32307"
 msgid "White"
 msgstr "Vit"
 
-#, fuzzy
 msgctxt "#32308"
 msgid "Blue"
 msgstr "Blå"
@@ -3682,17 +3532,14 @@ msgctxt "#32311"
 msgid "Grey"
 msgstr "Grå"
 
-#, fuzzy
 msgctxt "#32312"
 msgid "Orange"
 msgstr "Orange"
 
-#, fuzzy
 msgctxt "#32313"
 msgid "Purple"
 msgstr "Lila"
 
-#, fuzzy
 msgctxt "#32314"
 msgid "Red"
 msgstr "Röd"
@@ -3732,7 +3579,6 @@ msgctxt "#32321"
 msgid "Show Extra Art for Music"
 msgstr "Visa extra konst för musik"
 
-#, fuzzy
 msgctxt "#32322"
 msgid "Show Logo"
 msgstr "Visa logotyp"
@@ -3762,7 +3608,6 @@ msgctxt "#32327"
 msgid "Disable Now Playing"
 msgstr "Inaktivera Nu spelas"
 
-#, fuzzy
 msgctxt "#32328"
 msgid "Internet Stream"
 msgstr "Internetström"
@@ -3772,12 +3617,10 @@ msgctxt "#32329"
 msgid "Special"
 msgstr "Special"
 
-#, fuzzy
 msgctxt "#32330"
 msgid "Next Tracks"
 msgstr "Nästa spår"
 
-#, fuzzy
 msgctxt "#32331"
 msgid "Album Review"
 msgstr "Albumrecension"
@@ -3792,20 +3635,18 @@ msgctxt "#32333"
 msgid "Hide Shelves when Now Playing is Visible"
 msgstr "Dölj hyllor när Nu spelas är synligt"
 
-#, fuzzy
 msgctxt "#32334"
 msgid "Enlarge Video Preview when Idle"
-msgstr "Förstora videoförhandsgranskningen i viloläge"
+msgstr "Förstora videoförhandsvisning när overksam"
 
 #, fuzzy
 msgctxt "#32335"
 msgid "Select Extra Art to Show in Applicable Views"
 msgstr "Välj Extra Art som ska visas i tillämpliga vyer"
 
-#, fuzzy
 msgctxt "#32336"
 msgid "Full Screen/OSD"
-msgstr "Fullskärm/OSD"
+msgstr "Helskärm/OSD"
 
 #, fuzzy
 msgctxt "#32337"
@@ -3820,7 +3661,6 @@ msgctxt "#32339"
 msgid "Value"
 msgstr "Värde"
 
-#, fuzzy
 msgctxt "#32340"
 msgid "Second"
 msgstr "Sekund"
@@ -3875,7 +3715,6 @@ msgctxt "#32350"
 msgid "Show Three Rows"
 msgstr "Visa tre rader"
 
-#, fuzzy
 msgctxt "#32351"
 msgid "Show Four Rows"
 msgstr "Visa fyra rader"
@@ -3905,10 +3744,9 @@ msgctxt "#32356"
 msgid "Show Menu Item Name"
 msgstr "Visa menyalternativets namn"
 
-#, fuzzy
 msgctxt "#32357"
 msgid "Enable Video Lyrics"
-msgstr "Aktivera video Lyrics"
+msgstr "Aktivera videotexter"
 
 #, fuzzy
 msgctxt "#32358"
@@ -3925,7 +3763,6 @@ msgctxt "#32360"
 msgid "Animate backgrounds using Ken Burns effect"
 msgstr "Animera bakgrunder med Ken Burns-effekten"
 
-#, fuzzy
 msgctxt "#32361"
 msgid "Single Column"
 msgstr "Enkel kolumn"
@@ -3999,17 +3836,14 @@ msgctxt "#32375"
 msgid "Use Artist Slideshow for Audio Fanart"
 msgstr "Använd Artist Slideshow för Audio Fanart"
 
-#, fuzzy
 msgctxt "#32376"
 msgid "Disable Lyrics"
 msgstr "Inaktivera texter"
 
-#, fuzzy
 msgctxt "#32377"
 msgid "Activate Lyrics"
-msgstr "Aktivera text"
+msgstr "Aktivera texter"
 
-#, fuzzy
 msgctxt "#32378"
 msgid "Use Color Flags"
 msgstr "Använd färgflaggor"
@@ -4099,10 +3933,9 @@ msgctxt "#32396"
 msgid "View Types to Enable"
 msgstr "Visningstyper som ska aktiveras"
 
-#, fuzzy
 msgctxt "#32398"
 msgid "Show Poster"
-msgstr "Visa affisch"
+msgstr "Visa poster"
 
 msgctxt "#32399"
 msgid "Text"
@@ -4117,10 +3950,9 @@ msgctxt "#32401"
 msgid "List Item Type"
 msgstr "Lista Objekttyp"
 
-#, fuzzy
 msgctxt "#32402"
 msgid "Poster/Thumb"
-msgstr "Affisch/Tumme"
+msgstr "Poster/Miniatyr"
 
 #, fuzzy
 msgctxt "#32403"
@@ -4141,12 +3973,10 @@ msgctxt "#32406"
 msgid "Popup Delay"
 msgstr "Popup-fördröjning"
 
-#, fuzzy
 msgctxt "#32407"
 msgid "Show Floor"
-msgstr "Visa golvet"
+msgstr "Visa golv"
 
-#, fuzzy
 msgctxt "#32408"
 msgid "Fixed List"
 msgstr "Fast lista"
@@ -4175,7 +4005,6 @@ msgctxt "#32413"
 msgid "Enabled"
 msgstr "Aktiverad"
 
-#, fuzzy
 msgctxt "#32414"
 msgid "Disabled"
 msgstr "Inaktiverad"
@@ -4199,7 +4028,6 @@ msgctxt "#32418"
 msgid "Single Image"
 msgstr "Enstaka bild"
 
-#, fuzzy
 msgctxt "#32419"
 msgid "Multiple Images"
 msgstr "Flera bilder"
@@ -4259,20 +4087,17 @@ msgctxt "#32450"
 msgid "Show Artwork Downloader items in Context Menu"
 msgstr "Visa Artwork Downloader-objekt i snabbmenyn"
 
-#, fuzzy
 msgctxt "#32451"
 msgid "Movies with Tag"
-msgstr "Filmer med Tag"
+msgstr "Filmer med tagg"
 
-#, fuzzy
 msgctxt "#32452"
 msgid "Select a Tag"
-msgstr "Välj en etikett"
+msgstr "Välj en tagg"
 
-#, fuzzy
 msgctxt "#32453"
 msgid "With Tag"
-msgstr "&Skanna NFC-tagg från fil"
+msgstr "Med tagg"
 
 msgctxt "#32454"
 msgid "Always Use TV Show Poster for Episodes"
@@ -4322,10 +4147,9 @@ msgctxt "#32463"
 msgid "Play trailer in a window"
 msgstr "Spela upp trailer i ett fönster"
 
-#, fuzzy
 msgctxt "#32464"
 msgid "Search Trailer"
-msgstr "Sök Trailer"
+msgstr "Sök trailer"
 
 #, fuzzy
 msgctxt "#32465"
@@ -4337,7 +4161,6 @@ msgctxt "#32466"
 msgid "Fade out Non-focused Menu Items"
 msgstr "Tonar ut icke-fokuserade menyalternativ"
 
-#, fuzzy
 msgctxt "#32467"
 msgid "Cloudiness"
 msgstr "Molnighet"
@@ -4367,7 +4190,6 @@ msgctxt "#32472"
 msgid "Teletext Button Opens EPG"
 msgstr "Text-TV-knapp Öppnar EPG"
 
-#, fuzzy
 msgctxt "#32473"
 msgid "EPG Icon"
 msgstr "EPG-ikon"
