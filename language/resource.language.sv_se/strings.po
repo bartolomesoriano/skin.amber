@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-14 22:28+0000\n"
+"PO-Revision-Date: 2025-04-15 06:50+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/sv_se/>\n"
 "Language: sv_se\n"
@@ -198,7 +198,6 @@ msgid "Repository"
 msgstr "Förråd"
 
 # empty strings from id 31042 to 31044
-#, fuzzy
 msgctxt "#31045"
 msgid "Show Triple Row Shelf"
 msgstr "Visa hylla med tre rader"
@@ -461,7 +460,7 @@ msgstr "Prognos"
 
 msgctxt "#31132"
 msgid "Lyrics Add-on"
-msgstr "Sångtextstillägg"
+msgstr "Låttextstillägg"
 
 msgctxt "#31133"
 msgid "Toggle audio stream"
@@ -1089,7 +1088,6 @@ msgctxt "#31493"
 msgid "Unwatched TV Shows"
 msgstr "Osedda tv-program"
 
-#, fuzzy
 msgctxt "#31494"
 msgid "Recently Released Albums"
 msgstr "Nyligen utgivna album"
@@ -1098,12 +1096,10 @@ msgctxt "#31495"
 msgid "Embuary Helper Shelves"
 msgstr "Hyllor för Embuary-hjälpare"
 
-#, fuzzy
 msgctxt "#31496"
 msgid "Similar Movies based on Watched"
-msgstr "Liknande filmer baserade på Watched"
+msgstr "Liknande filmer baserade på sedda"
 
-#, fuzzy
 msgctxt "#31497"
 msgid "Movie Suggestions by Genre:"
 msgstr "Filmförslag efter genre:"
@@ -2733,7 +2729,6 @@ msgctxt "#32168"
 msgid "Select Search Categories"
 msgstr "Välj sökkategorier"
 
-#, fuzzy
 msgctxt "#32169"
 msgid "Select Search Categories to Enable"
 msgstr "Välj sökkategorier som ska aktiveras"
@@ -2928,17 +2923,14 @@ msgctxt "#32211"
 msgid "Dialogs Background Tint"
 msgstr "Dialoger Bakgrundsfärg"
 
-#, fuzzy
 msgctxt "#32212"
 msgid "Regular Text Color"
 msgstr "Vanlig textfärg"
 
-#, fuzzy
 msgctxt "#32213"
 msgid "Focused Text Color"
 msgstr "Fokuserad textfärg"
 
-#, fuzzy
 msgctxt "#32214"
 msgid "Selected Text Color"
 msgstr "Färg på markerad text"
@@ -2988,7 +2980,6 @@ msgctxt "#32224"
 msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
 msgstr "Undertextknapp Öppnar inställningar för undertext i OSD för video"
 
-#, fuzzy
 msgctxt "#32225"
 msgid "Disable Info Panel in List Views"
 msgstr "Inaktivera infopanelen i listvyer"
@@ -3192,16 +3183,14 @@ msgctxt "#32273"
 msgid "Skin Variables"
 msgstr "Skalvariabler"
 
-#, fuzzy
 msgctxt "#32274"
 msgid "To enable this functionality, you need to install a very recent version of the add-on script.skinvariables.[CR][CR]You can find it at https://github.com/jurialmunkey/script.skinvariables."
-msgstr "För att aktivera den här funktionen måste du installera en mycket ny version av tilläggsskriptet skinvariables.[CR][CR]Du hittar det på https://github.com/jurialmunkey/script.skinvariables."
+msgstr "För att aktivera den här funktionen måste du installera en mycket ny version av tillägget script.skinvariables.[CR][CR]Du hittar det på https://github.com/jurialmunkey/script.skinvariables."
 
 msgctxt "#32275"
 msgid "Configure Media Views"
 msgstr "Konfigurera medievyer"
 
-#, fuzzy
 msgctxt "#32277"
 msgid "Three Rows with Larger Icons"
 msgstr "Tre rader med större ikoner"
@@ -3214,17 +3203,14 @@ msgctxt "#32279"
 msgid "Oscar Nominations"
 msgstr "Oscarsnomineringar"
 
-#, fuzzy
 msgctxt "#32280"
 msgid "Golden Globes Won"
 msgstr "Golden Globes vunna"
 
-#, fuzzy
 msgctxt "#32281"
 msgid "Golden Globe Nominations"
 msgstr "Golden Globe-nomineringar"
 
-#, fuzzy
 msgctxt "#32282"
 msgid "Awards (Oscars/Golden Globes)"
 msgstr "Utmärkelser (Oscars/Golden Globes)"
@@ -3579,7 +3565,6 @@ msgctxt "#32362"
 msgid "Disable Now Playing Fanart"
 msgstr "Inaktivera Nu spelar Fanart"
 
-#, fuzzy
 msgctxt "#32363"
 msgid "Show Media Info with Seek Bar"
 msgstr "Visa mediainformation med sökfältet"
@@ -3964,10 +3949,9 @@ msgctxt "#32469"
 msgid "Intro Video Duration"
 msgstr "Varaktighet för introvideo"
 
-#, fuzzy
 msgctxt "#32470"
 msgid "PVR Timeshift Buffer Color"
-msgstr "PVR Timeshift Buffertfärg"
+msgstr "Färg för PVR-tidsförskjutningsbuffert"
 
 msgctxt "#32471"
 msgid "Use Main Menu item Background for Sub Windows"
