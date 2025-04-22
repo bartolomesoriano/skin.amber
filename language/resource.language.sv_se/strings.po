@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-19 03:33+0000\n"
+"PO-Revision-Date: 2025-04-22 16:13+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/sv_se/>\n"
 "Language: sv_se\n"
@@ -44,7 +44,7 @@ msgstr "Kanalkatalog"
 #, fuzzy
 msgctxt "#31004"
 msgid "Shift"
-msgstr "Skift"
+msgstr "Shift"
 
 msgctxt "#31005"
 msgid "Cinema"
@@ -151,10 +151,9 @@ msgctxt "#31030"
 msgid "Settings entry point"
 msgstr "Ingångspunkt för inställningar"
 
-#, fuzzy
 msgctxt "#31031"
 msgid "Home menu and Quit menu"
-msgstr "Startmeny och Avsluta-meny"
+msgstr "Hemmeny och Avsluta-meny"
 
 msgctxt "#31032"
 msgid "Home menu Only"
@@ -184,7 +183,6 @@ msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
 msgstr "Nollställ ALLA skalinställningar till standardvärden"
 
-#, fuzzy
 msgctxt "#31039"
 msgid "Hide title bar on sub windows"
 msgstr "Dölj titelfältet på underfönster"
@@ -375,12 +373,10 @@ msgctxt "#31102"
 msgid "Hide now recording widget"
 msgstr "Dölj widget för inspelning"
 
-#, fuzzy
 msgctxt "#31103"
 msgid "Hide next recording widget"
 msgstr "Dölj widget för nästa inspelning"
 
-#, fuzzy
 msgctxt "#31104"
 msgid "Hide hourly"
 msgstr "Dölj timvis"
@@ -403,7 +399,6 @@ msgid "Edit Background for Media Type"
 msgstr "Redigera bakgrund för medietyp"
 
 # empty strings from id 31111 to 31112
-#, fuzzy
 msgctxt "#31113"
 msgid "Single"
 msgstr "Singel"
@@ -477,7 +472,6 @@ msgctxt "#31137"
 msgid "PVR Info"
 msgstr "PVR-information"
 
-#, fuzzy
 msgctxt "#31138"
 msgid "Player info"
 msgstr "Spelarinformation"
@@ -531,7 +525,6 @@ msgctxt "#31157"
 msgid "Triple"
 msgstr "Trippel"
 
-#, fuzzy
 msgctxt "#31158"
 msgid "Disable Triple view"
 msgstr "Inaktivera trippelvy"
@@ -540,7 +533,6 @@ msgctxt "#31159"
 msgid "Logo"
 msgstr "Logotyp"
 
-#, fuzzy
 msgctxt "#31160"
 msgid "Disable Logo view"
 msgstr "Inaktivera logotypvisning"
@@ -669,7 +661,6 @@ msgctxt "#31396"
 msgid "Are you sure you want to remove the Settings menu item?[CR]Please ensure that you have an alternative method of accessing Settings before you remove this menu item."
 msgstr "Är du säker på att du vill ta bort menyalternativet Inställningar?[CR]Se till att du har en alternativ metod för att komma åt Inställningar innan du tar bort det här menyalternativet."
 
-#, fuzzy
 msgctxt "#31397"
 msgid "Delete/Disable Search Menu Item?"
 msgstr "Ta bort/inaktivera menyalternativet Sök?"
@@ -726,12 +717,10 @@ msgctxt "#31410"
 msgid "Movie Playlist Statistics"
 msgstr "Statistik för filmspellista"
 
-#, fuzzy
 msgctxt "#31411"
 msgid "TV Show Playlist Statistics"
-msgstr "Statistik för TV-programspellistor"
+msgstr "Statistik över spellistor för TV-serier"
 
-#, fuzzy
 msgctxt "#31412"
 msgid "Music Video Playlist Statistics"
 msgstr "Statistik över spellistor för musikvideor"
@@ -900,7 +889,6 @@ msgctxt "#31453"
 msgid "PVR"
 msgstr "PVR"
 
-#, fuzzy
 msgctxt "#31454"
 msgid "Last Played TV Channels"
 msgstr "Senast spelade TV-kanaler"
@@ -909,12 +897,10 @@ msgctxt "#31455"
 msgid "Active TV Recordings"
 msgstr "Aktiva TV-inspelningar"
 
-#, fuzzy
 msgctxt "#31456"
 msgid "Grouped Active TV Recordings"
 msgstr "Grupperade aktiva TV-inspelningar"
 
-#, fuzzy
 msgctxt "#31457"
 msgid "Grouped Deleted TV Recordings"
 msgstr "Grupperade borttagna TV-inspelningar"
@@ -939,12 +925,10 @@ msgctxt "#31462"
 msgid "Active Radio Recordings"
 msgstr "Aktiva radioinspelningar"
 
-#, fuzzy
 msgctxt "#31463"
 msgid "Grouped Active Radio Recordings"
-msgstr "Grouped Active Radio Inspelningar"
+msgstr "Grupperade aktiva radioinspelningar"
 
-#, fuzzy
 msgctxt "#31464"
 msgid "Grouped Deleted Radio Recordings"
 msgstr "Grupperade borttagna radioinspelningar"
@@ -1081,10 +1065,9 @@ msgctxt "#31497"
 msgid "Movie Suggestions by Genre:"
 msgstr "Filmförslag efter genre:"
 
-#, fuzzy
 msgctxt "#31498"
 msgid "Themoviedb Helper Shelves"
-msgstr "Themoviedb Hjälpmedelshyllor"
+msgstr "Hjälphyllor för Themoviedb"
 
 msgctxt "#31499"
 msgid "All TV Shows"
@@ -1138,16 +1121,15 @@ msgstr "Påminnelsen inställd"
 # empty strings from id 31512 to 31513
 msgctxt "#31514"
 msgid "Episodes use poster"
-msgstr "Avsnitt använder poster"
+msgstr "Avsnitt använder affisch"
 
 msgctxt "#31515"
 msgid "Recently Updated TV Shows"
 msgstr "Nyligen uppdaterade TV-serier"
 
-#, fuzzy
 msgctxt "#31516"
 msgid "Similar TV Shows based on Watched"
-msgstr "Liknande TV-program baserat på Tittat"
+msgstr "Liknande TV-serier baserat på sedda"
 
 msgctxt "#31517"
 msgid "TV Shows Suggestions by Genre:"
@@ -1157,7 +1139,6 @@ msgctxt "#31518"
 msgid "Popular Movies"
 msgstr "Populära filmer"
 
-#, fuzzy
 msgctxt "#31519"
 msgid "TMDb Top Rated Movies"
 msgstr "TMDb Topprankade filmer"
@@ -1174,7 +1155,6 @@ msgctxt "#31522"
 msgid "Popular TV Shows"
 msgstr "Populära TV-serier"
 
-#, fuzzy
 msgctxt "#31523"
 msgid "TMDb Top Rated TV Shows"
 msgstr "TMDb Topprankade TV-serier"
@@ -1223,15 +1203,13 @@ msgctxt "#31534"
 msgid "People"
 msgstr "Personer"
 
-#, fuzzy
 msgctxt "#31535"
 msgid "People Trending Today"
-msgstr "Människor som trendar idag"
+msgstr "Personer som trendar idag"
 
-#, fuzzy
 msgctxt "#31536"
 msgid "People Trending this Week"
-msgstr "Människor som trendar den här veckan"
+msgstr "Personer som trendar den här veckan"
 
 msgctxt "#31537"
 msgid "Trakt"
@@ -1341,20 +1319,17 @@ msgctxt "#31563"
 msgid "Embuary Info - TV Shows Trending This Week"
 msgstr "Embuary Info - TV-serier som trendar den här veckan"
 
-#, fuzzy
 msgctxt "#31564"
 msgid "TMDb Helper - Next Aired: All Items"
-msgstr "TMDb Helper - Nästa sändning: Alla föremål"
+msgstr "TMDb-hjälpare - Nästa sändning: Alla objekt"
 
-#, fuzzy
 msgctxt "#31565"
 msgid "TMDb Helper - Next Aired: Next Week"
-msgstr "TMDb Helper - Sänds nästa gång: Nästa vecka"
+msgstr "TMDb-hjälpare - Sänds nästa gång: Nästa vecka"
 
-#, fuzzy
 msgctxt "#31566"
 msgid "TMDb Helper - Next Aired: Today"
-msgstr "TMDb Helper - Sänds nästa gång: Idag"
+msgstr "TMDb-hjälpare - Sänds nästa gång: Idag"
 
 msgctxt "#31567"
 msgid "Embuary Info - Next Aired: Next 7 Days"
@@ -1364,52 +1339,42 @@ msgctxt "#31568"
 msgid "Embuary Info - Next Aired: Today"
 msgstr "Embuary Info - Nästa sändning: Idag"
 
-#, fuzzy
 msgctxt "#31569"
 msgid "Default Amber Background"
-msgstr "Standard gul bakgrund"
+msgstr "Standardbakgrund för Amber"
 
-#, fuzzy
 msgctxt "#31570"
 msgid "Default Addons Background"
-msgstr "Standard Addons Bakgrund"
+msgstr "Standardbakgrund för tillägg"
 
-#, fuzzy
 msgctxt "#31571"
 msgid "Default Videos Background"
 msgstr "Standardbakgrund för videor"
 
-#, fuzzy
 msgctxt "#31572"
 msgid "Default Movies Background"
-msgstr "Standardfilmer Bakgrund"
+msgstr "Standardbakgrund för filmer"
 
-#, fuzzy
 msgctxt "#31573"
 msgid "Default TV Shows Background"
-msgstr "Standard TV-program Bakgrund"
+msgstr "Standardbakgrund för tv-serier"
 
-#, fuzzy
 msgctxt "#31574"
 msgid "Default Music Videos Background"
 msgstr "Standardbakgrund för musikvideor"
 
-#, fuzzy
 msgctxt "#31575"
 msgid "Default Music Background"
-msgstr "Standard musikbakgrund"
+msgstr "Standardbakgrund för musik"
 
-#, fuzzy
 msgctxt "#31576"
 msgid "Default Pictures Background"
-msgstr "Standardbilder Bakgrund"
+msgstr "Standardbakgrund för bilder"
 
-#, fuzzy
 msgctxt "#31577"
 msgid "Default Weather Background"
 msgstr "Standardbakgrund för väder"
 
-#, fuzzy
 msgctxt "#31578"
 msgid "Default Games Background"
 msgstr "Standardbakgrund för spel"
@@ -1418,30 +1383,25 @@ msgctxt "#31579"
 msgid "Default Favourites Background"
 msgstr "Standardbakgrund för favoriter"
 
-#, fuzzy
 msgctxt "#31580"
 msgid "Default Search Background"
-msgstr "Standard bakgrund för sökning"
+msgstr "Standardbakgrund för sökning"
 
-#, fuzzy
 msgctxt "#31581"
 msgid "Default Power Background"
-msgstr "Standardström Bakgrund"
+msgstr "Standardbakgrund för energi"
 
-#, fuzzy
 msgctxt "#31582"
 msgid "Default PVR Background"
-msgstr "Standard PVR Bakgrund"
+msgstr "Standardbakgrund för PVR"
 
-#, fuzzy
 msgctxt "#31583"
 msgid "Default PVR Radio Background"
-msgstr "Standard PVR Radio Bakgrund"
+msgstr "Standardbakgrund för PVR-radio"
 
-#, fuzzy
 msgctxt "#31584"
 msgid "Default Settings Background"
-msgstr "Standardinställningar Bakgrund"
+msgstr "Standardbakgrund för inställningar"
 
 msgctxt "#31585"
 msgid "Delete Favourites Menu Item?"
@@ -1471,15 +1431,13 @@ msgctxt "#31591"
 msgid "Movie Node Statistics"
 msgstr "Statistik för filmnod"
 
-#, fuzzy
 msgctxt "#31592"
 msgid "TV Show Node Statistics"
-msgstr "Statistik över TV-programknutpunkter"
+msgstr "Statistik över TV-serienoder"
 
-#, fuzzy
 msgctxt "#31593"
 msgid "Music Video Node Statistics"
-msgstr "Statistik över noder för musikvideor"
+msgstr "Statistik över musikvideonoder"
 
 msgctxt "#31594"
 msgid "Artist Node Statistics"
@@ -1574,15 +1532,13 @@ msgctxt "#31616"
 msgid "Shelf Sort Method"
 msgstr "Metod för hyllsortering"
 
-#, fuzzy
 msgctxt "#31617"
 msgid "Shelf Sort Direction"
-msgstr "Hylla Sorteringsriktning"
+msgstr "Sorteringsriktning för hylla"
 
-#, fuzzy
 msgctxt "#31618"
 msgid "Shelf Item Limit"
-msgstr "Hylla Artikelgräns"
+msgstr "Gräns för hyllobjekt"
 
 msgctxt "#31619"
 msgid "Thumb"
@@ -1604,7 +1560,6 @@ msgctxt "#31623"
 msgid "Disc Art"
 msgstr "Skivomslag"
 
-#, fuzzy
 msgctxt "#31624"
 msgid "Character Art"
 msgstr "Karaktärskonst"
@@ -1641,7 +1596,6 @@ msgctxt "#31632"
 msgid "Simple List"
 msgstr "Enkel lista"
 
-#, fuzzy
 msgctxt "#31633"
 msgid "Disable Simple List View"
 msgstr "Inaktivera enkel listvy"
@@ -1662,19 +1616,17 @@ msgctxt "#31637"
 msgid "Enable Bottom Shortcuts"
 msgstr "Aktivera genvägar i botten"
 
-#, fuzzy
 msgctxt "#31638"
 msgid "Show Bottom Shortcuts for this Menu Item"
-msgstr "Visa genvägar längst ner för detta menyalternativ"
+msgstr "Visa genvägar längst ner för detta menyobjekt"
 
 msgctxt "#31639"
 msgid "Short Daily Weather"
 msgstr "Kort dagligt väder"
 
-#, fuzzy
 msgctxt "#31640"
 msgid "Short Hourly Weather"
-msgstr "Väder kort timtid"
+msgstr "Kort väder per timme"
 
 msgctxt "#31641"
 msgid "Surprise Me"
@@ -1696,10 +1648,9 @@ msgctxt "#31645"
 msgid "Make Default Menu Item"
 msgstr "Gör standardmenypost"
 
-#, fuzzy
 msgctxt "#31646"
 msgid "Current Default Menu Item"
-msgstr "Nuvarande standardmenyalternativ"
+msgstr "Nuvarande standardmenyobjekt"
 
 msgctxt "#31647"
 msgid "Enable Choosing Default Menu Item"
@@ -1792,17 +1743,15 @@ msgctxt "#31943"
 msgid "Record Label icons"
 msgstr "Ikoner för skivbolag"
 
-#, fuzzy
 msgctxt "#31944"
 msgid "Music Genre icons"
-msgstr "Musikgenre ikoner"
+msgstr "Ikoner för musikgenrer"
 
 msgctxt "#31945"
 msgid "Movie Country icons"
 msgstr "Ikoner för filmens land"
 
 # empty strings from id 31946 to 31948
-#, fuzzy
 msgctxt "#31949"
 msgid "Show ExtraFanart if available"
 msgstr "Visa ExtraFanart om tillgängligt"
@@ -1820,7 +1769,6 @@ msgctxt "#31952"
 msgid "Show Artist Fanart background with Music Visualisation"
 msgstr "Visa Artist Fanart bakgrund med Musik Visualisering"
 
-#, fuzzy
 msgctxt "#31953"
 msgid "Show Fanart background on sub windows"
 msgstr "Visa Fanart-bakgrund på underfönster"
@@ -1981,7 +1929,6 @@ msgid "Quit button function"
 msgstr "Funktion för Avsluta-knapp"
 
 # empty string with id 31990
-#, fuzzy
 msgctxt "#31991"
 msgid "Show video player/music visualization in background"
 msgstr "Visa videospelare/musikvisualisering i bakgrunden"
@@ -2003,10 +1950,9 @@ msgctxt "#31995"
 msgid "Home layout"
 msgstr "Hemlayout"
 
-#, fuzzy
 msgctxt "#31996"
 msgid "Holiday snowfall theme"
-msgstr "Semestertema med snöfall"
+msgstr "Högtidstema med snöfall"
 
 msgctxt "#31997"
 msgid "Hide channel logos in PVR List/Timeline"
@@ -2155,7 +2101,6 @@ msgctxt "#32035"
 msgid "Movies from Country"
 msgstr "Filmer från land"
 
-#, fuzzy
 msgctxt "#32036"
 msgid "Music Videos by Artist"
 msgstr "Musikvideor per artist"
@@ -2219,12 +2164,10 @@ msgctxt "#32051"
 msgid "IPTV Recorder Recordings"
 msgstr "Inspelningar för IPTV-inspelare"
 
-#, fuzzy
 msgctxt "#32052"
 msgid "Show Video Info on Pause"
 msgstr "Visa videoinfo vid paus"
 
-#, fuzzy
 msgctxt "#32053"
 msgid "Show Two Shelves Together"
 msgstr "Visa två hyllor tillsammans"
@@ -2237,7 +2180,6 @@ msgctxt "#32055"
 msgid "Use Wraparound Navigation"
 msgstr "Använd omslutande navigering"
 
-#, fuzzy
 msgctxt "#32056"
 msgid "Show more items on List Views"
 msgstr "Visa fler objekt i listvyerna"
@@ -2250,7 +2192,6 @@ msgctxt "#32058"
 msgid "Show Episode Thumb"
 msgstr "Visa avsnittsminiatyr"
 
-#, fuzzy
 msgctxt "#32059"
 msgid "Disable Tall List View"
 msgstr "Inaktivera visning av hög lista"
@@ -2295,7 +2236,6 @@ msgctxt "#32069"
 msgid "Files"
 msgstr "Filer"
 
-#, fuzzy
 msgctxt "#32070"
 msgid "Place Background Name in Top Bar"
 msgstr "Placera bakgrundsnamn i övre fältet"
@@ -2320,10 +2260,9 @@ msgctxt "#32075"
 msgid "Awards"
 msgstr "Priser"
 
-#, fuzzy
 msgctxt "#32076"
 msgid "Show Watched Items in Recent Shelves"
-msgstr "Visa bevakade objekt i de senaste hyllorna"
+msgstr "Visa sedda objekt i senaste hyllorna"
 
 #, fuzzy
 msgctxt "#32077"
@@ -2467,7 +2406,6 @@ msgctxt "#32110"
 msgid "Select a Director"
 msgstr "Välj en regissör"
 
-#, fuzzy
 msgctxt "#32111"
 msgid "Online TMDb Search"
 msgstr "Online TMDb-sökning"
@@ -2521,10 +2459,9 @@ msgctxt "#32123"
 msgid "Title Bar Options"
 msgstr "Alternativ för titelfältet"
 
-#, fuzzy
 msgctxt "#32124"
 msgid "Show Duration in Hours and Minutes"
-msgstr "Visa varaktighet i timmar och minuter"
+msgstr "Visa speltid i timmar och minuter"
 
 msgctxt "#32125"
 msgid "Hour"
@@ -2575,7 +2512,6 @@ msgctxt "#32136"
 msgid "Known for"
 msgstr "Känd för"
 
-#, fuzzy
 msgctxt "#32137"
 msgid "Retail Release"
 msgstr "Utgivning i detaljhandeln"
@@ -2662,7 +2598,7 @@ msgstr "Suddig bakgrund"
 # Empty strings from 32157 to 32164
 msgctxt "#32165"
 msgid "Use Poster for Blur"
-msgstr "Använd poster för oskärpa"
+msgstr "Använd affisch för oskärpa"
 
 msgctxt "#32166"
 msgid "Customize Power Menu"
@@ -2747,7 +2683,7 @@ msgstr "Känd för Job"
 
 msgctxt "#32186"
 msgid "Total Items in TMDb"
-msgstr "Totalt antalt poster i TMDb"
+msgstr "Totalt antalt affisch i TMDb"
 
 msgctxt "#32187"
 msgid "Total Movies in TMDb"
@@ -3171,7 +3107,7 @@ msgstr "Aktivera flera bilder per genre"
 
 msgctxt "#32289"
 msgid "Match Poster Colors"
-msgstr "Matcha färger på poster"
+msgstr "Matcha färger på affisch"
 
 #, fuzzy
 msgctxt "#32290"
@@ -3635,7 +3571,7 @@ msgstr "Visningstyper att aktivera"
 
 msgctxt "#32398"
 msgid "Show Poster"
-msgstr "Visa poster"
+msgstr "Visa affisch"
 
 msgctxt "#32399"
 msgid "Text"
@@ -3790,7 +3726,7 @@ msgstr "Med tagg"
 
 msgctxt "#32454"
 msgid "Always Use TV Show Poster for Episodes"
-msgstr "Använd alltid TV-seriens poster för avsnitt"
+msgstr "Använd alltid TV-seriens affisch för avsnitt"
 
 msgctxt "#32455"
 msgid "Open ExtendedInfo for Info Dialogs"
