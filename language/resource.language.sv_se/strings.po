@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-22 22:32+0000\n"
+"PO-Revision-Date: 2025-04-25 10:10+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/sv_se/>\n"
 "Language: sv_se\n"
@@ -44,7 +44,7 @@ msgstr "Kanalkatalog"
 #, fuzzy
 msgctxt "#31004"
 msgid "Shift"
-msgstr "Shift"
+msgstr "Skift"
 
 msgctxt "#31005"
 msgid "Cinema"
@@ -497,7 +497,6 @@ msgctxt "#31151"
 msgid "Disable Panel view"
 msgstr "Inaktivera panelvy"
 
-#, fuzzy
 msgctxt "#31152"
 msgid "Disable BigList view"
 msgstr "Inaktivera BigList-vyn"
@@ -506,12 +505,10 @@ msgctxt "#31153"
 msgid "Disable Icons view"
 msgstr "Inaktivera visning av ikoner"
 
-#, fuzzy
 msgctxt "#31154"
 msgid "Disable LowList view"
-msgstr "Inaktivera LowList-visning"
+msgstr "Inaktivera LowList-vyn"
 
-#, fuzzy
 msgctxt "#31155"
 msgid "Disable BigPanel view"
 msgstr "Inaktivera BigPanel-vyn"
@@ -1121,15 +1118,16 @@ msgstr "Påminnelsen inställd"
 # empty strings from id 31512 to 31513
 msgctxt "#31514"
 msgid "Episodes use poster"
-msgstr "Avsnitt använder affisch"
+msgstr "Avsnitt använder poster"
 
 msgctxt "#31515"
 msgid "Recently Updated TV Shows"
 msgstr "Nyligen uppdaterade TV-serier"
 
+#, fuzzy
 msgctxt "#31516"
 msgid "Similar TV Shows based on Watched"
-msgstr "Liknande TV-serier baserat på sedda"
+msgstr "Liknande TV-program baserat på Tittat"
 
 msgctxt "#31517"
 msgid "TV Shows Suggestions by Genre:"
@@ -1665,7 +1663,6 @@ msgctxt "#31649"
 msgid "Decades"
 msgstr "Decennier"
 
-#, fuzzy
 msgctxt "#31650"
 msgid "Show Information Popup"
 msgstr "Visa popup-fönster för information"
@@ -2377,10 +2374,9 @@ msgctxt "#32103"
 msgid "Cast Members also appear in"
 msgstr "Medverkande förekommer också i"
 
-#, fuzzy
 msgctxt "#32104"
 msgid "Select Custom Lists to Display"
-msgstr "Välj anpassade listor som ska visas"
+msgstr "Välj anpassade listor att visa"
 
 msgctxt "#32105"
 msgid "Similar"
@@ -2471,10 +2467,9 @@ msgctxt "#32126"
 msgid "Minute"
 msgstr "Minut"
 
-#, fuzzy
 msgctxt "#32127"
 msgid "Online TMDb Info"
-msgstr "Online TMDb Info"
+msgstr "Online TMDb-info"
 
 msgctxt "#32128"
 msgid "Embuary Info Settings"
@@ -2516,10 +2511,9 @@ msgctxt "#32137"
 msgid "Retail Release"
 msgstr "Utgivning i detaljhandeln"
 
-#, fuzzy
 msgctxt "#32138"
 msgid "Region Release"
-msgstr "Region Release"
+msgstr "Regionslansering"
 
 msgctxt "#32139"
 msgid "Ended"
@@ -2598,7 +2592,7 @@ msgstr "Suddig bakgrund"
 # Empty strings from 32157 to 32164
 msgctxt "#32165"
 msgid "Use Poster for Blur"
-msgstr "Använd affisch för oskärpa"
+msgstr "Använd poster för oskärpa"
 
 msgctxt "#32166"
 msgid "Customize Power Menu"
@@ -2683,7 +2677,7 @@ msgstr "Känd för Job"
 
 msgctxt "#32186"
 msgid "Total Items in TMDb"
-msgstr "Totalt antalt affisch i TMDb"
+msgstr "Totalt antalt poster i TMDb"
 
 msgctxt "#32187"
 msgid "Total Movies in TMDb"
@@ -2928,15 +2922,13 @@ msgctxt "#32246"
 msgid "Big Panel 2"
 msgstr "Stor panel 2"
 
-#, fuzzy
 msgctxt "#32247"
 msgid "Disable Panel 2 view"
-msgstr "Inaktivera Panel 2 vy"
+msgstr "Inaktivera Panel 2-vy"
 
-#, fuzzy
 msgctxt "#32248"
 msgid "Disable Big Panel 2 view"
-msgstr "Inaktivera Big Panel 2 vy"
+msgstr "Inaktivera Big Panel 2-vyn"
 
 msgctxt "#32249"
 msgid "Enable Statistics Line"
@@ -3107,7 +3099,7 @@ msgstr "Aktivera flera bilder per genre"
 
 msgctxt "#32289"
 msgid "Match Poster Colors"
-msgstr "Matcha färger på affisch"
+msgstr "Matcha färger på poster"
 
 #, fuzzy
 msgctxt "#32290"
@@ -3140,7 +3132,7 @@ msgstr "Visa logotyp"
 
 msgctxt "#32297"
 msgid "Use Landscape"
-msgstr "Använd landskap"
+msgstr "Använd liggande"
 
 #, fuzzy
 msgctxt "#32298"
@@ -3214,20 +3206,18 @@ msgctxt "#32314"
 msgid "Red"
 msgstr "Röd"
 
-#, fuzzy
 msgctxt "#32315"
 msgid "Select Now Playing Info for Movies/Episodes"
-msgstr "Välj Nu spelas-info för filmer/episoder"
+msgstr "Välj Nu spelas-info för filmer/avsnitt"
 
 #, fuzzy
 msgctxt "#32316"
 msgid "Select Now Playing Info for other Videos"
 msgstr "Välj Nu spelas info för andra videor"
 
-#, fuzzy
 msgctxt "#32317"
 msgid "Select Now Playing Info for Music"
-msgstr "Välj Info för musik som spelas nu"
+msgstr "Välj Nu spelas-information för musik"
 
 #, fuzzy
 msgctxt "#32318"
@@ -3253,7 +3243,6 @@ msgctxt "#32322"
 msgid "Show Logo"
 msgstr "Visa logotyp"
 
-#, fuzzy
 msgctxt "#32323"
 msgid "Show ClearArt"
 msgstr "Visa ClearArt"
@@ -3389,10 +3378,9 @@ msgctxt "#32354"
 msgid "Hide Seek Bar when Paused"
 msgstr "Dölj Seek Bar när den är pausad"
 
-#, fuzzy
 msgctxt "#32355"
 msgid "Icon Only Menu"
-msgstr "Endast ikon Meny"
+msgstr "Endast ikonmeny"
 
 #, fuzzy
 msgctxt "#32356"
@@ -3466,7 +3454,6 @@ msgctxt "#32371"
 msgid "Info Button Opens Video Info Dialog"
 msgstr "Info-knapp Öppnar dialogruta för videoinfo"
 
-#, fuzzy
 msgctxt "#32372"
 msgid "Pause Media While Info Dialog is Open"
 msgstr "Pausa media medan infodialogen är öppen"
@@ -3560,10 +3547,9 @@ msgctxt "#32394"
 msgid "Marks and Overlays"
 msgstr "Märken och överlägg"
 
-#, fuzzy
 msgctxt "#32395"
 msgid "Select View Types to Enable"
-msgstr "Välj visningstyper som ska aktiveras"
+msgstr "Välj visningstyper att aktivera"
 
 msgctxt "#32396"
 msgid "View Types to Enable"
@@ -3571,7 +3557,7 @@ msgstr "Visningstyper att aktivera"
 
 msgctxt "#32398"
 msgid "Show Poster"
-msgstr "Visa affisch"
+msgstr "Visa poster"
 
 msgctxt "#32399"
 msgid "Text"
@@ -3726,7 +3712,7 @@ msgstr "Med tagg"
 
 msgctxt "#32454"
 msgid "Always Use TV Show Poster for Episodes"
-msgstr "Använd alltid TV-seriens affisch för avsnitt"
+msgstr "Använd alltid TV-seriens poster för avsnitt"
 
 msgctxt "#32455"
 msgid "Open ExtendedInfo for Info Dialogs"
@@ -3898,7 +3884,6 @@ msgctxt "#32493"
 msgid "Show More Items in List"
 msgstr "Visa fler objekt i listan"
 
-#, fuzzy
 msgctxt "#32494"
 msgid "Hide Overlay Label in Icon/Panel Views"
 msgstr "Dölj överläggsetikett i ikon- och panelvyer"
