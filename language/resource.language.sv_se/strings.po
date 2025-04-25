@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-25 10:10+0000\n"
+"PO-Revision-Date: 2025-04-25 12:12+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/sv_se/>\n"
 "Language: sv_se\n"
@@ -1677,10 +1677,9 @@ msgctxt "#31652"
 msgid "Select Information Popup Delay (in seconds)"
 msgstr "Fördröjning av popup-fönster för val av information (i sekunder)"
 
-#, fuzzy
 msgctxt "#31653"
 msgid "Information Popup Delay"
-msgstr "Fördröjning av popup-fönster för information"
+msgstr "Fördröjning av popup-infofönster"
 
 msgctxt "#31654"
 msgid "Show Information for Shelves"
@@ -1875,10 +1874,9 @@ msgctxt "#31977"
 msgid "Fast start"
 msgstr "Snabb start"
 
-#, fuzzy
 msgctxt "#31978"
 msgid "Show library info on Home"
-msgstr "Visa biblioteksinformation på Home"
+msgstr "Visa biblioteksinformation på Hem"
 
 msgctxt "#31979"
 msgid "Loading..."
@@ -2143,10 +2141,9 @@ msgctxt "#32047"
 msgid "Seconds"
 msgstr "sekunder"
 
-#, fuzzy
 msgctxt "#32048"
 msgid "Show background name in Home window"
-msgstr "Visa bakgrundsnamn i startfönstret"
+msgstr "Visa bakgrundsnamn i hemfönster"
 
 #, fuzzy
 msgctxt "#32049"
@@ -2580,10 +2577,9 @@ msgctxt "#32154"
 msgid "Collection"
 msgstr "Samling"
 
-#, fuzzy
 msgctxt "#32155"
 msgid "TMDb Helper Settings"
-msgstr "TMDb-hjälparinställningar"
+msgstr "Inställningar för TMDb-hjälpare"
 
 msgctxt "#32156"
 msgid "Blur Background"
@@ -2670,10 +2666,9 @@ msgctxt "#32184"
 msgid "Known for Department"
 msgstr "Känd för avdelningen"
 
-#, fuzzy
 msgctxt "#32185"
 msgid "Known for Job"
-msgstr "Känd för Job"
+msgstr "Känd för"
 
 msgctxt "#32186"
 msgid "Total Items in TMDb"
@@ -2810,7 +2805,6 @@ msgctxt "#32217"
 msgid "Keep Lists Focus Centered"
 msgstr "Håll fokus på listorna centrerat"
 
-#, fuzzy
 msgctxt "#32218"
 msgid "Show Artist Logo In Music Visualization"
 msgstr "Visa artistlogotyp i musikvisualisering"
@@ -2990,10 +2984,9 @@ msgctxt "#32262"
 msgid "Use Embuary Helper for Backgrounds"
 msgstr "Använd Embuary-hjälpare för bakgrunder"
 
-#, fuzzy
 msgctxt "#32263"
 msgid "Movie Collection Count"
-msgstr "Räkning av filmsamling"
+msgstr "Antal filmsamlingar"
 
 #, fuzzy
 msgctxt "#32264"
@@ -3224,7 +3217,6 @@ msgctxt "#32318"
 msgid "Show Video in the Background"
 msgstr "Visa video i bakgrunden"
 
-#, fuzzy
 msgctxt "#32319"
 msgid "Show Music Visualization in the Background"
 msgstr "Visa musikvisualisering i bakgrunden"
@@ -3343,10 +3335,9 @@ msgctxt "#32346"
 msgid "Single Logo"
 msgstr "En logotyp"
 
-#, fuzzy
 msgctxt "#32347"
 msgid "Fade out Unfocused"
-msgstr "Tonas ut Ofokuserad"
+msgstr "Tona ut ofokuserad"
 
 msgctxt "#32348"
 msgid "Show Overlay"
@@ -3462,10 +3453,9 @@ msgctxt "#32373"
 msgid "End Time"
 msgstr "Sluttid"
 
-#, fuzzy
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
-msgstr "Visa mörk bakgrund bakom kortkommandon"
+msgstr "Visa mörk bakgrund bakom genvägar"
 
 msgctxt "#32375"
 msgid "Use Artist Slideshow for Audio Fanart"
@@ -3500,10 +3490,9 @@ msgctxt "#32382"
 msgid "Episodes with Plot containing"
 msgstr "Avsnitt med handling innehållande"
 
-#, fuzzy
 msgctxt "#32383"
 msgid "With Plot Containing"
-msgstr "Med tomt innehållande"
+msgstr "Med handling innehållande"
 
 #, fuzzy
 msgctxt "#32384"
@@ -3567,10 +3556,9 @@ msgctxt "#32400"
 msgid "Banner"
 msgstr "Banderoll"
 
-#, fuzzy
 msgctxt "#32401"
 msgid "List Item Type"
-msgstr "Lista Objekttyp"
+msgstr "Typ av listobjekt"
 
 msgctxt "#32402"
 msgid "Poster/Thumb"
@@ -3611,7 +3599,6 @@ msgctxt "#32410"
 msgid "Compact OSD"
 msgstr "Kompakt OSD"
 
-#, fuzzy
 msgctxt "#32411"
 msgid "Ultra Compact OSD"
 msgstr "Ultrakompakt OSD"
@@ -3722,10 +3709,9 @@ msgctxt "#32456"
 msgid "Cert"
 msgstr "Cert"
 
-#, fuzzy
 msgctxt "#32457"
 msgid "Show Episodes List button"
-msgstr "Visa episoder Lista knapp"
+msgstr "Visa knapp för avsnittslista"
 
 #, fuzzy
 msgctxt "#32458"
@@ -3772,7 +3758,6 @@ msgctxt "#32467"
 msgid "Cloudiness"
 msgstr "Molnighet"
 
-#, fuzzy
 msgctxt "#32468"
 msgid "Probability of Precipitation"
 msgstr "Sannolikhet för nederbörd"
@@ -3857,20 +3842,18 @@ msgctxt "#32487"
 msgid "Play Trailer Windowed"
 msgstr "Spela trailer i fönster"
 
-#, fuzzy
 msgctxt "#32488"
 msgid "Last Played Date"
-msgstr "Senast spelade datum"
+msgstr "Senast spelad"
 
 #, fuzzy
 msgctxt "#32489"
 msgid "Horizontal Icon Layout"
 msgstr "Horisontell ikonlayout"
 
-#, fuzzy
 msgctxt "#32490"
 msgid "Show Menu Item Label"
-msgstr "Visa etikett för menyalternativ"
+msgstr "Visa etikett för menyobjekt"
 
 msgctxt "#32491"
 msgid "Always Show Set Movie List"
