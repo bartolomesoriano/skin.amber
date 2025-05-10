@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-04-28 11:08+0000\n"
+"PO-Revision-Date: 2025-05-10 07:27+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/sv_se/>\n"
 "Language: sv_se\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.1\n"
+"X-Generator: Weblate 5.11.3\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -512,10 +512,9 @@ msgctxt "#31155"
 msgid "Disable BigPanel view"
 msgstr "Inaktivera BigPanel-vyn"
 
-#, fuzzy
 msgctxt "#31156"
 msgid "Disable Fanart view"
-msgstr "Avaktivera Fanart-visning"
+msgstr "Inaktivera Fanart-visning"
 
 msgctxt "#31157"
 msgid "Triple"
@@ -1123,10 +1122,9 @@ msgctxt "#31515"
 msgid "Recently Updated TV Shows"
 msgstr "Nyligen uppdaterade TV-serier"
 
-#, fuzzy
 msgctxt "#31516"
 msgid "Similar TV Shows based on Watched"
-msgstr "Liknande TV-program baserat på Tittat"
+msgstr "Liknande TV-serier baserat på sedda"
 
 msgctxt "#31517"
 msgid "TV Shows Suggestions by Genre:"
@@ -1507,7 +1505,7 @@ msgstr "Bakgrundstyp"
 
 msgctxt "#31611"
 msgid "Poster"
-msgstr "Poster"
+msgstr "Affisch"
 
 msgctxt "#31612"
 msgid "Square"
@@ -3743,10 +3741,9 @@ msgctxt "#32464"
 msgid "Search Trailer"
 msgstr "Sök trailer"
 
-#, fuzzy
 msgctxt "#32465"
 msgid "Search for Trailers with IMDb Trailers Addon"
-msgstr "Sök efter trailers med IMDb Trailers Addon"
+msgstr "Sök efter trailers med IMDb Trailers-tillägget"
 
 #, fuzzy
 msgctxt "#32466"
@@ -3761,7 +3758,6 @@ msgctxt "#32468"
 msgid "Probability of Precipitation"
 msgstr "Sannolikhet för nederbörd"
 
-#, fuzzy
 msgctxt "#32469"
 msgid "Intro Video Duration"
 msgstr "Varaktighet för introvideo"
@@ -3820,7 +3816,6 @@ msgctxt "#32482"
 msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
 msgstr "Använd objektminiatyrbild och inte tilläggs-fanart för YouTube-hyllor"
 
-#, fuzzy
 msgctxt "#32483"
 msgid "Allow Changing View Types in PVR Channels Window"
 msgstr "Tillåt ändring av visningstyper i fönstret PVR-kanaler"
@@ -3845,7 +3840,6 @@ msgctxt "#32488"
 msgid "Last Played Date"
 msgstr "Senast spelad"
 
-#, fuzzy
 msgctxt "#32489"
 msgid "Horizontal Icon Layout"
 msgstr "Horisontell ikonlayout"
