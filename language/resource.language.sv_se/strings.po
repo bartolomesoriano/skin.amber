@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-05-10 07:27+0000\n"
+"PO-Revision-Date: 2025-05-14 08:37+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/sv_se/>\n"
 "Language: sv_se\n"
@@ -3723,10 +3723,9 @@ msgctxt "#32460"
 msgid "Enable Direct Seeking in Full Screen Info"
 msgstr "Aktivera direktsökning i helskärmsinfo"
 
-#, fuzzy
 msgctxt "#32461"
 msgid "Show Disc above Poster"
-msgstr "Visa skivan ovan Poster"
+msgstr "Visa skivan ovanför affisch"
 
 #, fuzzy
 msgctxt "#32462"
@@ -3770,10 +3769,9 @@ msgctxt "#32471"
 msgid "Use Main Menu item Background for Sub Windows"
 msgstr "Använd bakgrund för huvudmenyobjekt för underfönster"
 
-#, fuzzy
 msgctxt "#32472"
 msgid "Teletext Button Opens EPG"
-msgstr "Text-TV-knapp Öppnar EPG"
+msgstr "Text-TV-knapp öppnar EPG"
 
 msgctxt "#32473"
 msgid "EPG Icon"
@@ -3807,7 +3805,6 @@ msgctxt "#32480"
 msgid "kbps"
 msgstr "kbps"
 
-#, fuzzy
 msgctxt "#32481"
 msgid "Remember Focused Control in Home Window"
 msgstr "Kom ihåg fokuserad kontroll i hemfönstret"
