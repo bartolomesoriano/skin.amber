@@ -43,6 +43,7 @@
 		- Search movies by tag
 		- Many misc. fixes
         </news>
+        <summary lang="bs_BA">Nema bloatware-a, samo vaši mediji s jednostavnim interfejsom za navigaciju</summary>
         <summary lang="ca_ES">Sense bloatware, només els fitxers multimèdia amb una interfície fàcil de navegar</summary>
         <summary lang="da_DK">Ingen bloatware, kun dine medier med en brugerflade der er let at navigere</summary>
         <summary lang="de_DE">Keine Bloatware, nur Ihre Medien mit einer leicht zu navigierenden Oberfläche</summary>
@@ -63,6 +64,7 @@
         <summary lang="ru_RU">Никакого вредоносного ПО, только ваши медиафайлы с удобным интерфейсом</summary>
         <summary lang="sv_SE">Ingen bloatware, bara dina medier med ett lättnavigerat gränssnitt</summary>
         <summary lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面</summary>
+        <description lang="bs_BA">Nema bloatware-a, samo vaši mediji s jednostavnim interfejsom za navigaciju.[CR]Koristi neke teksture iz Mediastream i Aeon skinova.</description>
         <description lang="ca_ES">Sense bloatware, només els fitxers multimèdia amb una interfície fàcil de navegar.[CR]Utilitza algunes textures d&apos;skins Mediastream i Aeon.</description>
         <description lang="de_DE">Keine Bloatware, nur Ihre Medien mit einer einfach zu navigierenden Oberfläche.[CR]Benutzt Texturen aus den Mediastream und Aeon skins.</description>
         <description lang="en_AU">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
