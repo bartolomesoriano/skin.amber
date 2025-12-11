@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-05-29 14:53+0000\n"
+"PO-Revision-Date: 2025-12-11 16:13+0000\n"
 "Last-Translator: Oskari Lavinto <olavinto@protonmail.com>\n"
 "Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/fi_fi/>\n"
 "Language: fi_fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 5.14.3\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -507,7 +507,7 @@ msgstr "Älä käytä isoa paneelinäkymää"
 
 msgctxt "#31156"
 msgid "Disable Fanart view"
-msgstr "Älä käytä fanitaidenäkymää"
+msgstr "Älä käytä fanart-näkymää"
 
 msgctxt "#31157"
 msgid "Triple"
@@ -651,23 +651,23 @@ msgstr "Haluatko varmasti poistaa Haku-valikkokohteen? [CR]Jos haluat luoda sen 
 
 msgctxt "#31399"
 msgid "Random Movie fanart"
-msgstr "Satunnainen elokuvien fanitaide"
+msgstr "Satunnainen elokuva-fanart"
 
 msgctxt "#31400"
 msgid "Random TV Show fanart"
-msgstr "Satunnainen sarjojen fanitaide"
+msgstr "Satunnainen sarja-fanart"
 
 msgctxt "#31401"
 msgid "Random Video fanart"
-msgstr "Satunnainen videoiden fanitaide"
+msgstr "Satunnainen video-fanart"
 
 msgctxt "#31402"
 msgid "Random Music fanart"
-msgstr "Satunnainen musiikin fanitaide"
+msgstr "Satunnainen musiikki-fanart"
 
 msgctxt "#31403"
 msgid "Random fanart"
-msgstr "Satunnainen fanitaide"
+msgstr "Satunnainen fanart"
 
 msgctxt "#31404"
 msgid "Conditional weather"
@@ -991,7 +991,7 @@ msgstr "Piilota hyllyt, kun niitä ei ole kohdistettu"
 
 msgctxt "#31484"
 msgid "Disable Shelves Fanart"
-msgstr "Poista hyllyjen fanitaide"
+msgstr "Älä käytä fanart-kuvia hyllyissä"
 
 msgctxt "#31485"
 msgid "Enable PVR TV Recording Shelf"
@@ -1399,11 +1399,11 @@ msgstr "Jukeboksi (musiikkivideot)"
 
 msgctxt "#31589"
 msgid "Random Music Videos Fanart"
-msgstr "Satunnainen Musiikkivideo fanitaide"
+msgstr "Satunnainen musiikkivideo-fanart"
 
 msgctxt "#31590"
 msgid "Random Video or Music Node Fanart"
-msgstr "Satunnainen Video- tai Musiikkisolmu fanitaide"
+msgstr "Satunnainen video- tai musiikkisolmun fanart"
 
 msgctxt "#31591"
 msgid "Movie Node Statistics"
@@ -1431,23 +1431,23 @@ msgstr "Kappalesolmun tilastot"
 
 msgctxt "#31597"
 msgid "Random Movie fanart (Kodi)"
-msgstr "Satunnainen elokuva -fanitaide (Kodi)"
+msgstr "Satunnainen elokuva-fanart (Kodi)"
 
 msgctxt "#31598"
 msgid "Random TV Show fanart (Kodi)"
-msgstr "Satunnainen TV- -fanitaide (Kodi)"
+msgstr "Satunnainen sarja-fanart (Kodi)"
 
 msgctxt "#31599"
 msgid "Random Video fanart (Kodi)"
-msgstr "Satunnainen video -fanitaide (Kodi)"
+msgstr "Satunnainen video-fanart (Kodi)"
 
 msgctxt "#31600"
 msgid "Random Music fanart (Kodi)"
-msgstr "Satunnainen musiikki -fanitaide (Kodi)"
+msgstr "Satunnainen musiikki-fanart (Kodi)"
 
 msgctxt "#31601"
 msgid "Random fanart (Kodi)"
-msgstr "Satunnainen fanitaide (Kodi)"
+msgstr "Satunnainen fanart (Kodi)"
 
 msgctxt "#31602"
 msgid "Default LibreELEC Background"
@@ -1455,11 +1455,11 @@ msgstr "LibreELEC -oletustausta"
 
 msgctxt "#31603"
 msgid "Number of Playlist/Node Fanarts to use as Background"
-msgstr "Taustana käytettävien soittolistojen/solmujen fanitaiteiden määrä"
+msgstr "Taustana käytettävien toistolistojen/solmujen fanart-kuvien määrä"
 
 msgctxt "#31604"
 msgid "Playlist/Node Fanart Background Limit"
-msgstr "Soittolistan/solmun fanitaidetaustan rajoitus"
+msgstr "Toistolistan/solmun fanart-taustojen enimmäismäärä"
 
 msgctxt "#31605"
 msgid "Custom Shelf"
@@ -1723,7 +1723,7 @@ msgstr "Elokuvien maakuvakkeet"
 
 msgctxt "#31949"
 msgid "Show ExtraFanart if available"
-msgstr "Näytä lisäfanitaide (ExtraFanart)"
+msgstr "Näytä extra fanart, jos saatavilla"
 
 msgctxt "#31950"
 msgid "Hide Music OSD during playback"
@@ -1735,7 +1735,7 @@ msgstr "Käytä alivalikoissa oletustaustaa"
 
 msgctxt "#31952"
 msgid "Show Artist Fanart background with Music Visualisation"
-msgstr "Näytä esittäjän fanitaide taustana musiikin visualisoinnin kanssa"
+msgstr "Näytä artistin fanart-kuvat taustalla visualisoinnin kanssa"
 
 msgctxt "#31953"
 msgid "Show Fanart background on sub windows"
@@ -1808,7 +1808,7 @@ msgstr "Näytä tiedot"
 
 msgctxt "#31969"
 msgid "Use Artist Slideshow Addon Fanart with Music Visualisation"
-msgstr "Käytä Artist Slideshow lisäosan fanitaidetta musiikin visualisoinnin kanssa"
+msgstr "Käytä Artist Slideshow -lisäosan fanart-kuvia visualisoinnin kanssa"
 
 msgctxt "#31970"
 msgid "Push down for Gallery"
@@ -2099,7 +2099,7 @@ msgstr "Hyllyt"
 
 msgctxt "#32046"
 msgid "Weather fanart"
-msgstr "Sää fanitaide"
+msgstr "Sää-fanart"
 
 msgctxt "#32047"
 msgid "Seconds"
@@ -2187,7 +2187,7 @@ msgstr "Määritä varmuuskopiointi lisäosa"
 
 msgctxt "#32068"
 msgid "Show Fanart"
-msgstr "Näytä fanitaide"
+msgstr "Näytä fanart"
 
 msgctxt "#32069"
 msgid "Files"
@@ -2932,7 +2932,7 @@ msgstr "Elokuvakokoelmien määrä"
 
 msgctxt "#32264"
 msgid "Show Fanart for Special Content"
-msgstr "Näytä fanitaide erityissisällölle"
+msgstr "Näytä fanart erityissisällölle"
 
 msgctxt "#32265"
 msgid "Media Play Count"
@@ -2956,7 +2956,7 @@ msgstr "Määritä mukautettu hylly"
 
 msgctxt "#32270"
 msgid "Shift Fanart View Focus to the Right"
-msgstr "Siirrä fanitaidenäkymän kohdistus oikealle"
+msgstr "Siirrä fanart-näkymän kohdistus oikealle"
 
 msgctxt "#32271"
 msgid "Mouse/Touch-Friendly Alphabet Strip"
@@ -3004,11 +3004,11 @@ msgstr "Palkinnot (Oscar/Golden Globe)"
 
 msgctxt "#32283"
 msgid "Video Genre Fanart"
-msgstr "Video lajityypin fanitaide"
+msgstr "Videolajityyppien fanart"
 
 msgctxt "#32284"
 msgid "Music Genre Fanart"
-msgstr "Musiikkilajin fanitaide"
+msgstr "Musiikkilajityyppien fanart"
 
 msgctxt "#32285"
 msgid "Custom Path"
@@ -3044,7 +3044,7 @@ msgstr "Tiedostonimi otsikon sijaan"
 
 msgctxt "#32293"
 msgid "Extra Fanart on panel"
-msgstr "Extra fanitaide paneelissa"
+msgstr "Extra fanart paneelissa"
 
 msgctxt "#32294"
 msgid "Ends at"
@@ -3372,7 +3372,7 @@ msgstr "Näytä Tumma Tausta Pikakuvakkeiden Takana"
 
 msgctxt "#32375"
 msgid "Use Artist Slideshow for Audio Fanart"
-msgstr "Käytä Artist Slideshow lisäosaa äänen fanitaiteelle"
+msgstr "Käytä Artist Slideshow lisäosaa äänen fanart-kuville"
 
 msgctxt "#32376"
 msgid "Disable Lyrics"
@@ -3532,7 +3532,7 @@ msgstr "Automaattisesti Toistettavan Trailerin Viive"
 
 msgctxt "#32417"
 msgid "Fanart Title Button Opens Info Dialog"
-msgstr "Fanitaiteen otsikkonappi avaa Tiedot -valintaikkunan"
+msgstr "Fanart-otsikkopainike avaa tietonäytön"
 
 msgctxt "#32418"
 msgid "Single Image"
