@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-12-14 00:34+0000\n"
+"PO-Revision-Date: 2025-12-25 01:32+0000\n"
 "Last-Translator: Pavlo Marianov <acid@jack.kyiv.ua>\n"
 "Language-Team: Ukrainian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/uk_ua/>\n"
 "Language: uk_ua\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.15.1\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -261,11 +261,11 @@ msgstr "Популярні альбоми"
 
 msgctxt "#31075"
 msgid "Random Albums"
-msgstr ""
+msgstr "Випадкові альбоми"
 
 msgctxt "#31076"
 msgid "Most played songs"
-msgstr ""
+msgstr "Найчастіше відтворювані композиції"
 
 msgctxt "#31077"
 msgid "Random artists"
@@ -297,19 +297,19 @@ msgstr ""
 
 msgctxt "#31084"
 msgid "Hide Recently Added"
-msgstr ""
+msgstr "Приховати «Нещодавно додані»"
 
 msgctxt "#31085"
 msgid "Hide Random"
-msgstr ""
+msgstr "Приховати випадкові"
 
 msgctxt "#31086"
 msgid "Hide Random Albums"
-msgstr ""
+msgstr "Приховати випадкові альбоми"
 
 msgctxt "#31087"
 msgid "Hide Random Artists"
-msgstr ""
+msgstr "Приховати випадкових виконавців"
 
 msgctxt "#31088"
 msgid "Hide In Progress"
@@ -345,11 +345,11 @@ msgstr ""
 
 msgctxt "#31096"
 msgid "Hide Videos"
-msgstr ""
+msgstr "Приховати відео"
 
 msgctxt "#31097"
 msgid "Hide Music"
-msgstr ""
+msgstr "Приховати музику"
 
 msgctxt "#31098"
 msgid "Hide Pictures"
@@ -419,19 +419,19 @@ msgstr ""
 
 msgctxt "#31118"
 msgid "Small"
-msgstr "Мала"
+msgstr "Малий"
 
 msgctxt "#31119"
 msgid "Regular"
-msgstr ""
+msgstr "Звичайний"
 
 msgctxt "#31120"
 msgid "Large"
-msgstr ""
+msgstr "Великий"
 
 msgctxt "#31121"
 msgid "Apply Changes"
-msgstr ""
+msgstr "Застосувати зміни"
 
 # empty strings from id 31122 to 31128
 msgctxt "#31129"
@@ -547,15 +547,15 @@ msgstr ""
 
 msgctxt "#31295"
 msgid "OpenELEC Settings"
-msgstr ""
+msgstr "Налаштування OpenELEC"
 
 msgctxt "#31296"
 msgid "LibreELEC Settings"
-msgstr ""
+msgstr "Налаштування LibreELEC"
 
 msgctxt "#31297"
 msgid "min"
-msgstr "мін"
+msgstr "хв."
 
 msgctxt "#31298"
 msgid "Starting in"
@@ -567,12 +567,12 @@ msgstr ""
 
 msgctxt "#31300"
 msgid "CoreELEC Settings"
-msgstr ""
+msgstr "Налаштування CoreELEC"
 
 # empty strings from id 31301 to 31308
 msgctxt "#31309"
 msgid "Memory Used"
-msgstr ""
+msgstr "Використано пам'яті"
 
 # empty strings from id 31310 to 31321
 msgctxt "#31322"
@@ -761,23 +761,23 @@ msgstr ""
 
 msgctxt "#31423"
 msgid "Recently Played Movies"
-msgstr ""
+msgstr "Нещодавно переглянуті фільми"
 
 msgctxt "#31424"
 msgid "Random Movies"
-msgstr ""
+msgstr "Випадкові фільми"
 
 msgctxt "#31425"
 msgid "In Progress Movies"
-msgstr ""
+msgstr "Поточні фільми"
 
 msgctxt "#31426"
 msgid "Unwatched Movies"
-msgstr ""
+msgstr "Непереглянуті фільми"
 
 msgctxt "#31427"
 msgid "Top Rated Movies"
-msgstr ""
+msgstr "Найкращі фільми"
 
 msgctxt "#31428"
 msgid "Movie Genres"
@@ -837,35 +837,35 @@ msgstr ""
 
 msgctxt "#31442"
 msgid "Recently Played Episodes"
-msgstr ""
+msgstr "Нещодавно переглянуті серії"
 
 msgctxt "#31443"
 msgid "Random Episodes"
-msgstr ""
+msgstr "Випадкові серії"
 
 msgctxt "#31444"
 msgid "In Progress Episodes"
-msgstr ""
+msgstr "Серії які переглядаються"
 
 msgctxt "#31445"
 msgid "Unwatched Episodes"
-msgstr ""
+msgstr "Непереглянуті серії"
 
 msgctxt "#31446"
 msgid "Top Rated Episodes"
-msgstr ""
+msgstr "Найкращі серії"
 
 msgctxt "#31447"
 msgid "Recently Added Albums"
-msgstr ""
+msgstr "Останні додані альбоми"
 
 msgctxt "#31448"
 msgid "Recently Played Albums"
-msgstr ""
+msgstr "Останні відтворені альбоми"
 
 msgctxt "#31449"
 msgid "Random Albums"
-msgstr ""
+msgstr "Випадкові альбоми"
 
 msgctxt "#31450"
 msgid "Top 100 Albums"
@@ -977,7 +977,7 @@ msgstr ""
 
 msgctxt "#31477"
 msgid "Memory Used"
-msgstr ""
+msgstr "Використано пам'яті"
 
 msgctxt "#31478"
 msgid "Remaining"
@@ -1171,7 +1171,7 @@ msgstr ""
 
 msgctxt "#31528"
 msgid "Power Menu"
-msgstr ""
+msgstr "Меню живлення"
 
 msgctxt "#31529"
 msgid "Popular People"
@@ -1958,7 +1958,7 @@ msgstr ""
 
 msgctxt "#32003"
 msgid "Game Settings"
-msgstr ""
+msgstr "Налаштування гри"
 
 msgctxt "#32004"
 msgid "Toggle Subtitle"
@@ -2007,7 +2007,7 @@ msgstr ""
 
 msgctxt "#32016"
 msgid "Extended Info"
-msgstr ""
+msgstr "Додаткова інформація"
 
 msgctxt "#32017"
 msgid "Search in Local Library"
@@ -2099,12 +2099,12 @@ msgstr "Зрушення в часі"
 
 msgctxt "#32040"
 msgid "Enable Kiosk Mode"
-msgstr ""
+msgstr "Увімкнути режим кіоску"
 
 # empty string with id 32041
 msgctxt "#32042"
 msgid "Next Episodes"
-msgstr ""
+msgstr "Наступні серії"
 
 msgctxt "#32043"
 msgid "Customize Home Menu and Shelves"
@@ -2112,7 +2112,7 @@ msgstr ""
 
 msgctxt "#32044"
 msgid "Submenu"
-msgstr ""
+msgstr "Підменю"
 
 msgctxt "#32045"
 msgid "Shelves"
@@ -2136,11 +2136,11 @@ msgstr ""
 
 msgctxt "#32050"
 msgid "IPTV Recorder"
-msgstr ""
+msgstr "Запис IPTV"
 
 msgctxt "#32051"
 msgid "IPTV Recorder Recordings"
-msgstr ""
+msgstr "Записи IPTV"
 
 msgctxt "#32052"
 msgid "Show Video Info on Pause"
@@ -2236,7 +2236,7 @@ msgstr ""
 
 msgctxt "#32075"
 msgid "Awards"
-msgstr ""
+msgstr "Нагороди"
 
 msgctxt "#32076"
 msgid "Show Watched Items in Recent Shelves"
@@ -2336,15 +2336,15 @@ msgstr ""
 
 msgctxt "#32100"
 msgid "More from"
-msgstr ""
+msgstr "Більше з"
 
 msgctxt "#32101"
 msgid "More in"
-msgstr ""
+msgstr "Більше в"
 
 msgctxt "#32102"
 msgid "Similar to"
-msgstr ""
+msgstr "Подібно до"
 
 msgctxt "#32103"
 msgid "Cast Members also appear in"
@@ -2356,7 +2356,7 @@ msgstr ""
 
 msgctxt "#32105"
 msgid "Similar"
-msgstr ""
+msgstr "Подібно"
 
 msgctxt "#32106"
 msgid "Featuring Cast Members"
@@ -2436,7 +2436,7 @@ msgstr ""
 
 msgctxt "#32125"
 msgid "Hour"
-msgstr ""
+msgstr "год."
 
 msgctxt "#32126"
 msgid "Minute"
@@ -2829,15 +2829,15 @@ msgstr ""
 
 msgctxt "#32231"
 msgid "User Rating"
-msgstr ""
+msgstr "Власний рейтинг"
 
 msgctxt "#32232"
 msgid "Ratings"
-msgstr ""
+msgstr "Рейтинги"
 
 msgctxt "#32235"
 msgid "Certification"
-msgstr ""
+msgstr "Сертифікація"
 
 msgctxt "#32237"
 msgid "Up Next in"
@@ -3321,7 +3321,7 @@ msgstr ""
 
 msgctxt "#32357"
 msgid "Enable Video Lyrics"
-msgstr ""
+msgstr "Увімкнути тексти відео"
 
 msgctxt "#32358"
 msgid "Play Whole Albums from Shelves"
@@ -3481,7 +3481,7 @@ msgstr ""
 
 msgctxt "#32399"
 msgid "Text"
-msgstr ""
+msgstr "Текст"
 
 msgctxt "#32400"
 msgid "Banner"
@@ -3661,7 +3661,7 @@ msgstr ""
 
 msgctxt "#32464"
 msgid "Search Trailer"
-msgstr ""
+msgstr "Пошук трейлера"
 
 msgctxt "#32465"
 msgid "Search for Trailers with IMDb Trailers Addon"
