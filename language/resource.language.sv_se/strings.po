@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-12-19 16:41+0000\n"
+"PO-Revision-Date: 2026-01-05 11:13+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/sv_se/>\n"
 "Language: sv_se\n"
@@ -798,7 +798,7 @@ msgstr "IMDB Topp 250-filmer"
 
 msgctxt "#31432"
 msgid "TV Shows"
-msgstr "TV-program"
+msgstr "TV-serier"
 
 msgctxt "#31433"
 msgid "Recently Added TV Shows"
@@ -818,7 +818,7 @@ msgstr "Pågående TV-serier"
 
 msgctxt "#31437"
 msgid "Unwatched TV Shows"
-msgstr "Osedda tv-program"
+msgstr "Osedda tv-serier"
 
 msgctxt "#31438"
 msgid "Top Rated TV Shows"
@@ -1042,7 +1042,7 @@ msgstr "Rekommenderade avsnitt"
 
 msgctxt "#31493"
 msgid "Unwatched TV Shows"
-msgstr "Osedda tv-program"
+msgstr "Osedda tv-serier"
 
 msgctxt "#31494"
 msgid "Recently Released Albums"
@@ -1308,7 +1308,7 @@ msgstr "Embuary Info - TV-serier som sänds idag"
 
 msgctxt "#31562"
 msgid "Embuary Info - Currently Airing TV Shows"
-msgstr "Embuary Info - TV-program som sänds för närvarande"
+msgstr "Embuary Info - TV-serier som sänds för närvarande"
 
 msgctxt "#31563"
 msgid "Embuary Info - TV Shows Trending This Week"
@@ -2440,10 +2440,9 @@ msgctxt "#32121"
 msgid "AB: Select Artwork"
 msgstr "AB: Välj bakgrund"
 
-#, fuzzy
 msgctxt "#32122"
 msgid "Show Artwork Beef items in Context Menu"
-msgstr "Visa Artwork Beef-objekt i kontextmenyn"
+msgstr "Visa Artwork Beef-objekt i snabbmenyn"
 
 msgctxt "#32123"
 msgid "Title Bar Options"
