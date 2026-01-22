@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-05-10 12:16+0000\n"
-"Last-Translator: Christian Gade <gade@kodi.tv>\n"
-"Language-Team: Chinese (China) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/zh_cn/>\n"
+"PO-Revision-Date: 2026-01-22 02:13+0000\n"
+"Last-Translator: wabisabi926 <liwenliang926@163.com>\n"
+"Language-Team: Chinese (Simplified Han script) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/zh_Hans/>\n"
 "Language: zh_cn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.2\n"
+"X-Generator: Weblate 5.15.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -245,15 +245,15 @@ msgstr "随机电影"
 
 msgctxt "#31071"
 msgid "In progress movies"
-msgstr "放映中的电影"
+msgstr "正在观看的电影"
 
 msgctxt "#31072"
 msgid "Unwatched TV shows"
-msgstr "未观看的电视节目"
+msgstr "未观看的电视剧"
 
 msgctxt "#31073"
 msgid "In progress episodes"
-msgstr "在观看集"
+msgstr "正在观看的剧集"
 
 msgctxt "#31074"
 msgid "Most played albums"
@@ -313,15 +313,15 @@ msgstr ""
 
 msgctxt "#31088"
 msgid "Hide In Progress"
-msgstr ""
+msgstr "隐藏正在观看"
 
 msgctxt "#31089"
 msgid "Hide In Progress Episodes"
-msgstr ""
+msgstr "隐藏正在观看的剧集"
 
 msgctxt "#31090"
 msgid "Hide Unwatched TV Shows"
-msgstr ""
+msgstr "隐藏未观看的电视剧"
 
 msgctxt "#31091"
 msgid "Hide Most Played Albums"
@@ -385,7 +385,7 @@ msgstr ""
 
 msgctxt "#31106"
 msgid "Hide in progress TV shows"
-msgstr ""
+msgstr "隐藏正在观看的电视剧"
 
 msgctxt "#31107"
 msgid "Shelf style"
@@ -669,7 +669,7 @@ msgstr ""
 
 msgctxt "#31400"
 msgid "Random TV Show fanart"
-msgstr ""
+msgstr "电视剧随机背景图"
 
 msgctxt "#31401"
 msgid "Random Video fanart"
@@ -693,7 +693,7 @@ msgstr ""
 
 msgctxt "#31406"
 msgid "Tv Show Library Statistics"
-msgstr ""
+msgstr "电视剧库统计信息"
 
 msgctxt "#31407"
 msgid "Music Library Statistics"
@@ -713,7 +713,7 @@ msgstr ""
 
 msgctxt "#31411"
 msgid "TV Show Playlist Statistics"
-msgstr ""
+msgstr "电视剧播放列表统计信息"
 
 msgctxt "#31412"
 msgid "Music Video Playlist Statistics"
@@ -721,7 +721,7 @@ msgstr ""
 
 msgctxt "#31413"
 msgid "Movie and TV Show Statistics"
-msgstr ""
+msgstr "电影和电视剧统计信息"
 
 msgctxt "#31414"
 msgid "Video and Music Addons"
@@ -769,7 +769,7 @@ msgstr "随机电影"
 
 msgctxt "#31425"
 msgid "In Progress Movies"
-msgstr "正在播放的电影"
+msgstr "正在观看的电影"
 
 msgctxt "#31426"
 msgid "Unwatched Movies"
@@ -801,35 +801,35 @@ msgstr "电视剧"
 
 msgctxt "#31433"
 msgid "Recently Added TV Shows"
-msgstr "最近添加的剧集"
+msgstr "最近添加的电视剧"
 
 msgctxt "#31434"
 msgid "Recently Played TV Shows"
-msgstr ""
+msgstr "最近播放的电视剧"
 
 msgctxt "#31435"
 msgid "Random TV Shows"
-msgstr "随机剧集"
+msgstr "随机电视剧"
 
 msgctxt "#31436"
 msgid "In Progress TV Shows"
-msgstr "正在追的电视节目"
+msgstr "正在观看的电视剧"
 
 msgctxt "#31437"
 msgid "Unwatched TV Shows"
-msgstr "未观看电视剧"
+msgstr "未观看的电视剧"
 
 msgctxt "#31438"
 msgid "Top Rated TV Shows"
-msgstr "评价最高的剧集"
+msgstr "评价最高的电视剧"
 
 msgctxt "#31439"
 msgid "TV Show Genres"
-msgstr ""
+msgstr "电视剧类型"
 
 msgctxt "#31440"
 msgid "TV Show Nodes"
-msgstr ""
+msgstr "电视剧节点"
 
 msgctxt "#31441"
 msgid "Recently Added Episodes"
@@ -845,7 +845,7 @@ msgstr "随机剧集"
 
 msgctxt "#31444"
 msgid "In Progress Episodes"
-msgstr "正在播放的剧集"
+msgstr "正在观看的剧集"
 
 msgctxt "#31445"
 msgid "Unwatched Episodes"
@@ -957,7 +957,7 @@ msgstr ""
 
 msgctxt "#31472"
 msgid "In-Progress Music Videos"
-msgstr ""
+msgstr "正在观看的音乐视频"
 
 msgctxt "#31473"
 msgid "Random Music Videos"
@@ -1065,7 +1065,7 @@ msgstr ""
 
 msgctxt "#31499"
 msgid "All TV Shows"
-msgstr "所有电视节目"
+msgstr "所有电视剧"
 
 msgctxt "#31500"
 msgid "TV"
@@ -1119,15 +1119,15 @@ msgstr ""
 
 msgctxt "#31515"
 msgid "Recently Updated TV Shows"
-msgstr "最近更新的电视节目"
+msgstr "最近更新的电视剧"
 
 msgctxt "#31516"
 msgid "Similar TV Shows based on Watched"
-msgstr ""
+msgstr "基于已观看内容推荐的相似电视剧"
 
 msgctxt "#31517"
 msgid "TV Shows Suggestions by Genre:"
-msgstr ""
+msgstr "按类型分类的电视剧推荐："
 
 msgctxt "#31518"
 msgid "Popular Movies"
@@ -1147,19 +1147,19 @@ msgstr ""
 
 msgctxt "#31522"
 msgid "Popular TV Shows"
-msgstr "流行的剧集"
+msgstr "流行的电视剧"
 
 msgctxt "#31523"
 msgid "TMDb Top Rated TV Shows"
-msgstr ""
+msgstr "TMDb 高分电视剧"
 
 msgctxt "#31524"
 msgid "Airing Today TV Shows"
-msgstr ""
+msgstr "今日播出的电视剧"
 
 msgctxt "#31525"
 msgid "Currently Airing TV Shows"
-msgstr ""
+msgstr "正在热播的电视剧"
 
 msgctxt "#31526"
 msgid "Next Up Episodes"
@@ -1223,7 +1223,7 @@ msgstr ""
 
 msgctxt "#31541"
 msgid "Trakt - In-Progress"
-msgstr ""
+msgstr "Trakt - 正在观看"
 
 msgctxt "#31542"
 msgid "Trakt - Recommended"
@@ -1275,43 +1275,43 @@ msgstr ""
 
 msgctxt "#31554"
 msgid "Embuary Info - Popular Movies"
-msgstr ""
+msgstr "Embuary Info - 热门电影"
 
 msgctxt "#31555"
 msgid "Embuary Info - Top Rated Movies"
-msgstr ""
+msgstr "Embuary Info - 高分电影"
 
 msgctxt "#31556"
 msgid "Embuary Info - Upcoming Movies"
-msgstr ""
+msgstr "Embuary Info - 即将上映的电影"
 
 msgctxt "#31557"
 msgid "Embuary Info - Now Playing Movies"
-msgstr ""
+msgstr "Embuary Info - 正在播放的电影"
 
 msgctxt "#31558"
 msgid "Embuary Info - Movies Trending This Week"
-msgstr ""
+msgstr "Embuary Info - 本周热门电影"
 
 msgctxt "#31559"
 msgid "Embuary Info - Popular TV Shows"
-msgstr ""
+msgstr "Embuary Info - 热门电视剧"
 
 msgctxt "#31560"
 msgid "Embuary Info - Top Rated TV Shows"
-msgstr ""
+msgstr "Embuary Info - 高分电视剧"
 
 msgctxt "#31561"
 msgid "Embuary Info - Airing Today TV Shows"
-msgstr ""
+msgstr "Embuary Info - 今日播出的电视剧"
 
 msgctxt "#31562"
 msgid "Embuary Info - Currently Airing TV Shows"
-msgstr ""
+msgstr "Embuary Info - 正在热播的电视剧"
 
 msgctxt "#31563"
 msgid "Embuary Info - TV Shows Trending This Week"
-msgstr ""
+msgstr "Embuary Info - 本周热门的电视剧"
 
 msgctxt "#31564"
 msgid "TMDb Helper - Next Aired: All Items"
@@ -1327,11 +1327,11 @@ msgstr ""
 
 msgctxt "#31567"
 msgid "Embuary Info - Next Aired: Next 7 Days"
-msgstr ""
+msgstr "Embuary Info - 接下来播出：接下来的 7 天"
 
 msgctxt "#31568"
 msgid "Embuary Info - Next Aired: Today"
-msgstr ""
+msgstr "Embuary Info - 下一个播出：今天"
 
 msgctxt "#31569"
 msgid "Default Amber Background"
@@ -1351,7 +1351,7 @@ msgstr ""
 
 msgctxt "#31573"
 msgid "Default TV Shows Background"
-msgstr ""
+msgstr "电视剧默认背景"
 
 msgctxt "#31574"
 msgid "Default Music Videos Background"
@@ -1427,7 +1427,7 @@ msgstr ""
 
 msgctxt "#31592"
 msgid "TV Show Node Statistics"
-msgstr ""
+msgstr "电视剧节点统计信息"
 
 msgctxt "#31593"
 msgid "Music Video Node Statistics"
@@ -1451,7 +1451,7 @@ msgstr ""
 
 msgctxt "#31598"
 msgid "Random TV Show fanart (Kodi)"
-msgstr ""
+msgstr "电视剧随机背景艺术图 (Kodi)"
 
 msgctxt "#31599"
 msgid "Random Video fanart (Kodi)"
@@ -1559,7 +1559,7 @@ msgstr ""
 
 msgctxt "#31625"
 msgid "TV Show Status"
-msgstr ""
+msgstr "电视剧状态"
 
 msgctxt "#31626"
 msgid "Number of Episodes"
@@ -1839,7 +1839,7 @@ msgstr ""
 
 msgctxt "#31972"
 msgid "Hide in progress marks"
-msgstr ""
+msgstr "隐藏正在观看的标记"
 
 #. "E" Episode
 msgctxt "#31973"
@@ -2047,11 +2047,11 @@ msgstr ""
 
 msgctxt "#32027"
 msgid "TV Shows Starring"
-msgstr ""
+msgstr "主演的电视剧"
 
 msgctxt "#32028"
 msgid "TV Shows Directed by"
-msgstr ""
+msgstr "执导的电视剧"
 
 msgctxt "#32029"
 msgid "Movies with Genre"
@@ -2059,7 +2059,7 @@ msgstr ""
 
 msgctxt "#32030"
 msgid "TV Shows with Genre"
-msgstr ""
+msgstr "按类型分类的电视剧"
 
 msgctxt "#32031"
 msgid "Movies from Studio"
@@ -2067,7 +2067,7 @@ msgstr ""
 
 msgctxt "#32032"
 msgid "TV Shows from Studio"
-msgstr ""
+msgstr "制作公司出品的电视剧"
 
 msgctxt "#32033"
 msgid "Movies from Year"
@@ -2075,7 +2075,7 @@ msgstr ""
 
 msgctxt "#32034"
 msgid "TV Shows from Year"
-msgstr ""
+msgstr "按年份分类的电视剧"
 
 msgctxt "#32035"
 msgid "Movies from Country"
@@ -2288,7 +2288,7 @@ msgstr ""
 
 msgctxt "#32088"
 msgid "Cast in TV Shows"
-msgstr ""
+msgstr "电视剧演员阵容"
 
 msgctxt "#32089"
 msgid "Crew in Movies"
@@ -2296,7 +2296,7 @@ msgstr ""
 
 msgctxt "#32090"
 msgid "Crew in TV Shows"
-msgstr ""
+msgstr "电视剧幕后制作团队"
 
 msgctxt "#32091"
 msgid "Movies in TMDb"
@@ -2304,7 +2304,7 @@ msgstr ""
 
 msgctxt "#32092"
 msgid "TV Shows in TMDb"
-msgstr ""
+msgstr "TMDb 中的电视剧"
 
 msgctxt "#32093"
 msgid "Movies in Local DB"
@@ -2312,7 +2312,7 @@ msgstr ""
 
 msgctxt "#32094"
 msgid "TV Shows in Local DB"
-msgstr ""
+msgstr "本地数据库中的电视剧"
 
 msgctxt "#32095"
 msgid "Reboot to Android"
@@ -2657,7 +2657,7 @@ msgstr ""
 
 msgctxt "#32188"
 msgid "Total TV Shows in TMDb"
-msgstr ""
+msgstr "TMDb 中的电视剧"
 
 msgctxt "#32189"
 msgid "Items in TMDb as Cast"
@@ -2669,7 +2669,7 @@ msgstr ""
 
 msgctxt "#32191"
 msgid "TV Shows in TMDb as Cast"
-msgstr ""
+msgstr "TMDb 中以演员身份参演的电视剧"
 
 msgctxt "#32192"
 msgid "Items in TMDb as Crew"
@@ -2681,7 +2681,7 @@ msgstr ""
 
 msgctxt "#32194"
 msgid "TV Shows in TMDb as Crew"
-msgstr ""
+msgstr "TMDb 中以后期制作人员身份参与的电视剧"
 
 msgctxt "#32195"
 msgid "Total Items in Local Database"
@@ -2693,7 +2693,7 @@ msgstr ""
 
 msgctxt "#32197"
 msgid "TV Shows in Local Database"
-msgstr ""
+msgstr "本地数据库中的电视剧"
 
 msgctxt "#32198"
 msgid "Episodes in Local Database"
@@ -2705,7 +2705,7 @@ msgstr ""
 
 msgctxt "#32200"
 msgid "Cast: TV Shows with"
-msgstr ""
+msgstr "演员阵容：包含…… 的电视剧"
 
 msgctxt "#32201"
 msgid "Crew: Movies with"
@@ -2713,7 +2713,7 @@ msgstr ""
 
 msgctxt "#32202"
 msgid "Crew: TV Shows with"
-msgstr ""
+msgstr "幕后制作团队：包含…… 的电视剧"
 
 msgctxt "#32203"
 msgid "Start at First Menu Item"
@@ -2813,7 +2813,7 @@ msgstr ""
 
 msgctxt "#32227"
 msgid "Embuary Info - Next Aired Episodes"
-msgstr ""
+msgstr "Embuary Info - 下一集播出"
 
 msgctxt "#32228"
 msgid "Only Search in Local Library"
@@ -2925,7 +2925,7 @@ msgstr ""
 
 msgctxt "#32257"
 msgid "To enable this functionality, you need to install a very recent version of the add-on plugin.video.themoviedb.helper.[CR][CR]You can find it at https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
-msgstr ""
+msgstr "要启用此功能，你需要安装插件 plugin.video.themoviedb.helper 的最新版本。[CR][CR]你可在以下地址获取该插件：https://github.com/jurialmunkey/plugin.video.themoviedb.helper。"
 
 msgctxt "#32258"
 msgid "Use Embuary Helper for Playlist Backgrounds"
@@ -2993,7 +2993,7 @@ msgstr ""
 
 msgctxt "#32274"
 msgid "To enable this functionality, you need to install a very recent version of the add-on script.skinvariables.[CR][CR]You can find it at https://github.com/jurialmunkey/script.skinvariables."
-msgstr ""
+msgstr "要启用此功能，你需要安装插件 script.skinvariables 的最新版本。[CR][CR]你可在以下地址获取该插件：https://github.com/jurialmunkey/script.skinvariables。"
 
 msgctxt "#32275"
 msgid "Configure Media Views"
@@ -3417,7 +3417,7 @@ msgstr ""
 
 msgctxt "#32381"
 msgid "TV Shows with Plot containing"
-msgstr ""
+msgstr "剧情包含…… 的电视剧"
 
 msgctxt "#32382"
 msgid "Episodes with Plot containing"
@@ -3621,7 +3621,7 @@ msgstr ""
 
 msgctxt "#32454"
 msgid "Always Use TV Show Poster for Episodes"
-msgstr ""
+msgstr "剧集始终使用电视剧主海报"
 
 msgctxt "#32455"
 msgid "Open ExtendedInfo for Info Dialogs"

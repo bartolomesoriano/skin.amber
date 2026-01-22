@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2025-12-25 01:32+0000\n"
+"PO-Revision-Date: 2026-01-22 02:13+0000\n"
 "Last-Translator: Pavlo Marianov <acid@jack.kyiv.ua>\n"
 "Language-Team: Ukrainian <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/uk_ua/>\n"
 "Language: uk_ua\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.15.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -115,7 +115,7 @@ msgstr ""
 
 msgctxt "#31022"
 msgid "Kodi"
-msgstr ""
+msgstr "Kodi"
 
 msgctxt "#31023"
 msgid "Viewtype"
@@ -757,7 +757,7 @@ msgstr ""
 
 msgctxt "#31422"
 msgid "Recently Added Movies"
-msgstr ""
+msgstr "Останні додані фільми"
 
 msgctxt "#31423"
 msgid "Recently Played Movies"
@@ -785,7 +785,7 @@ msgstr ""
 
 msgctxt "#31429"
 msgid "Movie Sets"
-msgstr ""
+msgstr "Кіноцикли"
 
 msgctxt "#31430"
 msgid "Movie Nodes"
@@ -797,7 +797,7 @@ msgstr ""
 
 msgctxt "#31432"
 msgid "TV Shows"
-msgstr ""
+msgstr "Серіали"
 
 msgctxt "#31433"
 msgid "Recently Added TV Shows"
@@ -813,7 +813,7 @@ msgstr ""
 
 msgctxt "#31436"
 msgid "In Progress TV Shows"
-msgstr ""
+msgstr "Серіали, що переглядаються"
 
 msgctxt "#31437"
 msgid "Unwatched TV Shows"
@@ -821,7 +821,7 @@ msgstr "Непереглянуті серіали"
 
 msgctxt "#31438"
 msgid "Top Rated TV Shows"
-msgstr ""
+msgstr "Найкращі серіали"
 
 msgctxt "#31439"
 msgid "TV Show Genres"
@@ -873,7 +873,7 @@ msgstr ""
 
 msgctxt "#31451"
 msgid "Random Artists"
-msgstr ""
+msgstr "Випадкові виконавці"
 
 msgctxt "#31452"
 msgid "Music Nodes"
@@ -985,15 +985,15 @@ msgstr "Залишилося"
 
 msgctxt "#31479"
 msgid "CPU"
-msgstr ""
+msgstr "ЦП"
 
 msgctxt "#31480"
 msgid "Sort By"
-msgstr ""
+msgstr "Сорт. за"
 
 msgctxt "#31481"
 msgid "Sort Order"
-msgstr ""
+msgstr "Напрямок сортування"
 
 msgctxt "#31482"
 msgid "Shelf Limit"
@@ -1119,7 +1119,7 @@ msgstr ""
 
 msgctxt "#31515"
 msgid "Recently Updated TV Shows"
-msgstr ""
+msgstr "Останні оновлені серіали"
 
 msgctxt "#31516"
 msgid "Similar TV Shows based on Watched"
@@ -2272,7 +2272,7 @@ msgstr ""
 
 msgctxt "#32084"
 msgid "Age"
-msgstr ""
+msgstr "Вік"
 
 msgctxt "#32085"
 msgid "Died"
@@ -2364,7 +2364,7 @@ msgstr ""
 
 msgctxt "#32107"
 msgid "Video Info"
-msgstr ""
+msgstr "Інформація про відео"
 
 msgctxt "#32108"
 msgid "Select a Genre"
@@ -2480,7 +2480,7 @@ msgstr "Додатково"
 
 msgctxt "#32136"
 msgid "Known for"
-msgstr ""
+msgstr "Відомий через"
 
 msgctxt "#32137"
 msgid "Retail Release"
@@ -2492,7 +2492,7 @@ msgstr ""
 
 msgctxt "#32139"
 msgid "Ended"
-msgstr ""
+msgstr "Завершено"
 
 msgctxt "#32140"
 msgid "Rumored"
@@ -2544,7 +2544,7 @@ msgstr ""
 
 msgctxt "#32152"
 msgid "Creator"
-msgstr ""
+msgstr "Творець"
 
 msgctxt "#32153"
 msgid "Died at Age"
@@ -2552,7 +2552,7 @@ msgstr ""
 
 msgctxt "#32154"
 msgid "Collection"
-msgstr ""
+msgstr "Кіноцикл"
 
 msgctxt "#32155"
 msgid "TMDb Helper Settings"
@@ -3125,7 +3125,7 @@ msgstr ""
 
 msgctxt "#32308"
 msgid "Blue"
-msgstr ""
+msgstr "Синій"
 
 msgctxt "#32309"
 msgid "Golden"
@@ -3133,23 +3133,23 @@ msgstr ""
 
 msgctxt "#32310"
 msgid "Green"
-msgstr ""
+msgstr "Зелений"
 
 msgctxt "#32311"
 msgid "Grey"
-msgstr ""
+msgstr "Сірий"
 
 msgctxt "#32312"
 msgid "Orange"
-msgstr ""
+msgstr "Помаранчевий"
 
 msgctxt "#32313"
 msgid "Purple"
-msgstr ""
+msgstr "Фіолетовий"
 
 msgctxt "#32314"
 msgid "Red"
-msgstr ""
+msgstr "Червоний"
 
 msgctxt "#32315"
 msgid "Select Now Playing Info for Movies/Episodes"
@@ -3209,7 +3209,7 @@ msgstr ""
 
 msgctxt "#32329"
 msgid "Special"
-msgstr ""
+msgstr "Спецвипуск"
 
 msgctxt "#32330"
 msgid "Next Tracks"
@@ -3741,7 +3741,7 @@ msgstr ""
 
 msgctxt "#32484"
 msgid "Update Library"
-msgstr ""
+msgstr "Оновити медіатеку"
 
 msgctxt "#32485"
 msgid "Stop Scanning"
