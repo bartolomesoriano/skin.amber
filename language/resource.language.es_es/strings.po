@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2024-07-03 21:21+0000\n"
-"Last-Translator: roliverosc <roliverosc@hotmail.com>\n"
+"PO-Revision-Date: 2026-04-04 10:13+0000\n"
+"Last-Translator: Alfonso Cachero <alfonso.cachero@gmail.com>\n"
 "Language-Team: Spanish (Spain) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/es_es/>\n"
 "Language: es_es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.16.2\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -247,7 +247,7 @@ msgstr "Películas en progreso"
 
 msgctxt "#31072"
 msgid "Unwatched TV shows"
-msgstr "Series no vistas"
+msgstr "Programas de TV no vistos"
 
 msgctxt "#31073"
 msgid "In progress episodes"
@@ -319,7 +319,7 @@ msgstr "Ocultar episodios en progreso"
 
 msgctxt "#31090"
 msgid "Hide Unwatched TV Shows"
-msgstr "Ocultar series no vistas"
+msgstr "Ocultar Programas de TV no vistos"
 
 msgctxt "#31091"
 msgid "Hide Most Played Albums"
@@ -383,7 +383,7 @@ msgstr "Ocultar pronóstico"
 
 msgctxt "#31106"
 msgid "Hide in progress TV shows"
-msgstr "Ocultar series en progreso"
+msgstr "Ocultar Programas de TV en progreso"
 
 msgctxt "#31107"
 msgid "Shelf style"
@@ -655,7 +655,7 @@ msgstr "Fanart de películas aleatorio"
 
 msgctxt "#31400"
 msgid "Random TV Show fanart"
-msgstr "Fanart de series aleatorio"
+msgstr "Fanart de Programas de TV aleatorio"
 
 msgctxt "#31401"
 msgid "Random Video fanart"
@@ -679,7 +679,7 @@ msgstr "Estadísticas de biblioteca de películas"
 
 msgctxt "#31406"
 msgid "Tv Show Library Statistics"
-msgstr "Estadísticas de biblioteca de series"
+msgstr "Estadísticas de la Colección de Programas de TV"
 
 msgctxt "#31407"
 msgid "Music Library Statistics"
@@ -699,7 +699,7 @@ msgstr "Estadísticas de lista de reproducción de películas"
 
 msgctxt "#31411"
 msgid "TV Show Playlist Statistics"
-msgstr "Estadísticas de lista de reproducción de series"
+msgstr "Estadísticas de la Lista de Programas de TV"
 
 msgctxt "#31412"
 msgid "Music Video Playlist Statistics"
@@ -707,7 +707,7 @@ msgstr "Estadísticas de lista de reproducción de vídeo musical"
 
 msgctxt "#31413"
 msgid "Movie and TV Show Statistics"
-msgstr "Estadísticas de películas y series"
+msgstr "Estadísticas de Películas y Programas de TV"
 
 msgctxt "#31414"
 msgid "Video and Music Addons"
@@ -783,39 +783,39 @@ msgstr "Las 250 mejores películas de IMDB"
 
 msgctxt "#31432"
 msgid "TV Shows"
-msgstr "Series"
+msgstr "Programas de TV"
 
 msgctxt "#31433"
 msgid "Recently Added TV Shows"
-msgstr "Series añadidas recientemente"
+msgstr "Programas de TV Añadidos Recientemente"
 
 msgctxt "#31434"
 msgid "Recently Played TV Shows"
-msgstr "Series reproducidas recientemente"
+msgstr "Programas de TV Reproducidos Recientemente"
 
 msgctxt "#31435"
 msgid "Random TV Shows"
-msgstr "Series aleatorias"
+msgstr "Programas de TV Aleatorios"
 
 msgctxt "#31436"
 msgid "In Progress TV Shows"
-msgstr "Series en progreso"
+msgstr "Programas de TV En Progreso"
 
 msgctxt "#31437"
 msgid "Unwatched TV Shows"
-msgstr "Series no vistas"
+msgstr "Programas de TV No Vistos"
 
 msgctxt "#31438"
 msgid "Top Rated TV Shows"
-msgstr "Series mejor valoradas"
+msgstr "Programas de TV Mejor Valorados"
 
 msgctxt "#31439"
 msgid "TV Show Genres"
-msgstr "Géneros series"
+msgstr "Géneros de Programas de TV"
 
 msgctxt "#31440"
 msgid "TV Show Nodes"
-msgstr "Nodos series"
+msgstr "Nodos Programa de TV"
 
 msgctxt "#31441"
 msgid "Recently Added Episodes"
@@ -1027,7 +1027,7 @@ msgstr "Episodios recomendados"
 
 msgctxt "#31493"
 msgid "Unwatched TV Shows"
-msgstr "Series no vistas"
+msgstr "Programas de TV no vistos"
 
 msgctxt "#31494"
 msgid "Recently Released Albums"
@@ -1051,7 +1051,7 @@ msgstr "Widgets TheMovieDb Helper"
 
 msgctxt "#31499"
 msgid "All TV Shows"
-msgstr "Todas las series"
+msgstr "Todos los Programas de TV"
 
 msgctxt "#31500"
 msgid "TV"
@@ -1103,15 +1103,15 @@ msgstr "Póster usado en episodio"
 
 msgctxt "#31515"
 msgid "Recently Updated TV Shows"
-msgstr "Series actualizadas recientemente"
+msgstr "Programas de TV actualizados recientemente"
 
 msgctxt "#31516"
 msgid "Similar TV Shows based on Watched"
-msgstr "Series similares basadas en vistos"
+msgstr "Programas de TV similares basados en vistos"
 
 msgctxt "#31517"
 msgid "TV Shows Suggestions by Genre:"
-msgstr "Sugerencias de series por género:"
+msgstr "Sugerencias de Programas de TV por género:"
 
 msgctxt "#31518"
 msgid "Popular Movies"
@@ -1131,19 +1131,19 @@ msgstr "Películas en cines"
 
 msgctxt "#31522"
 msgid "Popular TV Shows"
-msgstr "Series populares"
+msgstr "Programas de TV populares"
 
 msgctxt "#31523"
 msgid "TMDb Top Rated TV Shows"
-msgstr "Series mejor valoradas de TMDb"
+msgstr "Programas de TV mejor valorados en TMDb"
 
 msgctxt "#31524"
 msgid "Airing Today TV Shows"
-msgstr "Series en emisión hoy"
+msgstr "Programas de TV en emisión hoy"
 
 msgctxt "#31525"
 msgid "Currently Airing TV Shows"
-msgstr "Series en emisión actualmente"
+msgstr "Programas de TV en emisión actualmente"
 
 msgctxt "#31526"
 msgid "Next Up Episodes"
@@ -1235,7 +1235,7 @@ msgstr "Trakt - Las 10 más taquilleras esta semana"
 
 msgctxt "#31548"
 msgid "Trakt - My Shows Airing This Week"
-msgstr "Trakt - Mis series en emisión esta semana"
+msgstr "Trakt - Mis programas de TV en emisión esta semana"
 
 msgctxt "#31549"
 msgid "Trakt - Trending Lists"
@@ -1279,23 +1279,23 @@ msgstr "Embuary Info - Películas tendencia esta semana"
 
 msgctxt "#31559"
 msgid "Embuary Info - Popular TV Shows"
-msgstr "Embuary Info - Series populares"
+msgstr "Embuary Info - Programas de TV populares"
 
 msgctxt "#31560"
 msgid "Embuary Info - Top Rated TV Shows"
-msgstr "Embuary Info - Series mejor valoradas en TMDb"
+msgstr "Embuary Info - Programas de TV mejor valoradas en TMDb"
 
 msgctxt "#31561"
 msgid "Embuary Info - Airing Today TV Shows"
-msgstr "Embuary Info - Series en emisión hoy"
+msgstr "Embuary Info - Programas de TV en emisión hoy"
 
 msgctxt "#31562"
 msgid "Embuary Info - Currently Airing TV Shows"
-msgstr "Embuary Info - Series en emisión actualmente"
+msgstr "Embuary Info - Programas de TV en emisión actualmente"
 
 msgctxt "#31563"
 msgid "Embuary Info - TV Shows Trending This Week"
-msgstr "Embuary Info - Series tendencia esta semana"
+msgstr "Embuary Info - Programas de TV tendencia esta semana"
 
 msgctxt "#31564"
 msgid "TMDb Helper - Next Aired: All Items"
@@ -1335,7 +1335,7 @@ msgstr "Fondo predeterminado para películas"
 
 msgctxt "#31573"
 msgid "Default TV Shows Background"
-msgstr "Fondo predeterminado para series"
+msgstr "Fondo predeterminado para Programas de TV"
 
 msgctxt "#31574"
 msgid "Default Music Videos Background"
@@ -1411,7 +1411,7 @@ msgstr "Estadísticas del nodo de películas"
 
 msgctxt "#31592"
 msgid "TV Show Node Statistics"
-msgstr "Estadísticas del nodo de series"
+msgstr "Estadísticas del nodo del programa de TV"
 
 msgctxt "#31593"
 msgid "Music Video Node Statistics"
@@ -1435,7 +1435,7 @@ msgstr "Fanart aleatorio de películas (Kodi)"
 
 msgctxt "#31598"
 msgid "Random TV Show fanart (Kodi)"
-msgstr "Fanart aleatorio de series (Kodi)"
+msgstr "Fanart aleatorio de programa de TV (Kodi)"
 
 msgctxt "#31599"
 msgid "Random Video fanart (Kodi)"
@@ -1543,7 +1543,7 @@ msgstr "Arte de personajes"
 
 msgctxt "#31625"
 msgid "TV Show Status"
-msgstr "Estado de serie"
+msgstr "Estado del programa de TV"
 
 msgctxt "#31626"
 msgid "Number of Episodes"
@@ -2025,11 +2025,11 @@ msgstr "Películas dirigidas por"
 
 msgctxt "#32027"
 msgid "TV Shows Starring"
-msgstr "Series protagonizadas por"
+msgstr "Programas de TV protagonizados"
 
 msgctxt "#32028"
 msgid "TV Shows Directed by"
-msgstr "Series dirigidas por"
+msgstr "Programas de TV dirigidos por"
 
 msgctxt "#32029"
 msgid "Movies with Genre"
@@ -2037,7 +2037,7 @@ msgstr "Películas del género"
 
 msgctxt "#32030"
 msgid "TV Shows with Genre"
-msgstr "Series del género"
+msgstr "Programas de TV con género"
 
 msgctxt "#32031"
 msgid "Movies from Studio"
@@ -2045,7 +2045,7 @@ msgstr "Películas del estudio"
 
 msgctxt "#32032"
 msgid "TV Shows from Studio"
-msgstr "Series del estudio"
+msgstr "Programas de TV del estudio"
 
 msgctxt "#32033"
 msgid "Movies from Year"
@@ -2053,7 +2053,7 @@ msgstr "Películas del año"
 
 msgctxt "#32034"
 msgid "TV Shows from Year"
-msgstr "Series del año"
+msgstr "Programas de TV del año"
 
 msgctxt "#32035"
 msgid "Movies from Country"
@@ -2265,7 +2265,7 @@ msgstr "Reparto en películas"
 
 msgctxt "#32088"
 msgid "Cast in TV Shows"
-msgstr "Reparto en series"
+msgstr "Reparto en Programas de TV"
 
 msgctxt "#32089"
 msgid "Crew in Movies"
@@ -2273,7 +2273,7 @@ msgstr "Equipo en películas"
 
 msgctxt "#32090"
 msgid "Crew in TV Shows"
-msgstr "Equipo en series"
+msgstr "Equipo en Programas de TV"
 
 msgctxt "#32091"
 msgid "Movies in TMDb"
@@ -2281,7 +2281,7 @@ msgstr "Películas en TMDb"
 
 msgctxt "#32092"
 msgid "TV Shows in TMDb"
-msgstr "Series en TMDb"
+msgstr "Programas de TV en TMDb"
 
 msgctxt "#32093"
 msgid "Movies in Local DB"
@@ -2289,7 +2289,7 @@ msgstr "Películas en BD local"
 
 msgctxt "#32094"
 msgid "TV Shows in Local DB"
-msgstr "Series en BD local"
+msgstr "Programas de TV en BD local"
 
 msgctxt "#32095"
 msgid "Reboot to Android"
@@ -2633,7 +2633,7 @@ msgstr "Total de películas en TMDb"
 
 msgctxt "#32188"
 msgid "Total TV Shows in TMDb"
-msgstr "Total de series en TMDb"
+msgstr "Total de Programas de TV en TMDb"
 
 msgctxt "#32189"
 msgid "Items in TMDb as Cast"
@@ -2645,7 +2645,7 @@ msgstr "Películas en TMDb como reparto"
 
 msgctxt "#32191"
 msgid "TV Shows in TMDb as Cast"
-msgstr "Series en TMDb como reparto"
+msgstr "Programas de TV en TMDb como reparto"
 
 msgctxt "#32192"
 msgid "Items in TMDb as Crew"
@@ -2657,7 +2657,7 @@ msgstr "Películas en TMDb como equipo"
 
 msgctxt "#32194"
 msgid "TV Shows in TMDb as Crew"
-msgstr "Series en TMDb como equipo"
+msgstr "Programas de TV en TMDb como equipo"
 
 msgctxt "#32195"
 msgid "Total Items in Local Database"
@@ -2669,7 +2669,7 @@ msgstr "Películas en base de datos local"
 
 msgctxt "#32197"
 msgid "TV Shows in Local Database"
-msgstr "Series en base de datos local"
+msgstr "Programas de TV en base de datos local"
 
 msgctxt "#32198"
 msgid "Episodes in Local Database"
@@ -2681,7 +2681,7 @@ msgstr "Reparto: Películas con"
 
 msgctxt "#32200"
 msgid "Cast: TV Shows with"
-msgstr "Reparto: Series con"
+msgstr "Reparto: Programas de TV con"
 
 msgctxt "#32201"
 msgid "Crew: Movies with"
@@ -2689,7 +2689,7 @@ msgstr "Equipo: Películas con"
 
 msgctxt "#32202"
 msgid "Crew: TV Shows with"
-msgstr "Equipo: Series con"
+msgstr "Equipo: Programas de TV con"
 
 msgctxt "#32203"
 msgid "Start at First Menu Item"
@@ -3393,7 +3393,7 @@ msgstr "Películas cuyo argumento contenga"
 
 msgctxt "#32381"
 msgid "TV Shows with Plot containing"
-msgstr "Series cuyo argumento contenga"
+msgstr "Programas de TV cuyo argumento contenga"
 
 msgctxt "#32382"
 msgid "Episodes with Plot containing"
@@ -3597,7 +3597,7 @@ msgstr "Con etiqueta"
 
 msgctxt "#32454"
 msgid "Always Use TV Show Poster for Episodes"
-msgstr "Usar siempre póster de serie para episodios"
+msgstr "Usar siempre póster del programan de TV para episodios"
 
 msgctxt "#32455"
 msgid "Open ExtendedInfo for Info Dialogs"
