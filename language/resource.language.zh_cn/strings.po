@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-04-04 10:13+0000\n"
+"PO-Revision-Date: 2026-04-11 14:41+0000\n"
 "Last-Translator: wabisabi926 <wabisabi926@foxmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/zh_Hans/>\n"
 "Language: zh_cn\n"
@@ -513,7 +513,7 @@ msgstr ""
 
 msgctxt "#31156"
 msgid "Disable Fanart view"
-msgstr "禁用粉丝艺术图视图"
+msgstr "禁用背景图视图"
 
 msgctxt "#31157"
 msgid "Triple"
@@ -665,23 +665,23 @@ msgstr ""
 
 msgctxt "#31399"
 msgid "Random Movie fanart"
-msgstr "随机电影粉丝艺术图"
+msgstr "随机电影背景图"
 
 msgctxt "#31400"
 msgid "Random TV Show fanart"
-msgstr "随机电视剧粉丝艺术图"
+msgstr "随机电视剧背景图"
 
 msgctxt "#31401"
 msgid "Random Video fanart"
-msgstr "随机视频粉丝艺术图"
+msgstr "随机视频背景图"
 
 msgctxt "#31402"
 msgid "Random Music fanart"
-msgstr "随机音乐粉丝艺术图"
+msgstr "随机音乐背景图"
 
 msgctxt "#31403"
 msgid "Random fanart"
-msgstr "随机粉丝艺术图"
+msgstr "随机背景图"
 
 msgctxt "#31404"
 msgid "Conditional weather"
@@ -1005,7 +1005,7 @@ msgstr ""
 
 msgctxt "#31484"
 msgid "Disable Shelves Fanart"
-msgstr "禁用货架栏粉丝艺术图"
+msgstr "禁用货架栏背景图"
 
 msgctxt "#31485"
 msgid "Enable PVR TV Recording Shelf"
@@ -1415,11 +1415,11 @@ msgstr ""
 
 msgctxt "#31589"
 msgid "Random Music Videos Fanart"
-msgstr "随机音乐视频粉丝艺术图"
+msgstr "随机音乐视频背景图"
 
 msgctxt "#31590"
 msgid "Random Video or Music Node Fanart"
-msgstr "随机视频 / 音乐节点粉丝艺术图"
+msgstr "随机视频 / 音乐节点背景图"
 
 msgctxt "#31591"
 msgid "Movie Node Statistics"
@@ -1447,7 +1447,7 @@ msgstr ""
 
 msgctxt "#31597"
 msgid "Random Movie fanart (Kodi)"
-msgstr "随机电影粉丝艺术图（Kodi）"
+msgstr "随机电影背景图（Kodi）"
 
 msgctxt "#31598"
 msgid "Random TV Show fanart (Kodi)"
@@ -3073,7 +3073,7 @@ msgstr "结束于"
 
 msgctxt "#32295"
 msgid "Netflix style"
-msgstr ""
+msgstr "网飞风格"
 
 msgctxt "#32296"
 msgid "Show Logo"
