@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-04-11 14:41+0000\n"
+"PO-Revision-Date: 2026-04-20 05:08+0000\n"
 "Last-Translator: wabisabi926 <wabisabi926@foxmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/zh_Hans/>\n"
 "Language: zh_cn\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16.2\n"
+"X-Generator: Weblate 5.17\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -1884,64 +1884,64 @@ msgstr ""
 
 msgctxt "#31983"
 msgid "Choose from menu"
-msgstr ""
+msgstr "从菜单选择"
 
 msgctxt "#31984"
 msgid "Skip to"
-msgstr ""
+msgstr "跳转到"
 
 msgctxt "#31985"
 msgid "Advanced"
-msgstr ""
+msgstr "高级"
 
 msgctxt "#31986"
 msgid "Use default background for Home window"
-msgstr ""
+msgstr "主界面使用默认背景"
 
 msgctxt "#31987"
 msgid "Random"
-msgstr ""
+msgstr "随机"
 
 msgctxt "#31988"
 msgid "Menu"
-msgstr ""
+msgstr "菜单"
 
 msgctxt "#31989"
 msgid "Quit button function"
-msgstr ""
+msgstr "退出按钮功能"
 
 # empty string with id 31990
 msgctxt "#31991"
 msgid "Show video player/music visualization in background"
-msgstr ""
+msgstr "在背景显示视频播放/音乐可视化效果"
 
 msgctxt "#31992"
 msgid "Banner (wide) thumbs"
-msgstr ""
+msgstr "横幅（宽幅）缩略图"
 
 msgctxt "#31993"
 msgid "Not used - click to customize"
-msgstr ""
+msgstr "未使用 - 点击自定义"
 
 msgctxt "#31994"
 msgid "Use vertical main menu"
-msgstr ""
+msgstr "使用垂直主菜单"
 
 msgctxt "#31995"
 msgid "Home layout"
-msgstr ""
+msgstr "主界面布局"
 
 msgctxt "#31996"
 msgid "Holiday snowfall theme"
-msgstr ""
+msgstr "节日降雪主题"
 
 msgctxt "#31997"
 msgid "Hide channel logos in PVR List/Timeline"
-msgstr ""
+msgstr "在 PVR 列表/时间轴中隐藏频道台标"
 
 msgctxt "#31998"
 msgid "Show lock/master mode status in title bar"
-msgstr ""
+msgstr "在标题栏显示锁定/管理员模式状态"
 
 msgctxt "#31999"
 msgid "BigList"
@@ -1949,7 +1949,7 @@ msgstr "大列表"
 
 msgctxt "#32000"
 msgid "Hide icons"
-msgstr ""
+msgstr "隐藏图标"
 
 # empty string with id 32001
 msgctxt "#32002"
@@ -1962,15 +1962,15 @@ msgstr "游戏设置"
 
 msgctxt "#32004"
 msgid "Toggle Subtitle"
-msgstr ""
+msgstr "切换字幕"
 
 msgctxt "#32005"
 msgid "AB: Select Artwork"
-msgstr ""
+msgstr "AB：选择封面素材"
 
 msgctxt "#32006"
 msgid "AB: All Artwork"
-msgstr ""
+msgstr "AB：全部封面素材"
 
 msgctxt "#32007"
 msgid "Special Features"
@@ -1978,7 +1978,7 @@ msgstr "特殊功能"
 
 msgctxt "#32008"
 msgid "Enable Special Features"
-msgstr ""
+msgstr "启用特殊功能"
 
 msgctxt "#32009"
 msgid "Next Episode"
@@ -1986,24 +1986,24 @@ msgstr "下一集"
 
 msgctxt "#32010"
 msgid "Latest Episode"
-msgstr "最近播放的剧集"
+msgstr "最近播放剧集"
 
 msgctxt "#32011"
 msgid "Airs"
-msgstr "播出"
+msgstr "播出时间"
 
 # empty string with id 32012
 msgctxt "#32013"
 msgid "Next Airing Episodes"
-msgstr ""
+msgstr "即将播出剧集"
 
 msgctxt "#32014"
 msgid "Search Results for: "
-msgstr ""
+msgstr "搜索结果： "
 
 msgctxt "#32015"
 msgid "Show Only Local Info "
-msgstr ""
+msgstr "仅显示本地信息 "
 
 msgctxt "#32016"
 msgid "Extended Info"
@@ -2011,27 +2011,27 @@ msgstr "更多信息"
 
 msgctxt "#32017"
 msgid "Search in Local Library"
-msgstr ""
+msgstr "在本地媒体库搜索"
 
 msgctxt "#32018"
 msgid "Search online in TMDb"
-msgstr ""
+msgstr "在线搜索 TMDb"
 
 msgctxt "#32020"
 msgid "Hide Second Label in List Views"
-msgstr ""
+msgstr "在列表视图中隐藏第二行标签"
 
 msgctxt "#32021"
 msgid "Added:"
-msgstr ""
+msgstr "添加时间："
 
 msgctxt "#32022"
 msgid "Plays:"
-msgstr ""
+msgstr "播放次数："
 
 msgctxt "#32023"
 msgid "Last Played:"
-msgstr ""
+msgstr "上次播放："
 
 msgctxt "#32024"
 msgid "New Search"
@@ -2039,59 +2039,59 @@ msgstr "新搜索"
 
 msgctxt "#32025"
 msgid "Movies Starring"
-msgstr ""
+msgstr "主演电影"
 
 msgctxt "#32026"
 msgid "Movies Directed by"
-msgstr ""
+msgstr "执导电影"
 
 msgctxt "#32027"
 msgid "TV Shows Starring"
-msgstr "主演的电视剧"
+msgstr "主演电视剧"
 
 msgctxt "#32028"
 msgid "TV Shows Directed by"
-msgstr "执导的电视剧"
+msgstr "执导电视剧"
 
 msgctxt "#32029"
 msgid "Movies with Genre"
-msgstr ""
+msgstr "按类型分类电影"
 
 msgctxt "#32030"
 msgid "TV Shows with Genre"
-msgstr "按类型分类的电视剧"
+msgstr "按类型分类电视剧"
 
 msgctxt "#32031"
 msgid "Movies from Studio"
-msgstr ""
+msgstr "制作公司出品电影"
 
 msgctxt "#32032"
 msgid "TV Shows from Studio"
-msgstr "制作公司出品的电视剧"
+msgstr "制作公司出品电视剧"
 
 msgctxt "#32033"
 msgid "Movies from Year"
-msgstr ""
+msgstr "按年份分类电影"
 
 msgctxt "#32034"
 msgid "TV Shows from Year"
-msgstr "按年份分类的电视剧"
+msgstr "按年份分类电视剧"
 
 msgctxt "#32035"
 msgid "Movies from Country"
-msgstr ""
+msgstr "按国家/地区分类电影"
 
 msgctxt "#32036"
 msgid "Music Videos by Artist"
-msgstr ""
+msgstr "歌手音乐录影带"
 
 msgctxt "#32037"
 msgid "YouTube videos about"
-msgstr ""
+msgstr "相关 YouTube 视频"
 
 msgctxt "#32038"
 msgid "Enable Touch/Mouse Buttons"
-msgstr ""
+msgstr "启用触摸/鼠标按钮"
 
 msgctxt "#32039"
 msgid "Timeshift"
@@ -2099,16 +2099,16 @@ msgstr "时移"
 
 msgctxt "#32040"
 msgid "Enable Kiosk Mode"
-msgstr "打开 Kiosk 模式"
+msgstr "启用信息亭模式"
 
 # empty string with id 32041
 msgctxt "#32042"
 msgid "Next Episodes"
-msgstr ""
+msgstr "后续剧集"
 
 msgctxt "#32043"
 msgid "Customize Home Menu and Shelves"
-msgstr ""
+msgstr "自定义主菜单与内容货架"
 
 msgctxt "#32044"
 msgid "Submenu"
@@ -2116,7 +2116,7 @@ msgstr "子菜单"
 
 msgctxt "#32045"
 msgid "Shelves"
-msgstr ""
+msgstr "内容货架"
 
 msgctxt "#32046"
 msgid "Weather fanart"
@@ -2128,75 +2128,75 @@ msgstr "秒"
 
 msgctxt "#32048"
 msgid "Show background name in Home window"
-msgstr ""
+msgstr "在主界面显示背景名称"
 
 msgctxt "#32049"
 msgid "Home window Background Rotation Delay"
-msgstr ""
+msgstr "主界面背景轮换延迟"
 
 msgctxt "#32050"
 msgid "IPTV Recorder"
-msgstr "IPTV录制"
+msgstr "IPTV录制器"
 
 msgctxt "#32051"
 msgid "IPTV Recorder Recordings"
-msgstr ""
+msgstr "IPTV录制内容"
 
 msgctxt "#32052"
 msgid "Show Video Info on Pause"
-msgstr ""
+msgstr "暂停时显示视频信息"
 
 msgctxt "#32053"
 msgid "Show Two Shelves Together"
-msgstr ""
+msgstr "同时显示两个内容货架"
 
 msgctxt "#32054"
 msgid "Use Larger Font"
-msgstr ""
+msgstr "使用更大字体"
 
 msgctxt "#32055"
 msgid "Use Wraparound Navigation"
-msgstr ""
+msgstr "启用循环导航"
 
 msgctxt "#32056"
 msgid "Show more items on List Views"
-msgstr ""
+msgstr "列表视图显示更多项目"
 
 msgctxt "#32057"
 msgid "Show Season/Episode Numbers"
-msgstr ""
+msgstr "显示季/集数"
 
 msgctxt "#32058"
 msgid "Show Episode Thumb"
-msgstr ""
+msgstr "显示剧集缩略图"
 
 msgctxt "#32059"
 msgid "Disable Tall List View"
-msgstr ""
+msgstr "禁用长列表视图"
 
 msgctxt "#32060"
 msgid "Tall List"
-msgstr ""
+msgstr "长列表"
 
 msgctxt "#32061"
 msgid "Set Default Background"
-msgstr ""
+msgstr "设置默认背景"
 
 msgctxt "#32062"
 msgid "Set Favourite Addons for Shelf"
-msgstr ""
+msgstr "为货架设置常用插件"
 
 msgctxt "#32063"
 msgid "Select Favourite Addons"
-msgstr ""
+msgstr "选择常用插件"
 
 msgctxt "#32064"
 msgid "Backup/Restore"
-msgstr ""
+msgstr "备份/恢复"
 
 msgctxt "#32065"
 msgid "Backup"
-msgstr ""
+msgstr "备份"
 
 msgctxt "#32066"
 msgid "Restore"
@@ -2204,7 +2204,7 @@ msgstr "恢复"
 
 msgctxt "#32067"
 msgid "Configure Backup addon"
-msgstr ""
+msgstr "配置备份插件"
 
 msgctxt "#32068"
 msgid "Show Fanart"
@@ -2216,15 +2216,15 @@ msgstr "文件"
 
 msgctxt "#32070"
 msgid "Place Background Name in Top Bar"
-msgstr ""
+msgstr "在顶部栏显示背景名称"
 
 msgctxt "#32071"
 msgid "Enable Alphabet Strip"
-msgstr ""
+msgstr "启用字母快速导航条"
 
 msgctxt "#32072"
 msgid "Enable Autocompletion for Virtual Keyboard"
-msgstr ""
+msgstr "虚拟键盘启用自动补全"
 
 msgctxt "#32073"
 msgid "Budget"
@@ -2232,7 +2232,7 @@ msgstr "预算"
 
 msgctxt "#32074"
 msgid "Revenue"
-msgstr "收入"
+msgstr "票房"
 
 msgctxt "#32075"
 msgid "Awards"
@@ -2240,27 +2240,27 @@ msgstr "奖项"
 
 msgctxt "#32076"
 msgid "Show Watched Items in Recent Shelves"
-msgstr ""
+msgstr "在最近货架显示已观看项目"
 
 msgctxt "#32077"
 msgid "RT Total Critics Reviews"
-msgstr ""
+msgstr "烂番茄专业影评总数"
 
 msgctxt "#32078"
 msgid "RT Fresh Reviews"
-msgstr ""
+msgstr "烂番茄新鲜影评"
 
 msgctxt "#32079"
 msgid "RT Rotten Reviews"
-msgstr ""
+msgstr "烂番茄烂番茄影评"
 
 msgctxt "#32080"
 msgid "RT Critics' Consensus"
-msgstr ""
+msgstr "烂番茄专业影评共识"
 
 msgctxt "#32081"
 msgid "RT Total User Reviews"
-msgstr ""
+msgstr "烂番茄观众影评总数"
 
 msgctxt "#32082"
 msgid "Birthday"
@@ -2268,7 +2268,7 @@ msgstr "生日"
 
 msgctxt "#32083"
 msgid "Born"
-msgstr ""
+msgstr "出生"
 
 msgctxt "#32084"
 msgid "Age"
@@ -2276,63 +2276,63 @@ msgstr "年龄"
 
 msgctxt "#32085"
 msgid "Died"
-msgstr "去世时间"
+msgstr "逝世"
 
 msgctxt "#32086"
 msgid "Also Known As"
-msgstr ""
+msgstr "别名"
 
 msgctxt "#32087"
 msgid "Cast in Movies"
-msgstr ""
+msgstr "参演电影"
 
 msgctxt "#32088"
 msgid "Cast in TV Shows"
-msgstr "电视剧演员阵容"
+msgstr "参演电视剧"
 
 msgctxt "#32089"
 msgid "Crew in Movies"
-msgstr ""
+msgstr "电影制作团队"
 
 msgctxt "#32090"
 msgid "Crew in TV Shows"
-msgstr "电视剧幕后制作团队"
+msgstr "电视剧制作团队"
 
 msgctxt "#32091"
 msgid "Movies in TMDb"
-msgstr ""
+msgstr "TMDb 电影"
 
 msgctxt "#32092"
 msgid "TV Shows in TMDb"
-msgstr "TMDb 中的电视剧"
+msgstr "TMDb 电视剧"
 
 msgctxt "#32093"
 msgid "Movies in Local DB"
-msgstr ""
+msgstr "本地数据库电影"
 
 msgctxt "#32094"
 msgid "TV Shows in Local DB"
-msgstr "本地数据库中的电视剧"
+msgstr "本地数据库电视剧"
 
 msgctxt "#32095"
 msgid "Reboot to Android"
-msgstr "重启到安卓"
+msgstr "重启至安卓系统"
 
 msgctxt "#32096"
 msgid "Episodes Starring"
-msgstr ""
+msgstr "主演剧集"
 
 msgctxt "#32097"
 msgid "Movies in the"
-msgstr ""
+msgstr "系列电影"
 
 msgctxt "#32098"
 msgid "Also Directed by"
-msgstr ""
+msgstr "同样执导"
 
 msgctxt "#32099"
 msgid "Crew"
-msgstr "摄制组"
+msgstr "制作团队"
 
 msgctxt "#32100"
 msgid "More from"
@@ -2340,27 +2340,27 @@ msgstr "更多来自"
 
 msgctxt "#32101"
 msgid "More in"
-msgstr ""
+msgstr "更多内容"
 
 msgctxt "#32102"
 msgid "Similar to"
-msgstr "类似于"
+msgstr "相似内容"
 
 msgctxt "#32103"
 msgid "Cast Members also appear in"
-msgstr ""
+msgstr "演员还出演过"
 
 msgctxt "#32104"
 msgid "Select Custom Lists to Display"
-msgstr ""
+msgstr "选择要显示的自定义列表"
 
 msgctxt "#32105"
 msgid "Similar"
-msgstr "类似"
+msgstr "相似"
 
 msgctxt "#32106"
 msgid "Featuring Cast Members"
-msgstr ""
+msgstr "演员相关作品"
 
 msgctxt "#32107"
 msgid "Video Info"
@@ -2368,71 +2368,71 @@ msgstr "视频信息"
 
 msgctxt "#32108"
 msgid "Select a Genre"
-msgstr ""
+msgstr "选择类型"
 
 msgctxt "#32109"
 msgid "Select a Studio"
-msgstr ""
+msgstr "选择制作公司"
 
 msgctxt "#32110"
 msgid "Select a Director"
-msgstr ""
+msgstr "选择导演"
 
 msgctxt "#32111"
 msgid "Online TMDb Search"
-msgstr ""
+msgstr "TMDb 在线搜索"
 
 msgctxt "#32112"
 msgid "Local Search"
-msgstr ""
+msgstr "本地搜索"
 
 msgctxt "#32113"
 msgid "Select a Writer"
-msgstr ""
+msgstr "选择编剧"
 
 msgctxt "#32114"
 msgid "Movies Written by"
-msgstr ""
+msgstr "编剧电影"
 
 msgctxt "#32115"
 msgid "Select a Country"
-msgstr ""
+msgstr "选择国家/地区"
 
 msgctxt "#32116"
 msgid "Episodes from Studio"
-msgstr ""
+msgstr "制作公司出品剧集"
 
 msgctxt "#32117"
 msgid "Episodes with Genre"
-msgstr ""
+msgstr "按类型分类剧集"
 
 msgctxt "#32118"
 msgid "Episodes Written by"
-msgstr ""
+msgstr "编剧剧集"
 
 msgctxt "#32119"
 msgid "Episodes Directed by"
-msgstr ""
+msgstr "执导剧集"
 
 msgctxt "#32120"
 msgid "AB: Download All Artwork"
-msgstr ""
+msgstr "AB：下载全部封面素材"
 
 msgctxt "#32121"
 msgid "AB: Select Artwork"
-msgstr ""
+msgstr "AB：选择封面素材"
 
 msgctxt "#32122"
 msgid "Show Artwork Beef items in Context Menu"
-msgstr ""
+msgstr "在右键菜单显示 Artwork Beef 选项"
 
 msgctxt "#32123"
 msgid "Title Bar Options"
-msgstr ""
+msgstr "标题栏选项"
 
 msgctxt "#32124"
 msgid "Show Duration in Hours and Minutes"
-msgstr ""
+msgstr "以小时和分钟显示时长"
 
 msgctxt "#32125"
 msgid "Hour"
@@ -2440,19 +2440,19 @@ msgstr "小时"
 
 msgctxt "#32126"
 msgid "Minute"
-msgstr "分"
+msgstr "分钟"
 
 msgctxt "#32127"
 msgid "Online TMDb Info"
-msgstr ""
+msgstr "TMDb 在线信息"
 
 msgctxt "#32128"
 msgid "Embuary Info Settings"
-msgstr ""
+msgstr "Embuary Info 设置"
 
 msgctxt "#32129"
 msgid "Guest Stars"
-msgstr ""
+msgstr "客串明星"
 
 msgctxt "#32130"
 msgid "Posters"
@@ -2464,55 +2464,55 @@ msgstr "YouTube"
 
 msgctxt "#32132"
 msgid "Search for Trailer"
-msgstr ""
+msgstr "搜索预告片"
 
 msgctxt "#32133"
 msgid "item in database"
-msgstr "项目在数据库"
+msgstr "数据库项目"
 
 msgctxt "#32134"
 msgid "Items in Database"
-msgstr ""
+msgstr "数据库项目总数"
 
 msgctxt "#32135"
 msgid "Extras"
-msgstr "额外"
+msgstr "花絮"
 
 msgctxt "#32136"
 msgid "Known for"
-msgstr "闻名于"
+msgstr "代表作"
 
 msgctxt "#32137"
 msgid "Retail Release"
-msgstr ""
+msgstr "正式发售"
 
 msgctxt "#32138"
 msgid "Region Release"
-msgstr ""
+msgstr "分区发行"
 
 msgctxt "#32139"
 msgid "Ended"
-msgstr "截至"
+msgstr "已完结"
 
 msgctxt "#32140"
 msgid "Rumored"
-msgstr "据传"
+msgstr "传闻"
 
 msgctxt "#32141"
 msgid "Planned"
-msgstr "计划"
+msgstr "计划中"
 
 msgctxt "#32142"
 msgid "In Production"
-msgstr ""
+msgstr "制作中"
 
 msgctxt "#32143"
 msgid "Post Production"
-msgstr ""
+msgstr "后期制作"
 
 msgctxt "#32144"
 msgid "Released"
-msgstr "已发布"
+msgstr "已上映"
 
 msgctxt "#32145"
 msgid "Canceled"
@@ -2520,35 +2520,35 @@ msgstr "已取消"
 
 msgctxt "#32146"
 msgid "Returning Series"
-msgstr ""
+msgstr "续订剧集"
 
 msgctxt "#32147"
 msgid "Acting"
-msgstr ""
+msgstr "演员"
 
 msgctxt "#32148"
 msgid "Directing"
-msgstr ""
+msgstr "导演"
 
 msgctxt "#32149"
 msgid "Writing"
-msgstr ""
+msgstr "编剧"
 
 msgctxt "#32150"
 msgid "Production"
-msgstr ""
+msgstr "制片"
 
 msgctxt "#32151"
 msgid "Sound"
-msgstr ""
+msgstr "音效"
 
 msgctxt "#32152"
 msgid "Creator"
-msgstr "创作者"
+msgstr "主创"
 
 msgctxt "#32153"
 msgid "Died at Age"
-msgstr ""
+msgstr "逝世年龄"
 
 msgctxt "#32154"
 msgid "Collection"
@@ -2556,276 +2556,276 @@ msgstr "合集"
 
 msgctxt "#32155"
 msgid "TMDb Helper Settings"
-msgstr ""
+msgstr "TMDb Helper 设置"
 
 msgctxt "#32156"
 msgid "Blur Background"
-msgstr ""
+msgstr "背景模糊"
 
 # Empty strings from 32157 to 32164
 msgctxt "#32165"
 msgid "Use Poster for Blur"
-msgstr ""
+msgstr "使用海报作为模糊背景"
 
 msgctxt "#32166"
 msgid "Customize Power Menu"
-msgstr ""
+msgstr "自定义电源菜单"
 
 msgctxt "#32167"
 msgid "Edit Library Data"
-msgstr ""
+msgstr "编辑媒体库数据"
 
 msgctxt "#32168"
 msgid "Select Search Categories"
-msgstr ""
+msgstr "选择搜索分类"
 
 msgctxt "#32169"
 msgid "Select Search Categories to Enable"
-msgstr ""
+msgstr "选择要启用的搜索分类"
 
 msgctxt "#32170"
 msgid "By Title"
-msgstr ""
+msgstr "按标题"
 
 msgctxt "#32171"
 msgid "With Genre"
-msgstr ""
+msgstr "按类型"
 
 msgctxt "#32172"
 msgid "From Year"
-msgstr ""
+msgstr "按年份"
 
 msgctxt "#32173"
 msgid "From Studio"
-msgstr ""
+msgstr "按制作公司"
 
 msgctxt "#32174"
 msgid "From Country"
-msgstr ""
+msgstr "按国家/地区"
 
 msgctxt "#32175"
 msgid "With Actor"
-msgstr ""
+msgstr "按演员"
 
 msgctxt "#32176"
 msgid "By Director"
-msgstr ""
+msgstr "按导演"
 
 msgctxt "#32177"
 msgid "By Writer"
-msgstr ""
+msgstr "按编剧"
 
 msgctxt "#32178"
 msgid "Artists by Name"
-msgstr ""
+msgstr "按姓名排序歌手"
 
 msgctxt "#32179"
 msgid "Albums by Title"
-msgstr ""
+msgstr "按标题排序专辑"
 
 msgctxt "#32180"
 msgid "Songs by Title"
-msgstr ""
+msgstr "按标题排序歌曲"
 
 msgctxt "#32181"
 msgid "By Artist"
-msgstr ""
+msgstr "按歌手"
 
 msgctxt "#32182"
 msgid "YouTube by Title"
-msgstr ""
+msgstr "按标题排序 YouTube 视频"
 
 msgctxt "#32183"
 msgid "Known for Character"
-msgstr ""
+msgstr "经典角色"
 
 msgctxt "#32184"
 msgid "Known for Department"
-msgstr ""
+msgstr "擅长领域"
 
 msgctxt "#32185"
 msgid "Known for Job"
-msgstr ""
+msgstr "职业代表作"
 
 msgctxt "#32186"
 msgid "Total Items in TMDb"
-msgstr ""
+msgstr "TMDb 项目总数"
 
 msgctxt "#32187"
 msgid "Total Movies in TMDb"
-msgstr ""
+msgstr "TMDb 电影总数"
 
 msgctxt "#32188"
 msgid "Total TV Shows in TMDb"
-msgstr "TMDb 中的电视剧"
+msgstr "TMDb 电视剧总数"
 
 msgctxt "#32189"
 msgid "Items in TMDb as Cast"
-msgstr ""
+msgstr "TMDb 参演作品"
 
 msgctxt "#32190"
 msgid "Movies in TMDb as Cast"
-msgstr ""
+msgstr "TMDb 参演电影"
 
 msgctxt "#32191"
 msgid "TV Shows in TMDb as Cast"
-msgstr "TMDb 中以演员身份参演的电视剧"
+msgstr "TMDb 参演电视剧"
 
 msgctxt "#32192"
 msgid "Items in TMDb as Crew"
-msgstr ""
+msgstr "TMDb 制作作品"
 
 msgctxt "#32193"
 msgid "Movies in TMDb as Crew"
-msgstr ""
+msgstr "TMDb 制作电影"
 
 msgctxt "#32194"
 msgid "TV Shows in TMDb as Crew"
-msgstr "TMDb 中以后期制作人员身份参与的电视剧"
+msgstr "TMDb 制作电视剧"
 
 msgctxt "#32195"
 msgid "Total Items in Local Database"
-msgstr ""
+msgstr "本地数据库项目总数"
 
 msgctxt "#32196"
 msgid "Movies in Local Database"
-msgstr ""
+msgstr "本地数据库电影"
 
 msgctxt "#32197"
 msgid "TV Shows in Local Database"
-msgstr "本地数据库中的电视剧"
+msgstr "本地数据库电视剧"
 
 msgctxt "#32198"
 msgid "Episodes in Local Database"
-msgstr ""
+msgstr "本地数据库剧集"
 
 msgctxt "#32199"
 msgid "Cast: Movies with"
-msgstr ""
+msgstr "演员：合作电影"
 
 msgctxt "#32200"
 msgid "Cast: TV Shows with"
-msgstr "演员阵容：包含…… 的电视剧"
+msgstr "演员：合作电视剧"
 
 msgctxt "#32201"
 msgid "Crew: Movies with"
-msgstr ""
+msgstr "制作团队：合作电影"
 
 msgctxt "#32202"
 msgid "Crew: TV Shows with"
-msgstr "幕后制作团队：包含…… 的电视剧"
+msgstr "制作团队：合作电视剧"
 
 msgctxt "#32203"
 msgid "Start at First Menu Item"
-msgstr ""
+msgstr "默认选中首个菜单项"
 
 msgctxt "#32204"
 msgid "Set Default View"
-msgstr ""
+msgstr "设置默认视图"
 
 msgctxt "#32205"
 msgid "Highlight Color"
-msgstr ""
+msgstr "高亮颜色"
 
 msgctxt "#32206"
 msgid "Horizontal Menu Glow Bars Tint"
-msgstr ""
+msgstr "水平菜单发光条色调"
 
 msgctxt "#32207"
 msgid "Horizontal Menu Main Bar Tint"
-msgstr ""
+msgstr "水平菜单主条色调"
 
 msgctxt "#32208"
 msgid "Vertical Menu/Submenu Background Tint"
-msgstr ""
+msgstr "垂直菜单/子菜单背景色调"
 
 msgctxt "#32209"
 msgid "Top Bar Tint"
-msgstr ""
+msgstr "顶部栏色调"
 
 msgctxt "#32210"
 msgid "Current Color Theme"
-msgstr ""
+msgstr "当前配色主题"
 
 msgctxt "#32211"
 msgid "Dialogs Background Tint"
-msgstr ""
+msgstr "对话框背景色调"
 
 msgctxt "#32212"
 msgid "Regular Text Color"
-msgstr ""
+msgstr "常规文字颜色"
 
 msgctxt "#32213"
 msgid "Focused Text Color"
-msgstr ""
+msgstr "聚焦文字颜色"
 
 msgctxt "#32214"
 msgid "Selected Text Color"
-msgstr ""
+msgstr "选中文字颜色"
 
 msgctxt "#32215"
 msgid "Shelves Background Tint"
-msgstr ""
+msgstr "内容货架背景色调"
 
 msgctxt "#32216"
 msgid "Use for All Tints"
-msgstr ""
+msgstr "统一应用所有色调"
 
 msgctxt "#32217"
 msgid "Keep Lists Focus Centered"
-msgstr ""
+msgstr "列表聚焦保持居中"
 
 msgctxt "#32218"
 msgid "Show Artist Logo In Music Visualization"
-msgstr ""
+msgstr "音乐可视化时显示歌手徽标"
 
 msgctxt "#32219"
 msgid "Show Logo In Media Views"
-msgstr ""
+msgstr "媒体视图中显示徽标"
 
 msgctxt "#32220"
 msgid "Show Logo In Home Window"
-msgstr ""
+msgstr "主界面中显示徽标"
 
 msgctxt "#32221"
 msgid "Media Views Background Tint"
-msgstr ""
+msgstr "媒体视图背景色调"
 
 msgctxt "#32222"
 msgid "Enable Label Scrolling in List Views"
-msgstr ""
+msgstr "列表视图启用标签滚动"
 
 msgctxt "#32223"
 msgid "Audio and Subtitle Info"
-msgstr ""
+msgstr "音轨与字幕信息"
 
 msgctxt "#32224"
 msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
-msgstr ""
+msgstr "字幕按钮打开视频 OSD 字幕设置"
 
 msgctxt "#32225"
 msgid "Disable Info Panel in List Views"
-msgstr ""
+msgstr "禁用列表视图信息面板"
 
 msgctxt "#32226"
 msgid "TMDb Helper - Next Aired Episodes"
-msgstr ""
+msgstr "TMDb Helper - 即将播出剧集"
 
 msgctxt "#32227"
 msgid "Embuary Info - Next Aired Episodes"
-msgstr "Embuary Info - 下一集播出"
+msgstr "Embuary Info - 即将播出剧集"
 
 msgctxt "#32228"
 msgid "Only Search in Local Library"
-msgstr ""
+msgstr "仅在本地媒体库搜索"
 
 msgctxt "#32229"
 msgid "Hide Channel Groups"
-msgstr ""
+msgstr "隐藏频道组"
 
 msgctxt "#32230"
 msgid "Select Displayed Ratings and Certification"
-msgstr ""
+msgstr "选择显示评分与分级"
 
 msgctxt "#32231"
 msgid "User Rating"
@@ -2837,79 +2837,79 @@ msgstr "评分"
 
 msgctxt "#32235"
 msgid "Certification"
-msgstr ""
+msgstr "分级"
 
 msgctxt "#32237"
 msgid "Up Next in"
-msgstr ""
+msgstr "即将播放"
 
 msgctxt "#32238"
 msgid "Continue Watching in"
-msgstr ""
+msgstr "继续观看"
 
 msgctxt "#32238"
 msgid "Next Episode in"
-msgstr ""
+msgstr "下一集"
 
 msgctxt "#32239"
 msgid "Hide Collection (Set) Marks"
-msgstr ""
+msgstr "隐藏合集标记"
 
 msgctxt "#32240"
 msgid "Disable Info Panel"
-msgstr ""
+msgstr "禁用信息面板"
 
 msgctxt "#32241"
 msgid "Alternate List Layout"
-msgstr ""
+msgstr "备选列表布局"
 
 msgctxt "#32242"
 msgid "Larger Image"
-msgstr ""
+msgstr "更大图像"
 
 msgctxt "#32243"
 msgid "Alternate List Views Layout"
-msgstr ""
+msgstr "备选列表视图布局"
 
 msgctxt "#32244"
 msgid "Albums by"
-msgstr ""
+msgstr "专辑"
 
 msgctxt "#32245"
 msgid "Panel 2"
-msgstr ""
+msgstr "面板 2"
 
 msgctxt "#32246"
 msgid "Big Panel 2"
-msgstr ""
+msgstr "大面板 2"
 
 msgctxt "#32247"
 msgid "Disable Panel 2 view"
-msgstr ""
+msgstr "禁用面板 2 视图"
 
 msgctxt "#32248"
 msgid "Disable Big Panel 2 view"
-msgstr ""
+msgstr "禁用大面板 2 视图"
 
 msgctxt "#32249"
 msgid "Enable Statistics Line"
-msgstr ""
+msgstr "启用统计信息栏"
 
 msgctxt "#32250"
 msgid "Show Statistics line on Shelf"
-msgstr ""
+msgstr "货架显示统计信息栏"
 
 msgctxt "#32251"
 msgid "Show Marks on Top Right"
-msgstr ""
+msgstr "右上角显示标记"
 
 msgctxt "#32252"
 msgid "Hide Unwatched Episodes Marks"
-msgstr ""
+msgstr "隐藏未观看剧集标记"
 
 msgctxt "#32253"
 msgid "Movies in library"
-msgstr ""
+msgstr "媒体库电影数"
 
 msgctxt "#32254"
 msgid "IMDb Top 250"
@@ -2917,19 +2917,19 @@ msgstr "IMDb Top 250"
 
 msgctxt "#32255"
 msgid "Missing Add-on"
-msgstr ""
+msgstr "插件缺失"
 
 msgctxt "#32256"
 msgid "TMDb Helper"
-msgstr ""
+msgstr "TMDb Helper"
 
 msgctxt "#32257"
 msgid "To enable this functionality, you need to install a very recent version of the add-on plugin.video.themoviedb.helper.[CR][CR]You can find it at https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
-msgstr "要启用此功能，你需要安装插件 plugin.video.themoviedb.helper 的最新版本。[CR][CR]你可在以下地址获取该插件：https://github.com/jurialmunkey/plugin.video.themoviedb.helper。"
+msgstr "要启用此功能，需安装最新版插件 plugin.video.themoviedb.helper。[CR][CR]可在此获取：https://github.com/jurialmunkey/plugin.video.themoviedb.helper。"
 
 msgctxt "#32258"
 msgid "Use Embuary Helper for Playlist Backgrounds"
-msgstr ""
+msgstr "播放列表背景使用 Embuary Helper"
 
 msgctxt "#32259"
 msgid "Backgrounds"
@@ -2941,87 +2941,87 @@ msgstr "未观看"
 
 msgctxt "#32261"
 msgid "Use Embuary Helper for Statistics Line"
-msgstr ""
+msgstr "统计信息栏使用 Embuary Helper"
 
 msgctxt "#32262"
 msgid "Use Embuary Helper for Backgrounds"
-msgstr ""
+msgstr "背景使用 Embuary Helper"
 
 msgctxt "#32263"
 msgid "Movie Collection Count"
-msgstr ""
+msgstr "电影合集数量"
 
 msgctxt "#32264"
 msgid "Show Fanart for Special Content"
-msgstr "显示特殊内容的背景图"
+msgstr "特殊内容显示背景图"
 
 msgctxt "#32265"
 msgid "Media Play Count"
-msgstr ""
+msgstr "媒体播放次数"
 
 msgctxt "#32266"
 msgid "Color Options"
-msgstr ""
+msgstr "颜色选项"
 
 msgctxt "#32267"
 msgid "Go To"
-msgstr ""
+msgstr "前往"
 
 msgctxt "#32268"
 msgid "Show Three Shelves Together"
-msgstr ""
+msgstr "同时显示三个货架"
 
 msgctxt "#32269"
 msgid "Configure Custom Shelf"
-msgstr ""
+msgstr "配置自定义货架"
 
 msgctxt "#32270"
 msgid "Shift Fanart View Focus to the Right"
-msgstr "将背景图视图焦点向右偏移"
+msgstr "背景图视图焦点右移"
 
 msgctxt "#32271"
 msgid "Mouse/Touch-Friendly Alphabet Strip"
-msgstr ""
+msgstr "适配鼠标/触摸的字母导航条"
 
 msgctxt "#32272"
 msgid "Use New Media Views Selector"
-msgstr ""
+msgstr "使用新版媒体视图选择器"
 
 msgctxt "#32273"
 msgid "Skin Variables"
-msgstr ""
+msgstr "皮肤变量"
 
 msgctxt "#32274"
 msgid "To enable this functionality, you need to install a very recent version of the add-on script.skinvariables.[CR][CR]You can find it at https://github.com/jurialmunkey/script.skinvariables."
-msgstr "要启用此功能，你需要安装插件 script.skinvariables 的最新版本。[CR][CR]你可在以下地址获取该插件：https://github.com/jurialmunkey/script.skinvariables。"
+msgstr "要启用此功能，需安装最新版插件 script.skinvariables。[CR][CR]可在此获取：https://github.com/jurialmunkey/script.skinvariables。"
 
 msgctxt "#32275"
 msgid "Configure Media Views"
-msgstr ""
+msgstr "配置媒体视图"
 
 msgctxt "#32277"
 msgid "Three Rows with Larger Icons"
-msgstr ""
+msgstr "三行大图标布局"
 
 msgctxt "#32278"
 msgid "Oscars Won"
-msgstr ""
+msgstr "奥斯卡获奖"
 
 msgctxt "#32279"
 msgid "Oscar Nominations"
-msgstr ""
+msgstr "奥斯卡提名"
 
 msgctxt "#32280"
 msgid "Golden Globes Won"
-msgstr ""
+msgstr "金球奖获奖"
 
 msgctxt "#32281"
 msgid "Golden Globe Nominations"
-msgstr ""
+msgstr "金球奖提名"
 
 msgctxt "#32282"
 msgid "Awards (Oscars/Golden Globes)"
-msgstr ""
+msgstr "奖项（奥斯卡/金球奖）"
 
 msgctxt "#32283"
 msgid "Video Genre Fanart"
@@ -3033,39 +3033,39 @@ msgstr "音乐类型背景图"
 
 msgctxt "#32285"
 msgid "Custom Path"
-msgstr ""
+msgstr "自定义路径"
 
 msgctxt "#32286"
 msgid "Reset Custom Path"
-msgstr ""
+msgstr "重置自定义路径"
 
 msgctxt "#32287"
 msgid "Image Pack"
-msgstr ""
+msgstr "图片包"
 
 msgctxt "#32288"
 msgid "Enable Multiple Images per Genre"
-msgstr ""
+msgstr "每个类型启用多张图片"
 
 msgctxt "#32289"
 msgid "Match Poster Colors"
-msgstr ""
+msgstr "匹配海报色调"
 
 msgctxt "#32290"
 msgid "Show Seek Bar at Bottom"
-msgstr ""
+msgstr "底部显示进度条"
 
 msgctxt "#32291"
 msgid "HDR/SDR and Bit Depth Flags"
-msgstr ""
+msgstr "HDR/SDR 与色深标识"
 
 msgctxt "#32292"
 msgid "File Name Instead of Title"
-msgstr ""
+msgstr "显示文件名而非标题"
 
 msgctxt "#32293"
 msgid "Extra Fanart on panel"
-msgstr "面板上显示额外背景图"
+msgstr "面板显示额外背景图"
 
 msgctxt "#32294"
 msgid "Ends at"
@@ -3077,19 +3077,19 @@ msgstr "网飞风格"
 
 msgctxt "#32296"
 msgid "Show Logo"
-msgstr ""
+msgstr "显示徽标"
 
 msgctxt "#32297"
 msgid "Use Landscape"
-msgstr ""
+msgstr "使用横版封面"
 
 msgctxt "#32298"
 msgid "Dim Level for Unfocused"
-msgstr ""
+msgstr "非聚焦项透明度"
 
 msgctxt "#32299"
 msgid "Select Dim Level"
-msgstr ""
+msgstr "选择透明度"
 
 msgctxt "#32300"
 msgid "Now Playing"
@@ -3097,19 +3097,19 @@ msgstr "正在播放"
 
 msgctxt "#32301"
 msgid "Hide Title Bar Now Playing"
-msgstr ""
+msgstr "隐藏正在播放标题栏"
 
 msgctxt "#32302"
 msgid "Select Now Playing Video Disc Art Fallback"
-msgstr ""
+msgstr "正在播放视频光盘封面备选"
 
 msgctxt "#32303"
 msgid "Select Now Playing Music Disc Art Fallback"
-msgstr ""
+msgstr "正在播放音乐光盘封面备选"
 
 msgctxt "#32304"
 msgid "Blu-Ray"
-msgstr ""
+msgstr "蓝光"
 
 msgctxt "#32305"
 msgid "Vinyl"
@@ -3121,15 +3121,15 @@ msgstr "无"
 
 msgctxt "#32307"
 msgid "White"
-msgstr ""
+msgstr "白色"
 
 msgctxt "#32308"
 msgid "Blue"
-msgstr "蓝"
+msgstr "蓝色"
 
 msgctxt "#32309"
 msgid "Golden"
-msgstr ""
+msgstr "金色"
 
 msgctxt "#32310"
 msgid "Green"
@@ -3137,111 +3137,111 @@ msgstr "绿色"
 
 msgctxt "#32311"
 msgid "Grey"
-msgstr "灰"
+msgstr "灰色"
 
 msgctxt "#32312"
 msgid "Orange"
-msgstr "橙"
+msgstr "橙色"
 
 msgctxt "#32313"
 msgid "Purple"
-msgstr "紫"
+msgstr "紫色"
 
 msgctxt "#32314"
 msgid "Red"
-msgstr "红"
+msgstr "红色"
 
 msgctxt "#32315"
 msgid "Select Now Playing Info for Movies/Episodes"
-msgstr ""
+msgstr "选择电影/剧集正在播放信息"
 
 msgctxt "#32316"
 msgid "Select Now Playing Info for other Videos"
-msgstr ""
+msgstr "选择其他视频正在播放信息"
 
 msgctxt "#32317"
 msgid "Select Now Playing Info for Music"
-msgstr ""
+msgstr "选择音乐正在播放信息"
 
 msgctxt "#32318"
 msgid "Show Video in the Background"
-msgstr ""
+msgstr "背景显示视频"
 
 msgctxt "#32319"
 msgid "Show Music Visualization in the Background"
-msgstr ""
+msgstr "背景显示音乐可视化"
 
 msgctxt "#32320"
 msgid "Show Extra Art for Video"
-msgstr ""
+msgstr "视频显示额外封面"
 
 msgctxt "#32321"
 msgid "Show Extra Art for Music"
-msgstr ""
+msgstr "音乐显示额外封面"
 
 msgctxt "#32322"
 msgid "Show Logo"
-msgstr ""
+msgstr "显示徽标"
 
 msgctxt "#32323"
 msgid "Show ClearArt"
-msgstr ""
+msgstr "显示透明徽标"
 
 msgctxt "#32324"
 msgid "Show Disc Art"
-msgstr ""
+msgstr "显示光盘封面"
 
 msgctxt "#32325"
 msgid "Select Disc Art Fallback for Video"
-msgstr ""
+msgstr "选择视频光盘封面备选"
 
 msgctxt "#32326"
 msgid "Select Disc Art Fallback for Music"
-msgstr ""
+msgstr "选择音乐光盘封面备选"
 
 msgctxt "#32327"
 msgid "Disable Now Playing"
-msgstr ""
+msgstr "禁用正在播放"
 
 msgctxt "#32328"
 msgid "Internet Stream"
-msgstr ""
+msgstr "网络串流"
 
 msgctxt "#32329"
 msgid "Special"
-msgstr "特别"
+msgstr "特别篇"
 
 msgctxt "#32330"
 msgid "Next Tracks"
-msgstr ""
+msgstr "下一首曲目"
 
 msgctxt "#32331"
 msgid "Album Review"
-msgstr ""
+msgstr "专辑评论"
 
 msgctxt "#32332"
 msgid "Artist Bio"
-msgstr ""
+msgstr "歌手简介"
 
 msgctxt "#32333"
 msgid "Hide Shelves when Now Playing is Visible"
-msgstr ""
+msgstr "显示正在播放时隐藏货架"
 
 msgctxt "#32334"
 msgid "Enlarge Video Preview when Idle"
-msgstr ""
+msgstr "闲置时放大视频预览"
 
 msgctxt "#32335"
 msgid "Select Extra Art to Show in Applicable Views"
-msgstr ""
+msgstr "选择对应视图显示的额外封面"
 
 msgctxt "#32336"
 msgid "Full Screen/OSD"
-msgstr ""
+msgstr "全屏/播放控制"
 
 msgctxt "#32337"
 msgid "Select Interval for Auto Closing Video OSD"
-msgstr ""
+msgstr "选择播放控制自动关闭间隔"
 
 msgctxt "#32338"
 msgid "Current Color"
@@ -3249,7 +3249,7 @@ msgstr "当前颜色"
 
 msgctxt "#32339"
 msgid "Value"
-msgstr ""
+msgstr "数值"
 
 msgctxt "#32340"
 msgid "Second"
@@ -3257,67 +3257,67 @@ msgstr "秒"
 
 msgctxt "#32341"
 msgid "Use Mouse-Friendly Method (script.skin.info.service v1.0.8 and higher)"
-msgstr ""
+msgstr "使用鼠标友好模式（script.skin.info.service v1.0.8及以上）"
 
 msgctxt "#32342"
 msgid "Auto Close Video OSD"
-msgstr ""
+msgstr "自动关闭播放控制"
 
 msgctxt "#32343"
 msgid "Default Font Size"
-msgstr ""
+msgstr "默认字体大小"
 
 msgctxt "#32344"
 msgid "Use fanart.jpg if present in folder or parent folder"
-msgstr "若文件夹或上级文件夹中存在 fanart.jpg，则使用该图片作为背景"
+msgstr "文件夹或上级文件夹存在 fanart.jpg 时优先使用"
 
 msgctxt "#32345"
 msgid "Use Clear Art instead of Logo"
-msgstr ""
+msgstr "使用透明徽标替代普通徽标"
 
 msgctxt "#32346"
 msgid "Single Logo"
-msgstr ""
+msgstr "单个徽标"
 
 msgctxt "#32347"
 msgid "Fade out Unfocused"
-msgstr ""
+msgstr "非聚焦项淡出"
 
 msgctxt "#32348"
 msgid "Show Overlay"
-msgstr ""
+msgstr "显示覆盖层"
 
 msgctxt "#32349"
 msgid "Show Smaller Favourite Icons"
-msgstr ""
+msgstr "显示更小收藏图标"
 
 msgctxt "#32350"
 msgid "Show Three Rows"
-msgstr ""
+msgstr "显示三行"
 
 msgctxt "#32351"
 msgid "Show Four Rows"
-msgstr ""
+msgstr "显示四行"
 
 msgctxt "#32352"
 msgid "Enable Use of TMDb Helper"
-msgstr ""
+msgstr "启用 TMDb Helper"
 
 msgctxt "#32353"
 msgid "Enable Use of Embuary Helper"
-msgstr ""
+msgstr "启用 Embuary Helper"
 
 msgctxt "#32354"
 msgid "Hide Seek Bar when Paused"
-msgstr ""
+msgstr "暂停时隐藏进度条"
 
 msgctxt "#32355"
 msgid "Icon Only Menu"
-msgstr ""
+msgstr "仅图标菜单"
 
 msgctxt "#32356"
 msgid "Show Menu Item Name"
-msgstr ""
+msgstr "显示菜单项名称"
 
 msgctxt "#32357"
 msgid "Enable Video Lyrics"
@@ -3325,63 +3325,63 @@ msgstr "启用视频歌词"
 
 msgctxt "#32358"
 msgid "Play Whole Albums from Shelves"
-msgstr ""
+msgstr "从货架播放整张专辑"
 
 msgctxt "#32359"
 msgid "Show Item Name in Top Bar"
-msgstr ""
+msgstr "顶部栏显示项目名称"
 
 msgctxt "#32360"
 msgid "Animate backgrounds using Ken Burns effect"
-msgstr ""
+msgstr "使用肯·伯恩斯效果动画背景"
 
 msgctxt "#32361"
 msgid "Single Column"
-msgstr ""
+msgstr "单列"
 
 msgctxt "#32362"
 msgid "Disable Now Playing Fanart"
-msgstr "禁用正在播放项的背景图"
+msgstr "禁用正在播放背景图"
 
 msgctxt "#32363"
 msgid "Show Media Info with Seek Bar"
-msgstr ""
+msgstr "进度条同步显示媒体信息"
 
 msgctxt "#32364"
 msgid "Show Seek Bar when Starting Video Playback"
-msgstr ""
+msgstr "开始播放时显示进度条"
 
 msgctxt "#32365"
 msgid "Time to Show Seek Bar"
-msgstr ""
+msgstr "进度条显示时长"
 
 msgctxt "#32366"
 msgid "Hide Title Bar in Main Window"
-msgstr ""
+msgstr "主界面隐藏标题栏"
 
 msgctxt "#32367"
 msgid "Hide fallback image if no thumb in OSD"
-msgstr ""
+msgstr "播放控制无缩略图时隐藏备选图"
 
 msgctxt "#32368"
 msgid "Dim Background and Album Cover when Showing Lyrics"
-msgstr ""
+msgstr "显示歌词时背景与专辑封面变暗"
 
 msgctxt "#32369"
 msgid "Use Alternate Favourites Layout"
-msgstr ""
+msgstr "使用备选收藏布局"
 
 msgctxt "#32370"
 msgid "Align Menu Item Text to the Left"
-msgstr ""
+msgstr "菜单项文字左对齐"
 
 msgctxt "#32371"
 msgid "Info Button Opens Video Info Dialog"
-msgstr ""
+msgstr "信息按钮打开视频信息对话框"
 
 msgctxt "#32372"
 msgid "Pause Media While Info Dialog is Open"
-msgstr ""
+msgstr "信息对话框打开时暂停媒体"
 
 msgctxt "#32373"
 msgid "End Time"
@@ -3389,71 +3389,71 @@ msgstr "结束时间"
 
 msgctxt "#32374"
 msgid "Show Dark Background Behind Shortcuts"
-msgstr ""
+msgstr "快捷方式后显示深色背景"
 
 msgctxt "#32375"
 msgid "Use Artist Slideshow for Audio Fanart"
-msgstr "使用歌手幻灯片作为音频背景图"
+msgstr "音乐背景使用歌手幻灯片"
 
 msgctxt "#32376"
 msgid "Disable Lyrics"
-msgstr ""
+msgstr "禁用歌词"
 
 msgctxt "#32377"
 msgid "Activate Lyrics"
-msgstr ""
+msgstr "启用歌词"
 
 msgctxt "#32378"
 msgid "Use Color Flags"
-msgstr ""
+msgstr "使用彩色标识"
 
 msgctxt "#32379"
 msgid "Show Submenu Only when Focused"
-msgstr ""
+msgstr "仅聚焦时显示子菜单"
 
 msgctxt "#32380"
 msgid "Movies with Plot containing"
-msgstr ""
+msgstr "剧情包含关键词电影"
 
 msgctxt "#32381"
 msgid "TV Shows with Plot containing"
-msgstr "剧情包含…… 的电视剧"
+msgstr "剧情包含关键词电视剧"
 
 msgctxt "#32382"
 msgid "Episodes with Plot containing"
-msgstr ""
+msgstr "剧情包含关键词剧集"
 
 msgctxt "#32383"
 msgid "With Plot Containing"
-msgstr ""
+msgstr "剧情包含"
 
 msgctxt "#32384"
 msgid "Show Title in Footer"
-msgstr ""
+msgstr "底部显示标题"
 
 msgctxt "#32385"
 msgid "Hide Seek Bar when Forwarding or Rewinding"
-msgstr ""
+msgstr "快进快退时隐藏进度条"
 
 msgctxt "#32386"
 msgid "Enable Touchscreen Devices Support"
-msgstr ""
+msgstr "启用触摸屏支持"
 
 msgctxt "#32387"
 msgid "Show Rating Overlay"
-msgstr ""
+msgstr "显示评分覆盖层"
 
 msgctxt "#32388"
 msgid "Use User Rating for Overlay"
-msgstr ""
+msgstr "覆盖层使用用户评分"
 
 msgctxt "#32390"
 msgid "Select Items to Show in Views"
-msgstr ""
+msgstr "选择视图显示项目"
 
 msgctxt "#32391"
 msgid "Items to Show in Views"
-msgstr ""
+msgstr "视图显示项目"
 
 msgctxt "#32392"
 msgid "Play Random"
@@ -3461,27 +3461,27 @@ msgstr "随机播放"
 
 msgctxt "#32393"
 msgid "List Views Options"
-msgstr ""
+msgstr "列表视图选项"
 
 msgctxt "#32394"
 msgid "Marks and Overlays"
-msgstr ""
+msgstr "标记与覆盖层"
 
 msgctxt "#32395"
 msgid "Select View Types to Enable"
-msgstr ""
+msgstr "选择要启用的视图类型"
 
 msgctxt "#32396"
 msgid "View Types to Enable"
-msgstr ""
+msgstr "启用的视图类型"
 
 msgctxt "#32398"
 msgid "Show Poster"
-msgstr ""
+msgstr "显示海报"
 
 msgctxt "#32399"
 msgid "Text"
-msgstr ""
+msgstr "文字"
 
 msgctxt "#32400"
 msgid "Banner"
@@ -3489,175 +3489,175 @@ msgstr "横幅"
 
 msgctxt "#32401"
 msgid "List Item Type"
-msgstr ""
+msgstr "列表项类型"
 
 msgctxt "#32402"
 msgid "Poster/Thumb"
-msgstr ""
+msgstr "海报/缩略图"
 
 msgctxt "#32403"
 msgid "OSD/Full Screen Art"
-msgstr ""
+msgstr "播放控制/全屏封面"
 
 msgctxt "#32404"
 msgid "N/A"
-msgstr "不可用"
+msgstr "不适用"
 
 msgctxt "#32405"
 msgid "Show Info Popup"
-msgstr ""
+msgstr "显示信息弹窗"
 
 msgctxt "#32406"
 msgid "Popup Delay"
-msgstr ""
+msgstr "弹窗延迟"
 
 msgctxt "#32407"
 msgid "Show Floor"
-msgstr ""
+msgstr "显示底部投影"
 
 msgctxt "#32408"
 msgid "Fixed List"
-msgstr ""
+msgstr "固定列表"
 
 msgctxt "#32409"
 msgid "Centered Static Menu (less than 8 items)"
-msgstr ""
+msgstr "居中静态菜单（少于8项）"
 
 msgctxt "#32410"
 msgid "Compact OSD"
-msgstr ""
+msgstr "精简播放控制"
 
 msgctxt "#32411"
 msgid "Ultra Compact OSD"
-msgstr ""
+msgstr "超精简播放控制"
 
 msgctxt "#32412"
 msgid "Alternate OSD Button Highlighting"
-msgstr ""
+msgstr "播放控制按钮备选高亮"
 
 msgctxt "#32413"
 msgid "Enabled"
-msgstr "开启"
+msgstr "已启用"
 
 msgctxt "#32414"
 msgid "Disabled"
-msgstr ""
+msgstr "已禁用"
 
 msgctxt "#32415"
 msgid "Auto Play Trailer (Local Trailer Only)"
-msgstr ""
+msgstr "自动播放预告片（仅本地）"
 
 msgctxt "#32416"
 msgid "Auto Play Trailer Delay"
-msgstr ""
+msgstr "自动播放预告片延迟"
 
 msgctxt "#32417"
 msgid "Fanart Title Button Opens Info Dialog"
-msgstr "点击背景图标题按钮打开信息对话框"
+msgstr "背景图标题按钮打开信息对话框"
 
 msgctxt "#32418"
 msgid "Single Image"
-msgstr "单图像"
+msgstr "单张图片"
 
 msgctxt "#32419"
 msgid "Multiple Images"
-msgstr ""
+msgstr "多张图片"
 
 msgctxt "#32420"
 msgid "Video/Playlist"
-msgstr ""
+msgstr "视频/播放列表"
 
 msgctxt "#32421"
 msgid "Startup Background"
-msgstr ""
+msgstr "启动背景"
 
 msgctxt "#32422"
 msgid "Hide Menu when Shelves are Focused"
-msgstr ""
+msgstr "货架聚焦时隐藏菜单"
 
 msgctxt "#32423"
 msgid "Use Disc Art instead of Cover"
-msgstr ""
+msgstr "使用光盘封面替代普通封面"
 
 msgctxt "#32424"
 msgid "Auto Play Trailer from Shelf Items"
-msgstr ""
+msgstr "货架项目自动播放预告片"
 
 msgctxt "#32425"
 msgid "Shelf Trailer Delay"
-msgstr ""
+msgstr "货架预告片延迟"
 
 msgctxt "#32426"
 msgid "Slide Out Media Items While Trailer Playing"
-msgstr ""
+msgstr "播放预告片时媒体项滑出"
 
 msgctxt "#32427"
 msgid "Hide PVR Channel Preview"
-msgstr ""
+msgstr "隐藏 PVR 频道预览"
 
 msgctxt "#32428"
 msgid "Art Downloader: Select Artwork"
-msgstr ""
+msgstr "封面下载器：选择封面"
 
 msgctxt "#32429"
 msgid "Art Downloader: All Artwork"
-msgstr ""
+msgstr "封面下载器：全部封面"
 
 msgctxt "#32450"
 msgid "Show Artwork Downloader items in Context Menu"
-msgstr ""
+msgstr "右键菜单显示封面下载器选项"
 
 msgctxt "#32451"
 msgid "Movies with Tag"
-msgstr ""
+msgstr "按标签分类电影"
 
 msgctxt "#32452"
 msgid "Select a Tag"
-msgstr ""
+msgstr "选择标签"
 
 msgctxt "#32453"
 msgid "With Tag"
-msgstr ""
+msgstr "按标签"
 
 msgctxt "#32454"
 msgid "Always Use TV Show Poster for Episodes"
-msgstr "剧集始终使用电视剧主海报"
+msgstr "剧集统一使用电视剧主海报"
 
 msgctxt "#32455"
 msgid "Open ExtendedInfo for Info Dialogs"
-msgstr ""
+msgstr "信息对话框打开扩展信息"
 
 msgctxt "#32456"
 msgid "Cert"
-msgstr ""
+msgstr "分级"
 
 msgctxt "#32457"
 msgid "Show Episodes List button"
-msgstr ""
+msgstr "显示剧集列表按钮"
 
 msgctxt "#32458"
 msgid "Include Seasons in Episodes List popup"
-msgstr ""
+msgstr "剧集列表弹窗包含季数"
 
 msgctxt "#32459"
 msgid "Next Aired"
-msgstr "接下来放送"
+msgstr "即将播出"
 
 msgctxt "#32460"
 msgid "Enable Direct Seeking in Full Screen Info"
-msgstr ""
+msgstr "全屏信息启用直接跳转"
 
 msgctxt "#32461"
 msgid "Show Disc above Poster"
-msgstr ""
+msgstr "海报上方显示碟片"
 
 msgctxt "#32462"
 msgid "Hide Disc over Set Poster"
-msgstr ""
+msgstr "合集海报隐藏碟片"
 
 msgctxt "#32463"
 msgid "Play trailer in a window"
-msgstr ""
+msgstr "窗口化播放预告片"
 
 msgctxt "#32464"
 msgid "Search Trailer"
@@ -3665,120 +3665,120 @@ msgstr "搜索预告片"
 
 msgctxt "#32465"
 msgid "Search for Trailers with IMDb Trailers Addon"
-msgstr ""
+msgstr "使用 IMDb 预告片插件搜索"
 
 msgctxt "#32466"
 msgid "Fade out Non-focused Menu Items"
-msgstr ""
+msgstr "非聚焦菜单项淡出"
 
 msgctxt "#32467"
 msgid "Cloudiness"
-msgstr ""
+msgstr "云量"
 
 msgctxt "#32468"
 msgid "Probability of Precipitation"
-msgstr ""
+msgstr "降水概率"
 
 msgctxt "#32469"
 msgid "Intro Video Duration"
-msgstr ""
+msgstr "开场视频时长"
 
 msgctxt "#32470"
 msgid "PVR Timeshift Buffer Color"
-msgstr ""
+msgstr "PVR 时移缓冲区颜色"
 
 msgctxt "#32471"
 msgid "Use Main Menu item Background for Sub Windows"
-msgstr ""
+msgstr "子窗口使用主菜单项背景"
 
 msgctxt "#32472"
 msgid "Teletext Button Opens EPG"
-msgstr ""
+msgstr "图文电视按钮打开节目指南"
 
 msgctxt "#32473"
 msgid "EPG Icon"
-msgstr ""
+msgstr "节目指南图标"
 
 msgctxt "#32474"
 msgid "Channel Logo"
-msgstr ""
+msgstr "频道台标"
 
 msgctxt "#32475"
 msgid "Always Show Information Panel"
-msgstr ""
+msgstr "始终显示信息面板"
 
 msgctxt "#32476"
 msgid "Use Custom Search for Video Library"
-msgstr ""
+msgstr "视频库使用自定义搜索"
 
 msgctxt "#32477"
 msgid "Use Custom Search for Music Library"
-msgstr ""
+msgstr "音乐库使用自定义搜索"
 
 msgctxt "#32478"
 msgid "Current Programme Progress:"
-msgstr ""
+msgstr "当前节目进度："
 
 msgctxt "#32479"
 msgid "Also Show Seconds"
-msgstr ""
+msgstr "同时显示秒数"
 
 msgctxt "#32480"
 msgid "kbps"
-msgstr ""
+msgstr "千比特/秒"
 
 msgctxt "#32481"
 msgid "Remember Focused Control in Home Window"
-msgstr ""
+msgstr "记住主界面聚焦控件"
 
 msgctxt "#32482"
 msgid "Use Item Thumb and not Addon Fanart for YouTube Shelves"
-msgstr "YouTube 货架使用项目缩略图，而非插件背景图"
+msgstr "YouTube 货架使用项目缩略图而非插件背景"
 
 msgctxt "#32483"
 msgid "Allow Changing View Types in PVR Channels Window"
-msgstr ""
+msgstr "允许 PVR 频道窗口切换视图"
 
 msgctxt "#32484"
 msgid "Update Library"
-msgstr "更新库"
+msgstr "更新媒体库"
 
 msgctxt "#32485"
 msgid "Stop Scanning"
-msgstr ""
+msgstr "停止扫描"
 
 msgctxt "#32486"
 msgid "More Info"
-msgstr ""
+msgstr "更多信息"
 
 msgctxt "#32487"
 msgid "Play Trailer Windowed"
-msgstr ""
+msgstr "窗口播放预告片"
 
 msgctxt "#32488"
 msgid "Last Played Date"
-msgstr ""
+msgstr "上次播放日期"
 
 msgctxt "#32489"
 msgid "Horizontal Icon Layout"
-msgstr ""
+msgstr "水平图标布局"
 
 msgctxt "#32490"
 msgid "Show Menu Item Label"
-msgstr ""
+msgstr "显示菜单项标签"
 
 msgctxt "#32491"
 msgid "Always Show Set Movie List"
-msgstr ""
+msgstr "始终显示电影合集列表"
 
 msgctxt "#32492"
 msgid "Use Tall List Layout"
-msgstr ""
+msgstr "使用长列表布局"
 
 msgctxt "#32493"
 msgid "Show More Items in List"
-msgstr ""
+msgstr "列表显示更多项目"
 
 msgctxt "#32494"
 msgid "Hide Overlay Label in Icon/Panel Views"
-msgstr ""
+msgstr "在图标/面板视图中隐藏覆盖标签"
