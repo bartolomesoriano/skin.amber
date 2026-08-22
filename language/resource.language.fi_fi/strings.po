@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-06-11 02:16+0000\n"
+"PO-Revision-Date: 2026-08-22 05:16+0000\n"
 "Last-Translator: Oskari Lavinto <olavinto@protonmail.com>\n"
 "Language-Team: Finnish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/fi_fi/>\n"
 "Language: fi_fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.6.1\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -267,7 +267,7 @@ msgstr "Kuunnelluimmat kappaleet"
 
 msgctxt "#31077"
 msgid "Random artists"
-msgstr "Satunnaiset esittäjät"
+msgstr "Satunnaiset artistit"
 
 msgctxt "#31078"
 msgid "Random music videos"
@@ -307,7 +307,7 @@ msgstr "Piilota satunnaiset levyt"
 
 msgctxt "#31087"
 msgid "Hide Random Artists"
-msgstr "Piilota satunnaiset esittäjät"
+msgstr "Piilota satunnaiset artistit"
 
 msgctxt "#31088"
 msgid "Hide In Progress"
@@ -859,7 +859,7 @@ msgstr "100 parasta albumia"
 
 msgctxt "#31451"
 msgid "Random Artists"
-msgstr "Satunnaiset esittäjät"
+msgstr "Satunnaiset artistit"
 
 msgctxt "#31452"
 msgid "Music Nodes"
@@ -919,7 +919,7 @@ msgstr "Soitetuimmat albumit"
 
 msgctxt "#31466"
 msgid "Recently Added Artists"
-msgstr "Viimeksi lisätyt esittäjät"
+msgstr "Viimeksi lisätyt artistit"
 
 msgctxt "#31467"
 msgid "Recently Added Songs"
@@ -1419,7 +1419,7 @@ msgstr "Musiikkivideosolmun tilastot"
 
 msgctxt "#31594"
 msgid "Artist Node Statistics"
-msgstr "Esittäjäsolmun tilastot"
+msgstr "Artistisolmun tilastot"
 
 msgctxt "#31595"
 msgid "Album Node Statistics"
@@ -2062,7 +2062,7 @@ msgstr "Elokuvat maasta"
 
 msgctxt "#32036"
 msgid "Music Videos by Artist"
-msgstr "Musiikkivideot esittäjältä"
+msgstr "Musiikkivideot artistilta"
 
 msgctxt "#32037"
 msgid "YouTube videos about"
@@ -2596,7 +2596,7 @@ msgstr "Kirjoittanut"
 
 msgctxt "#32178"
 msgid "Artists by Name"
-msgstr "Esittäjät nimen mukaan"
+msgstr "Artistit nimen mukaan"
 
 msgctxt "#32179"
 msgid "Albums by Title"
@@ -2608,7 +2608,7 @@ msgstr "Kappaleet nimen mukaan"
 
 msgctxt "#32181"
 msgid "By Artist"
-msgstr "Esittäjältä"
+msgstr "Artistilta"
 
 msgctxt "#32182"
 msgid "YouTube by Title"
@@ -3200,7 +3200,7 @@ msgstr "Albumi katselmus"
 
 msgctxt "#32332"
 msgid "Artist Bio"
-msgstr "Esittäjän bio"
+msgstr "Artistin biografia"
 
 msgctxt "#32333"
 msgid "Hide Shelves when Now Playing is Visible"
