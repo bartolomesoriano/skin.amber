@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Skins\n"
 "Report-Msgid-Bugs-To: translations@kodi.tv\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-01-10 20:13+0000\n"
+"PO-Revision-Date: 2026-09-24 22:43+0000\n"
 "Last-Translator: Daniel Nylander <daniel@danielnylander.se>\n"
 "Language-Team: Swedish <https://kodi.weblate.cloud/projects/kodi-add-ons-skins/skin-amber/sv_se/>\n"
 "Language: sv_se\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 msgctxt "Addon Summary"
 msgid "No bloatware, just your media with an easy to navigate interface"
@@ -145,10 +145,9 @@ msgctxt "#31029"
 msgid "Remaining"
 msgstr "Återstående"
 
-#, fuzzy
 msgctxt "#31030"
 msgid "Settings entry point"
-msgstr "Ingångspunkt för inställningar"
+msgstr "Startpunkt för inställningar"
 
 msgctxt "#31031"
 msgid "Home menu and Quit menu"
@@ -1180,11 +1179,11 @@ msgstr "Populära personer"
 
 msgctxt "#31530"
 msgid "Trending Today"
-msgstr "Trendar idag"
+msgstr "Populärt idag"
 
 msgctxt "#31531"
 msgid "Trending this Week"
-msgstr "Trendar denna vecka"
+msgstr "Populärt denna vecka"
 
 msgctxt "#31532"
 msgid "Highest Revenue"
@@ -1232,7 +1231,7 @@ msgstr "Trakt - Rekommenderade"
 
 msgctxt "#31543"
 msgid "Trakt - Trending"
-msgstr "Trakt - Trendar"
+msgstr "Trakt - Populärt"
 
 msgctxt "#31544"
 msgid "Trakt - Popular"
@@ -1292,7 +1291,7 @@ msgstr "Embuary Info - Filmer som spelas nu"
 
 msgctxt "#31558"
 msgid "Embuary Info - Movies Trending This Week"
-msgstr "Embuary Info - Filmer som trendar den här veckan"
+msgstr "Embuary Info - Populära filmer den här veckan"
 
 msgctxt "#31559"
 msgid "Embuary Info - Popular TV Shows"
@@ -1312,7 +1311,7 @@ msgstr "Embuary Info - TV-serier som sänds för närvarande"
 
 msgctxt "#31563"
 msgid "Embuary Info - TV Shows Trending This Week"
-msgstr "Embuary Info - TV-serier som trendar den här veckan"
+msgstr "Embuary Info - Populära TV-serier den här veckan"
 
 msgctxt "#31564"
 msgid "TMDb Helper - Next Aired: All Items"
@@ -1474,10 +1473,9 @@ msgctxt "#31603"
 msgid "Number of Playlist/Node Fanarts to use as Background"
 msgstr "Antal spellistor/nod-fanart att använda som bakgrund"
 
-#, fuzzy
 msgctxt "#31604"
 msgid "Playlist/Node Fanart Background Limit"
-msgstr "Playlist/Node Fanart Bakgrundsbegränsning"
+msgstr "Gräns för fanartbakgrund för spellista/nod"
 
 msgctxt "#31605"
 msgid "Custom Shelf"
@@ -1651,10 +1649,9 @@ msgctxt "#31647"
 msgid "Enable Choosing Default Menu Item"
 msgstr "Aktivera val av standardmenyalternativ"
 
-#, fuzzy
 msgctxt "#31648"
 msgid "Right List"
-msgstr "Rätt lista"
+msgstr "Högra listan"
 
 msgctxt "#31649"
 msgid "Decades"
@@ -1664,15 +1661,13 @@ msgctxt "#31650"
 msgid "Show Information Popup"
 msgstr "Visa popup-fönster för information"
 
-#, fuzzy
 msgctxt "#31651"
 msgid "Center shelf items on screen"
-msgstr "Centrera hyllans objekt på skärmen"
+msgstr "Centrera hyllobjekt på skärmen"
 
-#, fuzzy
 msgctxt "#31652"
 msgid "Select Information Popup Delay (in seconds)"
-msgstr "Fördröjning av popup-fönster för val av information (i sekunder)"
+msgstr "Välj fördröjning för informationspopupen (i sekunder)"
 
 msgctxt "#31653"
 msgid "Information Popup Delay"
@@ -1757,17 +1752,15 @@ msgctxt "#31951"
 msgid "Use default background for sub windows"
 msgstr "Använd standardbakgrund för underfönster"
 
-#, fuzzy
 msgctxt "#31952"
 msgid "Show Artist Fanart background with Music Visualisation"
-msgstr "Visa Artist Fanart bakgrund med Musik Visualisering"
+msgstr "Visa artistfanart som bakgrund med musikvisualisering"
 
 msgctxt "#31953"
 msgid "Show Fanart background on sub windows"
 msgstr "Visa Fanart-bakgrund på underfönster"
 
 #. "S" Season
-#, fuzzy
 msgctxt "#31954"
 msgid "S"
 msgstr "S"
@@ -1840,17 +1833,15 @@ msgctxt "#31970"
 msgid "Push down for Gallery"
 msgstr "Tryck ner för galleri"
 
-#, fuzzy
 msgctxt "#31971"
 msgid "Show Fanart background on Home window"
-msgstr "Visa Fanart-bakgrund i fönstret Hem"
+msgstr "Visa fanartbakgrund i startfönstret"
 
 msgctxt "#31972"
 msgid "Hide in progress marks"
 msgstr "Dölj förloppsmarkeringar"
 
 #. "E" Episode
-#, fuzzy
 msgctxt "#31973"
 msgid "E"
 msgstr "E"
@@ -1887,10 +1878,9 @@ msgctxt "#31981"
 msgid "Hide watched marks"
 msgstr "Dölj bevakade markeringar"
 
-#, fuzzy
 msgctxt "#31982"
 msgid "Shelf items populate more slowly on some systems. By default, skin waits for them to be ready and presents Home screen afterwards.[CR][CR]This option skips this step and presents Home page immediately. Shelf items will appear with a delay, depending on a speed of your system."
-msgstr "Hyllobjekt fylls på långsammare på vissa system. Som standard väntar skin på att de ska bli klara och visar startsidan efteråt.[CR][CR]Det här alternativet hoppar över det här steget och visar startsidan omedelbart. Hyllobjekten visas med en fördröjning, beroende på systemets hastighet."
+msgstr "Hyllobjekt laddas långsammare på vissa system. Som standard väntar skalet tills de är klara och visar sedan startsidan.[CR][CR]Det här alternativet hoppar över detta steg och visar startsidan direkt. Hyllobjekten visas med en fördröjning som beror på systemets hastighet."
 
 msgctxt "#31983"
 msgid "Choose from menu"
@@ -1925,10 +1915,9 @@ msgctxt "#31991"
 msgid "Show video player/music visualization in background"
 msgstr "Visa videospelare/musikvisualisering i bakgrunden"
 
-#, fuzzy
 msgctxt "#31992"
 msgid "Banner (wide) thumbs"
-msgstr "Banner (bred) tummar"
+msgstr "Banderollminiatyrbilder (breda)"
 
 msgctxt "#31993"
 msgid "Not used - click to customize"
@@ -1950,10 +1939,9 @@ msgctxt "#31997"
 msgid "Hide channel logos in PVR List/Timeline"
 msgstr "Dölj kanallogotyper i PVR-lista/tidslinje"
 
-#, fuzzy
 msgctxt "#31998"
 msgid "Show lock/master mode status in title bar"
-msgstr "Visa status för lås-/masterläge i titelfältet"
+msgstr "Visa status för lås- eller huvudläge i titelfältet"
 
 msgctxt "#31999"
 msgid "BigList"
@@ -2142,10 +2130,9 @@ msgctxt "#32048"
 msgid "Show background name in Home window"
 msgstr "Visa bakgrundsnamn i hemfönster"
 
-#, fuzzy
 msgctxt "#32049"
 msgid "Home window Background Rotation Delay"
-msgstr "Hemfönster Fördröjning av bakgrundsrotation"
+msgstr "Fördröjning för bakgrundsväxling i startfönstret"
 
 msgctxt "#32050"
 msgid "IPTV Recorder"
@@ -2255,30 +2242,25 @@ msgctxt "#32076"
 msgid "Show Watched Items in Recent Shelves"
 msgstr "Visa sedda objekt i senaste hyllorna"
 
-#, fuzzy
 msgctxt "#32077"
 msgid "RT Total Critics Reviews"
-msgstr "RT Total Kritikernas recensioner"
+msgstr "Antal RT-kritikerrecensioner"
 
-#, fuzzy
 msgctxt "#32078"
 msgid "RT Fresh Reviews"
-msgstr "RT Fresh Recensioner"
+msgstr "RT:s positiva recensioner"
 
-#, fuzzy
 msgctxt "#32079"
 msgid "RT Rotten Reviews"
-msgstr "RT Rotten Recensioner"
+msgstr "RT:s negativa recensioner"
 
-#, fuzzy
 msgctxt "#32080"
 msgid "RT Critics' Consensus"
 msgstr "RT-kritikernas konsensus"
 
-#, fuzzy
 msgctxt "#32081"
 msgid "RT Total User Reviews"
-msgstr "RT Total Användarrecensioner"
+msgstr "Antal RT-användarrecensioner"
 
 msgctxt "#32082"
 msgid "Birthday"
@@ -2540,7 +2522,6 @@ msgctxt "#32146"
 msgid "Returning Series"
 msgstr "Återkommande serier"
 
-#, fuzzy
 msgctxt "#32147"
 msgid "Acting"
 msgstr "Skådespeleri"
@@ -2734,7 +2715,6 @@ msgctxt "#32202"
 msgid "Crew: TV Shows with"
 msgstr "Filmteam: TV-serier med"
 
-#, fuzzy
 msgctxt "#32203"
 msgid "Start at First Menu Item"
 msgstr "Börja vid första menyalternativet"
@@ -2747,34 +2727,29 @@ msgctxt "#32205"
 msgid "Highlight Color"
 msgstr "Framhävningsfärg"
 
-#, fuzzy
 msgctxt "#32206"
 msgid "Horizontal Menu Glow Bars Tint"
-msgstr "Horisontell meny Glow Bars Tint"
+msgstr "Färgton för glödstaplar i vågrät meny"
 
-#, fuzzy
 msgctxt "#32207"
 msgid "Horizontal Menu Main Bar Tint"
-msgstr "Horisontell meny Huvudfält Tint"
+msgstr "Färgton för huvudfältet i vågrät meny"
 
-#, fuzzy
 msgctxt "#32208"
 msgid "Vertical Menu/Submenu Background Tint"
-msgstr "Vertikal meny/undermeny Bakgrundsfärg"
+msgstr "Färgton för bakgrunden i lodrät meny/undermeny"
 
-#, fuzzy
 msgctxt "#32209"
 msgid "Top Bar Tint"
-msgstr "Top Bar Tint"
+msgstr "Färgton för övre fältet"
 
 msgctxt "#32210"
 msgid "Current Color Theme"
 msgstr "Aktuellt färgtema"
 
-#, fuzzy
 msgctxt "#32211"
 msgid "Dialogs Background Tint"
-msgstr "Dialoger Bakgrundsfärg"
+msgstr "Färgton för dialogbakgrunder"
 
 msgctxt "#32212"
 msgid "Regular Text Color"
@@ -2788,10 +2763,9 @@ msgctxt "#32214"
 msgid "Selected Text Color"
 msgstr "Färg på markerad text"
 
-#, fuzzy
 msgctxt "#32215"
 msgid "Shelves Background Tint"
-msgstr "Hyllor Bakgrundsfärg"
+msgstr "Färgton för hyllbakgrunder"
 
 msgctxt "#32216"
 msgid "Use for All Tints"
@@ -2825,19 +2799,17 @@ msgctxt "#32223"
 msgid "Audio and Subtitle Info"
 msgstr "Ljud- och undertextinformation"
 
-#, fuzzy
 msgctxt "#32224"
 msgid "Subtitle Button Opens Subtitle Settings in Video OSD"
-msgstr "Undertextknapp Öppnar inställningar för undertext i OSD för video"
+msgstr "Undertextknappen öppnar undertextinställningar i video-OSD"
 
 msgctxt "#32225"
 msgid "Disable Info Panel in List Views"
 msgstr "Inaktivera infopanelen i listvyer"
 
-#, fuzzy
 msgctxt "#32226"
 msgid "TMDb Helper - Next Aired Episodes"
-msgstr "TMDb Helper - Nästa avsnitt som sänds"
+msgstr "TMDb Helper – nästa sända avsnitt"
 
 msgctxt "#32227"
 msgid "Embuary Info - Next Aired Episodes"
@@ -2851,7 +2823,6 @@ msgctxt "#32229"
 msgid "Hide Channel Groups"
 msgstr "Dölj kanalgrupper"
 
-#, fuzzy
 msgctxt "#32230"
 msgid "Select Displayed Ratings and Certification"
 msgstr "Välj visade betyg och certifiering"
@@ -2924,20 +2895,17 @@ msgctxt "#32249"
 msgid "Enable Statistics Line"
 msgstr "Aktivera statistikrad"
 
-#, fuzzy
 msgctxt "#32250"
 msgid "Show Statistics line on Shelf"
-msgstr "Visa statistiklinje på hyllan"
+msgstr "Visa statistikrad på hyllan"
 
-#, fuzzy
 msgctxt "#32251"
 msgid "Show Marks on Top Right"
 msgstr "Visa markeringar längst upp till höger"
 
-#, fuzzy
 msgctxt "#32252"
 msgid "Hide Unwatched Episodes Marks"
-msgstr "Hide Unwatched Episodes Marks"
+msgstr "Dölj markeringar för osedda avsnitt"
 
 msgctxt "#32253"
 msgid "Movies in library"
@@ -2955,10 +2923,9 @@ msgctxt "#32256"
 msgid "TMDb Helper"
 msgstr "TMDb-hjälpare"
 
-#, fuzzy
 msgctxt "#32257"
 msgid "To enable this functionality, you need to install a very recent version of the add-on plugin.video.themoviedb.helper.[CR][CR]You can find it at https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
-msgstr "För att aktivera den här funktionen måste du installera en mycket ny version av tilläggsprogrammet plugin.video.themoviedb.helper.[CR][CR]Du hittar det på https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
+msgstr "För att aktivera den här funktionen behöver du installera en mycket ny version av tillägget plugin.video.themoviedb.helper.[CR][CR]Det finns på https://github.com/jurialmunkey/plugin.video.themoviedb.helper."
 
 msgctxt "#32258"
 msgid "Use Embuary Helper for Playlist Backgrounds"
@@ -2984,7 +2951,6 @@ msgctxt "#32263"
 msgid "Movie Collection Count"
 msgstr "Antal filmsamlingar"
 
-#, fuzzy
 msgctxt "#32264"
 msgid "Show Fanart for Special Content"
 msgstr "Visa fanart för särskilt innehåll"
@@ -3009,12 +2975,10 @@ msgctxt "#32269"
 msgid "Configure Custom Shelf"
 msgstr "Konfigurera anpassad hylla"
 
-#, fuzzy
 msgctxt "#32270"
 msgid "Shift Fanart View Focus to the Right"
-msgstr "Flytta fokus för Fanart View till höger"
+msgstr "Flytta fokus i fanartvyn åt höger"
 
-#, fuzzy
 msgctxt "#32271"
 msgid "Mouse/Touch-Friendly Alphabet Strip"
 msgstr "Mus- och beröringsvänlig alfabetremsa"
@@ -3063,10 +3027,9 @@ msgctxt "#32283"
 msgid "Video Genre Fanart"
 msgstr "Video-fanart för genre"
 
-#, fuzzy
 msgctxt "#32284"
 msgid "Music Genre Fanart"
-msgstr "Musikgenre Fanart"
+msgstr "Fanart för musikgenre"
 
 msgctxt "#32285"
 msgid "Custom Path"
@@ -3088,10 +3051,9 @@ msgctxt "#32289"
 msgid "Match Poster Colors"
 msgstr "Matcha färger på poster"
 
-#, fuzzy
 msgctxt "#32290"
 msgid "Show Seek Bar at Bottom"
-msgstr "Visa sökfältet längst ner"
+msgstr "Visa sökfältet längst ned"
 
 msgctxt "#32291"
 msgid "HDR/SDR and Bit Depth Flags"
@@ -3121,10 +3083,9 @@ msgctxt "#32297"
 msgid "Use Landscape"
 msgstr "Använd liggande"
 
-#, fuzzy
 msgctxt "#32298"
 msgid "Dim Level for Unfocused"
-msgstr "Dimnivå för ofokuserad"
+msgstr "Nedtoningsnivå för ej fokuserade objekt"
 
 msgctxt "#32299"
 msgid "Select Dim Level"
@@ -3134,20 +3095,17 @@ msgctxt "#32300"
 msgid "Now Playing"
 msgstr "Spelas nu"
 
-#, fuzzy
 msgctxt "#32301"
 msgid "Hide Title Bar Now Playing"
-msgstr "Dölj titelfältet Spelas nu"
+msgstr "Dölj titelfältet för Spelas nu"
 
-#, fuzzy
 msgctxt "#32302"
 msgid "Select Now Playing Video Disc Art Fallback"
-msgstr "Välj Nu spelas Video Disc Art Fallback"
+msgstr "Välj reservbild för skivkonst vid videouppspelning"
 
-#, fuzzy
 msgctxt "#32303"
 msgid "Select Now Playing Music Disc Art Fallback"
-msgstr "Välj Nu spelas musik Skiva Art Fallback"
+msgstr "Välj reservbild för skivkonst vid musikuppspelning"
 
 msgctxt "#32304"
 msgid "Blu-Ray"
@@ -3197,16 +3155,14 @@ msgctxt "#32315"
 msgid "Select Now Playing Info for Movies/Episodes"
 msgstr "Välj Nu spelas-info för filmer/avsnitt"
 
-#, fuzzy
 msgctxt "#32316"
 msgid "Select Now Playing Info for other Videos"
-msgstr "Välj Nu spelas info för andra videor"
+msgstr "Välj Spelas nu-information för andra videor"
 
 msgctxt "#32317"
 msgid "Select Now Playing Info for Music"
 msgstr "Välj Nu spelas-information för musik"
 
-#, fuzzy
 msgctxt "#32318"
 msgid "Show Video in the Background"
 msgstr "Visa video i bakgrunden"
@@ -3215,15 +3171,13 @@ msgctxt "#32319"
 msgid "Show Music Visualization in the Background"
 msgstr "Visa musikvisualisering i bakgrunden"
 
-#, fuzzy
 msgctxt "#32320"
 msgid "Show Extra Art for Video"
-msgstr "Visa extra konst för video"
+msgstr "Visa extrabilder för video"
 
-#, fuzzy
 msgctxt "#32321"
 msgid "Show Extra Art for Music"
-msgstr "Visa extra konst för musik"
+msgstr "Visa extrabilder för musik"
 
 msgctxt "#32322"
 msgid "Show Logo"
@@ -3237,15 +3191,13 @@ msgctxt "#32324"
 msgid "Show Disc Art"
 msgstr "Visa skivbild"
 
-#, fuzzy
 msgctxt "#32325"
 msgid "Select Disc Art Fallback for Video"
-msgstr "Välj Disc Art Fallback för video"
+msgstr "Välj reservbild för skivkonst för video"
 
-#, fuzzy
 msgctxt "#32326"
 msgid "Select Disc Art Fallback for Music"
-msgstr "Välj Disc Art Fallback för musik"
+msgstr "Välj reservbild för skivkonst för musik"
 
 msgctxt "#32327"
 msgid "Disable Now Playing"
@@ -3279,19 +3231,17 @@ msgctxt "#32334"
 msgid "Enlarge Video Preview when Idle"
 msgstr "Förstora videoförhandsvisning när overksam"
 
-#, fuzzy
 msgctxt "#32335"
 msgid "Select Extra Art to Show in Applicable Views"
-msgstr "Välj Extra Art som ska visas i tillämpliga vyer"
+msgstr "Välj extrabilder som ska visas i tillämpliga vyer"
 
 msgctxt "#32336"
 msgid "Full Screen/OSD"
 msgstr "Helskärm/OSD"
 
-#, fuzzy
 msgctxt "#32337"
 msgid "Select Interval for Auto Closing Video OSD"
-msgstr "Välj intervall för automatisk stängning av video OSD"
+msgstr "Välj tidsintervall för automatisk stängning av video-OSD"
 
 msgctxt "#32338"
 msgid "Current Color"
@@ -3337,10 +3287,9 @@ msgctxt "#32348"
 msgid "Show Overlay"
 msgstr "Visa överlägg"
 
-#, fuzzy
 msgctxt "#32349"
 msgid "Show Smaller Favourite Icons"
-msgstr "Visa mindre favoritsymboler"
+msgstr "Visa mindre favoritikoner"
 
 msgctxt "#32350"
 msgid "Show Three Rows"
@@ -3358,16 +3307,14 @@ msgctxt "#32353"
 msgid "Enable Use of Embuary Helper"
 msgstr "Aktivera användning av Embuary-hjälpare"
 
-#, fuzzy
 msgctxt "#32354"
 msgid "Hide Seek Bar when Paused"
-msgstr "Dölj Seek Bar när den är pausad"
+msgstr "Dölj sökfältet vid paus"
 
 msgctxt "#32355"
 msgid "Icon Only Menu"
 msgstr "Endast ikonmeny"
 
-#, fuzzy
 msgctxt "#32356"
 msgid "Show Menu Item Name"
 msgstr "Visa menyalternativets namn"
@@ -3380,10 +3327,9 @@ msgctxt "#32358"
 msgid "Play Whole Albums from Shelves"
 msgstr "Spela upp hela album från hyllor"
 
-#, fuzzy
 msgctxt "#32359"
 msgid "Show Item Name in Top Bar"
-msgstr "Visa artikelnamn i övre fältet"
+msgstr "Visa objektnamnet i övre fältet"
 
 msgctxt "#32360"
 msgid "Animate backgrounds using Ken Burns effect"
@@ -3401,30 +3347,25 @@ msgctxt "#32363"
 msgid "Show Media Info with Seek Bar"
 msgstr "Visa mediainformation med sökfältet"
 
-#, fuzzy
 msgctxt "#32364"
 msgid "Show Seek Bar when Starting Video Playback"
-msgstr "Visa sökfältet när du startar videouppspelning"
+msgstr "Visa sökfältet när videouppspelningen startar"
 
-#, fuzzy
 msgctxt "#32365"
 msgid "Time to Show Seek Bar"
-msgstr "Dags att visa upp Seek Bar"
+msgstr "Tid som sökfältet visas"
 
-#, fuzzy
 msgctxt "#32366"
 msgid "Hide Title Bar in Main Window"
 msgstr "Dölj titelfältet i huvudfönstret"
 
-#, fuzzy
 msgctxt "#32367"
 msgid "Hide fallback image if no thumb in OSD"
-msgstr "Dölj reservbild om det inte finns någon tumme i OSD"
+msgstr "Dölj reservbild om miniatyrbild saknas i OSD"
 
-#, fuzzy
 msgctxt "#32368"
 msgid "Dim Background and Album Cover when Showing Lyrics"
-msgstr "Dimma bakgrund och albumomslag när du visar texter"
+msgstr "Dämpa bakgrund och albumomslag när låttexter visas"
 
 msgctxt "#32369"
 msgid "Use Alternate Favourites Layout"
@@ -3434,10 +3375,9 @@ msgctxt "#32370"
 msgid "Align Menu Item Text to the Left"
 msgstr "Justera texten i menyposten till vänster"
 
-#, fuzzy
 msgctxt "#32371"
 msgid "Info Button Opens Video Info Dialog"
-msgstr "Info-knapp Öppnar dialogruta för videoinfo"
+msgstr "Infoknappen öppnar videoinfodialogen"
 
 msgctxt "#32372"
 msgid "Pause Media While Info Dialog is Open"
@@ -3467,10 +3407,9 @@ msgctxt "#32378"
 msgid "Use Color Flags"
 msgstr "Använd färgflaggor"
 
-#, fuzzy
 msgctxt "#32379"
 msgid "Show Submenu Only when Focused"
-msgstr "Visa undermeny endast när den är fokuserad"
+msgstr "Visa undermeny endast vid fokus"
 
 msgctxt "#32380"
 msgid "Movies with Plot containing"
@@ -3488,15 +3427,13 @@ msgctxt "#32383"
 msgid "With Plot Containing"
 msgstr "Med handling innehållande"
 
-#, fuzzy
 msgctxt "#32384"
 msgid "Show Title in Footer"
-msgstr "Visa titel i sidfot"
+msgstr "Visa titel i sidfoten"
 
-#, fuzzy
 msgctxt "#32385"
 msgid "Hide Seek Bar when Forwarding or Rewinding"
-msgstr "Dölj sökfältet när du vidarebefordrar eller spolar tillbaka"
+msgstr "Dölj sökfältet vid snabbspolning framåt eller bakåt"
 
 msgctxt "#32386"
 msgid "Enable Touchscreen Devices Support"
@@ -3558,19 +3495,17 @@ msgctxt "#32402"
 msgid "Poster/Thumb"
 msgstr "Poster/Miniatyr"
 
-#, fuzzy
 msgctxt "#32403"
 msgid "OSD/Full Screen Art"
-msgstr "OSD/Fullskärmskonst"
+msgstr "OSD-/helskärmsbild"
 
 msgctxt "#32404"
 msgid "N/A"
 msgstr "N/A"
 
-#, fuzzy
 msgctxt "#32405"
 msgid "Show Info Popup"
-msgstr "Visa popup-fönster för information"
+msgstr "Visa informationspopup"
 
 msgctxt "#32406"
 msgid "Popup Delay"
@@ -3584,7 +3519,6 @@ msgctxt "#32408"
 msgid "Fixed List"
 msgstr "Fast lista"
 
-#, fuzzy
 msgctxt "#32409"
 msgid "Centered Static Menu (less than 8 items)"
 msgstr "Centrerad statisk meny (färre än 8 objekt)"
@@ -3609,19 +3543,17 @@ msgctxt "#32414"
 msgid "Disabled"
 msgstr "Inaktiverad"
 
-#, fuzzy
 msgctxt "#32415"
 msgid "Auto Play Trailer (Local Trailer Only)"
-msgstr "Trailer för automatisk uppspelning (endast lokal trailer)"
+msgstr "Spela upp trailer automatiskt (endast lokal trailer)"
 
 msgctxt "#32416"
 msgid "Auto Play Trailer Delay"
 msgstr "Fördröjning för automatisk uppspelning av trailer"
 
-#, fuzzy
 msgctxt "#32417"
 msgid "Fanart Title Button Opens Info Dialog"
-msgstr "Knappen Fanart Title öppnar informationsdialog"
+msgstr "Fanarttitelknappen öppnar informationsdialogen"
 
 msgctxt "#32418"
 msgid "Single Image"
@@ -3647,20 +3579,17 @@ msgctxt "#32423"
 msgid "Use Disc Art instead of Cover"
 msgstr "Använd skivbild istället för omslag"
 
-#, fuzzy
 msgctxt "#32424"
 msgid "Auto Play Trailer from Shelf Items"
-msgstr "Trailer för automatisk uppspelning från hyllföremål"
+msgstr "Spela upp trailer automatiskt från hyllobjekt"
 
-#, fuzzy
 msgctxt "#32425"
 msgid "Shelf Trailer Delay"
-msgstr "Fördröjning av hyllsläp"
+msgstr "Fördröjning för trailer på hyllan"
 
-#, fuzzy
 msgctxt "#32426"
 msgid "Slide Out Media Items While Trailer Playing"
-msgstr "Skjut ut medieobjekt medan trailern spelas upp"
+msgstr "Låt medieobjekt glida ut medan trailern spelas upp"
 
 msgctxt "#32427"
 msgid "Hide PVR Channel Preview"
@@ -3674,10 +3603,9 @@ msgctxt "#32429"
 msgid "Art Downloader: All Artwork"
 msgstr "Bildhämtare: Alla bakgrunder"
 
-#, fuzzy
 msgctxt "#32450"
 msgid "Show Artwork Downloader items in Context Menu"
-msgstr "Visa Artwork Downloader-objekt i snabbmenyn"
+msgstr "Visa objekt från Artwork Downloader i snabbmenyn"
 
 msgctxt "#32451"
 msgid "Movies with Tag"
@@ -3707,10 +3635,9 @@ msgctxt "#32457"
 msgid "Show Episodes List button"
 msgstr "Visa knapp för avsnittslista"
 
-#, fuzzy
 msgctxt "#32458"
 msgid "Include Seasons in Episodes List popup"
-msgstr "Inkludera säsonger i Episodes List popup"
+msgstr "Inkludera säsonger i popupfönstret Avsnittslista"
 
 msgctxt "#32459"
 msgid "Next Aired"
@@ -3724,10 +3651,9 @@ msgctxt "#32461"
 msgid "Show Disc above Poster"
 msgstr "Visa skivan ovanför affisch"
 
-#, fuzzy
 msgctxt "#32462"
 msgid "Hide Disc over Set Poster"
-msgstr "Hide Disc over Set Poster"
+msgstr "Dölj skiva över samlingsaffischen"
 
 msgctxt "#32463"
 msgid "Play trailer in a window"
@@ -3741,10 +3667,9 @@ msgctxt "#32465"
 msgid "Search for Trailers with IMDb Trailers Addon"
 msgstr "Sök efter trailers med IMDb Trailers-tillägget"
 
-#, fuzzy
 msgctxt "#32466"
 msgid "Fade out Non-focused Menu Items"
-msgstr "Tonar ut icke-fokuserade menyalternativ"
+msgstr "Tona ut ofokuserade menyalternativ"
 
 msgctxt "#32467"
 msgid "Cloudiness"
