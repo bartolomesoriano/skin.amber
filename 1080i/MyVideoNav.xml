@@ -7,8 +7,8 @@
 	<onload>ClearProperty(SingleSearchCalledInfo)</onload>
 	<onload>ClearProperty(InfoCalledGeneralSearch)</onload>
 	<onload>ClearProperty(InfoCalledSingleSearch)</onload>
-	<onload>Skin.Reset(CustomSearchTerm)</onload>
-	<onload>Skin.Reset(SingleSearchTerm)</onload>
+	<onload condition="!String.IsEmpty(Skin.String(CustomSearchTerm))">Skin.Reset(CustomSearchTerm)</onload>
+	<onload condition="!String.IsEmpty(Skin.String(SingleSearchTerm))">Skin.Reset(SingleSearchTerm)</onload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onload>ClearProperty(gallery)</onload>
     <onload condition="System.AddonIsEnabled(script.skin.info.service) + String.IsEmpty(Window(home).Property(skininfos_daemon_running))">RunScript(script.skin.info.service)</onload>
@@ -18,8 +18,8 @@
 	<onunload>ClearProperty(SingleSearchCalledInfo)</onunload>
 	<onunload>ClearProperty(InfoCalledGeneralSearch)</onunload>
 	<onunload>ClearProperty(InfoCalledSingleSearch)</onunload>
-	<onunload>Skin.Reset(CustomSearchTerm)</onunload>
-	<onunload>Skin.Reset(SingleSearchTerm)</onunload>
+	<onunload condition="[!System.AddonIsEnabled(service.sc.profilesync) | String.IsEmpty(Window(Home).Property(Amber.ShuttingDown))] + !String.IsEmpty(Skin.String(CustomSearchTerm))">Skin.Reset(CustomSearchTerm)</onunload>
+	<onunload condition="[!System.AddonIsEnabled(service.sc.profilesync) | String.IsEmpty(Window(Home).Property(Amber.ShuttingDown))] + !String.IsEmpty(Skin.String(SingleSearchTerm))">Skin.Reset(SingleSearchTerm)</onunload>
 	<onunload>ClearProperty(gallery)</onunload>
 	<menucontrol>9000</menucontrol>
 	<controls>
@@ -200,46 +200,46 @@
 		        <param name="ListType">fixedlist</param>
 		    </include>
 		
-		    <include>View_51_Panel</include>
-		    <include>View_511_Panel2</include>
-		    <include content="View_52_BigList" condition="!Skin.HasSetting(ListCenterFocus)">
+		    <include condition="!Skin.HasSetting(Hide.PanelView)">View_51_Panel</include>
+		    <include condition="!Skin.HasSetting(Hide.Panel2View)">View_511_Panel2</include>
+		    <include content="View_52_BigList" condition="!Skin.HasSetting(Hide.BigListView) + [!Skin.HasSetting(ListCenterFocus)]">
 		        <param name="ListType">list</param>
 		    </include>
-		    <include content="View_52_BigList" condition="Skin.HasSetting(ListCenterFocus)">
+		    <include content="View_52_BigList" condition="!Skin.HasSetting(Hide.BigListView) + [Skin.HasSetting(ListCenterFocus)]">
 		        <param name="ListType">fixedlist</param>
 		    </include>
 		
-		    <include>View_53_Icons</include>
-		    <include content="View_54_LowList" condition="!Skin.HasSetting(ListCenterFocus)">
+		    <include condition="!Skin.HasSetting(Hide.IconsView)">View_53_Icons</include>
+		    <include content="View_54_LowList" condition="!Skin.HasSetting(Hide.LowListView) + [!Skin.HasSetting(ListCenterFocus)]">
 		        <param name="ListType">list</param>
 		    </include>
-		    <include content="View_54_LowList" condition="Skin.HasSetting(ListCenterFocus)">
+		    <include content="View_54_LowList" condition="!Skin.HasSetting(Hide.LowListView) + [Skin.HasSetting(ListCenterFocus)]">
 		        <param name="ListType">fixedlist</param>
 		    </include>
 		
-		    <include>View_55_BigPanel</include>
-		    <include>View_551_BigPanel2</include>
+		    <include condition="!Skin.HasSetting(Hide.BigPanelView)">View_55_BigPanel</include>
+		    <include condition="!Skin.HasSetting(Hide.BigPanel2View)">View_551_BigPanel2</include>
 			
-			<include content="View_501_TallList" condition="!Skin.HasSetting(ListCenterFocus)">
+			<include content="View_501_TallList" condition="!Skin.HasSetting(Hide.TallListView) + [!Skin.HasSetting(ListCenterFocus)]">
 		        <param name="ListType">list</param>
 		    </include>
-		    <include content="View_501_TallList" condition="Skin.HasSetting(ListCenterFocus)">
+		    <include content="View_501_TallList" condition="!Skin.HasSetting(Hide.TallListView) + [Skin.HasSetting(ListCenterFocus)]">
 		        <param name="ListType">fixedlist</param>
 		    </include>
 	   
-	        <include>View_57_SimpleList</include>
+	        <include condition="!Skin.HasSetting(Hide.SimpleListView)">View_57_SimpleList</include>
  		
-		    <include>View_600_Triple</include>
+		    <include condition="!Skin.HasSetting(Hide.TripleView)">View_600_Triple</include>
 		
-		    <include>View_58_Logo</include>
+		    <include condition="!Skin.HasSetting(Hide.LogoView)">View_58_Logo</include>
 		
-		    <include >View_502_RightList</include>
+		    <include condition="!Skin.HasSetting(Hide.RightListView)">View_502_RightList</include>
 		</control>
 		
-		<include content="View_56_Fanart" condition="!Skin.HasSetting(FanartCenterFocus)">
+		<include content="View_56_Fanart" condition="!Skin.HasSetting(Hide.FanartView) + [!Skin.HasSetting(FanartCenterFocus)]">
 		    <param name="focusposition">2</param>
 		</include>
-		<include content="View_56_Fanart" condition="Skin.HasSetting(FanartCenterFocus)">
+		<include content="View_56_Fanart" condition="!Skin.HasSetting(Hide.FanartView) + [Skin.HasSetting(FanartCenterFocus)]">
 		    <param name="focusposition">4</param>
 		</include>
 		

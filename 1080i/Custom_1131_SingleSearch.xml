@@ -3,10 +3,10 @@
 
 <!-- Search functionality adapted from sualfred's embuary and jurialmunkey's arctic.zephyr.2 -->
     <onload condition="String.IsEmpty(Skin.String(SingleSearchTerm))">Action(Close)</onload>
-    <onunload>Skin.Reset(SingleSearchType)</onunload>
-    <onunload>Skin.Reset(SingleSearchHeader)</onunload>
-    <onunload>Skin.Reset(OnlineMediaType)</onunload>
-    <onunload>Skin.Reset(OnlineCallType)</onunload>
+    <onunload condition="[!System.AddonIsEnabled(service.sc.profilesync) | String.IsEmpty(Window(Home).Property(Amber.ShuttingDown))] + !String.IsEmpty(Skin.String(SingleSearchType))">Skin.Reset(SingleSearchType)</onunload>
+    <onunload condition="[!System.AddonIsEnabled(service.sc.profilesync) | String.IsEmpty(Window(Home).Property(Amber.ShuttingDown))] + !String.IsEmpty(Skin.String(SingleSearchHeader))">Skin.Reset(SingleSearchHeader)</onunload>
+    <onunload condition="[!System.AddonIsEnabled(service.sc.profilesync) | String.IsEmpty(Window(Home).Property(Amber.ShuttingDown))] + !String.IsEmpty(Skin.String(OnlineMediaType))">Skin.Reset(OnlineMediaType)</onunload>
+    <onunload condition="[!System.AddonIsEnabled(service.sc.profilesync) | String.IsEmpty(Window(Home).Property(Amber.ShuttingDown))] + !String.IsEmpty(Skin.String(OnlineCallType))">Skin.Reset(OnlineCallType)</onunload>
 	
 	<defaultcontrol always="true">10</defaultcontrol>
         

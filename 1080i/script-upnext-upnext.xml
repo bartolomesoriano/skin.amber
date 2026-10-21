@@ -76,7 +76,7 @@
 						<textcolor>eeffffff</textcolor>
 						<shadowcolor>00000000</shadowcolor>
 						<label>$LOCALIZE[32237] [COLOR $VAR[HighlightColor]]$INFO[Player.TimeRemaining(ss),,][/COLOR] $LOCALIZE[32047]</label>
-						<visible>!Integer.IsGreater(Player.TimeRemaining,59)</visible>
+						<visible>!String.IsEqual(Window.Property(credits_countdown),true) + !Integer.IsGreater(Player.TimeRemaining,59)</visible>
 					</control>
 					<control type="label">
 						<width>auto</width>
@@ -86,8 +86,17 @@
 						<textcolor>eeffffff</textcolor>
 						<shadowcolor>00000000</shadowcolor>
 						<label>$LOCALIZE[32237] [COLOR $VAR[HighlightColor]]$INFO[Player.TimeRemaining,,][/COLOR]</label>
-						<visible>Integer.IsGreater(Player.TimeRemaining,59)</visible>
+						<visible>!String.IsEqual(Window.Property(credits_countdown),true) + Integer.IsGreater(Player.TimeRemaining,59)</visible>
 					</control>
+                    <control type="label" id="3015">
+                        <width>auto</width>
+                        <height>35</height>
+                        <aligny>center</aligny>
+                        <font>font24_title</font>
+                        <textcolor>eeffffff</textcolor>
+                        <label>$ADDON[service.upnext 30050]  ·  $ADDON[service.upnext 30051]</label>
+                        <visible>String.IsEqual(Window.Property(credits_countdown),true)</visible>
+                    </control>
 					<!-- Details -->
 					<control type="grouplist">
 						<orientation>horizontal</orientation>

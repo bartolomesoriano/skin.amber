@@ -27,7 +27,7 @@
                         <itemgap>10</itemgap>
                         <align>left</align>
                         <control type="button" id="3012">
-                            <label>      $LOCALIZE[32239] [B][COLOR $VAR[LabelTextColor]]$INFO[Player.TimeRemaining(ss),,][/COLOR][/B] $LOCALIZE[32047]</label>
+                            <label>$VAR[UpNextCompactLabel]</label>
                             <height>56</height>
                             <width min="50">auto</width>
                             <aligny>center</aligny>
@@ -38,24 +38,42 @@
                             <height>56</height>
                             <width min="50">auto</width>
                         </control>
+                        <control type="label" id="3015">
+                            <label>$ADDON[service.upnext 30051]</label>
+                            <visible>String.IsEqual(Window.Property(credits_countdown),true)</visible>
+                            <width>auto</width>
+                            <height>56</height>
+                            <aligny>center</aligny>
+                            <font>font24_title</font>
+                            <textcolor>$VAR[LabelTextColor]</textcolor>
+                        </control>
                     </control>
                     <control type="image">
                         <width>46</width>
                         <height>46</height>
                         <aspect>keep</aspect>
                         <texture>nextupicons/30.png</texture>
-                        <colordiffusse>$VAR[LabelTextColor]</colordiffusse>
+                        <colordiffuse>$VAR[UpNextCompactIconColor]</colordiffuse>
                         <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
-                        <visible>Integer.IsGreater(Player.TimeRemaining(ss),30)</visible>
+                        <visible>[!String.IsEqual(Window.Property(credits_countdown),true) + Integer.IsGreater(Player.TimeRemaining(ss),30)] | [String.IsEqual(Window.Property(credits_countdown),true) + Integer.IsGreater(Window.Property(credits_remaining),30)]</visible>
                     </control>
                     <control type="image">
                         <width>46</width>
                         <height>46</height>
                         <aspect>keep</aspect>
                         <texture>$INFO[Player.TimeRemaining(ss),nextupicons/,.png]</texture>
-                        <colordiffuse>$VAR[LabelTextColor]</colordiffuse>
+                        <colordiffuse>$VAR[UpNextCompactIconColor]</colordiffuse>
                         <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
-                        <visible>!Integer.IsGreater(Player.TimeRemaining(ss),30)</visible>
+                        <visible>!String.IsEqual(Window.Property(credits_countdown),true) + !Integer.IsGreater(Player.TimeRemaining(ss),30)</visible>
+                    </control>
+                    <control type="image">
+                        <width>46</width>
+                        <height>46</height>
+                        <aspect>keep</aspect>
+                        <texture>$INFO[Window.Property(remaining),nextupicons/,.png]</texture>
+                        <colordiffuse>$VAR[UpNextCompactIconColor]</colordiffuse>
+                        <animation effect="slide" end="13,5" time="0" condition="true">Conditional</animation>
+                        <visible>String.IsEqual(Window.Property(credits_countdown),true) + !Integer.IsGreater(Window.Property(credits_remaining),30)</visible>
                     </control>
                 </control>
             </control>

@@ -1487,6 +1487,16 @@
 		<value condition="!String.IsEmpty(Skin.String(FocusedTextColorStr)) + !String.IsEqual(Skin.String(FocusedTextColorStr),None)">$INFO[Skin.String(FocusedTextColorStr)]</value>
 		<value>Black</value>
 	</variable>
+
+	<variable name="UpNextCompactLabel">
+		<value condition="String.IsEqual(Window.Property(credits_countdown),true)">      $ADDON[service.upnext 30050]</value>
+		<value>      $ADDON[service.upnext 30049]$INFO[Player.TimeRemaining, (,)]</value>
+	</variable>
+
+	<variable name="UpNextCompactIconColor">
+		<value condition="Control.HasFocus(3012)">$VAR[FocusedTextColor]</value>
+		<value>$VAR[LabelTextColor]</value>
+	</variable>
 	
 	<variable name="SelectedTextColor">
 		<value condition="!String.IsEmpty(Skin.String(SelectedTextColorStr)) + !String.IsEqual(Skin.String(SelectedTextColorStr),None)">$INFO[Skin.String(SelectedTextColorStr)]</value>

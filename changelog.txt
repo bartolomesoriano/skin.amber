@@ -1,3 +1,8 @@
+Unreleased
+- Skip disabled alternate video layouts when loading media windows to reduce startup and shutdown work; retain List as the fallback.
+- Avoid redundant search resets and suppress deferred skin-setting saves during Kodi shutdown when the profile service signals Quit.
+- Fix compact Up Next labels, keep countdown icons legible when focused, and show the credits countdown with a Back cancellation hint when supported by Up Next.
+
 3.4.32 (11-01-2022)
 - Allow different view types for PVR
 - Search for trailer and play trailer in window (video info)

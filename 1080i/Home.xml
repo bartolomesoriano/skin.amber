@@ -28,18 +28,18 @@
 	<onload>ClearProperty(SingleSearchCalledInfo)</onload>
 	<onload>ClearProperty(InfoCalledGeneralSearch)</onload>
 	<onload>ClearProperty(InfoCalledSingleSearch)</onload>
-	<onload>Skin.Reset(CustomSearchTerm)</onload>
-	<onload>Skin.Reset(SingleSearchTerm)</onload>
+	<onload condition="!String.IsEmpty(Skin.String(CustomSearchTerm))">Skin.Reset(CustomSearchTerm)</onload>
+	<onload condition="!String.IsEmpty(Skin.String(SingleSearchTerm))">Skin.Reset(SingleSearchTerm)</onload>
 	
 	<!-- Remember what the focused menu item background is -->
-	<onunload condition="!String.IsEmpty(Container(300).ListItem.Property(Background))">Skin.SetString(FocusedMenu.Background,$INFO[Container(300).ListItem.Property(Background)])</onunload>
-    <onunload condition="!String.IsEmpty(Container(300).ListItem.Property(backgroundPlaylist))">Skin.SetString(FocusedMenu.BackgroundPlaylist,$INFO[Container(300).ListItem.Property(backgroundPlaylist)])</onunload>
+	<onunload condition="[!System.AddonIsEnabled(service.sc.profilesync) | String.IsEmpty(Window(Home).Property(Amber.ShuttingDown))] + !String.IsEmpty(Container(300).ListItem.Property(Background))">Skin.SetString(FocusedMenu.Background,$INFO[Container(300).ListItem.Property(Background)])</onunload>
+    <onunload condition="[!System.AddonIsEnabled(service.sc.profilesync) | String.IsEmpty(Window(Home).Property(Amber.ShuttingDown))] + !String.IsEmpty(Container(300).ListItem.Property(backgroundPlaylist))">Skin.SetString(FocusedMenu.BackgroundPlaylist,$INFO[Container(300).ListItem.Property(backgroundPlaylist)])</onunload>
 	
 	<!-- Clear TMDbHelper widgetcontainer id -->
 	<onunload condition="Skin.HasSetting(Enable.TMDbHelper)">ClearProperty(TMDbHelper.WidgetContainer,home)</onunload>
 	
 	<!-- Remember what the focused control is -->
-	<onunload condition="Skin.HasSetting(RememberHomeControl)">Skin.SetString(FocusedHomeControl,$INFO[System.CurrentControlID])</onunload>
+	<onunload condition="[!System.AddonIsEnabled(service.sc.profilesync) | String.IsEmpty(Window(Home).Property(Amber.ShuttingDown))] + Skin.HasSetting(RememberHomeControl)">Skin.SetString(FocusedHomeControl,$INFO[System.CurrentControlID])</onunload>
 	
 	<defaultcontrol>300</defaultcontrol>
 	<controls>
