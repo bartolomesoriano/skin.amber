@@ -859,9 +859,6 @@
                     <posy>600</posy>
                     <height>150</height>
                     <width>140</width>
-                    <scroll>true</scroll>
-                    <scrollout>false</scrollout>
-                    <scrollspeed>25</scrollspeed>
                     <font>WeatherTemperature</font>
                     <textcolor>Red</textcolor>
                     <align>center</align>
@@ -873,9 +870,6 @@
                     <posy>600</posy>
                     <height>150</height>
                     <width>140</width>
-                    <scroll>true</scroll>
-                    <scrollout>false</scrollout>
-                    <scrollspeed>25</scrollspeed>
                     <font>WeatherTemperature</font>
                     <textcolor>Blue</textcolor>
                     <align>center</align>
