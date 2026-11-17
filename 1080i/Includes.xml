@@ -854,23 +854,29 @@
                     <align>center</align>
                     <label>$INFO[Window.Property(Daily.$PARAM[dayid].LongDay)]</label>
                 </control>
-                <control type="label" description="High Temp">
+                <control type="fadelabel" description="High Temp">
                     <posx>540</posx>
                     <posy>600</posy>
                     <height>150</height>
                     <width>140</width>
-                    <font>MainMenu</font>
+                    <scroll>true</scroll>
+                    <scrollout>false</scrollout>
+                    <scrollspeed>25</scrollspeed>
+                    <font>WeatherTemperature</font>
                     <textcolor>Red</textcolor>
                     <align>center</align>
                     <shadowcolor>ShadowDark</shadowcolor>
                     <label>$INFO[Window.Property(Daily.$PARAM[dayid].HighTemperature)]</label>
                 </control>
-                <control type="label" description="Low temp">
+                <control type="fadelabel" description="Low temp">
                     <posx>690</posx>
                     <posy>600</posy>
                     <height>150</height>
                     <width>140</width>
-                    <font>MainMenu</font>
+                    <scroll>true</scroll>
+                    <scrollout>false</scrollout>
+                    <scrollspeed>25</scrollspeed>
+                    <font>WeatherTemperature</font>
                     <textcolor>Blue</textcolor>
                     <align>center</align>
                     <shadowcolor>ShadowDark</shadowcolor>

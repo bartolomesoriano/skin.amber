@@ -230,6 +230,11 @@
             <size>88</size>
         </font>
         <font>
+            <name>WeatherTemperature</name>
+            <filename>BebasNeue.ttf</filename>
+            <size>72</size>
+        </font>
+        <font>
             <name>Font40_Icon</name>
             <filename>MaterialDesignIcons.ttf</filename>
             <size>40</size>
@@ -438,6 +443,11 @@
             <name>MainMenu</name>
             <filename>BebasNeue.ttf</filename>
             <size>78</size>
+        </font>
+        <font>
+            <name>WeatherTemperature</name>
+            <filename>BebasNeue.ttf</filename>
+            <size>63</size>
         </font>
         <font>
             <name>Font40_Icon</name>
@@ -714,6 +724,13 @@
             <style>uppercase</style>
         </font>
         <font>
+            <name>WeatherTemperature</name>
+            <filename>arial.ttf</filename>
+            <size>49</size>
+            <aspect>0.805</aspect>
+            <style>uppercase</style>
+        </font>
+        <font>
             <name>Font40_Icon</name>
             <filename>MaterialDesignIcons.ttf</filename>
             <size>40</size>
@@ -967,6 +984,13 @@
             <style>normal</style>
         </font>
         <font>
+            <name>WeatherTemperature</name>
+            <filename>arial.ttf</filename>
+            <size>49</size>
+            <aspect>1.0</aspect>
+            <style>normal</style>
+        </font>
+        <font>
             <name>Font40_Icon</name>
             <filename>MaterialDesignIcons.ttf</filename>
             <size>40</size>
@@ -1180,6 +1204,11 @@
             <name>MainMenu</name>
             <filename>RobotoCondensed-Regular.ttf</filename>
             <size>72</size>
+        </font>
+        <font>
+            <name>WeatherTemperature</name>
+            <filename>RobotoCondensed-Regular.ttf</filename>
+            <size>59</size>
         </font>
         <font>
             <name>Font40_Icon</name>
